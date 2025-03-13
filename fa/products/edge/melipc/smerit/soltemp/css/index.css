@@ -1,0 +1,99 @@
+#melfa_main_area .no_breaks {display: inline-block}
+#melfa_main_area .download_button {
+  text-align: right;
+  margin-top: 15px;
+}
+#melfa_main_area .download_button:hover {
+  opacity: 0.8;
+}
+#melfa_main_area .main_visual_wrap {
+  position: relative;
+}
+#melfa_main_area .main_visual_wrap .download_button {
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  right: 18px;
+}
+#melfa_main_area .area_download {
+  border: 1px solid #d5d5d5;
+  padding: 25px 30px;
+  margin-top: 20px;
+}
+#melfa_main_area .area_download .head {
+  font-size: 87.5%;
+  line-height: 1;
+  margin-top: 0;
+}
+#melfa_main_area .area_download .sub_inner p {
+  margin-top: 17px;
+}
+#melfa_main_area .area_download .area_download_button {
+  width: 220px;
+  float: left;
+}
+
+#melfa_main_area .area_download .area_download_button {
+  display: block;
+}
+#melfa_main_area .area_download .area_download_button:hover {
+  opacity: 0.8;
+}
+#melfa_main_area .area_download .area_note {
+  margin-left: 20px;
+  float: right;
+  width: 470px;
+}
+#melfa_main_area .table_wrap table.table01 {
+  width: 535px;
+  float: left;
+  margin-top: 0;
+}
+#melfa_main_area .table_wrap {
+  margin-top: 20px;
+
+}
+#melfa_main_area .table_wrap .thumb {
+  width: 230px;
+  float: right;
+}
+#melfa_main_area .table_wrap .thumb img {
+  width: 100%;
+}
+
+/*202106アイプラネット レスポンシブ対応*/
+#melfa_main_area .list_indent {
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+    counter-increment: num;
+    margin-bottom: 0em !important;
+    /*font-size: 70%;*/
+    }
+#melfa_main_area .list_indent::before {
+    content: '*'counter(num)'.';
+    display: inline-block;
+    width: 1.5em;
+    text-indent: 0;
+    }
+#melfa_main_area .no_list_indent {
+    text-indent: -2.75em;
+    margin-left: 2.75em;
+    counter-increment: num;
+    margin-bottom: 0em !important;
+    }
+
+#melfa_main_area .mt05 {margin-top: 0.5em !important}
+#melfa_main_area .mt1 {margin-top: 1em !important}
+
+#melfa_main_area .r_over:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+/*PCで表示*/
+@media screen and (max-width:768px) {
+    #melfa_main_area .download_button {display: none}
+}
+/*768px以下(モバイル)で非表示*/
+@media screen and (min-width:767px) {
+    #melfa_main_area .sp_download_button {display: none}   
+}

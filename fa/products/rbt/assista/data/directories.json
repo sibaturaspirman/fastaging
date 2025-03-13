@@ -1,0 +1,70 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Collaborative Robot ASSISTA",
+            "path": "/fa/products/rbt/assista/index.html",
+            "child": [
+              {
+                "name": "MELFA ASSISTA",
+                "path": "/fa/products/rbt/assista/items/assista/index.html"
+              },
+              {
+                "name": "Intelligent Options",
+                "path": "/fa/products/rbt/assista/items/option/index.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "switchNav": {
+    "name": "Collaborative Robot",
+    "path": "/fa/products/rbt/assista/index.html",
+    "child": [
+      {
+        "group": "Collaborative Robot",
+        "name": "Collaborative Robot MELFA ASSISTA",
+        "feature": "/fa/products/rbt/assista/pmerit/assista/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/robot&radio=Robot&search=B&word=Robot",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/robot",
+        "discon": "/fa/products/rbt/robot/ex/renew/close/index.html",
+          "return": {
+          "name": "Collaborative Robot MELFA ASSISTA",
+          "path": "/fa/products/rbt/assista/items/assista/index.html"
+        }
+      },
+      {
+        "group": "Collaborative Robot",
+         "name": "Intelligent Options",
+        "feature": "/fa/products/rbt/assista/pmerit/option/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/robot&radio=Robot&search=B&word=Robot",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/robot",
+        "discon": "",
+          "return": {
+          "name": "Intelligent Options",
+          "path": "/fa/products/rbt/assista/items/option/index.html"
+  	    }
+      },
+      {
+        "group": "Robot Engeneering Software (MELFA)",
+        "name": "Collaborative robot ASSISTA Engeneering Software",
+        "feature": "/fa/products/rbt/assista/smerit/vb/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+          "return": {
+          "name": "Robot Engeneering Software (MELFA)",
+          "path": "/fa/products/software/robot/index.html"
+  	    }
+      }
+    ]
+  }
+ }

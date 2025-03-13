@@ -1,0 +1,96 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Visualization software",
+            "path": "/fa/products/software/visualisation/index.html",
+            "child": [
+              {
+                "name": "SCADA software GENESIS64&trade;",
+                "path": "/fa/products/software/visualisation/genesis64/index.html"
+              },
+              {
+                "name": "HMI software (GOT)",
+                "path": "/fa/products/software/visualisation/got/index.html"
+              },
+              {
+                "name": "System recorder related software",
+                "path": "/fa/products/software/visualisation/system-recorder/index.html"
+              },
+              {
+                "name": "e-F@ctory Support Module",
+                "path": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/sol/efactory/e001eng/e001engc.pdf"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "switchNav": {
+    "name": "Vidualization software",
+    "path": "/fa/products/software/visualisation/index.html",
+    "child": [
+      {
+        "group": "Vidualization software",
+        "name": "SCADA software GENESIS64&trade;",
+        "feature": "/fa/products/software/visualisation/genesis64/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      },
+      {
+        "group": "Vidualization software",
+        "name": "SCADA software GENESIS64&trade;",
+        "feature": "/fa/products/software/visualisation/genesis64/our-stories.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      },
+      {
+        "group": "Vidualization software",
+        "name": "SCADA software GENESIS64&trade;",
+        "feature": "/fa/products/software/visualisation/genesis64/lineup.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      },
+      {
+        "group": "Vidualization software",
+        "name": "SCADA software GENESIS64&trade;",
+        "feature": "/fa/products/software/visualisation/genesis64/download.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "Vidualization software",
+    "path": "/fa/products/software/visualisation/genesis64/index.html",
+    "firstLayer": [
+      {
+        "name": "Concept",
+        "path": "/fa/products/software/visualisation/genesis64/index.html"
+      },
+      {
+        "name": "Introduction example",
+        "path": "/fa/products/software/visualisation/genesis64/our-stories.html"
+      },
+      {
+        "name": "Lineup",
+        "path": "/fa/products/software/visualisation/genesis64/lineup.html"
+      },
+      {
+        "name": "Download",
+        "path": "/fa/products/software/visualisation/genesis64/download.html"
+      }
+    ]
+  }
+}

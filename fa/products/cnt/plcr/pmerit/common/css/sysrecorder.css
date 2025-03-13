@@ -1,0 +1,749 @@
+@charset "utf-8";
+
+/*------[ システムレコーダ ]----------------------------------------------------------------------*/
+.iQ-R_sysrecorder p,
+.iQ-R_sysrecorder p + p {
+	margin: 0;
+}
+
+.iQ-R_sysrecorder .entry_bn_area {
+	margin: 1em 0;
+	text-align: center;
+	background-color: #E2E2E2;
+}
+.iQ-R_sysrecorder .entry_bn_linkbtn {
+	position: relative;
+	display: inline-block;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF !important;
+	border: 2px solid #FFFFFF;
+	background: #CC0000;
+	border-radius: 5px;
+	transition: .2s;
+}
+.iQ-R_sysrecorder .top_catch {
+	font-weight: bold;
+	margin-bottom: 1.25em;
+}
+.iQ-R_sysrecorder .top_catch + .fa-text {
+	margin-top: 15px;
+}
+.color01 {
+	color: #cd9002;
+}
+.color02 {
+	color: #87ad4e;
+}
+.color03 {
+	color: #009599;
+}
+.iQ-R_sysrecorder .mt15 {
+	margin-top: 15px !important;
+}
+.iQ-R_sysrecorder .mt20 {
+	margin-top: 20px !important;
+}
+
+/*------ sysrecorder_img01 リンク用 21/02/1 ------*/
+#sysrecorder_img01 {
+	position: relative;
+	margin-bottom: 0;
+}
+#sysrecorder_img01 a#sysrecorder_img01a,
+#sysrecorder_img01 a#sysrecorder_img01b,
+#sysrecorder_img01 a#sysrecorder_img01c {
+	position: absolute;
+}
+.frame_border {
+	border: 1px solid #CCC;
+}
+.frame_border .head_box {
+	border: 1px solid #009599;
+	text-align: center;
+	font-weight: bold;
+	color: #009599;
+}
+.head_round span {
+	color: #FFF;
+	background-color: #009599;
+	border-radius: 1em;
+	font-size: 120%;
+	font-weight: bold;
+}
+.iQ-R_sysrecorder .head_square {
+	text-indent: -1em;
+	margin-top: 1em;
+	margin-left: 1em;
+	padding-left: 0.75em;
+	font-weight: bold;
+	position: relative;
+}
+.iQ-R_sysrecorder .head_square::before {
+	content: "";
+	width: 0.5em;
+	height: 0.5em;
+	background-color: #009599;
+	position: absolute;
+}
+.iQ-R_sysrecorder .head_square + .body {
+	margin-top: 0.5em;
+}
+.iQ-R_sysrecorder .frame_gray {
+	background-color: #ededed;
+	margin-top: 2em;
+}
+.iQ-R_sysrecorder .head_underline {
+	font-weight: bold;
+	color: #009599;
+	border-bottom: 1px solid #009599;
+	margin-top: 1em;
+}
+.iQ-R_sysrecorder .pl1em {
+	list-style-type: none;
+	margin: 7px 0 0 14px;
+}
+.pl1em li {
+	line-height: 1.55;
+}
+.iQ-R_sysrecorder .head_round + .kinou {
+	margin-top: 15px;
+}
+.iQ-R_sysrecorder .mini_head_round + .kinou {
+	margin-top: 10px;
+}
+.iQ-R_sysrecorder .kinou + .kinou {
+	margin: 0;
+}
+.iQ-R_sysrecorder .mini_head_round {
+	display: flex;
+	margin: 3px 0 0;
+}
+.mini_head_round li {
+	color: #fff;
+	background-color: #009599;
+	border-radius: 10px;
+	line-height: 1.55;
+}
+.iQ-R_sysrecorder .red_box {
+	display: inline-block;
+	color: #e60000;
+	background-color: #FFF;
+	border: 1px solid #e60000;
+	font-size: 0.75em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-left: 0.25em;
+	text-indent: 0;
+}
+.red_box.new {
+	background-color: #e60000;
+	color: #FFF;
+}
+.iQ-R_sysrecorder .red_box2 {
+	display: inline-block;
+	background-color: #e60000;
+	font-size: 0.75em;
+	font-weight: bold;
+	line-height: 1.2em;
+	padding: 0.2em 0.5em 0;
+	margin-left: 0.25em;
+	text-indent: 0;
+}
+.red_box2 > .new2 {
+	color: #FFF;
+}
+.head_color {
+	color: #009599;
+	font-size: 120%;
+	font-weight: bold;
+}
+.iQ-R_sysrecorder .round {
+	display: inline-block;
+	padding: 0 1em;
+	color: #FFF;
+	background-color: #009599;
+	border-radius: 0.875em;
+	font-size: 0.75em;
+	line-height: 1.55em;
+	font-weight: normal;
+	text-indent: 0;
+	margin-left: 0.5em;
+}
+.iQ-R_sysrecorder .dl_link_box {
+	border: 1px solid #009599;
+	background-color: #e0e0e0;
+	font-size: 85%;
+	line-height: 1.5;
+	padding: 0.25em;
+	margin-left: 0.5em;
+}
+.iQ-R_sysrecorder .double_circle_wrap {
+	display: flex;
+	margin-bottom: 1em;
+}
+.iQ-R_sysrecorder .double_circle_wrap .double_circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border-radius: 50%;
+	margin-right: 1em;
+	position: relative;
+}
+.double_circle_wrap .double_circle:after {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	border: 1px solid #d41c24;
+}
+.double_circle_wrap .double_circle p {
+	color: #c30d23;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.25;
+}
+.double_circle_wrap .double_circle p sup{
+	font-size: 75%;
+}
+.double_circle_wrap .double_circle_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+.double_circle_wrap .double_circle_text .head_color img {
+	position: relative;
+}
+.double_circle_wrap .double_circle_text .head_color + .fa-text {
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+.double_circle_wrap .double_circle_text .footnote {
+	margin-top: 0;
+}
+.steps2 {
+	display: flex;
+}
+.iQ-R_sysrecorder .steps2 .step {
+	margin-bottom: 0;
+}
+.steps2 .step:nth-child(1) {
+	padding-left: 1em;
+	padding-right: .5em;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.steps2 .step:nth-child(2) {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+.related_prod .detail .head_bsquare {
+	font-size: 140%;
+	font-weight: bold;
+	padding-left: 1em;
+	position: relative;
+	margin-bottom: 0.25em;
+}
+.related_prod .detail .head_bsquare::before {
+	content: "";
+	width: 0.6em;
+	height: 0.6em;
+	background-color: #333;
+	position: absolute;
+}
+.related_prod .detail .prod_links {
+	margin-left: 0.5em;
+}
+.related_prod .detail .prod_links + .head_bsquare {
+	margin-top: 0.5em;
+}
+.related_prod .detail .prod_links .prod_link {
+	font-size: 130%;
+	font-weight: bold;
+	padding-left: 0.75em;
+	position: relative;
+}
+.related_prod .detail .prod_links .prod_link + .prod_link {
+	margin-left: 1em;
+}
+.related_prod .detail .prod_links .prod_link::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-left-color: #e60000;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-width: 3px 6px;
+	position: absolute;
+}
+.iQ-R_sysrecorder .uline a {
+	text-decoration: underline;
+}
+.iQ-R_sysrecorder .eclef_table .fa-text {
+	margin-bottom: 0;
+}
+.sysrec_config ul.fa-text .red {
+	color: #e60000;
+	font-weight: bold;
+}
+.sysrec_config .sysrec_config_table {
+	font-size: 80%;
+	padding-left: 1.5em;
+}
+.sysrec_config .sysrec_config_table .fa-heading_table {
+	margin-bottom: 0;
+}
+.sysrec_config .sysrec_config_table table {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+.sysrec_config .sysrec_config_table .fa-text {
+	margin-bottom: 0;
+}
+.sysrec_config .fa-text a {
+	text-decoration: underline;
+}
+.fa-text {
+	line-height: 1.55;
+}
+.fa-image_box + .fa-image_box {
+	margin-top: 15px;
+}
+.logmarker_unit .bsttl {
+	margin-top: 20px;
+}
+.head_color.fslg {
+	margin-top: 5px;
+	margin-bottom: 0.5em;
+}
+.fa-text + .head_color.fslg {
+	margin-top: 15px;
+}
+.logmarker_unit .bsttl + .fa-text {
+	margin-top: 15px;
+}
+.fa-text + .fa-image_box {
+	margin-top: 15px;
+}
+.fa-column_item .head_color + .fa-text {
+	margin-top: 0.5em;
+}
+.fa-column_item .head_color + .fa-text li {
+	margin-top: 3px;
+}
+.fa-image_box + .head_color.fslg {
+	margin-top: 15px;
+}
+.fa-image_box + .fa-text.dotlist {
+	margin-top: 15px;
+}
+.iQ-R_sysrecorder .table_ttl {
+	font-size: 100%;
+}
+.iQ-R_sysrecorder .fa-heading_lv3 .round02 {
+	display: inline-block;
+	padding: 0 1em;
+	color: #667;
+	border: #667 1px solid;
+	border-radius: 0.8em;
+	font-size: 0.8em;
+	line-height: 1.6em;
+	font-weight: bold;
+	text-indent: 0;
+	position: relative;
+	top: -0.1em;
+}
+@media (min-width: 769px){						/* PC用 */
+	.entry_bn_area {
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+	}
+	.entry_bn_linkbtn {
+		font-size: 110%;
+		width: 70%;
+		line-height: 30px;
+		padding: 0.5em;
+	}
+	.entry_bn_linkbtn:hover {
+		background: #CC6633;
+		color: #660000 !important;
+		text-decoration: none !important;
+	}
+	.catalog_doclink + .entry_bn_area {
+		margin-top: 4em;
+	}
+	.top_catch {
+	/*	font-size: 100%; */
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	/*------ sysrecorder_img01 リンク用 21/02/1 ------*/
+	#sysrecorder_img01 a#sysrecorder_img01a {
+		left: 565px;
+		top: 333px;
+	}
+	#sysrecorder_img01 a#sysrecorder_img01b {
+		left: 657px;
+		top: 333px;
+	}
+	#sysrecorder_img01 a#sysrecorder_img01c {
+		left: 565px;
+		top: 389px;
+	}
+	#sysrecorder_img01 a:hover {
+		opacity: 0.7;
+	}
+	.frame_border {
+		padding: 20px 24px 18px;
+	/*	font-size: 75%; */
+	}
+	.frame_border .head_box {
+		padding: 0.375em 0.5em 0.25em;
+		font-size: 133%;
+		margin-top: 1em;
+	}
+	.frame_border .sys_unit {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 1.25em;
+	}
+	.frame_border .sys_unit .detail {
+		padding-right: 1.5em;
+	}
+	.frame_border .sys_unit .head_round {
+		margin-bottom: 16px;
+	}
+	.head_round span {
+		display: inline-block;
+		padding: 0.25em 4em;
+	}
+	.iQ-R_sysrecorder .head_square {
+		font-size: 120%;
+	}
+	.iQ-R_sysrecorder .head_square::before {
+		top: 0.5em;;
+		left: -1em;
+	}
+	.frame_gray  {
+	}
+	.col2 {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 24px;
+	}
+	.col {
+		width: calc( 50% - 12px );
+	}
+	.head_underline {
+		font-size: 120%;
+	}
+	.mini_head_round {
+		list-style-type: none;
+	}
+	.mini_head_round li {
+		font-size: 10px;
+		margin-right: 2px;
+		padding: 1px 6px;
+	}
+	.red_box {
+		padding: 0.175em 0.25em 0;
+	}
+	.round {
+		padding-top: 0.2em;
+		position: relative;
+		top: -1px;
+	}
+	.two_columns {
+		display: flex;
+		justify-content: space-between;
+	}
+	.two_columns .two_col_box {
+		width: 370px;
+	}
+	.logmarker_unit {
+		display: flex;
+		justify-content: space-between;
+	}
+	.logmarker_unit .detail .head_color {
+		margin-bottom: 1.5em;
+	}
+	.logmarker_unit .detail .bsttl {
+		font-size: 120%;
+	}
+	.logmarker_unit .fig {
+		flex-basis: 390px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-left: 1.5em;
+	}
+	.dl_link_box {
+		float: right;
+	}
+	.double_circle_wrap .double_circle {
+		width: 86px;
+		height: 86px;
+		border: 3px solid #c30d23;
+	}
+	.double_circle_wrap .double_circle:after {
+		width: 72px;
+		height: 72px;
+		top: 3px;
+		left: 3px;
+	}
+	.double_circle_wrap .double_circle p {
+		font-size: 14px;
+		margin-top: 8px;
+	}
+	.double_circle_wrap .double_circle_text .head_color img {
+		bottom: 4px;
+	}
+	.maisart {
+		display: flex;
+		margin-top: 2em;
+	}
+	.maisart .logo {
+		flex-basis: 200px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-right: 20px;
+	}
+	.maisart.detail {
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+	.related_prod {
+		display: flex;
+		justify-content: space-between;
+	}
+	.related_prod .detail {
+		flex-grow: 1;
+		flex-shrink: 1;
+		padding-right: 1em;
+	}
+	.related_prod .detail .head_bsquare::before {
+		top: 0.4em;
+		left: 0.1em;
+	}
+	.related_prod .detail .prod_links .prod_link::before {
+		top: 0.3em;
+		left: 0.15em;
+	}
+	.related_prod .pho {
+		flex-basis: 287px;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	.eclef_table {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+@media only screen and (max-width: 768px){		/* スマホ用 */
+	.entry_bn_area {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	.entry_bn_linkbtn {
+		font-size: 100%;
+		width: 90%;
+		line-height: 1;
+		padding: 1em 0;
+	}
+	.catalog_doclink + .entry_bn_area {
+		margin-top: 2em;
+	}
+	.top_catch {
+		font-size: 110%;
+		line-height: 1.5;
+	}
+	.iQ-R_sysrecorder .top_catch {
+		margin-bottom: 0;
+	}
+	.iQ-R_sysrecorder .top_catch + .fa-text {
+		margin-top: 12px;
+	}
+	.logmarker_unit .bsttl + .fa-text {
+		margin-top: 6px;
+	}
+	.related_prod .detail .head_bsquare {
+		font-size: 110%;
+	}
+	.related_prod .detail .prod_links .prod_link {
+		font-size: 100%;
+	}
+	/*------ sysrecorder_img01 リンク用 21/02/1 ------*/
+	#sysrecorder_img01 a#sysrecorder_img01a {
+		left: 72.44%;
+		top: 57.41%;
+	}
+	#sysrecorder_img01 a#sysrecorder_img01b {
+		left: 84.23%;
+		top: 57.41%;
+	}
+	#sysrecorder_img01 a#sysrecorder_img01c {
+		left: 72.44%;
+		top: 67.07%;
+	}
+	#sysrecorder_img01 a img {
+		width: calc((100vw - 32px)*94/780);
+		height: auto;
+	}
+	.frame_border {
+		padding: 1em;
+		font-size: 100%;
+	}
+	.frame_border .head_box {
+		padding: 0.5em 0.5em;
+		font-size: 110%;
+		line-height: 1.5;
+		margin-top: 0.75em;
+	}
+	.frame_border .sys_unit {
+		margin-top: 2.25em;
+	}
+	.head_round {
+		text-align: center;
+	}
+	.head_round span {
+		display: block;
+		padding: 0.25em 0;
+	}
+	.iQ-R_sysrecorder .head_square {
+		font-size: 110%;
+		text-indent: unset;
+		padding-left: 0;
+	}
+	.iQ-R_sysrecorder .head_square::before {
+		top: 0.5em;;
+		left: -1em;
+	}
+	.frame_border .sys_unit .fig {
+		text-align: center;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	.frame_gray {
+		font-size: 100%;
+	}
+	.col2 {
+		padding: 20px 24px;
+	}
+	.col + .col {
+		margin-top: 1.5em;
+	}
+	.head_underline {
+		font-size: 110%;
+		padding-bottom: 0.25em;
+	}
+	.pl1em li + li {
+		margin-top: 0.25em;
+	}
+	.pl1em li a,
+	.kinou a {
+		position: relative;
+		padding-left: 0.625em;
+		display: inline-block;
+	}
+	.pl1em li a::before,
+	.kinou a::before {
+		content: "";
+		width: 0;
+		height: 0;
+		border-top: 2px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 2px solid transparent;
+		border-left: 5px solid #009599;
+		position: absolute;
+		top: 0.55em;
+		left: 0;
+	}
+	.mini_head_round {
+		flex-wrap: wrap;
+	}
+	.mini_head_round li {
+		white-space: nowrap;
+		font-size: 90%;
+		line-height: 1;
+		margin-bottom: 0.5em;
+		margin-right: 0.25em;
+		padding: 0.25em 0.75em;
+	}
+	.red_box {
+		padding: 0 0.25em;
+	}
+	.round {
+		position: relative;
+		bottom: 0.15em;
+	}
+	.two_columns .two_col_box img {
+		width: 90%;
+	}
+	.logmarker_unit .detail .head_color {
+		margin-bottom: 1em;
+	}
+	.logmarker_unit .detail .bsttl {
+		font-size: 110%;
+	}
+	.logmarker_unit .fig img {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.head_color.fslg {
+		font-size: 110%;
+		line-height: 1.5;
+		margin-bottom: 0.25em;
+	}
+	.double_circle_wrap .double_circle {
+		width: 64px;
+		height: 64px;
+		border: 2px solid #c30d23;
+	}
+	.double_circle_wrap .double_circle:after {
+		width: 54px;
+		height: 54px;
+		top: 2px;
+		left: 2px;
+	}
+	.double_circle_wrap .double_circle p {
+		font-size: 11px;
+		margin-top: 5px;
+	}
+	.double_circle_wrap .double_circle_text .head_color img {
+		top: 0.25em;
+	}
+	.maisart .logo {
+		max-width: 50%;
+	}
+	.maisart .logo img {
+		width: 100%;
+		height: auto;
+	}
+	.maisart .detail {
+		margin-top: 0.5em;
+	}
+	.related_prod .detail .head_bsquare::before {
+		top: 0.45em;
+		left: 0.1em;
+	}
+	.related_prod .detail .prod_links .prod_link::before {
+		top: 0.35em;
+		left: 0.15em;
+	}
+	.related_prod .pho {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.sysrec_config .head_color {
+		margin-bottom: 0.75em;
+		font-size: 110%;
+		line-height: 1.5;
+	}
+	.sysrec_config .sysrec_config_table .fa-text {
+		font-size: 100%;
+	}
+}

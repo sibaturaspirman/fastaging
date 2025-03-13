@@ -1,0 +1,43 @@
+{
+	"comment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+		"specificItems": [],
+		"commonItems": []
+	},
+	"spotlight": {
+		"comment": "Spotlightに掲載したいページタイトル・画像・リンクを記入",
+		"items": []
+	},
+	"productsMenu": {
+		"comment": "機種共通メニューのlinkは各機種のページのURLに変更可",
+		"items": []
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": []
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除",
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','BNP-A1246(ENG)','cnc','3')",
+				"img": "javascript.toCatalogInfo('img','BNP-A1246(ENG)','cnc','5')",
+				"link": "javascript.toCatalogInfo('link','BNP-A1246(ENG)','cnc','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": []
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": []
+	},
+	"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+	"banner": {
+		"items": []
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": []
+	}
+}

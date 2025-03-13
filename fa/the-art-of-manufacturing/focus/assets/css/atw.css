@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* circle-list
+***************************** */
+.circle-list{margin-top: 30px;}
+.circle-list li{font-size: 16px;line-height: 1.8;position: relative;padding-left: 1.5em;}
+.circle-list li:before {position: absolute;left: 0;top: 10px;content: '';display: inline-block;width: 10px;height: 10px;background-color: #222;border-radius: 50%;}
+.circle-list li+li{margin-top: 5px;}
+
+
+/* download PDF box
+***************************** */
+.l-inner-medium .c-featurePaper__area .c-featurePaperArea__box {
+    background-color: #fafafa;
+    border: 1px solid #bebcbc;
+    padding: 30px;
+}
+
+.l-inner-medium .c-featurePaper__area .c-featurePaperArea__catch {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: bold;
+    text-align: center;
+}
+
+.l-inner-medium .c-featurePaper__area .c-featurePaperArea__lead {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px
+}
+
+.l-inner-medium .c-featurePaperArea__link a {
+    max-width: 350px;
+    width: auto;
+    margin: 20px auto 0;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 11px 10px;
+    color: #fff;
+    background: url(/fa/the-art-of-manufacturing/shared/img/bullet_btn_ctgrytop.png) right center no-repeat #cc0001;
+}
+
+.l-inner-medium .c-featurePaperArea__link {
+    text-align: center;
+}
+
+.l-inner-medium .c-featurePaperArea__link a:hover {
+    text-decoration: none;
+    opacity: .7;
+    -ms-filter: 'alpha(opacity=70)';
+}
+
+.l-inner-medium .c-featurePaperArea__link span {
+    margin-right: 6px;
+}
+
+.l-inner-medium .c-featurePaperArea__link img {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+
+@media only screen and (max-width: 767px){
+
+}

@@ -1,0 +1,1091 @@
+@charset "UTF-8";
+/* 共通 */
+.tag, .c-anchorNav sup{ /* h2→自動生成アンカーナビ対策 */
+	display: none;
+}
+.c-anchorNav sup.vis{ /* h2→自動生成アンカーナビ対策 */
+	display: inline;
+}
+sup {
+	font-size: 75%;
+	vertical-align: baseline;
+	margin-right: 0.25em;
+}
+.ulined {
+	padding-bottom: 0.1em;
+	border-bottom: 1px solid #000;
+}
+.c-note--mark.c-note--asterisk {
+	padding-left: 0.5em;
+	text-indent: -0.5em;
+}
+.c-note--mark.c-note--asterisk::before {
+	width: 0.5em;
+	content: "*";
+}
+.txt_icon {
+	display: inline-block;
+	font-size: 85%;
+	font-weight: bold;
+	line-height: 1;
+	white-space: nowrap;
+	text-align: center;
+	color: #FFF;
+	padding: 0.3em 0.5em 0.2em;
+}
+.txt_icon + .txt_icon {
+	margin-left: 6px;
+}
+.txt_icon.new {
+	background-color: #F00;
+}
+.txt_icon.usb {
+	font-weight: normal;
+	color: #891c21;
+	border: 1px solid #891c21;
+}
+.txt_icon.ethernet {
+	font-weight: normal;
+	background-color: #891c21;
+	border: 1px solid #891c21;
+	width: 5em;
+}
+.txt_icon.mcard {
+	font-weight: normal;
+	background-color: #000;
+	border: 1px solid #000;
+	margin-bottom: 5px;
+}
+.txt_icon.rs-232 {
+	font-weight: normal;
+	color: #000;
+	border: 1px solid #000;
+	width: 5em;
+}
+.txt_icon.db {
+	font-weight: normal;
+	background-color: #1d2087;
+	border: 1px solid #1d2087;
+	width: 3em;
+	position: relative;
+	top: -3px;
+}
+.ff-nsj {
+	font-family: "Noto Sans JP";
+}
+.q-colored {
+	color: #891c21;
+}
+.c-list--bullet .c-list__item > .c-list.c-list--order {
+	padding-left: 0;
+}
+
+/* CPU - Universal model QCPU */
+#cpu-idx-qcpu {
+	border: 10px solid #CCC;
+	background: linear-gradient(to bottom, #e3e3e3 0%, #FFF 30%);
+	padding: 3em 2em 2em;
+}
+#cpu-idx-qcpu .qcpu .spec .c-titleText {
+	line-height: 1.2;
+}
+#cpu-idx-qcpu .qcpu .spec .c-text {
+	line-height: 1.2;
+	margin-top: 5px;
+}
+#cpu-idx-qcpu .qcpu .spec .qcpu_catch img {
+	margin-top: 20px;
+	width: 100%;
+}
+#cpu-idx-table thead th {
+	text-align: center;
+	vertical-align: middle;
+	background-color: #d9d9d9;
+}
+#cpu-idx-table tbody th {
+	vertical-align: middle;
+	background-color: #f4f4f4;
+}
+#cpu-idx-table tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* CPU - Productivity */
+#cpu-productivity-anchorNav li:nth-child(1) {
+	display: none;
+}
+#productivity_img05 {
+	border: 1px solid #891c21;
+}
+#cpu-prdty-table thead th {
+	text-align: center;
+}
+#cpu-prdty-table thead th:nth-child(n+2) {
+	width: 14%;
+}
+#cpu-prdty-table tbody th,
+#cpu-prdty-table tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* CPU - User-friendly */
+#cpu-friendly-anchorNav01 li:nth-child(1),
+#cpu-friendly-anchorNav01 li:nth-child(n+7) {
+	display: none;
+}
+#cpu-friendly-anchorNav02 li:nth-child(-n+7) {
+	display: none;
+}
+.u-box.cpu-friendly-ubox {
+	padding: 20px;
+}
+.u-box.cpu-friendly-bgcolored {
+	background-color: #f1dcdd;
+	border: none;
+}
+.cpu-friendly-colored {
+	color: #891c21;
+	font-weight: bold;
+}
+
+/* CPU - Maintenance cost */
+#cpu-maintenance-anchorNav li:nth-child(1) {
+	display: none;
+}
+
+/* CPU - CPU Lineup */
+#cpu-cpu-anchorNav li:nth-child(1) {
+	display: none;
+}
+
+/* Network - Network Configurations */
+.nwk-idx-prodname {
+	border-bottom: 1px solid #333;
+}
+.nwk-idx-prodname img {
+	height: 24px;
+	width: auto;
+}
+.nwk-idx-prodname img.ht {
+	height: 28px;
+	width: auto;
+}
+#nwk_idx_table01 thead th {
+	text-align: center;
+	vertical-align: middle;
+}
+#nwk_idx_table01 tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+#nwk_idx_table01 tbody td:nth-child(2),
+#nwk_idx_table01 tbody td:nth-child(3) {
+	width: 16%;
+}
+#nwk_idx_table01 tbody td:nth-child(4),
+#nwk_idx_table01 tbody td:nth-child(5),
+#nwk_idx_table01 tbody td:nth-child(6),
+#nwk_idx_table01 tbody td:nth-child(7) {
+	width: 11%;
+}
+
+/* Network - CC-Link IE Control Network */
+#nwk_cciec_table01 thead th {
+	text-align: center;
+}
+#nwk_cciec_table01 tbody th {
+	vertical-align: middle;
+}
+#nwk_cciec_table01 tbody td {
+	text-align: center;
+}
+#nwk_cciec_table01 tbody td:nth-child(n+3) {
+	width: 33%;
+}
+
+/* Network - CC-Link IE Field Network */
+#nwk_ccief_connect {
+	background-color: #EEE;
+	padding: 30px;
+}
+#nwk_ccief_table01 thead th {
+	text-align: center;
+	vertical-align: middle;
+}
+#nwk_ccief_table01 tbody th {
+	vertical-align: middle;
+}
+#nwk_ccief_table01 tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* Network - AnyWireASLINK */
+#network-anywire-system {
+	background-color: #EEE;
+	position: relative;
+}
+#network-anywire-system .label_title {
+	color: #FFF;
+	background-color: #811c21;
+	padding: 0.25em 0.5em;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#network-anywire-system .common {
+	margin-bottom: 1.5em;
+}
+#network-anywire-system .c-text {
+	margin-top: 0;
+	margin-left: 1.33em;
+}
+#nwk_anywire_table01 thead th {
+	text-align: center;
+}
+#nwk_anywire_table01 tbody th {
+	vertical-align: middle;
+}
+#nwk_anywire_table01 tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+#nwk_anywire_table01 tbody td .iblock {
+	display: inline-block;
+	text-align: left;
+}
+#nwk_anywire_table01 tbody td .iblock .c-list {
+	font-size: 100%;
+}
+#nwk_anywire_table01 tbody td .iblock .c-list__item {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* Network - CC-Link */
+#nwk_cclink_table01 thead th {
+	text-align: center;
+}
+#nwk_cclink_table01 tbody th {
+	vertical-align: middle;
+}
+#nwk_cclink_table01 tbody td {
+	text-align: center;
+}
+
+/* Network - MELSECNET/H */
+#nwk_melsecnet_system {
+	background-color: #EEE;
+	padding: 30px;
+}
+#nwk_melsecnet_table01 thead th,
+#nwk_melsecnet_table02 thead th {
+	text-align: center;
+}
+#nwk_melsecnet_table01 tbody th,
+#nwk_melsecnet_table02 tbody th {
+	vertical-align: middle;
+}
+#nwk_melsecnet_table01 tbody td,
+#nwk_melsecnet_table02 tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+#nwk_melsecnet_table01 tbody td .iblock,
+#nwk_melsecnet_table02 tbody td .iblock {
+	display: inline-block;
+	text-align: left;
+}
+#nwk_melsecnet_table01 tbody td .iblock .c-list,
+#nwk_melsecnet_table02 tbody td .iblock .c-list {
+	font-size: 100%;
+}
+#nwk_melsecnet_table01 tbody td .iblock .c-list__item,
+#nwk_melsecnet_table02 tbody td .iblock .c-list__item {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+#nwk_melsecnet_table01 tbody .th02 {
+	width: 18%;
+}
+#nwk_melsecnet_table01 tbody .th03 {
+	width: 6%;
+}
+#nwk_melsecnet_table01 tbody .td01 {
+	width: 15%;
+}
+#nwk_melsecnet_table02 tbody th .th02 {
+	width: 18%;
+}
+#nwk_melsecnet_table02 tbody th .th03 {
+	width: 6%;
+}
+#nwk_melsecnet_table02 tbody .td01 {
+	width: 30%;
+}
+
+/* Network - Ethernet/Serial communication */
+.ntw-ethernet-bnum {
+	text-indent: -1.33em;
+	margin-left: 1.33em;
+}
+.ntw-ethernet-bnumtxt {
+	margin-left: 1.33em;
+}
+
+/* Network - High speed data logger */
+.nwk-datalog-ubox {
+	padding: 20px;
+}
+
+/* I/O */
+#io-idx-table01 th,
+#io-idx-table02 th,
+#io-idx-table03 th,
+#io-idx-table01 td,
+#io-idx-table02 td,
+#io-idx-table03 td {
+	text-align: center;
+	vertical-align: middle;
+}
+#io-idx-table01 tbody td .iblock,
+#io-idx-table02 tbody td .iblock,
+#io-idx-table03 tbody td .iblock {
+	display: inline-block;
+	text-align: left;
+}
+#io-idx-table01 tbody td:nth-child(2),
+#io-idx-table01 tbody td:nth-child(3),
+#io-idx-table01 tbody td:nth-child(5),
+#io-idx-table01 tbody td:nth-child(6) {
+	width: 9%;
+}
+#io-idx-table01 tbody td:nth-child(4),
+#io-idx-table01 tbody td:nth-child(7),
+#io-idx-table01 tbody td:nth-child(8),
+#io-idx-table01 tbody td:nth-child(9) {
+	width: 13%;
+}
+#io-idx-table02 tbody td:nth-child(4),
+#io-idx-table02 tbody td:nth-child(5),
+#io-idx-table02 tbody td:nth-child(7),
+#io-idx-table02 tbody td:nth-child(8) {
+	width: 11%;
+}
+#io-idx-table02 tbody td:nth-child(2),
+#io-idx-table02 tbody td:nth-child(3) {
+	width: 14%;
+}
+#io-idx-table03 {
+	width: inherit;
+	min-width: 70%;
+}
+
+/* Analog - Analog I/O */
+#analog-idx-table01 th,
+#analog-idx-table01 td {
+	text-align: center;
+	vertical-align: middle;
+}
+#analog-idx-table01 tbody td .iblock {
+	display: inline-block;
+	text-align: left;
+}
+#analog-idx-table01 .th02,
+#analog-idx-table01 .th05 {
+	width: 18%;
+}
+#analog-idx-table01 .th03,
+#analog-idx-table01 .th04,
+#analog-idx-table01 .th06,
+#analog-idx-table01 .th07 {
+	width: 13%;
+}
+
+/* Analog - Temperature I/O */
+#analog-ti-table01 {
+	width: inherit;
+	min-width: 70%;
+}
+#analog-ti-table01 th,
+#analog-ti-table01 td {
+	text-align: center;
+	vertical-align: middle;
+}
+#analog-ti-table01 tbody td .iblock {
+	display: inline-block;
+	text-align: left;
+}
+#analog-ti-table01 tbody td {
+	width: 25%;
+}
+
+/* Analog - Temperature control */
+#analog-tc-table01 {
+	width: inherit;
+	min-width: 70%;
+}
+#analog-tc-table01 th,
+#analog-tc-table01 td {
+	text-align: center;
+	vertical-align: middle;
+}
+#analog-tc-table01 tbody td {
+	width: 25%;
+}
+
+/* Analog - Loop control */
+#analog-lc-table01 {
+	width: inherit;
+	min-width: 70%;
+}
+#analog-lc-table01 th,
+#analog-lc-table01 td {
+	text-align: center;
+	vertical-align: middle;
+}
+#analog-lc-table01 thead th {
+	width: 20%;
+}
+
+/* Analog - Load cell */
+#analog-loadcell-table01 {
+	width: inherit;
+	min-width: 60%;
+}
+#analog-loadcell-table01 th,
+#analog-loadcell-table01 td {
+	text-align: center;
+	vertical-align: middle;
+}
+#analog-loadcell-table01 tbody td {
+	width: 33%;
+}
+
+/* Analog - CT Input */
+#analog-ct-table01 {
+	width: inherit;
+	min-width: 80%;
+}
+#analog-ct-table01 thead th {
+	text-align: center;
+}
+#analog-ct-table01 tbody td {
+	text-align: center;
+}
+#analog-ct-table02 {
+	width: inherit;
+	min-width: 65%;
+}
+#analog-ct-table02 thead th {
+	text-align: center;
+}
+#analog-ct-table02 tbody td {
+	text-align: center;
+}
+#analog-ct-table02 tbody td.maker {
+	text-align: left;
+	vertical-align: middle;
+}
+#analog-ct-table03 {
+	width: inherit;
+	min-width: 60%;
+}
+#analog-ct-table03 th,
+#analog-ct-table03 td {
+	text-align: center;
+	vertical-align: middle;
+}
+#analog-ct-table03 tbody td {
+	width: 33%;
+}
+
+/* Simple motion/Positioning - Simple motion */
+#motion-idx-table01 thead th {
+	text-align: center;
+	vertical-align: middle;
+}
+#motion-idx-table01 tbody th {
+	vertical-align: middle;
+}
+#motion-idx-table01 tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+#motion-idx-table01 .th01 {
+	width: 25%;
+}
+#motion-idx-table01 .th02 {
+	width: 21%;
+}
+#motion-idx-table01a {
+	width: inherit;
+	min-width: 60%;
+	margin: 0 auto;
+}
+#motion-idx-table01a thead th {
+	width: 50%;
+}
+#motion-idx-table02 thead th {
+	text-align: center;
+	vertical-align: middle;
+}
+#motion-idx-table02 tbody th {
+	vertical-align: middle;
+}
+#motion-idx-table02 tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+#motion-idx-table02 .th01 {
+	width: 25%;
+}
+#motion-idx-table02 .th02 {
+	width: 21%;
+}
+#motion-idx-table03 {
+	width: inherit;
+	min-width: 60%;
+}
+#motion-idx-table03 th,
+#motion-idx-table03 td {
+	text-align: center;
+	vertical-align: middle;
+}
+#motion-idx-table03 thead th {
+	width: 33.3%;
+}
+
+/* Simple motion/Positioning - Positioning */
+#motion-pos-table01 thead th {
+	text-align: center;
+	vertical-align: middle;
+}
+#motion-pos-table01 thead th:nth-child(n+2) {
+	width: 29%;
+}
+#motion-pos-table01 tbody th {
+	vertical-align: middle;
+}
+#motion-pos-table01 tbody th:nth-child(2) {
+	width: 28%;
+}
+#motion-pos-table01 tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+#motion-pos-table02 thead th {
+	text-align: center;
+	vertical-align: middle;
+}
+#motion-pos-table02 thead th:nth-child(n+2) {
+	width: 32%;
+}
+#motion-pos-table02 tbody th {
+	vertical-align: middle;
+}
+#motion-pos-table02 tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+#motion-pos-table03 th,
+#motion-pos-table03 td {
+	text-align: center;
+	vertical-align: middle;
+}
+#motion-pos-table03 tbody td {
+	width: 21%;
+}
+
+/* High-speed counter/Pulse input */
+#counter-idx-table01 thead th,
+#counter-idx-table01 tbody td,
+#counter-idx-table02 thead th,
+#counter-idx-table02 tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+#counter-idx-table01 tbody th,
+#counter-idx-table02 tbody th {
+	vertical-align: middle;
+}
+#counter-idx-table01 thead th:nth-child(2),
+#counter-idx-table01 thead th:nth-child(3),
+#counter-idx-table02 thead th:nth-child(2),
+#counter-idx-table02 thead th:nth-child(3) {
+	width: 23%;
+}
+#counter-idx-table01 thead th:nth-child(4),
+#counter-idx-table02 thead th:nth-child(4) {
+	width: 27%;
+}
+#counter-idx-table01 .ctr-idx-fnc_list,
+#counter-idx-table02 .ctr-idx-fnc_list {
+	text-align: left;
+}
+#counter-idx-table01 .ctr-idx-fnc_list .c-list__item,
+#counter-idx-table02 .ctr-idx-fnc_list .c-list__item {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.ctr-idx-multifunc .buttl {
+	display: inline;
+	font-weight: bold;
+	margin-left: -4px;
+}
+.ctr-idx-multifunc .dltxt dt:nth-child(n+2) {
+	margin-top: 5px;
+}
+.ctr-idx-multifunc .dltxt dd {
+	font-size: 90%;
+	margin-left: 0.5em;
+}
+#counter-idx-table03 thead th {
+	text-align: center;
+	vertical-align: middle;
+}
+#counter-idx-table03 tbody th {
+	vertical-align: middle;
+}
+#counter-idx-table03 tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+#counter-idx-table04 .th01 {
+	width: 13%;
+}
+#counter-idx-table04 th,
+#counter-idx-table04 td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* Energy measuring/Insulation monitoring - Energy measuring */
+#energy-idx-table01 thead th {
+	text-align: center;
+	vertical-align: middle;
+}
+#energy-idx-table01 thead th:nth-child(n+2) {
+	width: 20%;
+}
+#energy-idx-table01 tbody th {
+	vertical-align: middle;
+}
+#energy-idx-table01 tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+#energy-idx-table02 {
+	width: inherit;
+	min-width: 40%;
+}
+#energy-idx-table02 th,
+#energy-idx-table02 td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* Energy measuring/Insulation monitoring - Insulation monitoring */
+.u-box.energy-ins-ubox {
+	margin-top: 20px;
+	padding: 20px;
+}
+.u-box.energy-ins-ubox table td:nth-child(2) {
+	padding-left: 0.2em;
+	padding-right: 0.4em;
+}
+#energy-ins-fig01 {
+	margin-top: 10px;
+	border: 1px solid #333;
+}
+#energy-ins-fig01 .l-grid__item {
+	padding: 10px;
+}
+#energy-ins-fig01 .l-grid__item:nth-child(1) {
+	border-right: 1px solid #333;
+}
+#energy-ins-table01 thead th {
+	text-align: center;
+	vertical-align: middle;
+}
+#energy-ins-table01 tbody th {
+	vertical-align: middle;
+}
+#energy-ins-table01 tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+#energy-ins-table01 .th02 {
+	width: 15%;
+}
+#energy-ins-table01 .th03 {
+	width: 17%;
+}
+#energy-ins-table01 .td04 {
+	width: 57%;
+}
+#energy-ins-table02 {
+	width: inherit;
+	min-width: 50%;
+}
+#energy-ins-table02 th,
+#energy-ins-table02 td {
+	text-align: center;
+	vertical-align: middle;
+}
+#energy-ins-table02 thead th {
+	width: 50%;
+}
+
+@media only screen and (min-width:1101px){
+/*! over Large */
+}
+@media only screen and (max-width:1100px){
+/*! Large, Medium and Small */
+}
+@media only screen and (min-width:981px) and (max-width:1100px){
+/*! Large only */
+}
+@media only screen and (min-width:981px){
+/*! over Medium */
+	/* CPU - Universal model QCPU */
+	#cpu-idx-qcpu .qcpu {
+		display: flex;
+	}
+	#cpu-idx-qcpu .qcpu .photo {
+		margin-right: 60px;
+		padding-top: 40px;
+		flex-shrink: 1;
+	}
+	#cpu-idx-qcpu .qcpu .photo img {
+		max-width: 266px;
+	}
+	#cpu-idx-qcpu .qcpu .spec {
+		flex-shrink: 2;
+	}
+	#cpu-idx-qcpu .qcpu .spec .qcpu_catch img {
+		max-width: 345px;
+	}
+}
+@media only screen and (max-width:980px){
+/*! Medium and Small */
+	/* CPU - Universal model QCPU */
+	#cpu-idx-qcpu .qcpu .photo {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	#cpu-idx-qcpu .qcpu .spec {
+		margin-top: 2em;
+	}
+}
+@media only screen and (min-width:768px) and (max-width:980px){
+/*! Medium only */
+}
+@media only screen and (min-width:768px){
+/*! Large and Medium */
+	.ptnr_info {
+		border: 1px solid #666;
+		display: flex;
+		padding: 1em 1.5em;
+	}
+	.ptnr_info .logo_img {
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+		flex-grow: 0;
+		padding-right: 1em;
+	}
+	.ptnr_info .info_text {
+		padding-left: 1em;
+		flex-shrink: 1;
+		flex-grow: 1;
+		border-left: 1px solid #666;
+	}
+	.ptnr_info .logo_img #logo_efactory {
+		width: 200px;
+	}
+
+	/* CPU - User-friendly */
+	#friendly_img02 {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 990px;
+		margin: 2em auto 0;
+	}
+	#friendly_img02 .c-titleText {
+		margin-left: 1.2em;
+		text-indent: -1.2em;
+	}
+	#friendly_img02 .friendly_txt_a,
+	#friendly_img02 .friendly_img_a {
+		flex-basis: 51.7%;
+		flex-shrink: 1;
+	}
+	#friendly_img02 .friendly_txt_b,
+	#friendly_img02 .friendly_img_b {
+		flex-basis: 48.3%;
+		flex-shrink: 1;
+	}
+	#friendly_img02 .friendly_txt_a .c-titleText {
+		padding-right: 40px;
+	}
+	#friendly_img02 .c-img {
+		margin-top: 5px;
+	}
+
+	/* CPU - CPU Lineup */
+	#cpu_img04 {
+		display: flex;
+		margin-top: 2em;
+	}
+	#cpu_img04 .cpu_img {
+		width: calc(50% - 40px);
+	}
+	#cpu_img04 .arrow {
+		width: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Network - CC-Link IE Control Network/Field Network */
+	#logo_CC-Link-IE img {
+		height: 32px;
+	}
+
+	/* Network - AnyWireASLINK */
+	#logo_AnyWireASLINK img {
+		height: 32px;
+	}
+	#network-anywire-system {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 50px 30px 30px;
+	}
+	#network-anywire-system .common {
+		width: 100%;
+	}
+	#network-anywire-system .type2 {
+		width: calc(40% - 1em);
+	}
+	#network-anywire-system .type4 {
+		margin-left: 2em;
+		width: calc(60% - 1em);
+	}
+
+	/* Network - CC-Link */
+	#logo_CC-Link img {
+		height: 32px;
+	}
+
+	/* Network - Ethernet/Serial communication */
+	.ntw-ethernet-gxworks .sz80per-md {
+		text-align: center;
+	}
+	.ntw-ethernet-gxworks .sz80per-md img {
+		width: 80%;
+	}
+
+	/* Analog - Analog I/O */
+	#analog-idx-fig02,
+	#analog-idx-fig03 {
+		display: flex;
+	}
+	#analog-idx-fig02 .fig02a,
+	#analog-idx-fig02 .fig02b,
+	#analog-idx-fig03 .fig03 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	#analog-idx-fig02 .fig02a {
+		width: calc(38.4% - 23px);
+	}
+	#analog-idx-fig02 .fig02b {
+		width: calc(61.6% - 37px);
+	}
+	#analog-idx-fig03 .fig03 {
+		width: calc(50% - 30px);
+	}
+	#analog-idx-fig02 .arrow,
+	#analog-idx-fig03 .arrow {
+		width: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#analog-idx-fig02 .arrow img,
+	#analog-idx-fig03 .arrow img {
+		width: 32px;
+	}
+	#analog-idx-fig02 .arrow {
+		padding-top: 60px;
+	}
+	#analog-idx-fig02 .fig02a .c-text,
+	#analog-idx-fig02 .fig02b .c-text,
+	#analog-idx-fig03 .fig03 .c-text {
+		font-size: 90%;
+		line-height: 1.2;
+		text-indent: -1em;
+		margin-left: 1em;
+		margin-top: 0.25em;
+	}
+
+	/* Energy measuring/Insulation monitoring - Energy measuring */
+	#energy-idx-img01 {
+		display: flex;
+	}
+	#energy-idx-img01 .idx-img {
+		width: calc(50% - 50px);
+	}
+	#energy-idx-img01 .arrow {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		padding-bottom: 30px;
+	}
+	#energy-idx-img01 .arrow img {
+		width: 64px;
+	}
+}
+@media only screen and (max-width:767px){
+/*! Small only */
+	.ptnr_info {
+		border: 1px solid #666;
+		padding: 1.5em;
+	}
+	.ptnr_info .logo_img {
+		text-align: center;
+		padding-bottom: 0.25em;
+	}
+	.ptnr_info .logo_img #logo_efactory {
+		width: 120px;
+	}
+	.ptnr_info .info_text {
+		padding-top: 1em;
+		border-top: 1px solid #666;
+	}
+
+	/* CPU - User-friendly */
+	#friendly_img02 {
+		display: flex;
+		flex-direction: column;
+	}
+	#friendly_img02 .friendly_txt_a {
+		order: 1;
+		margin-top: 1.5em;
+	}
+	#friendly_img02 .friendly_txt_b {
+		order: 3;
+		margin-top: 1.5em;
+	}
+	#friendly_img02 .friendly_img_a {
+		order: 2;
+		margin-top: 5px;
+	}
+	#friendly_img02 .friendly_img_b {
+		order: 4;
+		margin-top: 5px;
+	}
+	#friendly_img02 .c-titleText {
+		margin-left: 1.2em;
+		text-indent: -1.2em;
+		font-size: 110%;
+	}
+
+	/* CPU - CPU Lineup */
+	#cpu_img04 {
+		margin-top: 2em;
+	}
+	#cpu_img04 .arrow {
+		height: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#cpu_img04 .arrow img {
+		width: 48px;
+		height: auto;
+	}
+
+	/* Network - CC-Link IE Control Network/Field Network */
+	#logo_CC-Link-IE img {
+		height: 24px;
+	}
+
+	/* Network - AnyWireASLINK */
+	#logo_AnyWireASLINK img {
+		height: 24px;
+	}
+	#network-anywire-system {
+		display: flex;
+		flex-direction: column;
+		padding: 45px 20px 30px;
+	}
+	#network-anywire-system .type2_txt {
+		order: 1;
+	}
+	#network-anywire-system .type4_txt {
+		order: 3;
+		margin-top: 40px;
+	}
+	#network-anywire-system .type2_fig {
+		order: 2;
+	}
+	#network-anywire-system .type4_fig {
+		order: 4;
+	}
+
+	/* Network - CC-Link */
+	#logo_CC-Link img {
+		height: 24px;
+	}
+
+	/* Analog - Analog I/O */
+	#analog-idx-fig02 .fig02a .c-img,
+	#analog-idx-fig02 .fig02b .c-img,
+	#analog-idx-fig03 .fig03 .c-img {
+		text-align: center;
+	}
+	#analog-idx-fig02 .fig02a img,
+	#analog-idx-fig02 .fig02b img {
+		height: 45vh;
+		width: auto;
+	}
+	#analog-idx-fig02 .arrow,
+	#analog-idx-fig03 .arrow {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#analog-idx-fig02 .arrow img,
+	#analog-idx-fig03 .arrow img {
+		width: 32px;
+	}
+	#analog-idx-fig02 .fig02a .c-text,
+	#analog-idx-fig02 .fig02b .c-text,
+	#analog-idx-fig03 .fig03 .c-text {
+		font-size: 90%;
+		line-height: 1.2;
+		text-indent: -1em;
+		margin-left: 1em;
+		margin-top: 0.25em;
+	}
+
+	/* Energy measuring/Insulation monitoring - Energy measuring */
+	#energy-idx-img01 .arrow {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	#energy-idx-img01 .arrow img {
+		width: 32px;
+		margin: 0 auto;
+	}
+}

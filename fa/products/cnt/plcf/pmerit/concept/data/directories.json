@@ -1,0 +1,48 @@
+{
+  "layerNav": {
+    "name": "MELSEC iQ-F Series",
+    "path": "/fa/products/cnt/plcf/items/index.html",
+    "firstLayer": [
+      {
+        "name": "Concept TOP",
+        "path": "/fa/products/cnt/plcf/pmerit/concept/index.html"
+      },
+      {
+        "name": "iQ Platform",
+        "path": "/fa/products/cnt/plcf/pmerit/concept/iq_platform.html"
+      },
+      {
+        "name": "Built-in Functions",
+        "path": "/fa/products/cnt/plcf/pmerit/concept/built_in_function.html"
+      },
+      {
+        "name": "Positioning function",
+        "path": "/fa/products/cnt/plcf/pmerit/concept/positioning.html"
+      },
+      {
+        "name": "GX Works3",
+        "path": "/fa/products/cnt/plcf/pmerit/concept/gx_works3.html"
+      },
+      {
+        "name": "Advanced MELSEC iQ-F Series",
+        "path": "/fa/products/cnt/plcf/pmerit/concept/melsec_iqf.html"
+      },
+      {
+        "name": "Application examples (videos)",
+        "path": "/fa/products/cnt/plcf/pmerit/concept/movie.html"
+      },
+      {
+        "name": "Quick Start Guide [Ladder language edition] (video)",
+        "path": "/fa/products/cnt/plcf/pmerit/concept/movie_quickguide_ladder.html"
+      },
+      {
+        "name": "Quick Start Guide [FBD/LD language edition] (video)",
+        "path": "/fa/products/cnt/plcf/pmerit/concept/movie_quickguide_fbd.html"
+      },
+      {
+        "name": "Technical Video [Logging Section] (video)",
+        "path": "/fa/products/cnt/plcf/pmerit/concept/movie_tech_logging.html"
+      }
+    ]
+  }
+}

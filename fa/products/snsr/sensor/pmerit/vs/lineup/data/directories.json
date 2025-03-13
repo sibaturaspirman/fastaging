@@ -1,0 +1,36 @@
+{
+  "layerNav": {
+    "name": "Vision sensor",
+    "path": "/fa/products/snsr/sensor/pmerit/vs/index.html",
+    "firstLayer": [
+      {
+        "name": "Concept",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/index.html"
+      },
+      {
+        "name": "Features",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/features/index.html"
+      },
+      {
+        "name": "Configuration tool",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/soft/index.html"
+      },
+      {
+        "name": "Applications",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/application/index.html"
+      },
+      {
+        "name": "System configuration",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/configuration/index.html"
+      },
+      {
+        "name": "Product list",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/lineup/index.html"
+      },
+      {
+        "name": "External dimensions",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/dimensions/index.html"
+      }
+    ]
+  }
+}

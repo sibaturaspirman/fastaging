@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+clearfix:after, .clear {  
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+/* clearfix for ie7 */
+.clearfix, .clear{
+	display: inline-block;
+	}
+.clearfix, .clear {
+	 display: block;
+	}
+
+.r_over a:hover img {
+		opacity:0.7;
+		}
+
+.txt_ruby {ruby-align:distributed-space;}
+    
+/*FireFox用上付き文字離れの調整 --------------------------------*/
+ *>/**/sup { vertical-align:top; line-height: 10px; }
+
+/*2分の1カラム*/
+#melfa_main_area .grid_2clm {
+	float:left;
+	display:inline;
+	margin-left:15px;
+	width:380px;
+	}
+
+/*3分の2カラム*/
+#melfa_main_area .grid_3clm {
+	float:left;
+	display:inline;
+	margin-left:20px;
+	width:570px;
+	}
+#melfa_main_area .grid_3clm p{
+	margin-top:0;
+}
+
+/*3分の1カラム*/
+#melfa_main_area .grid_3_1clm {
+	float:left;
+	display:inline;
+	margin-left:22px;
+	width:245px;
+	}
+
+/*4分の1カラム*/
+#melfa_main_area .grid_4clm {
+	float:left;
+	display:inline;
+	margin:0;
+	width:170px;
+	}
+
+#melfa_main_area .first {
+	margin-left:0;
+	clear:left;
+	}
+
+div.feat2_img {
+position:relative;
+width:780px;
+margin:15px auto;
+}
+div.feat2_img ul li {
+position:absolute;
+list-style-type:none;
+}
+div.feat2_img ul li a:hover {
+opacity:0.7;
+filter: alpha(opacity=70);
+}
+div.feat2_img ul li#dr_link {
+	top: 225px;
+	right: 122px;
+}
+
+.vs80_bgclr {background-color:#d8e4ef !important}
+.vs70_bgclr {background-color:#f0f5df !important}
+.vs20_bgclr {background-color:#f4f3d4 !important}
+
+/*特長*/
+#melfa_main_area .list {list-style-type: disc !important;
+list-style-position: outside !important;
+}
+
+#melfa_main_area .txt100 {font-size: 12px !important; margin-top: 0}
+
+.vs80 ul, .compatibility ul {margin-left:1.5em;}
+.vs80 li, .compatibility li {list-style-type: disc !important; }
+
+.repletion_list ul {list-style:none; margin-left: 1.5em}
+.repletion_list ul li {
+	padding-left: 1em;
+	text-indent: -2em;
+    }
+
+
+/*vs20 バナーリンク*/
+.vs20_bn_linkbtn {
+    width: 300px;
+    line-height: 30px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em;
+    text-decoration: none;
+    color: red !important;
+    background: #FFCC66;
+    border-radius:5px;
+    transition: .2s;
+}
+.vs20_bn_linkbtn:hover {
+  background: #FFCCCC;
+  color: red;
+  text-decoration: none !important;
+}
+
+/*ラインアップ*/
+#melfa_main_area .prod_name th {background-color:#808b98 !important; color: #ffffff}
+
+/*外形図*/
+#melfa_main_area h4 { background-color: #e2e2e2; color: #000; padding: 4px 5px; font-size: 82%; }
+
+/*改行しないテキスト*/
+#melfa_main_area .no_breaks {display: inline-block}
+

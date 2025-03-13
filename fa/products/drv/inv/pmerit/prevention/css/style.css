@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+#melfa_main_area .h2_layout {
+	color: #FFFFFF;
+	background-color: #7f859b;
+	border-radius: 0.3em;
+	font-size: 16px;
+	padding: 0.5em;
+	font-weight: bold;
+}
+#melfa_main_area .h3_layout{
+	/*color: #7f859b;*/
+	color: #4D587E;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15pt;
+	margin-bottom: -10pt;
+}
+#melfa_main_area .h3_layout_short{
+	color: #FFFFFF;
+	background-color: #5B5B5B;
+	border-radius: 0.3em;
+	font-size: 16px;
+	padding: 0.5em;
+	font-weight: bold;
+	text-align: center;
+	width: 250px;
+}
+.got_layout{
+	background-color: rgba(246, 246, 238, 1);
+	margin: 1em 0 0 1em;
+	padding: 0.7em;
+	border-radius: 0.3em;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+.item_box {
+    margin: 20px 0;
+}
+
+.item_label {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 240px;
+    text-decoration: none;
+    border-bottom: 1px;
+	border: 10pt solid #F2F2F2;
+}
+.item_label:hover {
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+}
+.item_label_inner {
+    position: absolute;
+    bottom: 26px;
+    font-size: 110%;
+    left: 18%;
+    color: #000;
+}
+@media only screen and (max-width: 768px) {
+    .item_label_inner {
+    font-size: 100%;
+    }
+}
+.item_label_inner:hover {
+	text-decoration: underline;
+}
+
+.icon p:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    border: 5px solid transparent;
+    border-left: 5px solid red;
+}
+/*----------------------------------------------------------------------*/
+
+.space_30{
+	margin: 30px;
+}
+
+#melfa_main_area *, *:before, *:after {
+	box-sizing: border-box;
+}
+#melfa_main_area .col_3, .col_2 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+#melfa_main_area .col_3 > div {
+	width: 33.33333%;
+    padding: 0;
+    }
+#melfa_main_area .col_2 > div {
+	width: 50%;
+    }
+
+@media only screen and (max-width: 768px) {
+#melfa_main_area .col_3 > div {
+		width: 100%;
+	}
+#melfa_main_area .col_2 > div {
+		width: 100%;
+	}
+}
+
+#melfa_main_area .fa-heading_table_content {
+    font-size: 100% !important;
+    color: #000 !important;
+}

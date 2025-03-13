@@ -1,0 +1,32 @@
+{
+	"layerNav": {
+		"name": "System Recorder",
+		"path": "/fa/products/cnt/plcr/pmerit/sysrecorder/index.html",
+		"firstLayer": [
+			{
+				"name": "Features",
+				"path": "/fa/products/cnt/plcr/pmerit/sysrecorder/index.html"
+			},
+			{
+				"name": "System-wide recording",
+				"path": "/fa/products/cnt/plcr/pmerit/sysrecorder/recording.html"
+			},
+			{
+				"name": "Simplified analysis",
+				"path": "/fa/products/cnt/plcr/pmerit/sysrecorder/analysis.html"
+			},
+			{
+				"name": "Related products",
+				"path": "/fa/products/cnt/plcr/pmerit/sysrecorder/related_prod.html"
+			},
+			{
+				"name": "Related software",
+				"path": "/fa/products/cnt/plcr/pmerit/sysrecorder/related_soft.html"
+			},
+			{
+				"name": "Device configuration",
+				"path": "/fa/products/cnt/plcr/pmerit/sysrecorder/config.html"
+			}
+		]
+	}
+}

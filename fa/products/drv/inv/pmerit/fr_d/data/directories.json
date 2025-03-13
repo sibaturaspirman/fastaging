@@ -1,0 +1,50 @@
+{
+  "layerNav": {
+    "name": "Inverters-FREQROL-D Series",
+    "path": "/fa/products/drv/inv/items/fr_d/index.html",
+    "firstLayer": [
+      {
+        "name": "FREQROL-D800",
+        "path": "/fa/products/drv/inv/pmerit/fr_d/d800/index.html"
+      },
+      {
+        "name": "FREQROL-D700",
+        "path": "/fa/products/drv/inv/pmerit/fr_d/index.html",
+        "secondLayer": [
+        {
+        "name": "Concept",
+        "path": "/fa/products/drv/inv/pmerit/fr_d/index.html"
+        },
+        {
+        "name": "New standard of inverter",
+        "path": "/fa/products/drv/inv/pmerit/fr_d/d701.html"
+        },
+        {
+        "name": "Mitsubishi's new standard",
+        "path": "/fa/products/drv/inv/pmerit/fr_d/d702.html"
+        },
+        {
+        "name": "Easy use and time saving built-in as standard",
+        "path": "/fa/products/drv/inv/pmerit/fr_d/d703.html"
+        },
+        {
+        "name": "Compact and space saving",
+        "path": "/fa/products/drv/inv/pmerit/fr_d/d704.html"
+        },
+        {
+        "name": "Easy maintenance",
+        "path": "/fa/products/drv/inv/pmerit/fr_d/d705.html"
+        },
+        {
+        "name": "Environment consciousness in global standard",
+        "path": "/fa/products/drv/inv/pmerit/fr_d/d706.html"
+        },
+        {
+        "name": "Model Configuration",
+        "path": "/fa/products/drv/inv/pmerit/fr_d/d707.html"
+        }
+        ]
+      }
+    ]
+  }
+}

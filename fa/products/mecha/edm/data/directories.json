@@ -1,0 +1,62 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Electrical Discharge Machines",
+            "path": "/fa/products/mecha/edm/index.html",
+            "child": [
+              {
+                "name": "Wire-cut Electrical Discharge Machines",
+                "path": "/fa/products/mecha/edm/items/wire/index.html"
+              },
+              {
+                "name": "Die-sinking Electrical Discharge Machines",
+                "path": "/fa/products/mecha/edm/items/die_sinking/index.html"
+              },
+              {
+                "name": "CAD/CAM , S/W",
+                "path": "/fa/products/mecha/edm/items/cadcam/index.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "switchNav": {
+    "name": "Electrical Discharge Machines",
+    "path": "/fa/products/mecha/edm/index.html",
+    "child": [
+      {
+        "group": "edm_spec_only",
+        "name": "Product Features",
+        "feature": "/fa/products/mecha/edm/pmerit/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/edm",
+        "standard": "",
+        "discon": ""
+      },
+      {
+        "group": "edm_pmerit",
+        "name": "Wire-cut Electrical Discharge Machines",
+        "feature": "",
+        "spec": "/fa/products/faspec/search.page?kisyu=/edm&radio=Wire-cut Electrical Discharge Machines&search=B&word=Wire-cut Electrical Discharge Machines",
+        "standard": "",
+        "discon": "/fa/products/mecha/edm/pmerit/wire/close/index.html"
+      },
+      {
+        "group": "edm_pmerit",
+        "name": "Die-sinking Electrical Discharge Machines",
+        "feature": "",
+        "spec": "/fa/products/faspec/search.page?kisyu=/edm&radio=Die-sinker Electrical Discharge Machines&search=B&word=Die-sinker Electrical Discharge Machines",
+        "standard": "",
+        "discon": "/fa/products/mecha/edm/pmerit/die_sinking/close/index.html"
+      }
+    ]
+  }
+}

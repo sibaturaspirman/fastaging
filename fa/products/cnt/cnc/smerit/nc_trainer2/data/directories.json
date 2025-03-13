@@ -1,0 +1,16 @@
+{
+  "layerNav": {
+    "name": "Software Tools",
+    "path": "/fa/products/cnt/cnc/items/cnctool/index.html",
+    "firstLayer": [
+      {
+        "name": "Customization Support",
+        "path": "/fa/products/cnt/cnc/smerit/nc_trainer2/index.html"          
+      },
+      {
+        "name": "Training Tool",
+        "path": "/fa/products/cnt/cnc/smerit/nc_trainer2/training.html"
+      }
+    ]
+  }
+}

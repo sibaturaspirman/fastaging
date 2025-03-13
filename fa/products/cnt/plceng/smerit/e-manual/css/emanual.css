@@ -1,0 +1,154 @@
+.point-list li {
+    list-style-type: disc !important;
+    margin-left: 20px !important;
+}
+
+.number-list li {
+    list-style-type: decimal !important;
+    margin-left: 20px !important;
+}
+
+.btn-indent {
+    text-indent: 1em;
+}
+
+.emanualnumber {
+	line-height: 100%;
+	font-size: 0.9em;
+}
+.emanualnumber_desc1 {
+	margin-left: 0;
+	font-size: 0.8em;
+}
+.emanualnumber_desc1 li {
+	margin-top: 0;
+	text-indent: -1em;
+	list-style: none;
+	padding-left: 1em;
+}
+.emanualnumber_desc1 li.double {
+	text-indent: -2em;
+	padding-left: 2em;	
+}
+
+
+
+H2.titleleft {
+	font-size: 1.2em;
+	color:#FFFFFF;
+	text-align:left;
+}
+H2.titlecenter {
+	font-size: 1.2em;
+	color:#FFFFFF;
+	text-align:center;
+}
+H3.titleleft {
+	font-size: 1em;
+	color:#FFFFFF;
+	text-align:left;
+}
+H3.titlecenter {
+	font-size: 1em;
+	color:#FFFFFF;
+	text-align:center;
+}
+H4.titleleft {
+	font-size: 1em;
+	color:#FFFFFF;
+	text-align:left;
+}
+H4.titlecenter {
+	font-size: 1em;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+.num_l1 {
+	display: inline-block;
+	width: 0.5em;
+	height: 1.5em;
+	font-size: 0.75em;
+	line-height: 1.6em;
+	color: #FFF;
+	text-align: center;
+	background-color: #555555;
+	margin-top: 0.25em;
+	margin-left: 0.25em;
+	margin:12px 10px 0 0;
+	text-indent: -1.5em;
+	padding-left: 1.5em;
+}
+.num_l2 {
+	display: inline-block;
+	width: 0.75em;
+	height: 1.5em;
+	font-size: 0.75em;
+	line-height: 1.6em;
+	color: #FFF;
+	text-align: center;
+	background-color: #555555;
+	margin-top: 0.25em;
+	margin-left: 0.25em;
+	margin:-3px 10px 0 3em;
+	text-indent: -1.5em;
+	padding-left: 1.5em;
+}
+.emanualnumber_l1 {
+	margin-left: 0;
+	font-size: 0.8em;
+}
+.emanualnumber_l1 li {
+	margin-top: 0;
+	text-indent: -2em;
+	list-style: none;
+	padding-left: 2em;
+}
+
+.ema_search_t{
+	font-size:80%;
+}
+
+.ema_search_t:before{
+	display:inline-block;width:4px;width:4px;height:12px;margin:-3px 10px 0 0;content:"";
+	vertical-align:middle;background:#555555
+}
+
+.windows_icon{
+    display: inline-block;
+    width: 9em;
+    height: 2.2em;
+    font-size: 17px;
+    line-height: 0.85em;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #0078D7;
+    vertical-align: top;
+    padding-top: 0.8em;
+    border: 1px solid #0364B1;
+    border-radius: 5px;
+}
+
+#page_top {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    opacity: 0.6;
+    border-radius: 50%;
+    background-color: #000;
+    text-align: center;
+    padding:8px;
+    font-size: 14px;
+    line-height: 18px;
+	z-index: 1;
+}
+#page_top a {
+    color: #fff;
+    text-decoration:none;
+}
+#page_top a:hover {
+    color: #ccc;
+    text-decoration:none;
+}

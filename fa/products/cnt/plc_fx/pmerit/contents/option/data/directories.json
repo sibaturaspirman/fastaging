@@ -1,0 +1,16 @@
+{
+  "layerNav": {
+    "name": "MELSEC-F Series",
+    "path": "/fa/products/cnt/plc_fx/items/index.html",
+    "firstLayer": [
+     {
+        "name": "Option",
+        "path": "/fa/products/cnt/plc_fx/pmerit/contents/option/index.html"
+      },
+      {
+        "name": "Training",
+        "path": "/fa/products/cnt/plc_fx/pmerit/contents/option/training.html"
+      }
+    ]
+  }
+}

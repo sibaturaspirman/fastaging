@@ -1,0 +1,42 @@
+.c-mainVisual--lv2 {
+    background-image: url(../img/img_mv-1.jpg)!important;
+}
+.l-separator-x6{
+    margin-top: 0;
+}
+.c-mainVisual--lv2 .c-mainVisual__category+.c-mainVisual__title{
+	color: #fff;
+}
+.c-featureArea__box .u-fz--18 {
+    line-height: 1.75;
+    margin-top: 15px;
+}
+.l-section .u-icons--bulletRight {
+    font-size: 16px;
+    font-weight: bold;
+}
+#index .c-img + .c-text{
+    margin-top: 15px;
+    line-height: 1.5em;
+}
+#index .c-text + .c-text{
+    margin-top: 22px;
+}
+#index .c-subText{
+    margin-top: 15px;
+}
+.l-section{
+    padding: 0;
+}
+@media (min-width:768px) {
+    .l-separator-x6 > .l-section{
+        padding: 84px 0;
+    }
+}
+
+@media only screen and (max-width:767px) {
+.l-separator-x6 > .l-section{
+    padding: 60px 0;
+}
+
+}

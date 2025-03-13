@@ -1,0 +1,84 @@
+@charset "Shift_JIS";
+
+img.gp {
+margin-left:5px;
+margin-right:5px;
+}
+
+#grp img.g1, #grp img.g2 {
+width:0px;
+overflow:hidden;
+}
+
+#grp img.g1 {
+height:30px;
+}
+
+#grp img.g2 {
+height:45px;
+}
+
+#grp div {
+margin-top:20px;
+/*width:45%;*/
+position:relative;
+padding-left:25px;
+}
+
+#grp1, #grp2 {
+height:125px;
+}
+
+#grp3 {
+height:120px;
+}
+
+.grp_s {
+display:none;
+position:absolute;
+left:250px;
+top:35px;
+}
+
+#grp3 .grp_s {
+left:260px;
+}
+
+#grp1 .grp_s, #grp2 .grp_s {
+top:34px;
+}
+
+#grp3 .grp_s {
+	top:35px;
+}
+
+*+html #grp3 .grp_s {  
+    top:51px; /* 20150108 ’Ç‰Á  */
+}
+.gt {
+	margin-bottom:10px;
+}
+#grp1 .k_block{
+	display: block;
+	float: right;
+	padding-top:17px;
+	margin-right: 405px;
+}
+.grpm800w{
+	padding-bottom:15px;
+}
+.grpm700v{
+	padding-bottom:9px;
+}
+#grp div.grpCaption {
+	position:absolute;
+	width:345px;
+	padding:30px 0 0;
+	margin:0;
+	top:0px;
+	left:405px;
+}
+#grp .grpCaption p {
+	margin:0;
+	font-weight:bold;
+}

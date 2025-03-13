@@ -1,0 +1,540 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta name="keywords" content="The energy saving calculation system,MITSUBISHI ELECTRIC,FA,Factory Automation" />
+<meta name="description" content="MITSUBISHI ELECTRIC FA site Inverters-FREQROL The energy saving calculation system" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- facebook -->
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.mitsubishielectric.com/fa/products/drv/inv/pmerit/select/app_motor/motor_p.html" />
+<meta property="og:title" content="The energy saving calculation system | Inverters-FREQROL | MITSUBISHI ELECTRIC FA" />
+<meta property="og:description" content="MITSUBISHI ELECTRIC FA site Inverters-FREQROL The energy saving calculation system" />
+<meta property="og:image" content="http://www.mitsubishielectric.com/fa/products/drv/inv/pmerit/select/app/" />
+<!-- /facebook -->
+
+<title>The energy saving calculation system | Inverters-FREQROL | MITSUBISHI ELECTRIC FA</title>
+
+<link rel="stylesheet" type="text/css" media="screen,print" href="/fa/css/w_header_footer/import_w850.css" />
+<link rel="stylesheet" type="text/css" href="/fa/shared/css/import.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/fa/shared/v0002/css/module.css" media="all" />
+<!-- CSS Area START -->
+<!-- for Modal --><link rel="stylesheet" type="text/css" href="/fa/shared/lib/fancybox/jquery.fancybox-1.3.4.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/fa/products/drv/inv/pmerit/select/app_motor/css/base.css" />
+<!-- CSS Area END -->
+
+<script type="text/javascript" src="/shared/js/base.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/lib/jquery.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/input.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/lib/jquery.example.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/jqueryAutoHeight.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/melCommons.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/mypage.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/mnavi.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/fa/shared/js/social.js" charset="Shift_JIS"></script>
+<!-- for IE6-8 CSS3 --><script type="text/javascript" src="/fa/shared/lib/selectivizr.js" charset="Shift_JIS"></script>
+<!-- JS Area START -->
+<script type="text/javascript" src="/fa/shared/lib/jquery.jcarousellite.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/newsTabMenu.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/melfaCommonAccordion.js"></script>
+<script type="text/javascript" src="/fa/shared/js/melfaCommonTabMenu.js"></script>
+<!-- for Modal --><script type="text/javascript" src="/fa/shared/lib/fancybox/jquery.fancybox-1.3.4.pack.js" charset="Shift_JIS"></script>
+<!-- for Modal --><script type="text/javascript" src="/fa/shared/lib/fancybox/jquery.easing-1.3.pack.js" charset="Shift_JIS"></script>
+<!-- for Modal --><script type="text/javascript" src="/fa/shared/js/melfaCommonModal.js" charset="Shift_JIS"></script>
+
+<script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app_motor/js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app_motor/js/Chart.js"></script>
+<script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app_motor/js/motor.js"></script>
+<script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app_motor/js/common.js"></script>
+<script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app_motor/js/calc.js"></script>
+<script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app_motor/js/motor_graph.js"></script>
+<script type="text/javascript" language="javascript">
+        var saveGraphHtml = '<table id="saveGraph" class="saveGraph_e"><tr><td class="verticalLabel"><span class="rotate90" style="margin-top:150px;">Electric Rate Total Costs (<span id="graph1PriceUnit"></span>)</span></td><td><canvas id="saveGraphCanvas" width="360" height="280"></canvas></td><td class="verticalLabel"><span class="rotate90" style="margin-top:80px;">CO2 Emissions (t/year)</span></td></tr></table>';
+        var lifeCyleGraphHtml = '<table id="lifeCycleGraph" class="branchPointGraph_e"><tr><td class="verticalLabel"><span class="rotate90" style="margin-top:70px;">Total Costs (<span id="graph2PriceUnit"></span>) </span></td><td><canvas id="lifeCycleGraphCanvas" width="360" height="240"></canvas><br /><span style="font-size:10pt;">Operation Time(years)</span></td></tr></table>';
+        $(function () {
+            var common = new Common.Param();
+            var param = new Common.Param();
+            var inputParam = param.GetQueryString();
+            var prices = new Array();
+            var machineType = 1;
+            var currency = "$";
+
+            for (var eachParam in inputParam) {
+                if (eachParam == "runType") {
+                    $("input[name='runType']").val([inputParam[eachParam]]);
+                    changeFreqDisabled(inputParam[eachParam]);
+                } else if (eachParam == "motorTabIndex") {
+                    if (inputParam[eachParam] == 1) {
+                        //$('.content li').css('display', 'none');
+                        //$('.content li').eq(1).css('display', 'block');
+                        //$('.tab li').removeClass('select');
+                        //$(document.getElementById("other")).addClass('select');
+                        $("input[id='myMotorName']").val(inputParam["myMotorLabel"]);
+
+                        if (parseFloat(inputParam["myMotorEff"]) > 0) {
+                            $("#otherEff" + inputParam["load"]).val(inputParam["myMotorEff"]);
+                        }
+                    } else {
+                        $("input[name='mtbsMotor']").val([inputParam["myMotorLabel"]]);
+                    }
+
+                } else if (eachParam == "date") {
+                    var inputDate = new Date(inputParam[eachParam]);
+
+                    $("#Year").text(inputDate.getFullYear());
+                    $("#Month").text(inputDate.getMonth() + 1);
+                    $("#Day").text(inputDate.getDate());
+                } else {
+                    if (eachParam.search("price") == 0) {
+                        $("#" + eachParam).val(parseInt(inputParam[eachParam]).toLocaleString());
+                        prices.push(Number(inputParam[eachParam]));
+                    } else if (eachParam == "myMotorPrice") {
+                        $("#" + eachParam).val(parseInt(inputParam[eachParam]).toLocaleString());
+                    } else {
+                        var tagName = $("#" + eachParam).prop("tagName");
+                        if (tagName == "LABEL") {
+                            $("#" + eachParam).text(inputParam[eachParam]);
+                        } else {
+                            $("#" + eachParam).val(inputParam[eachParam]);
+                        }
+                    }
+                }
+            }
+
+            currency = inputParam["currency"];
+            var priceScale = common.GetSettings("priceScale" + currency);
+            $("#ercUnit").html(currency + "/kWh");
+            $("[id^='priceUnit']").html(currency);
+
+            var calc = new Motor.CalcMotor("MaskedFile.bin", 31, inputParam["runType"], inputParam["volume"],
+                inputParam["pole"], inputParam["voltSlashFreq"], inputParam["freq"], inputParam["load"],
+                inputParam["unit"], inputParam["hourPerDay"], inputParam["dayPerYear"],
+                inputParam["electricityCharge"], inputParam["co2Rate"], prices, inputParam["motorTabIndex"], inputParam["myMotorLabel"], inputParam["myMotorPrice"], currency);
+
+            var request = new XMLHttpRequest();
+
+            request.open('GET', "./MaskedFile.bin", true);
+            request.responseType = 'arraybuffer';
+            request.overrideMimeType('application/octet-stream');
+            request.onreadystatechange = function () {
+                if (request.status == 200 && request.readyState == 4) {
+                    var binData = new Uint8Array(this.response);
+
+                    var eff = new Array();
+                    eff = calc.CalcEff(binData);
+                    var outputSum = calc.CalcOutputSumkW();
+                    $("#outputSum").text(Math.round(outputSum * 100) / 100);
+
+                    var input = new Array();
+                    input = calc.CalcInputkW(eff, outputSum);
+                    var power = new Array();
+                    power = calc.CalcPower(input);
+                    var charge = new Array();
+                    charge = calc.CalcCharge(power);
+                    var co2 = new Array();
+                    co2 = calc.CalcCO2(power);
+
+                    var saveData = new Array();
+                    $("#save_graph_container").append(saveGraphHtml);
+                    var saveCanvas = $("#saveGraphCanvas").get(0).getContext("2d");
+                    drawSaveGraph(saveCanvas, charge, co2, currency, priceScale, "b");
+                    $("#graph1PriceUnit").html(priceScale + currency);
+
+                    if (inputParam["motorTabIndex"] == 1) {
+                        eff[0] = Number(inputParam["myMotorEff"] > 0) ? Number(inputParam["myMotorEff"]) : 0;
+                        prices[0] = Number(inputParam["myMotorPrice"] > 0) ? Number(inputParam["myMotorPrice"]) : 0;
+                        $("#comparison2").text(inputParam["myMotorLabel"] + " ⇒ IE3");
+                        $("#comparison3").text(inputParam["myMotorLabel"] + " ⇒ IE4");
+                        document.getElementById("comparisonSF-JR").style.display = "";
+
+                        for (i = 0; i < eff.length; i++) {
+                            input = outputSum / (eff[i] / 100);
+                            power[i] = Math.ceil(input * inputParam["hourPerDay"] * inputParam["dayPerYear"]);
+                            charge[i] = Math.ceil(power[i] * inputParam["electricityCharge"]);
+                        }
+                    } else {
+                        if (inputParam["myMotorLabel"] == "SF-HR") {
+                            machineType = 2;
+                        }
+                        document.getElementById("comparison" + inputParam["myMotorLabel"]).style.display = "";
+                    }
+
+                    var savePower = new Array();
+                    savePower = calc.CalcDiff(power);
+                    var saveCharge = new Array();
+                    saveCharge = calc.CalcDiff(charge);
+                    var saveCO2 = new Array();
+                    saveCO2 = calc.CalcDiff(co2);
+                    var diffPrice = new Array();
+                    diffPrice = calc.CalcDiff(prices);
+                    var returnYear = new Array();
+                    for (i = 0; i < diffPrice.length; i++) {
+                        if (saveCharge[i] > 0) {
+                            returnYear[i] = 0 - diffPrice[i] / saveCharge[i] * inputParam["unit"];
+                        } else {
+                            returnYear[i] = -1;
+                        }
+                    }
+                    $("label[id^='savePower']").each(function (i, elem) {
+                        var id = $(elem).attr("id").replace("savePower", "");
+
+                        if (savePower[id] > 0) {
+                            $(elem).text(savePower[id].toLocaleString());
+                            $("#saveCharge" + id).text(saveCharge[id].toLocaleString());
+                            $("#saveCO2" + id).text(Math.round(saveCO2[id] * 1000) / 1000);
+                            $("#diffPrice" + id).text((0 - diffPrice[id] * inputParam["unit"]).toLocaleString());
+                            if (returnYear[id] > 0) {
+                                $("#returnYear" + id).text(Math.round(returnYear[id] * 100) / 100);
+                            } else {
+                                $("#returnYear" + id).text("-");
+                            }
+                        }
+                    });
+
+                    var lifeCycleData = new Array();
+                    $('#lifecycle_graph_container').append(lifeCyleGraphHtml);
+                    var lifeCycleCanvas = $("#lifeCycleGraphCanvas").get(0).getContext("2d");
+                    $("#graph2PriceUnit").html(priceScale + currency);
+
+                    var showMyMotor = true;
+                    if (inputParam["motorTabIndex"] == 1 && eff[0] == 0) {
+                        showMyMotor = false;
+                    }
+                    //var maxReturnYear = Math.max.apply(null, returnYear);
+                    var maxReturnYear = 0;
+                    if (inputParam["myMotorLabel"] == "SF-HR") {
+                        maxReturnYear = Math.max(returnYear[1], returnYear[4]);
+                    } else {
+                        maxReturnYear = Math.max(returnYear[2], returnYear[3]);
+                    }
+                    lifeCycleData = calc.makeLifeCycleCostData(machineType, eff, prices, inputParam["unit"], maxReturnYear, priceScale);
+                    drawLifeCycleGraph(lifeCycleCanvas, lifeCycleData, showMyMotor, inputParam["myMotorLabel"], currency, priceScale, "b");
+
+                    if (showMyMotor) {
+                        document.getElementById("comparisonResult").style.display = "";
+                    }
+                }
+            };
+
+            request.send();
+        });
+
+        function changeFreqDisabled(value) {
+            if (value == 1) {
+                $("#inputFreq").hide();
+                $("#inputVoltSlashFreq").show();
+            } else {
+                $("#inputFreq").show();
+                $("#inputVoltSlashFreq").hide();
+            }
+        }
+
+    </script>
+    <!-- JS Area END -->
+</head>
+
+<body class="melfa_popup">
+    <div id="header-wrap">
+        <div id="header">
+            <!--logo&siteid-->
+            <a href="/index.html"><img src="/fa/images/w_header_footer/logo.gif" alt="MITSUBISHI ELECTRIC Changes for the Better" width="111" height="45" id="logo" /></a><img src="/fa/shared/img/header/txt_global_gl01.gif" alt="Global - Factory Automation" width="291" height="36" id="siteid" />
+        </div>
+    </div>
+    <!--/ header begin -->
+
+    <div id="module_titleArea" class="clearfix">
+        <div id="stitle">
+            <p><img title="Factory Automation" data-popupalt-original-title="null" src="/fa/shared/img/header/h1_factory_automation.gif" alt="Factory Automation" height="28" width="216" /></p>
+            <!--/stitle-->
+        </div>
+    </div>
+
+    <div id="melfa_contents_1col">
+
+        <!-- <h1>Preparation of new projects</h1> -->
+        <p>
+            <div id="wrapper">
+
+                <div id="container">
+
+                    <div id="header" style="padding-left:0; padding-right:0">
+                        <h1>SuperLine Series Motor and FREQROL Inverter</h1>
+                        <section class="nbox">
+                            <div id="name"><label id="userCompany"></label></div>
+                            <div id="day">Date: <label id="Day"></label>/<label id="Month"></label>/<label id="Year"></label></div>
+                            <div id="factory" class="clear"><span class="fac">Plant: </span><label id="userFactory"></label></div>
+                            <div id="device"><span class="fac">Machine Name: </span><label id="userMachine"></label></div>
+                            <div id="preparation"><span class="fac">Author: </span><label id="userName"></label></div>
+                            <div class="clear"></div>
+                        </section>
+                    </div>
+
+                    <div id="contents" class="clear">
+                        <div class="lbox">
+                            <h2>Operating Condition</h2>
+                            <section class="sec1">
+                                <input type="radio" name="runType" value="1" checked="checked" disabled="disabled" /> Commercial Operation
+                                <input type="radio" name="runType" value="2" class="ml30" disabled="disabled" /> Inverter Operation
+                            </section>
+                            <section class="sec2">
+                                <ul>
+                                    <li>
+                                        <label class="grey">Electricity Rate Coefficient</label>
+                                        <input type="text" name="textfield" id="electricityCharge" readonly="readonly" /><span id="ercUnit">$/kWh</span>
+                                    </li>
+                                    <li>
+                                        <label class="grey">CO2 Coefficient</label>
+                                        <input type="text" name="textfield" id="co2Rate" readonly="readonly" />kg/kWh
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <div class="greyline"></div>
+                            <h3 class="clear">Motor Information</h3>
+
+                            <section class="sec2">
+                                <ul>
+                                    <li>
+                                        <label class="grey w307">Power Output</label>
+                                        <select name="volume" id="volume" class="w60" disabled="disabled">
+                                            <option value="">---</option>
+                                            <option value="0.75">0.75</option>
+                                            <option value="1.5">1.5</option>
+                                            <option value="2.2">2.2</option>
+                                            <option value="3.7">3.7</option>
+                                            <option value="5.5">5.5</option>
+                                            <option value="7.5">7.5</option>
+                                            <option value="11">11</option>
+                                            <option value="15">15</option>
+                                            <option value="18.5">18.5</option>
+                                            <option value="22">22</option>
+                                            <option value="30">30</option>
+                                            <option value="37">37</option>
+                                            <option value="45">45</option>
+                                            <option value="55">55</option>
+                                        </select>kW
+                                    </li>
+                                    <li>
+                                        <label class="grey w307">Pole Number</label>
+                                        <select name="pole" id="pole" class="w60" disabled="disabled">
+                                            <option value="">---</option>
+                                            <option value="2">2</option>
+                                            <option value="4">4</option>
+                                            <option value="6">6</option>
+                                        </select>P
+                                    </li>
+                                    <li id="inputVoltSlashFreq">
+                                        <label class="grey w267">Volt/Frequency</label>
+                                        <select name="voltSlashFreq" id="voltSlashFreq" disabled="disabled">
+                                            <option value="">---</option>
+                                            <option value="200 / 50">200 / 50</option>
+                                            <option value="200 / 60">200 / 60</option>
+                                            <option value="220 / 60">220 / 60</option>
+                                            <option value="230 / 60">230 / 60</option>
+                                            <option value="400 / 50">400 / 50</option>
+                                            <option value="400 / 60">400 / 60</option>
+                                            <option value="440 / 60">440 / 60</option>
+                                            <option value="460 / 60">460 / 60</option>
+                                        </select>V / Hz
+                                    </li>
+                                    <li id="inputFreq">
+                                        <label class="grey w302">Frequency</label>
+                                        <input type="number" step="1" min="3" max="60" name="textfield" id="freq" class="w60" readonly="readonly" />Hz
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <div class="greyline"></div>
+                            <h3 class="clear">Operating Condition</h3>
+
+                            <section class="sec2">
+                                <ul>
+                                    <li>
+                                        <label class="grey w302">Motor Load</label>
+                                        <input type="text" id="load" class="w60" readonly="readonly" />%
+                                    </li>
+
+                                    <li>
+                                        <label class="grey w302">Number Of Units</label>
+                                        <input type="text" id="unit" class="w60" readonly="readonly" />Units
+                                    </li>
+                                    <li>
+                                        <label class="grey w302">Hours/Day</label>
+                                        <input type="text" id="hourPerDay" class="w60" readonly="readonly" />Hours
+                                    </li>
+
+                                    <li>
+                                        <label class="grey w302">Days/Year</label>
+                                        <input type="text" id="dayPerYear" class="w60" readonly="readonly" />Days
+                                    </li>
+
+                                </ul>
+                            </section>
+
+                            <div class="greyline"></div>
+                            <h3 class="clear mb5">Motor Price Per Unit</h3>
+
+                            <section class="sec3">
+                                <div class="w221 floatL mb20 br1g">
+                                    <ul>
+                                        <li>
+                                            <label class="grey w70">IE1</label>
+                                            <input type="text" id="price1" class="w100" readonly="readonly" /><span id="priceUnitSFJR">$</span>
+                                        </li>
+                                        <li>
+                                            <label class="grey w70">IE2</label>
+                                            <input type="text" id="price2" class="w100" readonly="readonly" /><span id="priceUnitSFHR">$</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="w221 floatL mb20 bl1f">
+                                    <ul>
+                                        <li>
+                                            <label class="grey w70 pl10">IE3</label>
+                                            <input type="text" id="price3" class="w100" readonly="readonly" /><span id="priceUnitSFPR">$</span>
+                                        </li>
+                                        <li>
+                                            <label class="grey w70 pl10">IE4</label>
+                                            <input type="text" id="price4" class="w100" readonly="readonly" /><span id="priceUnitMMEFS">$</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <h2 class=" clear">Compare With Existing Motor</h2>
+                            <input id="tabIndex" type="hidden" value="0" />
+                            <div id="tabmenu">
+                                <ul class="content">
+                                    <li class="pl30">
+                                        <label class="grey">Motor Name</label>
+                                        <input type="text" id="myMotorName" class="w142" readonly="readonly" />
+                                        <label class="grey">Motor Price</label>
+                                        <input type="text" id="myMotorPrice" class="w142" readonly="readonly" /> <span id="priceUnitMyMotor">$</span>
+                                        <div class="alignR mt5 mr35 font12"><span class="mr35">Motor Load</span><span class="mr25">50%</span><span class="mr15">75%</span>100%</div>
+                                        <label class="grey">Motor Efficiency(%)</label>
+                                        <input type="text" id="otherEff50" class="w40" readonly="readonly" /><input type="text" id="otherEff75" class="w40" readonly="readonly" /><input type="text" id="otherEff100" class="w40" readonly="readonly" />
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <section class="sec4 clear">
+                                <ul>
+                                    <li class="btn1">Calculate</li>
+                                    <li class="btn2">Clear</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="rbox">
+                            <section class="sec5">
+                                <h2>Electric Rate and CO2 Emissions Comparison Graph</h2>
+                                <div class="alignR mr10" id="saveGraphLegend"></div>
+                                <div id="save_graph_container" class="graph">
+                                </div>
+                            </section>
+                            <section class="sec6">
+                                <h2>Energy Saving Branch Point Graph</h2>
+                                <div class="alignR mr10" id="lifeCycleGraphLegend"></div>
+                                <div id="lifecycle_graph_container" class="graph" style="text-align:center">
+                                </div>
+                            </section>
+                            <section class="sec7">
+                                <div id="comparisonResult" style="display:none;">
+                                    <h2>Comparison Results</h2>
+                                    <table id="comparisonSF-JR" style="display:none;">
+                                        <tr>
+                                            <th></th>
+                                            <th id="comparison2">SF-JR ⇒ SF-PR</th>
+                                            <th id="comparison3">SF-JR ⇒ MM-EFS</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="50">Saving Power Consumption<br />(kWh/year)</td>
+                                            <td class="left"><label id="savePower2"></label></td>
+                                            <td class="right"><label id="savePower3"></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="50">Saving Electricity Rates<br />(<span id="priceUnitSER">$</span>/year)</td>
+                                            <td class="left"><label id="saveCharge2"></label></td>
+                                            <td class="right"><label id="saveCharge3"></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="50">CO2 Eemission Reductions<br />(t/year)</td>
+                                            <td class="left"><label id="saveCO22"></label></td>
+                                            <td class="right"><label id="saveCO23"></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="50">Motor Price Difference (<span id="priceUnitMPD">$</span>)</td>
+                                            <td class="left"><label id="diffPrice2"></label></td>
+                                            <td class="right"><label id="diffPrice3"></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="50">Cost Recovery Period (year)</td>
+                                            <td class="left"><label id="returnYear2"></label></td>
+                                            <td class="right"><label id="returnYear3"></label></td>
+                                        </tr>
+                                    </table>
+                                    <table id="comparisonSF-HR" style="display:none;">
+                                        <tr>
+                                            <th></th>
+                                            <th id="comparison1">SF-HR ⇒ SF-PR</th>
+                                            <th id="comparison4">SF-HR ⇒ MM-EFS</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="50">Saving Power Consumption<br />(kWh/year)</td>
+                                            <td class="left"><label id="savePower1"></label></td>
+                                            <td class="right"><label id="savePower4"></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="50">Saving Electricity Rates<br />(<span id="priceUnitSER">$</span>/year)</td>
+                                            <td class="left"><label id="saveCharge1"></label></td>
+                                            <td class="right"><label id="saveCharge4"></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="50">CO2 Eemission Reductions<br />(t/year)</td>
+                                            <td class="left"><label id="saveCO21"></label></td>
+                                            <td class="right"><label id="saveCO24"></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="50">Motor Price Difference (<span id="priceUnitMPD">$</span>)</td>
+                                            <td class="left"><label id="diffPrice1"></label></td>
+                                            <td class="right"><label id="diffPrice4"></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="50">Cost Recovery Period (year)</td>
+                                            <td class="left"><label id="returnYear1"></label></td>
+                                            <td class="right"><label id="returnYear4"></label></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear mb20"></div>
+        </p>
+        <!-- /melfa_main_area -->
+
+        <div id="global_footer">
+            <div class="container clearfix">
+                <address class="copyright"><img src="http://www.mitsubishielectric.co.jp/shared/img/footer/copyright_2007.gif" alt="Copyright &copy; Mitsubishi Electric Corporation. All Rights Reserved." width="255" height="9" /></address>
+            </div>
+        </div>
+        <!-- /global_footer -->
+
+        <div class="popup_switch">
+            <p class="popup_close"><a onclick="window.close()">Close</a></p>
+        </div>
+
+    </div>
+    <!-- /center -->
+
+</body>
+</html>
+

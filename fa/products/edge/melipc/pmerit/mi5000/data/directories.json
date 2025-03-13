@@ -1,0 +1,20 @@
+{
+  "layerNav": {
+    "name": "MELIPC MI5000",
+    "path": "/fa/products/edge/melipc/items/mi5000/index.html",
+    "firstLayer": [
+      {
+        "name": "Product features",
+        "path": "/fa/products/edge/melipc/pmerit/mi5000/index.html"
+      },
+      {
+        "name": "System configuration",
+        "path": "/fa/products/edge/melipc/pmerit/mi5000/sysconfig.html"
+      },
+      {
+        "name": "Softwares",
+        "path": "/fa/products/edge/melipc/pmerit/mi5000/soft.html"
+      }
+    ]
+  }
+}

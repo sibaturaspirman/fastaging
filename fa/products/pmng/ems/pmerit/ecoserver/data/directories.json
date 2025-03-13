@@ -1,0 +1,64 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Energy Saving Supporting Devices",
+            "path": "/fa/products/pmng/ems/index.html",
+			"child": [
+				{
+					"name": "Energy Saving Data Collecting Servers",
+					"path": "/fa/products/pmng/ems/pmerit/ecoserver/index.html"
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+"layerNav": {
+    "name": "Energy Saving Data Collecting Servers",
+    "path": "/fa/products/pmng/ems/pmerit/ecoserver/index.html",
+    "firstLayer": [
+      {
+        "name": "Features",
+        "path": "/fa/products/pmng/ems/pmerit/ecoserver/index.html"
+      },
+      {
+        "name": "System Configuration",
+        "path": "/fa/products/pmng/ems/pmerit/ecoserver/ecoserver_2.html"
+      },
+      {
+        "name": "Product Lineup",
+        "path": "/fa/products/pmng/ems/pmerit/ecoserver/ecoserver_3.html"
+      },
+      {
+        "name": "Case Studies",
+        "path": "/fa/products/pmng/ems/pmerit/ecoserver/ecoserver_4.html"
+      }
+    ]
+  },
+ "switchNav": {
+    "name": "Energy Saving Supporting Devices",
+    "path": "/fa/products/pmng/ems/index.html",
+    "child": [
+      {
+        "group": "Energy Saving Data Collecting Servers",
+        "name": "Energy Saving Data Collecting Servers",
+        "feature": "/fa/products/pmng/ems/pmerit/ecoserver/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/ems&radio=Energy Saving Data Collecting Server&search=B&word=Energy Saving Data Collecting Server&current=MES3",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/ems&radio=Energy Saving Data Collecting Server&search=B&word=Energy Saving Data Collecting Server&current=MES3",
+        "discon": "",
+		"return": {
+			"name": "Energy Saving Data Collecting Servers",
+			"path": "/fa/products/pmng/ems/items/ecoserver/index.html"
+		}
+      }
+        ]
+    }
+}

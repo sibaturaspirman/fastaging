@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*デフォルトCSSの注釈※印をアスタリスクに変更*/
+.c-note--mark::before {
+    content: "*" !important;
+    width: 0.5em;
+}

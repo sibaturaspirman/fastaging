@@ -1,0 +1,139 @@
+@charset "Shift_JIS";
+
+#mainTitle {
+	position: relative;
+	width: 762px;
+	height: 375px;
+	background: url(../images/index_img01.jpg) repeat-x left top;
+}
+#mainTitle .ttl {
+	position: absolute;
+	top: 15px;
+	left: 24px;
+	width: 404px;
+	z-index: 1;
+}
+#mainTitle .btn01 {
+	position: absolute;
+	top: 2px;
+	left: 554px;
+	width: 120px;
+	z-index: 2;
+}
+#mainTitle .btn02 {
+	position: absolute;
+	top: 71px;
+	left: 388px;
+	width: 120px;
+	z-index: 2;
+}
+#mainTitle .btn03 {
+	position: absolute;
+	top: 96px;
+	left: 605px;
+	width: 120px;
+	z-index: 2;
+}
+
+/* clearfix
+--------------------------*/
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; font-size:0; line-height:1; overflow:hidden; }
+.clearfix { display:inline-block; }
+/*\*/
+* html .clearfix { height:1%; }
+.clearfix { display:block; }
+/**/
+
+/* box
+--------------------------*/
+.subSection{
+	margin-bottom:30px;
+}
+.overflow{
+	width:738px;
+	overflow:hidden;
+	zoom:1;
+}
+.overflow.mg22 .wrap{
+	width:762px;
+	padding-left:23px;
+}
+/* 1/3 */
+.overflow.mg22 .floatOneThirds{
+	float:left;
+	width:224px;
+	margin-right:22px;
+	cursor: pointer;
+}
+.overflow.mg22 .floatOneThirds.hover{
+	background: #ddd;
+}
+.in8px{
+	padding:0 8px;
+}
+
+/*cnc*/
+span.under {
+	display:inline-block;
+	float:right;
+	background:none!important;
+	border:none!important;
+	margin-top:-30px;
+	margin-right:10px;
+	font-weight:normal;
+}
+
+.info_box img, .info_box2 img {
+	border:1px solid #ccc;
+}
+
+.info_box img {
+	margin:10px auto;
+	display:block;
+}
+
+
+.info_box2 img {
+	display:inline-block;
+}
+
+
+/*pop up*/
+body.melfa_popup div#melfa_main_area, body.melfa_popup div#module_titleArea, body.melfa_popup div#global_header div.container,
+body.melfa_popup div#global_footer div.container, body.melfa_popup div.pagetop {
+	width:720px!important;
+	margin:0 auto!important;
+}
+body.melfa_popup td {
+	font-size:85%;
+}
+
+/* font
+--------------------------*/
+.red{
+	color:#e61717;
+}
+
+/* spece
+--------------------------*/
+.br05em{
+	margin-bottom:0.5em;	
+}
+.br1em{
+	margin-bottom:1em;	
+}
+
+/* list style
+--------------------------*/
+#melfa_main_area ul {
+    margin: 10px 0 0 20px;
+    list-style: disc;
+}
+
+/* table
+--------------------------*/
+.j12 { 
+	font-size: 12px; 
+	line-height: 15px;
+	padding-right: 0.5em; 
+}

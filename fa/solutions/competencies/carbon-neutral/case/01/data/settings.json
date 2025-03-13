@@ -1,0 +1,12 @@
+{
+	"floatingMenu": {
+		"specificItems": [
+			{
+				"link": "https://dl.mitsubishielectric.co.jp/dl/fa/document/catalog/competencies/l16100/l16100eng.pdf",
+				"icon": "download",
+				"name": "Catalog<br>Download"
+			}
+		],
+		"commonItems": []
+	}
+}

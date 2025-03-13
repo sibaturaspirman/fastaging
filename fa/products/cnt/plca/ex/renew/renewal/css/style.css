@@ -1,0 +1,381 @@
+﻿@charset "UTF-8";
+
+/* PC専用表示 */
+@media only screen and (max-width: 768px){
+	.for_pc {
+		display: none;
+	}
+}
+
+/* スマートフォン専用表示 */
+@media (min-width: 769px){
+	.for_sp {
+		display: none;
+	}
+}
+
+/* h2見出し前の前文 */
+.fa-text-lead {
+	margin-bottom: 5px;
+}
+.fa-text-lead + .fa-heading_lv2 {
+	margin-top: 0;
+}
+
+/* h3見出し前のキャプション */
+.caption {
+	margin-bottom: 5px;
+	text-align: right;
+}
+.caption + .fa-heading_lv3 {
+	margin-top: 0;
+}
+
+/* h3見出し後のアイコン */
+.fa-heading_lv3 + .fa-icon-spec{
+	margin-top: -16px;
+	margin-bottom: 18px;
+}
+
+/* 位置調整 */
+.mt0 { margin-top: 0; }
+.mt05 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.mt15 { margin-top: 15px; }
+.mb0 { margin-bottom: 0; }
+.mb05 { margin-bottom: 5px; }
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.ml15 { margin-left: 15px; }
+.mr40 { margin-right: 40px; }
+
+/* 文字装飾 */
+.red { color: #F00; }
+.orange { color: #F90; }
+.fwnml { font-weight: normal; }
+.bold { font-weight: bold; }
+.xsmall { font-size: 70%; }
+.small { font-size: 80%; }
+.lsmin { letter-spacing: -0.1px; }
+.rect { border: 1px solid #333;	padding: 0.25em 0.75em; }
+
+/* テキスト中のアイコン */
+.fa-icon-intext {
+	margin-bottom: 2px;
+	margin-left: 10px;
+}
+
+/* スペック表外のアイコン */
+.fa-icon-spec {
+	text-align: right;
+}
+.fa-icon-spec span {
+	display: inline-block;
+}
+.fa-icon-spec span img {
+	margin-left: 6px;
+}
+.mouse_ov a:hover img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+/* 改行不可(MELSEC- の後ろで改行させない等) */
+.ilbk {
+	display: inline-block;
+	text-indent: 0;
+}
+
+/* 長いURLの折り返し */
+.bword {
+	word-wrap: break-word;
+}
+
+/* 2段組みの間を空ける（PC表示時） */
+@media (min-width: 769px){
+	.fa-column.clmspace .fa-column_item + .fa-column_item {
+		margin-left: 15px;
+	}
+}
+
+/* 注意書き（1pxボーダー） */
+.fa-notice_box {
+	border: 1px solid #999;
+	padding: 2px 4px;
+	margin-top: 20px;
+}
+.fa-notice_box .fa-text {
+	margin-bottom: 0;
+}
+
+/* 表組（基本は上下中央揃え） */
+.fa-heading_table table th,
+.fa-heading_table table td {
+	vertical-align: middle;
+}
+
+/* 表組キャプション（右上） */
+.tcap_rt {
+	text-align: right;
+}
+
+/* 表組キャプション（右下） */
+.tcap_rb {
+	text-align: right;
+}
+
+/* 番号付きリストの頭出し */
+.fa-odrblock {
+	display: flex;
+}
+.fa-odrblock .num {
+	white-space: nowrap;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+.fa-odrblock .txt {
+	flex-grow: 1;
+}
+
+/* 標準リスト（スマホ表示での修正） */
+@media only screen and (max-width: 768px){
+	.fa-normal_list ol li,
+	.fa-normal_list ul li {
+		width: 100%;
+		padding-right: 0;
+	}
+}
+
+/* 番号付きリストの太字キャンセル */
+.fa-normal_list ol li {
+	font-weight: normal;
+}
+
+/* 行頭マークが四角のリスト */
+.fa-normal_list.squarelist ul li {
+	list-style-type: none;
+	position: relative;
+	padding-left: 1em;
+	margin-left: 5px;
+}
+.fa-normal_list.squarelist ul li::before {
+	content: "";
+	width: 0.5em;
+	height: 0.5em;
+	background-color: #333;
+	position: absolute;
+	top: 0.5em;
+	left: 0em;
+}
+
+/* 行頭マークが●の段落 */
+.circlemark {
+	position: relative;
+	padding-left: 1em;
+}
+.circlemark::before {
+	content: "";
+	width: 0.5em;
+	height: 0.5em;
+	border-radius: 0.25em;
+	background-color: #333;
+	position: absolute;
+	top: 0.5em;
+	left: 0em;
+}
+
+/* 脚注文字サイズ */
+.fa-footnote,
+.fa-footnote sup {
+	font-size: 85%;
+	line-height: 1.5em;
+}
+
+/* コンセプト */
+#MELSEC_01_01_lv1 + .fa-column {
+    margin-top: 20px;
+}
+
+/* 置換え事例 - 個別ページ */
+.preHead {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.preHead .leadTxt {
+	line-height: 1.5em;
+	padding-right: 1em;
+	margin-bottom: 0;
+}
+.preHead .backLink {
+	white-space: nowrap;
+	background: url("../case/images/bg_linkback.gif") no-repeat left center;
+	background-position: top 4px left 0px;
+	padding-left: 15px;
+	margin-bottom: 0;
+}
+@media only screen and (max-width: 768px){
+	.preHead .backLink {
+		background-position: top 5px left 0px;
+	}
+}
+.preHead + .fa-heading_lv2 {
+	margin-top: 5px;
+}
+.fa-use_icon {
+	text-align: right;
+}
+.fa-use_icon img {
+	margin-bottom: 2px;
+}
+@media only screen and (max-width: 768px){
+	.fa-use_icon img {
+		margin-bottom: -2px;
+	}
+}
+.fa-heading_lv2 + .fa-use_icon {
+	margin-top: -10px;
+}
+.fa-heading_lv3 .subtxt {
+	font-size: 75%;
+}
+.fa-catch {
+	font-size: 120%;
+	font-weight: bold;
+	color: #036;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+.fa-normal_list li.notice {
+	list-style-type:none;
+	font-size: 85%;
+}
+#a_a1s_adapter {
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+@media only screen and (max-width: 768px){
+	.fa-normal_list li.notice {
+		font-size: 12px;
+	}
+}
+
+/* MELSECNET(II)、MELSECNET/10ゲートウェイセット */
+#gatewaytable th {
+	white-space: nowrap;
+}
+#gatewaytable td:nth-child(2),
+#gatewaytable td:nth-child(3) {
+	border-left: none;
+	border-right: none;
+}
+#gatewaytable td:nth-child(3),
+#gatewaytable td:nth-child(4) {
+	vertical-align: top;
+}
+#gatewaytable td:nth-child(4) {
+	border-left: none;
+}
+
+/* A0J2リニューアルツール */
+@media (min-width: 769px){
+	#A0J2renewal {
+		display: flex;
+		flex-direction: column;
+	}
+	#A0J2renewal .column_item_part {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#A0J2renewal .column_item_part:nth-child(1) {
+		height: 40%;
+	}
+	#A0J2renewal .column_item_part:nth-child(2) {
+		height: 30%;
+	}
+	#A0J2renewal .column_item_part:nth-child(3) {
+		height: 30%;
+	}
+}
+
+/* MELSECNET(II)、/Bローカル局用データリンクユニット */
+#melsecnet2_datalink .fa-notice_box {
+	margin-top: 5px;
+	margin-left: 5px;
+	border: 2px solid #F90;
+	padding: 5px;
+}
+
+/* A/QnA→Q変換サポートツール */
+#support_tool01 {
+}
+#support_tool01 p {
+	margin-bottom: 5px;
+}
+#support_tool02 {
+	list-style-type: decimal;
+	margin-left: 1.5em;
+	font-weight: normal;
+}
+#support_tool03 {
+}
+#support_tool04 dt {
+	font-weight: bold;
+}
+#support_tool04 dd {
+	margin-left: 2.7em;
+}
+#support_tool04 dd + dt {
+	margin-top: 0.5em;
+}
+@media (min-width: 769px){
+	#support_tool01 {
+		margin-left: 20px;
+	}
+	#support_tool03 {
+		margin-right: 40px;
+	}
+	#support_tool04 {
+		line-height: 1.5;
+	}
+	#support_tool05 .fig2cols .fa-column_item {
+		text-align: center;
+	}
+	#support_tool05 .fig2cols .fa-column_item {
+		flex-basis: 50%;
+	}
+	#support_tool05 .fig2cols .fa-column_item .fa-text {
+		margin-bottom: 0;
+	}
+	#support_tool05 #cap05-1 {
+		position: relative;
+		right: 1em;
+	}
+	#support_tool05 .fa-column_item .fa-text {
+		text-align: center;
+	}
+}
+.support_tool_title {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+@media only screen and (max-width: 768px){
+	.support_tool_title img {
+		width: 100%;
+		height: auto;
+	}
+}
+/* Q Series Large Type Base Unit */
+@media (min-width: 769px){
+	#s_largebase01 {
+		margin-bottom: 0;
+	}
+}
+@media only screen and (max-width: 768px){
+	#s_largebase01 {
+		margin-bottom: 10px;
+	}
+}

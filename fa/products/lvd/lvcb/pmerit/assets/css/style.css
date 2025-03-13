@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* PC・スマホ表示 */
+@media (min-width:768px) {
+  .pc_only {
+      display: block !important;
+  }
+  .sp_only {
+      display:none !important;
+  }
+}
+@media only screen and (max-width:767px) {
+  .pc_only {
+      display:none !important;
+  }
+  .sp_only {
+      display: block !important;
+  }
+}
+
+/* 色付き枠の設定 */
+.box_01 {
+	padding: 10px 5px;
+	background: #FFF;
+	border: 2px solid #00a0c8;
+	height: 100%;
+}
+.box_01_div {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.box_01_title {
+	color: #00a0c8;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.7;
+	margin: 5px 0 0 15px;
+}
+.box_01_title span {
+	border-bottom: dotted 4px #00a0c8;
+}
+.cer_name {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.rohs_pdf {
+	padding: 5px 15px;
+}
+.rohs_ul {
+	margin: 0 15px;
+	padding: 0 0.5em;
+	position: relative;
+}
+.rohs_ul li {
+	line-height: 1.5;
+	padding: 0.5em 0 0.5em 1.7em;
+	border-bottom: dashed 1px silver;
+	list-style-type: none!important;
+	background: url(/fa/products/lvd/lvcb/pmerit/assets/img/icon_pdf.gif) no-repeat left;
+}
+.rohs_ul li:last-of-type {
+	border-bottom: none;
+}
+
+/* CEとCHINAの枠ありなし */
+.b_n_top {
+	border-top: none !important;
+	z-index: -1;
+}
+.b_n_top_2 {
+	border-top: 1px solid #BBB !important;
+	z-index: 1;
+}
+
+/* テーブルスクロール（横幅980以上でも適用） */
+.c-table--scroll{
+	overflow:auto;
+	white-space:nowrap
+}
+.c-table--scroll .c-table__content{
+	width:auto;
+	min-width:100%;
+}
+
+/* テーブル内画像 */
+.cer_table_common {
+	text-indent: -9999px;
+	border-bottom: none !important;
+	z-index: -1;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+.CCC {
+	height: 40px;
+	width: 95px;
+	background-image: url(/fa/products/lvd/lvcb/pmerit/assets/img/logo_certifications_01.png) !important;
+}
+.CE {
+	height: 40px;
+	width: 75px;
+	background-image: url(/fa/products/lvd/lvcb/pmerit/assets/img/logo_certifications_02.png) !important;
+}
+.LR {
+	height: 48px;
+	width: 45px;
+	background-image: url(/fa/products/lvd/lvcb/pmerit/assets/img/logo_certifications_03.png) !important;
+}
+.DNV {
+	height: 43px;
+	width: 45px;
+	background-image: url(/fa/products/lvd/lvcb/pmerit/assets/img/logo_certifications_dnv.png) !important;
+}
+.BV {
+	height: 40px;
+	width: 45px;
+	background-image: url(/fa/products/lvd/lvcb/pmerit/assets/img/logo_certifications_05.png) !important;
+}
+.ABS {
+	height: 40px;
+	width: 45px;
+	background-image: url(/fa/products/lvd/lvcb/pmerit/assets/img/logo_certifications_07.png) !important;
+}
+.CCS {
+	height: 40px;
+	width: 45px;
+	background-image: url(/fa/products/lvd/lvcb/pmerit/assets/img/logo_certifications_08.png) !important;
+}
+.ASTA {
+	height: 40px;
+	width: 45px;
+	background-image: url(/fa/products/lvd/lvcb/pmerit/assets/img/logo_certifications_09.png) !important;
+}
+.TUV {
+	height: 40px;
+	width: 45px;
+	background-image: url(/fa/products/lvd/lvcb/pmerit/assets/img/logo_certifications_10.png) !important;
+}
+.KEMA {
+	height: 40px;
+	width: 45px;
+	background-image: url(/fa/products/lvd/lvcb/pmerit/assets/img/logo_certifications_11.png) !important;
+}
+table.t_cer th {
+	vertical-align: middle !important;
+}
+td.t_pdf,td.t_pdf2 {
+	text-align: center;
+    vertical-align: middle !important;
+	align-items: center;
+	padding: 0!important;
+}
+td.t_pdf,td.t_pdf2 img {
+	margin: 0!important;
+	padding: 0!important;
+}
+td.t_pdf a {
+	display: block !important;
+	width: 100%;
+	height: 100%;
+	padding: 0.5em 0!important;
+}
+td.t_pdf2 a {
+	display: block !important;
+	width: 100%;
+	height: 100%;
+	padding: 1.8em 0!important;
+}
+td.t_pdf a:hover {
+    background-color: #CFF !important;
+}
+td.t_pdf2 a:hover {
+    background-color: #CFF !important;
+}
+
+
+
+

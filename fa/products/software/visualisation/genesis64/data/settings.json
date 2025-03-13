@@ -1,0 +1,138 @@
+{
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/app/fa/download/search.do?kisyu=/scada&mode=catalog"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/app/fa/download/search.do?kisyu=/scada&mode=manual"
+					}
+				]
+			},
+			{
+				"name": "FAQ",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/"
+			}
+	  ],
+		"commonItems": [
+		]
+	},
+	"spotlight": {
+		"items": [
+			{
+				"name": "Spotlight1",
+				"img": "/fa/shared/gws0001/img/dummy_index.png",
+				"link": "#"
+			},
+			{
+				"name": "Spotlight2",
+				"img": "/fa/shared/gws0001/img/dummy_index.png",
+				"link": "#"
+			},
+			{
+				"name": "Spotlight3",
+				"img": "/fa/shared/gws0001/img/dummy_index.png",
+				"link": "#"
+			}
+		]
+	},
+	"productsMenu": {
+		"items": [
+			{
+				"name": "General Product Catalog",
+				"icon": "catalog",
+				"link": "/fa/dctlg/index.html"
+			},
+			{
+				"name": "FA Integrated Selection Tool",
+				"icon": "tree",
+				"link": "/fa/products/select/index.html"
+			}
+		]
+	},
+	"optionItems": {
+		"items": [
+			{
+				"name": "Option menu1",
+				"link": "#"
+			},
+			{
+				"name": "Option menu2",
+				"link": "#"
+			},
+			{
+				"name": "Option menu3",
+				"link": "#"
+			}
+		]
+	},
+	"download": {
+		"recommended": [
+			{
+				"name": "ICONICS Automation Software Suite",
+				"img": "/fa/products/software/visualisation/genesis64/assets/img/l08785engd.jpg",
+				"link": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/scada/l08785eng/l08785engd.pdf"
+			}
+		],
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/app/fa/download/search.do?kisyu=/scada&mode=catalog"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/app/fa/download/search.do?kisyu=/scada&mode=manual"
+			}
+		]
+	},
+	"relatedLink": {
+		"items": [
+			{
+				"name": "FA e-Learning",
+				"link": "/fa/assist/e-learning/index.html"
+			},
+			{
+				"name": "FA Terminology Dictionary",
+				"link": "/fa/assist/fa_dictionary/index.html"
+			},
+			{
+				"name": "ICONICS, Inc <sup>*</sup> <span class=\"u-icons u-icons--externalLink u-icons--after\"></span>",
+				"link": "https://iconics.com/en-us/",
+				"attr": {
+					"target": "_blank",
+					"rel": "noopener"
+				}
+			}
+		]
+	},
+	"banner": {
+		"items": [
+		]
+	},
+	"contact": {
+		"items": [
+			{
+				"name": "Contact us",
+				"icon": "estimate",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/"
+			}
+		]
+	}
+}

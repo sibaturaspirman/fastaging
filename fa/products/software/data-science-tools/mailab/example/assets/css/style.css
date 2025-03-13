@@ -1,0 +1,202 @@
+@charset "utf-8";
+.ml-case {
+	max-width: 1010px;
+	width: 100%;
+	margin: 70px auto 0;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.ml-case .ml-case-link {
+	margin-bottom: 48px;
+	display: flex;
+}
+.ml-case .ml-case-link li {
+	padding: 5px 30px 4px;
+	background-color: #FFF;
+	border: 2px solid #E54410;
+	border-radius: 24px;
+	color: #E54410;
+	font-weight: bold;
+	transition: all .3s ease-out;
+}
+.ml-case .ml-case-link li:hover {
+	background-color: #E54410;
+	color: #FFF;
+	cursor: pointer;
+}
+.ml-case .ml-case-link li:last-child {
+	margin-left: 20px;
+}
+.ml-case .ml-case-link li span {
+	font-size: 20px;
+}
+
+.ml-case .ml-case-1 {
+	margin-bottom: 157px;
+}
+
+.ml-case .ml-case-name {
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+}
+.ml-case .ml-case-name span {
+	font-size: 30px;
+}
+.ml-case .ml-case-head {
+	margin-bottom: 30px;
+	padding: 82px 54px 78px;
+	color: #FFF;
+}
+.ml-case .ml-case-1 .ml-case-head {
+	background: url(../img/example_big_1.png) no-repeat center/cover;
+}
+.ml-case .ml-case-2 .ml-case-head {
+	background: url(../img/example_big_2.png) no-repeat center/cover;
+}
+.ml-case .ml-case-head h3 {
+	margin-bottom: 20px;
+	font-size: 30px;
+	text-align: left;
+}
+.ml-case .ml-case-head p {
+	font-size: 20px;
+	text-align: left;
+}
+.ml-case > div > p {
+	margin-bottom: 68px;
+	font-size: 16px;
+}
+
+.ml-case .ml-case-box {
+	width: 88.78%;
+	margin: 0 auto 60px;
+	text-align: center;
+}
+.ml-case .ml-case-box h3 {
+	margin-bottom: 30px;
+	font-size: 28px;
+	display: inline-block;
+	position: relative;
+}
+.ml-case .ml-case-box h3::before,
+.ml-case .ml-case-box h3::after {
+	width: 108px;
+	content: '';
+	border-bottom: 4px dotted #F3C950;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.ml-case .ml-case-box h3::before {
+	left: 0;
+	transform: translateX(calc(-100% - 20px));
+}
+.ml-case .ml-case-box h3::after {
+	right: 0;
+	transform: translateX(calc(100% + 20px));
+}
+.ml-case .ml-case-box .ml-case-item {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.ml-case .ml-case-box .ml-case-item .ml-case-item-text {
+	margin-right: 30px;
+}
+.ml-case .ml-case-box .ml-case-item .ml-case-item-text h4 {
+	margin-bottom: 20px;
+	font-size: 24px;
+	text-align: left;
+}
+.ml-case .ml-case-box .ml-case-item .ml-case-item-text p {
+	font-size: 16px;
+	line-height: 1.75;
+	text-align: left;
+}
+.ml-case .ml-case-box .ml-case-item img {
+	max-width: 336px;
+	width: 100%;
+}
+
+
+@media screen and (min-width:601px) {
+	.ml-sp600,
+	img.ml-sp600 {
+		display: none;
+	}
+}
+@media screen and (max-width:600px) {
+	.ml-pc600,
+	img.ml-pc600 {
+		display: none;
+	}
+
+	.ml-case {
+		padding: 0 15px 10px;
+	}
+	.ml-case .ml-case-link {
+		margin-bottom: 32px;
+		justify-content: center;
+	}
+	.ml-case .ml-case-link li,
+	.ml-case .ml-case-link li span {
+		font-size: 16px;
+	}
+	.ml-case .ml-case-link li {
+		padding: 10px 32px 9px;
+	}
+	.ml-case .ml-case-head {
+		margin-bottom: 20px;
+		padding: 48px 28px 43px;
+	}
+	.ml-case .ml-case-1 {
+		margin-bottom: 112px;
+	}
+	.ml-case .ml-case-1 .ml-case-head {
+		background: url(../img/example_big_1_SP.png) no-repeat center/cover;
+	}
+	.ml-case .ml-case-2 .ml-case-head {
+		background: url(../img/example_big_2_SP.png) no-repeat center/cover;
+	}
+	.ml-case .ml-case-head h3 {
+		margin-bottom: 12px;
+		font-size: 18px;
+	}
+	.ml-case .ml-case-head p {
+		font-size: 16px;
+	}
+	.ml-case > div > p {
+		margin-bottom: 40px;
+		text-align: left;
+	}
+	.ml-case .ml-case-box {
+		margin: 0 auto 40px;
+		width: 100%;
+	}
+	.ml-case .ml-case-box h3 {
+		margin-bottom: 19px;
+		font-size: 22px;
+	}
+	.ml-case .ml-case-box h3::before,
+	.ml-case .ml-case-box h3::after {
+		width: 60px;
+	}
+	.ml-case .ml-case-box .ml-case-item {
+		display: block;
+	}
+	.ml-case .ml-case-box .ml-case-item .ml-case-item-text {
+		margin-right: 0;
+	}
+	.ml-case .ml-case-box .ml-case-item .ml-case-item-text h4 {
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
+	.ml-case .ml-case-box .ml-case-item .ml-case-item-text p {
+		line-height: 1.5;
+	}
+	.ml-case .ml-case-box .ml-case-item .ml-case-item-text img {
+		margin-bottom: 14px;
+	}
+}

@@ -1,0 +1,16 @@
+{
+  "layerNav": {
+    "name": "S-PM Geared Motors Parallel shaft type",
+    "path": "/fa/products/drv/gear/pmerit/spm_parallel/index.html",
+    "firstLayer": [
+      {
+        "name": "Features",
+        "path": "/fa/products/drv/gear/pmerit/spm_parallel/index.html"
+      },
+      {
+        "name": "Model name configurations",
+        "path": "/fa/products/drv/gear/pmerit/spm_parallel/comp.html"
+      }
+    ]
+  }
+}

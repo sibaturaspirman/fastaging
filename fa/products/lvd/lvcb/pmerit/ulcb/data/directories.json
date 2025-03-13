@@ -1,0 +1,79 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html",
+            "child": [
+				{
+					"name": "UL 489 Listed Circuit Breakers",
+					"path": "/fa/products/lvd/lvcb/pmerit/ulcb/index.html"
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "UL 489 Listed Circuit Breakers",
+    "path": "/fa/products/lvd/lvcb/pmerit/ulcb/index.html",
+    "firstLayer": [
+      {
+        "name": "UL Standards",
+        "path": "/fa/products/lvd/lvcb/pmerit/ulcb/index.html"
+	  },
+      {
+        "name": "Products for 50 to 250AF",
+        "path": "/fa/products/lvd/lvcb/pmerit/ulcb/index_2.html",
+        "secondLayer": [
+        {
+          "name": "WS-V Series",
+          "path": "/fa/products/lvd/lvcb/pmerit/ulcb/index_2.html"
+        },
+        {
+          "name": "SRU/HRU Series",
+          "path": "/fa/products/lvd/lvcb/pmerit/ulcb/index_3.html"
+        },
+        {
+          "name": "SMU Series",
+          "path": "/fa/products/lvd/lvcb/pmerit/ulcb/index_4.html"
+        }
+        ]
+      },
+      {
+        "name": "Products for 400/630AF",
+        "path": "/fa/products/lvd/lvcb/pmerit/ulcb/index_5.html"
+	  },
+      {
+        "name": "Product Lineup",
+        "path": "/fa/products/lvd/lvcb/pmerit/ulcb/index_6.html"
+	  }
+    ]
+  },
+"switchNav": {
+	"name": "UL 489 Listed Circuit Breakers",
+	"path": "/fa/products/lvd/lvcb/items/ulcb/index.html",
+	"child": [
+		{
+			"group": "UL 489 Listed Circuit Breakers",
+			"name": "UL 489 Listed Circuit Breakers",
+			"feature": "/fa/products/lvd/lvcb/pmerit/ulcb/index.html",
+			"spec": "/fa/products/faspec/search.page?kisyu=/lvcb&current=ULCB",
+			"standard": "/fa/products/standard/SearchServlet.page?kisyu=/lvcb&current=ULCB",
+			"discon": "",
+            "return": {
+                "name": "UL 489 Listed Circuit Breakers",
+                "path": "/fa/products/lvd/lvcb/items/ulcb/index.html"
+			}
+		}
+	]
+}
+}
+  

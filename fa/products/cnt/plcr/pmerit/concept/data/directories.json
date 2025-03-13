@@ -1,0 +1,28 @@
+{
+	"layerNav": {
+		"name": "MELSEC iQ-R Series Features",
+		"path": "/fa/products/cnt/plcr/pmerit/concept/index.html",
+		"firstLayer": [
+			{
+				"name": "Concept TOP",
+				"path": "/fa/products/cnt/plcr/pmerit/concept/index.html"
+			},
+			{
+				"name": "Process",
+				"path": "/fa/products/cnt/plcr/pmerit/concept/process.html"
+			},
+			{
+				"name": "Safety",
+				"path": "/fa/products/cnt/plcr/pmerit/concept/safety.html"
+			},
+			{
+				"name": "Intelligence",
+				"path": "/fa/products/cnt/plcr/pmerit/concept/intelligence.html"
+			},
+			{
+				"name": "Others",
+				"path": "/fa/products/cnt/plcr/pmerit/concept/others.html"
+			}
+		]
+	}
+}

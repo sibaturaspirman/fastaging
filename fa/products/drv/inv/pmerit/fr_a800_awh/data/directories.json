@@ -1,0 +1,72 @@
+{
+  "layerNav": {
+    "name": "FREQROL-A800 Plus series",
+    "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_crn/index.html",
+    "firstLayer": [
+      {
+        "name": "Overview",
+        "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_crn/index.html"
+      },
+      {
+        "name": "FREQROL-A800 Plus for CRANES",
+        "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_crn/index.html"
+      },
+      {
+        "name": "FREQROL-A800 Plus for Roll to Roll",
+        "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_r2r/index.html",
+        "secondLayer": [
+          {
+            "name": "Concept",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_r2r/index.html"
+          },
+          {
+            "name": "System simplification",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_r2r/r2r01.html"
+          },
+          {
+            "name": "Wide range of applications",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_r2r/r2r02.html"
+          },
+          {
+            "name": "Easy startup and adjustment",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_r2r/r2r03.html"
+          },
+          {
+            "name": "Unparalleled Performance. Uncompromising Quality.",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_r2r/r2r04.html"
+          },
+          {
+            "name": "Delivering a comfortable inverter operating environment",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_r2r/r2r05.html"
+          },
+          {
+            "name": "Model configuration",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_r2r/r2r06.html"
+          }
+        ]
+      },
+      {
+        "name": "FREQROL-A800 Plus Liquid cooled type",
+        "path": "/fa/products/drv/inv/pmerit/fr_a800_lc/index.html"
+      },
+      {
+        "name": "FREQROL-A800 Plus for Automated warehouse",
+        "path": "/fa/products/drv/inv/pmerit/fr_a800_awh/index.html",
+        "secondLayer": [
+          {
+            "name": "Features",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_awh/index.html"
+          },
+          {
+            "name": "System configuration diagram/Terminal connection diagrams",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_awh/system_configuration.html"
+          },
+          {
+            "name": "Model configuration",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_awh/model_name_configuration.html"
+          }
+        ]
+      }
+    ]
+  }
+}

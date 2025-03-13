@@ -1,0 +1,153 @@
+{
+	"coment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+		"specificItems": [
+			{
+				"comment": "linkは各機種のダウンロードページのURLに変更可",
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/fa/download/search.page?kisyu=/cnc&mode=catalog"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/fa/download/search.page?kisyu=/cnc&mode=manual"
+					},
+					{
+						"name": "CAD Data",
+						"icon": "cad",
+						"link": "/fa/download/cad/search.page?kisyu=/cnc&mode=cad"
+					},
+					{
+						"name": "Software",
+						"icon": "software",
+						"link": "/fa/download/software/search.page?kisyu=/cnc&mode=software"
+					}
+				]
+			}
+		],
+		"commonItems": []
+	},
+	"spotlight": {
+		"comment": "Spotlightに掲載したいページタイトル・画像・リンクを記入",
+		"items": [
+		]
+	},
+	"productsMenu": {
+		"comment": "機種共通メニューのlinkは各機種のページのURLに変更可",
+		"items": [
+			{
+				"name": "Product Specifications",
+				"icon": "settings",
+				"link": "/fa/products/faspec/search.page?kisyu=/cnc"
+			}
+		]
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "Digital Catalogs",
+				"link": "/fa/products/cnt/cnc/pmerit/catalog_en.html"
+			},
+			{
+				"name": "Events",
+				"link": "/fa/products/cnt/cnc/evt/index.html"
+			},
+			{
+				"name": "CNC NEWS",
+				"link": "/fa/download/search.page?q=&mode=catalog&kisyu=%2Fcnc&kisyuid=&sort=0&lang=1&listView=1&category1=CNC+News&category2=&category3=&preview=&changeKeywordFlag="
+			}
+		]
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除",
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','BNP-A1246(ENG)','cnc','3')",
+				"img": "javascript.toCatalogInfo('img','BNP-A1246(ENG)','cnc','5')",
+				"link": "javascript.toCatalogInfo('link','BNP-A1246(ENG)','cnc','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/fa/download/search.page?kisyu=/cnc&mode=catalog"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/fa/download/search.page?kisyu=/cnc&mode=manual"
+			},
+			{
+				"name": "CAD Data",
+				"icon": "cad",
+				"link": "/fa/download/cad/search.page?kisyu=/cnc&mode=cad"
+			},
+			{
+				"name": "Software",
+				"icon": "software",
+				"link": "/fa/download/software/search.page?kisyu=/cnc&mode=software"
+			}
+
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "Related Link1",
+				"link": "#"
+			},
+			{
+				"name": "Related Link2",
+				"link": "#"
+			},
+			{
+				"name": "Related Link3",
+				"link": "#"
+			},
+			{
+				"name": "Related Link4",
+				"link": "#"
+			}
+		]
+	},
+	"banner": {
+		"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+		"items": [
+			{
+				"name": "YouTube MECHATRO PLUS",
+				"image": "/fa/products/cnt/cnc/img/banner_youtube_mecha.jpg",
+				"link": "https://www.youtube.com/c/MITSUBISHIELECTRICMECHATRONICS"
+			},
+			{
+				"name": "FA SPEC Search",
+				"image": "/fa/products/assets/img/banner_fa-spec-search.jpg",
+				"link": "/fa/mobile-apps/index.html"
+			}
+		]
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+			{
+				"name": "Contact Us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/"
+			}
+		]
+	}
+}

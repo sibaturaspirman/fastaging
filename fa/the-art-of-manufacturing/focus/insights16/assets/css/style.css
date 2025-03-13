@@ -1,0 +1,7 @@
+@charset "UTF-8";
+.l-inner-medium .c-relatedContents__img>img{width:330px;image-rendering: -webkit-optimize-contrast;}
+.l-inner-medium .c-text>a{word-break:break-all;}
+@media only screen and (max-width:767px){
+/*! Small only */
+.l-inner-medium .c-relatedContents__img>img{width:auto;}
+}

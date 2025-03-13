@@ -1,0 +1,181 @@
+{
+	"comment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+		"specificItems": [
+			{
+				"comment": "linkは各機種のダウンロードページのURLに変更可",
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/fa/download/search.page?mode=catalog&kisyu=/ssc"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/fa/download/search.page?mode=manual&kisyu=/ssc"
+					},
+					{
+						"name": "Technical<br>Bulletin",
+						"icon": "techinfo",
+						"link": "/fa/download/techinfo/search.page?mode=technews&kisyu=/ssc"
+					},
+					{
+						"name": "CAD Data",
+						"icon": "cad",
+						"link": "/fa/download/cad/search.page?mode=cad&kisyu=/ssc"
+					},
+					{
+						"name": "Software",
+						"icon": "software",
+						"link": "/fa/download/software/search.page?mode=software&kisyu=/ssc"
+					}
+				]
+			}
+		],
+		"commonItems": []
+	},
+	"spotlight": {
+		"comment": "Spotlightに掲載したいページタイトル・画像・リンクを記入",
+		"items": [
+		]
+	},
+	"productsMenu": {
+		"comment": "機種共通メニューのlinkは各機種のページのURLに変更可",
+		"items": [
+			{
+				"name": "Product Specification",
+				"icon": "settings",
+				"link": "#",
+				"child":[
+					{
+						"name":"Motion module",                                
+					    "link":"/fa/products/faspec/search.page?kisyu=%2Fssc&page=1&search=B&word=Motion%20module&K-01=MELSEC%20iQ-R%20series"
+					},
+					{
+						"name":"Motion Controller",
+					    "link":"/fa/products/faspec/search.page?kisyu=%2Fssc&page=1&search=B&word=Motion%20Controller&K-01=MELSEC%20iQ-R%20series"
+					},
+					{
+						"name":"Simple Motion module",
+					    "link":"/fa/products/faspec/search.page?kisyu=%2Fssc&page=1&search=B&word=Simple%20Motion%20module&K-01=MELSEC%20iQ-R%20series"
+					}
+				]
+			},
+			{
+				"name": "Products certified/compliant to standards",
+				"icon": "standard",
+				"link": "#",
+				"child":[
+					{
+						"name":"Motion module",
+					    "link":"/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=%2Fssc&page=1&search=B&word=Motion%20module&K-01=MELSEC%20iQ-R%20series"
+					},
+					{
+						"name":"Motion Controller",
+					    "link":"/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=%2Fssc&page=1&search=B&word=Motion%20Controller&K-01=MELSEC%20iQ-R%20series"
+					},
+					{
+						"name":"Simple Motion module",
+					    "link":"/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=%2Fssc&page=1&search=B&word=Simple%20Motion%20module&K-01=MELSEC%20iQ-R%20series"
+					}
+				]
+			},
+			{
+				"name": "FA Integrated Selection Tool",
+				"icon": "tree",
+				"link": "/fa/products/select/index.html"
+			}
+		]
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": [
+		]
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除。ドキュメントリンクの記述は指定するパラメータ数が異なるため注意。",
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','L03179ENG','ssc','3')",
+				"img": "javascript.toCatalogInfo('img','L03179ENG','ssc','5')",
+				"link": "javascript.toCatalogInfo('link','L03179ENG','ssc','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/fa/download/search.page?mode=catalog&kisyu=/ssc"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/fa/download/search.page?mode=manual&kisyu=/ssc"
+			},
+			{
+				"name": "Technical<br>Bulletin",
+				"icon": "techinfo",
+				"link": "/fa/download/techinfo/search.page?mode=technews&kisyu=/ssc"
+			},
+			{
+				"name": "CAD Data",
+				"icon": "cad",
+				"link": "/fa/download/cad/search.page?mode=cad&kisyu=/ssc"
+			},
+			{
+				"name": "Software",
+				"icon": "software",
+				"link": "/fa/download/software/search.page?mode=software&kisyu=/ssc"
+			}
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "FA e-learning",
+				"link": "/fa/assist/e-learning/index.html"
+			}
+		]
+	},
+	"banner": {
+		"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+		"items": [
+				{
+					"name": "New features make things even easier to use!",
+					"image": "/fa/products/assets/img/faist-202411-relatedlink-en.jpg",
+					"link": "/fa/products/select/index.html"
+				},
+				{
+					"name": "FAQ",
+					"image": "/fa/products/cnt/ssc/img/bnr_faq_ssc_gl.jpg",
+					"link": "https://fa-faq.mitsubishielectric.com/category/show/1997"
+				},
+				{
+					"name": "FA SPEC Search",
+					"image": "/fa/products/assets/img/banner_fa-spec-search.jpg",
+					"link": "/fa/mobile-apps/index.html"
+				}
+		]
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+			{
+				"name": "Contact Us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/1997"
+			}
+		]
+	}
+}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+p.t_cap {
+	font-size: 14px !important;
+	font-weight: bold;
+	margin-bottom: 10px !important;
+	text-indent: -105px;
+	padding-left: 105px;
+}
+p.t_cap span {
+	font-size: 11px !important;
+	font-weight: normal;
+}
+table.siyou {
+	font-size: 14px !important;
+	text-align: center;
+	margin-top: -1px !important;
+}
+table.siyou tr td.kyokusu {
+	width: 22px !important;
+}
+.vl_c {
+	vertical-align: middle !important;
+}
+ul.sent {
+	margin-top: 15px;
+	margin-left: 20px;
+	padding-left: 0;
+}
+ul.sent li {
+	list-style-type: disc;
+}

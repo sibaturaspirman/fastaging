@@ -1,0 +1,167 @@
+{
+	"coment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"comment": "linkは各機種のダウンロードページのURLに変更可",
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/app/fa/download/search.do?kisyu=/melipc&mode=catalog"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/app/fa/download/search.do?kisyu=/melipc&mode=manual"
+					},
+					{
+						"name": "Technical<br>Bulletin",
+						"icon": "techinfo",
+						"link": "/app/fa/download/search.do?mode=techinfo&kisyu=/melipc"
+					}
+				]
+			}
+	  ],
+		"commonItems": [
+			{
+				"name": "FAQ",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2486"
+			}
+        ]
+	},
+	"spotlight": {
+		"comment": "Spotlightに掲載したいページタイトル・画像・リンクを記入",
+		"items": [
+			{
+				"name": "Spotlight1",
+				"img": "/fa/shared/gws0001/img/dummy_index.png",
+				"link": "#"
+			},
+			{
+				"name": "Spotlight2",
+				"img": "/fa/shared/gws0001/img/dummy_index.png",
+				"link": "#"
+			},
+			{
+				"name": "Spotlight3",
+				"img": "/fa/shared/gws0001/img/dummy_index.png",
+				"link": "#"
+			}
+		]
+	},
+	"productsMenu": {
+		"comment": "機種共通メニューのlinkは各機種のページのURLに変更可",
+		"items": [
+			{
+				"name": "Product Specifications",
+				"icon": "settings",
+				"link": "/fa/products/faspec/search.page?kisyu=/melipc"
+			},
+			{
+				"name": "Products certified/compliant to standards",
+				"icon": "standard",
+				"link": "/fa/products/standard/SearchServlet.page?kisyu=/melipc"
+			},
+			{
+				"name": "Discontinued Products",
+				"icon": "silver-line",
+				"link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/melipc&category=discon"
+			}
+		]
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "Option Menu1",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu2",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu3",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu4",
+				"link": "#"
+			}
+		]
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除",
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','L08578ENG','melipc','3')",
+				"img": "javascript.toCatalogInfo('img','L08578ENG','melipc','5')",
+				"link": "javascript.toCatalogInfo('link','L08578ENG','melipc','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/app/fa/download/search.do?kisyu=/melipc&mode=catalog"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/app/fa/download/search.do?kisyu=/melipc&mode=manual"
+			},
+			{
+				"name": "Technical Bulletin",
+				"icon": "technews",
+				"link": "/app/fa/download/search.do?mode=techinfo&kisyu=/melipc"
+			}
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "Related Link1",
+				"link": "#"
+			},
+			{
+				"name": "Related Link2",
+				"link": "#"
+			},
+			{
+				"name": "Related Link3",
+				"link": "#"
+			},
+			{
+				"name": "Related Link4",
+				"link": "#"
+			}
+		]
+	},
+	"banner": {
+		"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+		"items": [
+		]
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+			{
+				"name": "Contact Us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2486"
+			}
+		]
+	}
+}

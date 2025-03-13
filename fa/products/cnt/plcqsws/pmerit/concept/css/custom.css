@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* PC専用表示 */
+@media only screen and (max-width:600px){
+	.for_pc {
+		display: none;
+	}
+}
+
+/* スマートフォン専用表示 */
+@media (min-width: 601px){
+	.for_sp {
+		display: none;
+	}
+}
+
+.mt0 {margin-top: 0 !important}
+.mt05 {margin-top: 0.5em !important}
+.mt1 {margin-top: 1em !important}
+.mt15 {margin-top: 1.5em !important}
+.mt2 {margin-top: 2em !important}
+.mb0 {margin-bottom: 0 !important}
+.mb1 {margin-bottom: 1em !important}
+.mb15 {margin-bottom: 1.5em !important}
+.mb2 {margin-bottom: 2em !important}
+
+
+/*.l-section .c-superscriptText {vertical-align: baseline !important}*/
+
+@media only screen and (min-width:1280px) {
+.l-section .size_down img {
+    padding: 1em 14em;
+    }
+.l-section .size_down-2 img {
+    padding: 1em 8em;
+    }
+}
+@media only screen and (max-width:1279px) {
+.l-section .size_down img {
+    padding: 0.5em 4em;
+    }
+.l-section .size_down-2 img {
+    padding: 1em 2em;
+    }
+}
+@media only screen and (max-width:599px) {
+.l-section .size_down img, .l-section .size_down-2 img {
+    padding: 0.25em 0;
+    }
+}
+
+.c-table__head th {text-align: center; vertical-align: middle !important}
+.c-table__contentBody th {vertical-align: middle !important}
+.c-table__contentBody td {text-align: center; vertical-align: middle !important}
+
+.l-grid--right {justify-content: flex-end}
+.no_breaks {display: inline-block}
+.l-txt {text-align: left !important}

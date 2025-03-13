@@ -1,0 +1,130 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+	    "child": [
+   		   {
+        	"name": "Programmable<br>Controllers<br>MELSEC",
+	        "path": "/fa/products/cnt/plc/index.html",
+	        "child": [
+	          {
+	            "name": "MELSEC iQ-R Series",
+	            "path": "/fa/products/cnt/plcr/items/index.html"
+	          },
+	          {
+	            "name": "MELSEC iQ-F Series",
+	            "path": "/fa/products/cnt/plcf/items/index.html"
+	          },
+	          {
+	            "name": "MELSEC-Q Series",
+	            "path": "/fa/products/cnt/plcq/items/index.html"
+	          },
+	          {
+	            "name": "MELSEC-L Series",
+	            "path": "/fa/products/cnt/plcl/items/index.html"
+	          },
+	          {
+	            "name": "MELSEC-F Series",
+	            "path": "/fa/products/cnt/plc_fx/items/index.html"
+	          },
+	          {
+	            "name": "MELSEC-QS/WS Series",
+	            "path": "/fa/products/cnt/plcqsws/items/index.html"
+	          },
+	          {
+	            "name": "MELSEC-A Series",
+	            "path": "/fa/products/cnt/plca/pmerit/concept/index.html"
+	          },
+	          {
+	            "name": "Network-related products",
+	            "path": "/fa/products/cnt/plcnet/items/index.html"
+	          }
+	        ]
+	      }
+	    ]
+	  }
+	]
+  },
+	"switchNav": {
+		"name": "MELSEC-F Series",
+		"path": "/fa/products/cnt/plc_fx/items/index.html",
+		"child": [
+			{
+				"group": "FX",
+				"name": "MELSEC-F series Product Feature",
+				"feature": "/fa/products/cnt/plc_fx/pmerit/contents/index.html",
+				"spec": "",
+				"standard": "",
+				"discon": ""
+			},
+			{
+				"group": "FX",
+				"name": "Main Unit",
+				"feature": "/fa/products/cnt/plc_fx/pmerit/contents/plc/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plc_fx&search=B&word=Main%20Unit",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Main%20Unit&search=B&word=Main%20Unit",
+				"discon": ""
+			},
+			{
+				"group": "FX",
+				"name": "I/O Extension",
+				"feature": "/fa/products/cnt/plc_fx/pmerit/contents/extension/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plc_fx&search=B&word=Input/output%20extension",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Input/output%20extension&search=B&word=Input/output%20extension",
+				"discon": ""
+			},
+			{
+				"group": "FX",
+				"name": "Analog Control",
+				"feature": "/fa/products/cnt/plc_fx/pmerit/contents/analog/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plc_fx&search=B&word=Analog",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Analog&search=B&word=Analog",
+				"discon": ""
+			},
+			{
+				"group": "FX",
+				"name": "High-Speed Counting",
+				"feature": "/fa/products/cnt/plc_fx/pmerit/contents/hc/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plc_fx&search=B&word=High-Speed%20Counter",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=High-Speed%20Counter&search=B&word=High-Speed%20Counter",
+				"discon": ""
+			},
+			{
+				"group": "FX",
+				"name": "Positioning Control",
+				"feature": "/fa/products/cnt/plc_fx/pmerit/contents/positioning/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plc_fx&search=B&word=Positioning",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Positioning&search=B&word=Positioning",
+				"discon": ""
+			},
+			{
+				"group": "FX",
+				"name": "Network/Communication",
+				"feature": "/fa/products/cnt/plc_fx/pmerit/contents/communication/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plc_fx&search=B&word=Data%20link/Communication",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Data%20link/Communication&search=B&word=Data%20link/Communication",
+				"discon": ""
+			},
+			{
+				"group": "FX",
+				"name": "Option",
+				"feature": "/fa/products/cnt/plc_fx/pmerit/contents/option/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plc_fx&search=B&word=Option/Training",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Option/Training&search=B&word=Option/Training",
+				"discon": ""
+			},
+			{
+				"group": "fx_select",
+				"name": "Model selection tool",
+				"feature": "/fa/products/cnt/plcf/ex/select/index.html",
+				"spec": "",
+				"standard": "",
+				"discon": ""
+			}
+		]
+	}
+}

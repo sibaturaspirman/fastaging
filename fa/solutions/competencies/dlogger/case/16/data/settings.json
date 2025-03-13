@@ -1,0 +1,12 @@
+{
+	"floatingMenu": {
+		"specificItems": [
+			{
+				"link": "https://dl.mitsubishielectric.co.jp/dl/fa/document/catalog/sol/dlogger/l16101/l16101.pdf",
+				"icon": "download",
+				"name": "Catalog<br>Download"
+			}
+		],
+		"commonItems": []
+	}
+}

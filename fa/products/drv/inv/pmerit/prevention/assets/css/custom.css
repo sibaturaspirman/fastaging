@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+/* PC専用表示 */
+@media only screen and (max-width:600px) {
+	.for_pc {
+		display: none;
+	}
+}
+
+/* スマートフォン専用表示 */
+@media (min-width: 601px) {
+	.for_sp {
+		display: none;
+	}
+}
+
+.mt0 {
+	margin-top: 0 !important
+}
+
+.mt05 {
+	margin-top: 0.5em !important
+}
+
+.mt1 {
+	margin-top: 1em !important
+}
+
+.mt15 {
+	margin-top: 1.5em !important
+}
+
+.mt2 {
+	margin-top: 2em !important
+}
+
+.kome {
+	color: #F00;
+}
+
+.kome_desc1 {
+	margin-left: 0;
+}
+
+.kome_desc1 li {
+	margin-top: 0;
+	text-indent: -2.2em;
+	list-style: none;
+	padding-left: 2.2em;
+	font-size: 70%;
+}
+
+.kome_desc1 li.double {
+	text-indent: -3.2em;
+	padding-left: 3.2em;
+}
+
+.center{
+	text-align: center;
+}
+.right{
+	text-align: right;
+}
+.left{
+	text-align: left;
+}
+
+.fc_blue{
+	color: #375372;
+}
+
+.c-table__headCell{
+	vertical-align: middle;
+}
+
+.kome_01 {width: .8em !important;}
+.kome_02 {width: 1.5em !important;}
+
+.mt10 {margin-top: 10px !important;}
+
+table.dataTable-lup th {
+	font-weight: normal;
+	font-size: 13px;
+	vertical-align: middle;
+	text-align: left;
+	padding: 0 10px;
+}
+
+table.dataTable-lup td {
+	text-align: left;
+	padding: 10px;
+}
+
+.text-cn {text-align: center !important;}
+.c-titleText span {font-weight: normal;}
+.dataTable-lup th {font-weight: bold !important;}
+
+.c-localNav a.is-active, .c-localNav a:visited.is-active {
+    font-weight: normal !important;
+    color: #000 !important;
+}
+
+.h2_layout {
+    color: #FFFFFF;
+    background-color: #7f859b;
+    border-radius: 0.3em;
+    font-size: 16px;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.fa-heading_table_body th,
+.fa-heading_table_body td {
+	vertical-align: middle;
+	font-weight: normal;
+}
+
+.h3_layout_short{
+	color: #FFFFFF;
+	background-color: #5B5B5B;
+	border-radius: 0.3em;
+	font-size: 16px;
+	padding: 0.5em;
+	font-weight: bold;
+	text-align: center;
+	width: 250px;
+}
+
+.got_layout{
+	background-color: rgba(246, 246, 238, 1);
+    margin: 1em 0 0 1em;
+    padding: 0.7em;
+    border-radius: 0.3em;
+}
+
+table.prevention_table {
+	width: 90%;
+	margin: 2em auto;
+}
+td.img_area {width: 48%; text-align: center;}
+.border_img {
+	width: 100%;
+    border: 8pt solid #F2F2F2;
+}
+
+.arrow {vertical-align: middle;}
+.sp_only {display: none;}
+
+.item_label {
+    position: relative;
+	float: left;
+	padding: 5pt;
+    text-decoration: none;
+    border-bottom: 1px;
+    width: 100%;
+}
+.item_label:hover{
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+}
+.item_label_inner {
+    position: absolute;
+    font-size: 15px;
+    bottom: 60px;
+    left: 26%;
+    color: black;
+}
+.item_label_inner:hover{
+	text-decoration: underline;
+}
+
+.icon p:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    border: 5px solid transparent;
+    border-left: 5px solid red;
+}
+.item_label img {width: 100%;}
+
+/********************************************
+
+table
+
+**********************************************/
+.c-table__head th {
+    text-align: center;
+    vertical-align: middle !important;
+    font-weight: bold;
+}
+.c-table__head th,
+.c-table__contentBody th,
+.c-table__contentBody td {
+    vertical-align: middle !important;
+}
+
+.h3_layout {
+    color: #4D587E;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15pt;
+}
+.fa-column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px
+}
+
+.fa-column_item {
+    box-sizing: border-box;
+    width: auto;
+    max-width: calc(100% - 15px);
+    min-height: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
+.fa-column-reverse .fa-column_item {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1
+}
+
+.fa-column-reverse .fa-column_item-media {
+    margin-right: 0;
+    margin-left: 15px;
+    -webkit-box-ordinal-group: NaN;
+    -webkit-order: inherit;
+    -ms-flex-order: inherit;
+    order: inherit
+}
+@media only screen and (min-width:1280px) {
+	.col1_img img {
+		padding: 1em 14em;
+	}
+	.img_50per {
+		max-width: 50%;
+		margin: 0 auto;
+		display: block;
+	}
+	.img_80per {
+		max-width: 80%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.img_90per {
+		max-width: 90%
+	}
+	.img_50perM {
+		max-width: 50%;
+		display: block;
+	}
+}
+
+@media only screen and (max-width:1279px) {
+	.col1_img img {
+		padding: 0.5em 3.2em;
+	}
+}
+
+@media only screen and (max-width:599px) {
+	.col1_img img {
+		padding: 0.5em;
+	}
+    .pc_only {display: none;}
+    .sp_only {display: inherit;}
+    
+    .fa-image_box {
+	    text-align: center;
+	    margin: 1em 0;
+    }
+    
+    .align_c {
+	   	text-align: center;
+	    margin: .5em 0;
+    }
+	.item_label img {
+	    width: 100%;
+	    height: auto;
+	}
+	
+	.item_label_inner {
+	    left: 30%;
+	}
+	
+   .fa-column {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .fa-column-minimum {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+
+    .fa-column-minimum .fa-column_item {
+        width: 70%;
+        padding-left: 2%
+    }
+
+    .fa-column-minimum.fa-column-reverse .fa-column_item {
+        padding-right: 2%;
+        padding-left: 0
+    }
+
+    .fa-column_item-media {
+        margin-right: 0;
+        text-align: center
+    }
+
+    .fa-column-minimum .fa-column_item-media {
+        width: 30%;
+        padding-right: 0;
+        padding-left: 0
+    }
+
+    .fa-column-reverse .fa-column_item-media {
+        margin-left: 0
+    }
+
+    .fa-column_item_image {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .fa-column_item_image img {
+        max-width: 100%;
+        height: auto
+    }
+    
+    .fa-column_item .h3_layout br,
+    p.fa-text br {display: none;}
+
+}
+
+
+
+

@@ -1,0 +1,57 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html",
+            "child": [
+				{
+					"name": "Molded Case Circuit Breakers with MDU",
+					"path": "/fa/products/lvd/lvcb/pmerit/mdu/index.html"
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "Molded Case Circuit Breakers with MDU",
+    "path": "/fa/products/lvd/lvcb/pmerit/mdu/index.html",
+    "firstLayer": [
+      {
+        "name": "Features",
+        "path": "/fa/products/lvd/lvcb/pmerit/mdu/index.html"
+      },
+      {
+        "name": "Product Lineup",
+        "path": "/fa/products/lvd/lvcb/pmerit/mdu/mdu_2.html"
+      }
+    ]
+  },
+"switchNav": {
+	"name": "Molded Case Circuit Breakers with MDU",
+	"path": "/fa/products/lvd/lvcb/items/mdu/index.html",
+	"child": [
+		{
+			"group": "Molded Case Circuit Breakers with MDU",
+			"name": "Molded Case Circuit Breakers with MDU",
+			"feature": "/fa/products/lvd/lvcb/pmerit/mdu/index.html",
+			"spec": "/fa/products/faspec/search.page?kisyu=/lvcb&current=MDU",
+			"standard": "/fa/products/standard/SearchServlet.page?kisyu=/lvcb&current=MDU",
+			"discon": "",
+            "return": {
+                "name": "Molded Case Circuit Breakers with MDU",
+                "path": "/fa/products/lvd/lvcb/items/mdu/index.html"
+		}
+		}
+	]
+}
+}
+  

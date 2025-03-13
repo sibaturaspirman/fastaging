@@ -1,0 +1,262 @@
+
+
+#facontens{
+	margin: 0;
+}
+
+/*consept top***********************/
+/*gxworks */
+	.plclist{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	}
+
+	.plclist li.coseptpage{
+		width:33.333333%;
+	}
+	.plclist .coseptpage_ch{
+		width: 70%;
+		margin: 0 auto;
+	}
+/*consept 動画共有***********************/
+	.conceptmo{
+		width:500px; height:300px;
+		margin:0 auto;
+	}
+	
+	.conceptmo .cpuviveo{
+        background: #000;/*背景を黒で表示*/
+		text-align: center;
+		padding: 10px
+	}
+	.conceptmo .cpuviveo video{
+		width: 480px;
+		height: 270px;
+	}
+	.conceptmo span{
+		background: #000;
+		color: #fff;
+		padding: 6px 10px 15px 12px;
+		border-radius: 3px 3px 0 0 ;
+	}
+	#facontens .caption{
+		margin-left: 20px;
+		margin-top: 15px;;
+	}
+	/*fbd*************/
+	#facontens .ladder #canvas {max-width: 100%;}
+	#facontens .ladder table {}
+	#facontens .ladder ol{
+		padding: 8px 15px;
+		text-align: left;
+		font-size: 80%;
+		list-style: decimal;
+	}
+	#facontens .ladder li{
+	margin-left: 1em;
+	}
+
+	#facontens .ladder #comments{
+		width: 60%;
+		border: 1px solid #D9D8D8;
+	}
+	
+	#facontens .ladder .reset{
+		background: #D9D8D8;
+		padding: 10px;
+		width: 90%;
+		margin: 0 auto 15px;
+	}
+	/*fbd*************/
+/*platform***********************/
+
+	.iqplatform{margin: 0;}
+
+	.iqplatform .title{
+	font-weight: bold;
+	font-size: 130%;
+	margin-bottom: 30px;
+	}
+
+	.iqplatform ol{
+		list-style: decimal;
+		margin-left: 20px;
+		font-size: 12px;
+	}
+	.iqplatform ol li{
+	margin-bottom: 5px;
+	}
+
+	.iqplatform  #platform{
+		background: url(../images/iq_platform01.jpg) no-repeat rgb(231, 236, 239);
+		margin: 0 auto;
+		width: 780px;
+		height: 600px;
+		position: relative;
+	}
+	.iqplatform .platform_come{
+	position: absolute;
+	bottom: 2%;
+	left: 2%;
+	}
+
+  /*Built-in Functions************************/
+	#facontens .built-in th {
+	background: #e6e6e6;
+	border: solid 1px #d5d5d5;
+	font-weight: bold;
+	padding: 10px;
+  }
+	#facontens .built-in td {
+	border: solid 1px #d5d5d5;
+	padding: 10px;
+	}
+
+  /* positioning function***********************/
+
+  #facontens .posteble{
+	  margin-left: auto;
+	  width: 60%;
+	  text-align: left;
+  }
+
+  #facontens .posteble th{
+	width: 50%;
+	}
+  #facontens .posteble ul li{
+	  text-align: left;
+  }
+
+  /* melsec_iqf***********************/
+  #facontens .devices{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	}
+	#facontens .devicestable{
+		width: 100%;
+		border-collapse: collapse;
+		background: #eee;
+		border: solid 1px #d5d5d5;	
+	}
+	#facontens .devicestable td{
+	padding: 5px;
+	width: 33.3%;
+	border: solid 1px #d5d5d5;
+	vertical-align: top;	
+	}
+	#facontens .devicestable .title{
+	font-weight: bold;
+	margin-bottom: 5px;;
+	}	
+
+	#facontens #password{
+		width: 600px;
+		margin: 15px auto 0;
+	
+	}
+
+	@media screen and (max-width:768px) {
+		.plclist{display: block;}
+		.plclist li.coseptpage{width: 100%;}
+		.plclist .coseptpage_ch{width: 70%;margin: 10px auto 15px;}
+
+		.conceptmo span{
+			background: #000;
+			color: #fff;
+			padding: 5px 0 0 0 ;
+			border-radius: 3px 3px 0 0 ;
+			text-align: center;
+			display: block;
+			font-size: 12px;
+		}
+
+		.conceptmo{
+			width: 100%;
+			height: auto;
+			margin-bottom: 15px;
+		}
+		
+
+		.conceptmo .cpuviveo{
+			position: relative;
+			padding-bottom: 56.25%;
+			height: 0;
+			overflow: hidden;
+			text-align: center;
+
+		}		
+
+		.conceptmo .cpuviveo::before {
+			content:'';
+			display: block;
+			padding-top: 56.25%; /* 高さ÷横幅×100 */
+		}
+
+		.conceptmo .cpuviveo video{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.iqplatform  #platform{
+			background: url(../images/iq_platform01.jpg) no-repeat rgb(231, 236, 239);
+			background-size: contain;
+			margin: 0 auto;
+			width: 100%;
+		}
+
+		.iqplatform .title{
+			font-weight: bold;
+			font-size: 120%;
+			margin-bottom: 15px;
+			text-align: center;
+			}
+
+			.last td:last-child {
+				border-bottom: solid 1px #d5d5d5;
+				width: 100%;
+			  }
+			  #facontens .built-in{
+				width: 100%;
+
+			  }
+			  #facontens .built-in th,
+			  #facontens .built-in td {
+			  border-bottom:  none;
+			  display: block;
+	
+			  }	
+
+			  #facontens .posteble{
+				width: 95%;
+			}
+			#facontens .devicestable {
+				width: 95%;
+				margin: 0 auto;
+			}
+			#facontens .devicestable td{
+				border-bottom:  none;
+				display: block;
+				width: auto;
+				padding: 8px;
+			}
+			#facontens .ladder #comments{
+				width: 90%;
+				margin: 0 auto;
+				border: 1px solid #D9D8D8;
+			}
+			#facontens #password{
+				width: 95%;
+				margin: 0 auto;
+			}
+			
+			}

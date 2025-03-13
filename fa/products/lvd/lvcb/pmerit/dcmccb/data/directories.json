@@ -1,0 +1,57 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html",
+            "child": [
+				{
+					"name": "Molded Case Circuit Breakers for DC Circuit (up to 1000VDC)",
+					"path": "/fa/products/lvd/lvcb/pmerit/dcmccb/index.html"
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "Molded Case Circuit Breakers for DC Circuit (up to 1000VDC)",
+    "path": "/fa/products/lvd/lvcb/pmerit/dcmccb/index.html",
+    "firstLayer": [
+      {
+        "name": "System Configuration",
+        "path": "/fa/products/lvd/lvcb/pmerit/dcmccb/index.html"
+     },
+      {
+        "name": "Product Lineup",
+        "path": "/fa/products/lvd/lvcb/pmerit/dcmccb/index_2.html"
+      }
+    ]
+  },
+"switchNav": {
+	"name": "Molded Case Circuit Breakers for DC Circuit (up to 1000VDC)",
+	"path": "/fa/products/lvd/lvcb/items/dcmccb/index.html",
+	"child": [
+		{
+			"group": "Molded Case Circuit Breakers for DC Circuit (up to 1000VDC)",
+			"name": "Molded Case Circuit Breakers for DC Circuit (up to 1000VDC)",
+			"feature": "/fa/products/lvd/lvcb/pmerit/dcmccb/index.html",
+			"spec": "/fa/products/faspec/search.page?kisyu=/lvcb&current=DCMCCB",
+			"standard": "/fa/products/standard/SearchServlet.page?kisyu=/lvcb&current=DCMCCB",
+			"discon": "",
+            "return": {
+                "name": "Molded Case Circuit Breakers for DC Circuit (up to 1000VDC)",
+                "path": "/fa/products/lvd/lvcb/items/dcmccb/index.html"
+			}
+		}
+	]
+}
+}
+  

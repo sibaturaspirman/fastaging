@@ -1,0 +1,147 @@
+{
+	"coment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"comment": "linkは各機種のダウンロードページのURLに変更可",
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/fa/download/search.page?mode=catalog&kisyu=/lvcb"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/fa/download/search.page?mode=manual&kisyu=/lvcb"
+					},
+					{
+						"name": "Technical<br>Bulletin",
+						"icon": "techinfo",
+						"link": "/fa/download/techinfo/search.page?mode=technews&kisyu=/lvcb"
+					},
+					{
+						"name": "CAD Data",
+						"icon": "cad",
+						"link": "/fa/download/cad/search.page?mode=cad&kisyu=/lvcb"
+					},
+					{
+						"name": "Software",
+						"icon": "software",
+						"link": "/fa/download/software/search.page?mode=software&kisyu=/lvcb"
+					}
+				]
+			}
+	  ],
+		"commonItems": [
+			{
+				"name": "FAQ",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2214"
+			}
+        ]
+	},
+	"spotlight": {
+		"comment": "Spotlightに掲載したいページタイトル・画像・リンクを記入",
+		"items": []
+	},
+	"productsMenu": {
+		"comment": "機種共通メニューのlinkは各機種のページのURLに変更可",
+		"items": [
+			{
+				"name": "Product Specifications",
+				"icon": "settings",
+				"link": "/fa/products/faspec/search.page?kisyu=/lvcb"
+			},
+			{
+				"name": "Products certified/compliant to various standards",
+				"icon": "standard",
+				"link": "/fa/products/standard/SearchServlet.page?kisyu=/lvcb"
+			},
+			{
+				"name": "FA Integrated Selection Tool",
+				"icon": "tree",
+				"link": "/fa/products/select/index.html"
+			}
+		]
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "Approved Certification",
+				"link": "/fa/products/lvd/lvcb/pmerit/certification.html"
+			}
+		]
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除",
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','YN-C-0720','lvcb','3')",
+				"img": "javascript.toCatalogInfo('img','YN-C-0720','lvcb','5')",
+				"link": "javascript.toCatalogInfo('link','YN-C-0720','lvcb','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/fa/download/search.page?mode=catalog&kisyu=/lvcb"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/fa/download/search.page?mode=manual&kisyu=/lvcb"
+			},
+			{
+				"name": "Technical Bulletin",
+				"icon": "technews",
+				"link": "/fa/download/techinfo/search.page?mode=technews&kisyu=/lvcb"
+			},
+			{
+				"name": "CAD Data",
+				"icon": "cad",
+				"link": "/fa/download/cad/search.page?mode=cad&kisyu=/lvcb"
+			},
+			{
+				"name": "Software",
+				"icon": "software",
+				"link": "/fa/download/software/search.page?mode=software&kisyu=/lvcb"
+			}
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "FA e-learning",
+				"link": "/fa/assist/e-learning/index.html"
+			}
+		]
+	},
+	"banner": {
+		"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+		"items": [
+		]
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+			{
+				"name": "Contact Us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2214"
+			}
+		]
+	}
+}

@@ -1,0 +1,44 @@
+{
+  "layerNav": {
+    "name": "Events",
+    "path": "/fa/products/cnt/cnc/evt/index.html",
+    "firstLayer": [
+      {
+        "name": "Latest",
+        "path": "/fa/products/cnt/cnc/evt/index.html"    
+      },
+      {
+        "name": "2024",
+        "path": "/fa/products/cnt/cnc/evt/bn2024.html"    
+      },
+      {
+        "name": "2023",
+        "path": "/fa/products/cnt/cnc/evt/bn2023.html"    
+      },
+      {
+        "name": "2022",
+        "path": "/fa/products/cnt/cnc/evt/bn2022.html"    
+      },
+      {
+        "name": "2021",
+        "path": "/fa/products/cnt/cnc/evt/bn2021.html"    
+      },
+      {
+        "name": "2020",
+        "path": "/fa/products/cnt/cnc/evt/bn2020.html"
+      },
+      {
+        "name": "2019",
+        "path": "/fa/products/cnt/cnc/evt/bn2019.html"
+      },
+      {
+        "name": "2018",
+        "path": "/fa/products/cnt/cnc/evt/bn2018.html"
+      },
+      {
+        "name": "2017",
+        "path": "/fa/products/cnt/cnc/evt/bn2017.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+	"comment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+		"specificItems": [
+			{
+				"comment": "linkは各機種のダウンロードページのURLに変更可",
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/app/fa/download/search.do?kisyu=/servo&mode=catalog"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/app/fa/download/search.do?kisyu=/servo&mode=manual"
+					},
+					{
+						"name": "Technical<br>Bulletin",
+						"icon": "techinfo",
+						"link": "/app/fa/download/search.do?kisyu=/servo&mode=techinfo"
+					}
+				]
+			}
+		],
+		"commonItems": []
+	},
+	"spotlight": {
+	},
+	"productsMenu": {
+		"comment": "機種共通メニューのlinkは各機種のページのURLに変更可",
+		"items": [
+			{
+				"name": "FA Integrated Selection Tool",
+				"icon": "tree",
+				"link": "/fa/products/select/index.html"
+			}
+		]
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "MELSERVO Others",
+				"link": "/fa/products/drv/servo/items/other/index.html"
+			}
+		]
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除。ドキュメントリンクの記述は指定するパラメータ数が異なるため注意。",
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','L03187ENG','servo','3')",
+				"img": "javascript.toCatalogInfo('img','L03187ENG','servo','5')",
+				"link": "javascript.toCatalogInfo('link','L03187ENG','servo','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/app/fa/download/search.do?kisyu=/servo&mode=catalog"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/app/fa/download/search.do?kisyu=/servo&mode=manual"
+			},
+			{
+				"name": "Technical Bulletin",
+				"icon": "technews",
+				"link": "/app/fa/download/search.do?kisyu=/servo&mode=techinfo"
+			}
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "FA e-learning",
+				"link": "/fa/assist/e-learning/index.html"
+			}
+		]
+	},
+	"banner": {
+		"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+		"items": [
+			{
+				"name": "New features make things even easier to use!",
+				"image": "/fa/products/assets/img/faist-202411-relatedlink-en.jpg",
+				"link": "/fa/products/select/index.html"
+			},
+			{
+				"name": "FAQ",
+				"image": "/fa/products/drv/servo/img/bnr_faq.jpg",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2127"
+			},
+			{
+				"name": "FA SPEC Search",
+				"image": "/fa/products/assets/img/banner_fa-spec-search.jpg",
+				"link": "/fa/mobile-apps/index.html"
+			}
+		]
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+			{
+				"name": "Contact Us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/"
+			}
+		]
+	}
+}

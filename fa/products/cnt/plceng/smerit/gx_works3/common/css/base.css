@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+.clearfix:after, .clear {  
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+/* clearfix for ie7 */
+.clearfix, .clear{
+	display: inline-block;
+	}
+.clearfix, .clear {
+	 display: block;
+	}
+
+.r_over a:hover img {
+		opacity:0.7;
+		}
+
+/*ムービー一覧　レスポンシブ----------------------------------------------------------------------------------*/
+.lup_area:before, .lup_area:after  {
+    box-sizing: border-box;
+    }
+.col2_box {
+    width: 100%;
+    display: flex;
+    display: -ms-flexbox;    /*IE10*/
+    flex-wrap: wrap;
+    -ms-flex-wrap:wrap;    /*IE10*/
+    }
+.col2_box > div {
+    width: 50%;
+    padding: 15px;
+    }
+.col2_box > div > div {
+    border: 1px solid #8f8f8f;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 150px;
+    background: linear-gradient(#fff,  #ddd);
+    position: relative;
+    overflow: hidden;
+    }
+    .link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }    
+    .thumb {
+    float: right;
+	width:160px;
+	height:120px;
+	margin:15px;
+    }
+@media screen and (max-width:732px) {
+    .col2_box > div {
+    width: 100%;
+    }
+}
+/*ムービー一覧　レスポンシブ ここまで-----------------------------------------------------------------------*/
+
+.mv_2clm {
+	float:left;
+	display:inline;
+	margin-left:30px;
+	margin-top:15px;
+	margin-bottom:15px;
+	width:373px;
+	height:148px;
+	padding:0;
+	border:1px solid #999;
+	background:url(../images/tuto_waku_bg.png) left repeat-x;
+	}
+
+.mv_first {
+	margin-left:0;
+	}
+
+.mv_2clm ul {
+	padding:15px 0;
+	}
+
+.mv_2clm li {
+	line-height:20px;
+	list-style-type:none;
+	/*display: table-cell;
+	vertical-align: middle;
+	margin: 0;
+	position:absolute;
+	top:50%;
+	margin-top:-1em;*/
+	}
+
+.mv_thumb {
+	width:160px;
+	height:120px;
+	float:right;
+	margin:15px;
+	}
+
+.mv_thumb10px {
+	width:160px;
+	height:120px;
+	float:right;
+	margin:10px;
+	padding:0;
+	}

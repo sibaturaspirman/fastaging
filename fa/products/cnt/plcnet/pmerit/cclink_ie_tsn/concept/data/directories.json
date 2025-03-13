@@ -1,0 +1,72 @@
+{
+	"layerNav": {
+		"name": "CC-Link IE TSN",
+		"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/concept/",
+		"firstLayer": [
+			{
+				"name": "CC-Link IE TSN",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/concept/index.html"
+			},
+			{
+				"name": "Features",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/features/performance.html",
+				"secondLayer": [
+					{
+						"name": "Performance",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/features/performance.html"
+					},
+					{
+						"name": "Intelligence",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/features/intelligence.html"
+					},
+					{
+						"name": "Connectivity",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/features/connectivity.html"
+					}
+				]
+			},
+			{
+				"name": "System configuration",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/sysconfig/index.html"
+			},
+			{
+				"name": "CC-Link IE TSN Products",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/lineup/master.html",
+				"secondLayer": [
+					{
+						"name": "Master stations",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/lineup/master.html"
+					},
+					{
+						"name": "Drives/GOT (HMI)",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/lineup/drv_hmi.html"
+					},
+					{
+						"name": "Block-type remote modules",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/lineup/block_type_rio.html"
+					},
+					{
+						"name": "Managed Ethernet switches/bridge modules",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/lineup/hub_bridge.html"
+					},
+					{
+						"name": "Partner products",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/lineup/partner.html"
+					},
+					{
+						"name": "Development kits/communication software",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/lineup/dev_tool.html"
+					}
+				]
+			},
+			{
+				"name": "Specifications",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/spec/index.html"
+			},
+			{
+				"name": "Special page",
+				"path": "/fa/sols/sol/network/pr/cclink_ie_tsn/index.html"
+			}
+        ]
+	}
+}

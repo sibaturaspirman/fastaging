@@ -1,0 +1,126 @@
+{
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"comment": "linkは各機種のダウンロードページのURLに変更可",
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/app/fa/download/search.do?kisyu=/inv&mode=catalog"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/app/fa/download/search.do?kisyu=/inv&mode=manual"
+					},
+					{
+						"name": "Technical<br>Bulletin",
+						"icon": "techinfo",
+						"link": "/app/fa/download/search.do?kisyu=/inv&mode=techinfo"
+					}
+				]
+			}
+		],
+		"commonItems": []
+	},
+	"spotlight": {
+		"items": [
+		]
+	},
+	"productsMenu": {
+		"items": [
+			{
+				"name": "Featured Products",
+				"icon": "announce",
+				"link": "/fa/products/drv/inv/ex/watch/index.html"
+			},
+			{
+				"name": "FA Integrated Selection Tool",
+				"icon": "tree",
+				"link": "/fa/products/select/index.html"
+			}
+		]
+	},
+	"optionItems": {
+		"items": [
+		]
+	},
+	"download": {
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','L06036','inv','3')",
+				"img": "javascript.toCatalogInfo('img','L06036','inv','5')",
+				"link": "javascript.toCatalogInfo('link','L06036','inv','10')"
+			}
+		],
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/app/fa/download/search.do?kisyu=/inv&mode=catalog"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/app/fa/download/search.do?kisyu=/inv&mode=manual"
+			},
+			{
+				"name": "Technical Bulletin",
+				"icon": "technews",
+				"link": "/app/fa/download/search.do?kisyu=/inv&mode=techinfo"
+			}
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "FA e-Learning",
+				"link": "/fa/assist/e-learning/index.html"
+			},
+			{
+				"name": "FA Terminology Dictionary",
+				"link": "/fa/assist/fa_dictionary/index.html"
+			}
+		]
+	},
+	"banner": {
+		"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+		"items": [
+            {
+				"name": "The energy saving calculation system",
+				"image": "/fa/products/drv/inv/img/banner_simulation.jpg",
+				"link": "/fa/products/drv/inv/pmerit/select/index.html"
+            },
+            {
+				"name": "Digital Catalogs",
+				"image": "/fa/products/software/inv/img/banner_web-catalog.jpg",
+				"link": "/fa/products/drv/inv/pmerit/catalog_en.html"
+            },
+            {
+				"name": "New features make things even easier to use!",
+				"image": "/fa/products/assets/img/faist-202411-relatedlink-en.jpg",
+				"link": "/fa/products/select/index.html"
+            }
+		]
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+			{
+				"name": "Contact us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2142?site_domain=default"
+			}
+		]
+	}
+}

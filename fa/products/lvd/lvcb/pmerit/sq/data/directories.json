@@ -1,0 +1,61 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html",
+            "child": [
+				{
+					"name": "Circuit Breakers with Spring Clamp Terminals",
+					"path": "/fa/products/lvd/lvcb/pmerit/sq/index.html"
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "Circuit Breakers with Spring Clamp Terminals",
+    "path": "/fa/products/lvd/lvcb/pmerit/sq/index.html",
+    "firstLayer": [
+      {
+        "name": "Features",
+        "path": "/fa/products/lvd/lvcb/pmerit/sq/index.html"
+      },
+      {
+        "name": "Accessories",
+        "path": "/fa/products/lvd/lvcb/pmerit/sq/index_2.html"
+      },
+      {
+        "name": "Product Lineup",
+        "path": "/fa/products/lvd/lvcb/pmerit/sq/index_3.html"
+      }
+    ]
+  },
+"switchNav": {
+	"name": "Circuit Breakers with Spring Clamp Terminals",
+	"path": "/fa/products/lvd/lvcb/items/sq/index.html",
+	"child": [
+		{
+			"group": "Circuit Breakers with Spring Clamp Terminals",
+			"name": "Circuit Breakers with Spring Clamp Terminals",
+			"feature": "/fa/products/lvd/lvcb/pmerit/sq/index.html",
+			"spec": "/fa/products/faspec/search.page?kisyu=/lvcb&current=SQ",
+			"standard": "/fa/products/standard/SearchServlet.page?kisyu=/lvcb&current=SQ",
+			"discon": "",
+            "return": {
+                "name": "Circuit Breakers with Spring Clamp Terminals",
+                "path": "/fa/products/lvd/lvcb/items/sq/index.html"
+			}
+		}
+	]
+}
+}
+  

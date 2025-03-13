@@ -1,0 +1,48 @@
+{
+  "layerNav": {
+    "name": "FR-A series",
+    "path": "/fa/products/drv/inv/items/fr_a/index.html",
+    "firstLayer": [
+      {
+        "name": "Concept",
+        "path": "/fa/products/drv/inv/pmerit/fr_a/fr_a800/index.html"
+      },
+      {
+        "name": "Approach to the Leading Drive Performance",
+        "path": "/fa/products/drv/inv/pmerit/fr_a/fr_a800/a801.html"
+      },
+      {
+        "name": "Security &amp; Safety",
+        "path": "/fa/products/drv/inv/pmerit/fr_a/fr_a800/a802.html"
+      },
+      {
+        "name": "Easy Setup &amp; Easy to Use",
+        "path": "/fa/products/drv/inv/pmerit/fr_a/fr_a800/a803.html"
+      },
+      {
+        "name": "Eco-friendly Factories",
+        "path": "/fa/products/drv/inv/pmerit/fr_a/fr_a800/a804.html"
+      },
+      {
+        "name": "System Support (Network)",
+        "path": "/fa/products/drv/inv/pmerit/fr_a/fr_a800/a805.html"
+      },
+      {
+        "name": "System Support (Environment Adaptability)",
+        "path": "/fa/products/drv/inv/pmerit/fr_a/fr_a800/a806.html"
+      },
+      {
+        "name": "System Support (Function)",
+        "path": "/fa/products/drv/inv/pmerit/fr_a/fr_a800/a807.html"
+      },
+      {
+        "name": "Model Configuration",
+        "path": "/fa/products/drv/inv/pmerit/fr_a/fr_a800/a808.html"
+      },
+      {
+        "name": "Protective Functions",
+        "path": "/fa/products/drv/inv/pmerit/fr_a/fr_a800/fault.html"
+      }
+    ]
+  }
+}

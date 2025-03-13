@@ -1,0 +1,474 @@
+@charset "UTF-8";
+/* Common */
+sup {
+	font-size: 75%;
+	vertical-align: baseline;
+	margin-right: 0.25em;
+}
+.c-headingLv3 sup {
+	font-size: 60%;
+}
+.tag, .c-anchorNav sup{ /* h2→自動生成アンカーナビ対策 */
+	display: none;
+}
+.palt {
+	font-feature-settings: "palt";
+}
+.ff-nsj {
+	font-family: "Noto Sans JP";
+}
+.ilb {
+	display: inline-block;
+}
+.c-list--order_indices .c-list__item {
+	text-indent: -1.2em;
+	margin-left: 1.2em;
+}
+.c-list--order_indices .c-list__item .c-list__marker {
+	display: inline-block;
+	width: 1.2em;
+}
+.u-box.u-box_thin {
+	padding: 15px 25px;
+}
+.u-box.u-box_rnd {
+	border-radius: 0.5em;
+}
+.txt_icon {
+	display: inline-block;
+	font-size: 85%;
+	font-weight: bold;
+	line-height: 1;
+	white-space: nowrap;
+	color: #FFF;
+	padding: 0.2em 0.75em 0.15em;
+	margin-left: 0.5em;
+	position: relative;
+	top: -0.25em;
+}
+.txt_icon.new {
+	background-color: #F00;
+	top: -0.1em;
+}
+.c-headingLv3 .txt_icon {
+	margin-left: 1em;
+	font-size: 65%;
+}
+.c-heading_squarebullet {
+	padding-left: 1.2em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px dotted #666;
+	position: relative;
+}
+.c-heading_squarebullet::before {
+	display:inline-block;
+	content: "";
+	width: 0.7em;
+	height: 0.7em;
+	background-color: #666;
+	position: absolute;
+	top: 0.4em;
+	left: 0.15em;
+}
+.c-heading_squarebullet.noborder {
+	border-bottom: none;
+}
+.c-table__content thead th {
+	text-align: center;
+	vertical-align: middle;
+	background-color: #d9d9d9;
+}
+.c-table__content tbody th {
+	vertical-align: middle;
+	background-color: #f7f7f7;
+}
+.c-table__content tbody .mid_th {
+	background-color: #e8e8e8;
+}
+.c-table__content tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+.c-table__content.inherit {
+	width: inherit;
+}
+.c-table__content.padless th,
+.c-table__content.padless td {
+	padding: 7.5px 10px;
+}
+.c-table__content img {
+	vertical-align: bottom;
+}
+.c-table__content .intable-left {
+	display: inline-block;
+	text-align: left;
+}
+.c-table__content .intable-left li {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.c-note--mark.c-note--asterisk {
+	padding-left: 0.5em;
+	text-indent: -0.5em;
+}
+.c-note--mark.c-note--asterisk::before {
+	width: 0.5em;
+	content: "*";
+}
+.fc-teal {
+	color: #007d6d;
+}
+.tsntech {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1;
+	white-space: nowrap;
+	padding: 0.3em 0.7em;
+	color: #FFF;
+	background-color: #525a61;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border: 2px solid #FFF;
+	box-shadow: 0px 4px 4px #CCC;
+	display: inline-block;
+}
+.breakall {
+	word-break: break-all;
+	display: inline;
+}
+
+/* CC-Link IE TSN (Concept) */
+.tsnmark_dl {
+	display: flex;
+}
+.tsnmark_dl dt {
+	flex-shrink: 0;
+}
+.feature_dl dt span {
+	display: inline-block;
+	color: #fff;
+	padding: 0.25em 1em;
+	border-radius: 4px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.feature_dl dt:nth-child(1) span {
+	background-color: #00aec4;
+}
+.feature_dl dt:nth-of-type(2) span {
+	background-color: #00a180;
+}
+.feature_dl dt:nth-of-type(3) span {
+	background-color: #a9c57d;
+}
+
+/* Features */
+.feat_set {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -0.75em;
+	margin-left: 24px;
+}
+.feat_set li {
+	font-size: 120%;
+	font-weight: bold;
+	line-height: 1;
+	white-space: nowrap;
+	color: #FFF;
+	padding: 0.5em 0.75em;
+	border-radius: 4px;
+	margin-top: 0.5em;
+	margin-right: 1em;
+}
+.feat_set li .small {
+	font-size: 80%;
+	font-weight: normal;
+}
+/* Features / Performance */
+.c-heading_squarebullet.feat_performance::before {
+	background-color: #00aec4;
+}
+.feat_set.featset_performance li {
+	background-color: #00aec4;
+}
+
+/* Features / Intelligence */
+.c-heading_squarebullet.feat_intelligence::before {
+	background-color: #00a180;
+}
+.feat_set.featset_intelligence li {
+	background-color: #00a180;
+}
+
+/* Features / Connectivity */
+.c-heading_squarebullet.feat_connectivity::before {
+	background-color: #a9c57d;
+}
+.feat_set.featset_connectivity li {
+	background-color: #a9c57d;
+}
+#feat-connectivity-table01 thead tr:nth-child(2) th {
+	width: 20%;
+}
+#feat-connectivity-table01 thead .c-table__headimg {
+	border: 0;
+	background-color: #fff;
+}
+
+/* CC-Link IE TSN Products */
+.c-heading_squarebullet.lup_products::before {
+	background-color: #9070af;
+}
+.c-list.product_code li {
+	font-size: 120%;
+	font-weight: bold;
+	line-height: 1;
+}
+.prod_flex {
+	margin-top: 30px;
+}
+.prod_flex .prod_flex_text .prod-name {
+	font-size: 20px;
+}
+.prod_flex .prod_flex_text .prod-name + .c-list {
+	margin-top: 10px;
+}
+.prod_flex .prod_flex_photo .c-img__caption {
+	margin-top: 0;
+}
+
+/* CC-Link IE TSN Products / Block-type remote module */
+#lup-btyp_rio-anchorNav li:nth-child(1) {
+	display: none;
+}
+#FPGA__caption {
+	display: flex;
+}
+#FPGA__caption span:nth-child(1) {
+	width: 56%;
+}
+#FPGA__caption span:nth-child(2) {
+	width: 44%;
+}
+
+/* CC-Link IE TSN Products / Partner products */
+.c-heading_squarebullet.lup_partner::before {
+	background-color: #cb5d70;
+}
+.authentication {
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 0.5em;
+	padding: 0 .5em;
+	color: #fff;
+	border: 3px solid #979ca0;
+	border-radius: 5px;
+	position: relative;
+	top: .15em;
+}
+.authentication.classA {
+	background-color: #8f7286;
+}
+#lup-partner-table01 thead th:nth-child(n+2) {
+	width: 26%;
+}
+.clpa .clpa_msg,
+.clpa .clpa_link {
+	display: flex;
+	align-items: center;
+}
+.clpa .clpa_msg .clpa_img,
+.clpa .clpa_link .clpa_img {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.clpa .clpa_msg .clpa_img img,
+.clpa .clpa_link .clpa_img img {
+	width: 100%;
+}
+.clpa .clpa_msg .clpa_txt,
+.clpa .clpa_link .clpa_txt {
+	padding-left: 1em;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+/* CC-Link IE TSN Products / Development kits/communication software */
+.c-heading_squarebullet.lup_devtool::before {
+	background-color: #4c8dcb;
+}
+
+/* Specifications */
+#spc-index-anchorNav li:nth-child(1) {
+	display: none;
+}
+#spc-idx-table01 thead th:nth-child(n+2) {
+	width: 36%;
+}
+#spc-idx-table02 thead th:nth-child(n+2) {
+	width: 31.5%;
+}
+#spc-idx-table03 thead th:nth-child(n+2) {
+	width: 21%;
+}
+
+@media only screen and (min-width:1101px){
+/*! over Large */
+}
+@media only screen and (max-width:1100px){
+/*! Large, Medium and Small */
+}
+@media only screen and (min-width:981px) and (max-width:1100px){
+/*! Large only */
+}
+@media only screen and (min-width:768px) and (max-width:1100px){
+/*! Large and Medium */
+}
+@media only screen and (min-width:981px){
+/*! over Medium */
+}
+@media only screen and (max-width:980px){
+/*! Medium and Small */
+}
+@media only screen and (min-width:768px) and (max-width:980px){
+/*! Medium only */
+}
+@media only screen and (min-width:768px){
+/*! over Small */
+	/* CC-Link IE TSN (Concept) */
+	.tsnmark_dl dd {
+		padding-left: 0.25em;
+		margin-bottom: 0.25em;
+	}
+
+	/* Features */
+	.h3_tsntech {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/* CC-Link IE TSN Products */
+	.ptnr_info {
+		border: 1px solid #666;
+		display: flex;
+		padding: 1em 1.5em;
+	}
+	.ptnr_info .logo_img {
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+		flex-grow: 0;
+		padding-right: 1em;
+	}
+	.ptnr_info .logo_img.w240 {
+		width: 240px;
+	}
+	.ptnr_info .logo_img.w300 {
+		width: 300px;
+	}
+	.ptnr_info .logo_img img {
+		width: 100%;
+	}
+	.ptnr_info .logo_img .me_text {
+		font-weight: bold;
+		font-size: 120%;
+	}
+	.ptnr_info .info_text {
+		padding-left: 1em;
+		flex-shrink: 1;
+		flex-grow: 1;
+		border-left: 1px solid #666;
+	}
+	.prod_flex {
+		display: flex;
+		justify-content: space-between;
+	}
+	.prod_flex .prod_flex_text {
+		flex-grow: 1;
+		flex-shrink: 1;
+		padding-right: 2em;
+	}
+	.prod_flex .prod_flex_photo {
+		width: 280px;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	.prod_flex .prod_flex_photo.prod_flex_photo-l {
+		width: 360px;
+	}
+
+	/* CC-Link IE TSN Products / Partner products */
+	.clpa {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.clpa .clpa_msg {
+		width: calc(100% - 10vw - 14em);
+	}
+	.clpa .clpa_link {
+		width: calc(10vw + 12em);
+	}
+	.clpa .clpa_msg .clpa_img,
+	.clpa .clpa_link .clpa_img {
+		width: 10vw;
+		max-width: 140px;
+	}
+}
+@media only screen and (max-width:767px){
+/*! Small only */
+	/* CC-Link IE TSN (Concept) */
+	.tsnmark_dl {
+		flex-direction: column;
+		margin-left: 1.5em;
+	}
+	.tsnmark_dl dd {
+		margin-top: 0.2em;
+		padding-left: 0.75em;
+	}
+
+	/* Features */
+	.h3_tsntech .tsntech {
+		margin-left: 0.5em;
+		position: relative;
+		top: -0.25em;
+	}
+
+	/* CC-Link IE TSN Products */
+	.ptnr_info {
+		border: 1px solid #666;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+	.ptnr_info .logo_img {
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.ptnr_info .logo_img img {
+		width: 33vw;
+		height: auto;
+	}
+	.ptnr_info .logo_img .me_text {
+		font-weight: bold;
+		font-size: 120%;
+	}
+	.ptnr_info .info_text {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		border-top: 1px solid #666;
+	}
+	.prod_flex .prod_flex_photo {
+		margin-top: 20px;
+	}
+
+	/* CC-Link IE TSN Products / Partner products */
+	.clpa .clpa_link {
+		margin-top: 1em;
+	}
+	.clpa .clpa_msg .clpa_img,
+	.clpa .clpa_link .clpa_img {
+		width: 120px;
+	}
+}

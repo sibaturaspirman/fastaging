@@ -1,0 +1,53 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html",
+            "child": [
+				{
+					"name": "Miniature Circuit Breakers",
+					"path": "/fa/products/lvd/lvcb/pmerit/mcb/index.html"
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "Miniature Circuit Breakers",
+    "path": "/fa/products/lvd/lvcb/pmerit/mcb/index.html",
+    "firstLayer": [
+      {
+        "name": "Features",
+        "path": "/fa/products/lvd/lvcb/pmerit/mcb/index.html"
+      }
+    ]
+  },
+"switchNav": {
+	"name": "Miniature Circuit Breakers",
+	"path": "/fa/products/lvd/lvcb/items/mcb/index.html",
+	"child": [
+		{
+			"group": "Miniature Circuit Breakers",
+			"name": "Miniature Circuit Breakers",
+			"feature": "/fa/products/lvd/lvcb/pmerit/mcb/index.html",
+			"spec": "/fa/products/faspec/search.page?kisyu=/lvcb&current=MCB",
+			"standard": "/fa/products/standard/SearchServlet.page?kisyu=/lvcb&current=MCB",
+			"discon": "",
+            "return": {
+                "name": "Miniature Circuit Breakers",
+                "path": "/fa/products/lvd/lvcb/items/mcb/index.html"
+		}
+		}
+	]
+}
+}
+  

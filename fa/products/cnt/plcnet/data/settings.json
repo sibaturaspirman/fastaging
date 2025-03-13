@@ -1,0 +1,436 @@
+{
+	"coment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"comment": "linkは各機種のダウンロードページのURLに変更可",
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/app/fa/download/search.do?kisyu=/plcnet&mode=catalog"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/app/fa/download/search.do?kisyu=/plcnet&mode=manual"
+					},
+					{
+						"name": "Technical<br>Bulletin",
+						"icon": "techinfo",
+						"link": "/app/fa/download/search.do?kisyu=/plcnet&mode=techinfo"
+					},
+					{
+						"name": "CAD Data",
+						"icon": "cad",
+						"link": "/fa/download/?modal=cad"
+					},
+					{
+						"name": "Software",
+						"icon": "software",
+						"link": "/fa/download/?modal=software"
+					},
+					{
+						"name": "Sample<br>Library",
+						"icon": "library",
+						"link": "/fa/download/?modal=lib"
+					}
+				]
+			}
+	  ],
+		"commonItems": [
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2007"
+			}
+        ]
+	},
+	"spotlight": {
+		"comment": "Spotlightに掲載したいページタイトル・画像・リンクを記入",
+		"items": [
+			{
+				"name": "New features make things even easier to use!",
+				"img": "/fa/products/assets/img/faist-202411-spotlight-en.jpg",
+				"link": "/fa/products/select/index.html"
+			}
+		]
+	},
+	"productsMenu": {
+		"comment": "機種共通メニューのlinkは各機種のページのURLに変更可",
+		"items": [
+			{
+				"name": "Product Specifications",
+				"icon": "settings",
+				"link": "/fa/products/faspec/search.page?kisyu=/plcnet",
+        "child": [
+          {
+            "name": "CC-Link IE TSN",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=CC-Link%20IE%20TSN&search=B&word=CC-Link%20IE%20TSN"
+          },
+          {
+            "name": "CC-Link IE Control",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=CC-Link%20IE%20Control&search=B&word=CC-Link%20IE%20Control"
+          },
+          {
+            "name": "CC-Link IE Field",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=CC-Link%20IE%20Field&search=B&word=CC-Link%20IE%20Field"
+          },
+          {
+            "name": "CC-Link IE Field Basic",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=CC-Link%20IE%20Field%20Basic&search=B&word=CC-Link%20IE%20Field%20Basic"
+          },
+          {
+            "name": "CC-Link",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=CC-Link&search=B&word=CC-Link"
+          },
+          {
+            "name": "CC-Link Safety",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=CC-Link%20Safety&search=B&word=CC-Link%20Safety"
+          },
+          {
+            "name": "CC-Link/LT",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=CC-Link/LT&search=B&word=CC-Link/LT"
+          },
+          {
+            "name": "Ethernet",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=Ethernet&search=B&word=Ethernet"
+          },
+          {
+            "name": "AnyWire",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=AnyWire&search=B&word=AnyWire" 
+          },
+          {
+            "name": "SSCNET",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=SSCNET&search=B&word=SSCNET"
+          },
+          {
+            "name": "MELSECNET/H",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=MELSECNET/H&search=B&word=MELSECNET/H"
+          },
+          {
+            "name": "MELSECNET/10",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=MELSECNET/10&search=B&word=MELSECNET/10"
+          },
+          {
+            "name": "MELSECNET(II)/B",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=MELSECNET(II)/B&search=B&word=MELSECNET(II)/B"
+          },
+          {
+            "name": "BACnet",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=BACnet&search=B&word=BACnet"
+          },
+          {
+            "name": "MODBUS",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=MODBUS&search=B&word=MODBUS"
+          },
+          {
+            "name": "Serial communication",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=Serial%20communication&search=B&word=Serial%20communication" 
+          },
+          {
+            "name": "FL-net(OPCN-2)",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=FL-net%20(OPCN-2)&search=B&word=FL-net%20(OPCN-2)"
+          },
+          {
+            "name": "CANopen",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=CANopen&search=B&word=CANopen"
+          },
+          {
+            "name": "PROFINET",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=PROFINET&search=B&word=PROFINET"
+          },
+          {
+            "name": "EtherNet/IP",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=EtherNet/IP&search=B&word=EtherNet/IP"
+          },
+          {
+            "name": "PROFIBUS-DP",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=PROFIBUS-DP&search=B&word=PROFIBUS-DP"
+          },
+          {
+            "name": "DeviceNet",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=DeviceNet&search=B&word=DeviceNet"
+          },
+          {
+            "name": "AS-i",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=AS-i&search=B&word=AS-i"
+          }
+        ]
+			},
+			{
+				"name": "Products certified/compliant to standards",
+				"icon": "standard",
+				"link": "/fa/products/standard/SearchServlet.page?kisyu=/plcnet",
+        "child": [
+          {
+            "name": "CC-Link IE TSN",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=CC-Link%20IE%20TSN&search=B&word=CC-Link%20IE%20TSN"
+          },
+          {
+            "name": "CC-Link IE Control",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=CC-Link%20IE%20Control&search=B&word=CC-Link%20IE%20Control"
+          },
+          {
+            "name": "CC-Link IE Field",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=CC-Link%20IE%20Field&search=B&word=CC-Link%20IE%20Field"
+          },
+          {
+            "name": "CC-Link IE Field Basic",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=CC-Link%20IE%20Field%20Basic&search=B&word=CC-Link%20IE%20Field%20Basic"
+          },
+          {
+            "name": "CC-Link",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=CC-Link&search=B&word=CC-Link"
+          },
+          {
+            "name": "CC-Link Safety",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=CC-Link%20Safety&search=B&word=CC-Link%20Safety"
+          },
+          {
+            "name": "CC-Link/LT",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=CC-Link/LT&search=B&word=CC-Link/LT"
+          },
+          {
+            "name": "Ethernet",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=Ethernet&search=B&word=Ethernet"
+          },
+          {
+            "name": "AnyWire",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=AnyWire&search=B&word=AnyWire"
+          },
+          {
+            "name": "SSCNET",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=SSCNET&search=B&word=SSCNET"
+          },
+          {
+            "name": "MELSECNET/H",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=MELSECNET/H&search=B&word=MELSECNET/H"
+          },
+          {
+            "name": "MELSECNET/10",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=MELSECNET/10&search=B&word=MELSECNET/10"
+          },
+          {
+            "name": "BACnet",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=BACnet&search=B&word=BACnet"
+          },
+          {
+            "name": "MODBUS",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=MODBUS&search=B&word=MODBUS"
+          },
+          {
+            "name": "Serial communication",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=Serial%20communication&search=B&word=Serial%20communication" 
+          },
+          {
+            "name": "FL-net(OPCN-2)",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=FL-net%20(OPCN-2)&search=B&word=FL-net%20(OPCN-2)"
+          },
+          {
+            "name": "CANopen",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=CANopen&search=B&word=CANopen"
+          },
+          {
+            "name": "EtherNet/IP",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=EtherNet/IP&search=B&word=EtherNet/IP"
+          },
+          {
+            "name": "PROFIBUS-DP",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=PROFIBUS-DP&search=B&word=PROFIBUS-DP"
+          },
+          {
+            "name": "DeviceNet",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=DeviceNet&search=B&word=DeviceNet"
+          },
+          {
+            "name": "AS-i",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=AS-i&search=B&word=AS-i"
+          }
+        ]
+			},
+			{
+				"name": "Discontinued Products",
+				"icon": "silver-line",
+				"link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon",
+        "child": [
+          {
+            "name": "CC-Link IE Field",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=CC-Link%20IE%20Field"
+          },
+          {
+            "name": "CC-Link IE Field Basic",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=CC-Link%20IE%20Field%20Basic"
+          },
+          {
+            "name": "CC-Link",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=CC-Link"
+          },
+          {
+            "name": "CC-Link Safety",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=CC-Link%20Safety"
+          },
+          {
+            "name": "CC-Link/LT",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=CC-Link/LT"
+          },
+          {
+            "name": "Ethernet",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=Ethernet"
+          },
+          {
+            "name": "AnyWire",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=AnyWire" 
+          },
+          {
+            "name": "SSCNET",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=SSCNET" 
+          },
+          {
+            "name": "MELSECNET/H",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=MELSECNET/H"
+          },
+          {
+            "name": "MELSECNET/10",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=MELSECNET/10"
+          },
+          {
+            "name": "MELSECNET(II)/B",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=MELSECNET(II)/B"
+          },
+          {
+            "name": "Serial communication",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=Serial%20communication" 
+          },
+          {
+            "name": "FL-net(OPCN-2)",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=FL-net%20(OPCN-2)"
+          }
+        ]
+			},
+			{
+				"name": "Replace Products",
+				"icon": "replace",
+				"link": "/fa/products/cnt/plca/ex/renew/renewal/index.html"
+			},
+			{
+				"name": "FA Integrated Selection Tool",
+				"icon": "tree",
+				"link": "/fa/products/select/index.html"
+			}
+		]
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "Option Menu1",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu2",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu3",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu4",
+				"link": "#"
+			}
+		]
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除",
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','L08658ENG','plcnet','3')",
+				"img": "javascript.toCatalogInfo('img','L08658ENG','plcnet','5')",
+				"link": "javascript.toCatalogInfo('link','L08658ENG','plcnet','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/app/fa/download/search.do?kisyu=/plcnet&mode=catalog"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/app/fa/download/search.do?kisyu=/plcnet&mode=manual"
+			},
+			{
+				"name": "Technical Bulletin",
+				"icon": "technews",
+				"link": "/app/fa/download/search.do?kisyu=/plcnet&mode=techinfo"
+			},
+			{
+				"name": "CAD Data",
+				"icon": "cad",
+				"link": "/fa/download/?modal=cad"
+			},
+			{
+				"name": "Software",
+				"icon": "software",
+				"link": "/fa/download/?modal=software"
+			}
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "Related Link1",
+				"link": "#"
+			},
+			{
+				"name": "Related Link2",
+				"link": "#"
+			},
+			{
+				"name": "Related Link3",
+				"link": "#"
+			},
+			{
+				"name": "Related Link4",
+				"link": "#"
+			}
+		]
+	},
+	"banner": {
+		"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+		"items": [
+			{
+				"name": "FA Integrated Selection Tool",
+				"image": "/fa/products/assets/img/faist-202411-relatedlink-en.jpg",
+				"link": "/fa/products/select/index.html"
+			},
+			{
+				"name": "FA SPEC Search",
+				"image": "/fa/products/assets/img/banner_fa-spec-search.jpg",
+				"link": "/fa/mobile-apps/index.html"
+            }
+		]
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+			{
+				"name": "Contact Us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2007"
+			}
+		]
+	}
+}

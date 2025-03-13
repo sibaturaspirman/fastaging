@@ -1,0 +1,24 @@
+{
+  "layerNav": {
+    "name": "Industrial Computer MELIPC",
+    "path": "/fa/products/edge/melipc/index.html",
+    "firstLayer": [
+      {
+        "name": "Outline",
+        "path": "/fa/products/edge/melipc/pmerit/index.html"
+      },
+      {
+        "name": "MI5000",
+        "path": "/fa/products/edge/melipc/pmerit/mi5000/index.html"
+      },
+      {
+        "name": "MI3000",
+        "path": "/fa/products/edge/melipc/pmerit/mi3000/index.html"
+      },
+      {
+        "name": "MI2000",
+        "path": "/fa/products/edge/melipc/pmerit/mi2000/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+    "layerNav": {
+        "name": "Energy Saving Support Software EcoAdviser",
+        "path": "/fa/products/software/ems/eap/index.html",
+        "firstLayer": [
+            {
+                "name": "Feature",
+                "path": "/fa/products/software/ems/eap/index.html"
+            },
+            {
+                "name": "Line-up",
+                "path": "/fa/products/software/ems/eap/index_2.html"
+            },
+            {
+                "name": "Utilization Support Services",
+                "path": "/fa/products/software/ems/eap/index_3.html"
+            },
+            {
+                "name": "File converter",
+                "path": "/fa/products/software/ems/eap/index_6.html"
+            },
+            {
+                "name": "Case Studies",
+                "path": "/fa/products/software/ems/eap/index_4.html"
+            },
+            {
+                "name": "Related Videos",
+                "path": "/fa/products/software/ems/eap/index_5.html"
+            }
+        ]
+    },
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Energy Saving Support Software",
+            "path": "/fa/products/software/ems/index.html",
+            "child": [
+              {
+                "name": "Energy Saving Support Software EcoAdviser",
+                "path": "/fa/products/software/ems/eap/index.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "switchNav": {
+    "name": "Energy Saving Support Software",
+    "path": "/fa/products/software/ems/index.html",
+    "child": [
+      {
+        "group": "Energy Saving Support Software",
+        "name": "Energy Saving Support Software EcoAdviser",
+        "feature": "/fa/products/software/ems/eap/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/ecoadviser&current=EcoAdviser",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/ecoadviser&current=EcoAdviser",
+        "discon": ""
+      }
+        ]
+    }
+}

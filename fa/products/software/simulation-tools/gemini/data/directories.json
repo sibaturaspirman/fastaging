@@ -1,0 +1,108 @@
+{
+	"directories": {
+		"name": "Home",
+		"path": "/fa/index.html",
+		"child": [
+		  {
+			"name": "Products",
+			"path": "/fa/products/index.html",
+			"child": [
+			  {
+				"name": "Simulation tools",
+				"path": "/fa/products/software/simulation-tools/index.html",
+				"child": [
+				  {
+					"name": "3D Simulator MELSOFT Gemini",
+					"path": "/fa/products/software/simulation-tools/gemini/index.html"
+				  },		  
+				  {
+					"name": "MELSOFT RT ToolBox3",
+					"path": "/fa/products/rbt/robot/smerit/rt3/index.html"
+				  }		  
+				]
+			  }
+			]
+		  }
+		]
+  },
+  "switchNav": {
+    "name": "Simulation tools",
+    "path": "/fa/products/software/simulation-tools/index.html",
+    "child": [
+      {
+        "group": "Simulation tools",
+        "name": "3D Simulator MELSOFT Gemini",
+        "feature": "/fa/products/software/simulation-tools/gemini/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/3dsim",
+        "standard": "",
+        "discon": ""
+      },
+	  {
+        "group": "Simulation tools",
+        "name": "MELSOFT RT ToolBox3",
+        "feature": "/fa/products/rbt/robot/smerit/rt3/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "Simulation tools",
+    "path": "/fa/products/software/simulation-tools/gemini/index.html",
+    "firstLayer": [
+      {
+        "name": "Overview",
+        "path": "/fa/products/software/simulation-tools/gemini/index.html"
+	  },
+      {
+        "name": "Usages",
+        "path": "/fa/products/software/simulation-tools/gemini/usage.html"
+      },
+      {
+        "name": "Introduction Example",
+        "path": "/fa/products/software/simulation-tools/gemini/introductions.html"
+      },
+      {
+        "name": "Product List",
+        "path": "/fa/products/software/simulation-tools/gemini/lineup.html"
+      },
+      {
+        "name": "Feature",
+        "path": "/fa/products/software/simulation-tools/gemini/function.html"
+      },
+      {
+        "name": "Fee-based Maintenance Service",
+        "path": "/fa/products/software/simulation-tools/gemini/service.html"
+      },
+      {
+        "name": "Tutorial",
+        "path": "/fa/products/software/simulation-tools/gemini/trial.html"
+      },
+      {
+        "name": "Academy",
+        "path": "/fa/products/software/simulation-tools/gemini/howto.html",
+        "secondLayer": [
+		  {
+            "name": "By Category",
+            "path": "/fa/products/software/simulation-tools/gemini/howto.html"
+          },
+          {
+            "name": "By Purpose",
+            "path": "/fa/products/software/simulation-tools/gemini/howto_2_2.html",
+            "thirdLayer": [
+              {
+                "name": "How to use Human, Mobile Robot",
+                "path": "/fa/products/software/simulation-tools/gemini/howto_2_2.html"                  
+              }					
+            ] 
+          }
+        ]
+      },
+      {
+        "name": "eCatalog",
+        "path": "/fa/products/software/simulation-tools/gemini/library.html"
+      }
+    ]
+  }
+}

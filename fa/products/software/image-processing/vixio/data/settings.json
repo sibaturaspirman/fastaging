@@ -1,0 +1,39 @@
+{
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/fa/download/search.page?mode=catalog&kisyu=/vixio"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/fa/download/search.page?mode=manual&kisyu=/vixio"
+					},
+					{
+						"name": "Technical<br>Bulletin",
+						"icon": "techinfo",
+						"link": "/fa/download/techinfo/search.page?mode=technews&kisyu=/vixio"
+					},
+					{
+						"name": "Software",
+						"icon": "software",
+						"link": "/fa/download/?modal=software"
+					},
+					{
+						"name": "Sample<br>Library",
+						"icon": "library",
+						"link": "/fa/download/?modal=lib"
+					}
+				]
+			}
+	  ],
+		"commonItems": []
+	}
+}

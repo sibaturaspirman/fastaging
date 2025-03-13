@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+/* PC・スマホ表示 */
+@media (min-width:768px) {
+  .pc_only {
+      display: block !important;
+  }
+  .sp_only {
+      display:none !important;
+  }
+}
+@media only screen and (max-width:767px) {
+  .pc_only {
+      display:none !important;
+  }
+  .sp_only {
+      display: block !important;
+  }
+}
+
+/* 共通項目 */
+.mrgn_top10 {
+	margin-top: 10px!important;
+}
+.mrgn_top15{
+	margin-top: 15px!important;
+}
+.mrgn_top20 {
+	margin-top: 20px!important;
+}
+.mrgn_top30 {
+	margin-top: 30px!important;
+}
+.mrgn_top40 {
+	margin-top: 40px!important;
+}
+.mrgn_btm20 {
+	margin-bottom: 20px!important;
+}
+.mrgn_btm35 {
+	margin-bottom: 35px!important;
+}
+.inner_ma {
+    padding-right: 90px;
+    padding-left: 90px;	
+}
+@media screen and (max-width:600px) {
+.inner_ma {
+    padding-left: 0;
+    padding-right: 0;
+}
+}
+
+/* メインビジュアル */
+.main_bg {
+	background: url("../img/main_bg_img.jpg") no-repeat center / 100% 100%;
+}
+.main_bgwrap {
+	overflow: hidden;
+}
+.pattern01 img{
+    opacity: 0;
+    transform: translateX(40px);
+    transition: .9s;
+}
+.pattern01.show img{
+    opacity: 1;
+    transform: translateX(0);
+}
+@media (max-width: 1400px) {
+.main_bg {
+	background: url("../img/main_bg_img.jpg") no-repeat center / auto 100%;
+}
+}
+
+/* 幅全体グレー背景 */
+.wid100_bg {
+	margin-left: calc(((100vw - 100%) / 2) * -1);
+	margin-right: calc(((100vw - 100%) / 2) * -1);
+}
+.sec_gray {
+	background-color: #F2F2F2;
+	padding: 40px 0 50px 0;
+}
+
+/* リード文 */
+.lead_tx_01 {
+	color: #444444;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.6em;
+}
+
+/* 横線付きH3 */
+.h3_sideline01 {
+    position: relative;
+    padding: 0 62px;
+    text-align: center;
+    font-size: 22px;
+	color: #00a0c8;
+}
+.h3_sideline01:before {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background: #00a0c8;
+}
+.h3_sideline01 span {
+    position: relative;
+    padding: 0 1em;
+    background: #fff;
+}
+
+/* 吹き出しH3 */
+.box01 h3 {
+	color: #729330;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 3px;
+	background-color: #FFF;
+}
+.box01 {
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #729330;
+    color: #729330;
+	margin: 50px 15%;
+	background-color: #FFF;
+}
+.box01:before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) skew(-25deg);
+    height: 20px;
+    width: 10px;
+    border-right: 3px solid #729330;
+    background-color: #FFF;
+    content: "";
+}
+@media screen and (max-width:768px) {
+.box01 {
+	margin: 50px 15%;
+}
+}
+
+.box02 h3 {
+	color: #00a0c8;
+	font-size: 19px;
+	font-weight: bold;
+	padding-right: 77px;
+	display: inline-flex;
+	align-items: center;
+	height: 100px;
+}
+.box02 {
+    position: relative;
+    border-top: 3px solid #00a0c8;
+	border-bottom: 3px solid #00a0c8;
+    color: #00a0c8;
+	margin: 50px 0;
+}
+.box02:before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) skew(-25deg);
+    height: 20px;
+    width: 10px;
+    border-right: 3px solid #00a0c8;
+    background-color: #FFF;
+    content: "";
+}
+.box02-01 {
+	background-image: url("../img/acb_feature_06-1.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.box02-02 {
+	background-image: url("../img/acb_feature_06-2.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.box02-03 {
+	background-image: url("../img/acb_feature_06-3.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.box02-04 {
+	background-image: url("../img/acb_feature_06-4.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.box02-05 {
+	background-image: url("../img/acb_feature_06-5.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+@media screen and (max-width:767px) {
+.box02 {
+	margin: 50px 0;
+	text-align: center;
+}
+}
+@media screen and (max-width:600px) {
+.box02-01,.box02-02,.box02-03,.box02-04,.box02-05 {
+	background-image: none;
+}
+.box02 h3 {
+	padding: 0;
+}
+}
+
+
+/* スラッシュ見出し */
+.grid_slash {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	font-size: 24px;
+	font-weight: 700;
+	color: #735aa3;
+}
+.grid_slash::before, .grid_slash::after {
+    content: "";
+    width: 35px;
+    height: 3px;
+    background-color: #735aa3;
+	margin: auto 10px;
+}
+.grid_slash::before {
+    transform: rotate(60deg);
+}
+.grid_slash::after {
+    transform: rotate(-60deg);
+}
+@media (max-width: 600px) {
+.grid_slash {
+	font-size: 20px;
+}
+}
+
+/* チェックマークつきリスト */
+.acb_list_01 li {
+    padding-left: 28px;
+	line-height: 1.5em;
+	padding-bottom: 7px;
+	font-size: 16px;
+	background: url("../img/img_check.png") left 0px top 3px no-repeat;
+}
+
+/* 囲み枠H3 */
+.h3_kakomi01 {
+	margin-top: 15px;
+	color: #00A0C8;
+	border: solid 3px #00A0C8;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 2em;
+}
+.h3_kakomi02 {
+	margin-top: 15px;
+	color: #735aa3;
+	border: solid 3px #735aa3;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 2em;
+}
+
+/* 下線H3 */
+.h3_ud_line01 {
+	color: #dc6f06;
+	margin-top: 60px;
+	border-bottom: dotted 4px #dc6f06;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.8em;
+}
+
+/* ラインアップH4 */
+.h4_lineup01 {
+	color: #FFF;
+	background-color: #004878;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 8px;
+}
+/* index_2 ボタン */
+.button_line007 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px auto 30px;
+    padding: 15px 10px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #eee;
+	font-size: 16px;
+}
+.button_line007 a:hover {
+    background: #f8e4ea;
+    color: #c35581;
+}
+.button_line007 a:before, .button_line007 a:after {
+	box-sizing: inherit;
+	content: "";
+	position: absolute;
+	border: 2px solid transparent;
+	width: 0;
+	height: 0;
+}
+.button_line007 a:before {
+	top: 0;
+	left: 0;
+}
+.button_line007 a:after {
+	bottom: 0;
+	right: 0;
+}
+.button_line007 a:hover:before, .button_line007 a:hover:after {
+	width: 100%;
+	height: 100%;
+}
+.button_line007 a:hover:before {
+	border-top-color: #c35581;
+	border-right-color: #c35581;
+	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+.button_line007 a:hover:after {
+	border-bottom-color: #c35581;
+	border-left-color: #c35581;
+	transition: border-color 0s ease-out 0.2s, width 0.15s ease-out 0.2s, height 0.15s ease-out 0.3s;
+}
+/* index_4 画面切り替え */
+.image-change_1 {
+    content: url('../img/acb_network_01-1.png');
+}
+@media (max-width: 600px) {
+.image-change_1 {
+    content: url('../img/acb_network_01-2.png');
+}
+}
+

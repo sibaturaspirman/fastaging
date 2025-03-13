@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+
+/* ------------------------------ page_link */
+
+#melfa_main_area .efactory {
+	border: 10px solid #d9d9d9;
+	background: #fafafa;
+	padding: 1.4em 20px 1.4em 35px;
+	margin: 1.9em 0 0 0;
+}
+#melfa_main_area .efactory .img_left {
+	float: left;
+	padding: 1.4em 35px 0.8em 0;
+}
+#melfa_main_area .efactory .text_left {
+	float: left;
+	width: 470px;
+}
+#melfa_main_area .efactory .lead_efactory {
+	font-size:90%;
+	color:#333333;
+	font-weight: bold;
+	margin-top: 0;
+}
+#melfa_main_area .efactory .efactory_txt {
+	margin-top: 0;
+}
+#melfa_main_area .efactory .efactory_Link{
+	margin-top: 0.4em;
+}
+
+#melfa_main_area .efactory .efactory_Link a,
+#melfa_main_area a .efactory_Link { padding-left: 10px; background: url(/fa/products/snsr/sensor/pmerit/images/bullet_link.gif) 0 0.5em no-repeat;
+    color: #005e8c; }
+
+#melfa_main_area .efactory a:hover {
+	 text-decoration: none;
+}
+
+
+ 
+/* table -001 START */
+#melfa_main_area table.dataTable { border: 1px solid #d5d5d5; border-collapse: collapse; width: 100%; margin: 20px 0 0 0; }
+#melfa_main_area table.dataTable th,
+#melfa_main_area table.dataTable td { border: 1px solid #d5d5d5; padding: 5px; }
+#melfa_main_area table.dataTable thead th { background: #e6e6e6; text-align: center; }
+#melfa_main_area table.dataTable tbody th { background: #eceef5; }
+/* table -001 END */
+#sensor_list ul{
+	list-style:none;
+    }
+#sensor_list ul li{
+	padding-left: 1em;
+	text-indent: -2em;
+    }
+
+/* list */
+.mh11_list li { list-style: none; padding-left:0em; text-indent:-2em; }
+
+/*
+ page Link
+---------------------------------------------------*/
+.page_link {
+	margin-bottom: 2em;
+	padding-top: 2px;
+	border-bottom: 2px solid #fafafa;
+}
+.page_link .wrap {
+	border-bottom: 1px solid #e0e0e0;
+}
+.page_link .inner {
+	padding: 0 0 1em;
+	border-bottom: 2px solid #fafafa;
+	zoom: 1;
+	overflow: hidden;
+}
+.page_link li {
+	float: left;
+	margin: 10px 15px 10px 0;
+	padding: 0 15px 0 0;
+/* 	border-right: 1px solid #808080;*/
+	white-space: nowrap;
+	list-style: none;
+}
+.page_link li.last {
+	border-right: none;
+	margin: 10px 0 10px 0;
+	padding: 0;
+}
+list 
+.page_link li.line {
+	white-space: normal;
+}
+.page_link li a {
+	display: block;
+	padding-left: 15px;
+	background: url(/fa/products/snsr/sensor/pmerit/images/arw_anchor_circle.gif) no-repeat 0 0.15em;
+	text-decoration: none;
+}
+.page_link li a:hover {
+	text-decoration: underline;
+}
+#parts_list.page_link {
+	padding: 0.5em 5px 0.5em;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+/* movie */
+#melfa_main_area .mv_snsr { width: 480px; margin: 20px auto 60px; border: 5px #555 solid; }
+
+/* dimensions */
+#melfa_main_area h4 { background-color: #e2e2e2; padding: 4px 5px; font-size: 82%; }
+#melfa_main_area h5 { background-color: #999; color: #fff; padding: 2px 5px; font-size: 75%; width: 10em; }
+#melfa_main_area
+
+.midashi_blue { color: #375372; }
+.ant_no {font-size:xx-small;font-weight:normal;}
+.gikn_bk { background-color: #efefef; }
+
+/*#melfa_main_area .concept_top h3 {border-bottom:solid 1px #375372; font-size:100%; font-weight:bold; color:#375372;background:none; }*/
+
+#melfa_main_area .concept_top h3 {
+padding: 0 0 0 10px !important;
+font-size: 100%;
+font-weight: bold;
+background: url(../images/icon_03.gif) 0 0.5em no-repeat !important;
+width: 36em;
+}
+
+.ft4 {width:100%; background-color:#dce7ed;padding-bottom:20px;}
+.ft4 p { clear: both; padding-left:20px;padding-top:10px;margin-left:20px;border-top:solid 1px #375372;width:720px;}
+.ft4_midashi { padding-top:20px;margin-left:20px;float:left;margin-bottom:10px;}
+.ft4_midashi span { font-size:105%; font-weight:bold; color:#375372;}
+
+.clear {
+clear:both;
+}
+
+.right {
+float:right;
+}
+
+.link_btn_s {
+	margin-top:10px;
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #eee;
+	border: 1px solid #c8c8c8;
+	text-align: center;
+}
+.link_btn_s:hover {
+	opacity:0.6;
+	filter: alpha(opacity=60);
+	text-decoration:none;
+}
+.link_btn_s span {
+	color: #333;
+	font-size:75%;
+	border-left:1px solid #c8c8c8;
+	display:inline-block;
+	padding-left:7px;
+	margin-left:5px;
+}
+
+#melfa_main_area .link_btn_s.link01 a {
+	background-position:0 0.3em;
+	display:inline-block;
+	height:1em;
+}
+
+#melfa_main_area  .concept_top .link_btn_s {
+	margin:15px 0;
+}
+
+.link_btn_s.news_btn {
+float:right;
+margin-right:20px;
+margin-top:15px
+}
+
+#melfa_main_area .concept_top p {
+clear:both;
+margin-top:0;
+}
+
+.zoom_list_button {
+    margin-top: 10px !important;
+    margin-bottom: 15px;
+}
+.zoom_btn {
+    font-weight: bold;
+    padding: 6px 1.6667% 4px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+    width: 160px;
+    margin: 0 auto;
+}
+.button_type_gray {
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, white, #e1e1e1);
+    border: 1px solid #c7c7c7;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1e1e1'); 
+}
+.zoom_btn.button_type_gray:hover {
+    background-color: #dedede;
+    background-image: linear-gradient(to bottom, #dedede, #dedede);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#dedede'); 
+    text-decoration: none !important;
+}
+.button_type_gray .inner {
+    background-image: url(../images/arr_red.png);
+    background-position: 0 0.4em;
+    background-repeat: no-repeat;
+}
+
+.button_type_gray:link {
+    color: #005e8c;
+}.button_type_gray:hover {
+    color: #005e8c;
+}
+.button_type_gray:visited {
+    color: #005e8c;
+}
+h2 sup, h3 sup, h4 sup {
+font-weight:normal;
+}
+
+.a_indent {
+padding-left:2em;
+text-indent:-2em;
+}
+
+.txt14.mh11_list li {
+line-height:1.45em;
+}
+
+div.conf_image {
+position:relative;
+width:700px;
+margin:15px auto;
+}
+div.conf_image ul li {
+position:absolute;
+list-style-type:none;
+}
+div.conf_image ul li a:hover {
+opacity:0.7;
+filter: alpha(opacity=70);
+}
+div.conf_image ul li#sh {
+top:90px;
+left:500px;
+}
+div.conf_image ul li#op {
+top:386px;
+left:393px;
+}
+div.conf_image ul li#cont_unit {
+top:315px;
+left:27px;
+}
+
+div.conf_image02 {
+position:relative;
+width:700px;
+margin:15px auto;
+}
+div.conf_image02 ul li {
+position:absolute;
+list-style-type:none;
+}
+div.conf_image02 ul li a:hover {
+opacity:0.7;
+filter: alpha(opacity=70);
+}
+div.conf_image02 ul li#sh02 {
+top:90px;
+left:500px;
+}
+div.conf_image02 ul li#cont02 {
+top:250px;
+left:85px;
+}
+div.conf_image02 ul li#op02 {
+top:190px;
+left:520px;
+}

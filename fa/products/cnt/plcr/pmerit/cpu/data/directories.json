@@ -1,0 +1,36 @@
+{
+	"layerNav": {
+		"name": "CPU",
+		"path": "/fa/products/cnt/plcr/pmerit/cpu/index.html",
+		"firstLayer": [
+			{
+				"name": "Features",
+				"path": "/fa/products/cnt/plcr/pmerit/cpu/index.html"
+			},
+			{
+				"name": "Programmable Controller CPU",
+				"path": "/fa/products/cnt/plcr/pmerit/cpu/cpu.html"
+			},
+			{
+				"name": "Motion CPU",
+				"path": "/fa/products/cnt/plcr/pmerit/cpu/motion.html"
+			},
+			{
+				"name": "Safety CPU",
+				"path": "/fa/products/cnt/plcr/pmerit/cpu/safety.html"
+			},
+			{
+				"name": "Process CPU, SIL2 process CPU, Redundant function",
+				"path": "/fa/products/cnt/plcr/pmerit/cpu/process.html"
+			},
+			{
+				"name": "C Controller, C intelligent function",
+				"path": "/fa/products/cnt/plcr/pmerit/cpu/c_cont.html"
+			},
+			{
+				"name": "MELSECWinCPU",
+				"path": "/fa/products/cnt/plcr/pmerit/cpu/wincpu.html"
+			}
+		]
+	}
+}

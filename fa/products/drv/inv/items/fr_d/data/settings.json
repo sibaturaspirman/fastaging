@@ -1,0 +1,184 @@
+{
+	"coment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"comment": "linkは各機種のダウンロードページのURLに変更可",
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/app/fa/download/search.do?kisyu=/inv&mode=catalog"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/app/fa/download/search.do?kisyu=/inv&mode=manual"
+					},
+					{
+						"name": "Technical<br>Bulletin",
+						"icon": "techinfo",
+						"link": "/app/fa/download/search.do?kisyu=/inv&mode=techinfo"
+					}
+				]
+			}
+	  ],
+		"commonItems": [
+			{
+				"name": "FAQ",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2128"
+			}
+        ]
+	},
+	"spotlight": {
+		"comment": "Spotlightに掲載したいページタイトル・画像・リンクを記入",
+		"items": [
+			{
+				"name": "Spotlight1",
+				"img": "/fa/shared/gws0001/img/dummy_index.png",
+				"link": "#"
+			},
+			{
+				"name": "Spotlight2",
+				"img": "/fa/shared/gws0001/img/dummy_index.png",
+				"link": "#"
+			},
+			{
+				"name": "Spotlight3",
+				"img": "/fa/shared/gws0001/img/dummy_index.png",
+				"link": "#"
+			}
+		]
+	},
+	"productsMenu": {
+		"comment": "機種共通メニューのlinkは各機種のページのURLに変更可",
+		"items": [
+			{
+				"name": "Featured Products",
+				"icon": "announce",
+				"link": "/fa/products/drv/inv/ex/watch/index.html"
+			},
+			{
+				"name": "FA Integrated Selection Tool",
+				"icon": "tree",
+				"link": "/fa/products/select/index.html"
+			}
+		]
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "Option Menu1",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu2",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu3",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu4",
+				"link": "#"
+			}
+		]
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除",
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','L-06153ENG','inv','3')",
+				"img": "javascript.toCatalogInfo('img','L-06153ENG','inv','5')",
+				"link": "javascript.toCatalogInfo('link','L-06153ENG','inv','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/app/fa/download/search.do?kisyu=/inv&mode=catalog"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/app/fa/download/search.do?kisyu=/inv&mode=manual"
+			},
+			{
+				"name": "Technical Bulletin",
+				"icon": "technews",
+				"link": "/app/fa/download/search.do?kisyu=/inv&mode=techinfo"
+			},
+			{
+				"name": "CAD Data",
+				"icon": "cad",
+				"link": "/fa/download/?modal=cad"
+			},
+			{
+				"name": "Software",
+				"icon": "software",
+				"link": "/fa/download/?modal=software"
+			},
+			{
+				"name": "Sample Library",
+				"icon": "library",
+				"link": "/fa/download/?modal=lib"
+			}
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "FA e-learning",
+				"link": "/fa/assist/e-learning/index.html"
+			},
+			{
+				"name": "FA Terminology Dictionary",
+				"link": "/fa/assist/fa_dictionary/index.html"
+			}
+		]
+	},
+	"banner": {
+		"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+		"items": [
+            {
+				"name": "The energy saving calculation system",
+				"image": "/fa/products/drv/inv/img/banner_simulation.jpg",
+				"link": "/fa/products/drv/inv/pmerit/select/index.html"
+            },
+            {
+				"name": "Digital Catalogs",
+				"image": "/fa/products/drv/inv/img/banner_web-catalog.jpg",
+				"link": "/fa/products/drv/inv/pmerit/catalog_en.html"
+            },
+            {
+				"name": "New features make things even easier to use!",
+				"image": "/fa/products/assets/img/faist-202411-relatedlink-en.jpg",
+				"link": "/fa/products/select/index.html"
+            }
+		]
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+			{
+				"name": "Contact us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2128"
+			}
+		]
+	}
+}

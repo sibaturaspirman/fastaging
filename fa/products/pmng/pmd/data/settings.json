@@ -1,0 +1,156 @@
+{
+	"coment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"comment": "linkは各機種のダウンロードページのURLに変更可",
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/fa/download/search.page?kisyu=/pmd&mode=catalog"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/fa/download/search.page?mode=manual&kisyu=/pmd"
+					},
+					{
+						"name": "Technical<br>Bulletin",
+						"icon": "techinfo",
+						"link": "/fa/download/techinfo/search.page?mode=technews&kisyu=/pmd"
+					},
+					{
+						"name": "CAD Data",
+						"icon": "cad",
+						"link": "/fa/download/cad/search.page?mode=cad&kisyu=/pmd"
+					}
+				]
+			}
+	  ],
+		"commonItems": [
+			{
+				"name": "FAQ",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2300"
+			}
+        ]
+	},
+	"spotlight": {
+		"comment": "Spotlightに掲載したいページタイトル・画像・リンクを記入",
+		"items": []
+	},
+	"productsMenu": {
+		"comment": "機種共通メニューのlinkは各機種のページのURLに変更可",
+		"items": [
+			{
+				"name": "Product Specifications",
+				"icon": "settings",
+				"link": "#",
+				"child": [
+					{
+						"name": "Instrument Transformers",
+						"link": "/fa/products/faspec/search.page?kisyu=/pmd&radio=Instrument%20Transformers&search=B&word=Instrument%20Transformers"
+					},
+					{
+						"name": "Meters",
+						"link": "/fa/products/faspec/search.page?kisyu=/pmd&radio=Meters&search=B&word=Meters"
+					}
+				]
+			},
+			{
+				"name": "Products certified/compliant to various standards",
+				"icon": "standard",
+				"link": "#",
+				"child": [
+					{
+						"name": "Instrument Transformers",
+						"link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/pmd&radio=Instrument%20Transformers&search=B&word=Instrument%20Transformers"
+					},
+					{
+						"name": "Meters",
+						"link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/pmd&radio=Meters&search=B&word=Meters"
+					}
+				]
+			},
+			{
+				"name": "Discontinued Products",
+				"icon": "silver-line",
+				"link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/pmd&category=discon"
+			},
+			{
+				"name": "FA Integrated Selection Tool",
+				"icon": "tree",
+				"link": "/fa/products/select/index.html"
+			}
+		]
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": []
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除",
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','YM-C-Y-0758','pmd','3')",
+				"img": "javascript.toCatalogInfo('img','YM-C-Y-0758','pmd','5')",
+				"link": "javascript.toCatalogInfo('link','YM-C-Y-0758','pmd','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/fa/download/search.page?kisyu=/pmd&mode=catalog"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/fa/download/search.page?mode=manual&kisyu=/pmd"
+			},
+			{
+				"name": "Technical Bulletin",
+				"icon": "techinfo",
+				"link": "/fa/download/techinfo/search.page?mode=technews&kisyu=/pmd"
+			},
+			{
+				"name": "CAD Data",
+				"icon": "cad",
+				"link": "/fa/download/cad/search.page?mode=cad&kisyu=/pmd"
+			}
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "FA e-learning",
+				"link": "/fa/assist/e-learning/index.html"
+			}
+		]
+	},
+	"banner": {
+		"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+		"items": []
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+			{
+				"name": "Contact Us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2300"
+			}
+		]
+	}
+}

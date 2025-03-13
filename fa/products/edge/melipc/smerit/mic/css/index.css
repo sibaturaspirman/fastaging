@@ -1,0 +1,43 @@
+#melfa_main_area .download_button {
+  text-align: right;
+  margin-top: 15px;
+}
+#melfa_main_area .download_button:hover {
+  opacity: 0.8;
+}
+#melfa_main_area .area_download {
+  border: 1px solid #d5d5d5;
+  padding: 25px 30px;
+  margin-top: 20px;
+}
+#melfa_main_area .area_download .head {
+  font-size: 87.5%;
+  line-height: 1;
+  margin-top: 0;
+}
+#melfa_main_area .area_download .sub_inner p {
+  margin-top: 0;
+}
+#melfa_main_area .area_download .area_download_button {
+  width: 220px;
+  float: left;
+}
+
+#melfa_main_area .area_download .area_download_button {
+  display: block;
+}
+#melfa_main_area .area_download .area_download_button:hover {
+  opacity: 0.8;
+}
+#melfa_main_area .area_download .area_note {
+  margin-left: 20px;
+  float: right;
+  width: 470px;
+}
+#melfa_main_area .list_indent {
+    text-indent: -2.75em;
+    margin-left: 2.75em;
+    counter-increment: num;
+    margin-bottom: 0em !important;
+    /*font-size: 70%;*/
+    }

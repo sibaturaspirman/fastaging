@@ -1,0 +1,114 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Programmable<br>Controllers<br>MELSEC",
+            "path": "/fa/products/cnt/plc/index.html",
+            "child": [
+              {
+                "name": "MELSEC iQ-R Series",
+                "path": "/fa/products/cnt/plcr/items/index.html"
+              },
+              {
+                "name": "MELSEC iQ-F Series",
+                "path": "/fa/products/cnt/plcf/items/index.html"
+              },
+              {
+                "name": "MELSEC-Q Series",
+                "path": "/fa/products/cnt/plcq/items/index.html"
+              },
+              {
+                "name": "MELSEC-L Series",
+                "path": "/fa/products/cnt/plcl/items/index.html"
+              },
+              {
+                "name": "MELSEC-F Series",
+                "path": "/fa/products/cnt/plc_fx/items/index.html"
+              },
+              {
+                "name": "MELSEC-QS/WS Series",
+                "path": "/fa/products/cnt/plcqsws/items/index.html"
+              },
+              {
+                "name": "MELSEC-A Series",
+                "path": "/fa/products/cnt/plca/pmerit/concept/index.html"
+              },
+              {
+                "name": "Network-related products",
+                "path": "/fa/products/cnt/plcnet/items/index.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "switchNav": {
+    "name": "MELSEC-L Series",
+    "path": "/fa/products/cnt/plcl/items/index.html",
+    "child": [
+      {
+        "group": "LP3-1",
+        "name": "L Series Features",
+        "feature": "/fa/products/cnt/plcl/pmerit/concept/index.html",
+        "spec": "/fa/products/standard/SearchServlet.page?kisyu=/plcl",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/plcl",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcl&category=discon"
+      },
+      {
+        "group": "LP3-1",
+        "name": "CPU",
+        "feature": "/fa/products/cnt/plcl/pmerit/cpu/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcl&radio=CPU&search=B&word=CPU",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcl&radio=CPU&search=B&word=CPU",
+        "discon": ""
+      },
+      {
+        "group": "LP3-1",
+        "name": "I/O",
+        "feature": "/fa/products/cnt/plcl/pmerit/io/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcl&radio=I/O&search=B&word=I/O",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcl&radio=I/O&search=B&word=I/O",
+        "discon": ""
+      },
+      {
+        "group": "LP3-1",
+        "name": "Analog/Temperature Control",
+        "feature": "/fa/products/cnt/plcl/pmerit/analog/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcl&radio=Analog&search=B&word=Analog",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcl&radio=Analog&search=B&word=Analog",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcl&category=discon&bunrui1=Analog"
+      },
+      {
+        "group": "LP3-1",
+        "name": "Simple Motion/Positioning",
+        "feature": "/fa/products/cnt/plcl/pmerit/motion/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcl&radio=Simple%20motion/positioning&search=B&word=Simple%20motion/positioning",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcl&radio=Simple%20motion/positioning&search=B&word=Simple%20motion/positioning",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcl&category=discon&bunrui1=Simple%20motion/positioning"
+      },
+      {
+        "group": "LP3-1",
+        "name": "Flexible I/O/High-Speed Counter",
+        "feature": "/fa/products/cnt/plcl/pmerit/counter/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcl&radio=High-speed%20counter/flexible%20I/O&search=B&word=High-speed%20counter/flexible%20I/O",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcl&radio=High-speed%20counter/flexible%20I/O&search=B&word=High-speed%20counter/flexible%20I/O",
+        "discon": ""
+      },
+      {
+        "group": "LP3-1",
+        "name": "Network",
+        "feature": "/fa/products/cnt/plcl/pmerit/network/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcl&radio=Network&search=B&word=Network",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcl&radio=Network&search=B&word=Network",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcl&category=discon&bunrui1=Network"
+      }
+    ]
+  }
+}

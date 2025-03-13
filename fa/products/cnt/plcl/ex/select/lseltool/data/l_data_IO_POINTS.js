@@ -1,0 +1,1 @@
+[{"VAL":"0","NM":"0 point"},{"VAL":"16","NM":"16 points"},{"VAL":"32","NM":"32 points"},{"VAL":"48","NM":"48 points"},{"VAL":"64","NM":"64 points"},{"VAL":"128","NM":"128 points"},{"VAL":"256","NM":"256 points"},{"VAL":"512","NM":"512 points"},{"VAL":"1024","NM":"1024 points"}]

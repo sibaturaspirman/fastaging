@@ -1,0 +1,73 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html",
+            "child": [
+				{
+					"name": "Circuit Breakers for Equipment",
+					"path": "/fa/products/lvd/lvcb/pmerit/cbe/index.html"
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "Circuit Breakers for Equipment",
+    "path": "/fa/products/lvd/lvcb/pmerit/cbe/index.html",
+    "firstLayer": [
+      {
+        "name": "Circuit Protectors",
+        "path": "/fa/products/lvd/lvcb/pmerit/cbe/index.html",
+        "secondLayer": [
+        {
+          "name": "Features",
+          "path": "/fa/products/lvd/lvcb/pmerit/cbe/index.html"
+        },
+        {
+          "name": "Product Lineup",
+          "path": "/fa/products/lvd/lvcb/pmerit/cbe/index_2.html"
+        }
+        ]
+     },
+      {
+        "name": "Safety Breaker-Type Earth Leakage Circuit Breakers",
+        "path": "/fa/products/lvd/lvcb/pmerit/cbe/index_3.html",
+        "secondLayer": [
+        {
+          "name": "Features",
+          "path": "/fa/products/lvd/lvcb/pmerit/cbe/index_3.html"
+        }
+        ]
+      }
+    ]
+  },
+"switchNav": {
+	"name": "Circuit Breakers for Equipment",
+	"path": "/fa/products/lvd/lvcb/items/cbe/index.html",
+	"child": [
+		{
+			"group": "Circuit Breakers for Equipment",
+			"name": "Circuit Breakers for Equipment",
+			"feature": "/fa/products/lvd/lvcb/pmerit/cbe/index.html",
+			"spec": "/fa/products/faspec/search.page?kisyu=/lvcb&current=CBE",
+			"standard": "/fa/products/standard/SearchServlet.page?kisyu=/lvcb&current=CBE",
+			"discon": "",
+            "return": {
+                "name": "Circuit Breakers for Equipment",
+                "path": "/fa/products/lvd/lvcb/items/cbe/index.html"
+			}
+		}
+	]
+}
+}
+  

@@ -1,0 +1,46 @@
+{
+  "layerNav": {
+    "name": "FREQROL-F series",
+    "path": "/fa/products/drv/inv/items/fr_f/index.html",
+    "firstLayer": [
+      {
+        "name": "Outline",
+        "path": "/fa/products/drv/inv/pmerit/fr_f/index.html"
+      },
+      {
+        "name": "FREQROL-F800",
+        "path": "/fa/products/drv/inv/pmerit/fr_f/fr_f800/index.html"
+      },
+      {
+        "name": "FREQROL-F700PJ",
+        "path": "/fa/products/drv/inv/pmerit/fr_f/fr_f700pj/index.html",
+        "secondLayer": [
+          {
+            "name": "Concept",
+            "path": "/fa/products/drv/inv/pmerit/fr_f/fr_f700pj/index.html"
+          },
+          {
+            "name": "Inverter Control for Energy Saving",
+            "path": "/fa/products/drv/inv/pmerit/fr_f/fr_f700pj/f7pj01.html"
+          },
+          {
+            "name": "Wire and Space Saving",
+            "path": "/fa/products/drv/inv/pmerit/fr_f/fr_f700pj/f7pj02.html"
+          },
+          {
+            "name": "Easy Operation and Maintenance",
+            "path": "/fa/products/drv/inv/pmerit/fr_f/fr_f700pj/f7pj03.html"
+          },
+          {
+            "name": "Optimum for Fan and Pump Applications",
+            "path": "/fa/products/drv/inv/pmerit/fr_f/fr_f700pj/f7pj04.html"
+          },
+          {
+            "name": "Model Configuration",
+            "path": "/fa/products/drv/inv/pmerit/fr_f/fr_f700pj/f7pj05.html"
+          }
+        ]
+      }
+    ]
+  }
+}

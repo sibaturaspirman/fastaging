@@ -1,0 +1,220 @@
+@charset "utf-8";
+.ml-top {
+	padding: 50px 15px;
+}
+.ml-top .ml-top-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ml-top .ml-top-box .ml-top-box-inner {
+	margin: 0 auto 20px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+}
+.ml-top .ml-top-btn {
+	margin-right: 20px;
+	padding: 5px 30px 4px;
+	background-color: #FFF;
+	border: 2px solid #E54410;
+	border-radius: 32px;
+	color: #E54410;
+	font-weight: bold;
+	display: inline-block;
+	transition: all .3s ease-out;
+}
+.ml-top .ml-top-btn:hover {
+	background-color: #E54410;
+	color: #FFF;
+	cursor: pointer;
+}
+.ml-top .ml-top-box .ml-top-btn span {
+	font-size: 20px;
+}
+
+.ml-case {
+	margin-bottom: 20px;
+	padding: 0 15px;
+}
+.ml-case .ml-case-box {
+	margin-bottom: 80px;
+}
+.ml-case .ml-case-box:last-child {
+	margin-bottom: 0;
+}
+.ml-case .ml-case-box .ml-case-name {
+	width: 702px;
+	margin: 0 auto 12px;
+	color: #E54410;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+}
+.ml-case .ml-case-box .ml-case-name span {
+	font-size: 30px;
+}
+.ml-case .ml-case-box img.ml-case-ask {
+	max-width: 702px;
+	width: 100%;
+	margin-bottom: 12px;
+}
+.ml-case .ml-case-box img.ml-case-arrow {
+	width: 43px;
+	margin-bottom: 13px;
+}
+.ml-case .ml-case-box h3 {
+	margin-bottom: 10px;
+	font-size: 23px;
+}
+.ml-case .ml-case-box h3 span {
+	padding: 0 12px;
+	position: relative;
+}
+.ml-case .ml-case-box h3 span::before {
+	width: 100%;
+	height: .5em;
+	content: '';
+	background-color: #F3C950;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	z-index: -1;
+	transform: translate(-50%, 0);
+}
+.ml-case .ml-case-box .ml-case-text {
+	max-width: 702px;
+	margin: 0 auto 20px;
+	font-size: 16px;
+	line-height: 1.75;
+	text-align: left;
+}
+.ml-case .ml-case-box img.ml-case-case {
+	max-width: 702px;
+	width: 100%;
+	margin-bottom: 22px;
+}
+.ml-case .ml-case-box .ml-case-plan {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.ml-case .ml-case-box .ml-case-plan div {
+	margin: 0 8px;
+}
+.ml-case .ml-case-box .ml-case-plan div p {
+	width: fit-content;
+	margin: 0 auto 6px;
+	font-size: 16px;
+	position: relative;
+}
+.ml-case .ml-case-box .ml-case-plan div p::before,
+.ml-case .ml-case-box .ml-case-plan div p::after {
+	width: 20px;
+	height: 2px;
+	content: '';
+	background-color: #231815;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.ml-case .ml-case-box .ml-case-plan div p::before {
+	left: -18px;
+	transform: rotate(60deg);
+}
+.ml-case .ml-case-box .ml-case-plan div p::after {
+	right: -18px;
+	transform: rotate(-60deg);
+}
+.ml-case .ml-case-box .ml-case-plan div h4 {
+	width: fit-content;
+	margin: 0 auto 10px;
+	padding: 6px 45px;
+	border-radius: 28px;
+	color: #FFF;
+	font-size: 20px;
+}
+.ml-case .ml-case-box .ml-case-plan div.ml-case-plan-basic h4 {
+	background-color: #86C689;
+}
+.ml-case .ml-case-box .ml-case-plan div.ml-case-plan-user h4 {
+	background-color: #6BABDC;
+}
+.ml-case .ml-case-box .ml-case-plan div.ml-case-plan-check h4 {
+	background-color: #D37354;
+}
+.ml-case .ml-case-box .ml-case-plus {
+	width: 24px;
+	margin: 0;
+	padding-bottom: 14px;
+}
+
+
+@media screen and (max-width:1000px) {
+	.ml-pc1000,
+	img.ml-pc1000 {
+		display: none;
+	}
+}
+@media screen and (max-width:900px) {
+	.ml-case .ml-case-box .ml-case-plan {
+		display: block;
+	}
+	.ml-case .ml-case-box .ml-case-plan div {
+		margin: 0 auto;
+	}
+	.ml-case .ml-case-box .ml-case-plus {
+		margin: 8px auto 10px;
+		padding-bottom: 0;
+	}
+}
+@media screen and (min-width:601px) {
+	.ml-sp600,
+	img.ml-sp600 {
+		display: none;
+	}
+}
+@media screen and (max-width:600px) {
+	.ml-pc600,
+	img.ml-pc600 {
+		display: none;
+	}
+
+	.ml-top .ml-top-box .ml-top-box-inner {
+		display: block;
+	}
+	.ml-top .ml-top-box .ml-top-box-inner p:first-child {
+		margin-bottom: 10px;
+	}
+	.ml-top .ml-top-box .ml-top-box-inner p:last-child {
+		text-align: left;
+	}
+	.ml-top .ml-top-btn,
+	.ml-top .ml-top-btn span {
+		font-size: 16px;
+	}
+	.ml-top .ml-top-btn {
+		padding: 8px 30px 7px;
+	}
+
+	.ml-case .ml-case-box {
+		margin-bottom: 50px;
+	}
+	.ml-case .ml-case-box .ml-case-name {
+		width: 100%;
+		margin: 0 auto 8px;
+	}
+	.ml-case .ml-case-box img.ml-case-ask,
+	.ml-case .ml-case-box img.ml-case-case {
+		max-width: 345px;
+	}
+	.ml-case .ml-case-box img.ml-case-ask {
+		margin-bottom: 10px;
+	}
+	.ml-case .ml-case-box .ml-case-text {
+		margin-bottom: 10px;
+	}
+	.ml-case .ml-case-box .ml-case-plan div h4 {
+		padding: 6px 30px;
+	}
+}

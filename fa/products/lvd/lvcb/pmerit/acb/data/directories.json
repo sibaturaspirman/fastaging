@@ -1,0 +1,65 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html",
+            "child": [
+				{
+					"name": "Air Circuit Breakers",
+					"path": "/fa/products/lvd/lvcb/pmerit/acb/index.html"
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "Air Circuit Breakers",
+    "path": "/fa/products/lvd/lvcb/pmerit/acb/index.html",
+    "firstLayer": [
+        {
+          "name": "Air Circuit Breaker (ACB)",
+          "path": "/fa/products/lvd/lvcb/pmerit/acb/index.html"
+        },
+        {
+          "name": "Wide Range of Options",
+          "path": "/fa/products/lvd/lvcb/pmerit/acb/index_2.html"
+        },
+        {
+          "name": "Electronic Trip Relay",
+          "path": "/fa/products/lvd/lvcb/pmerit/acb/index_3.html"
+        },
+        {
+          "name": "Network",
+          "path": "/fa/products/lvd/lvcb/pmerit/acb/index_4.html"
+        }
+    ]
+  },
+"switchNav": {
+	"name": "Air Circuit Breakers",
+	"path": "/fa/products/lvd/lvcb/items/acb/index.html",
+	"child": [
+		{
+			"group": "Air Circuit Breakers",
+			"name": "Air Circuit Breakers",
+			"feature": "/fa/products/lvd/lvcb/pmerit/acb/index.html",
+			"spec": "/fa/products/faspec/search.page?kisyu=/lvcb&current=ACB",
+			"standard": "/fa/products/standard/SearchServlet.page?kisyu=/lvcb&current=ACB",
+			"discon": "",
+            "return": {
+                "name": "Air Circuit Breakers",
+                "path": "/fa/products/lvd/lvcb/items/acb/index.html"
+			}
+		}
+	]
+}
+}
+  

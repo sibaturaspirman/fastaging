@@ -1,0 +1,44 @@
+{
+  "layerNav": {
+    "name": "Vertical Industrial robot MELFA",
+    "path": "/fa/products/rbt/robot/items/vertical/index.html",
+    "firstLayer": [
+      {
+        "name": "Features and Concept",
+        "path": "/fa/products/rbt/assista/pmerit/assista/index.html",
+        "secondLayer": [
+           {
+            "name": "Features",
+            "path": "/fa/products/rbt/assista/pmerit/assista/index.html"
+          },
+          {
+            "name": "Concept",
+            "path": "/fa/products/rbt/assista/pmerit/assista/assista_pr.html"
+          }
+        ]
+      },
+      {
+        "name": "Components and Apprilations",
+        "path": "/fa/products/rbt/assista/pmerit/assista/assista_gripper.html",
+         "secondLayer": [
+           {
+            "name": "Grip with ASSISTA",
+            "path": "/fa/products/rbt/assista/pmerit/assista/assista_gripper.html"
+          },
+          {
+            "name": "View with ASSISTA",
+            "path": "/fa/products/rbt/assista/pmerit/assista/assista_view.html"
+          },
+           {
+            "name": "ASSISTA moves",
+            "path": "/fa/products/rbt/assista/pmerit/assista/assista_move.html"
+          }
+        ]
+      },
+      {
+        "name": "Catalog",
+        "path": "/fa/products/rbt/assista/pmerit/assista/dl.html"
+          }
+      ]
+  }
+}

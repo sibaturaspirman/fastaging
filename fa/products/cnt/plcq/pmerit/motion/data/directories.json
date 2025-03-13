@@ -1,0 +1,16 @@
+{
+	"layerNav": {
+		"name": "Simple motion, Positioning",
+		"path": "/fa/products/cnt/plcq/pmerit/motion/index.html",
+		"firstLayer": [
+			{
+				"name": "Simple motion",
+				"path": "/fa/products/cnt/plcq/pmerit/motion/index.html"
+			},
+			{
+				"name": "Positioning",
+				"path": "/fa/products/cnt/plcq/pmerit/motion/positioning.html"
+			}
+		]
+	}
+}

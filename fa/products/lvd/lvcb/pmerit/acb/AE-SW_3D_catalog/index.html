@@ -1,0 +1,1450 @@
+﻿<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="86400" http-equiv="Expires">
+	<meta name="viewport" content="width=device-width">
+	<title>AE-SW - Low Voltage Air Circuit Breakers</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_main.css">
+    <link rel="stylesheet" href="./css/style_iframe.css">
+    <link rel="stylesheet" href="./css/colorbox.css">
+    <script src="./js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="./js/menu-hover.js" type="text/javascript"></script>
+	<script src="./js/menu-click.js" type="text/javascript"></script>
+	<script src="./js/main-click.js" type="text/javascript"></script>
+	<script src="./js/jquery.colorbox.js"></script>
+
+<!--menu-->	
+<script type="text/javascript">
+/*第1階層、第2階層*/
+$(function() {
+   $('.submenu').hide();
+   $('.trigger').click(function() {
+	  $('img').removeClass('rotate');
+      $('.submenu').slideUp();    
+ 
+	   if($('+.submenu',this).css('display') == 'none'){
+	  	  $('img',this).addClass('rotate');
+          $('+.submenu',this).slideDown();
+      }
+   });
+});
+/*第3階層*/
+$(function() {
+   $('.submenu2').hide();
+   $('.trigger2').click(function() {
+	  $('img').removeClass('rotate');
+      $('.submenu2').slideUp();
+ 
+	   if($('+.submenu2',this).css('display') == 'none'){
+	  	  $('img',this).addClass('rotate');
+          $('+.submenu2',this).slideDown();
+      }
+   });
+});
+
+</script>
+
+<!--colorbox-->
+<script>
+$(function() {
+    $(".test").colorbox({
+    iframe:true,
+    innerWidth: 920,//ColorBoxの幅
+    innerHeight: 518,//ColorBoxの高さ   
+	maxWidth:"90%",
+    maxHeight:""  });
+});
+</script>
+
+</head>
+
+<body>
+
+<div id="header-border">
+    
+    <header id="header">
+		<h1><a href="http://www.mitsubishielectric.com/fa/index.html" target="_blank"><img src="./images/logo.gif" width="111" height="45" alt="Mitsubishi Electric"></a><img src="./images/logo_AE-SW.png" class="AE-SW_img" alt="AE-SW - Low Voltage Air Circuit Breakers" style="margin-left: 15px;"><img src="./images/logo_WorldSuperAE.jpg" width="111" alt="WorldSuperAE" class="logo_WorldSuperAE"></h1>
+    </header>    
+</div>
+
+				
+<div class="contens">
+
+  		<!--左メニュー------------------>
+		<div id="menu">
+
+		
+			<ul class="acordion">
+			
+				<!--01_ProductFeaturers-->
+				<!--第1階層-->
+				<li class="hyoji_ProductFeaturers"><span style="padding-right: 60px;" class="trigger none-submenu"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Product featurers</span></li>
+
+							
+				<!--02_Connection-->
+				<!--第1階層-->
+				<div><span class="trigger none-submenu"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Connections</span>
+					<!--第2階層-->
+					<ul class="submenu" style="display: none;">
+						<li class="hyoji_HorizontalTerminal">Horizontal terminal</li>
+						<li class="hyoji_VerticalTerminal">Vertical terminal</li>
+						<li class="hyoji_FrontTerminal">Front terminal</li>
+						<li class="hyoji_VerticalTerminalAdapter">Vertical terimnal adapter</li>
+						<li class="hyoji_FrontTerminalAdapter">Front terminal adapter</li>
+					</ul>
+				</div>
+				
+				<!--03_Electronic Trip Unit-->
+				<!--第1階層-->
+				<div><span class="trigger none-submenu"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Electronic Trip Unit</span>
+					<!--第2階層-->
+					<ul class="submenu">
+						<li class="hyoji_IntegratedTripUnit-DP3">Integrated trip unit (DP3)</li>
+						<li class="hyoji_ModularTripUnit">Modular trip unit</li>		
+						<div><span class="trigger2 none-submenu2"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Main protection module</span>
+							<!--第3階層-->
+							<ul class="submenu2">
+								<li class="hyoji_WS">General use (WS)</li>
+								<li class="hyoji_WM">Generator use (WM)</li>
+								<li class="hyoji_WB">Special protection (WB)</li>
+								<li class="hyoji_WF">Protective coordination<br>(WF)</li>
+							</ul>
+						</div>
+						<div><span class="trigger2 none-submenu2"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Optional protection<br>module</span>
+							<!--第3階層-->
+							<ul class="submenu2">
+								<li class="hyoji_G1">Ground fault (G1)</li>
+								<li class="hyoji_E1">Earth leakage (E1)</li>
+								<li class="hyoji_AP">2nd Pre-alarm (AP)</li>
+								<li class="hyoji_N5">Neutral 50% (N5)</li>
+							</ul>
+						</div>
+						<div><span class="trigger2 none-submenu2"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Power supply module</span>
+							<!--第3階層-->
+							<ul class="submenu2">
+								<li class="hyoji_P1">100-240V AC/DC<br>without alarm contact<br>(P1)</li>
+								<li class="hyoji_P2">24-60V DC<br>without alarm contact<br>(P2)</li>
+								<li class="hyoji_P3">100-240V AC/<br>100-125V DC<br>with alarm contact (P3)</li>
+								<li class="hyoji_P4">24-60V DC<br>with alarm contact (P4)</li>
+								<li class="hyoji_P5">100-240V DC<br>with alarm contact<br>by Solid State Relay (P5)</li>
+							</ul>
+						</div>
+						<div><span class="trigger2 none-submenu2"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Additional functions for<br>Modular trip unit</span>
+							<!--第3階層-->
+							<ul class="submenu2">
+								<li class="hyoji_TripUnitDisplay-DP1">Trip unit display (DP1)</li>
+								<li class="hyoji_PanelBoardDisplay-DP2">Panel board display<br>(DP2)</li>
+								<li class="hyoji_ExtensionModule-EX1">Extension module (EX1)</li>
+								<li class="hyoji_VTunit">VT unit</li>
+								<li class="hyoji_MakingCurrentReleaseSwitch">Making current release<br>switch</li>
+								<li class="hyoji_TemperatureAlarm">Temperature alarm</li>
+							</ul>
+						</div>
+					</ul>
+				</div>
+				
+				<!--04_Test equipment-->
+				<!--第1階層-->
+				<div><span class="trigger none-submenu"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Test equipment</span>
+					<!--第2階層-->
+					<ul class="submenu">
+						<li class="hyoji_FieldTestDevice">Field test device (Y-2005)</li>
+						<li class="hyoji_TestJumper">Test jumper</li>
+					</ul>
+				</div>
+
+				<!--05_Communication-->
+				<!--第1階層-->
+				<div><span class="trigger none-submenu"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Communication</span>
+					<!--第2階層-->
+					<ul class="submenu">
+						<li class="hyoji_CC-linkInterfaceUnit">CC-link interface unit</li>
+						<li class="hyoji_Modbus-RTU-InterfaceUnit">Modbus-RTU interface unit</li>
+						<li class="hyoji_Profibus-DP-InterfaceUnit">Profibus-DP interface unit</li>
+						<li class="hyoji_IOunit">I/O unit</li>
+					</ul>
+				</div>
+				
+				<!--06_Remote control-->
+				<!--第1階層-->
+				<div><span class="trigger none-submenu"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Remote control</span>
+					<!--第2階層-->
+					<ul class="submenu">
+						<li class="hyoji_MotorChargingDevice">Motor charging device</li>
+						<li class="hyoji_ClosingCoil">Closing coil</li>
+						<li class="hyoji_ShuntTripDevice">Shunt trip device</li>
+						<li class="hyoji_UnderVoltageTripDevice">Under voltage trip device</li>
+					</ul>
+				</div>
+				
+				<!--07_Indication contact-->
+				<!--第1階層-->
+				<div><span class="trigger none-submenu"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Indication contact</span>
+					<!--第2階層-->
+					<ul class="submenu">
+						<li class="hyoji_OCRalarm">OCR alarm</li>
+						<li class="hyoji_AuxiliarySwitch">Auxiliary switch</li>
+						<li class="hyoji_CellSwitch">Cell switch</li>
+						<li class="hyoji_ShortingNC-b-Contact">Shorting NC (b) contact</li>
+					</ul>
+				</div>
+				
+				<!--08_Safety device-->
+				<!--第1階層-->
+				<div><span class="trigger none-submenu"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Safety device</span>
+					<!--第2階層-->
+					<ul class="submenu">
+						<li class="hyoji_InterphaseBarrier">Interphase barrier</li>
+						<li class="hyoji_SafetyShutters">Safety shutters</li>
+						<li class="hyoji_TerminalCover">Terminal cover</li>
+						<li class="hyoji_Mis-insertionPreventer">Mis-insertion preventer</li>
+					</ul>
+				</div>
+				
+				<!--09_Locking device->
+				<!--第1階層-->
+				<div><span class="trigger none-submenu"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Locking device</span>
+					<!--第2階層-->
+					<ul class="submenu">
+						<li class="hyoji_DrawoutInterlock">Drawout interlock</li>
+						<li class="hyoji_PositionLock">Position lock</li>				
+						<li class="hyoji_PushButtonCover">Push button cover</li>
+						<li class="hyoji_CylinderLock">Cylinder lock</li>		
+						<li class="hyoji_CastelLock">Castel lock</li>
+						<li class="hyoji_DoorInterlock">Door interlock</li>	
+						<li class="hyoji_MechanicalInterlock">Mechanical interlock</li>
+					</ul>
+				</div>
+
+				<!--10_Other accessories->
+				<!--第1階層-->
+				<div><span class="trigger none-submenu"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">Other accessories</span>
+					<!--第2階層-->
+					<ul class="submenu">
+						<li class="hyoji_DoorFrame">Door frame</li>											
+						<li class="hyoji_DustCover">Dust cover</li>	
+						<li class="hyoji_Counter">Counter</li>
+						<li class="hyoji_CondenserTripDevice">Condenser trip device</li>
+						<li class="hyoji_LiftingHook">Lifting hook</li>					
+						<li class="hyoji_NeutralCT">Neutral CT</li>											
+						<div><span class="trigger2 none-submenu2"><img src="./images/arrow_down.png" alt="" decoding="async" style="margin-left: -10px;">ZCT</span>
+							<!--第3階層-->
+							<ul class="submenu2">
+								<li class="hyoji_ZCT-1">Load circuit<br>conductors type</li>
+								<li class="hyoji_ZCT-2">Transformer<br>grounding wire type</li>
+							</ul>
+						</div>
+					</ul>
+				</div>
+			</ul>
+
+		</div><!--左メニュー----------------------->
+
+	
+		<div class="main">
+
+		
+			<div class="b1">
+				<!--背景画像-->
+				<img src="./images/backimage.png" alt="" decoding="async" width="100%">
+
+				
+				<ul class="wrapper">
+					<!--マウスオーバー画像on・off-->
+					
+					<!--01_Product featurers-->
+					<li class="hyoji_ProductFeaturers-2">
+					<img src="./images/01_ProductFeaturers_off.png" alt="" decoding="async" width="35.5%">
+					<p class="fukidashi_ProductFeaturers">Product featurers</p>
+					</li>
+
+					<!--04_Test equipment------------------吹き出しの都合でこの位置-------------------------------------------> 
+					<li class="hyoji_FieldTestDevice-2">
+					<img src="./images/04_FieldTestDevice_off.png" alt="" decoding="async" width="13%">
+					<p class="fukidashi_FieldTestDevice">Field test device (Y-2005)</p>
+					</li>
+					<li class="hyoji_TestJumper-2">
+					<img src="./images/04_TestJumper_off.png" alt="" decoding="async" width="22%">
+					<p class="fukidashi_TestJumper">Test jumper</p>
+					</li>
+																		
+					<!--02_Connections-------------------------------------------------------------->
+					<li class="hyoji_HorizontalTerminal-2">
+					<img src="./images/02_HorizontalTerminal_off.png" alt="" decoding="async" width="3.5%">
+					<p class="fukidashi_HorizontalTerminal">Horizontal terminal</p>
+					</li>
+					<li class="hyoji_VerticalTerminal-2">
+					<img src="./images/02_VerticalTerminal_off.png" alt="" decoding="async" width="3.5%">
+					<p class="fukidashi_VerticalTerminal">Vertical terminal</p>
+					</li>
+					<li class="hyoji_FrontTerminal-2">
+					<img src="./images/02_FrontTerminal_off.png" alt="" decoding="async" width="4.3%">
+					<p class="fukidashi_FrontTerminal">Front terminal</p>
+					</li>
+					<li class="hyoji_VerticalTerminalAdapter-2">
+					<img src="./images/02_VerticalTerminalAdapter_off.png" alt="" decoding="async" width="4.5%">
+					<p class="fukidashi_VerticalTerminalAdapter">Vertical terminal adapter</p>
+					</li>
+					<li class="hyoji_FrontTerminalAdapter-2">
+					<img src="./images/02_FrontTerminalAdapter_off.png" alt="" decoding="async" width="5.2%">
+					<p class="fukidashi_FrontTerminalAdapter">Front terminal adapter</p>
+					</li>
+					
+					<!--03_Electronic trip unit--------------------------------------------------->
+					<li class="hyoji_P1-2">
+					<img src="./images/03_P1_off.png" alt="" decoding="async" width="2.8%">
+					<p class="fukidashi_P1">100-240V AC/DC without alarm contact (P1)</p>
+					</li>
+					<li class="hyoji_P2-2">
+					<img src="./images/03_P2_off.png" alt="" decoding="async" width="2.8%">
+					<p class="fukidashi_P2">24-60V DC without alarm contact (P2)</p>
+					</li>
+					<li class="hyoji_P3-2">
+					<img src="./images/03_P3_off.png" alt="" decoding="async" width="2.8%">
+					<p class="fukidashi_P3">100-240V AC/100-125V DC with alarm contact (P3)</p>
+					</li>
+					<li class="hyoji_P4-2">
+					<img src="./images/03_P4_off.png" alt="" decoding="async" width="2.8%">
+					<p class="fukidashi_P4">24-60V DC with alarm contact (P4)</p>
+					</li>
+					<li class="hyoji_P5-2">
+					<img src="./images/03_P5_off.png" alt="" decoding="async" width="2.8%">
+					<p class="fukidashi_P5">100-240V DC with alarm contact by Solid State Relay (P5)</p>
+					</li>
+					<li class="hyoji_IntegratedTripUnit-DP3-2">
+					<img src="./images/03_IntegratedTripUnit_off.png" alt="" decoding="async" width="3.5%">
+					<p class="fukidashi_IntegratedTripUnit-DP3">Integrated trip unit (DP3)</p>
+					</li>
+					<li class="hyoji_ModularTripUnit-2">
+					<img src="./images/03_ModularTripUnit_off.png" alt="" decoding="async" width="3.5%">
+					<p class="fukidashi_ModularTripUnit">Modular trip unit</p>
+					</li>
+					<li class="hyoji_G1-2">
+					<img src="./images/03_G1_off.png" alt="" decoding="async" width="2%">
+					<p class="fukidashi_G1">Ground fault (G1)</p>
+					</li>
+					<li class="hyoji_E1-2">
+					<img src="./images/03_E1_off.png" alt="" decoding="async" width="2%">
+					<p class="fukidashi_E1">Earth leakage (E1)</p>
+					</li>
+					<li class="hyoji_AP-2">
+					<img src="./images/03_AP_off.png" alt="" decoding="async" width="1.8%">
+					<p class="fukidashi_AP">2nd Pre-alarm (AP)</p>
+					</li>
+					<li class="hyoji_N5-2">
+					<img src="./images/03_N5_off.png" alt="" decoding="async" width="1.7%">
+					<p class="fukidashi_N5">Neutral 50% (N5)</p>
+					</li>
+					<li class="hyoji_WS-2">
+					<img src="./images/03_WS_off.png" alt="" decoding="async" width="2.2%">
+					<p class="fukidashi_WS">General use (WS)</p>
+					</li>
+					<li class="hyoji_WM-2">
+					<img src="./images/03_WM_off.png" alt="" decoding="async" width="2%">
+					<p class="fukidashi_WM">Generator use (WM)</p>
+					</li>
+					<li class="hyoji_WB-2">
+					<img src="./images/03_WB_off.png" alt="" decoding="async" width="1.8%">
+					<p class="fukidashi_WB">Special protection (WB)</p>
+					</li>
+					<li class="hyoji_WF-2">
+					<img src="./images/03_WF_off.png" alt="" decoding="async" width="1.8%">
+					<p class="fukidashi_WF">Protective coordination (WF)</p>
+					</li>
+					<li class="hyoji_TripUnitDisplay-DP1-2">
+					<img src="./images/03_TripUnitDisplay-DP1_off.png" alt="" decoding="async" width="2.5%">
+					<p class="fukidashi_TripUnitDisplay-DP1">Trip unit display (DP1)</p>
+					</li>
+					<li class="hyoji_PanelBoardDisplay-DP2-2">
+					<img src="./images/03_PanelBoardDisplay-DP2_off.png" alt="" decoding="async" width="2.3%">
+					<p class="fukidashi_PanelBoardDisplay-DP2">Panel board display (DP2)</p>
+					</li>
+					<li class="hyoji_ExtensionModule-EX1-2">
+					<img src="./images/03_ExtensionModule_off.png" alt="" decoding="async" width="3.2%">
+					<p class="fukidashi_ExtensionModule-EX1">Extension module (EX1)</p>
+					</li>
+					<li class="hyoji_VTunit-2">
+					<img src="./images/03_VTunit_off.png" alt="" decoding="async" width="4%">
+					<p class="fukidashi_VTunit">VT unit</p>
+					</li>
+					<li class="hyoji_MakingCurrentReleaseSwitch-2">
+					<img src="./images/03_MakingCurrentReleaseSwitch_off.png" alt="" decoding="async" width="3.2%">
+					<p class="fukidashi_MakingCurrentReleaseSwitch">Making current release switch</p>
+					</li>
+					<li class="hyoji_TemperatureAlarm-2">
+					<img src="./images/03_TemperatureAlarm_off.png" alt="" decoding="async" width="2.5%">
+					<p class="fukidashi_TemperatureAlarm">Temperature alarm</p>
+					</li>
+					
+					<!--08_Safety device------------------吹き出しの都合でこの位置-------------->
+					<li class="hyoji_InterphaseBarrier-2">
+					<img src="./images/08_InterphaseBarrier_off.png" alt="" decoding="async" width="6.8%">
+					<p class="fukidashi_InterphaseBarrier">Interphase barrier</p>
+					</li>
+					<li class="hyoji_SafetyShutters-2">
+					<img src="./images/08_SafetyShutters_off.png" alt="" decoding="async" width="9.9%">
+					<p class="fukidashi_SafetyShutters">Safety shutters</p>
+					</li>
+					<li class="hyoji_TerminalCover-2">
+					<img src="./images/08_TerminalCover_off.png" alt="" decoding="async" width="8.4%">
+					<p class="fukidashi_TerminalCover">Terminal cover</p>
+					</li>
+					<li class="hyoji_Mis-insertionPreventer-2">
+					<img src="./images/08_Mis-insertionPreventer_off.png" alt="" decoding="async" width="2.5%">
+					<p class="fukidashi_Mis-insertionPreventer">Mis-insertion preventer</p>
+					</li>
+
+															
+					<!--05_Communication----------------------------------------------------> 
+					<li class="hyoji_CC-linkInterfaceUnit-2">
+					<img src="./images/05_CC-linkInterfaceUnit_off.png" alt="" decoding="async" width="4%">
+					<p class="fukidashi_CC-linkInterfaceUnit">CC-link interface unit</p>
+					</li>
+					<li class="hyoji_Modbus-RTU-InterfaceUnit-2">
+					<img src="./images/05_Modbus-RTU-InterfaceUnit_off.png" alt="" decoding="async" width="4%">
+					<p class="fukidashi_Modbus-RTU-InterfaceUnit">Modbus-RTU interface unit</p>
+					</li>
+					<li class="hyoji_Profibus-DP-InterfaceUnit-2">
+					<img src="./images/05_Profibus-DP-InterfaceUnit_off.png" alt="" decoding="async" width="4.8%">
+					<p class="fukidashi_Profibus-DP-InterfaceUnit">Profibus-DP interface unit</p>
+					</li>
+					<li class="hyoji_IOunit-2">
+					<img src="./images/05_IOunit_off.png" alt="" decoding="async" width="5%">
+					<p class="fukidashi_IOunit">I/O unit</p>
+					</li>
+
+					<!--06_Remote control--> 
+					<li class="hyoji_MotorChargingDevice-2">
+					<img src="./images/06_MotorChargingDevice_off.png" alt="" decoding="async" width="5.8%">
+					<p class="fukidashi_MotorChargingDevice">Motor charging device</p>
+					</li>
+					<li class="hyoji_ClosingCoil-2">
+					<img src="./images/06_ClosingCoil_off.png" alt="" decoding="async" width="3%">
+					<p class="fukidashi_ClosingCoil">Closing coil</p>
+					</li>
+					<li class="hyoji_ShuntTripDevice-2">
+					<img src="./images/06_ShuntTripDevice_off.png" alt="" decoding="async" width="3%">
+					<p class="fukidashi_ShuntTripDevice">Shunt trip device</p>
+					</li>
+					<li class="hyoji_UnderVoltageTripDevice-2">
+					<img src="./images/06_UnderVoltageTripDevice_off.png" alt="" decoding="async" width="8%">
+					<p class="fukidashi_UnderVoltageTripDevice">Under voltage trip device</p>
+					</li>
+																									
+					<!--07_Indication contact-->
+					<li class="hyoji_OCRalarm-2">
+					<img src="./images/07_OCRalarm_off.png" alt="" decoding="async" width="3.2%">
+					<p class="fukidashi_OCRalarm">OCR alarm</p>
+					</li>
+					<li class="hyoji_AuxiliarySwitch-2">
+					<img src="./images/07_AuxiliarySwitch_off.png" alt="" decoding="async" width="4.2%">
+					<p class="fukidashi_AuxiliarySwitch">Auxiliary switch</p>
+					</li>
+					<li class="hyoji_CellSwitch-2">
+					<img src="./images/07_CellSwitch_off.png" alt="" decoding="async" width="5.5%">
+					<p class="fukidashi_CellSwitch">Cell switch</p>
+					</li>
+					<li class="hyoji_ShortingNC-b-Contact-2">
+					<img src="./images/07_ShortingNC-b-Contact_off.png" alt="" decoding="async" width="2.8%">
+					<p class="fukidashi_ShortingNC-b-Contact">Shorting NC (b) contact</p>
+					</li>
+										
+					<!--09_Locking device-->
+					<li class="hyoji_DrawoutInterlock-2">
+					<img src="./images/09_DrawoutInterlock_off.png" alt="" decoding="async" width="7.5%">
+					<p class="fukidashi_DrawoutInterlock">Drawout interlock</p>
+					</li>
+					<li class="hyoji_PositionLock-2">
+					<img src="./images/09_PositionLock_off.png" alt="" decoding="async" width="2.5%">
+					<p class="fukidashi_PositionLock">Position lock</p>
+					</li>
+					<li class="hyoji_PushButtonCover-2">
+					<img src="./images/09_PushButtonCover_off.png" alt="" decoding="async" width="3%">
+					<p class="fukidashi_PushButtonCover">Push button cover</p>
+					</li>
+					<li class="hyoji_CylinderLock-2">
+					<img src="./images/09_CylinderLock_off.png" alt="" decoding="async" width="4%">
+					<p class="fukidashi_CylinderLock">Cylinder lock</p>
+					</li>
+					<li class="hyoji_CastelLock-2">
+					<img src="./images/09_CastelLock_off.png" alt="" decoding="async" width="4.5%">
+					<p class="fukidashi_CastelLock">Castel lock</p>
+					</li>
+					<li class="hyoji_DoorInterlock-2">
+					<img src="./images/09_DoorInterlock_off.png" alt="" decoding="async" width="4.5%">
+					<p class="fukidashi_DoorInterlock">Door interlock</p>
+					</li>
+					<li class="hyoji_MechanicalInterlock-2">
+					<img src="./images/09_MechanicalInterlock_off.png" alt="" decoding="async" width="5.5%">
+					<p class="fukidashi_MechanicalInterlock">Mechanical interlock</p>
+					</li>
+
+					<!--10_Other accessories-->
+					<li class="hyoji_DoorFrame-2">
+					<img src="./images/10_DoorFrame_off.png" alt="" decoding="async" width="9%">
+					<p class="fukidashi_DoorFrame">Door frame</p>
+					</li>
+					<li class="hyoji_DustCover-2">
+					<img src="./images/10_DustCover_off.png" alt="" decoding="async" width="13.5%">
+					<p class="fukidashi_DustCover">Dust cover</p>
+					</li>
+					<li class="hyoji_Counter-2">
+					<img src="./images/10_Counter_off.png" alt="" decoding="async" width="4%">
+					<p class="fukidashi_Counter">Counter</p>
+					</li>
+					<li class="hyoji_CondenserTripDevice-2">
+					<img src="./images/10_CondenserTripDevice_off.png" alt="" decoding="async" width="7%">
+					<p class="fukidashi_CondenserTripDevice">Condenser trip device</p>
+					</li>
+					<li class="hyoji_NeutralCT-2">
+					<img src="./images/10_NeutralCT_off.png" alt="" decoding="async" width="5.5%">
+					<p class="fukidashi_NeutralCT">Neutral CT</p>
+					</li>
+					<li class="hyoji_LiftingHook-2">
+					<img src="./images/10_LiftingHook_off.png" alt="" decoding="async" width="3.7%">
+					<p class="fukidashi_LiftingHook">Lifting hook</p>
+					</li>
+					<li class="hyoji_ZCT-1-2">
+					<img src="./images/10_ZCT-1_off.png" alt="" decoding="async" width="12.8%">
+					<p class="fukidashi_ZCT-1">ZCT (Load circuit conductors type)</p>
+					</li>
+					<li class="hyoji_ZCT-2-2">
+					<img src="./images/10_ZCT-2_off.png" alt="" decoding="async" width="6%">
+					<p class="fukidashi_ZCT-2">ZCT (Transformer grounding wire type)</p>
+					</li>
+				
+
+			</ul><!--Wrapper-->
+			</div><!--b1-->
+
+
+<div class="popup_Wrapper">
+	<!--01-->   
+    <div id="contens-iframe_ProductFeaturers" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Product featurers</p>
+		<img src="./images/Popup_01_ProductFeaturers.png" alt="" decoding="async" width="100px" style="margin-left: 20px;">
+		<ul class="Popup_Text_ProductFeaturers">
+	  		<li>"AE-SW" is the single series of Mitsubishi Electric's ACB for easy choice of quality products.</li>
+			<li>Rating from 630A to 6300A with three compact frames.</li>
+			<li>Frame1: AE630-SW to AE2000-SWA, Frame2: AE2000-SW to AE4000-SWA, Frame3: AE4000-SW to AE6300-SW</li>
+			<li>Fixed or Drawout mounted with 3 or 4 pole versions are available.</li>
+			<li>Compliance with IEC 60947-2, JIS C 8201-2-1. CCC certification for GB 14048.2.</li>
+			<li>With Third party IEC 60947-2 certification from KEMA for all range of ACB.</li>
+			<li>Various Marine standards Lloyd's Register of Shipping, Bureau Veritas, American Bureau of Shipping and etc.</li>
+			<li>Uniform accessories for every frame size of ACB.</li>
+			<li>Stable switching operation thanks to Double spring switching mechanism.<span class="btn_ProductFeaturers"><a class="test" href="iframe/01_ProductFeaturers_movie.html">movie</a></span></li>
+			<li>Modular trip unit with Protection and Metering based modules for easy upgradability.&emsp;&emsp;<span class="btn_ProductFeaturers2"><a class="test" href="iframe/01_ProductFeaturers_movie2.html">movie</a></span></li>
+		  	<li>Color changing LCD backlight on trip unit for easy notification in the event of Pre-alarm and Fault.<span class="btn_ProductFeaturers3"><a class="test" href="iframe/01_ProductFeaturers_movie3.html">movie</a></span></li>
+		  	<li>Double multiplication setting on Rated current and Pre-alarm for more precise value setting.</li>
+		  	<li>Icu = Ics = Icw = Min. 65kA (1sec) / Icw = Min. 50 kA (3sec) for better discrimination with branch circuit breakers.</li>
+		  	<li>Communication through CC-link, Modbus-RTU and Profibus-DP available for remote control and energy monitoring.</li>
+		  	<li>Lower watt loss ACB contribute to reducing temperature rise inside panel and waste of energy flow.</li>
+			<li>Zero arc space provides more reliable and safety operation for AE630-SW to AE4000-SWA at 600V AC or less.</li>
+		  	<li>Reverse connection is available without any limitation.</li>
+		</ul>
+    </div>
+	<!--02-->   
+    <div id="contens-iframe_Connections-01" class="content_block_3" style="border-top: 3px solid #e60000; display:none;">
+		<p class="Popup_Title">Connections</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold; top:35px;">
+			<li style="float: left; margin-right: 4%;">Horizontal terminal</li>
+			<li style="float: left; margin-right: 4%;">Vertical terminal</li>
+			<li style="float: left; margin-right: 4%;">Front terminal</li>
+			<li style="float: left; margin-right: 4%;">Vertical terminal adapter</li>
+			<li style="float: left; margin-right: ;">Front terminal adapter</li>
+		</ul>
+		<div style="position: absolute;	top:70px; left:40px;">
+			<img src="./images/Popup_02_terminal-01.png" alt="" decoding="async" width="9%" style="margin-left: 2%;">
+			<img src="./images/Popup_02_terminal-02.png" alt="" decoding="async" width="9%" style="margin-left: 8%;">
+			<img src="./images/Popup_02_terminal-03.png" alt="" decoding="async" width="10%" style="margin-left: 6%;">
+			<img src="./images/Popup_02_terminal-04.png" alt="" decoding="async" width="10%" style="margin-left: 8%; padding-bottom: 5px;">
+			<img src="./images/Popup_02_terminal-05.png" alt="" decoding="async" width="10%" style="margin-left: 10%;">
+		</div>
+		<ul class="Popup_Text_Connections">
+			<li>Various terminal connections are available based on panel board specifications.</li>
+			<li>The different types of terminal connections between line side and load side are also available.<br>(For AE2000-SWA, AE4000-SWA, AE4000-SW, AE5000-SW and AE6300-SW models, only vertical terminal is available.)</li>
+			<li>Reverse connection is available without any limitation.<span class="btn_Connections"><a class="test" href="iframe/02_Connections_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+    <div id="contens-iframe_Connections-02" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Connections</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold; top:35px;">
+			<li style="float: left; margin-right: 4%;">Horizontal terminal</li>
+			<li style="float: left; margin-right: 4%;">Vertical terminal</li>
+			<li style="float: left; margin-right: 4%;">Front terminal</li>
+			<li style="float: left; margin-right: 4%;">Vertical terminal adapter</li>
+			<li style="float: left; margin-right: ;">Front terminal adapter</li>
+		</ul>
+		<div style="position: absolute;	top:70px; left:40px;">
+			<img src="./images/Popup_02_terminal-01.png" alt="" decoding="async" width="9%" style="margin-left: 2%;">
+			<img src="./images/Popup_02_terminal-02.png" alt="" decoding="async" width="9%" style="margin-left: 8%;">
+			<img src="./images/Popup_02_terminal-03.png" alt="" decoding="async" width="10%" style="margin-left: 6%;">
+			<img src="./images/Popup_02_terminal-04.png" alt="" decoding="async" width="10%" style="margin-left: 8%; padding-bottom: 5px;">
+			<img src="./images/Popup_02_terminal-05.png" alt="" decoding="async" width="10%" style="margin-left: 10%;">
+		</div>
+		<ul class="Popup_Text_Connections">
+			<li>Various terminal connections are available based on panel specifications.</li>
+			<li>The different types of terminal connections between line side and load side are also available.<br>(For AE2000-SWA, AE4000-SWA, AE4000-SW, AE5000-SW and AE6300-SW models, only vertical terminal is available.)</li>
+			<li>Reverse connection is available without any limitation.<span class="btn_Connections"><a class="test" href="iframe/02_Connections_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+    <div id="contens-iframe_Connections-03" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Connections</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold; top:35px;">
+			<li style="float: left; margin-right: 4%;">Horizontal terminal</li>
+			<li style="float: left; margin-right: 4%;">Vertical terminal</li>
+			<li style="float: left; margin-right: 4%;">Front terminal</li>
+			<li style="float: left; margin-right: 4%;">Vertical terminal adapter</li>
+			<li style="float: left; margin-right: ;">Front terminal adapter</li>
+		</ul>
+		<div style="position: absolute;	top:70px; left:40px;">
+			<img src="./images/Popup_02_terminal-01.png" alt="" decoding="async" width="9%" style="margin-left: 2%;">
+			<img src="./images/Popup_02_terminal-02.png" alt="" decoding="async" width="9%" style="margin-left: 8%;">
+			<img src="./images/Popup_02_terminal-03.png" alt="" decoding="async" width="10%" style="margin-left: 6%;">
+			<img src="./images/Popup_02_terminal-04.png" alt="" decoding="async" width="10%" style="margin-left: 8%; padding-bottom: 5px;">
+			<img src="./images/Popup_02_terminal-05.png" alt="" decoding="async" width="10%" style="margin-left: 10%;">
+		</div>
+		<ul class="Popup_Text_Connections">
+			<li>Various terminal connections are available based on panel specifications.</li>
+			<li>The different types of terminal connections between line side and load side are also available.<br>(For AE2000-SWA, AE4000-SWA, AE4000-SW, AE5000-SW and AE6300-SW models, only vertical terminal is available.)</li>
+			<li>Reverse connection is available without any limitation.<span class="btn_Connections"><a class="test" href="iframe/02_Connections_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+    <div id="contens-iframe_Connections-04" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Connections</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold; top:35px;">
+			<li style="float: left; margin-right: 4%;">Horizontal terminal</li>
+			<li style="float: left; margin-right: 4%;">Vertical terminal</li>
+			<li style="float: left; margin-right: 4%;">Front terminal</li>
+			<li style="float: left; margin-right: 4%;">Vertical terminal adapter</li>
+			<li style="float: left; margin-right: ;">Front terminal adapter</li>
+		</ul>
+		<div style="position: absolute;	top:70px; left:40px;">
+			<img src="./images/Popup_02_terminal-01.png" alt="" decoding="async" width="9%" style="margin-left: 2%;">
+			<img src="./images/Popup_02_terminal-02.png" alt="" decoding="async" width="9%" style="margin-left: 8%;">
+			<img src="./images/Popup_02_terminal-03.png" alt="" decoding="async" width="10%" style="margin-left: 6%;">
+			<img src="./images/Popup_02_terminal-04.png" alt="" decoding="async" width="10%" style="margin-left: 8%; padding-bottom: 5px;">
+			<img src="./images/Popup_02_terminal-05.png" alt="" decoding="async" width="10%" style="margin-left: 10%;">
+		</div>
+		<ul class="Popup_Text_Connections">
+			<li>Various terminal connections are available based on panel specifications.</li>
+			<li>The different types of terminal connections between line side and load side are also available.<br>(For AE2000-SWA, AE4000-SWA, AE4000-SW, AE5000-SW and AE6300-SW models, only vertical terminal is available.)</li>
+			<li>Reverse connection is available without any limitation.<span class="btn_Connections"><a class="test" href="iframe/02_Connections_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+    <div id="contens-iframe_Connections-05" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Connections</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold; top:35px;">
+			<li style="float: left; margin-right: 4%;">Horizontal terminal</li>
+			<li style="float: left; margin-right: 4%;">Vertical terminal</li>
+			<li style="float: left; margin-right: 4%;">Front terminal</li>
+			<li style="float: left; margin-right: 4%;">Vertical terminal adapter</li>
+			<li style="float: left; margin-right: ;">Front terminal adapter</li>
+		</ul>
+		<div style="position: absolute;	top:70px; left:40px;">
+			<img src="./images/Popup_02_terminal-01.png" alt="" decoding="async" width="9%" style="margin-left: 2%;">
+			<img src="./images/Popup_02_terminal-02.png" alt="" decoding="async" width="9%" style="margin-left: 8%;">
+			<img src="./images/Popup_02_terminal-03.png" alt="" decoding="async" width="10%" style="margin-left: 6%;">
+			<img src="./images/Popup_02_terminal-04.png" alt="" decoding="async" width="10%" style="margin-left: 8%; padding-bottom: 5px;">
+			<img src="./images/Popup_02_terminal-05.png" alt="" decoding="async" width="10%" style="margin-left: 10%;">
+		</div>
+		<ul class="Popup_Text_Connections">
+			<li>Various terminal connections are available based on panel specifications.</li>
+			<li>The different types of terminal connections between line side and load side are also available.<br>(For AE2000-SWA, AE4000-SWA, AE4000-SW, AE5000-SW and AE6300-SW models, only vertical terminal is available.)</li>
+			<li>Reverse connection is available without any limitation.<span class="btn_Connections"><a class="test" href="iframe/02_Connections_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	<!--03-->   
+    <div id="contens-iframe_IntegratedTripUnit-DP3" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<img src="./images/Popup_03_IntegratedTripUnit.png" alt="" decoding="async" width="65px" style="margin-left:35px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Integrated trip unit (DP3)</span></li>
+			<li>Integrated trip unit with monitoring display for current and harmonics along with Fault memory function.</li>
+			<li>Color changing LCD backlight on trip unit for easy notification in the event of Pre-alarm and Fault.</li>
+			<li>Current level (60/80/100% of rating), Pre-alarm, Overload and Trip cause are indicated with different color of LED.</li>
+			<li>Adjustable Pre-alarm (68%-100% of rated current) and Overload alarm (115% of rated current) as standard.</li>
+			<li>Self-diagnose and Error indication LED for Trip Unit as standard<br>(Self-diagnose on Malfunction of Microprocessor and Hardware, Miswiring related to Trip unit and etc)<span class="btn_IntegratedTripUnit"><a class="test" href="iframe/03_IntegratedTripUnit_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	
+    <div id="contens-iframe_ModularTripUnit" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<img src="./images/Popup_03_ModularTripUnit.png" alt="" decoding="async" width="56px" style="margin-left:35px; margin-top: 5px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Modular trip unit</span></li>
+			<li>Modular trip unit with Protection and Metering based modules for easy upgradability as well as communication.</li>
+			<li>Color changing LCD and optional protection units such as Ground fault, Earth leakage, 2nd Pre-alarm are modular.</li>
+			<li>Color changing LCD backlight on trip unit for easy notification in the event of Pre-alarm and Fault.</li>
+			<li>Current level (60/80/100% of rating), Pre-alarm, Overload and Trip cause are indicated with different color of LED.</li>
+			<li>Adjustable Pre-alarm (68%-100% of rated current) and Overload alarm (115% of rated current) as standard.</li>
+			<li>Self-diagnose and Error indication LED for Trip Unit as standard.<br> (Self-diagnose on Malfunction of Microprocessor and Hardware, Miswiring related to Trip unit and etc)<span class="btn_ModularTripUnit"><a class="test" href="iframe/03_ModularTripUnit_movie.html">movie</a></span></li>
+		</ul>		
+	</div>
+	
+    <div id="contens-iframe_WS" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Main protection module</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold;">
+			<li style="float: left; margin-right: 4%;">General use (WS)</li>
+			<li style="float: left; margin-right: 4%;">Generator use (WM)</li>
+			<li style="float: left; margin-right: 3%;">Special protection (WB)</li>
+			<li style="float: left; margin-right: ;">Protective coordination (WF)</li>
+		</ul>
+		<div style="position: absolute;	top:85px; left:40px;">
+			<img src="./images/Popup_03_MainProtectionModule-WS.png" alt="" decoding="async" width="12%" style="">
+			<img src="./images/Popup_03_MainProtectionModule-WM.png" alt="" decoding="async" width="12%" style="margin-left: 6%;">
+			<img src="./images/Popup_03_MainProtectionModule-WB.png" alt="" decoding="async" width="12%" style="margin-left: 8%;">
+			<img src="./images/Popup_03_MainProtectionModule-WF.png" alt="" decoding="async" width="12%" style="margin-left: 8%;">
+		</div>
+		<ul class="Popup_Text_MainProtectionModule">
+			<li>Main protection modules are available for most common applications like transformers, cables, motors and generators protection.<span class="btn_MainProtectionModule"><a class="test" href="iframe/03_MainProtectionModule_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+    <div id="contens-iframe_WM" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Main protection module</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold;">
+			<li style="float: left; margin-right: 4%;">General use (WS)</li>
+			<li style="float: left; margin-right: 4%;">Generator use (WM)</li>
+			<li style="float: left; margin-right: 3%;">Special protection (WB)</li>
+			<li style="float: left; margin-right: ;">Protective coordination (WF)</li>
+		</ul>
+		<div style="position: absolute;	top:85px; left:40px;">
+			<img src="./images/Popup_03_MainProtectionModule-WS.png" alt="" decoding="async" width="12%" style="">
+			<img src="./images/Popup_03_MainProtectionModule-WM.png" alt="" decoding="async" width="12%" style="margin-left: 6%;">
+			<img src="./images/Popup_03_MainProtectionModule-WB.png" alt="" decoding="async" width="12%" style="margin-left: 8%;">
+			<img src="./images/Popup_03_MainProtectionModule-WF.png" alt="" decoding="async" width="12%" style="margin-left: 8%;">
+		</div>
+		<ul class="Popup_Text_MainProtectionModule">
+			<li>Main protection modules are available for most common applications like transformers, cables, motors and generators protection.<span class="btn_MainProtectionModule"><a class="test" href="iframe/03_MainProtectionModule_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+    <div id="contens-iframe_WB" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Main protection module</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold;">
+			<li style="float: left; margin-right: 4%;">General use (WS)</li>
+			<li style="float: left; margin-right: 4%;">Generator use (WM)</li>
+			<li style="float: left; margin-right: 3%;">Special protection (WB)</li>
+			<li style="float: left; margin-right: ;">Protective coordination (WF)</li>
+		</ul>
+		<div style="position: absolute;	top:85px; left:40px;">
+			<img src="./images/Popup_03_MainProtectionModule-WS.png" alt="" decoding="async" width="12%" style="">
+			<img src="./images/Popup_03_MainProtectionModule-WM.png" alt="" decoding="async" width="12%" style="margin-left: 6%;">
+			<img src="./images/Popup_03_MainProtectionModule-WB.png" alt="" decoding="async" width="12%" style="margin-left: 8%;">
+			<img src="./images/Popup_03_MainProtectionModule-WF.png" alt="" decoding="async" width="12%" style="margin-left: 8%;">
+		</div>
+		<ul class="Popup_Text_MainProtectionModule">
+			<li>Main protection modules are available for most common applications like transformers, cables, motors and generators protection.<span class="btn_MainProtectionModule"><a class="test" href="iframe/03_MainProtectionModule_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+    <div id="contens-iframe_WF" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Main protection module</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold;">
+			<li style="float: left; margin-right: 4%;">General use (WS)</li>
+			<li style="float: left; margin-right: 4%;">Generator use (WM)</li>
+			<li style="float: left; margin-right: 3%;">Special protection (WB)</li>
+			<li style="float: left; margin-right: ;">Protective coordination (WF)</li>
+		</ul>
+		<div style="position: absolute;	top:85px; left:40px;">
+			<img src="./images/Popup_03_MainProtectionModule-WS.png" alt="" decoding="async" width="12%" style="">
+			<img src="./images/Popup_03_MainProtectionModule-WM.png" alt="" decoding="async" width="12%" style="margin-left: 6%;">
+			<img src="./images/Popup_03_MainProtectionModule-WB.png" alt="" decoding="async" width="12%" style="margin-left: 8%;">
+			<img src="./images/Popup_03_MainProtectionModule-WF.png" alt="" decoding="async" width="12%" style="margin-left: 8%;">
+		</div>
+		<ul class="Popup_Text_MainProtectionModule">
+			<li>Main protection modules are available for most common applications like transformers, cables, motors and generators protection.<span class="btn_MainProtectionModule"><a class="test" href="iframe/03_MainProtectionModule_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_G1" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Optional protection module</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold;">
+			<li style="float: left; margin-right: 6%;">Ground fault (G1)</li>
+			<li style="float: left; margin-right: 6%;">Earth leakage (E1)</li>
+			<li style="float: left; margin-right: 6%;">2nd Pre-alarm (AP)</li>
+			<li style="float: left; margin-right: ;">Neutral 50% (N5)</li>
+		</ul>
+		<div style="position: absolute;	top:85px; left:40px;">
+			<img src="./images/Popup_03_OptionalProtectionModule-G1.png" alt="" decoding="async" width="14%" style="">
+			<img src="./images/Popup_03_OptionalProtectionModule-E1.png" alt="" decoding="async" width="14%" style="margin-left: 5%;">
+			<img src="./images/Popup_03_OptionalProtectionModule-AP.png" alt="" decoding="async" width="14%" style="margin-left: 5%;">
+			<img src="./images/Popup_03_OptionalProtectionModule-N5.png" alt="" decoding="async" width="14%" style="margin-left: 6%;">
+		</div>
+		<ul class="Popup_Text_OptionalProtectionModule">
+			<li>Optional protection module for Ground fault, Earth leakage, 2nd Pre-alarm and Neutral pole 50% protection.</li>
+			<li>With these protection based modules, no need to change the whole Trip unit to change the specification.<span class="btn_OptionalProtectionModule"><a class="test" href="iframe/03_OptionalProtectionModule_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+    <div id="contens-iframe_E1" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Optional protection module</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold;">
+			<li style="float: left; margin-right: 6%;">Ground fault (G1)</li>
+			<li style="float: left; margin-right: 6%;">Earth leakage (E1)</li>
+			<li style="float: left; margin-right: 6%;">2nd Pre-alarm (AP)</li>
+			<li style="float: left; margin-right: ;">Neutral 50% (N5)</li>
+		</ul>
+		<div style="position: absolute;	top:85px; left:40px;">
+			<img src="./images/Popup_03_OptionalProtectionModule-G1.png" alt="" decoding="async" width="14%" style="">
+			<img src="./images/Popup_03_OptionalProtectionModule-E1.png" alt="" decoding="async" width="14%" style="margin-left: 5%;">
+			<img src="./images/Popup_03_OptionalProtectionModule-AP.png" alt="" decoding="async" width="14%" style="margin-left: 5%;">
+			<img src="./images/Popup_03_OptionalProtectionModule-N5.png" alt="" decoding="async" width="14%" style="margin-left: 6%;">
+		</div>
+		<ul class="Popup_Text_OptionalProtectionModule">
+			<li>Optional protection module for Ground fault, Earth leakage, 2nd Pre-alarm and Neutral pole 50% protection.</li>
+			<li>With these protection based modules, no need to change the whole Trip unit to change the specification.<span class="btn_OptionalProtectionModule"><a class="test" href="iframe/03_OptionalProtectionModule_movie.html">movie</a></span></li>
+		</ul>
+	</div> 
+    <div id="contens-iframe_AP" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Optional protection module</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold;">
+			<li style="float: left; margin-right: 6%;">Ground fault (G1)</li>
+			<li style="float: left; margin-right: 6%;">Earth leakage (E1)</li>
+			<li style="float: left; margin-right: 6%;">2nd Pre-alarm (AP)</li>
+			<li style="float: left; margin-right: ;">Neutral 50% (N5)</li>
+		</ul>
+		<div style="position: absolute;	top:85px; left:40px;">
+			<img src="./images/Popup_03_OptionalProtectionModule-G1.png" alt="" decoding="async" width="14%" style="">
+			<img src="./images/Popup_03_OptionalProtectionModule-E1.png" alt="" decoding="async" width="14%" style="margin-left: 5%;">
+			<img src="./images/Popup_03_OptionalProtectionModule-AP.png" alt="" decoding="async" width="14%" style="margin-left: 5%;">
+			<img src="./images/Popup_03_OptionalProtectionModule-N5.png" alt="" decoding="async" width="14%" style="margin-left: 6%;">
+		</div>
+		<ul class="Popup_Text_OptionalProtectionModule">
+			<li>Optional protection module for Ground fault, Earth leakage, 2nd Pre-alarm and Neutral pole 50% protection.</li>
+			<li>With these protection based modules, no need to change the whole Trip unit to change the specification.<span class="btn_OptionalProtectionModule"><a class="test" href="iframe/03_OptionalProtectionModule_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+    <div id="contens-iframe_N5" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Optional protection module</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold;">
+			<li style="float: left; margin-right: 6%;">Ground fault (G1)</li>
+			<li style="float: left; margin-right: 6%;">Earth leakage (E1)</li>
+			<li style="float: left; margin-right: 6%;">2nd Pre-alarm (AP)</li>
+			<li style="float: left; margin-right: ;">Neutral 50% (N5)</li>
+		</ul>
+		<div style="position: absolute;	top:85px; left:40px;">
+			<img src="./images/Popup_03_OptionalProtectionModule-G1.png" alt="" decoding="async" width="14%" style="">
+			<img src="./images/Popup_03_OptionalProtectionModule-E1.png" alt="" decoding="async" width="14%" style="margin-left: 5%;">
+			<img src="./images/Popup_03_OptionalProtectionModule-AP.png" alt="" decoding="async" width="14%" style="margin-left: 5%;">
+			<img src="./images/Popup_03_OptionalProtectionModule-N5.png" alt="" decoding="async" width="14%" style="margin-left: 6%;">
+		</div>
+		<ul class="Popup_Text_OptionalProtectionModule">
+			<li>Optional protection module for Ground fault, Earth leakage, 2nd Pre-alarm and Neutral pole 50% protection.</li>
+			<li>With these protection based modules, no need to change the whole Trip unit to change the specification.<span class="btn_OptionalProtectionModule"><a class="test" href="iframe/03_OptionalProtectionModule_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+   
+    <div id="contens-iframe_P1" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Power supply module</p>
+		<img src="./images/Popup_03_PowerSupplyModule.png" alt="" decoding="async" width="11%" style="position: absolute;	top:80px; left:50px;">
+		<table class="type01">
+			<tr>
+				<th scope="row">P1</th>
+				<td>100-240V AC/DC without alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P2</th>
+				<td>24-60V DC without alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P3</th>
+				<td>100-240V AC/100-125V DC with alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P4</th>
+				<td>24-60V DC with alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P5</th>
+				<td>100-240V DC with alarm contact by Solid State Relay</td>
+			</tr>
+		</table>
+		<ul class="Popup_Text_PowerSupplyModule">
+			<li>Power supply module is required for the LED indication on Trip unit, Metering and Communication function.</li>
+			<li>Power supply without alarm contact or with 6 alarm contacts are available based on rated voltage.</li>
+			<li style="letter-spacing: -0.01em;">6 alarm contacts include LTD, STD/INST, Ground fault/Earth leakage/Additional Pre-alarm, Pre-alarm, Temperature alarm, Error on Trip unit.<span class="btn_PowerSupplyModule"><a class="test" href="iframe/03_PowerSupplyModule_movie.html">movie</a></span></li>
+		</ul>	
+	</div>
+    <div id="contens-iframe_P2" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Power supply module</p>
+		<img src="./images/Popup_03_PowerSupplyModule.png" alt="" decoding="async" width="11%" style="position: absolute;	top:80px; left:50px;">
+		<table class="type01">
+			<tr>
+				<th scope="row">P1</th>
+				<td>100-240V AC/DC without alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P2</th>
+				<td>24-60V DC without alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P3</th>
+				<td>100-240V AC/100-125V DC with alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P4</th>
+				<td>24-60V DC with alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P5</th>
+				<td>100-240V DC with alarm contact by Solid State Relay</td>
+			</tr>
+		</table>
+		<ul class="Popup_Text_PowerSupplyModule">
+			<li>Power supply module is required for the LED indication on Trip unit, Metering and Communication function.</li>
+			<li>Power supply without alarm contact or with 6 alarm contacts are available based on rated voltage.</li>
+			<li style="letter-spacing: -0.01em;">6 alarm contacts include LTD, STD/INST, Ground fault/Earth leakage/Additional Pre-alarm, Pre-alarm,	
+			Temperature alarm, Error on Trip unit.<span class="btn_PowerSupplyModule"><a class="test" href="iframe/03_PowerSupplyModule_movie.html">movie</a></span></li>
+		</ul>	
+	</div>
+    <div id="contens-iframe_P3" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Power supply module</p>
+		<img src="./images/Popup_03_PowerSupplyModule.png" alt="" decoding="async" width="11%" style="position: absolute;	top:80px; left:50px;">
+		<table class="type01">
+			<tr>
+				<th scope="row">P1</th>
+				<td>100-240V AC/DC without alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P2</th>
+				<td>24-60V DC without alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P3</th>
+				<td>100-240V AC/100-125V DC with alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P4</th>
+				<td>24-60V DC with alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P5</th>
+				<td>100-240V DC with alarm contact by Solid State Relay</td>
+			</tr>
+		</table>
+		<ul class="Popup_Text_PowerSupplyModule">
+			<li>Power supply module is required for the LED indication on Trip unit, Metering and Communication function.</li>
+			<li>Power supply without alarm contact or with 6 alarm contacts are available based on rated voltage.</li>
+			<li style="letter-spacing: -0.01em;">6 alarm contacts include LTD, STD/INST, Ground fault/Earth leakage/Additional Pre-alarm, Pre-alarm, Temperature alarm, Error on Trip unit.<span class="btn_PowerSupplyModule"><a class="test" href="iframe/03_PowerSupplyModule_movie.html">movie</a></span></li>
+		</ul>	
+	</div>
+    <div id="contens-iframe_P4" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Power supply module</p>
+		<img src="./images/Popup_03_PowerSupplyModule.png" alt="" decoding="async" width="11%" style="position: absolute;	top:80px; left:50px;">
+		<table class="type01">
+			<tr>
+				<th scope="row">P1</th>
+				<td>100-240V AC/DC without alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P2</th>
+				<td>24-60V DC without alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P3</th>
+				<td>100-240V AC/100-125V DC with alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P4</th>
+				<td>24-60V DC with alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P5</th>
+				<td>100-240V DC with alarm contact by Solid State Relay</td>
+			</tr>
+		</table>
+		<ul class="Popup_Text_PowerSupplyModule">
+			<li>Power supply module is required for the LED indication on Trip unit, Metering and Communication function.</li>
+			<li>Power supply without alarm contact or with 6 alarm contacts are available based on rated voltage.</li>
+			<li style="letter-spacing: -0.01em;">6 alarm contacts include LTD, STD/INST, Ground fault/Earth leakage/Additional Pre-alarm, Pre-alarm, Temperature alarm, Error on Trip unit.<span class="btn_PowerSupplyModule"><a class="test" href="iframe/03_PowerSupplyModule_movie.html">movie</a></span></li>
+		</ul>	
+	</div>
+    <div id="contens-iframe_P5" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<p class="Popup_subTitle">Power supply module</p>
+		<img src="./images/Popup_03_PowerSupplyModule.png" alt="" decoding="async" width="11%" style="position: absolute;	top:80px; left:50px;">
+		<table class="type01">
+			<tr>
+				<th scope="row">P1</th>
+				<td>100-240V AC/DC without alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P2</th>
+				<td>24-60V DC without alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P3</th>
+				<td>100-240V AC/100-125V DC with alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P4</th>
+				<td>24-60V DC with alarm contact</td>
+			</tr>
+			<tr>
+				<th scope="row">P5</th>
+				<td>100-240V DC with alarm contact by Solid State Relay</td>
+			</tr>
+		</table>
+		<ul class="Popup_Text_PowerSupplyModule">
+			<li>Power supply module is required for the LED indication on Trip unit, Metering and Communication function.</li>
+			<li>Power supply without alarm contact or with 6 alarm contacts are available based on rated voltage.</li>
+			<li style="letter-spacing: -0.01em;">6 alarm contacts include LTD, STD/INST, Ground fault/Earth leakage/Additional Pre-alarm, Pre-alarm, Temperature alarm, Error on Trip unit.<span class="btn_PowerSupplyModule"><a class="test" href="iframe/03_PowerSupplyModule_movie.html">movie</a></span></li>
+		</ul>	
+	</div>
+    
+    <div id="contens-iframe_TripUnitDisplay-DP1" class="content_block_3" style="border-top: 3px solid #e60000; display:none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<img src="./images/Popup_03_TripUnitDisplay-DP1.png" alt="" decoding="async" width="120px" style="margin-top:20px">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Trip unit display (DP1)</span></li>
+			<li>Color changing LCD backlight for Modular trip unit is available.</li>
+			<li>Record 10 trip history inclusive the types of protection cause (LSIGE, Under voltage, Temperature alarm).</li>
+			<li>At the time of trip and alarming, the backlight color automatically change for easy notification.<span class="btn_TripUnitDisplay-DP1"><a class="test" href="iframe/03_TripUnitDisplay-DP1_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+     
+    <div id="contens-iframe_PanelBoardDisplay-DP2" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<img src="./images/Popup_03_PanelBoardDisplay-DP2.png" alt="" decoding="async" width="120px" style="margin-top:20px">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Panel board display (DP2)</span></li>
+			<li>Color changing LCD backlight for Panel board mounted type is also available.</li>
+			<li>Record 10 trip history inclusive the types of protection cause (LSIGE, Under voltage, Temperature alarm).</li>
+			<li>At the time of trip and alarming, the backlight color automatically change for easy notification.<span class="btn_PanelBoardDisplay-DP2"><a class="test" href="iframe/03_PanelBoardDisplay-DP2_movie.html">movie</a></span></li>
+		</ul>
+	</div>     
+     
+    <div id="contens-iframe_ExtensionModule-EX1" class="content_block_3" style="border-top: 3px solid #e60000; display:none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<img src="./images/Popup_03_ExtensionModule.png" alt="" decoding="async" width="40px" style="margin-left:40px">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Extension module (EX1)</span></li>
+			<li>Expansion module is required for metering and display function.<span class="btn_ExtensionModule"><a class="test" href="iframe/03_ExtensionModule_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	
+    <div id="contens-iframe_VTunit" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<img src="./images/Popup_03_VTunit.png" alt="" decoding="async" width="70px" style="margin-left:30px; margin-top: 10px;" >
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">VT unit</span></li>
+			<li>VT unit is required to measure voltages, powers, energy, harmonics current.<span class="btn_VTunit"><a class="test" href="iframe/03_VTunit_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	
+    <div id="contens-iframe_MakingCurrentReleaseSwitch" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<img src="./images/Popup_03_MakingCurrentReleaseSwitch.png" alt="" decoding="async" width="65px" style="margin-left:40px">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Making current release switch</span></li>
+			<li>This switch makes Instantaneous operation (INST) ineffective once after the breaker is closed.</li>
+			<li>This is used for expanding the selective combination with branch circuit breakers.<span class="btn_MakingCurrentReleaseSwitch"><a class="test" href="iframe/03_MakingCurrentReleaseSwitch_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	
+    <div id="contens-iframe_TemperatureAlarm" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Electronic trip unit</p>
+		<img src="./images/Popup_03_TemperatureAlarm.png" alt="" decoding="async" width="100px" style="margin-left:20px; margin-top: 10px; ">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Temperature alarm</span></li>
+			<li>Temperature alarm is available to identify the abnormal heat with main contacts of the breaker.</li>
+			<li>The alarm is indicated by LED on Trip unit and it can also output signal in case Power supply module<br>
+			with alarm contacts (P3/P4/P5) is used.</li>
+			<li>It makes it easy to notify the time of maintenance or replacement of the breaker.<br><span class="btn_TemperatureAlarm"><a class="test" href="iframe/03_TemperatureAlarm_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	<!--04-->   
+    <div id="contens-iframe_FieldTestDevice" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Test equipment</p>
+		<img src="./images/Popup_04_FieldTestDevice.png" alt="" decoding="async" width="100px" style="margin-left:20px">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Field test device (Y-2005)</span></li>
+			<li>The operation of Electronic trip unit can be tested with this Field test device (Y-2005).<span class="btn_FieldTestDevice"><a class="test" href="iframe/04_FieldTestDevice_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	
+    <div id="contens-iframe_TestJumper" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Test equipment</p>
+		<img src="./images/Popup_04_TestJumper.png" alt="" decoding="async" width="100px" style="margin-left:20px">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Test jumper</span></li>
+			<li>While the breaker taken out of its cradle, the Test jumper enables the breaker to be electrically open and closed.</li>
+			<li>The operating sequence of the breaker also can be checked.<span class="btn_TestJumper"><a class="test" href="iframe/04_TestJumper_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	<!--05-->   
+    <div id="contens-iframe_CC-linkInterfaceUnit" class="content_block_3" style="border-top: 3px solid #e60000; display:none;">
+		<p class="Popup_Title">Communication</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold; top:35px;">
+			<li style="float: left; margin-right: 4%;">CC-link interface unit</li>
+			<li style="float: left; margin-right: 4%;">Modbus-RTU interface unit</li>
+			<li style="float: left; margin-right: 4%;">Profibus-DP interface unit</li>
+		</ul>
+		<div style="position: absolute;	top:70px; left:40px;">
+			<img src="./images/Popup_05_CC-linkInterfaceUnit.png" alt="" decoding="async" width="12%" style="margin-left: 2%;">
+			<img src="./images/Popup_05_Modbus-RTU-InterfaceUnit.png" alt="" decoding="async" width="12%" style="margin-left: 8%;">
+			<img src="./images/Popup_05_Profibus-DP-InterfaceUnit.png" alt="" decoding="async" width="12%" style="margin-left: 12%;">
+		</div>
+		<ul class="Popup_Text_CC-linkInterfaceUnit">
+			<li>For intelligent energy management, the communication modules connect the breaker to higher level of<br>
+			remote control and energy monitoring in the combination with Mitsubishi Electric products.</li>
+			<li>The communication available with CC-Link, Modbus-RTU or Profibus-DP.<span class="btn_CC-linkInterfaceUnit"><a  class="test" href="iframe/05_CC-linkInterfaceUnit_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+    <div id="contens-iframe_Modbus-RTU-InterfaceUnit" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Communication</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold; top:35px;">
+			<li style="float: left; margin-right: 4%;">CC-link interface unit</li>
+			<li style="float: left; margin-right: 4%;">Modbus-RTU interface unit</li>
+			<li style="float: left; margin-right: 4%;">Profibus-DP interface unit</li>
+		</ul>
+		<div style="position: absolute;	top:70px; left:40px;">
+			<img src="./images/Popup_05_CC-linkInterfaceUnit.png" alt="" decoding="async" width="12%" style="margin-left: 2%;">
+			<img src="./images/Popup_05_Modbus-RTU-InterfaceUnit.png" alt="" decoding="async" width="12%" style="margin-left: 8%;">
+			<img src="./images/Popup_05_Profibus-DP-InterfaceUnit.png" alt="" decoding="async" width="12%" style="margin-left: 12%;">
+		</div>
+		<ul class="Popup_Text_CC-linkInterfaceUnit">
+			<li>For intelligent energy management, the communication modules connect the breaker to higher level of<br>
+			remote control and energy monitoring in the combination with Mitsubishi Electric products.</li>
+			<li>The communication available with CC-Link, Modbus-RTU or Profibus-DP.<span class="btn_CC-linkInterfaceUnit"><a  class="test" href="iframe/05_CC-linkInterfaceUnit_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	<div id="contens-iframe_Profibus-DP-InterfaceUnit" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Communication</p>
+		<ul class="Popup_subTitleText" style="list-style: none; width: 100%; left: 0; font-weight: bold; top:35px;">
+			<li style="float: left; margin-right: 4%;">CC-link interface unit</li>
+			<li style="float: left; margin-right: 4%;">Modbus-RTU interface unit</li>
+			<li style="float: left; margin-right: 4%;">Profibus-DP interface unit</li>
+		</ul>
+		<div style="position: absolute;	top:70px; left:40px;">
+			<img src="./images/Popup_05_CC-linkInterfaceUnit.png" alt="" decoding="async" width="12%" style="margin-left: 2%;">
+			<img src="./images/Popup_05_Modbus-RTU-InterfaceUnit.png" alt="" decoding="async" width="12%" style="margin-left: 8%;">
+			<img src="./images/Popup_05_Profibus-DP-InterfaceUnit.png" alt="" decoding="async" width="12%" style="margin-left: 12%;">
+		</div>
+		<ul class="Popup_Text_CC-linkInterfaceUnit">
+			<li>For intelligent energy management, the communication modules connect the breaker to higher level of<br>
+			remote control and energy monitoring in the combination with Mitsubishi Electric products.</li>
+			<li>The communication available with CC-Link, Modbus-RTU or Profibus-DP.<span class="btn_CC-linkInterfaceUnit"><a  class="test" href="iframe/05_CC-linkInterfaceUnit_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_IOunit" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Communication</p>
+		<img src="./images/Popup_05_IOunit.png" alt="" decoding="async" width="90px" style="margin-left:20px; margin-top:10px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">I/O unit</span></li>
+			<li>For remote control of the breaker via communication system, this Input and output unit is required.<br>With this, it become possible to control the breaker remotely, like open and close operation or Spring charging.</li>
+			<li>This makes it easy to enhance communication for local applications.<span class="btn_IOunit"><a class="test" href="iframe/05_IOunit_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	<!--06-->   
+    <div id="contens-iframe_MotorChargingDevice" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Remote control</p>
+		<img src="./images/Popup_06_MotorChargingDevice.png" alt="" decoding="async" width="90px" style="margin-left:20px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Motor charging device</span></li>
+			<li>The breaker is remotely charged by the Motor charging device. </li>
+			<li>When the breaker is closed, the double springs inside the breaker are charged automatically. <span class="btn_MotorChargingDevice"><a class="test" href="iframe/06_MotorChargingDevice_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_ClosingCoil" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Remote control</p>
+		<img src="./images/Popup_06_ClosingCoil.png" alt="" decoding="async" width="70px" style="margin-left:20px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Closing coil</span></li>
+			<li>The breaker is remotely closed by the Closing coil.</li>
+			<li>It is one-pulse driven to prevent pumping and burnout of coil as standard.<span class="btn_ClosingCoil"><a class="test" href="iframe/06_ClosingCoil_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_ShuntTripDevice" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Remote control</p>
+		<img src="./images/Popup_06_ShuntTripDevice.png" alt="" decoding="async" width="70px" style="margin-left:20px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Shunt trip device</span></li>
+			<li>The Shunt trip device turns the breaker opened immediately when the operational voltage is applied.</li>
+			<li>A cut off switch is equipped as standard to prevent burnout of coil as standard.<span class="btn_ShuntTripDevice"><a class="test" href="iframe/06_ShuntTripDevice_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_UnderVoltageTripDevice" class="content_block_3" style="border-top: 3px solid #e60000; display:none;">
+    	<p class="Popup_Title">Remote control</p>
+		<img src="./images/Popup_06_UnderVoltageTripDevice.png" alt="" decoding="async" width="130px" style="margin-left:0px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Under voltage trip device</span></li>
+			<li>This device automatically open the breaker if the operational voltage is not applied or drops below specific value.</li>
+			<li>This protect electrical equipments against voltage fluctuation and also can be used for remote control of the breaker.</li>
+			<li>There are three types of operating time. Instantaneous (0.2 sec), 0.5 sec and 3.0 sec.<span class="btn_UnderVoltageTripDevice"><a class="test" href="iframe/06_UnderVoltageTripDevice_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	<!--07-->   
+    <div id="contens-iframe_OCRalarm" class="content_block_3" style="border-top: 3px solid #e60000; display:none ;">		
+		<p class="Popup_Title">Indication contact</p>
+		<img src="./images/Popup_07_OCRalarm.png" alt="" decoding="async" width="70px" style="margin-left:30px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">OCR alarm</span></li>
+			<li>OCR alarm is provided with Electrical trip unit as standard. </li>
+			<li>Automatic reset type and Manual reset type are available.</li>
+			<li>For Automatic reset type, alarm is 1 NO contact of short-time operation (30ms), being output when the breaker trip.<span class="btn_OCRalarm"><a class="test" href="iframe/07_OCRalarm_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_AuxiliarySwitch" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Indication contact</p>
+		<img src="./images/Popup_07_AuxiliarySwitch.png" alt="" decoding="async" width="120px" style="margin-left:0px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Auxiliary switch</span></li>
+			<li>Auxiliary switches make a signal for the switching (open/closed) status of the breaker.<span class="btn_AuxiliarySwitch"><a class="test" href="iframe/07_AuxiliarySwitch_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_CellSwitch" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Indication contact</p>
+		<img src="./images/Popup_07_CellSwitch.png" alt="" decoding="async" width="100px" style="margin-left:10px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Cell switch</span></li>
+			<li style="letter-spacing: -0.02em;">This switches (NO/NC contact) indicate the drawout position (CONNECTED, TEST, and DISCONNECTED) of the breaker.</li>
+			<li>The arbitrary combination up to 4 pieces is available.<span class="btn_CellSwitch"><a class="test" href="iframe/07_CellSwitch_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_ShortingNC-b-Contact" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Indication contact</p>
+		<img src="./images/Popup_07_ShortingNC-b-Contact.png" alt="" decoding="async" width="100px" style="margin-left:10px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Shorting NC (b) contact</span></li>
+			<li style="letter-spacing: -0.01em;">When drawout ACB from "CONNECT" to "TEST" position, this contact is used to short the auxiliary switch (NC contact).<br>Thus, maintaining the correct sequence of operation of the external control circuit.<span class="btn_ShortingNC-b-Contact"><a class="test" href="iframe/07_ShortingNC-b-Contact_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	<!--08-->   
+    <div id="contens-iframe_InterphaseBarrier" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Safety device</p>
+		<img src="./images/Popup_08_InterphaseBarrier.png" alt="" decoding="async" width="90px" style="margin-left:20px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Interphase barrier</span></li>
+			<li>This barrier enhance the interphase insulation between the terminal portions of the breaker,<br>
+			and prevents short-circuit due to conductive inclusion or dust.<span class="btn_InterphaseBarrier"><a class="test" href="iframe/08_InterphaseBarrier_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_SafetyShutters" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Safety device</p>
+		<img src="./images/Popup_08_SafetyShutters.png" alt="" decoding="async" width="90px" style="margin-left:20px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Safety shutters</span></li>
+			<li>The Safety shutters cover the cradle side of conductors and prevent contact with them when ACB is drawn out.</li>
+			<li>The shutter lock is also available as an option.<span class="btn_SafetyShutters"><a class="test" href="iframe/08_SafetyShutters_movie.html">movie</a></span></li>
+		</ul>		
+	</div>
+
+    <div id="contens-iframe_TerminalCover" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Safety device</p>
+		<img src="./images/Popup_08_TerminalCover.png" alt="" decoding="async" width="120px" style="margin-left:0px; margin-top: 10px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Terminal cover</span></li>
+			<li>The Terminal cover prevents from careless touching to the live part of control terminals.</li>
+			<li>Protection degree is IP20.<span class="btn_TerminalCover"><a class="test" href="iframe/08_TerminalCover_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_Mis-insertionPreventer" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Safety device</p>
+		<img src="./images/Popup_08_Mis-insertionPreventer.png" alt="" decoding="async" width="90px" style="margin-left:20px; margin-top: 0px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Mis-insertion preventer</span></li>
+			<li>Mis-insertion preventer allow only specified circuit breakers can be inserted into the cradle.</li>
+			<li>Five patterns of Mis-insertion preventers are available.<br>(Not available for AE4000-SW~AE6300-SW.)<span class="btn_Mis-insertionPreventer"><a class="test" href="iframe/08_Mis-insertionPreventer_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	<!--09-->   
+    <div id="contens-iframe_DrawoutInterlock" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Locking device</p>
+		<img src="./images/Popup_09_DrawoutInterlock.png" alt="" decoding="async" width="100px" style="margin-left:0px; margin-top: 10px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Drawout interlock</span></li>
+			<li>When the breaker is ON, the drawout handle cannot be inserted into the breaker.</li>
+			<li>The insertion and drawout operation of the breaker cannot be done unless the OFF button is pressed.<span class="btn_DrawoutInterlock"><a class="test" href="iframe/09_DrawoutInterlock_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_PositionLock" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Locking device</p>
+		<img src="./images/Popup_09_PositionLock.png" alt="" decoding="async" width="100px" style="margin-left:10px; margin-top: 10px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Position lock</span></li>
+			<li>During insertion and drawout operation, the drawout mechanism of the breaker is automatically locked at "TEST" and "Connect" position as standard.</li>
+			<li>Once the lock plate is pushed in, the lock is released and the operation can be continued.<span class="btn_PositionLock"><a class="test" href="iframe/09_PositionLock_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_PushButtonCover" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Locking device</p>
+		<img src="./images/Popup_09_PushButtonCover.png" alt="" decoding="async" width="100px" style="margin-left:10px; margin-top: -10px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Push button cover</span></li>
+			<li>The Push button cover prevents unintentional manual switching operation by the push button.</li>
+			<li>The Push button cover can be locked by the padlock.<span class="btn_PushButtonCover"><a class="test" href="iframe/09_PushButtonCover_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_CylinderLock" class="content_block_3" style="border-top: 3px solid #e60000; display:none;">
+		<p class="Popup_Title">Locking device</p>
+		<img src="./images/Popup_09_CylinderLock.png" alt="" decoding="async" width="120px" style="margin-left:0px; margin-top: 10px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Cylinder lock</span></li>
+			<li>The breaker can be locked in the open position with the Cylinder lock.</li>
+			<li>It provide reliable protection for personal during maintenance activities.<br>Also, it can be used for interlocking two or more breakers which only allows the key to be removed when the breaker is in the open position.<span class="btn_CylinderLock"><a class="test" href="iframe/09_CylinderLock_movie.html">movie</a></span></li>
+		</ul>
+		
+	</div>
+
+    <div id="contens-iframe_CastelLock" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Locking device</p>
+		<img src="./images/Popup_09_CastelLock.png" alt="" decoding="async" width="110px" style="margin-left:10px; margin-top: 10px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Castel lock</span></li>
+			<li>The breaker can be locked in the open position with the Castel lock.</li>
+			<li>In this lock, only the key lock set-up for Castel lock is available and the key must be supplied by the customers.<span class="btn_CastelLock"><a class="test" href="iframe/09_CastelLock_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_DoorInterlock" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">	
+    	<p class="Popup_Title">Locking device</p>
+		<img src="./images/Popup_09_DoorInterlock.png" alt="" decoding="async" width="70px" style="margin-left:20px; margin-top: 0px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Door interlock</span></li>
+			<li>With Door interlock, the panel door cannot be opened unless the breaker is in open position.</li>
+			<li>A wire type mechanical interlock allows flexibility of the circuit breakers' position inside the panel.<span class="btn_DoorInterlock"><a class="test" href="iframe/09_DoorInterlock_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_MechanicalInterlock" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Locking device</p>
+		<img src="./images/Popup_09_MechanicalInterlock.png" alt="" decoding="async" width="60px" style="margin-left:20px; margin-top: 0px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Mechanical interlock</span></li>
+			<li>Mechanical interlock is the device to prevent parallel closing operation of 2 or 3 units of breakers.</li>
+			<li>It assure the interlock mechanically between the breakers.<span class="btn_MechanicalInterlock"><a class="test" href="iframe/09_MechanicalInterlock_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+	<!--10-->   
+    <div id="contens-iframe_DoorFrame" class="content_block_3" style="border-top: 3px solid #e60000; display:none;">
+		<p class="Popup_Title">Other accessories</p>
+		<img src="./images/Popup_10_DoorFrame.png" alt="" decoding="async" width="80px" style="margin-left:20px; margin-top: 0px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Door frame</span></li>
+			<li>The Door frame improves the appearance. It is installed after cutting out the panel door.<span class="btn_DoorFrame"><a class="test" href="iframe/10_DoorFrame_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_DustCover" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Other accessories</p>
+		<img src="./images/Popup_10_DustCover.png" alt="" decoding="async" width="80px" style="margin-left:20px; margin-top: 0px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Dust cover</span></li>
+			<li>Dust cover prevents the dust or water entering into the panel board when ACB is used with the front cut panel.</li>
+			<li>Protection degree is IP54.<span class="btn_DustCover"><a class="test" href="iframe/10_DustCover_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_Counter" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">
+		<p class="Popup_Title">Other accessories</p>
+		<img src="./images/Popup_10_Counter.png" alt="" decoding="async" width="100px" style="margin-left:20px; margin-top: 10px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Counter</span></li>
+			<li>The open/close operations of the breaker can be recorded by a 5 digit counter.<span class="btn_Counter"><a class="test" href="iframe/10_Counter_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_CondenserTripDevice" class="content_block_3" style="border-top: 3px solid #e60000; display:none;">
+		<p class="Popup_Title">Other accessories</p>
+		<img src="./images/Popup_10_CondenserTripDevice.png" alt="" decoding="async" width="90px" style="margin-left:20px; margin-top: 0px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Condenser trip device</span></li>
+			<li>Even if the power supply fails, the breaker can be electrically opened in the combination with the Condenser trip device and the Shunt trip device within a definite time.<span class="btn_CondenserTripDevice"><a class="test" href="iframe/10_CondenserTripDevice_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_LiftingHook" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">		
+    	<p class="Popup_Title">Other accessories</p>
+		<img src="./images/Popup_10_LiftingHook.png" alt="" decoding="async" width="50px" style="margin-left:20px; margin-top: 10px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Lifting hook</span></li>
+			<li>Lifting hook is the metal fitting to suspend the breaker main body when it is removed from the cradle.<span class="btn_LiftingHook"><a class="test" href="iframe/10_LiftingHook_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_NeutralCT" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">		
+		<p class="Popup_Title">Other accessories</p>
+		<img src="./images/Popup_10_NeutralCT.png" alt="" decoding="async" width="60px" style="margin-left:30px; margin-top: 0px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">Neutral CT</span></li>
+			<li>For 3 pole circuit breakers used in 3 phase 4 wire systems, the Neutral CT is used for ground fault protection
+			 and over current protection of Neutral phase.<span class="btn_NeutralCT"><a class="test" href="iframe/10_NeutralCT_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+    <div id="contens-iframe_ZCT-1" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">		
+		<p class="Popup_Title">Other accessories</p>
+		<img src="./images/Popup_10_ZCT.png" alt="" decoding="async" width="130px" style="margin-left:0px; margin-top: 0px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">ZCT</span></li>
+			<li>ZCT is used to detect earth leakage current in the combination with earth leakage protection module (E1).</li>
+			<li>ZCT of ACB's load circuit conductors type or Transformer grounding wire type are available.<span class="btn_ZCT"><a class="test" href="iframe/10_ZCT_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+    <div id="contens-iframe_ZCT-2" class="content_block_3" style="border-top: 3px solid #e60000; display: none;">		
+		<p class="Popup_Title">Other accessories</p>
+		<img src="./images/Popup_10_ZCT.png" alt="" decoding="async" width="130px" style="margin-left:0px; margin-top: 0px;">
+		<ul class="Popup_Text">
+			<li style="list-style:none; margin-left: -20px;"><span style="font-size: 16px; font-weight: bold;">ZCT</span></li>
+			<li>ZCT is used to detect earth leakage current in the combination with earth leakage protection module (E1).</li>
+			<li>ZCT of ACB's load circuit conductors type or Transformer grounding wire type are available.<span class="btn_ZCT"><a class="test" href="iframe/10_ZCT_movie.html">movie</a></span></li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+</div><!-- popup_Wrapper -->
+
+					
+
+
+		
+		
+
+
+		</div><!--main-->
+
+
+
+
+</div><!--contens-->
+
+
+
+</body>
+
+
+</html>
+
+

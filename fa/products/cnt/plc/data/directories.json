@@ -1,0 +1,84 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/",
+    "child": [
+      {
+        "name": "Programmable Controllers MELSEC",
+        "path": "/fa/products/cnt/plc/index.html",
+        "child": [
+          {
+            "name": "MELSEC iQ-R Series",
+            "path": "/fa/products/cnt/plcr/items/index.html"
+          },
+          {
+            "name": "MELSEC iQ-F Series",
+            "path": "/fa/products/cnt/plcf/items/index.html"
+          },
+          {
+            "name": "MELSEC-Q Series",
+            "path": "/fa/products/cnt/plcq/items/index.html"
+          },
+          {
+            "name": "MELSEC-L Series",
+            "path": "/fa/products/cnt/plcl/items/index.html"
+          },
+          {
+            "name": "MELSEC-F Series",
+            "path": "/fa/products/cnt/plc_fx/items/index.html"
+          },
+          {
+            "name": "MELSEC-QS/WS Series",
+            "path": "/fa/products/cnt/plcqsws/items/index.html"
+          },
+          {
+            "name": "MELSEC-A Series",
+            "path": "/fa/products/cnt/plca/pmerit/concept/index.html"
+          },
+          {
+            "name": "Network-related products",
+            "path": "/fa/products/cnt/plcnet/items/index.html"
+          }
+            ]
+        }
+    ]
+  },
+  "switchNav": {
+    "name": "Programmable Controllers MELSEC",
+    "path": "/fa/products/cnt/plc/index.html",
+    "child": [
+      {
+        "group": "LP3",
+        "name": "Line up",
+        "path": "/fa/products/cnt/plc/pmerit/",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      },
+      {
+        "group": "LP3",
+        "name": "Application Examples",
+        "path": "/fa/products/cnt/plc/pmerit/case.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      },
+      {
+        "group": "LP3",
+        "name": "Selection Guide",
+        "path": "/fa/products/cnt/plc/pmerit/guide.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      },
+      {
+        "group": "LP3",
+        "name": "MELSEC History",
+        "path": "/fa/products/cnt/plc/pmerit/history.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      }
+    ]
+  }
+}

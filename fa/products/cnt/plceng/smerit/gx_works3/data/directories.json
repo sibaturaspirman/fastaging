@@ -1,0 +1,32 @@
+{
+	"layerNav": {
+		"name": "MELSOFT GX Works3 Features",
+		"path": "/fa/products/cnt/plceng/smerit/gx_works3/index.html",
+		"firstLayer": [
+			{
+				"name": "Concept",
+				"path": "/fa/products/cnt/plceng/smerit/gx_works3/index.html"
+			},
+			{
+				"name": "System Design",
+				"path": "/fa/products/cnt/plceng/smerit/gx_works3/design.html"
+			},
+			{
+				"name": "Programming",
+				"path": "/fa/products/cnt/plceng/smerit/gx_works3/programming.html"
+			},
+			{
+				"name": "Debug",
+				"path": "/fa/products/cnt/plceng/smerit/gx_works3/debug.html"
+			},
+			{
+				"name": "Maintenance",
+				"path": "/fa/products/cnt/plceng/smerit/gx_works3/maintenance.html"
+			},
+			{
+				"name": "How to use/Procedure",
+				"path": "/fa/products/cnt/plceng/smerit/gx_works3/movie.html"
+			}
+		]
+	}
+}

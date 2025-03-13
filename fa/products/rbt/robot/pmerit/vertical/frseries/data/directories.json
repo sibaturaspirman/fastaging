@@ -1,0 +1,60 @@
+{
+  "layerNav": {
+    "name": "Industrial Robot MELFA",
+    "path": "/fa/products/rbt/robot/items/vertical/index.html",
+    "firstLayer": [
+      {
+        "name": "RV-FR series",
+        "path": "/fa/products/rbt/robot/pmerit/frseries/index.html",
+        "secondLayer": [
+           {
+            "name": "Lineup",
+            "path": "/fa/products/rbt/robot/pmerit/vertical/frseries/index.html"
+          },
+           {
+            "name": "Features",
+            "path": "/fa/products/rbt/robot/pmerit/vertical/frseries/features.html"
+          },
+           {
+            "name": "Robot arm options",
+            "path": "/fa/products/rbt/robot/pmerit/vertical/frseries/option.html"
+          },
+          {
+            "name": "System configuration",
+            "path": "/fa/products/rbt/robot/pmerit/vertical/frseries/config.html"
+          },
+          {
+            "name": "Catalog and Specifications",
+            "path": "/fa/products/rbt/robot/pmerit/vertical/frseries/spec.html"
+          }
+        ]
+      },
+      {
+        "name": "RV-CR series",
+        "path": "/fa/products/rbt/robot/pmerit/vertical/crseries/index.html",
+         "secondLayer": [
+            {
+            "name": "Lineup",
+            "path": "/fa/products/rbt/robot/pmerit/vertical/crseries/index.html"
+          },
+           {
+            "name": "Features",
+            "path": "/fa/products/rbt/robot/pmerit/vertical/crseries/features.html"
+          },
+           {
+            "name": "Robot arm options",
+            "path": "/fa/products/rbt/robot/pmerit/vertical/crseries/option.html"
+          },
+          {
+            "name": "System configuration",
+            "path": "/fa/products/rbt/robot/pmerit/vertical/crseries/config.html"
+          },
+          {
+            "name": "Catalog and Specifications",
+            "path": "/fa/products/rbt/robot/pmerit/vertical/crseries/spec.html"
+          }
+        ]
+      }
+      ]
+  }
+}

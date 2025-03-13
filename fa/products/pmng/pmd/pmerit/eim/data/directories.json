@@ -1,0 +1,70 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Power Management Meters",
+            "path": "/fa/products/pmng/pmd/index.html",
+			"child": [
+				{
+					"name": "Electrical Indicators",
+					"path": "/fa/products/pmng/pmd/pmerit/eim/index.html",
+					"child": [
+					{
+						"name": "Electronic Multi Measuring Instruments (ME96 Series)",
+						"path": "/fa/products/pmng/pmd/pmerit/eim/index.html"
+					}
+				]
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+"layerNav": {
+    "name": "Electronic Multi Measuring Instruments (ME96 Series)",
+    "path": "/fa/products/pmng/pmd/pmerit/eim/index.html",
+    "firstLayer": [
+      {
+        "name": "Features",
+        "path": "/fa/products/pmng/pmd/pmerit/eim/index.html"
+      },
+      {
+        "name": "Product Lineup",
+        "path": "/fa/products/pmng/pmd/pmerit/eim/index_2.html"
+      },
+      {
+        "name": "Movies (ME96SS Ver.B)",
+        "path": "/fa/products/pmng/pmd/pmerit/eim/index_3.html"
+      },
+      {
+        "name": "Movies (ME96SS Ver.A)",
+        "path": "/fa/products/pmng/pmd/pmerit/eim/index_4.html"
+      }
+    ]
+  },
+ "switchNav": {
+    "name": "Power Management Meters",
+    "path": "/fa/products/pmng/pmd/index.html",
+    "child": [
+      {
+        "group": "Electrical Indicators",
+        "name": "Electronic Multi Measuring Instruments (ME96 Series)",
+        "feature": "/fa/products/pmng/pmd/pmerit/eim/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/pmd&radio=Meters&search=B&word=Meters&current=Meters",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/pmd&radio=Meters&search=B&word=Meters&current=Meters",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/pmd&category=discon&bunrui1=Meters&current=Meters",
+		"return": {
+			"name": "Electrical Indicators",
+			"path": "/fa/products/pmng/pmd/items/eim/index.html"
+		}
+      }
+        ]
+    }
+}

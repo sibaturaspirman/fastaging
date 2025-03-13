@@ -1,0 +1,5 @@
+@charset 'UTF-8';
+
+#content_compass .bt_section.giho { padding: 0; margin:0; background:none; }
+#content_compass .bt_section.giho a { max-width:350px; width: auto; margin: 20px auto 0; display: block; font-size: 100%; padding: 11px 10px; background-color: #cc0001;text-decoration: none; }
+#content_compass .bt_section.giho a span { margin:0 6px;color: #fff; }

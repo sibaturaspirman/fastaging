@@ -1,0 +1,44 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Data science tools",
+            "path": "/fa/products/software/data-science-tools/index.html",
+            "child": [
+              {
+                "name": "MELSOFT MaiLab",
+                "path": "/fa/products/software/data-science-tools/mailab/index.html"
+              },
+              {
+                "name": "What is MELSOFT MaiLab?",
+                "path": "/fa/products/software/data-science-tools/mailab/about/index.html"
+              },
+              {
+                "name": "How to use MELSOFT MaiLab",
+                "path": "/fa/products/software/data-science-tools/mailab/use/index.html"
+              },
+              {
+                "name": "MELSOFT MaiLab usage examples",
+                "path": "/fa/products/software/data-science-tools/mailab/example/index.html"
+              },
+              {
+                "name": "License format",
+                "path": "/fa/products/software/data-science-tools/mailab/license/index.html"
+              },
+              {
+                "name": "Operating environment",
+                "path": "/fa/products/software/data-science-tools/mailab/environment/index.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

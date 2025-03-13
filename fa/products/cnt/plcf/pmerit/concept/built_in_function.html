@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Built-in Functions | MELSEC iQ-F series | Programmable Controllers MELSEC | MITSUBISHI ELECTRIC Factory Automation</title>
+<meta name="keywords" content="MELSEC iQ-F series,Advanced Built-in Functions,MITSUBISHI ELECTRIC CORPORATION,FA,Factory Automation">
+<meta name="description" content="MELSEC iQ-F series Advanced Built-in Functions">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
+<link rel="apple-touch-icon-precomposed" href="https://www.mitsubishielectric.com/m/common/img/apple-touch-icon-precomposed.png">
+
+<!-- facebook用メタ情報 -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mitsubishielectric.com/fa/products/cnt/plcf/pmerit/concept/built_in_function.html">
+<meta property="og:title" content="Built-in Functions | MELSEC iQ-F series | Programmable Controllers MELSEC | MITSUBISHI ELECTRIC Factory Automation">
+<meta property="og:description" content="MELSEC iQ-F series Advanced Built-in Functions">
+<meta property="og:image" content="https://www.mitsubishielectric.com/fa/shared/img/ogp/thumb_01.jpg">
+<!-- /facebook用メタ情報 -->
+
+<!-- Mel styles gws0001 -->
+<link rel="stylesheet" href="/fa/shared/gws0001/default/libs/normalize.css/7.0.0/normalize.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/default/css/layouts.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/css/style.css">
+
+<link rel="stylesheet" href="/fa/products/assets/css/category.css">
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/default/libs/jquery/jquery-3.6.0.min.js"></script>
+<script>
+  window.jQuery3_6 = jQuery.noConflict();
+</script>
+<script src="/fa/shared/gws0001/default/js/libs.js"></script>
+<script src="/fa/shared/gws0001/js/functions.js"></script>
+<script src="/fa/shared/js/globallinkinfo.js"></script>
+<script src="/common/js/head_include.js"></script>
+</head>
+
+<body>
+<noscript><div class="noscript"><p class="noscript__msg">Please enable JavaScript before using this site.</p></div></noscript>
+<header class="gs18-Header gs18-Header--MinInteraction" role="banner" data-js-gs18-header>
+<!-- /.gs18-Header --></header>
+
+<main class="container-fluid">
+<div class="c-mainVisual">
+<div class="c-mainVisual__main">
+<div class="c-mainVisual__fa"><img src="/fa/shared/gws0001/img/fa_logo.svg" alt="Factory Automation" width="315" height="35"></div>
+<h1 class="c-mainVisual__title">
+<span class="c-mainVisual__subTitle">MELSEC iQ-F series</span>
+Built-in Functions</h1>
+<div class="c-mainVisual__background"><img src="/fa/products/assets/img/img_mv-1_sm.jpg" alt="" width="1440" height="320" decoding="async"></div>
+</div>
+</div><!-- /.c-mainVisual -->
+
+<div class="c-localNav" data-js-products-local-nav="/fa/products/cnt/plcf/pmerit/concept/index.html">
+<div class="c-localNav__inner">
+<ul class="c-list c-list--float">
+<li class="c-list__item"><a class="u-icons u-icons--bulletLeft" href="/fa/products/index.html">製品情報</a></li>
+</ul><!-- /.c-list -->
+</div><!-- /.c-localNav__inner -->
+</div><!-- /.c-localNav -->
+
+<div class="c-switchNav" data-js-switch-nav>
+</div><!-- /.c-switchNav -->
+
+<div class="c-layerNav" data-js-layer-nav="plcf_03">
+</div><!-- /.c-layerNav -->
+
+<div class="l-inner--medium l-separator-x6">
+<div class="c-img"><img src="./assets/img/img_sample.png" alt="" decoding="async"></div>
+
+<section class="l-section" id="section01">
+<h2 class="c-headingLv2">Advanced Built-in Functions</h2>
+<div class="c-imgAuto"><img src="images/built_in_function00.jpg" alt="Advanced Built-in Functions" decoding="async" usemap="#map" ></div>
+<map name="map" class="pc">
+    <area shape="rect" coords="2,25,294,45" href="#analog" alt="Built-in Analog Input/Output">
+    <area shape="rect" coords="339,25,460,45" href="#CPU" alt="CPU Performance">
+    <area shape="rect" coords="438,54,500,74" href="#security" alt="Security">
+    <area shape="rect" coords="497,25,774,45" href="#hi" alt="High-speed System Bus Communication">
+    <area shape="rect" coords="2,54,192,74" href="#SD" alt="Built-in SD Memory Card Slot">
+    <area shape="rect" coords="28,303,297,322" href="#485" alt="Built-in RS-485 port">
+    <area shape="rect" coords="496,313,723,332" href="#free" alt="Battery-less and Maintenance-free">
+    <area shape="rect" coords="0,335,171,355" href="#sw" alt="RUN/STOP/RESET Switch">
+    <area shape="rect" coords="310,332,455,352" href="#ethernet" alt="Built-in Ethernet Port">
+    <area shape="rect" coords="65,599,255,618" href="#SD" alt="Built-in SD Memory Card Slot">
+    <area shape="rect" coords="75,851,245,870" href="#sw" alt="RUN/STOP/RESET Switch">
+    <area shape="rect" coords="270,851,480,871" href="#usb" alt="Built-in USB (Mini-B) Connector">
+    <area shape="rect" coords="330,1207,519,1213" href="#usb" alt="Built-in USB (Mini-B) Connector">
+    <area shape="rect" coords="114,1206,264,1213" href="#sw" alt="RUN/STOP/RESET Switch">
+    <area shape="rect" coords="376,900,494,907" href="#ethernet" alt="Built-in Ethernet Port">
+</map>
+
+<div class="c-table">
+    <table class="c-table__content">
+        <tbody class="c-table__contentBody">
+        <tr>
+        <th nowrap rowspan="3" class="c-table__headCell u-va--middle u-fw--bold-imp"><a name="CPU"></a>CPU Performance</th>
+        <th nowrap class="c-table__headCell u-va--middle u-fw--bold-imp">FX5U/FX5UC</th>
+        <td>
+            The FX5U/FX5UC CPU modules has a CPU capable of high-speed processing with an instruction operation speed (LD instruction) of 34 ns
+            <span class="u-tc--red">*2</span>.
+            <br>In addition, the CPU now supports execution of structured programs and multiple programs, ST language, FB etc.
+            <div class="c-imgAuto l-separator-x1-imp"><img src="images/built_in_function02.gif" alt="CPU Performance" decoding="async"></div>
+                <ol class="c-list--order">
+                    <li class="c-list__item"><span class="c-list__marker u-tc--red">*1</span>Supported by FX5U/FX5UC Ver. 1.100 or later, and serial number 17X**** (serial number 178**** (for FX5UC-32MT/DS-TS and FX5UC-32MT/DSS-TS) or later.)<br>
+                        Some operation restrictions apply when 128 k steps is selected. For details, refer to the manual.</li>
+                    <li class="c-list__item"><span class="c-list__marker u-tc--red">*2</span>When the program capacity is 64 k steps.</li>       
+                </ol>
+        </td>
+        </tr>
+
+        <tr>
+            <th nowrap class="c-table__headCell u-va--middle u-fw--bold-imp">FX5UJ</th>
+            <td>
+                The speed of FX5UJ CPU modules has increased to twice that of the FX3U.<br>
+                They are also able to demonstrate excellent performance when using intelligent function modules with a large amount of communication data.
+                <div class="c-imgAuto l-separator-x1-imp"><img src="images/built_in_function02_2.gif" alt="CPU Performance" decoding="async"></div>
+        </td>
+        </tr>
+        <tr>
+            <th nowrap class="c-table__headCell u-va--middle u-fw--bold-imp">FX5S</th>
+            <td>
+                The FX5S CPU module is standard equipped with a built-in USB (Mini-B) connector and built-in Ethernet port. <br>
+                This module is compact and condenses the high basic performance, such as the positioning and IoT functions, and ease of use.
+                 This facilitates configuring user systems.
+            <div class="c-imgAuto l-separator-x1-imp"><img src="images/built_in_function03.png" alt="CPU Performance" decoding="async"></div>
+            </td>
+        </tr>
+        
+        <tr>
+        <th nowrap colspan="2" class="c-table__headCell u-va--middle u-fw--bold-imp"><a name="ethernet"></a>Built-in Ethernet Port</th>
+        <td>The Ethernet communication port can handle communication of up to 8 connections on the network, and can support multiple connections with personal computer and other device. 
+            In addition, the Ethernet communication port can handle seamless SLMP communication with the upper-level device.
+            <div class="c-imgAuto l-separator-x1-imp"><img src="images/built_in_function05.gif" alt="Built-in Ethernet Port" decoding="async"></div></td>
+        </tr>
+
+        <tr>
+        <th nowrap colspan="2" class="c-table__headCell u-va--middle u-fw--bold-imp"><p><a name="485"></a>Built-in RS-485 port<br />(MODBUS<sup>&reg;</sup> function)</p>
+            <p class="u-fz--13 l-separator-x2-imp"></p><span style="border:solid 1px #d5d5d5; padding: 10px 15px;">FX5U/FX5UC</span></th>
+        
+        <td>Connect to serial devices up to 50 m away with built-in RS-485 port. Control for up to 16 Mitsubishi inverters is possible with dedicated six inverter communication instructions.<br />
+        MODBUS is also supported and can connect up to 32 MODBUS devices such as PLCs, sensors and temperature controllers.
+        <div class="c-imgAuto l-separator-x1-imp"><img src="images/built_in_function06.gif" alt="Built-in RS-485 port" decoding="async"></div></td>
+    </tr>
+
+        <tr>
+        <th nowrap colspan="2" class="c-table__headCell u-va--middle u-fw--bold-imp"><a name="analog"></a>Built-in Analog <br />Input/Output<br />(with alarm output)
+            <p class="u-fz--13 l-separator-x2-imp"><span style="border:solid 1px #d5d5d5; padding: 10px 15px;">FX5U</span></p>
+        </th>
+        <td>
+            <div class="l-grid">
+                <div class="l-grid__item l-grid__item-6">
+                <p>FX5U is equipped with 12-bit 2 ch analog input and 1 ch analog output.<br>
+                    With parameter setup, no programming is required.<br>
+                    Value shifting, scaling and alarm output can also be set easily with parameters.</p>
+                    <p class="c-note l-separator-x2-imp" style="padding-left: 3em;text-indent: -3em;"><span style="text-indent: 0;width: 3em;display: inline-block;">Note :</span>Only FX5U Built-in Analog Input/Output.</p>
+                </div><!-- /.l-grid__item -->
+                <div class="l-grid__item l-grid__item-6">
+                    <div class="c-imgAuto"><img src="images/built_in_function01.gif" alt="Built-in Analog Input/Output" decoding="async"></div>
+                    <p class="u-ta--right u-tc--red">Example of inverter control<br>using analog output</p>
+                </div><!-- /.l-grid__item -->
+                </div><!-- /.l-grid -->
+            </td>
+        </tr>
+
+            <!-- sp 
+        <div class="layout01 sp">
+            <div>
+                <div class="fa-image_box"><img src="images/built_in_function01.gif" alt="Built-in Analog Input/Output" /></div>
+                <br /><br /><span class="fa-text" style="color:red;">Example of inverter control <br />using analog output</span>
+            </div>
+            <div class="detail">
+           <div class="textbox fa-text">FX5U is equipped with 12-bit 2 ch analog input and 1 ch analog output.<br />
+            With parameter setup, no programming is required.<br />
+            Value shifting, scaling and alarm output can also be set easily with parameters.<br /><br />
+            Note: Only FX5U Built-in Analog Input/Output.</div>
+            </div></div>
+            <!--/layout01-->
+                    
+            <tr>
+            <th nowrap colspan="2" class="c-table__headCell u-va--middle u-fw--bold-imp" style="height: 100px;"><a name="usb"></a>Built-in USB (Mini-B) connector<br />
+                <p class="u-fz--13 l-separator-x2-imp"><span style="border:solid 1px #d5d5d5; padding: 10px 15px;">FX5UJ/FX5S</span></p>
+            </th>
+            <td class="u-va--middle">
+                <div class="textbox fa-text">Another interface for programming, in addition to the Ethernet port.
+                 The standard equipped USB (Mini-B) Connector makes it easier to connect to GX Works3.</div>
+            </td>
+            </tr>
+
+        <tr>
+        <th nowrap colspan="2" class="c-table__headCell u-va--middle u-fw--bold-imp"><a name="SD"></a>Built-in SD Memory Card Slot<br><span class="u-tc--red">*1</span>
+        </th>
+        <td>
+            <div class="l-grid l-grid--reverse">
+                <div class="l-grid__item l-grid__item-40per">
+                    <div class="c-imgAuto"><img src="images/built_in_function03.gif" alt="Built-in SD Memory Card Slot" decoding="async"></div>
+                    <p><span class="u-tc--red">Example of mass-production of equipment using SD memory card</span></p>
+                </div><!-- /.l-grid__item -->
+                <div class="l-grid__item l-grid__item-60per">
+                    <p>A built-in SD memory card slot is convenient for updating the program and mass production of equipment.<br />
+                        Data can be logged in SD memory card, making it easy to analyze the system status and production state, etc.</p>
+                        <ul class="c-list--order l-separator-x2-imp">
+                        <li class="c-list__item"><span class="c-list__marker u-tc--red">*1</span>FX5S requires FX5-SDCD separately.</li>
+                    </ul>
+                </div><!-- /.l-grid__item -->
+                </div><!-- /.l-grid -->
+        </td>
+        </tr>
+
+        <tr>
+        <th nowrap colspan="2" class="c-table__headCell u-va--middle u-fw--bold-imp"><a name="security"></a>Security</th>
+        <td>
+            <p>MELSEC iQ-F has advanced security functions (file password, remote password, security key)
+                 to prevent data theft and illegal operations by unauthorized persons.</p>
+                 <div class="c-imgAuto"><img src="images/built_in_function04.gif" alt="Security" decoding="async"></div>
+                    <p class="u-ta--center"><span class="u-tc--red">Example of security key function</span></p>
+        </td>
+        </tr>
+
+        <tr>
+        <th nowrap colspan="2" class="c-table__headCell u-va--middle u-fw--bold-imp"><a name="hi"></a>High-speed System <br />Bus Communication</th>
+        <td> <p>High-speed system bus communication at 1.5 K words/ms (approximately 150 times faster compared with FX3U), 
+            together with high speed CPU, allows MELSEC iQ-F to output maximum performance even when heavy data communication intelligent function modules are used.</p>
+        </td></tr>
+        <tr>
+        <th nowrap colspan="2" class="c-table__headCell u-va--middle u-fw--bold-imp"><a name="sw"></a>RUN/STOP/RESET Switch</th>
+        <td> <p>RUN/STOP/RESET switch is built in.<br />
+        PLC can be rebooted without turning off the main power for efficient debugging.</p></td>
+        </tr>
+        <tr>
+        <th nowrap colspan="2" class="c-table__headCell u-va--middle u-fw--bold-imp"><a name="free"></a>Battery-less and<br />Maintenance-free</th>
+        <td> <p>MELSEC iQ-F series holds programs and devices in nonvolatile memory such as flash ROM, and does not require a battery.</p>
+                <ol class="c-list--order">
+                <li class="c-list__item"><span class="u-tc--red c-list__marker">*</span>It is possible to increase the capacity of held devices by using an optional battery.</li>
+                </ol>
+            </td>
+        </tr>
+        </table>
+</div>
+
+</section><!-- /#section03 -->
+</div><!-- /.l-inner -->
+</main>
+
+<div class="c-breadcrumb">
+<ul class="c-breadcrumb__list" data-js-products-breadcrumb>
+</ul><!-- /.c-breadcrumb__list -->
+</div><!-- /.c-breadcrumb -->
+
+<footer class="gs18-Footer" role="contentinfo" data-js-gs18-footer>
+<!-- /.gs18-Footer --></footer>
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/js/init.js"></script>
+
+<script src="/fa/products/assets/js/category.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+[
+	{
+		"name": "MELSEC iQ-R Series",
+		"url": "/fa/products/cnt/plcr/items/index.html",
+		"number": "01",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-F Series",
+		"url": "/fa/products/cnt/plcf/items/index.html",
+		"number": "02",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series High-speed Data Logger Module",
+		"url": "/fa/products/cnt/plcr/pmerit/it_connect/log.html",
+		"number": "03",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series Ethernet interface module",
+		"url": "/fa/products/cnt/plcr/pmerit/network/ethernet.html",
+		"number": "04",
+		"target": "_self"
+	},
+	{
+		"name": "HMI GOT",
+		"url": "/fa/products/hmi/got/index.html",
+		"number": "05",
+		"target": "_self"
+	},
+	{
+		"name": "GT SoftGOT2000",
+		"url": "/fa/products/hmi/got/pmerit/sgt/sgt2000/index.html",
+		"number": "06",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series MES Interface Module",
+		"url": "/fa/products/cnt/plcr/pmerit/it_connect/mes.html",
+		"number": "07",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series OPC UA Server Module",
+		"url": "/fa/products/cnt/plcr/pmerit/it_connect/opc.html",
+		"number": "08",
+		"target": "_self"
+	},
+	{
+		"name": "Industrial Computer MELIPC Series",
+		"url": "/fa/products/edge/melipc/",
+		"number": "09",
+		"target": "_self"
+	},
+	{
+		"name": "Data Collector",
+		"url": "/fa/solutions/efactory/component/edgsw/dc/index.html",
+		"number": "10",
+		"target": "_self"
+	},
+	{
+		"name": "Edgecross-supporting Software",
+		"url": "/fa/solutions/efactory/component/edgsw/index.html",
+		"number": "11",
+		"target": "_self"
+	},
+	{
+		"name": "MX Sheet",
+		"url": "/fa/products/cnt/plceng/smerit/mx_sheet/index.html",
+		"number": "12",
+		"target": "_self"
+	},
+	{
+		"name": "MELSOFT GX LogViewer",
+		"url": "/fa/products/cnt/plceng/smerit/gx_logviewer/index.html",
+		"number": "13",
+		"target": "_self"
+	},
+	{
+		"name": "e-F@ctory starter package",
+		"url": "/fa/products/software/visualisation/support-module/index.html",
+		"number": "14",
+		"target": "_self"
+	},
+	{
+		"name": "iQ Monozukuri ANDON",
+		"url": "/fa/products/hmi/got/pmerit/apppack/andon/index.html",
+		"number": "15",
+		"target": "_self"
+	},
+	{
+		"name": "SCADA GENESIS64™",
+		"url": "/fa/products/software/visualisation/genesis64/index.html",
+		"number": "16",
+		"target": "_self"
+	},
+	{
+		"name": "iQ Monozukuri Process Remote Monitoring",
+		"url": "/fa/products/hmi/got/pmerit/apppack/prm/index.html",
+		"number": "17",
+		"target": "_self"
+	},
+	{
+		"name": "System Recorder",
+		"url": "/fa/products/cnt/plcr/pmerit/sysrecorder/index.html",
+		"number": "18",
+		"target": "_self"
+	},
+	{
+		"name": "NC Machine Tool Optimizer",
+		"url": "/fa/products/cnt/cnc/pmerit/iot/nmt_optimizer/index.html",
+		"number": "19",
+		"target": "_self"
+	},
+	{
+		"name": "Energy Saving Support Software EcoAdviser",
+		"url": "/fa/products/software/ems/eap/index.html",
+		"number": "20",
+		"target": "_self"
+	},
+	{
+		"name": "Energy-saving Data Collecting Server EcoWebServer III",
+		"url": "/fa/products/pmng/ems/items/ecoserver/index.html",
+		"number": "21",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series Energy Measuring Module",
+		"url": "/fa/products/cnt/plcr/pmerit/measuring/index.html",
+		"number": "22",
+		"target": "_self"
+	},
+	{
+		"name": "iQ Monozukuri Tool Wear Diagnosis for Machine Tools",
+		"url": "/fa/sols/efactory/component/monozukuri/twdiagnosis/index.html",
+		"number": "23",
+		"target": "_self"
+	},
+	{
+		"name": "iQ Monozukuri Rotary Machine Vibration Diagnosis",
+		"url": "/fa/sols/efactory/component/monozukuri/rmvdiagnosis/index.html",
+		"number": "24",
+		"target": "_self"
+	},
+	{
+		"name": "MELSOFT MaiLab",
+		"url": "/fa/products/software/data-science-tools/mailab/index.html",
+		"number": "25",
+		"target": "_self"
+	}
+]

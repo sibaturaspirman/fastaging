@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PLC built-in pulse output functions and positioning functions | MELSEC-F series | MITSUBISHI ELECTRIC FA</title>
+<meta name="keywords" content="MELSEC-F series,PLC built-in pulse output functions and positioning functions,MITSUBISHI ELECTRIC CORPORATION,FA,Factory Automation">
+<meta name="description" content="MELSEC-F series PLC built-in pulse output functions and positioning functions">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
+<link rel="apple-touch-icon-precomposed" href="https://www.mitsubishielectric.com/m/common/img/apple-touch-icon-precomposed.png">
+
+<!-- facebook用メタ情報 -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mitsubishielectric.com/fa/products/cnt/plc_fx/pmerit/contents/positioning/plc01.html">
+<meta property="og:title" content="PLC built-in pulse output functions and positioning functions | MELSEC-F series | MITSUBISHI ELECTRIC FA">
+<meta property="og:description" content="MELSEC-F series PLC built-in pulse output functions and positioning functions">
+<meta property="og:image" content="https://www.mitsubishielectric.com/fa/shared/img/ogp/thumb_01.jpg">
+<!-- /facebook用メタ情報 -->
+
+<!-- Mel styles gws0001 -->
+<link rel="stylesheet" href="/fa/shared/gws0001/default/libs/normalize.css/7.0.0/normalize.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/default/css/layouts.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/css/style.css">
+
+<link rel="stylesheet" href="/fa/products/assets/css/category.css">
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/default/libs/jquery/jquery-3.6.0.min.js"></script>
+<script>
+  window.jQuery3_6 = jQuery.noConflict();
+</script>
+<script src="/fa/shared/gws0001/default/js/libs.js"></script>
+<script src="/fa/shared/gws0001/js/functions.js"></script>
+<script src="/fa/shared/js/globallinkinfo.js"></script>
+<script src="/common/js/head_include.js"></script>
+</head>
+
+<body>
+<noscript><div class="noscript"><p class="noscript__msg">Please enable JavaScript before using this site.</p></div></noscript>
+<header class="gs18-Header gs18-Header--MinInteraction" role="banner" data-js-gs18-header>
+<!-- /.gs18-Header --></header>
+
+<main class="container-fluid">
+<div class="c-mainVisual">
+<div class="c-mainVisual__main">
+<div class="c-mainVisual__fa"><img src="/fa/shared/gws0001/img/fa_logo.svg" alt="Factory Automation" width="315" height="35"></div>
+<h1 class="c-mainVisual__title">
+<span class="c-mainVisual__subTitle">MELSEC-F series</span>
+PLC built-in pulse output functions and positioning functions</h1>
+<div class="c-mainVisual__background"><img src="/fa/products/assets/img/img_mv-1_sm.jpg" alt="" width="1440" height="320" decoding="async"></div>
+</div>
+</div><!-- /.c-mainVisual -->
+
+<div class="c-localNav" data-js-products-local-nav="/fa/products/cnt/plc_fx/pmerit/contents/positioning/index.html">
+<div class="c-localNav__inner">
+<ul class="c-list c-list--float">
+<li class="c-list__item"><a class="u-icons u-icons--bulletLeft" href="/fa/products/index.html">製品情報</a></li>
+</ul><!-- /.c-list -->
+</div><!-- /.c-localNav__inner -->
+</div><!-- /.c-localNav -->
+
+<div class="c-switchNav" data-js-switch-nav>
+</div><!-- /.c-switchNav -->
+
+<div class="c-layerNav" data-js-layer-nav="MELSEC-F_02">
+</div><!-- /.c-layerNav -->
+
+<div class="l-inner--medium l-separator-x6">
+
+<section class="l-section" id="section01">
+<h2 class="c-headingLv2">FX3S, FX3G, FX3GC, FX3UC series positioning function (main unit: transistor output type)</h2>
+<div class="l-grid">
+    <div class="l-grid__item l-grid__item-5">
+    <div class="c-imgAuto"><img src="images/plc02_detail.jpg" alt="FX3S, FX3G, FX3GC, FX3UC series positioning function (main unit: transistor output type)" decoding="async"></div>
+    </div><!-- /.l-grid__item -->
+    <div class="l-grid__item l-grid__item-7">
+        <ul class="c-list">
+            <li class="c-list__item">Low cost system can be realized without any special expansion devices dedicated for positioning.</li>
+            <li class="c-list__item">1-speed positioning and repetitive positioning can be easily performed by the PLC alone.</li>
+            <li class="c-list__item">Dedicated positioning instructions are built-in.  With the new batch setting positioning instruction (DTBL), 
+            positioning can be executed just by specifying in the PLC program the number of a positioning operation set in GX Developer.<br />
+            (FX3S: DTBL instruction is not supported)</li>
+            <li class="c-list__item">3 independent axes can output maximum 100 kHz pulse train from outputs Y000, Y001, Y002 (transistor output).<br />
+            (FX3S and FX3G 14 pt/24 pt models and FX3GC have 2 independent axes)</li>
+        </ul>
+    </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+    <h3 class="c-headingLv3">Example system configuration</h3>
+    <div class="c-imgAuto"><img src="images/system_plc02.jpg" alt="Example system configuration" decoding="async"></div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*1</span>FX3S and FX3G 14 pt/24 pt models and FX3GC have 2 independent axes.</li>
+    </ul>
+<h3 class="c-headingLv3">Batch Data Positioning Mode (DTBL) instruction</h3>
+<div class="l-grid">
+    <div class="l-grid__item l-grid__item-4">
+    <div class="c-imgAuto"><img src="images/ex_plc02.jpg" alt="Batch Data Positioning Mode (DTBL) instruction" decoding="async"></div>
+    </div><!-- /.l-grid__item -->
+    <div class="l-grid__item l-grid__item-8">
+    <div class="c-table l-separator-x2-imp">
+        <table class="c-table__content">
+            <thead class="c-table__head">
+            <tr>
+            <th class="u-va--middle u-ta--center">Instruction</th>
+            <th class="u-va--middle u-ta--center">Description</th>
+            </tr>
+            </thead>
+            <tbody class="c-table__contentBody">
+            <tr>
+            <td>DVIT (FNC151)<span class="u-tc--red-imp">*2</span></td>
+            <td>Interrupt Positioning</td>
+            </tr>
+            <tr>
+            <td>PLSV (FNC157)</td>
+            <td>Variable Speed Pulse Output</td>
+            </tr>
+            <tr>
+            <td>DRVI (FNC158)</td>
+            <td>Drive to Increment</td>
+            </tr>
+            <tr>
+            <td>DRVA (FNC159)</td>
+            <td>Drive to Absolute</td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+    </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*2</span>only FX3U/FX3UC PLCs.</li>
+    </ul>
+    <h3 class="c-headingLv3">Specifications</h3>
+<div class="c-table c-table--scroll">
+    <table class="c-table__content">
+        <thead class="c-table__head">
+        <tr>
+        <th class="u-va--middle u-ta--center">Items</th>
+        <th class="u-va--middle u-ta--center">Specifications</th>
+        </tr>
+        </thead>
+        <tbody class="c-table__contentBody">
+        <tr>
+        <td class="u-va--middle">Pulse Output</td>
+        <td class="u-va--middle">Y000, Y001, Y002<span class="u-tc--red-imp">*</span> of transistor output type main unit can each output maximum 100 kHz (3 independent axes, FX3S and FX3G 14 pt/24 pt models and FX3GC have 2 axes).<br />
+        Rotation direction signal output included</td>
+        </tr>
+        <tr>
+        <td class="u-va--middle" nowrap>Output (Y000 to Y002<span class="u-tc--red-imp">*</span>)</td>
+        <td class="u-va--middle">Transistor output: Open collector (use transitor output type main unit)<br />
+        Use voltage, current range: 5 to 24 V DC/10 to 100 mA</td>
+        </tr>
+        <tr>
+        <td class="u-va--middle">Programming languages</td>
+        <td class="u-va--middle">[Pulse output instructions: 2 types]<br />
+        Pulse output (PLSY), pulse output with acceleration deceleration (PLSR)</td>
+        </tr>
+        </tbody>
+        </table>
+</div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>FX3S and FX3G 14 pt/24 pt models and FX3GC have Y000 to Y001.</li>
+    </ul>
+
+</section><!-- /#section01 -->
+</div><!-- /.l-inner -->
+</main>
+
+<div class="c-breadcrumb">
+<ul class="c-breadcrumb__list" data-js-products-breadcrumb>
+</ul><!-- /.c-breadcrumb__list -->
+</div><!-- /.c-breadcrumb -->
+
+<footer class="gs18-Footer" role="contentinfo" data-js-gs18-footer>
+<!-- /.gs18-Footer --></footer>
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/js/init.js"></script>
+
+<script src="/fa/products/assets/js/category.js"></script>
+</body>
+</html>

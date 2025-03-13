@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* note-block
+***************************** */
+.note-block {border-top: 1px solid #b2b2b2;border-bottom: 1px solid #b2b2b2;padding: 30px 0;}
+.note-block a {word-break: break-all;}
+
+/* case-index
+***************************** */
+.case-index{margin-top:60px;}
+#sectionRelatedContents + .case-index{margin-top:0px;}
+.case-index .case-index__list{border-bottom:1px dotted #bdbdbd;}
+.case-index .case-index__listitem{border-top:1px dotted #bdbdbd;}
+.case-index .case-index__listitem .u-icons{display:block;padding-top:10px;padding-bottom:10px;padding-left:10px;}
+.case-index .case-index__listitem .u-icons:hover{text-decoration:none;}
+.case-index .case-index__listitem span.u-icons:before{display: none;}
+.case-index .case-index__listitem .u-icons.current{background-color:#f5f5f5;}
+
+/* img_col_group
+***************************** */
+.img_col_group{display:flex;margin-top:15px;}
+.img_col_group .img_col{width: calc( (100% - 3 * 15px) / 3 );margin-right:15px;}
+.img_col_group .img_col.c-img{margin-top:0;}
+
+/* link_block
+***************************** */
+.link_block{background-color:#f2f2f2;padding:30px;}
+.link_block a{word-break:break-all;}
+
+/* u-icons
+***************************** */
+.u-icons--color:after{color:#014877;}
+.u-icons--color:hover:after{color:#f50f10;}
+
+/* c-relatedContents__img
+***************************** */
+.c-relatedContents__img>img{width:330px;image-rendering: -webkit-optimize-contrast;}
+.c-relatedContents__item.no_topborder{padding-top:10px;border-top:none;}
+
+@media only screen and (min-width:768px){
+
+/* case-index
+***************************** */
+.case-index .case-index__listitem a{transition:background-color 0.3s ease, color 0.3s ease;}
+.case-index .case-index__listitem a:hover{background-color:#f5f5f5;}
+}
+
+@media only screen and (max-width:767px){
+
+/* img_col_group
+***************************** */
+.img_col_group{margin-top:12px;}
+.img_col_group .img_col{width: calc( (100% - 3 * 12px) / 3 );margin-right:12px;}
+
+/* c-relatedContents__img
+***************************** */
+.c-relatedContents__img>img {width: auto;}
+}

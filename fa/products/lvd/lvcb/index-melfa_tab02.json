@@ -1,0 +1,36 @@
+{
+  "listLinkLabel": "Update information",
+  "listLink": "/fa/products/lvd/lvcb/update_index.html",
+  "items": [
+    {
+      "pubDate": "Jun 3, 2024",
+      "title": "Low-voltage Circuit Breakers：Technical News is added.",
+      "category": "Technical bulletin",
+      "description": "<a href=\"https://www.mitsubishielectric.com/app/fa/download/search.do?mode=techinfo&kisyu=%2Flvcb&c1=Technical+News&c2=&c3=&c4=2\">About the Combination for selective breaking of Molded Case Circuit Breakers</a>"
+    },
+    {
+      "pubDate": "Apr 17, 2024",
+      "title": "Low-voltage Circuit Breakers：Manual is updated.",
+      "category": "Technical bulletin",
+      "description": "・<a href=\"/fa/document_new/manual/lvcb/ib63c07_eng/ib63c07e_ln338a475h04_e.pdf\" target=\"_blank\">Breaker tester Y-2005 Instruction Manual<img src=\"/fa/shared/common/img/icon/icon_pdf.svg\" alt=\"PDF\" width=\"16\" height=\"16\" class=\"u-icons u-icons--bulletRight\"></a><br>　IB63C07(3.87MB)"
+    },
+    {
+      "pubDate": "Apr 17, 2024",
+      "title": "Low-voltage Circuit Breakers：Sales and Service is added.",
+      "category": "Technical bulletin",
+      "description": "<a href=\"https://www.mitsubishielectric.com/app/fa/download/search.do?mode=techinfo&kisyu=%2Flvcb&c1=&c2=&c3=&c4=3\">Specification changes of Molded Case Circuit Breakers</a>"
+    },
+    {
+      "pubDate": "Apr 2, 2024",
+      "title": "Low-voltage Circuit Breakers：Approved Certifications is updated.",
+      "category": "Products certified/compliant to standards",
+      "description": "Shipping Approval<br>・Air Circuit Breakers (ACB)<br>　BV：<a href=\"/fa/products/lvd/lvcb/pmerit/pdf/bv/19785-d0bv.pdf\" target=\"_blank\">19785/D0 BV<img src=\"/fa/shared/common/img/icon/icon_pdf.svg\" alt=\"PDF\" width=\"16\" height=\"16\" class=\"u-icons u-icons--bulletRight\"></a>"
+    },
+    {
+      "pubDate": "Mar 18, 2024",
+      "title": "Low-voltage Circuit Breakers：Approved Certifications is updated.",
+      "category": "Products certified/compliant to standards",
+      "description": "Shipping Approval<br>・Molded-case Circuit Breakers (MCCB)、Isolating Switch<br>　BV：<a href=\"/fa/products/lvd/lvcb/pmerit/pdf/bv/07656-f0_bv.pdf\" target=\"_blank\">07656/F0 BV<img src=\"/fa/shared/common/img/icon/icon_pdf.svg\" alt=\"PDF\" width=\"16\" height=\"16\" class=\"u-icons u-icons--bulletRight\"></a><br>・Molded-case Circuit Breakers (MCCB)<br>　BV：<a href=\"/fa/products/lvd/lvcb/pmerit/pdf/bv/25920-c0_bv.pdf\" target=\"_blank\">25920/C0 BV<img src=\"/fa/shared/common/img/icon/icon_pdf.svg\" alt=\"PDF\" width=\"16\" height=\"16\" class=\"u-icons u-icons--bulletRight\"></a><br>"
+    }
+  ]
+}

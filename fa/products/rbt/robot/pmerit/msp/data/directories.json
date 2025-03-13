@@ -1,0 +1,48 @@
+{
+  "layerNav": {
+    "name": "MELFA Smart Plus",
+    "path": "/fa/products/rbt/robot/items/msp/index.html",
+    "firstLayer": [
+      {
+        "name": "Features",
+        "path": "/fa/products/rbt/robot/pmerit/msp/index.html"
+      },
+      {
+        "name": "Predictive maintenance function",
+        "path": "/fa/products/rbt/robot/pmerit/msp/prediction.html"
+      },
+      {
+        "name": "Preventive maintenance function",
+        "path": "/fa/products/rbt/robot/pmerit/msp/prevention.html"
+      },
+      {
+        "name": "Force sense control enhancement function",
+        "path": "/fa/products/rbt/robot/pmerit/msp/forcesensor.html"
+      },
+      {
+        "name": "MELFA-3D Vision enhancement function",
+        "path": "/fa/products/rbt/robot/pmerit/msp/vision3d.html"
+      },
+      {
+        "name": "2D vision sensor enhancement function",
+        "path": "/fa/products/rbt/robot/pmerit/msp/vision2d.html"
+      },
+      {
+        "name": "Calibration assistance function",
+        "path": "/fa/products/rbt/robot/pmerit/msp/calibration.html"
+      },
+      {
+        "name": "Coordinated control of additional axis",
+        "path": "/fa/products/rbt/robot/pmerit/msp/addaxis.html"
+      },
+       {
+        "name": "Robot mechanism thermal compensation function",
+        "path": "/fa/products/rbt/robot/pmerit/msp/thermal.html"
+      },
+      {
+        "name": "Related Catalog",
+        "path": "/fa/products/rbt/robot/pmerit/msp/dl.html"
+      }
+      ]
+  }
+}

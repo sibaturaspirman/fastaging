@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* PC・スマホ表示 */
+@media (min-width:768px) {
+  .pc_only {
+      display: block !important;
+  }
+  .sp_only {
+      display:none !important;
+  }
+}
+@media only screen and (max-width:767px) {
+  .pc_only {
+      display:none !important;
+  }
+  .sp_only {
+      display: block !important;
+  }
+}
+
+/* 共通項目 */
+.mrgn_top10 {
+	margin-top: 10px!important;
+}
+.mrgn_top15{
+	margin-top: 15px!important;
+}
+.mrgn_top20 {
+	margin-top: 20px!important;
+}
+.mrgn_top30 {
+	margin-top: 30px!important;
+}
+.mrgn_top40 {
+	margin-top: 40px!important;
+}
+.mrgn_btm20 {
+	margin-bottom: 20px!important;
+}
+.tx_md2 {
+	text-align: center;
+}
+.tx_md2 p {
+	display: inline-block;
+	text-align: left;
+}
+.c-table--center td, .c-table--center th {
+	vertical-align: middle;
+}
+.tx_pa_1 {
+	padding: 0 20px;	
+}
+@media screen and (max-width:767px) {
+.tx_pa_1 {
+	padding: 0;	
+}
+}
+
+
+/* メインビジュアル */
+.main_bg {
+	background: url("../img/main_bg_img.jpg") no-repeat center / 100% 100%;
+}
+.main_bgwrap {
+	overflow: hidden;
+}
+.pattern01 img{
+    opacity: 0;
+    transform: translateX(40px);
+    transition: .9s;
+}
+.pattern01.show img{
+    opacity: 1;
+    transform: translateX(0);
+}
+@media (max-width: 1400px) {
+.main_bg {
+	background: url("../img/main_bg_img.jpg") no-repeat center / auto 100%;
+}
+}
+
+/* 背景色付きH3 */
+.h3_cert {
+    padding: 0.5em 0;
+    background: #FFF;
+    border: solid 2px #00a0c8;
+	color: #00a0c8;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* シリーズ・タイル設定 */
+.tile_series {
+	color: #735AA3;
+	border: solid 2px #735AA3;
+	border-radius: 13px;
+	line-height: 2.2em;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+/* 特長H3 */
+.h3_feature {
+	margin-top: 15px;
+	color: #729330;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	height: 32px;
+	padding: 0 20px;
+}
+@media screen and (max-width:767px) {
+.h3_feature {
+	height: auto;
+	padding: 0;
+}
+}
+
+
+/* 吹き出しH3 */
+.box01 h3 {
+	color: #dc6f06;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 3px;
+	background-color: #FFF;
+}
+.box01 {
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #dc6f06;
+    color: #dc6f06;
+	margin: 50px 15%;
+	background-color: #FFF;
+}
+.box01:before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) skew(-25deg);
+    height: 20px;
+    width: 10px;
+    border-right: 3px solid #dc6f06;
+    background-color: #FFF;
+    content: "";
+}
+@media screen and (max-width:768px) {
+.box01 {
+	margin: 50px 18%;
+}
+}
+
+/* pタグ左寄せ*/
+.p_left_01 {
+	text-align: left;
+	display: inline-block;
+}
+
+/* 機種名太字 */
+.lineup_model {
+	font-weight: 700;
+	font-size: 15px;
+}

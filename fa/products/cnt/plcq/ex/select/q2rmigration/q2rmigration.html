@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html xml:lang="en" lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=960;">
+
+<title>Migration tool from the MELSEC-Q Series to the MELSEC iQ-R Series</title>
+
+<link rel="stylesheet" type="text/css" media="screen,print" href="/fa/ssl/css/w_header_footer/import_w850.css" />
+<link rel="stylesheet" type="text/css" href="/fa/ssl/shared/css/import.css" media="all" />
+<!-- CSS Area START -->
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="./css/print.css" />
+<!-- CSS Area END -->
+
+<script type="text/javascript" src="/fa/ssl/shared/js/base.js"></script>
+<script type="text/javascript" src="/fa/ssl/shared/lib/jquery.js"></script>
+<script type="text/javascript" src="/fa/ssl/shared/js/jqueryAutoHeight.js"></script>
+<script type="text/javascript" src="/fa/ssl/shared/js/melCommons.js"></script>
+<script type="text/javascript" src="/fa/ssl/shared/js/social.js"></script>
+<script type="text/javascript" src="/fa/ssl/shared/js/openWindow.js"></script>
+<script type="text/javascript" src="https://www.mitsubishielectric.com/common/js/head_include.js"></script>
+
+<!-- JS Area START -->
+<!--<script type="text/JavaScript" src="/fa/cmn11/js/linkinfo.js" charset="Shift_JIS"></script>-->
+<script type="text/javascript" src="./js/q2rmigration.js"></script>
+<!-- JS Area END -->
+
+</head>
+
+<body bgcolor="#FFFFFF" class="melfa_popup" id="melfa_no_module_titleArea">
+<div id="container">
+	<!-- header begin -->
+	<div id="header-wrap" class="header_new" style="min-width:0;">
+		<div id="header" class="clearfix">
+			<!--logo&siteid-->
+			<img src="/fa/ssl/images/w_header_footer/logo.gif" alt="MITSUBISHI ELECTRIC Changes for the Better" width="111" height="45" id="logo" /><img src="/fa/ssl/shared/img/header/txt_global_gl01.gif" alt="Global - Factory Automation" width="291" height="36" id="siteid" />
+			<p id="melfa_bt_popup_close"><a href="#" onclick="window.close();"><img src="/fa/ssl/shared/img/module/bt_close.gif" alt="Close" width="72" height="24" /></a></p>
+		</div>
+	</div>
+	<!--/ header begin -->
+
+
+	<!-- content -->
+	<div id="melfa_contents_1col" style="padding:0;">
+	
+		<!-- ** Product Select Contents ** -->
+		<div id="melfa_main_area">
+			<div id="wrap">
+				<div id="message"></div>
+				<div id="Q2R-Migration">
+					<h1 id="mainTitle">Migration tool from the MELSEC-Q Series to the MELSEC iQ-R Series</h1>
+					<p id="mainSummary">Select MELSEC-Q Series model.<br>Recommended equivalent MELSEC iQ-R Series model can be checked.</p>
+					<div class="item">
+						<section>
+							<table id="sub">
+								<thead>
+									<tr>
+										<th colspan="4"><h2><span id="subtitle1">MELSEC-Q Series model</span></h2></th>
+										<th class="empty" rowspan="2">&nbsp;</th>
+										<th colspan="4"><h2><span id="subtitle2">MELSEC iQ-R Series model</span></h2></th>
+									</tr>
+									<tr>
+										<th class="sub no">No.</th>
+										<th class="sub unit1">Module/unit</th>
+										<th class="sub type_name">Model</th>
+										<th class="sub quantity">Quantity</th>
+										<th class="sub unit2">Module/unit</th>
+										<th class="sub type_name2">Model</th>
+										<th class="sub quantity2">Quantity</th>
+										<th class="sub more_detail">Additional<br>information</th>
+									</tr>
+								</thead>
+								<tbody id="input">
+								</tbody>
+							</table>
+							
+							<!-- ドキュメントリンク -->
+							<div id="Relation-document">
+								<!--<div class="document">Related document: <script language="javascript">toCatalogInfo('L08489','plcq','3','1');</script>(<script language="javascript">toCatalogInfo('L08489','plcq','0','0');</script>)</div>-->
+							</div>
+							
+							<div id="clear">
+								<input id="clearBtn" type="button" value="Clear input content">
+							</div>
+							
+							<div id="list">
+								<input id="candidatBtn" type="button" value="Display configuration list" onClick="openConfigListWindow();">
+							</div>
+						</section>
+					</div>
+					
+					<div id="modalWindow"></div>
+					
+					<div id="popup">
+						<section>
+							<h2><span id="candidateTitle">Proposed MELSEC iQ-R Series model</span></h2>
+							<table>
+								<thead>
+									<tr>
+										<th class="sub candidate">Proposed model</th>
+										<th class="sub choice">Select</th>
+										<th class="sub more_detail">Additional<br>information</th>
+									</tr>
+								</thead>
+								<tbody id="candidate">
+								</tbody>
+							</table>
+						</section>
+					</div>
+					
+					<div id="comment">
+						<section>
+							<h2><span id="commentTitle">Precautions for migration</span></h2>
+							<div id="commentText"></div>
+							<div id="closeCommentBtn" onclick="closeComment();">Close</div>
+						</section>
+					</div>
+					
+					<div id="datatable">
+						<section>
+							<h2><span id="configListTitle">Configuration list</span></h2>
+							<p id="configListSummary">Recommended equivalent MELSEC iQ-R Series models are shown below:</p>
+							<div class="flexbox">
+								<div class="print">
+									<a href="javascript:void(0)" onclick="listPrinting();return false;"><img src="./images/print.png" alt="Print" /></a>
+									<div class="PrintText"><a class="printText" href="javascript:void(0)" onclick="listPrinting();return false;">Print</a></div>
+								</div>
+								<div class="clips">
+									<a href="javascript:void(0)" onclick="transportCSV();return false;"><img src="./images/clips.png" alt="Copy to clipboard" /></a>
+									<div class="ClipText"><a class="clipText" href="javascript:void(0)" onclick="transportCSV();return false;">Copy to clipboard</a></div>
+								</div>
+							</div>
+							<table width="100%" id="ConfigList" cellspacing="0">
+								<thead id="ConfigListHead">
+								</thead>
+								<tbody id="ConfigListBody">
+								</tbody>
+							</table>
+							<div id="closeDatatableBtn" onclick="closeDatatable();">Close</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--/melfa_contents_1col--></div>
+	<!-- /content -->
+	
+	<!-- 印刷領域 -->
+	<div id="PrintArea"></div>
+	
+	<!-- 印刷用ドキュメントリンク -->
+	<div id="PrintDocLinkArea">
+		<!--Related document: <script language="javascript">toCatalogInfo('L08489','plcq','3','0');</script>(<script language="javascript">toCatalogInfo('L08489','plcq','0','0');</script>)-->
+	</div>
+	
+	<!-- 一時描画領域 -->
+	<div id="ImageArea"></div>
+
+	<!-- footer begin -->
+	<p class="footer_new"><img src="https://www.mitsubishielectric.com/images/w_header_footer/copyright.gif" alt="Copyright Mitsubishi Electric Corporation. All Rights Reserved." id="footer-copyright" /></p>
+	<!-- footer end -->
+</div>
+</body>
+</html>

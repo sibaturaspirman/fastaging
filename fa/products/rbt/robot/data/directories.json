@@ -1,0 +1,160 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Industrial Robot MELFA",
+            "path": "/fa/products/rbt/robot/index.html",
+            "child": [
+              {
+                "name": "Vertical articulated robot",
+                "path": "/fa/products/rbt/robot/items/vertical/index.html"
+              },
+              {
+                "name": "Horizontal articulated robot",
+                "path": "/fa/products/rbt/robot/items/horizontal/index.html"
+              },
+              {
+                "name": "MELFA FR PLUS",
+                "path": "/fa/products/rbt/robot/items/frplus/index.html"
+              },
+             {
+                "name": "MELFA Smart Plus",
+                "path": "/fa/products/rbt/robot/items/msp/index.html"
+              },
+              {
+                "name": "Intelligent Options",
+                "path": "/fa/products/rbt/robot/items/option/index.html"
+              }
+            ]
+          },
+          {
+            "name": "Discontinued Products",
+            "path": "/fa/products/rbt/robot/items/discon/index.html",
+            "child": [
+              {
+                "name": "General Template 1",
+                "path": "/fa/products/rbt/robot/general/index.html"
+              },
+              {
+                "name": "General Template 2",
+                "path": "/fa/products/rbt/robot/general/index2.html"
+              },
+              {
+                "name": "General Template 3",
+                "path": "/fa/products/rbt/robot/general/index3.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "switchNav": {
+    "name": "Industrial Robot MELFA",
+    "path": "/fa/products/rbt/robot/index.html",
+    "child": [
+      {
+        "group": "Industrial Robot MELFA",
+        "name": "Vertical articulated robot",
+        "feature": "/fa/products/rbt/robot/pmerit/vertical/frseries/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/robot&radio=Robot&search=B&word=Robot",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/robot",
+        "discon": "",
+        	"return": {
+         	"name": "Vertical articulated robot",
+         	"path": "/fa/products/rbt/robot/items/vertical/index.html"
+        	}
+      },
+      {
+        "group": "Industrial Robot MELFA",
+        "name": "Horizontal articulated robot",
+        "feature": "/fa/products/rbt/robot/pmerit/horizontal/frseries/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/robot&radio=Robot&search=B&word=Robot",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/robot",
+        "discon": "",
+        	"return": {
+         	"name": "Horizontal articulated robot",
+         	"path": "/fa/products/rbt/robot/items/horizontal/index.html"
+        	}
+      },
+      {
+        "group": "Industrial Robot MELFA",
+        "name": "MELFA FR PLUS",
+        "feature": "/fa/products/rbt/robot/pmerit/frplus/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/robot&radio=Robot&search=B&word=Robot",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/robot",
+        "discon": "",
+        	"return": {
+         	"name": "MELFA FR PLUS",
+         	"path": "/fa/products/rbt/robot/items/frplus/index.html"
+        	}
+      },
+       {
+        "group": "Industrial Robot MELFA",
+        "name": "MELFA Smart Plus",
+        "feature": "/fa/products/rbt/robot/pmerit/msp/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/robot&radio=Robot&search=B&word=Robot",
+        "standard": "",
+        "discon": "",
+        	"return": {
+         	"name": "MELFA Smart Plus",
+         	"path": "/fa/products/rbt/robot/items/msp/index.html"
+        	}
+      },
+      {
+        "group": "Industrial Robot MELFA",
+        "name": "Intelligent Options",
+        "feature": "/fa/products/rbt/robot/pmerit/option/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/robot&radio=Robot&search=B&word=Robot",
+        "standard": "",
+        "discon": "",
+        	"return": {
+         	"name": "Intelligent Options",
+         	"path": "/fa/products/rbt/robot/items/option/index.html"
+        	}
+      },
+        {
+        "group": "Robot Engeneering software (MELFA)",
+        "name": "Industrial robot MELFA Engeneering Software",
+        "feature": "/fa/products/rbt/robot/smerit/rt3/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        	"return": {
+         	"name": "Robot Engeneering software (MELFA)",
+         	"path": "/fa/products/software/robot/index.html"
+        	}
+      },
+       {               
+        "group": "Discontinued Products",
+        "name": "Discontinued Products features",
+        "feature": "/fa/products/rbt/robot/pmerit/discon/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        	"return": {
+         	"name": "Discontinued Products features",
+         	"path": "/fa/products/rbt/robot/items/discon/index.html"
+        	}
+      },
+        {
+        "group": "FA Application Package",
+        "name": "FA Application Package",
+        "feature": "/fa/products/rbt/robot/pmerit/apppack/kikai/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        	"return": {
+         	"name": "Industrial Robot MELFA",
+         	"path": "/fa/products/rbt/robot/index.html"
+        	}
+      }
+    ]
+  }
+}

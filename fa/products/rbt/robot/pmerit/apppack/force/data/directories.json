@@ -1,0 +1,24 @@
+{
+  "layerNav": {
+    "name": "FA Application Package",
+    "path": "/fa/products/software/fa-application-packages/index.html",
+    "firstLayer": [
+      {
+        "name": "Processing Machine Loading Application",
+        "path": "/fa/products/rbt/robot/pmerit/apppack/kikai/index.html"
+      },
+      {
+        "name": "Force sense Application",
+        "path": "/fa/products/rbt/robot/pmerit/apppack/force/index.html"
+      },
+      {
+        "name": "Duburring / Polishing Application",
+        "path": "/fa/products/rbt/robot/pmerit/apppack/polish/index.html"
+      },
+      {
+        "name": "Conveyor Tracking Application",
+        "path": "/fa/products/rbt/robot/pmerit/apppack/tracking/index.html"
+      }
+      ]
+  }
+}

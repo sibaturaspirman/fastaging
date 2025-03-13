@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* PC・スマホ表示 */
+@media (min-width:768px) {
+  .pc_only {
+      display: block !important;
+  }
+  .sp_only {
+      display:none !important;
+  }
+}
+@media only screen and (max-width:767px) {
+  .pc_only {
+      display:none !important;
+  }
+  .sp_only {
+      display: block !important;
+  }
+}
+
+/* 共通項目 */
+.mrgn_top10 {
+	margin-top: 10px!important;
+}
+.mrgn_top15{
+	margin-top: 15px!important;
+}
+.mrgn_top20 {
+	margin-top: 20px!important;
+}
+.mrgn_top30 {
+	margin-top: 30px!important;
+}
+.mrgn_top40 {
+	margin-top: 40px!important;
+}
+.mrgn_btm20 {
+	margin-bottom: 20px!important;
+}
+.c-table--center td, .c-table--center th {
+	vertical-align: middle;
+}
+.inner_ma {
+    padding-right: 90px;
+    padding-left: 90px;	
+}
+@media screen and (max-width:600px) {
+.inner_ma {
+    padding-left: 0;
+    padding-right: 0;
+}
+}
+
+/* 幅全体グレー背景 */
+.wid100_bg {
+	margin-left: calc(((100vw - 100%) / 2) * -1);
+	margin-right: calc(((100vw - 100%) / 2) * -1);
+}
+.sec_gray {
+	background-color: #F2F2F2;
+	padding: 40px 0 50px 0;
+}
+
+/* リード文 */
+.lead_01 {
+	color: #444444;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.6em;
+}
+@media only screen and (max-width:767px) {
+.lead_01 {
+	font-size: 16px;
+	}
+}
+
+/* ラインアップ表 */
+.dsn_style {
+	font-size: smaller;
+	vertical-align: text-top;
+}
+.table_wrap {
+	overflow-x: scroll;
+}
+.dsn_table {
+	width: 100%!important;
+	min-width: 1200px!important;
+}
+

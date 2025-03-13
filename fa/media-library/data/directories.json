@@ -1,0 +1,12 @@
+{
+  "directories": {
+    "name": "FAトップ",
+    "path": "/fa/",
+    "child": [
+      {
+        "name": "Media Library",
+        "path": "/fa/media-library/"
+      }
+    ]
+  }
+}

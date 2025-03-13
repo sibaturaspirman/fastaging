@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+#melfa_main_area .triangle_list li {
+    position: relative;
+    padding-left: 1em;
+    margin-left: 0em;
+    list-style-type: none;
+    color: #C00;
+    font-size: 105%;
+}
+
+#melfa_main_area .triangle_list li:before {
+    content: "";
+    position: absolute;
+    top:0.3em;
+    left:0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 9px;
+    border-color: transparent transparent transparent #C00;
+}
+@media screen and (min-width: 767px) {
+#melfa_main_area .triangle_list span {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-top:0.25em;
+    padding-bottom: 0.25em;
+    }
+}
+
+#melfa_main_area .waku {
+    border: 1px solid #999;
+    padding: 0.5em;
+}
+
+#melfa_main_area .cellbg_gray {
+    background-color: #e6e6e6 !important;
+}
+
+#melfa_main_area .fa-movie_block {
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2em;
+}
+/*--ページ内にYouTubeリンクの動画を表示--------------------*/
+#melfa_main_area .youtube_link {
+  position: relative;
+  width: 80%;
+  margin: 2em auto;
+  padding-top: 45%; /*16:9の9x80%=7.2、7.2/16=0.45 */
+}
+@media screen and (max-width: 600px) {
+    #melfa_main_area .youtube_link {
+  width: 90%;
+  padding-top: 50.66%; /*16:9の9x90%=8.1、8.1/16=0.5066 */
+  }
+}
+#melfa_main_area .youtube_link iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*注釈テキスト -----------------------------------------------------*/
+#melfa_main_area .footnote {
+	margin-top: 0.5em;
+    margin-left: 1em;
+    margin-bottom: 2em !important;
+}
+#melfa_main_area .footnote p,
+#melfa_main_area .footnote sup {
+	line-height: 1.5em;
+}
+#melfa_main_area .footnote  p+p {margin-top:0.25em !important}
+#melfa_main_area .footnote sup {
+	font-size: 62.5%;
+}
+#melfa_main_area .footnote .num_note {
+	display: flex;
+	margin-bottom: 0;
+}
+#melfa_main_area .footnote .num_note .num {
+	flex-grow: 0;
+	flex-shrink: 0;
+	padding-right: 0.5em;
+}
+#melfa_main_area .footnote .num_note .note {
+	flex-grow: 1;
+}
+@media (min-width: 769px) {						/* PC用 */
+    #melfa_main_area .footnote p {
+		font-size: 90%;
+	}
+}
+@media (max-width: 768px) {                   /* モバイル用 */
+    #melfa_main_area .footnote p {
+		font-size: 75%;
+	}
+#melfa_main_area .footnote span {
+    margin-bottom: 0.5em;
+    line-height: 1.75em;
+    }
+}

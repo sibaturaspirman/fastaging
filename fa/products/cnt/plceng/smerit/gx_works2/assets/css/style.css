@@ -1,0 +1,342 @@
+@charset "UTF-8";
+/* [Common] */
+.c-featureArea__box .head_img {
+	border: 1px solid #d6d6d6;
+	border-radius: 5px;
+}
+sup {
+	font-size: 75%;
+	vertical-align: baseline;
+	margin-right: 0.25em;
+}
+.ff-nsj {
+	font-family: "Noto Sans JP";
+}
+.c-heading_squarebullet {
+	padding-left: 1.2em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px dotted #666;
+	position: relative;
+}
+.c-heading_squarebullet::before {
+	display:inline-block;
+	content: "";
+	width: 0.7em;
+	height: 0.7em;
+	background-color: #333;
+	position: absolute;
+	top: 0.35em;
+	left: 0.15em;
+}
+.c-heading_squarebullet.noborder {
+	border-bottom: none;
+}
+.c-titleText.uline {
+	font-size: 20px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #666;
+}
+.u-box.u-box_thin {
+	padding: 15px 25px;
+}
+.c-list_squarebullet > .c-list__item {
+	padding-left: 1.1em;
+	margin-left: 0.3em;
+	position: relative;
+}
+.c-list_squarebullet > .c-list__item::before {
+	display:inline-block;
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	background-color: #333;
+	position: absolute;
+	top: 0.65em;
+	left: 0em;
+}
+.c-list_hyphenbullet > li {
+	padding-left: 0.7em;
+	position: relative;
+}
+.c-list_hyphenbullet > li::before {
+	display:inline-block;
+	content: "-";
+	position: absolute;
+	top: -0.1em;
+	left: 0em;
+}
+.c-list_circlebullet > .c-list__item {
+	padding-left: 0.75em;
+	position: relative;
+}
+.c-list_circlebullet > .c-list__item::before {
+	display:inline-block;
+	content: "";
+	width: 0.25em;
+	height: 0.25em;
+	background-color: #333;
+	border-radius: 0.35em;
+	position: absolute;
+	top: 0.95em;
+	left: 0.15em;
+}
+.c-note--mark.asterisk {
+	padding-left: 0.6em;
+	text-indent: -0.6em;
+	margin-left: 0.4em;
+}
+.c-note--mark.asterisk::before {
+	content: "*";
+	width: 0.6em;
+}
+
+/* [Common / heading] */
+.num-heading {
+	display: flex;
+	align-items: stretch;
+	margin-top: 40px;
+	margin-bottom: 1em;
+}
+.num-heading .num {
+	display: flex;
+	width: 36px;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	background-color: #666;
+	flex-grow: 0;
+	flex-shrink: 0;
+	margin-right: 6px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.num-heading .txt {
+	display: block;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.25;
+	padding: 8px 6px;
+	border-top: 1px solid #666;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+}
+.num-heading .txt.with_icon {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.num-heading .txt.with_icon .icon {
+	margin-left: 30px;
+	padding-right: 5px;
+}
+.num-heading .txt.with_icon .icon .logo_iQSS {
+	height: 30px;
+	width: auto;
+	position: relative;
+	top: 3px;
+}
+.num-heading .txt.with_icon .icon .logo_melsoftlib {
+	height: 50px;
+	width: auto;
+	position: relative;
+	top: 4px;
+}
+.point-note {
+	display: flex;
+	border: 1px solid #666;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+.point-note .point-lamp {
+	background-color: #666;
+	flex-shrink: 0;
+	flex-grow: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.point-note .point-lamp p {
+	width: 0;
+	height: 0;
+	position: relative;
+	overflow: visible;
+}
+.point-note .point-lamp p img {
+	position: absolute;
+}
+.point-note .point-text {
+	background-color: #fffbc6;
+	flex-shrink: 1;
+	flex-grow: 1;
+	padding: 5px;
+}
+.point-note .point-text p {
+	text-align: center;
+	font-weight: bold;
+}
+.merit_ttl {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1;
+}
+.merit_ttl .wrap {
+	background-color: #CCC;
+	padding: 0.25em 4em 0.25em 0.5em;
+}
+.merit_ttl .wrap .num {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 1.3em;
+	height: 1.3em;
+	background-color: #FFF;
+	margin-left: 5px;
+}
+
+/* Improving design and debug efficiency */
+.l-section-debug .num-heading .num,
+.l-section-debug .point-note .point-lamp {
+	background-color: #4e6793;
+}
+.l-section-debug .num-heading .txt,
+.l-section-debug .point-note {
+	border-color: #4e6793;
+}
+.l-section-debug .point-note .point-text p {
+	color: #4e6793;
+}
+
+/* Providing maintenance that meet your needs */
+.l-section-maintenance .num-heading .num,
+.l-section-maintenance .point-note .point-lamp {
+	background-color: #4991b8;
+}
+.l-section-maintenance .num-heading .txt,
+.l-section-maintenance .point-note {
+	border-color: #4991b8;
+}
+.l-section-maintenance .point-note .point-text p,
+.l-section-maintenance .mnt-color {
+	color: #4991b8;
+}
+
+/* Facilitating project management */
+.l-section-project .num-heading .num,
+.l-section-project .point-note .point-lamp {
+	background-color: #93a344;
+}
+.l-section-project .num-heading .txt,
+.l-section-project .point-note {
+	border-color: #93a344;
+}
+.l-section-project .point-note .point-text p {
+	color: #93a344;
+}
+
+/* Promoting program standardization */
+.l-section-program .num-heading .num,
+.l-section-program .point-note .point-lamp,
+.l-section-program .c-heading_squarebullet::before {
+	background-color: #d69e34;
+}
+.l-section-program .num-heading .txt,
+.l-section-program .point-note {
+	border-color: #d69e34;
+}
+.l-section-program .point-note .point-text p,
+.l-section-program .c-heading_squarebullet,
+.l-section-program .prg-color {
+	color: #d69e34;
+}
+.l-section-program .merit_ttl .wrap {
+	background-color: #ebce99;
+}
+.l-section-program .merit_ttl .wrap .num {
+	color: #d69e34;
+}
+
+/* Enhanced coordination with factory automation devices */
+.l-section-support .num-heading .num,
+.l-section-support .c-heading_squarebullet::before {
+	background-color: #cb5360;
+}
+.l-section-support .num-heading .txt {
+	border-color: #cb5360;
+}
+.l-section-support .spt-color {
+	color: #cb5360;
+}
+.l-section-support .c-headingLv4 .h4_logo_iQSS {
+	margin-left: 20px;
+	position: relative;
+}
+.l-section-support .c-headingLv4 .h4_logo_iQSS img {
+	height: 24px;
+	width: auto;
+	position: absolute;
+	top: 2px;
+}
+
+@media only screen and (min-width:1101px){
+/*! over Large */
+}
+@media only screen and (max-width:1100px){
+/*! Large, Medium and Small */
+}
+@media only screen and (min-width:981px) and (max-width:1100px){
+/*! Large only */
+}
+@media only screen and (min-width:768px) and (max-width:1100px){
+/*! Large and Medium */
+}
+@media only screen and (min-width:981px){
+/*! over Medium */
+}
+@media only screen and (max-width:980px){
+/*! Medium and Small */
+}
+@media only screen and (min-width:768px) and (max-width:980px){
+/*! Medium only */
+}
+@media only screen and (min-width:768px){
+/*! over Small */
+	/* Common */
+	.point-note {
+		width: 80%;
+	}
+	.point-note .point-lamp {
+		width: 100px;
+	}
+	.point-note .point-lamp p img {
+		width: 56px;
+		height: 70px;
+		top: -38px;
+		left: -28px;
+	}
+}
+@media only screen and (max-width:767px){
+/*! Small only */
+	/* Common */
+	.point-note {
+		width: 90%;
+	}
+	.point-note .point-lamp {
+		width: 50px;
+	}
+	.point-note .point-lamp p img {
+		width: 40px;
+		height: 50px;
+		top: -26px;
+		left: -20px;
+	}
+
+	/* Providing maintenance that meet your needs */
+	.l-section-maintenance .bg-gray {
+		padding: 1em 1em 2em;
+		background-color: #e5e5e5;
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"layerNav": {
+		"name": "Motion, Positioning",
+		"path": "/fa/products/cnt/plcr/pmerit/motion/index.html",
+		"firstLayer": [
+			{
+				"name": "Lineup",
+				"path": "/fa/products/cnt/plcr/pmerit/motion/index.html"
+			},
+			{
+				"name": "Features",
+				"path": "/fa/products/cnt/plcr/pmerit/motion/merit.html"
+			},
+			{
+				"name": "Specifications",
+				"path": "/fa/products/cnt/plcr/pmerit/motion/spec.html"
+			}
+		]
+	}
+}

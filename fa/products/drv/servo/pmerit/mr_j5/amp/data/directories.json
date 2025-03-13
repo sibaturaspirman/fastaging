@@ -1,0 +1,33 @@
+{
+  "layerNav": {
+    "name": "Servo Amplifier",
+    "path": "/fa/products/drv/servo/pmerit/mr_j5/amp/feature.html",
+    "firstLayer": [
+      {
+        "name": "Product Lines",
+        "path": "/fa/products/drv/servo/pmerit/mr_j5/amp/feature.html"
+      },
+      {
+        "name": "Progressiveness/Usablity",
+        "path": "/fa/products/drv/servo/pmerit/mr_j5/amp/f_advanc.html"
+      },
+      {
+        "name": "Connectivity",
+        "path": "/fa/products/drv/servo/pmerit/mr_j5/amp/f_connectivity.html"
+      },
+      {
+        "name": "Maintainability",
+        "path": "/fa/products/drv/servo/pmerit/mr_j5/amp/f_maintainability.html"
+      },
+      {
+        "name": "Heritage",
+        "path": "/fa/products/drv/servo/pmerit/mr_j5/amp/progressiveness.html"
+      },
+      {
+        "name": "Model Designation",
+        "path": "/fa/products/drv/servo/pmerit/mr_j5/amp/ampmodel.html"
+      }
+
+    ]
+  }
+}

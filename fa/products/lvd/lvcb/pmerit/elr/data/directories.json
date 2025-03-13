@@ -1,0 +1,61 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html",
+            "child": [
+				{
+					"name": "Earth Leakage Relays",
+					"path": "/fa/products/lvd/lvcb/pmerit/elr/index.html"
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "Earth Leakage Relays",
+    "path": "/fa/products/lvd/lvcb/pmerit/elr/index.html",
+    "firstLayer": [
+      {
+        "name": "Features",
+        "path": "/fa/products/lvd/lvcb/pmerit/elr/index.html"
+      },
+      {
+        "name": "Product Lineup",
+        "path": "/fa/products/lvd/lvcb/pmerit/elr/index_2.html"
+      },
+      {
+        "name": "Examples of Use",
+        "path": "/fa/products/lvd/lvcb/pmerit/elr/index_3.html"
+      }
+    ]
+  },
+"switchNav": {
+	"name": "Earth Leakage Relays",
+	"path": "/fa/products/lvd/lvcb/items/elr/index.html",
+	"child": [
+		{
+			"group": "Earth Leakage Relays",
+			"name": "Earth Leakage Relays",
+			"feature": "/fa/products/lvd/lvcb/pmerit/elr/index.html",
+			"spec": "/fa/products/faspec/search.page?kisyu=/lvcb&current=ELR",
+			"standard": "/fa/products/standard/SearchServlet.page?kisyu=/lvcb&current=ELR",
+			"discon": "",
+            "return": {
+                "name": "Earth Leakage Relays",
+                "path": "/fa/products/lvd/lvcb/items/elr/index.html"
+			}
+		}
+	]
+}
+}
+  

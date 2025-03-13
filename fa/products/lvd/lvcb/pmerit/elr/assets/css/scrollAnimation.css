@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+.fade {
+    transition: all 800ms;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0px, 50px);
+}
+.fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0px);
+}
+
+/* アンダーライン */
+.underline-Area {
+    height: auto;
+    margin: 0;
+	text-align: center;
+}
+
+.underline-Area p,.underline-Area h3 {
+	font-size: 27px;
+	font-weight: 700;
+    margin: 60px auto;
+	color: #00a0c8;
+}
+
+.underline-before {
+
+	background: linear-gradient(#deeff5, #b3dcea) 0 100%/0 15px no-repeat;
+	/*左から、カラー（始点と終点それぞれ同じものを指定）、position / サイズ横縦 繰り返しの有無 */
+
+	transition: background 3s;
+	/*トランジションの設定。下線を引く動きをアニメーションにするのに必要 */
+
+	text-decoration: none;
+	/*テキストの装飾の設定 */
+	padding: 0 10px 5px;
+}
+
+.underline-after {
+	background-size: 100% 15px;
+  /* 変化後のスタイル。横サイズを0から100%に変えることで指定の文字列に下線を引く */
+}
+
+

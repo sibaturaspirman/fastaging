@@ -1,0 +1,150 @@
+{
+	"layerNav": {
+		"name": "CC-Link IE",
+		"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/concept/",
+		"firstLayer": [
+			{
+				"name": "CC-Link IE",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/concept/index.html"
+			},
+			{
+				"name": "CC-Link IE Features",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/index.html",
+				"secondLayer": [
+					{
+						"name": "High-speed communications realizes shorter and more stable operating cycle, enabling higher productivity",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/index.html"
+					},
+					{
+						"name": "Real-time collection of shop floor data",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat02.html"
+					},
+					{
+						"name": "Reduce installation cost with widely-available Ethernet components",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat03.html"
+					},
+					{
+						"name": "Easily modify existing control system configurations",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat04.html"
+					},
+					{
+						"name": "Seamless access to CC-Link IE TSN from CC-Link IE Field Network",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat15.html"
+					},
+					{
+						"name": "Synchronization performance for advanced motion control",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat05.html"
+					},
+					{
+						"name": "Integrating safety communication on one network",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat06.html"
+					},
+					{
+						"name": "Improve reliability with reduced single-point failure",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat13.html"
+					},
+					{
+						"name": "Reduced starting time shortens production cycle",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat14.html"
+					},
+					{
+						"name": "Flexible I/O point extension",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat08.html"
+					},
+					{
+						"name": "Simple network commissioning",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat09.html"
+					},
+					{
+						"name": "Quickly identify wiring and module errors",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat10.html"
+					},
+					{
+						"name": "Avoiding entire network outage",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat12.html"
+					},
+					{
+						"name": "Exceptionally fault-tolerant dual-loop optical cable",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/feature/feat11.html"
+					}
+				]
+			},
+			{
+				"name": "CC-Link IE Applications",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/case/index.html",
+				"secondLayer": [
+					{
+						"name": "Semiconductor production system",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/case/index.html"
+					},
+					{
+						"name": "Automotive paint shop",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/case/case02.html"
+					},
+					{
+						"name": "Flat panel display (FPD) production process",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/case/case03.html"
+					},
+					{
+						"name": "Steel production process",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/case/case04.html"
+					}
+				]
+			},
+			{
+				"name": "CC-Link IE Products",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/lineup/index.html",
+				"secondLayer": [
+					{
+						"name": "Programmable Controllers",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/lineup/index.html"
+					},
+					{
+						"name": "Drive Products",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/lineup/drv.html"
+					},
+					{
+						"name": "Human-Machine Interfaces (HMIs)",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/lineup/hmi.html"
+					},
+					{
+						"name": "Block Type Remote Modules",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/lineup/block_type.html"
+					},
+					{
+						"name": "Waterproof/dustproof Type (IP67) Remote Modules",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/lineup/ip67_io.html"
+					},
+					{
+						"name": "Safety Remote I/O Modules",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/lineup/safety_io.html"
+					},
+					{
+						"name": "Remote IO-Link Modules",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/lineup/io_link.html"
+					},
+					{
+						"name": "Network Interface Boards",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/lineup/board.html"
+					},
+					{
+						"name": "Bridge Modules",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/lineup/adp_bridge.html"
+					}
+				]
+			},
+			{
+				"name": "CC-Link IE Options",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/option/index.html"
+			},
+			{
+				"name": "CC-Link IE Development Tools",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/tool/index.html"
+			},
+			{
+				"name": "CC-Link IE Specifications",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/spec/index.html"
+			}
+		]
+	}
+}

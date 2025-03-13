@@ -1,0 +1,16 @@
+{
+  "layerNav": {
+    "name": "Computerized Numerical Controllers(CNCs)",
+    "path": "/fa/products/cnt/cnc/index.html",
+    "firstLayer": [
+      {
+        "name": "Technical Support",
+        "path": "/fa/products/cnt/cnc/pmerit/support/index.html"
+      },
+      {
+        "name": "Global Network",
+        "path": "/fa/products/cnt/cnc/pmerit/support/gl_network.html"
+      }
+    ]
+  }
+}

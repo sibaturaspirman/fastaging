@@ -1,0 +1,32 @@
+{
+	"layerNav": {
+		"name": "Solution",
+		"path": "/fa/products/cnt/plcr/pmerit/solution/index.html",
+		"firstLayer": [
+			{
+				"name": "Solution TOP",
+				"path": "/fa/products/cnt/plcr/pmerit/solution/index.html"
+			},
+			{
+				"name": "Improve equipment performance and ability",
+				"path": "/fa/products/cnt/plcr/pmerit/solution/machine.html"
+			},
+			{
+				"name": "Reduce engineering time",
+				"path": "/fa/products/cnt/plcr/pmerit/solution/development.html"
+			},
+			{
+				"name": "Smart factory",
+				"path": "/fa/products/cnt/plcr/pmerit/solution/smart.html"
+			},
+			{
+				"name": "Enhance factory safety",
+				"path": "/fa/products/cnt/plcr/pmerit/solution/safety.html"
+			},
+			{
+				"name": "Improve reliability of factories and infrastructure systems",
+				"path": "/fa/products/cnt/plcr/pmerit/solution/reliability.html"
+			}
+		]
+	}
+}

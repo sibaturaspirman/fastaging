@@ -1,0 +1,32 @@
+{
+	"layerNav": {
+		"name": "Analog",
+		"path": "/fa/products/cnt/plcq/pmerit/analog/index.html",
+		"firstLayer": [
+			{
+				"name": "Analog I/O",
+				"path": "/fa/products/cnt/plcq/pmerit/analog/index.html"
+			},
+			{
+				"name": "Temperature I/O",
+				"path": "/fa/products/cnt/plcq/pmerit/analog/ti.html"
+			},
+			{
+				"name": "Temperature control",
+				"path": "/fa/products/cnt/plcq/pmerit/analog/tc.html"
+			},
+			{
+				"name": "Loop control",
+				"path": "/fa/products/cnt/plcq/pmerit/analog/lc.html"
+			},
+			{
+				"name": "Load cell",
+				"path": "/fa/products/cnt/plcq/pmerit/analog/loadcell.html"
+			},
+			{
+				"name": "CT Input",
+				"path": "/fa/products/cnt/plcq/pmerit/analog/ct.html"
+			}
+		]
+	}
+}

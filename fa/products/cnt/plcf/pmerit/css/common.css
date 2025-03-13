@@ -1,0 +1,98 @@
+
+/*********** Common 2021/09/01*　global
+/*********** 注釈*/
+#melfa_main_area .notes{font-size: 90%;}
+#melfa_main_area .notes span{color: #c2007b;font-size: 90%;}
+
+
+/*********** link*/
+#facontens .anchor_hover img{
+	transition: 0.6s ;
+}
+#facontens .anchor_hover img:hover {
+	opacity: 0.6 ;
+}
+
+/*********** img関連*/
+
+#facontens .imgcenter{text-align: center;margin: 0 auto;}
+#facontens .imgcenter img{max-width: 100%;height: auto;}
+#facontens .imgright{float: right;padding: 0px 0 0 10px;}
+#facontens .imgleft{float: left;padding: 0px 10px 0 0px; }
+/* flort clear*/
+.clearfix::after{  content: "";  display: block;  clear: both;}
+
+/*********** 全体共有*/
+#melfa_main_area #facontens {margin-bottom: 25px;}
+
+/*********** 本文中注釈　番号あり*/
+#facontens .textnotes{margin:10px 0; padding: 0 8px;}
+#facontens .textnotes ol{margin: 0;	padding: 0; counter-reset: number 0; }
+#facontens .textnotes li {list-style: none;margin-left: 3em; text-indent: -3em;counter-increment: number 1;font-size: 95%;line-height: 1.5;}
+#facontens .textnotes li:before {display: inline;color: #FF0000;  content: "*"counter(number)" ";}
+
+/*********** 本文中注釈　番号なし*/
+#facontens .textnonotes{margin:10px 0; padding: 0 8px;}
+#facontens .textnonotes ol{margin: 0;	padding: 0;}
+#facontens .textnonotes li {list-style: none;margin-left: 3em; text-indent: -2em;font-size: 95%;line-height: 1.5;}
+#facontens .textnonotes li:before {display: inline;color: #FF0000;  content: "*";}
+
+/*********** h3の装飾*/
+#facontens .contitle{font-weight: bold;background:#f4f4f4;  display: block;padding: 8px;margin-top: 20px;font-size: 90%;}
+
+/*********** コメントの装飾*/
+#facontens .textbox{padding:8px; margin:5px 0 10px }
+
+/*********** テーブルの挙動修正*/
+.plcfbutton table{display:inline-block;vertical-align: bottom;}
+
+/*********** teble注釈*/
+#facontens .tablenotes {margin:0; padding: 0 8px;}
+#facontens .tablenotes ol{margin: 10px 0 20px 0;padding: 0; counter-reset: number 0; }
+#facontens .tablenotes li{list-style: none;margin-left: 3em;text-indent: -3em;counter-increment: number 1;font-size:95%;line-height: 1.5;}
+#facontens .tablenotes li:before {display: inline;	color: #FF0000;  content: "*"counter(number)" ";}
+/*********** teble注釈　番号なし*/
+#facontens .tablenonotes {margin:0; padding: 0 8px;}
+#facontens .tablenonotes ol{margin: 10px 0 20px 0;padding: 0; counter-reset: number 0; }
+#facontens .tablenonotes li{list-style: none;margin-left: 3em;text-indent: -3em;counter-increment: number 1;font-size:95%;line-height: 1.5;}
+#facontens .tablenonotes li:before {display: inline;	color: #FF0000;  content: "*";}
+
+/*********** teble with over対応 _longは縦長用改行なし*/
+.table-over_long{
+	overflow-x: scroll !important;
+	white-space: nowrap; 
+}
+.table-over{
+	overflow-x: scroll !important;
+}
+/*********** Responsive */
+@media screen and (min-width:768px) {
+	#melfa_main_area .sp{display: none;	}
+}
+	
+@media screen and (max-width:768px) {
+#melfa_main_area .pc{display: none;	}
+#melfa_main_area .notes{font-size: 90%;}
+#melfa_main_area .bigimg{text-align: center; margin: 10px auto 15px;}
+	
+#melfa_main_area #plc_concept{margin: 15px 0;border: #DADADA solid 1px;padding: 8px;width:calc(100%-16px);}
+#melfa_main_area #moviearea li {float: left;width: 100%;border: solid 2px #fff;}
+	
+#melfa_main_area #plc_concept #fx5ujlogo{
+padding-top: 10px;
+padding-bottom: 0px;
+}
+	
+#facontens .imgright{float:none;padding:0px;}
+#facontens .imgleft{float: none;padding:0px; }
+
+/*********** 本文 注釈*/
+#facontens .textnotes{margin:10px 0 20px 0; padding: 0px;}
+
+/*********** テーブルの挙動修正*/
+.fa-heading_table_content th{vertical-align: middle;}
+.fa-fa-heading_table_content {vertical-align: middle;}
+.fa-heading_table table td{vertical-align: middle;}
+
+}
+

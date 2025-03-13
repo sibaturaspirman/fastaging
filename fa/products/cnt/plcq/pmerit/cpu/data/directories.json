@@ -1,0 +1,28 @@
+{
+  "layerNav": {
+    "name": "CPU",
+    "path": "/fa/products/cnt/plcq/pmerit/cpu/index.html",
+    "firstLayer": [
+      {
+        "name": "Universal model QCPU",
+        "path": "/fa/products/cnt/plcq/pmerit/cpu/index.html"
+      },
+      {
+        "name": "Productivity",
+        "path": "/fa/products/cnt/plcq/pmerit/cpu/productivity.html"
+      },
+      {
+        "name": "User-friendly",
+        "path": "/fa/products/cnt/plcq/pmerit/cpu/friendly.html"
+      },
+      {
+        "name": "Maintenance cost",
+        "path": "/fa/products/cnt/plcq/pmerit/cpu/maintenance.html"
+      },
+      {
+        "name": "CPU Lineup",
+        "path": "/fa/products/cnt/plcq/pmerit/cpu/cpu.html"
+      }
+    ]
+  }
+}

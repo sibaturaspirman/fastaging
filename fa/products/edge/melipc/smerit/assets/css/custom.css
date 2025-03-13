@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* PC専用表示 */
+@media only screen and (max-width:600px){
+	.for_pc {
+		display: none;
+	}
+}
+
+/* スマートフォン専用表示 */
+@media (min-width: 601px){
+	.for_sp {
+		display: none;
+	}
+}
+
+.mt0 {margin-top: 0 !important}
+.mt05 {margin-top: 0.5em !important}
+.mt1 {margin-top: 1em !important}
+.mt15 {margin-top: 1.5em !important}
+.mt2 {margin-top: 2em !important}
+
+.l-section .c-superscriptText {font-size: 1em !important; vertical-align: baseline !important}
+
+@media only screen and (min-width:1280px) {
+.l-section .size_down img {
+    padding: 1em 14em;
+    }
+.l-section .size_down-2 img {
+    padding: 1em 8em;
+    }
+}
+@media only screen and (max-width:1279px) {
+.l-section .size_down img {
+    padding: 0.5em 4em;
+    }
+.l-section .size_down-2 img {
+    padding: 1em 2em;
+    }
+}
+@media only screen and (max-width:599px) {
+.l-section .size_down img, .l-section .size_down-2 img {
+    padding: 0.25em 0;
+    }
+}
+
+.c-table__contentBody td {text-align: center; vertical-align: middle !important}
+.c-table__head th, .c-table__contentBody th {text-align: center; vertical-align: middle !important}
+
+.l-grid--right {justify-content: flex-end}
+.no_breaks {display: inline-block}
+
+.link_bnr_box {margin-bottom: 1em; border-bottom: 1px solid #CCC}
+.link_bnr_box span {font-size: 120%; padding-top: 1em; padding-bottom: 1em}
+
+/*MIC*/
+.melipc_note {padding-left: 2.5em !important; text-indent: -2.5em !important}
+.melipc_note span {width: 2.6em !important}

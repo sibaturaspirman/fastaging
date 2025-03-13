@@ -1,0 +1,80 @@
+[
+	{
+		"name": "Molded Case Circuit Breakers with MDU",
+		"url": "/fa/products/lvd/lvcb/items/mdu/index.html",
+		"number": "01",
+		"target": "_self"
+	},
+	{
+		"name": "Energy Measuring Unit EcoMonitorLight",
+		"url": "/fa/products/pmng/ems/pmerit/ecomonitor/ecomonitor_Light_2.html",
+		"number": "02",
+		"target": "_self"
+	},
+	{
+		"name": "Energy Measuring Unit EcoMonitorPlus",
+		"url": "/fa/products/pmng/ems/pmerit/ecomonitor/emplus_2.html",
+		"number": "03",
+		"target": "_self"
+	},
+	{
+		"name": "Energy Saving Data Collecting Server EcoWebServerIII",
+		"url": "/fa/products/pmng/ems/items/ecoserver/index.html",
+		"number": "04",
+		"target": "_self"
+	},
+	{
+		"name": "Energy Saving Support Software EcoAdviser",
+		"url": "/fa/products/software/ems/eap/index.html",
+		"number": "05",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series Energy Measuring Module",
+		"url": "/fa/products/cnt/plcr/pmerit/measuring/index.html",
+		"number": "06",
+		"target": "_self"
+	},
+	{
+		"name": "GOT2000 Series",
+		"url": "/fa/products/hmi/got/items/got2000/index.html",
+		"number": "07",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series",
+		"url": "/fa/products/cnt/plcr/items/index.html",
+		"number": "08",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-F Series",
+		"url": "/fa/products/cnt/plcf/items/index.html",
+		"number": "09",
+		"target": "_self"
+	},
+	{
+		"name": "e-F@ctory starter package",
+		"url": "/fa/products/software/visualisation/support-module/index.html",
+		"number": "10",
+		"target": "_self"
+	},
+	{
+		"name": "Industrial Computer MELIPC Series",
+		"url": "/fa/products/edge/melipc/index.html",
+		"number": "11",
+		"target": "_self"
+	},
+	{
+		"name": "Edgecross-supporting Software",
+		"url": "/fa/solutions/efactory/component/edgsw/index.html",
+		"number": "12",
+		"target": "_self"
+	},
+	{
+		"name": "SCADA software-ICONICS Suite&#8482;",
+		"url": "/fa/products/software/visualisation/genesis64/index.html",
+		"number": "13",
+		"target": "_self"
+	}
+]

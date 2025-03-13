@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* c-profile
+***************************** */
+.inside-view .c-profile { padding: 40px; border: 1px solid #bbb; }
+.inside-view .c-profile-title { font-size: 20px; font-weight: bold; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #bbb; }
+.inside-view .c-profile-text { font-size: 16px; line-height: 1.8; }
+.inside-view .c-profile-text.note-list { position: relative;padding-left: 1em;}
+.inside-view .c-profile-text.note-list span { position: absolute;left: 0;}
+
+.l-inner-medium .c-relatedContents__img>img{width:330px;image-rendering: -webkit-optimize-contrast;}
+.l-inner-medium .c-text>a{word-break:break-all;}
+
+.inside-view .c-question { font-size: 16px; font-weight: bold; color: #00487d; line-height:1.8; margin-top:30px; }
+
+.text-underline{text-decoration: underline;}
+
+/* 目次
+***************************** */
+.inside-view .pages{border-bottom:1px dotted #bdbdbd;line-height: 1.8;}
+.inside-view .pages-item{border-top:1px dotted #bdbdbd;line-height: 1.5;}
+.inside-view .pages-item .u-icons{display:block;padding-top:10px;padding-bottom:10px;padding-left:10px;}
+.inside-view .pages-item .u-icons:hover{text-decoration:none;}
+.inside-view .pages-item span.u-icons:before{display: none;}
+.inside-view .pages-item .u-icons.current{background-color:#f5f5f5;}
+
+@media only screen and (min-width:768px){
+	.inside-view .pages-item a{transition:background-color 0.3s ease, color 0.3s ease;}
+	.inside-view .pages-item a:hover{background-color:#f5f5f5;}
+}
+
+@media only screen and (max-width:767px){
+/*! Small only */
+.inside-view .c-profile { padding: 20px; }
+.l-inner-medium .c-relatedContents__img>img{width:auto;}
+}

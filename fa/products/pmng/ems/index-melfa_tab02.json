@@ -1,0 +1,36 @@
+{
+  "listLinkLabel": "Update information",
+  "listLink": "/fa/products/pmng/ems/update_index.html",
+  "items": [
+    {
+      "pubDate": "Jul 11, 2024",
+      "title": "Energy Saving Supporting Devices：Sales and Service is added.",
+      "category": "Technical bulletin",
+      "description": "<a href=\"/fa/download/techinfo/search.page?mode=sales&kisyu=/ems#YAMA486\">Compliance with EU Battery Regulations for Power Management Meters and Energy Saving Supporting Devices</a>"
+    },
+    {
+      "pubDate": "Jul 5, 2024",
+      "title": "Energy Saving Supporting Devices：Sales and Service is added.",
+      "category": "Technical bulletin",
+      "description": "<a href=\"/fa/download/techinfo/search.page?mode=sales&kisyu=/ems#YAMA484\">Specification change of packaging box for EMU</a>"
+    },
+    {
+      "pubDate": "Jul 1, 2024",
+      "title": "Energy Saving Supporting Devices：Manual is updated.",
+      "category": "Manual",
+      "description": "<a href=\"/dl/fa/document/manual/ems/ib63781e/ib63781j_e.pdf\" target=\"_blank\">Logging Unit for Energy Measuring Unit (EcoMonitorLight, EcoMonitorPlus) User's Manual (Digest) (MODEL:EMU4-LM)</a><br>&nbsp;&nbsp; IB63781E-J (0.59MB)<br><a href=\"/dl/fa/document/manual/ems/ib63780/ib63780h.pdf\" target=\"_blank\">Logging Unit for Energy Measuring Unit (EcoMonitorLight, EcoMonitorPlus) User's Manual (details) (MODEL:EMU4-LM)</a><br>&nbsp;&nbsp; IB63780H (3.02MB)"
+    },
+    {
+      "pubDate": "May 15, 2024",
+      "title": "Energy Saving Supporting Devices：Manual is updated.",
+      "category": "Manual",
+      "description": "<a href=\"/dl/fa/document/manual/ems/ib63e58/ib63e58c.pdf\" target=\"_blank\">Energy Saving Support Software EcoAdviser User's Manual (MODEL:MES3-EAP1-DA/MES3-EAP1-AI)</a><br>&nbsp;&nbsp; IB63E58C (9.67MB)<br><a href=\"/dl/fa/document/manual/ems/ib63e59/ib63e59c.pdf\" target=\"_blank\">Energy Saving Support Software EcoAdviser User's Manual (MODEL:MES3-EAP1-DA/MES3-EAP1-AI)</a><br>&nbsp;&nbsp; IB63E59C (9.06MB)"
+    },
+    {
+      "pubDate": "May 15, 2024",
+      "title": "Energy Saving Supporting Devices：Software is updated.",
+      "category": "Software",
+      "description": "・<a href=\"/fa/download/software/detailsearch.page?mode=software&kisyu=/ems&shiryoid=1000000112\">Data Acquisition Software for EcoMonitorLight/EcoMonitorPlus</a>"
+    }
+  ]
+}

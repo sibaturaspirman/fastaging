@@ -1,0 +1,55 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Image processing software",
+            "path": "/fa/products/software/image-processing/index.html",
+            "child": [
+              {
+                "name": "Visual Inspection Software MELSOFT VIXIO",
+                "path": "/fa/products/software/image-processing/vixio/index.html"
+              },
+              {
+                "name": "What is MELSOFT VIXIO?",
+                "path": "/fa/products/software/image-processing/vixio/about.html"
+              },
+              {
+                "name": "How to use MELSOFT VIXIO",
+                "path": "/fa/products/software/image-processing/vixio/operation.html"
+              },
+              {
+                "name": "MELSOFT VIXIO application examples",
+                "path": "/fa/products/software/image-processing/vixio/example.html"
+              },
+              {
+                "name": "Operating environment",
+                "path": "/fa/products/software/image-processing/vixio/spec.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "switchNav": {
+    "name": "Image processing software",
+    "path": "/fa/products/software/image-processing/index.html",
+    "child": [
+      {
+        "group": "Visual Inspection Software",
+        "name": "MELSOFT VIXIO",
+        "feature": "/fa/products/software/image-processing/vixio/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      }
+    ]
+  }
+}

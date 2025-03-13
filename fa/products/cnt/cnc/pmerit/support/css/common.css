@@ -1,0 +1,567 @@
+@charset "UTF-8";
+
+/* -------------------------------------------------------------------------------
+|  Created:     2024-01-22
+|  Updated:     N/A
+|------------------------------------------------------------------------------- */
+
+
+/*---------------------------------------------------------
+  サポート
+---------------------------------------------------------*/
+
+
+.meswp-support__title {
+  display: flex;
+  overflow: hidden;
+  > * {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px solid var(--grey500);
+    border-color: var(--meswNavyColor);
+  }
+}
+
+.meswp-support__titleQuestion {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--meswNavyColor);
+  color: var(--white);
+  width: 45%;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -29px;
+    transform: translate(0, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5em 0 5em 30px;
+    border-color: transparent transparent transparent var(--meswNavyColor);
+  }
+
+}
+
+.meswp-support__titleAnswer {
+  width: 55%;
+  padding-left: 45px;
+  padding-right: 20px;
+  color: var(--meswNavyColor);
+}
+
+/*! Medium and Small（Medium以下） */
+/* @media only screen and (max-width: 980px) {
+  .meswp-support__title {
+    > * {
+      width: 50%;
+    }
+  }
+} */
+
+/*! Small only (Smallのみ) */
+@media only screen and (max-width: 767px) {
+  .meswp-support__title {
+    flex-direction: column;
+    > * {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .meswp-support__titleQuestion {
+    /* padding-bottom: 5px; */
+    padding-bottom: 0;
+    &::after {
+      top: auto;
+      bottom: -24px;
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, 0);
+      border-width: 25px calc(767px * .75) 0 calc(767px * .75);
+      /* border-width: 20px 200px 0 200px; */
+      border-color: var(--meswNavyColor) transparent transparent transparent;
+    }
+  }
+  
+  .meswp-support__titleAnswer {
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+
+}
+
+.meswp-support__arrow {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(50% + .2em);
+    right: calc(50% - ((20px / 2) + 1px));
+    transform: translate(0, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent var(--meswNavyColor);
+  }
+}
+
+
+/*---------------------------------------------------------
+  海外拠点
+---------------------------------------------------------*/
+
+/* JS用style
+---------------------------------------------------------*/
+
+.meswp-subMenu {
+  display: none;
+}
+
+
+.meswp-subInner {
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}
+
+.meswp-titleButton {
+  > span {
+    display: block;
+    padding-left: 1.2em;
+    background-image: url(/fa/products/cnt/cnc/pmerit/support/img/icon_open.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-image .3s;
+  }
+  &.is-open {
+    > span {
+      background-image: url(/fa/products/cnt/cnc/pmerit/support/img/icon_close.png);
+    }
+  }
+}
+
+/* プルダウン
+---------------------------------------------------------*/
+
+.meswp-glNetwork__pulldown {
+  margin-top: 20px;
+}
+
+.meswp-glNetwork__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.meswp-glNetwork__item {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: calc((100% / 4) - 10px);
+
+  background-color: #ffffff;
+  border: 1px solid var(--grey500);
+}
+
+/*! Large, Medium and Small（Largeまで） */
+@media only screen and (max-width: 1100px) {
+  .meswp-glNetwork__item {
+    width: calc((100% / 3) - 10px);
+  }
+}
+
+/*! Medium and Small（Medium以下） */
+/* @media only screen and (max-width: 980px) {
+  .meswp-glNetwork__item {
+    width: calc((100% / 3) - 10px);
+  }
+} */
+
+/*! Small only (Smallのみ) */
+@media only screen and (max-width: 767px) {
+  .meswp-glNetwork__items {
+    margin-top: 0;
+  }
+  .meswp-glNetwork__item {
+    margin-top: 0;
+    width: 100%;
+    + .meswp-glNetwork__item {
+      border-top: none;
+      border-left: 1px solid var(--grey500);
+      border-right: 1px solid var(--grey500);
+      border-bottom: 1px solid var(--grey500);  
+    }
+  }
+}
+
+.meswp-glNetwork__outer {
+  position: relative;
+}
+
+.meswp-glNetwork__inner {
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  z-index: 99;
+  width: calc(100% + 2px);
+
+  background-color: #fff;
+  border-left: 1px solid var(--grey500);
+  border-right: 1px solid var(--grey500);
+  border-bottom: 1px solid var(--grey500);
+
+  .meswp-glNetwork__link {
+    padding: 5px 0 5px 20px;
+  }
+}
+
+.meswp-glNetwork__link {
+  display: block;
+  margin-top: 0;
+  padding: 10px 15px;
+  &:hover {
+    background-color: rgba(255, 0, 0, .1);
+    /* text-decoration: underline; */
+  }
+  > * {
+    vertical-align: middle;
+    padding-left: 15px;
+    background: url(/fa/products/cnt/cnc/pmerit/support/img/icon_arrow_link.gif) no-repeat 0 0.5em;  
+  }
+  &.meswp-glNetwork__link--none {
+    > * {
+      background: url(/fa/products/cnt/cnc/pmerit/support/img/icon_arrow_link_none.gif) no-repeat 0 0.5em;
+    }
+  }
+}
+
+/*! Small only (Smallのみ) */
+@media only screen and (max-width: 767px) {
+  .meswp-glNetwork__outer {
+    position: static;
+  }
+  
+  .meswp-glNetwork__inner {
+    position: static;
+    top: auto;
+    left: auto;
+    z-index: 1;
+    width: 100%;
+  
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  
+    .meswp-glNetwork__link {
+      padding: 10px 15px 10px 20px;
+      border-top: 1px dotted var(--grey500);
+    }
+  }
+
+  .meswp-glNetwork__link {
+    margin-top: 0;
+    padding: 10px 15px;
+    &:hover {
+      background-color: transparent
+    }
+  }
+}
+
+
+/* タイトルボタン
+---------------------------------------------------------*/
+
+.meswp-glNetwork__listTitle {
+  position: relative;
+  margin-top: 60px;
+}
+
+.meswp-glNetwork__button {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+
+
+/*! Large, Medium and Small（Largeまで） */
+@media only screen and (max-width: 1100px) {
+  .meswp-glNetwork__button {
+    position: static;
+    bottom: auto;
+    right: auto;
+  }
+}
+
+.meswp-glNetwork__positive,
+.meswp-glNetwork__negative {
+  > span {
+    padding-left: 1.5em;
+  }
+}
+
+.meswp-glNetwork__positive {
+  > span {
+    background: url(/fa/products/cnt/cnc/pmerit/support/img/icon_open.png) no-repeat left center;
+  }
+}
+
+.meswp-glNetwork__negative {
+  > span {
+    background: url(/fa/products/cnt/cnc/pmerit/support/img/icon_close.png) no-repeat left center;
+  }
+}
+
+/* サポートリスト
+---------------------------------------------------------*/
+
+/* .meswp-glNetwork__lists {
+  margin-top: -30px;
+} */
+
+.meswp-glNetwork__list {
+  padding-top: 30px;
+  margin-top: 30px;
+  + .meswp-glNetwork__list {
+    border-top: 1px solid var(--grey500);
+  }
+}
+
+
+.meswp-glNetwork__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.meswp-glNetwork__text {
+  width: calc(100% - 180px);
+  padding-right: 30px;
+}
+
+.meswp-glNetwork__image {
+  width: 180px;
+  > * {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+/*! Small only (Smallのみ) */
+@media only screen and (max-width: 767px) {
+  .meswp-glNetwork__text,
+  .meswp-glNetwork__image {
+    width: 100%;
+  }
+
+  .meswp-glNetwork__text {
+    padding-right: 0;
+  }
+  
+  .meswp-glNetwork__image {
+    margin-top: 20px;
+  }
+}
+
+/* .meswp-glNetwork__main {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--grey500);
+} */
+
+.meswp-glNetwork__sub {
+  & .meswp-glNetwork__block {
+    padding-top: 20px;
+    border-top: 1px dotted var(--grey500);
+  }
+}
+
+.c-titleText + .c-titleText {
+  margin-top: 0;
+}
+
+.meswp-glNetwork__block {
+  margin-top: 20px;
+  > * + * {
+    margin-top: 10px;
+  }
+  & + .meswp-glNetwork__block {
+    padding-top: 20px;
+    border-top: 1px dotted var(--grey500);
+  }
+}
+
+.meswp-glNetwork__title {
+  /* color: palevioletred !important; */
+  font-size: 18px;
+}
+
+.meswp-glNetwork__center {
+  + .meswp-glNetwork__tel {
+    margin-top: 0;
+  }
+  + .meswp-glNetwork__title {
+    margin-top: 0;
+  }
+}
+
+.meswp-glNetwork__tag {
+  margin-top: 10px;
+  margin-left: -10px;
+  > * {
+    font-weight: bold;
+    color: var(--white);
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .meswp-reception {
+    /* background: #e84a68; */
+    background-color: var(--purpleDark);
+  }
+  
+  .meswp-jp {
+    /* background: #2877b3; */
+    background-color: var(--blueLight);
+  }
+  
+  .meswp-cn {
+    /* background: #c45c4e; */
+    background-color: var(--orangeLight);
+  }
+  
+  .meswp-cosult {
+    /* background: #8d60ac; */
+    background-color: var(--purpleLight);
+  }
+  
+  .meswp-repair {
+    /* background: #44925c; */
+    background-color: var(--greenLight);
+  }
+  
+  .meswp-training {
+    /* background: #c46391; */
+    background-color: var(--pinkLight);
+  }
+
+  .meswp-stock {
+    /* background: #847d4c; */
+    background-color: var(--orangeDark);
+  }
+  
+  .meswp-onsite {
+    /* background: #914c53; */
+    background-color: var(--pinkDark);
+  }
+  
+}
+
+
+/*---------------------------------------------------------
+  リモートサービス
+---------------------------------------------------------*/
+
+.meswp-remote__image {
+  position: relative;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.meswp-remote__image--base {
+  width: 100%;
+  height: auto;
+}
+
+.meswp-remote__imageItem {
+  position: absolute;
+  height: auto;
+  > * {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*! over Large（Largeより以上） */
+@media only screen and (min-width: 1221px) {
+  .meswp-remote__image {
+    width: 980px;
+  }
+
+  .meswp-remote__imageItem--user {
+    top: 40px;
+    left: 122px;
+    width: 212px;
+  }
+  
+  .meswp-remote__imageItem--maker {
+    bottom: 40px;
+    right: 112px;
+    width: 222px;
+  }
+}
+
+/*! Large, Medium and Small（Largeまで） */
+@media only screen and (max-width: 1220px) {
+  .meswp-remote__image {
+    width: calc(980 / 1220 * 100vw);
+  }
+
+  .meswp-remote__imageItem--user {
+    top: calc(40 / 1220 * 100vw);
+    left: calc(122 / 1220 * 100vw);
+    width: calc(212 / 1220 * 100vw);
+  }
+
+  .meswp-remote__imageItem--maker {
+    bottom: calc(40 / 1220 * 100vw);
+    right: calc(112 / 1220 * 100vw);
+    width: calc(222 / 1220 * 100vw);
+  }
+}
+
+/*! Medium and Small（Medium以下） */
+@media only screen and (max-width: 980px) {
+  .meswp-remote__image {
+    width: calc(980 / 1200 * 100vw);
+  }
+
+  .meswp-remote__imageItem--user {
+    top: calc(40 / 1200 * 100vw);
+    left: calc(122 / 1200 * 100vw);
+    width: calc(212 / 1200 * 100vw);
+  }
+
+  .meswp-remote__imageItem--maker {
+    bottom: calc(40 / 1200 * 100vw);
+    right: calc(112 / 1200 * 100vw);
+    width: calc(222 / 1200 * 100vw);
+  }
+}
+
+/*! Small only (Smallのみ) */
+@media only screen and (max-width: 767px) {
+  .meswp-remote__image {
+    width: calc(980 / 1100 * 100vw);
+  }
+
+  .meswp-remote__imageItem--user {
+    top: calc(40 / 1100 * 100vw);
+    left: calc(122 / 1100 * 100vw);
+    width: calc(212 / 1100 * 100vw);
+  }
+
+  .meswp-remote__imageItem--maker {
+    bottom: calc(40 / 1100 * 100vw);
+    right: calc(112 / 1100 * 100vw);
+    width: calc(222 / 1100 * 100vw);
+  }
+}

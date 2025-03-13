@@ -1,0 +1,87 @@
+/*! ======================================
+casestudies industry automotive index
+====================================== */
+.c-mainVisual--lv2 .c-mainVisual__background>img {position: absolute;right: 47%;bottom: 0;width: 36%;max-width: 880px;height: auto;bottom: -4%}
+.process_map{position:relative;margin-bottom:30px;width: 100%;}
+.process_map .pc_only > img {width: 100%;}
+.process_map .link_list li{font-size: 1.16em;font-weight:bold;background-color: rgba(0,0,0,0.8);letter-spacing:0.06em;text-align: center;position: absolute;padding:6px 3px 6px 20px;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;box-sizing: border-box;}
+.process_map .link_list li:before{content: "";position: absolute;top: 100%;left: 52%; margin-left: -15px;width: 0;height: 0;border-color: rgba(0,0,0,.8) transparent transparent transparent;border-style: solid;border-width: 8px 8.5px 0 8.5px;}
+.process_map .link_list  a {font-size:98.522%;}
+.process_map .link_list li a img{position: absolute;top: 50%;right: 7px;margin-top: -7px;}
+.process_map .link_list li a{color: #fff;display: block;}
+.process_map .link_list li:nth-child(1) {width: 9vw;top: 27.5%;left: 34%;max-width: 95px;}
+.process_map .link_list li:nth-child(2){width: 10vw;top: 42%;left: 10.5%;max-width: 120px;}
+.process_map .link_list li:nth-child(3){width: 15vw;top: 23%;right: 74.35%;max-width: 168px;}
+.process_map .link_list li:nth-child(4){width: 15vw;top: 60.7%;left: 21.8%;max-width: 170px;}
+.process_map .link_list li:nth-child(5){width: 15vw;top: 51%;left: 38%;max-width: 170px;}
+.process_map .link_list li:nth-child(6){width: 19vw;top: 29.5%;right: 4.5%;max-width: 214px;}
+.process_map .link_list li:nth-child(7){width: 16vw;top: 64%;right: 24.8%;max-width: 180px;}
+.sp_only {display: none;}
+.l-inner--medium {padding-right: 0;padding-left: 0;}
+.c-linkWithImage__image img {height: auto;object-fit:cover;}
+.link_list span {position: absolute;left: 0;top: 50%;transform: translateY(-50%);}
+.link_list span::before {position: absolute;font-family: MelFaIcons,"Material Icons";font-size: 1em;display: inline-flex;width: 1em;margin-right: 0.125em;content: "\f102";left: .4em;top: 50%;transform: translateY(-50%);white-space: nowrap;text-decoration: none;word-wrap: normal;color: red;}
+.c-list__item.current a {color: #f50f10;font-weight: bold;}
+.c-linkWithImage__image {aspect-ratio: auto;}
+.c-linkWithImage p {color: #000;font-size: 1.15em;}
+.mt-midiam {margin-top: 1em;}
+.mt-large {margin-top: 64px;}
+.border-r {position: relative;display: flex;flex-direction: column;text-align: right;}
+.border-r::before {position: absolute;content: "";width: 1px;height: 70px;right: 0;top: 50%;transform: translateY(-50%);background-color: #bdbdbd;}
+.c-localNav {background-color: #fff;margin:17px 0 30px 0;filter:drop-shadow(0 0px 0px rgba(0, 0, 0, .25));border-top: none;}
+.l-grid__item {margin-bottom: 13px;}
+.l-grid__item-15per .c-list--float {justify-content: end;}
+.pt30 {padding-top: 30px;}
+.automotive-menu {margin-top: 55px;}
+.automotive-menu .l-grid__item.l-grid__item-3{margin-bottom: 60px;}
+.border .c-linkWithImage__image {border: 1px solid #c5c5c5;}
+.word-break {word-break: break-all;}
+.catalog {background-color: #f5f5f5;border: 1px solid #b6b6b6;margin-top: 64px;}
+.catalog a {display: flex;justify-content: space-between;align-items: center;padding: 14px 50px 14px 77px;}
+.catalog__img img {width: 120px;height: 120px;}
+.catalog p {font-size: 30px;color: #000;margin-left: 20px;transition: color .15s ease-in-out;font-weight: bold;}
+.catalog:hover p {color: #f50f10;}
+.catalog__text {position: relative;}
+.catalog__text::before {position: absolute;font-family: MelFaIcons,"Material Icons";font-size: 16px;display: inline-flex;width: 8px;height: 13px;top: 50%;left: -30px;transform: translateY(-70%);content: "\f102";white-space: nowrap;text-decoration: none;word-wrap: normal;color: red;}
+
+@media screen and (max-width:1210px){
+    .process_map .link_list  a {font-size:1.1vw;}
+}
+@media screen and (max-width:800px){
+    .process_map .link_list li:nth-child(2) {width: 11vw;}
+    .process_map .link_list li:nth-child(5) {width: 16vw;}
+    .process_map .link_list li:nth-child(6) {width: 20vw;}
+}
+
+@media screen and (max-width:767px){
+.process_map{margin-bottom:0px}
+.pc_only {display: none;}
+.sp_only {display: block;}
+.process_map .sp_only > img {max-width: 100%;}
+.border-r::before {content: none;}
+.catalog__img img {width: 90px;height: 90px;}
+.catalog {margin-top: 50px;}
+.catalog a {padding: 12px 15px 12px 25px;}
+.catalog p {line-height: 1.33333333;}
+}
+
+.our-stories {display: flex;margin-top: 70px;}
+.our-stories .our-stories__img {width: 50%;}
+.our-stories .our-stories__img img {width: 100%;}
+.our-stories .our-stories__textbox {width: 50%;margin-left: 30px;}
+.our-stories .our-stories__textbox:nth-child(odd) {margin-right: 30px;margin-left: 0;}
+.our-stories .our-stories__textbox .l-grid.l-grid-reverse {margin-left: 0;margin-top: 17px;}
+.our-stories .our-stories__textbox .l-grid.l-grid-reverse .c-btn--md {padding: 7px 3em;}
+.our-stories .our-stories__textbox .l-grid.l-grid-reverse {margin-top: 30px;}
+.border-shadow {filter: drop-shadow(0 0px 0px rgba(0, 0, 0, .25));box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 10%);margin-top: 46px;margin-bottom: 50px;}
+.l-grid__item.mt-mini {margin-top: 13px;}
+.l-grid__item {padding-right: 14px;padding-left: 14px;}
+@media only screen and (max-width:767px){
+    .our-stories {flex-direction: column;margin-top: 40px;}
+    .our-stories .our-stories__img {width: 100%;}
+    .our-stories .our-stories__textbox {width: 100%;margin-left: 0;}
+    .our-stories__img {margin-top: 20px;}
+    .our-stories .our-stories__textbox .l-grid.l-grid-reverse {margin-top: 15px;}
+    .border-shadow {margin-top: 20px;margin-bottom: 20px;}
+    #sols_slider .l-section {padding-bottom: 40px;}
+}

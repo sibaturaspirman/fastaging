@@ -1,0 +1,20 @@
+{
+	"layerNav": {
+		"name": "I/O",
+		"path": "/fa/products/cnt/plcr/pmerit/io/index.html",
+		"firstLayer": [
+			{
+				"name": "Lineup",
+				"path": "/fa/products/cnt/plcr/pmerit/io/index.html"
+			},
+			{
+				"name": "Features",
+				"path": "/fa/products/cnt/plcr/pmerit/io/merit.html"
+			},
+			{
+				"name": "Specifications",
+				"path": "/fa/products/cnt/plcr/pmerit/io/spec.html"
+			}
+		]
+	}
+}

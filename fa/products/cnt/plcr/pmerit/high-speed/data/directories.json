@@ -1,0 +1,20 @@
+{
+	"layerNav": {
+		"name": "High-speed counter, Channel isolated pulse input, Flexible high-speed I/O control",
+		"path": "/fa/products/cnt/plcr/pmerit/high-speed/index.html",
+		"firstLayer": [
+			{
+				"name": "High-speed counter",
+				"path": "/fa/products/cnt/plcr/pmerit/high-speed/index.html"
+			},
+			{
+				"name": "Channel isolated pulse input",
+				"path": "/fa/products/cnt/plcr/pmerit/high-speed/isolated.html"
+			},
+			{
+				"name": "Flexible high-speed I/O control",
+				"path": "/fa/products/cnt/plcr/pmerit/high-speed/flexi.html"
+			}
+		]
+	}
+}

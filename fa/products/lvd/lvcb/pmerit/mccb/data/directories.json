@@ -1,0 +1,53 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html",
+            "child": [
+				{
+					"name": "Molded Case Circuit Breakers",
+					"path": "/fa/products/lvd/lvcb/pmerit/mccb/index.html"
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "Molded Case Circuit Breakers",
+    "path": "/fa/products/lvd/lvcb/pmerit/mccb/index.html",
+    "firstLayer": [
+      {
+        "name": "Features",
+        "path": "/fa/products/lvd/lvcb/pmerit/mccb/index.html"
+      }
+    ]
+  },
+"switchNav": {
+	"name": "Molded Case Circuit Breakers",
+	"path": "/fa/products/lvd/lvcb/items/mccb/index.html",
+	"child": [
+		{
+			"group": "Molded Case Circuit Breakers",
+			"name": "Molded Case Circuit Breakers",
+			"feature": "/fa/products/lvd/lvcb/pmerit/mccb/index.html",
+			"spec": "/fa/products/faspec/search.page?kisyu=/lvcb&current=MCCB",
+			"standard": "/fa/products/standard/SearchServlet.page?kisyu=/lvcb&current=MCCB",
+			"discon": "",
+            "return": {
+                "name": "Molded Case Circuit Breakers",
+                "path": "/fa/products/lvd/lvcb/items/mccb/index.html"
+			}
+		}
+	]
+}
+}
+  

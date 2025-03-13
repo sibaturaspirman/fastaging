@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*-------[ コンセプトTOP/スライドショー ]-------------------------------------------------------------------*/
+
+#slide {
+	position: relative;
+	overflow: hidden;
+}
+#slide img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+@media (min-width: 769px){						/* PC用 */
+	#slide {
+		width: 780px;
+		height: 300px;
+	}
+	#slide img {
+		width: 780px;
+		height: auto;
+	}
+}
+@media only screen and (max-width: 768px){		/* スマホ用 */
+	#slide {
+		width: calc(100vw - 32px);
+		height: calc((100vw - 32px)/13*5);	/* 縦780px横300px */
+	}
+	#slide img {
+		width: calc(100vw - 32px);
+		height: auto;
+	}
+}

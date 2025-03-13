@@ -1,0 +1,61 @@
+{
+	"coment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+	  "specificItems": [
+	  ],
+		"commonItems": [
+			{
+				"name": "FAQ",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2305"
+			}
+        ]
+	},
+	"spotlight": {
+		"comment": "Spotlightに掲載したいページタイトル・画像・リンクを記入",
+		"items": [
+		]
+	},
+	"productsMenu": {
+		"items": [
+        ]
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": [
+		]
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除",
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','YM-C-Y-0737','ems','3')",
+				"img": "javascript.toCatalogInfo('img','YM-C-Y-0737','ems','5')",
+				"link": "javascript.toCatalogInfo('link','YM-C-Y-0737','ems','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "catalog",
+				"icon": "catalog",
+				"link": "/fa/download/search.page?mode=catalog&kisyu=/ems"
+			}
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+		]
+	},
+	"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+	"banner": {
+		"items": [
+		]
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+		]
+	}
+}

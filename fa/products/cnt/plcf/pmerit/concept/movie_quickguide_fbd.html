@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Quick Start Guide [FBD/LD language edition] (video) | MELSEC iQ-F series | MITSUBISHI ELECTRIC FA</title>
+<meta name="keywords" content="MELSEC iQ-F series,MELSEC iQ-F series Quick Start Guide [FBD/LD language edition] (video),MITSUBISHI ELECTRIC CORPORATION,FA,Factory Automation">
+<meta name="description" content="MELSEC iQ-F series Quick Start Guide [FBD/LD language edition] (video)">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
+<link rel="apple-touch-icon-precomposed" href="https://www.mitsubishielectric.com/m/common/img/apple-touch-icon-precomposed.png">
+
+<!-- facebook用メタ情報 -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mitsubishielectric.com/fa/products/cnt/plcf/pmerit/concept/movie_quickguide_fbd.html">
+<meta property="og:title" content="Quick Start Guide [FBD/LD language edition] (video) | MELSEC iQ-F series | MITSUBISHI ELECTRIC FA">
+<meta property="og:description" content="MELSEC iQ-F series Quick Start Guide [FBD/LD language edition] (video)">
+<meta property="og:image" content="https://www.mitsubishielectric.com/fa/shared/img/ogp/thumb_01.jpg">
+<!-- /facebook用メタ情報 -->
+
+<!-- Mel styles gws0001 -->
+<link rel="stylesheet" href="/fa/shared/gws0001/default/libs/normalize.css/7.0.0/normalize.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/default/css/layouts.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/css/style.css">
+
+<link rel="stylesheet" href="/fa/products/assets/css/category.css">
+
+<link rel="stylesheet" type="text/css" href="/fa/products/cnt/plcf/pmerit/css/common.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/default/libs/jquery/jquery-3.6.0.min.js"></script>
+<script>
+  window.jQuery3_6 = jQuery.noConflict();
+</script>
+<script src="/fa/shared/gws0001/default/js/libs.js"></script>
+<script src="/fa/shared/gws0001/js/functions.js"></script>
+<script src="/fa/shared/js/globallinkinfo.js"></script>
+<script src="/common/js/head_include.js"></script>
+
+<!-- JS Area START -->
+<script src="libs/createjs-2015.11.26.min.js"></script>
+<script src="FXCPUflashing_Canvas.js"></script>
+<script>
+    var canvas, stage, exportRoot;
+    function init() {
+      canvas = document.getElementById("canvas");
+      images = images || {};
+
+      var loader = new createjs.LoadQueue(false);
+      loader.addEventListener("fileload", handleFileLoad);
+      loader.addEventListener("complete", handleComplete);
+      loader.loadManifest(lib.properties.manifest);
+    }
+
+    function handleFileLoad(evt) {
+      if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+    }
+
+    function handleComplete(evt) {
+      exportRoot = new lib.FXCPUflashing_Canvas();
+
+      stage = new createjs.Stage(canvas);
+      stage.addChild(exportRoot);
+      stage.update();
+
+      createjs.Ticker.setFPS(lib.properties.fps);
+      createjs.Ticker.addEventListener("tick", stage);
+    }
+  </script>
+</head>
+
+<body onload="init();">
+<noscript><div class="noscript"><p class="noscript__msg">Please enable JavaScript before using this site.</p></div></noscript>
+<header class="gs18-Header gs18-Header--MinInteraction" role="banner" data-js-gs18-header>
+<!-- /.gs18-Header --></header>
+
+<main class="container-fluid">
+<div class="c-mainVisual">
+<div class="c-mainVisual__main">
+<div class="c-mainVisual__fa"><img src="/fa/shared/gws0001/img/fa_logo.svg" alt="Factory Automation" width="315" height="35"></div>
+<h1 class="c-mainVisual__title">
+<span class="c-mainVisual__subTitle">MELSEC iQ-F series</span>
+Quick Start Guide [FBD/LD language edition] (video)</h1>
+<div class="c-mainVisual__background"><img src="/fa/products/assets/img/img_mv-1_sm.jpg" alt="" width="1440" height="320" decoding="async"></div>
+</div>
+</div><!-- /.c-mainVisual -->
+
+<div class="c-localNav" data-js-products-local-nav="/fa/products/cnt/plcf/pmerit/concept/index.html">
+<div class="c-localNav__inner">
+<ul class="c-list c-list--float">
+<li class="c-list__item"><a class="u-icons u-icons--bulletLeft" href="/fa/products/index.html">製品情報</a></li>
+</ul><!-- /.c-list -->
+</div><!-- /.c-localNav__inner -->
+</div><!-- /.c-localNav -->
+
+<div class="c-switchNav" data-js-switch-nav>
+</div><!-- /.c-switchNav -->
+
+<div class="c-layerNav" data-js-layer-nav="plcf_09">
+</div><!-- /.c-layerNav -->
+
+<div class="l-inner--medium l-separator-x6">
+
+<ul class="c-anchorNav c-list c-list--float" data-js-localscroll>
+    <li class="c-list__item"><a class="u-icons u-icons--chevronBottom" href="#section01">Program the FX5U CPU module</a></li>
+    <li class="c-list__item"><a class="u-icons u-icons--chevronBottom" href="#section02">Make various settings</a></li>
+    <li class="c-list__item"><a class="u-icons u-icons--chevronBottom" href="#section03">Security function types</a></li>
+    </ul><!-- /.c-list --><!-- /.c-anchorNav -->
+
+<section class="l-section" id="section01">
+<h2 class="c-headingLv2">Quick Start Guide [FBD/LD language edition] (video)</h2>
+<h3 class="c-headingLv3">Program the FX5U CPU module</h3>
+<ul class="c-list c-list--order">
+    <li class="c-list__item"><span class="c-list__marker">(1)</span>Before programming, make the settings in GX Works3 for connecting the PC and FX5U CPU module.</li>
+</ul>
+<div class="l-grid l-grid--center">
+    <div class="l-grid__item l-grid__item-7 l-grid__item-80per-md l-grid__item-100per-sm">
+        <div class="c-card--movie">
+            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="5xgYU4syssk" data-js-movie-title="Try programming 1 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 1/14)" >
+              <div class="c-card__img c-movie__playBtn">
+                <img src="http://img.youtube.com/vi/5xgYU4syssk/sddefault.jpg" alt="" decoding="async">
+              </div>
+            </a>
+          </div>
+        </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+
+<ul class="c-list c-list--order l-separator-x6-imp">
+    <li class="c-list__item"><span class="c-list__marker">(2)</span>Try programming.</li>
+    <li class="c-ist__item l-separator-x1-imp"><span class="c-list__marker"></span>Create a program that makes Y0 turn on/off at one second intervals.</li>
+</ul>
+<div class="l-grid l-grid--center">
+    <div class="l-grid__item l-grid__item-7 l-grid__item-80per-md l-grid__item-100per-sm">
+        <div class="c-card--movie">
+            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="Si9QAh6MZvU" data-js-movie-title="Try programming 2 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 2/14)" >
+              <div class="c-card__img c-movie__playBtn">
+                <img src="http://img.youtube.com/vi/Si9QAh6MZvU/sddefault.jpg" alt="" decoding="async">
+              </div>
+            </a>
+          </div>
+        </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+<ul class="c-list c-list--order l-separator-x6-imp">
+    <li class="c-list__item"><span class="c-list__marker">(3)</span>Compile the created program into executable code.</li>
+</ul>
+<div class="l-grid l-grid--center">
+    <div class="l-grid__item l-grid__item-7 l-grid__item-80per-md l-grid__item-100per-sm">
+        <div class="c-card--movie">
+            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="jQUgSQxxfFU" data-js-movie-title="Try programming 3 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 3/14)" >
+              <div class="c-card__img c-movie__playBtn">
+                <img src="http://img.youtube.com/vi/jQUgSQxxfFU/sddefault.jpg" alt="" decoding="async">
+              </div>
+            </a>
+          </div>
+        </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+<ul class="c-list c-list--order l-separator-x6-imp">
+    <li class="c-list__item"><span class="c-list__marker">(4)</span>Write the compiled program to the FX5U CPU module.</li>
+</ul>
+<div class="l-grid l-grid--center">
+    <div class="l-grid__item l-grid__item-7 l-grid__item-80per-md l-grid__item-100per-sm">
+        <div class="c-card--movie">
+            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="Cy152-dtKjY" data-js-movie-title="Try programming 4 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 4/14)" >
+              <div class="c-card__img c-movie__playBtn">
+                <img src="http://img.youtube.com/vi/Cy152-dtKjY/sddefault.jpg" alt="" decoding="async">
+              </div>
+            </a>
+          </div>
+        </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+<ul class="c-list c-list--order l-separator-x6-imp">
+    <li class="c-list__item"><span class="c-list__marker">(5)</span>Check that the program operates correctly.</li>
+    <li class="c-list__item l-separator-x1-imp"><span class="c-list__marker"></span>Reset or cycle power on the FX5U CPU module.</li>
+</ul>
+
+<div class="l-grid l-grid--center">
+    <div class="l-grid__item l-grid__item-9">
+    <p class="u-ta--center">
+      <canvas class="c-imgAuto u-bgc--white-imp" id="canvas" width="780" height="360"></canvas>
+    </p>
+    <div class="c-table">
+      <table class="c-table__content">
+        <tbody class="c-table__contentBody">
+        <tr>
+            <td>
+          <p class="c-text u-fw--bold u-ta--center u-fz--20">Reset method for FX5U CPU module</p>
+          <ol class="c-list--order">
+            <li class="c-list__item"><span class="c-list__marker">1.</span>Hold the RUN/STOP/RESET switch [1] in the RESET position for at least one second.</li>
+            <li class="c-list__item"><span class="c-list__marker">2.</span>Check that the ERR LED [2] blinks.</li>
+            <li class="c-list__item"><span class="c-list__marker">3.</span>Return the RUN/STOP/RESET switch to the STOP position.</li>
+            <li class="c-list__item"><span class="c-list__marker">4.</span>Shift the RUN/STOP/RESET switch to the RUN position.</li>
+            <li class="c-list__item"><span class="c-list__marker">5.</span>Output display LED [3] turns on/off at one second intervals.</li>
+          </ol>
+        </td>
+        </tr>
+    </tbody>
+            <tr>
+            <td class="u-ta--center u-fz--18 u-bgc--grey200-imp">RESET complete</td>
+            </tr>
+      </table><!-- /.c-table__content" -->
+    </div><!-- /.c-table -->
+</div><!-- /.l-grid__item -->
+</div><!-- /.l-grid -->
+
+</section><!-- /#section01 -->
+<section class="l-section" id="section02">
+<h3 class="c-headingLv3">Make various settings</h3>
+<ul class="c-list c-list--order">
+    <li class="c-list__item"><span class="c-list__marker">(1)</span>Try setting analog input.</li>
+</ul>
+<div class="l-grid l-grid--center">
+    <div class="l-grid__item l-grid__item-7 l-grid__item-80per-md l-grid__item-100per-sm">
+        <div class="c-card--movie">
+            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="-ltEbGZE7u8" data-js-movie-title="Programming built-in functions 1 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 5/14)" >
+              <div class="c-card__img c-movie__playBtn">
+                <img src="http://img.youtube.com/vi/-ltEbGZE7u8/sddefault.jpg" alt="" decoding="async">
+              </div>
+            </a>
+          </div>
+        </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+<ul class="c-list c-list--order l-separator-x6-imp">
+    <li class="c-list__item"><span class="c-list__marker">(2)</span>Try setting analog output.</li>
+</ul>
+<div class="l-grid l-grid--center">
+    <div class="l-grid__item l-grid__item-7 l-grid__item-80per-md l-grid__item-100per-sm">
+        <div class="c-card--movie">
+            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="XctfOTDzbR4" data-js-movie-title="Programming built-in functions 2 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 6/14)" >
+              <div class="c-card__img c-movie__playBtn">
+                <img src="http://img.youtube.com/vi/XctfOTDzbR4/sddefault.jpg" alt="" decoding="async">
+              </div>
+            </a>
+          </div>
+        </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+<ul class="c-list c-list--order l-separator-x6-imp">
+    <li class="c-list__item"><span class="c-list__marker">(3)</span>Try setting high speed counter.</li>
+</ul>
+<div class="l-grid l-grid--center">
+    <div class="l-grid__item l-grid__item-7 l-grid__item-80per-md l-grid__item-100per-sm">
+        <div class="c-card--movie">
+            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="mRvLrDDFmCw" data-js-movie-title="Programming built-in functions 3 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 7/14)" >
+              <div class="c-card__img c-movie__playBtn">
+                <img src="http://img.youtube.com/vi/mRvLrDDFmCw/sddefault.jpg" alt="" decoding="async">
+              </div>
+            </a>
+          </div>
+        </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+<ul class="c-list c-list--order l-separator-x6-imp">
+    <li class="c-list__item"><span class="c-list__marker">(4)</span>Try setting positioning.</li>
+</ul>
+<div class="l-grid l-grid--center">
+    <div class="l-grid__item l-grid__item-7 l-grid__item-80per-md l-grid__item-100per-sm">
+        <div class="c-card--movie">
+            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="BGIuyj1dkX0" data-js-movie-title="Programming built-in functions 4 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 8/14)" >
+              <div class="c-card__img c-movie__playBtn">
+                <img src="http://img.youtube.com/vi/BGIuyj1dkX0/sddefault.jpg" alt="" decoding="async">
+              </div>
+            </a>
+          </div>
+        </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+<ol class="c-list c-list--order l-separator-x6-imp">
+    <li class="c-list__item"><span class="c-list__marker">(5)</span>Try setting Ethernet communication.</li>
+    <li class="c-list__item">
+        <ol class="c-list c-list--order l-separator-x2-imp">
+            <li class="c-list__item"><span class="c-list__marker">[1]</span>Try setting parameters.</li>
+            <li class="c-list__item"><span class="c-list__marker"></span>In the video for PLC A and B, the only difference is the port number.</li>
+            </ol>
+    </li>
+</ol>
+<p class="c-text u-ta--center">PLC A</p>
+<div class="l-grid l-grid--center l-separator-x1">
+    <div class="l-grid__item l-grid__item-7 l-grid__item-80per-md l-grid__item-100per-sm">
+        <div class="c-card--movie">
+            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="wQbH_26KMr0" data-js-movie-title="Programming built-in functions 5 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 9/14)" >
+              <div class="c-card__img c-movie__playBtn">
+                <img src="http://img.youtube.com/vi/wQbH_26KMr0/sddefault.jpg" alt="" decoding="async">
+              </div>
+            </a>
+          </div>
+        </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+<p class="c-text u-ta--center l-separator-x6-imp">PLC B</p>
+<div class="l-grid l-grid--center l-separator-x1">
+    <div class="l-grid__item l-grid__item-7 l-grid__item-80per-md l-grid__item-100per-sm">
+        <div class="c-card--movie">
+            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="XcgdDF-LybY" data-js-movie-title="Programming built-in functions 6 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 10/14)" >
+              <div class="c-card__img c-movie__playBtn">
+                <img src="http://img.youtube.com/vi/XcgdDF-LybY/sddefault.jpg" alt="" decoding="async">
+              </div>
+            </a>
+          </div>
+        </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+<ul class="c-list c-list--order l-separator-x6-imp">
+    <li class="c-list__item"><span class="c-list__marker">[2]</span>Try programming.</li>
+</ul>
+<div class="l-grid l-grid--center">
+    <div class="l-grid__item l-grid__item-7 l-grid__item-80per-md l-grid__item-100per-sm">
+        <div class="c-card--movie">
+            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="NQu6Lj1asT4" data-js-movie-title="Programming built-in functions 7 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 11/14)" >
+              <div class="c-card__img c-movie__playBtn">
+                <img src="http://img.youtube.com/vi/NQu6Lj1asT4/sddefault.jpg" alt="" decoding="async">
+              </div>
+            </a>
+          </div>
+        </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+</section><!-- /#section02 -->
+
+<section class="l-section" id="section03">
+<h3 class="c-headingLv3">Security function types</h3>
+<ul class="c-list c-list--order">
+    <li class="c-list__item"><span class="c-list__marker">(1)</span>Security key</li>
+    <li class="c-list__item l-separator-x1-imp"><span class="c-list__marker"></span>Disables reading and program execution if the keys of the program file, PLC, PC, and copy destination PLC do not match.</li>
+</ul>
+<div class="c-imgAuto"><img src="images/movie_quickguide_security01.gif" alt="Security key" decoding="async"></div>
+<ul class="c-list c-list--order">
+    <li class="c-list__item"><span class="c-list__marker">(2)</span>Block password</li>
+    <li class="c-list__item l-separator-x1-imp"><span class="c-list__marker"></span>Password can be set to individual program blocks, so developers and users can set passwords as required from their standpoint.</li>
+</ul>
+<div class="c-imgAuto"><img src="images/movie_quickguide_security02.gif" alt="Block password" decoding="async"></div>
+<ul class="c-list c-list--order">
+    <li class="c-list__item"><span class="c-list__marker">(3)</span>Remote password</li>
+    <li class="c-list__item l-separator-x1-imp"><span class="c-list__marker"></span>Allows communication access only to people that know the password.</li>
+</ul>
+<div class="c-imgAuto"><img src="images/movie_quickguide_security03.gif" alt="Remote password" decoding="async"></div>
+<ul class="c-list c-list--order">
+    <li class="c-list__item"><span class="c-list__marker">(4)</span>File password</li>
+    <li class="c-list__item l-separator-x1-imp"><span class="c-list__marker"></span>Besides the program file, password can also be set to parameters, so settings of individual modules can be protected.</li>
+</ul>
+<div class="c-imgAuto"><img src="images/movie_quickguide.png" alt="File password" decoding="async"></div>
+<div class="l-grid l-grid--center">
+    <div class="l-grid__item l-grid__item-7 l-grid__item-80per-md l-grid__item-100per-sm">
+        <div class="c-card--movie">
+            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="sGpVPQNZN3Q" data-js-movie-title="Security 1 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 12/14)" >
+              <div class="c-card__img c-movie__playBtn">
+                <img src="http://img.youtube.com/vi/sGpVPQNZN3Q/sddefault.jpg" alt="" decoding="async">
+              </div>
+            </a>
+          </div>
+        </div><!-- /.l-grid__item -->
+    </div><!-- /.l-grid -->
+
+    <div class="l-grid l-grid--center">
+        <div class="l-grid__item l-grid__item-10 l-grid__item-80per-md l-grid__item-100per-sm">
+<div class="c-table l-separator-x6-imp">
+    <table class="c-table__content">
+    <thead class="c-table__head">
+    <tr>
+    <th>When the password is unknown:</th>
+    </tr>
+    </thead>
+    <tbody class="c-table__contentBody">
+    <tr>
+    <td>
+        <div class="l-grid l-grid--center">
+            <div class="l-grid__item">
+                <div class="c-card--movie">
+                    <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="9wgyaLQtr8U" data-js-movie-title="Security 2 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 13/14)" >
+                      <div class="c-card__img c-movie__playBtn">
+                        <img src="http://img.youtube.com/vi/9wgyaLQtr8U/sddefault.jpg" alt="" decoding="async">
+                      </div>
+                    </a>
+                  </div>
+                </div><!-- /.l-grid__item -->
+            </div><!-- /.l-grid -->
+    </td>
+    </tr>
+    </tbody>
+    <thead class="c-table__head">
+        <tr>
+        <th>When the password is known:</th>
+        </tr>
+        </thead>
+        <tbody class="c-table__contentBody">
+            <tr>
+            <td>
+                <div class="l-grid l-grid--center">
+                    <div class="l-grid__item">
+                        <div class="c-card--movie">
+                            <a class="c-card__link" href="#modal_movie" data-js-modal-movie-open="" data-js-movie-id="rxIa6VVANKU" data-js-movie-title="Security 3 (MELSEC iQ-F Series Quick Start Guide [FBD/LD language] 14/14)" >
+                              <div class="c-card__img c-movie__playBtn">
+                                <img src="http://img.youtube.com/vi/rxIa6VVANKU/sddefault.jpg" alt="" decoding="async">
+                              </div>
+                            </a>
+                          </div>
+                        </div><!-- /.l-grid__item -->
+                    </div><!-- /.l-grid -->
+            </td>
+            </tr>
+            </tbody>
+    </table><!-- /.c-table__content" -->
+    </div><!-- /.c-table -->
+</div><!-- /.l-grid__item -->
+</div><!-- /.l-grid -->
+
+
+</section><!-- /#section03 -->
+</div><!-- /.l-inner -->
+<div id="modal" data-js-modal role="dialog" aria-hidden="true">
+    <div data-js-modal_bg>
+      <div class="c-modal c-modal--movie">
+        <div class="c-modal__inner">
+          <div class="c-modal__header">
+            <p class="c-modal__title c-titleText"></p>
+          </div><!-- /.c-modal__header -->
+          <div class="c-modal__body">
+            <div class="c-movie">
+              <div id="YTPlayer"></div>
+            </div><!-- /.c-movie -->
+            <p class="c-modal__description c-text"></p>
+          </div><!-- /.c-modal__body -->
+          <div class="c-modal__close">
+            <a href="#" class="u-icons u-icons--size-32 u-icons--close" data-js-modal-close>Close</a>
+          </div><!-- /.c-modal__close -->
+        </div><!-- /.c-modal__inner -->
+      </div><!-- /.c-modal -->
+    </div>
+  </div><!-- /[data-js-modal] -->
+</main>
+
+<div class="c-breadcrumb">
+<ul class="c-breadcrumb__list" data-js-products-breadcrumb>
+</ul><!-- /.c-breadcrumb__list -->
+</div><!-- /.c-breadcrumb -->
+
+<footer class="gs18-Footer" role="contentinfo" data-js-gs18-footer>
+<!-- /.gs18-Footer --></footer>
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/js/init.js"></script>
+<script>
+    var gQueryParametersObject = MEL_SETTINGS.helper.getCurrentQueries();
+    var YTtag = document.createElement('script');
+    YTtag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(YTtag, firstScriptTag);
+  
+    var player;
+  
+    function onYouTubeIframeAPIReady() {
+      var targetMovieID = null;
+      if (gQueryParametersObject['movie']) {
+        targetMovieID = gQueryParametersObject['movie'];
+      }
+  
+      player = new YT.Player('YTPlayer', {
+        playerVars: {
+          'rel': 0
+        },
+        videoId: targetMovieID,
+        events: {
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+  
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.ENDED) {
+        player.stopVideo();
+      }
+    }
+  
+  </script>
+  <script src="/fa/shared/js/modal_movie.js"></script>
+<script src="/fa/products/assets/js/category.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@media only screen and (min-width:768px){
+/*! over Small */
+	#sysconfig_box_wrap {
+		margin-top: 2em;
+		text-align: center;
+	}
+	#sysconfig_box {
+		width: 100%;
+		max-width: 870px;
+		position: relative;
+	}
+	#sysconfig_box #base_img img {
+		width: 100%;
+		height: auto;
+		vertical-align: bottom;
+	}
+	#sysconfig_box #fig_sysconfig {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+	}
+	#sysconfig_box #fig_sysconfig li {
+		display: none;
+		list-style: none;
+	}
+	#sysconfig_box #fig_sysconfig li img {
+		width: 100%;
+		height: auto;
+	}
+	#sysconfig_box #sysconfig_point {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+	}
+	#sysconfig_box #sysconfig_point li {
+		position: absolute;
+		cursor: pointer;
+		list-style: none;
+	}
+	#sysconfig_box #sysconfig_point li img {
+		width: 100%;
+		height: auto;
+		display: block;
+		opacity: 0;
+	}
+	#sysconfig_box #sysconfig_point #sysconfig_point_a {
+	/*	width: 38px/780px;
+		left: 105px/780px;
+		top: 239px/610px; */
+		width: 4.8717948%;
+		left: 13.461538%;
+		top: 39.180327%;
+	}
+	#sysconfig_box #sysconfig_point #sysconfig_point_b {
+	/*	width: 120px/780px;
+		left: 143px/780px;
+		top: 233px/610px; */
+		width: 15.384615%;
+		left: 18.333333%;
+		top: 38.196721%;
+	}
+	#sysconfig_box #sysconfig_point #sysconfig_point_c {
+	/*	width: 62px/780px;
+		left: 263px/780px;
+		top: 233px/610px; */
+		width: 7.9487179%;
+		left: 33.717948%;
+		top: 38.196721%;
+	}
+	#sysconfig_box #sysconfig_point #sysconfig_point_d {
+	/*	width: 195px/780px;
+		left: 325px/780px;
+		top: 110px/610px; */
+		width: 25%;
+		left: 41.666666%;
+		top: 18.032786%;
+	}
+	#sysconfig_box #sysconfig_point #sysconfig_point_e {
+	/*	width: 61px/780px;
+		left: 531px/780px;
+		top: 86px/610px; */
+		width: 7.8205128%;
+		left: 68.076923%;
+		top: 14.09836%;
+	}
+	#sysconfig_box #sysconfig_point #sysconfig_point_f {
+	/*	width: 62px/780px;
+		left: 603px/780px;
+		top: 55px/610px; */
+		width: 7.9487179%;
+		left: 77.307692%;
+		top: 9.0163934%;
+	}
+}
+
+@media only screen and (max-width:767px){
+/*! Small only */
+	#sysconfig {
+		margin-top: 2em;
+	}
+	#sysconfig .unit_sysconfig {
+		padding-bottom: 1em;
+	}
+	#sysconfig .unit_sysconfig .num {
+		color: #FFF;
+		width: 1.5em;
+		height: 1.5em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 0.5em;
+	}
+	#sysconfig .unit_sysconfig .num_a {
+		background-color: #6c7b8c;
+	}
+	#sysconfig .unit_sysconfig .num_b {
+		background-color: #846c5c;
+	}
+	#sysconfig .unit_sysconfig .num_c {
+		background-color: #9a4642;
+	}
+	#sysconfig .unit_sysconfig .num_d {
+		background-color: #bc782f;
+	}
+	#sysconfig .unit_sysconfig .num_e {
+		background-color: #6a3679;
+	}
+	#sysconfig .unit_sysconfig .num_f {
+		background-color: #4d829a;
+	}
+	#sysconfig .unit_sysconfig dt {
+		font-size: 120%;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		margin-bottom: 0.25em;
+	}
+	#sysconfig .unit_sysconfig dd {
+		font-size: 110%;
+		line-height: 1.5;
+		padding-left: 18px;
+		position: relative;
+	}
+	#sysconfig .unit_sysconfig dd::before {
+		content: "";
+		width: 4px;
+		height: 4px;
+		border-radius: 2px;
+		background-color: #666;
+		position: absolute;
+		top: 8px;
+		left: 9px;
+	}
+}

@@ -1,0 +1,103 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Programmable<br>Controllers<br>MELSEC",
+        "path": "/fa/products/cnt/plc/index.html",
+        "child": [
+          {
+            "name": "MELSEC iQ-R Series",
+            "path": "/fa/products/cnt/plcr/items/index.html"
+          },
+          {
+            "name": "MELSEC iQ-F Series",
+            "path": "/fa/products/cnt/plcf/items/index.html"
+          },
+          {
+            "name": "MELSEC-Q Series",
+            "path": "/fa/products/cnt/plcq/items/index.html"
+          },
+          {
+            "name": "MELSEC-L Series",
+            "path": "/fa/products/cnt/plcl/items/index.html"
+          },
+          {
+            "name": "MELSEC-F Series",
+            "path": "/fa/products/cnt/plc_fx/items/index.html"
+          },
+          {
+            "name": "MELSEC-QS/WS Series",
+            "path": "/fa/products/cnt/plcqsws/items/index.html"
+          },
+          {
+            "name": "MELSEC-A Series",
+            "path": "/fa/products/cnt/plca/pmerit/concept/index.html"
+          },
+          {
+            "name": "Network-related products",
+            "path": "/fa/products/cnt/plcnet/items/index.html"
+          }
+        ]
+      }
+    ]
+  },
+  "switchNav": {
+    "name": "Network-related products",
+    "path": "/fa/products/cnt/plcnet/items/index.html",
+    "child": [
+        {
+        "group": "LP3-1",
+        "name": "Line up",
+        "feature": "/fa/products/cnt/plcnet/pmerit/concept/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcnet",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/plcnet",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon"
+      },
+        {
+        "group": "LP3-1",
+        "name": "CC-Link IE TSN",
+        "feature": "/fa/products/cnt/plcnet/pmerit/cclink_ie_tsn/concept/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcnet&radio=CC-Link%20IE%20TSN&search=B&word=CC-Link%20IE%20TSN",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=CC-Link%20IE%20TSN&search=B&word=CC-Link%20IE%20TSN",
+        "discon": ""
+      },
+      {
+        "group": "LP3-1",
+        "name": "CC-Link IE",
+        "feature": "/fa/products/cnt/plcnet/pmerit/cclink_ie/concept/",
+        "spec": "/fa/products/faspec/search.page?kisyu=%2Fplcnet&radio=CC-Link%20IE%20Control&search=B&word=CC-Link%20IE%20Control",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=CC-Link%20IE%20Control&search=B&word=CC-Link%20IE%20Control",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=CC-Link%20IE%20Field"
+      },
+      {
+        "group": "LP3-1",
+        "name": "CC-Link IE Field Basic",
+        "feature": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/concept/",
+        "spec": "/fa/products/faspec/search.page?kisyu=%2Fplcnet&radio=CC-Link%20IE%20Field%20Basic&search=B&word=CC-Link%20IE%20Field%20Basic",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcnet&radio=CC-Link%20IE%20Field%20Basic&search=B&word=CC-Link%20IE%20Field%20Basic",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcnet&category=discon&bunrui1=CC-Link%20IE%20Field%20Basic"
+      },
+      {
+        "group": "Standard",
+        "name": "Ship class standards",
+        "feature": "/fa/products/cnt/plcnet/ex/stand/index.html",
+        "return":{
+          "name": "Return to standard compatibility list",
+          "path": "/fa/products/standard/SearchServlet.page?kisyu=/plcnet"
+        }
+      },
+      {
+        "group": "Standard",
+        "name": "Various certification systems",
+        "feature": "/fa/products/standard.html#anc_05"
+      },
+      {
+        "group": "Standard",
+        "name": "Amendment China RoHS Support",
+        "feature": "/fa/document/technews/plc/fa-a-0211/faa0211.pdf"
+      }
+    ]
+  }
+}

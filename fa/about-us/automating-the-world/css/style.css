@@ -1,0 +1,116 @@
+.c-mainVisual::after{content:none}
+.c-caseStudiyMainVisual__img {
+    width: 40%;
+    margin-left: auto;
+}
+.c-caseStudiyMainVisual__img img {
+    width: 100%;
+}
+.automating-the-world {
+    margin: 60px 0 45px 0;
+}
+.automating-the-world__text {
+    text-align: center;
+    font-size: 285.714%;
+    font-weight: bold;
+}
+.automating-the-world-greeting {
+    position: relative;
+    background-color: #f2f2f2;
+    margin-top: 60px;
+    padding: 60px 0;
+}
+.greeting__name {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.greeting__text-bold {
+    /* margin-top: 20px; */
+    width: 225px;
+    display: inline-block;
+}
+.greeting__text-bold img {
+    max-width: 100%;
+}
+.greeting__text-name {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 1.25rem;
+}
+.automating-the-world__apostrophe {
+    position: relative;
+}
+.automating-the-world__apostrophe::before {
+    position: absolute;
+    content: "";
+    width: 1em;
+    height: 1em;
+    background-image: url(/fa/about-us/automating-the-world/img/apostrophe.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -25%;
+    left: -5%;
+    transform: translateX(-135%);
+}
+.automating-the-world__apostrophe.miror::before {
+    transform: scale(-1) translateY(-115%) translateX(-44%);
+}
+.c-catchText {
+    font-size: 28px;
+    line-height: 1.8;
+}
+.c-headingLv2 {
+    margin-top: 90px;
+}
+
+/* 動画のタイトルを省略しない */
+.c-card--movie .c-card__title {
+    overflow: unset;
+    -webkit-line-clamp: unset;
+}
+
+@media only screen and (max-width:767px){
+.c-mainVisual__background > img {
+    object-position: bottom center;
+}
+.c-caseStudiyMainVisual__img {
+    margin-top: 45px;
+    width: 51%;
+}
+.c-catchText {
+    font-size: 21px;
+    margin-top: 20px;
+}
+.automating-the-world-greeting {
+    padding: 52px 0 65px;
+}
+.automating-the-world {
+    margin: 30px auto 20px auto;
+}
+.automating-the-world__text {
+    font-size: 128.5715%;
+    letter-spacing: -0.02em;
+    line-height: 1.72222222;
+    padding-left: .5em;
+}
+.automating-the-world__apostrophe::before {
+    transform: translateX(-135%) translateX(-44%);
+}
+.automating-the-world__apostrophe.miror::before {
+    transform: scale(-1) translateY(-115%) translateX(-88%);
+}
+}
+
+@media only screen and (max-width:350px) {
+    .automating-the-world__text {
+        padding-left: .8em;
+    }
+    .automating-the-world__apostrophe::before {
+        transform: translateX(-88%) translateX(-44%);
+    }
+    .automating-the-world__apostrophe.miror::before {
+        transform: scale(-1) translateY(-115%) translateX(-55%);
+    }
+}

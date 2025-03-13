@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* PC・スマホ表示 */
+@media (min-width:768px) {
+  .pc_only {
+      display: block !important;
+  }
+  .sp_only {
+      display:none !important;
+  }
+}
+@media only screen and (max-width:767px) {
+  .pc_only {
+      display:none !important;
+  }
+  .sp_only {
+      display: block !important;
+  }
+}
+
+/* 共通項目 */
+.mrgn_top10 {
+	margin-top: 10px!important;
+}
+.mrgn_top15{
+	margin-top: 15px!important;
+}
+.mrgn_top20 {
+	margin-top: 20px!important;
+}
+.mrgn_top30 {
+	margin-top: 30px!important;
+}
+.mrgn_top40 {
+	margin-top: 40px!important;
+}
+.mrgn_btm20 {
+	margin-bottom: 20px!important;
+}
+.mrgn_btm35 {
+	margin-bottom: 35px!important;
+}
+
+/* メインビジュアル */
+.main_bg {
+	background: url("/fa/products/lvd/lvcb/pmerit/mcb/assets/img/main_bg.png") no-repeat center / 100% 100%;
+}
+.main_bgwrap {
+	overflow: hidden;
+}
+.pattern01 img{
+    opacity: 0;
+    transform: translateX(40px);
+    transition: .9s;
+}
+.pattern01.show img{
+    opacity: 1;
+    transform: translateX(0);
+}
+@media (max-width: 1400px) {
+.main_bg {
+	background: url("/fa/products/lvd/lvcb/pmerit/mcb/assets/img/main_bg.png") no-repeat center / auto 100%;
+}
+}
+
+/* チェックマークつきリスト */
+.acb_list_01 li {
+    padding-left: 32px;
+	line-height: 1.7em;
+	padding-bottom: 7px;
+	font-size: 16px;
+	background: url("/fa/products/lvd/lvcb/pmerit/mcb/assets/img/img_check.png") left 0px top 0px no-repeat;
+}
+

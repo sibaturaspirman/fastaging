@@ -1,0 +1,63 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html",
+			"child": [
+				{
+					"name": "Circuit Breakers for Distribution Panel and Control Panel",
+					"path": "/fa/products/lvd/lvcb/items/pbcb/index.html",
+					"child": [
+					{
+						"name": "FA/FAU/FHU Series",
+						"path": "/fa/products/lvd/lvcb/pmerit/pbcb/index.html"					
+					},
+					{
+						"name": "KC Series",
+						"path": "/fa/products/lvd/lvcb/pmerit/pbcb_kc/index.html"					
+					}
+				]
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "KC Series",
+    "path": "/fa/products/lvd/lvcb/pmerit/pbcb_kc/index.html",
+    "firstLayer": [
+      {
+        "name": "Features",
+        "path": "/fa/products/lvd/lvcb/pmerit/pbcb_kc/index.html"
+     }
+    ]
+  },
+"switchNav": {
+	"name": "Circuit Breakers for Distribution Panel and Control Panel",
+	"path": "/fa/products/lvd/lvcb/items/pbcb/index.html",
+	"child": [
+		{
+			"group": "Circuit Breakers for Distribution Panel and Control Panel",
+			"name": "KC Series",
+			"feature": "/fa/products/lvd/lvcb/pmerit/pbcb_kc/index.html",
+			"spec": "/fa/products/faspec/search.page?kisyu=/lvcb&current=PBCB_KC",
+			"standard": "/fa/products/standard/SearchServlet.page?kisyu=/lvcb&current=PBCB_KC",
+			"discon": "",
+            "return": {
+                "name": "Circuit Breakers for Distribution Panel and Control Panel",
+                "path": "/fa/products/lvd/lvcb/items/pbcb/index.html"
+			}
+		}
+	]
+}
+}
+  

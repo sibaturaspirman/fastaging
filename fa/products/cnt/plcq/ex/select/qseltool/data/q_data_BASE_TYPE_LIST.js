@@ -1,0 +1,1 @@
+{"01":"CPU, power supply, and base integrated type","02":"Standard type","03":"Multiple CPU high speed type","04":"Slim type","10":"Power supply module not required type","11":"Power supply module required type","20":"Redundant CPU type","21":"Redundant power type"}

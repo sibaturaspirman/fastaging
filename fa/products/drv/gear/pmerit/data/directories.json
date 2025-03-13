@@ -1,0 +1,20 @@
+{
+  "layerNav": {
+    "name": "Product Features",
+    "path": "/fa/products/drv/gear/pmerit/index.html",
+    "firstLayer": [
+      {
+        "name": "Overview",
+        "path": "/fa/products/drv/gear/pmerit/index.html"
+      },
+      {
+        "name": "Examples",
+        "path": "/fa/products/drv/gear/pmerit/cases.html"
+      },
+      {
+        "name": "S-PM series",
+        "path": "/fa/products/drv/gear/pmerit/spm.html"
+      }
+    ]
+  }
+}

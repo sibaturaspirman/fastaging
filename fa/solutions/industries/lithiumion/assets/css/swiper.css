@@ -1,0 +1,56 @@
+.c-carousel__footer {display: flex;align-items: center;justify-content: center;}
+.c-carousel{margin-top:30px}
+.c-carousel:first-child{margin-top:0}
+.c-carousel__body{position:relative;display:block;overflow:hidden;margin:0;padding:0}
+.c-carousel__main{position:relative;top:0;left:0}
+.c-carousel__main:after,.c-carousel__main:before{display:table;content:""}
+.c-carousel__main:after{clear:both}
+.c-carousel__item{float:left;height:100%;min-height:1px;margin-top:0;padding:0 7.5px}
+.c-carousel__caption{font-size:16px;line-height:1.5;display:-webkit-box;overflow:hidden;min-height:3em;padding:5px 0;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.c-carousel__footer{display:flex;align-items:center;flex-wrap:wrap;justify-content:center}
+.c-carousel__arrow{line-height:0;display:inline-block;padding:10px;cursor:pointer;vertical-align:middle}
+.c-carousel__arrow>a{font-size:0;display:block;width:28px;height:28px;padding:0;background-color:transparent;background-repeat:no-repeat;background-position:center;background-size:21px 21px}
+.c-carousel__arrow--prev>a{background-image:url(/fa/shared/common/img/icon/icon_chevron_left.svg)}
+.c-carousel__arrow--next>a{background-image:url(/fa/shared/common/img/icon/icon_chevron_right.svg)}
+.c-carousel__dots{display:inline-block;vertical-align:middle}
+.c-carousel__dot{font-size:0;line-height:0;display:inline-block;padding:10px;vertical-align:middle}
+.c-carousel__dot>a{line-height:0;position:relative;display:block;width:12px;height:12px;cursor:pointer;color:transparent;background:0 0}
+.c-carousel__dot>a:before{position:absolute;top:0;right:0;bottom:0;left:0;display:inline-block;width:12px;height:12px;margin:auto;content:"";border-radius:100%;background-color:#e0e0e0}
+.c-carousel__dot--active>a:before{background-color:#c62828}
+.c-carousel__pause{font-size:0;position:relative;width:28px;height:28px;padding:8px;vertical-align:middle}
+.c-carousel__pause:after,.c-carousel__pause:before{position:absolute;top:8px;bottom:8px;display:block;width:0;content:"";border-left:3px solid #000}
+.c-carousel__pause:before{left:9px}
+.c-carousel__pause:after{right:9px}
+.c-carousel__pause--active:before{position:static;top:auto;bottom:auto;width:0;height:0;border-width:6px 0 6px 12px;border-style:solid;border-color:transparent transparent transparent #000}
+.c-carousel__pause--active:after{display:none}
+.c-carousel__showAll{font-size:16px;line-height:1.5;padding:0 10px;border-left:1px #bdbdbd solid}
+.c-carousel[data-js-vi=fade] .c-carousel__item{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:auto;margin:auto}
+.c-carousel[data-js-vi=fade] .c-carousel__item.is-active{position:static;top:auto;right:auto;bottom:auto;left:auto;margin-top:0}
+.c-img{display:inline-block;width:100%;margin-top:30px}
+.c-img:first-child{margin-top:0}
+.c-img>img{width:100%;height:auto;vertical-align:bottom}
+.c-img:link:hover img{opacity:.85}
+.c-spotlightCarousel {margin-top: 60px;}
+.c-spotlightCarousel__img {overflow: hidden;border-radius: 20px 0 20px 0;}
+.c-spotlightCarousel .c-carousel__body{max-height:320px}
+.c-spotlightCarousel__control{font-size:1.5rem;position:relative;display:block;width:30px;height:100%;transition:opacity .2s;color:#616161}
+.c-spotlightCarousel__control::before{font-family:MelFaIcons,"Material Icons";display:block}
+.c-spotlightCarousel__control:hover{opacity:.85}
+.c-spotlightCarousel__control--prev{order:1}
+.c-spotlightCarousel__control--prev::before{content:"\e5cb"}
+.c-spotlightCarousel__control--next{order:3}
+.c-spotlightCarousel__control--next::before{content:"\e5cc"}
+.c-spotlightCarousel__link{display:block}
+.c-spotlightCarousel__link:focus,.c-spotlightCarousel__link:hover{opacity:.85}
+.c-spotlightCarousel__link:focus .c-spotlightCarousel__img>img,.c-spotlightCarousel__link:hover .c-spotlightCarousel__img>img{-webkit-transform:scale(1.05);transform:scale(1.05)}
+.c-spotlightCarousel__img{overflow:hidden;border-radius:20px 0 20px 0}
+.c-spotlightCarousel__img>img{display:block;width:100%;height:auto;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s,-webkit-transform .4s}
+.c-spotlightCarousel .c-carousel__caption{max-width:480px}
+.c-snsWidget{display:flex;margin-top:15px;justify-content:center}
+
+@media screen and (max-width:767px){
+  .c-spotlightCarousel {margin-top: 40px;}
+.c-carousel__item {float: left;height: 100%;min-height: 1px;margin-top: 0;padding: 0 7.5px;}
+}
+
+

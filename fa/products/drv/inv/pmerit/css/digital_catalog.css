@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*３カラム、2カラム対応 モバイルで表示（780px以下で有効）*/
+#melfa_main_area *, *:before, *:after {
+	box-sizing: border-box;
+}
+#melfa_main_area .col_3, .col_2 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+#melfa_main_area .col_3 > div {
+	width: 33.33333%;
+	padding: 35px;
+}
+#melfa_main_area .col_2 > div {
+	width: 50%;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+#melfa_main_area .col_3 > div {
+		width: 50%;
+        padding: 30px;
+	}
+#melfa_main_area .col_2 > div {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+#melfa_main_area .col_3 > div {
+		width: 100%;
+        padding: 25px;
+	}
+#melfa_main_area .col_2 > div {
+		width: 100%;
+	}
+}
+
+#melfa_main_area .thumb_waku {
+    height: auto;
+}
+
+#melfa_main_area .thumb_waku img {
+    max-width: 100%;
+    height: auto;
+}
+.mouse_ov a:hover img {
+	opacity:0.7;
+	}
+
+/*リンクボタン*/
+.bn_linkbtn a {
+    width: 140px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0.5em;
+    text-decoration: none;
+    background-image: linear-gradient(#f8f8f8 0%, #f0f0f0 39%, #e0e0e0 40%, #d8d8d8);
+    border-radius:5px;
+    border: 1px solid #b0b0b0;
+    transition: .2s;
+}
+.bn_linkbtn a:hover {
+  background-image: linear-gradient(#e8e8e8 0%, #e0e0e0 39%, #d0d0d0 40%, #c8c8c8);
+  color: #00246F;
+  text-decoration: none !important;
+}
+@media only screen and (max-width: 768px) {
+    .bn_linkbtn a {width: 100%; margin-bottom: 20px}
+    .bn_linkbtn img {position: absolute; padding-top: 0.25em}
+}
+
+#melfa_main_area .mt20 {margin-top: 20px !important}
+#melfa_main_area .mb0 {margin-bottom: 0px}

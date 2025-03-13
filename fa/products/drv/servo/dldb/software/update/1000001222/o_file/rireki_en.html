@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Improvement history list MR-J5-JET Firmware | MITSUBISHI ELECTRIC Factory Automation</title>
+<meta name="keywords" content="MITSUBISHI ELECTRIC,FA,Factory Automation">
+<meta name="description" content="[[description]]">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
+<link rel="apple-touch-icon-precomposed" href="https://www.mitsubishielectric.com/m/common/img/apple-touch-icon-precomposed.png">
+
+<!-- facebook用メタ情報 -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mitsubishielectric.com/fa/products/popup/index.html">
+<meta property="og:title" content="Products | MITSUBISHI ELECTRIC Factory Automation">
+<meta property="og:description" content="[[description]]">
+<meta property="og:image" content="https://www.mitsubishielectric.com/fa/shared/img/ogp/thumb_01.jpg">
+<!-- /facebook用メタ情報 -->
+
+<!-- Mel styles gws0001 -->
+<link rel="stylesheet" href="/fa/shared/gws0001/default/libs/normalize.css/7.0.0/normalize.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/default/css/layouts.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/css/style.css">
+
+<link rel="stylesheet" href="/fa/products/assets/css/category.css">
+<link href="/fa/shared/css/import.css" rel="stylesheet" type="text/css">
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/default/libs/jquery/jquery-3.6.0.min.js"></script>
+<script>
+  window.jQuery3_6 = jQuery.noConflict();
+</script>
+<script src="/fa/shared/gws0001/default/js/libs.js"></script>
+<script src="/fa/shared/gws0001/js/functions.js"></script>
+<script src="/common/js/head_include.js"></script>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">N3HU2D7NJHRF-701168799-892</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">60b41d9c-620a-4d1b-b713-b5bb7f359992</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://mitsubishielectricgroup.sharepoint.com/sites/005139/_layouts/15/DocIdRedir.aspx?ID=N3HU2D7NJHRF-701168799-892, N3HU2D7NJHRF-701168799-892</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body class="l-popup">
+<noscript><div class="noscript"><p class="noscript__msg">Please enable JavaScript before using this site.</p></div></noscript>
+<header class="gs18-Header gs18-Header--simple gs18-Header--MinInteraction" role="banner" data-js-gs18-header>
+<!-- /.gs18-Header --></header>
+
+<main class="container-fluid">
+<div class="c-mainVisual c-mainVisual--popup">
+<div class="c-mainVisual__main">
+<div class="c-mainVisual__fa"><img src="/fa/shared/gws0001/img/fa_logo.svg" alt="Factory Automation" width="315" height="35"></div>
+</div>
+</div><!-- /.c-mainVisual -->
+
+<div class="l-inner--medium">
+
+<div id="melfa_contents_1col">
+<div id="melfa_pop_area" style="width:760px;">
+<div id="melfa_sec_system_base">
+
+
+
+<!-- Main Contents Area START -->
+<div id="melfa_main_area">
+<h1>Download</h1>
+
+<!-- Main Contents Text Area START -->
+<div class="line">
+<h2><span>Improvement history list</span></h2>
+
+<h3 class="melfa_mt30">Improvement history of firmware version E9 (December, 2024)</h3>
+<p></p>
+<p>There are no major improvements.</p>  
+
+
+<p>
+  <h3 class="melfa_mt30">Improvement history of firmware version E8 (December, 2024)</h3>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Description</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+        <td>Improved the detection accuracy by changing the detection threshold of Output open-phase error (AL. 139.2) for servo amplifiers with a capacity of 2 kW or more.</td>
+      </tr>
+        <td align="center">2</td>
+        <td>Fixed a problem in which the end code would be invalid when "0" was specified in "Number of data value" in ObjectSubIDWriteBlock of the SLMP command.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="melfa_mt30">Improvement history of firmware version E4 (April, 2024)</h3>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Description</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+        <td>Fixed the following problem: when turning off the power of the servo amplifier immediately after writing parameters or performing initialization by MR Mode Change, the USB connection failed after turning the power on again and Memory error 1 (RAM) (AL. 012) may have occurred.</td>
+      </tr>
+        <td align="center">2</td>
+        <td>Made improvements so that regeneration operation is performed during the motor-less operation.</td>
+      </tr>
+        <td align="center">3</td>
+        <td>Changed the detection threshold of Overload warning 2 (AL. 0EC) to enhance the detection accuracy.</td>
+      </tr>
+        <td align="center">4</td>
+        <td>Fixed a problem in which incorrect values may have been saved in the alarm history after the initialization by MR Mode Change.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="melfa_mt30">Improvement history of firmware version E0 (January, 2024)</h3>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Description</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+        <td>Made improvements so that the overshoot amount is minimized when [Pr.PB02.0_Vibration suppression control 1 - Tuning mode selection] is enabled in the speed control mode.</td>
+      </tr>
+        <td align="center">2</td>
+        <td>Fixed a problem in which SON LED for servo status display would remain on even after the servo status transitions from servo on to servo off by disconnecting the network.</td>
+      </tr>
+        <td align="center">3</td>
+        <td>Fixed a problem in which cycling the power would be required to restart the operation when power voltage was dropped during writing to a non-volatile memory.</td>
+      </tr>
+        <td align="center">4</td>
+        <td>Improved the parameter automatic setting operation in CC-Link IE TSN when a master station (controller) is replaced.</td>
+      </tr>
+    </tbody>
+  </table>  
+
+  <h3 class="melfa_mt30">Improvement history of firmware version D8 (June, 2023)</h3>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Description</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+        <td>Fixed a problem in which the position within one-revolution may have been incorrect when multipoint Z-phase scale was used.</td>
+      </tr>
+        <td align="center">2</td>
+        <td>Fixed a problem in which the home position would be erased at the next power-on after the following operations: setting [Pr. PA03.1_Servo motor replacement preparation] to "1" (enabled) and saving all parameters by [Save all parameters (Obj.1010h:01h)] after cycling the power.</td>
+      </tr>
+        <td align="center">3</td>
+        <td>Fixed a problem in which the control response may have varied by 4 ms between servo amplifiers when the communication cycle of the servo amplifier was set to 8 ms.</td>
+      </tr>
+        <td align="center">4</td>
+        <td>Fixed a problem in which TPR1 to TPR3 (Touch probe 1 to Touch probe 3) may have been valid in servo amplifiers not supporting the touch probe function.</td>
+      </tr>
+        <td align="center">5</td>
+        <td>Fixed a problem in which the power needed to be cycled twice when [PA04.2 Servo forced stop selection] was set from "1" to "0" by the parameter automatic setting.</td>
+      </tr>
+        <td align="center">6</td>
+        <td>Improved the estimation accuracy in the high-frequency band of the machine analyzer function.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="melfa_mt30">Improvement history of firmware version D4 (November, 2022)</h3>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Description</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+        <td>Fixed a problem in which the setting of [Pr. PT49 Speed acceleration time constant] and [Pr. PT50 Speed deceleration time constant] would not be reflected when "0" was set during acceleration or deceleration in the point table mode.</td>
+      </tr>
+        <td align="center">2</td>
+        <td>Fixed a problem in which the name and waveform would not be displayed when a specific measurement data was selected when the drive recorder data was read with the FTP server function.</td>
+      </tr>
+        <td align="center">3</td>
+        <td>Fixed a problem in which [Pr. PB17 Shaft resonance suppression filter] may have been disabled after the one-touch tuning was performed.</td>
+      </tr>
+        <td align="center">4</td>
+        <td>Improved the operation when switching the semi closed loop control/fully closed loop control.</td>
+      </tr>
+        <td align="center">5</td>
+        <td>Improved the parameter automatic setting after the initialization using MR Mode Change with CC-Link IE TSN.</td>
+      </tr>
+        <td align="center">6</td>
+        <td>Fixed a problem in which the data may have been linked in a ring network topology with CC-Link IE TSN.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="melfa_mt30">Improvement history of firmware version D1 (September, 2022)</h3>
+  <p></p>
+  <p>There are no major improvements.</p>  
+
+  <h3 class="melfa_mt30">Improvement history of firmware version D0 (May, 2022)</h3>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Description</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+        <td>Fixed a problem in which Stroke limit warning (AL. 099) may have occurred when the servo motor returned at the stroke end in the homing mode.</td>
+      </tr>
+        <td align="center">2</td>
+        <td>Fixed a problem in which Servo motor combination error 3 (AL. 01A.5) may have occurred when the fully closed loop system and the absolute position detection system were set by the automatic parameter setting.</td>
+      </tr>
+        <td align="center">3</td>
+        <td>Fixed a problem in which the setting of [Pr. PT49 Speed acceleration time constant] and [Pr. PT50 Speed deceleration time constant] may not have been reflected in the JOG operation mode.</td>
+      </tr>
+        <td align="center">4</td>
+        <td>Fixed a problem in which Network communication error 2 (AL. 086.2) may have been unexpectedly detected with CC-Link IE TSN.</td>
+      </tr>
+        <td align="center">5</td>
+        <td>Fixed a problem in which the value would be incorrect when Receive PDO Mapping (1600h to) and Transmit PDO Mapping (1A00h to) of PDO Mapping Objects were read with CC-Link IE TSN and CC-Link IE Field Network Basic.</td>
+      </tr>
+        <td align="center">6</td>
+        <td>Fixed a problem in which the setting of [Pr. PB46 Machine resonance suppression filter 3] and [Pr. PB23.3 Shaft resonance suppression filter 2 selection] may not have been saved after the one-touch tuning was performed.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="melfa_mt30">Improvement history of firmware version C5 (December, 2021)</h3>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Description</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+        <td>Fixed a problem in which the servo amplifier may have been switched to servo-on by a specific operation after either the following operations was performed with the CC-Link IE Field Network Basic: RY (n + 3) F of the master station (controller) was set to "0" (cyclic ready command was turned off) in a servo-on state, or the network was disconnected in a servo-on state.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="melfa_mt30">Improvement history of firmware version C4 (December, 2021)</h3>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Description</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+        <td>Improved the temperature judgment value for detecting Main circuit device overheat alarm (AL. 045) and Servo amplifier overheat warning (AL. 091) to a higher value than before.</td>
+      </tr>
+        <td align="center">2</td>
+        <td>Fixed a problem in which the upper and lower thresholds of the friction estimation value may not have been shown correctly in the machine diagnosis window of MR Configurator2.</td>
+      </tr>
+        <td align="center">3</td>
+        <td>Fixed the monitor data refresh cycle of the load to motor inertia ratio, peak load ratio, convertor effective load ratio, and converter regenerative load ratio.</td>
+      </tr>
+        <td align="center">4</td>
+        <td>Fixed a problem in which an incorrect firmware version may have been stored when the recorded data of the drive recorder is read with the FTP server function.</td>
+      </tr>
+        <td align="center">5</td>
+        <td>Fixed a problem in which the object size read by the object of "1st Transmit PDO Mapping (1A00h)" did not match with the actual size when CC-Link IE Field network Basic was used.</td>
+      </tr>
+    </tbody>
+  </table>
+
+<h3 class="melfa_mt30">Improvement history of firmware version C0 (June, 2021)</h3>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Description</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Changed the setting range of [Pr. PB26.0 Gain switching selection] to "0h to 5h".</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Fixed a problem in which the data before the trigger may not have been recorded in the waveform data of the drive recorder when sampling was executed for a long time using the graph function.</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td>Fixed a problem in which the homing would not be completed by the limit switch (FLS/RLS) from the controller when Method 1 and Method 2 in the homing method of CiA402 were executed.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of firmware version B9 (February, 2021)</h3>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Description</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which the positioning to the target position may not have been performed accurately when a positioning operation was performed in the profile position mode or the point table mode with "1" set for [Pr. PA03.0_Absolute position detection system selection].</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of firmware version B8 (January, 2021)</h3>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Description</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which the PDS state would not transit to Fault Reaction Active when a certain alarm occurred.</td>
+    </tr>
+    <tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of firmware version B6 (November, 2020)</h3>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Description</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which a part of the graph signal would not be output correctly when the drive recorder data was read with the FTP server function.</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Fixed a problem in which the negative value of the analog graph signal would not be displayed correctly on GX LogViewer when the drive recorder data was read with the FTP server function.</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td>Fixed a problem in which an analog waveform different from the analog waveform described in the manual would be saved when Excessive error alarm (AL. 052) was set in [Pr. PA23_Drive recorder desired alarm trigger setting].</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td>Fixed a problem in which the communication of CC-Link IE TSN may have been unstable when Encoder normal communication error 2 (AL. 021) was detected.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of firmware version B2 (July, 2020)</h3>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Description</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which user authentication parameters would be changed with parameter automatic setting when [Pr. NPB01 User authentication and authorization setting] was set to "1".</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Fixed a problem in which the connection may have been disabled when a firmware was updated again without cycling the power supply.</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td>Fixed a problem in which the disconnection process would rarely not work and reconnection would be disabled when the communication was disconnected during the initial communication of CC-Link IE TSN network.</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td>Fixed a problem in which an undefined AL. 037.0 may have been displayed when a combination of parameters that cannot be set was set.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of firmware version B0 (July, 2020)</h3>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Description</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which USB connection would rarely be lost when the drive recorder was read while MR Configurator2 was connected via USB.</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Fixed a problem in which the motor may not have restarted when controller reset was performed during the profile position mode or the homing mode.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!--/line--></div>
+
+<!-- Main Contents Text Area END -->
+
+
+<!--/melfa_main_area--></div>
+<!-- Main Contents Area END -->
+
+</div><!-- /.l-inner -->
+</main>
+
+<footer class="gs18-Footer gs18-Footer--simple" role="contentinfo" data-js-gs18-footer>
+<!-- /.gs18-Footer --></footer>
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/js/init.js"></script>
+
+<script src="/fa/products/assets/js/category.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@charset "utf-8";
+/*レスポンシブ化移行用追加------------------------------------------------------------------------------------------------------------------*/
+
+/*３カラム、2カラム対応 モバイルで表示（780px以下で有効）*/
+#melfa_main_area *, *:before, *:after {
+	box-sizing: border-box;
+}
+#melfa_main_area .col_3, .col_2 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+#melfa_main_area .col_3 > div {
+	width: 33.33333%;
+	padding: 10px;
+}
+#melfa_main_area .col_2 > div {
+	width: 50%;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 732px) {
+#melfa_main_area .col_3 > div {
+		width: 100%;
+	}
+#melfa_main_area .col_2 > div {
+		width: 100%;
+	}
+}
+#melfa_main_area .docLinkDate {
+text-align:left !important;
+}
+
+@media only screen and (max-width: 780px) {
+    #melfa_main_area h4 {
+	    font-size: 95%;
+	    font-weight: bold;
+	    margin-bottom: 0.5rem;
+	    padding-bottom: 0.25rem;
+	    border-bottom: 1px solid #333;
+	    margin-top: 1rem;
+        }
+    }
+
+/*モバイルで表示767px以下で有効）*/
+@media only screen and (max-width: 767px) {
+    #melfa_main_area .sp_prev  {flex-wrap: wrap}
+    #melfa_main_area .sp_prev .col1 {width: 100%}
+    #melfa_main_area .sp_prev .mt_mb05 {margin-top: 0.25em; margin-bottom: 1em}
+    #melfa_main_area .pc_prev {display: none}
+    #melfa_main_area .sp_indention {display: inline} /*SP改行あり*/
+}
+
+/*PCで表示（768px以上で有効）*/
+@media only screen and (min-width:768px) {
+    #melfa_main_area .sp_prev {
+    display: none;
+    }
+    #melfa_main_area .sp_indention {display: none}/*PC改行無し*/
+}
+
+#melfa_main_area .sp_mb0 {margin-bottom: 0}
+#melfa_main_area .sp_mb05 {margin-bottom: 0.5em}
+#melfa_main_area .sp_mb1 {margin-bottom: 1em}
+#melfa_main_area .sp_mb2 {margin-bottom: 2em}
+#melfa_main_area .sp_mt0 {margin-top: 0}
+#melfa_main_area .sp_mt1 {margin-top: 1em}
+#melfa_main_area .sp_mt15 {margin-top: 1.5em}
+#melfa_main_area .sp_pl05 {padding-left: 0.5em}
+#melfa_main_area .sp_pl1 {padding-left: 1em}
+#melfa_main_area .sp_pl15 {padding-left: 1.5em}
+#melfa_main_area .sp_pl2 {padding-left: 2em}
+#melfa_main_area .sp_pl_lr {padding-left: 0.5em; padding-right: 0.5em}
+#melfa_main_area .sp_pb1 {padding-bottom: 1em}
+#melfa_main_area .sp_note {text-indent: -0.75em; margin-left: 1em}
+#melfa_main_area .pl_block {display: block; padding-left: 1.3em}
+
+#melfa_main_area .no_breaks {display: inline-block}
+
+/*注釈設定（ナンバリング自動）*/
+#melfa_main_area .list_indent {
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+    counter-increment: num;
+    margin-bottom: 0em !important;
+    font-size: 80%;
+    }
+
+/*注釈設定---モバイルで表示768px以下で有効）*/
+@media only screen and (max-width: 768px) {
+    #melfa_main_area .list_indent { text-indent: -1.5em}
+    #melfa_main_area .list_indent::before {
+        content: '*'counter(num)'.';
+        display: inline-block;
+        width: 1.5em;
+        text-indent: 0;
+    }
+}
+/*注釈設定---PCで表示（768px以上で有効）*/
+@media only screen and (min-width:769px) {
+   #melfa_main_area .list_indent { text-indent: -1.5em; margin-left: 1.75em}
+    #melfa_main_area .list_indent::before {
+        content: '*'counter(num)'.';
+        display: inline-block;
+        width: 1.5em;
+        text-indent: 0;
+    }
+}
+
+/*注釈設定（テキスト入力のナンバリング）*/
+#melfa_main_area .list_indent_no {
+    text-indent: -1.5em;
+    margin-left: 1.75em;
+    counter-increment: num;
+    margin-bottom: 0em !important;
+    font-size: 90%;
+}
+    /*モバイルで表示*/
+#melfa_main_area .list_indent_nonum {
+    text-indent: -1.5em;
+    margin-left: 1.75em;
+    counter-increment: num;
+    margin-bottom: 0em !important;
+	font-size: 90%;
+}
+    /*モバイルで表示*/
+@media only screen and (max-width: 768px) {
+    #melfa_main_area .list_indent {
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+    font-size: 90%;
+    }
+   #melfa_main_area .list_indent_no {
+   	text-indent: -1.5em;
+    margin-left: 1.5em;
+    font-size: 90%;
+   }
+   #melfa_main_area .list_indent_nonum {
+   	text-indent: -1em;
+    margin-left: 1em;
+    font-size: 90%;
+   }
+}
+
+#melfa_main_area .icon_img {
+    padding-left:0.2em; 
+    padding-bottom:0.1em;
+}
+    /*モバイルで表示*/
+@media only screen and (max-width: 780px) {
+    #melfa_main_area .icon_img {
+    padding-left:0.2em; 
+    margin-bottom: -0.3em;
+    }
+    #melfa_main_area .font100 {font-size: 100%}
+}
+#melfa_main_area .box_waku {
+padding:0.5em;
+border:1px solid #333;
+}
+
+#melfa_main_area .fa-heading_lv2 {margin-bottom: 0.5em !important}
+
+#melfa_main_area .txt085 {font-size:0.85rem}
+#melfa_main_area .txt1 {font-size:1rem}
+#melfa_main_area .txt125 {font-size:1.25rem}
+#melfa_main_area .txt15 {font-size:1.5rem}
+#melfa_main_area .txt175 {font-size:1.75rem}
+#melfa_main_area .txt2 {font-size:2rem}
+
+#melfa_main_area .fa-heading_table_body th, #melfa_main_area .fa-heading_table_body th {vertical-align: middle}
+#melfa_main_area .fa-heading_table_body td {vertical-align: middle; text-align: left}

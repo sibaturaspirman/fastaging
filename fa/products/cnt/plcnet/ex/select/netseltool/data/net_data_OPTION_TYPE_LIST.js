@@ -1,0 +1,1 @@
+{"CCIE-C":{"01":"Optical fiber cable","02":"Twisted-pair cable","06":"Inline coupler"},"CCIE-F":{"02":"Twisted-pair cable","06":"Inline coupler"},"CCIE-FB":{"02":"Twisted-pair cable"},"CCIE-TSN":{"02":"Twisted-pair cable","06":"Inline coupler"},"CCL":{}}

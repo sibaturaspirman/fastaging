@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 43 43" enable-background="new 0 0 43 43" xml:space="preserve">
+<g id="ガイド" display="none">
+</g>
+<g id="レイヤー_2">
+	<g>
+		<g>
+			
+				<image overflow="visible" opacity="0.4" width="44" height="44" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAb9JREFUeNrsmc1Kw0AUhSexbWoX
+tRsVrAuFvoD2GXx1F8W1FAUX4r9QtAia2jaeq+fiGKe4y7RyBz4GkkW/nNxM4d7E/V5JaY+1itIe
+lEpBHWTck4iy7yDnPg8Jr4F1sAm6YAPUIkiL7BQ8gWvwCF5VuuYlK7K74AD0Kd2MlPAbuAIDcAJu
+wEQeRhOsM1mRPQKHYIvXY6wJJcXtFoxYGoUmnDHRPmX3QYvJx1gzyu6BbXAOXpxXo3XWbJfJtrxy
+ibVafOs7oAOepY5T7+PzT4c0smxCF0m3xxAbLiAW++x1pQDblG7rMZu65V0q3fD/E5ZZOPjWV0HY
+mbAJm7AJm7AJm7AJm7AJm7AJm7AJm/B/ES5WRVi78BPuRUi4WDLZMbjn/qM/7M8U5IlmvJ64OCMD
++X3pB1+CIbij22cPWGWl/ypteu18S3+26uGMuqjsKThzXx34qZ+w2MsAZOC+O9/STPZbnVUsLQOV
+PQYXfIC585LToYxIymBGGsjSje9ROqtIOGfNDpmsyD44b4qUlE4MSbJJOhRvu2rGXzruGrNmR0x2
+4ZzO/8iCzeQKazin/Nz9MQkN3YtxSiw8Yj8EGAD4mWuUkJHQfAAAAABJRU5ErkJggg==">
+			</image>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="21.5" y1="3" x2="21.5" y2="40">
+				<stop  offset="0" style="stop-color:#888888"/>
+				<stop  offset="1" style="stop-color:#59595A"/>
+			</linearGradient>
+			<path fill="url(#SVGID_1_)" d="M35.2000008,40H7.8000002C5.1599998,40,3,37.8400002,3,35.2000008V7.8000002
+				C3,5.1599998,5.1599998,3,7.8000002,3h27.4000015C37.8400002,3,40,5.1599998,40,7.8000002v27.4000015
+				C40,37.8400002,37.8400002,40,35.2000008,40z"/>
+		</g>
+		<path fill="none" stroke="#4F4F4F" stroke-width="0.474359" stroke-miterlimit="10" d="M35.2000008,40H7.8000002
+			C5.1599998,40,3,37.8400002,3,35.2000008V7.8000002C3,5.1599998,5.1599998,3,7.8000002,3h27.4000015
+			C37.8400002,3,40,5.1599998,40,7.8000002v27.4000015C40,37.8400002,37.8400002,40,35.2000008,40z"/>
+	</g>
+</g>
+<g id="レイヤー_3">
+	<path fill="#888888" d="M34,22H9c-2.75,0-5-2.25-5-5V9c0-2.75,2.25-5,5-5h25c2.75,0,5,2.25,5,5v8C39,19.75,36.75,22,34,22z"/>
+</g>
+<g id="レイヤー_2のコピー" display="none" opacity="0.2">
+	<path display="inline" fill="#FFFFFF" d="M35.25,40.25H7.75c-2.75,0-5-2.25-5-5V7.75c0-2.75,2.25-5,5-5h27.5c2.75,0,5,2.25,5,5
+		v27.5C40.25,38,38,40.25,35.25,40.25z"/>
+</g>
+</svg>

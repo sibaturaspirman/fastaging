@@ -1,0 +1,40 @@
+{
+	"layerNav": {
+		"name": "Process Control/Redundant",
+		"path": "/fa/solutions/competencies/process/index.html",
+		"firstLayer": [
+			{
+				"name": "Concept",
+				"path": "/fa/solutions/competencies/process/index.html"
+			},
+			{
+				"name": "Lineup",
+				"path": "/fa/solutions/competencies/process/lineup/index.html"
+			},
+			{
+				"name": "Supported products",
+				"path": "/fa/solutions/competencies/process/features/index.html"
+			},
+			{
+				"name": "Monitoring solution",
+				"path": "/fa/solutions/competencies/process/monitoring/index.html"
+			},
+			{
+				"name": "Engineering",
+				"path": "/fa/solutions/competencies/process/development/index.html"
+			},
+			{
+				"name": "Partner products",
+				"path": "/fa/solutions/competencies/process/partners/index.html"
+			},
+			{
+				"name": "Application examples",
+				"path": "/fa/solutions/competencies/process/application/index.html"
+			},
+			{
+				"name": "Support/Download",
+				"path": "/fa/solutions/competencies/process/support/index.html"
+			}
+		]
+	}
+}

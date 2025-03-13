@@ -1,0 +1,205 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Programmable<br>Controllers<br>MELSEC",
+            "path": "/fa/products/cnt/plc/index.html",
+            "child": [
+              {
+                "name": "MELSEC iQ-R Series",
+                "path": "/fa/products/cnt/plcr/items/index.html"
+              },
+              {
+                "name": "MELSEC iQ-F Series",
+                "path": "/fa/products/cnt/plcf/items/index.html"
+              },
+              {
+                "name": "MELSEC-Q Series",
+                "path": "/fa/products/cnt/plcq/items/index.html"
+              },
+              {
+                "name": "MELSEC-L Series",
+                "path": "/fa/products/cnt/plcl/items/index.html"
+              },
+              {
+                "name": "MELSEC-F Series",
+                "path": "/fa/products/cnt/plc_fx/items/index.html"
+              },
+              {
+                "name": "MELSEC-QS/WS Series",
+                "path": "/fa/products/cnt/plcqsws/items/index.html"
+              },
+              {
+                "name": "MELSEC-A Series",
+                "path": "/fa/products/cnt/plca/pmerit/concept/index.html"
+              },
+              {
+                "name": "Network-related products",
+                "path": "/fa/products/cnt/plcnet/items/index.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "switchNav": {
+    "name": "MELSEC iQ-R Series",
+    "path": "/fa/products/cnt/plcr/items/index.html",
+    "child": [
+      {
+        "group": "Standard",
+        "name": "Ship class standards",
+        "feature": "/fa/products/cnt/plcr/ex/stand/index.html",
+        "return":{
+          "name": "Return to standard compatibility list",
+          "path": "/fa/products/standard/SearchServlet.page?kisyu=/plcr"
+        }
+      },
+      {
+        "group": "Standard",
+        "name": "Various certification systems",
+        "feature": "/fa/products/standard.html#anc_05"
+      },
+      {
+        "group": "Standard",
+        "name": "Amendment China RoHS Support",
+        "feature": "/fa/document/technews/plc/fa-a-0211/faa0211.pdf"
+      },
+        {
+        "group": "LP3-1",
+        "name": "Concept",
+        "feature": "/fa/products/cnt/plcr/pmerit/concept/index.html",
+        "spec": "/fa/products/standard/SearchServlet.page?kisyu=/plcr",
+        "standard": "",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcr&category=discon"
+        },
+        {
+        "group": "LP3-1",
+        "name": "Solution",
+        "feature": "/fa/products/cnt/plcr/pmerit/solution/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+        },
+        {
+        "group": "LP3-1",
+        "name": "System Recorder",
+        "feature": "/fa/products/cnt/plcr/pmerit/sysrecorder/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+        },
+        {
+        "group": "LP3-1",
+        "name": "Basic system configuration",
+        "feature": "/fa/products/cnt/plcr/pmerit/sysconfig/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcr&radio=Base&search=B&word=Base",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcr&radio=Base&search=B&word=Base",
+        "discon": ""
+        },
+        {
+        "group": "LP3-1",
+        "name": "Lineup",
+        "feature": "/fa/products/cnt/plcr/pmerit/lup/index.html",
+        "spec": "/fa/products/standard/SearchServlet.page?kisyu=/plcr",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/plcr",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcr&category=discon"
+        },
+        {
+        "group": "LP3-1",
+        "name": "CPU",
+        "feature": "/fa/products/cnt/plcr/pmerit/cpu/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcr&radio=CPU&search=B&word=CPU",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcr&radio=CPU&search=B&word=CPU",
+        "discon": ""
+        },
+        {
+        "group": "LP3-1",
+        "name": "I/O",
+        "feature": "/fa/products/cnt/plcr/pmerit/io/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcr&radio=I/O&search=B&word=I/O",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcr&radio=I/O&search=B&word=I/O",
+        "discon": ""
+        },
+        {
+        "group": "LP3-1",
+        "name": "Analog",
+        "feature": "/fa/products/cnt/plcr/pmerit/analog/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcr&radio=Analog&search=B&word=Analog",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcr&radio=Analog&search=B&word=Analog",
+        "discon": ""
+        },
+        {
+        "group": "LP3-1",
+        "name": "Temperature input module, Temperature control module",
+        "feature": "/fa/products/cnt/plcr/pmerit/temp/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcr&radio=Analog&search=B&word=Analog",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcr&radio=Analog&search=B&word=Analog",
+        "discon": ""
+        },
+        {
+        "group": "LP3-1",
+        "name": "Motion, Positioning",
+        "feature": "/fa/products/cnt/plcr/pmerit/motion/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcr&radio=Motion/positioning&search=B&word=Motion/positioning",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcr&radio=Motion/positioning&search=B&word=Motion/positioning",
+        "discon": ""
+        },
+        {
+        "group": "LP3-1",
+        "name": "High-speed counter, Channel isolated pulse input, Flexible high-speed I/O control",
+        "feature": "/fa/products/cnt/plcr/pmerit/high-speed/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcr&radio=High-speed%20counter/pulse%20input/flexible%20I/O&search=B&word=High-speed%20counter/pulse%20input/flexible%20I/O",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcr&radio=High-speed%20counter/pulse%20input/flexible%20I/O&search=B&word=High-speed%20counter/pulse%20input/flexible%20I/O",
+        "discon": ""
+        },
+        {
+        "group": "LP3-1",
+        "name": "Network",
+        "feature": "/fa/products/cnt/plcr/pmerit/network/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcr&radio=Information/network&search=B&word=Information/network",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcr&radio=Information/network&search=B&word=Information/network",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcr&category=discon&bunrui1=Information/network"
+        },
+        {
+        "group": "LP3-1",
+        "name": "Advanced information",
+        "feature": "/fa/products/cnt/plcr/pmerit/it_connect/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcr&radio=Information/network&search=B&word=Information/network",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcr&radio=Information/network&search=B&word=Information/network",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcr&category=discon&bunrui1=Information/network"
+        },
+        {
+        "group": "LP3-1",
+        "name": "Energy measuring",
+        "feature": "/fa/products/cnt/plcr/pmerit/measuring/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcr&radio=Energy%20measuring&search=B&word=Energy%20measuring",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcr&radio=Energy%20measuring&search=B&word=Energy%20measuring",
+        "discon": ""
+        },
+        {
+        "group": "LP3-1",
+        "name": "Software",
+        "feature": "/fa/products/cnt/plcr/pmerit/software/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+        },
+        {
+        "group": "LP3-1",
+        "name": "Factory automation partner products",
+        "feature": "/fa/products/cnt/plcr/pmerit/partner/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+        }
+    ]
+  }
+}

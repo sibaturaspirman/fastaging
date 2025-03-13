@@ -1,0 +1,48 @@
+{
+	"layerNav": {
+		"name": "Network",
+		"path": "/fa/products/cnt/plcr/pmerit/network/index.html",
+		"firstLayer": [
+			{
+				"name": "Features",
+				"path": "/fa/products/cnt/plcr/pmerit/network/index.html"
+			},
+			{
+				"name": "CC-Link IE TSN",
+				"path": "/fa/products/cnt/plcr/pmerit/network/ie_tsn.html"
+			},
+			{
+				"name": "CC-Link IE Controller Network",
+				"path": "/fa/products/cnt/plcr/pmerit/network/ie_cont.html"
+			},
+			{
+				"name": "CC-Link IE Field Network",
+				"path": "/fa/products/cnt/plcr/pmerit/network/ie_field.html"
+			},
+			{
+				"name": "CC-Link",
+				"path": "/fa/products/cnt/plcr/pmerit/network/cclink.html"
+			},
+			{
+				"name": "AnyWireASLINK",
+				"path": "/fa/products/cnt/plcr/pmerit/network/aslink.html"
+			},
+			{
+				"name": "MELSECNET/H",
+				"path": "/fa/products/cnt/plcr/pmerit/network/melsecnet.html"
+			},
+			{
+				"name": "Ethernet",
+				"path": "/fa/products/cnt/plcr/pmerit/network/ethernet.html"
+			},
+			{
+				"name": "Serial communication",
+				"path": "/fa/products/cnt/plcr/pmerit/network/serial.html"
+			},
+			{
+				"name": "Other open networks",
+				"path": "/fa/products/cnt/plcr/pmerit/network/others.html"
+			}
+		]
+	}
+}

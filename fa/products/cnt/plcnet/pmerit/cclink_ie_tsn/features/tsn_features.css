@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+#melfa_main_area .tsn-tec {
+	float: right;
+	padding-top: 1px;
+    }
+#melfa_main_area .features_ico {
+	padding-left: 10px;
+	line-height: 22px;
+    margin-bottom: 10px;
+    }
+#melfa_main_area .features_ico img {
+	vertical-align: bottom;
+	display: inline-block;
+    }

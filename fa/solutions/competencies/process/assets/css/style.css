@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* 共通 */
+sup {
+	font-size: 75%;
+	vertical-align: baseline;
+	margin-right: 0.25em;
+}
+.tag, .c-anchorNav sup{ /* h2→自動生成アンカーナビ対策 */
+	display: none;
+}
+.ff-nsj {
+	font-family: "Noto Sans JP";
+}
+.txt_icon {
+	display: inline-block;
+	font-size: 85%;
+	font-weight: bold;
+	line-height: 1;
+	white-space: nowrap;
+	color: #FFF;
+}
+.func_icon .txt_icon.major {
+	background-color: #a36862;
+}
+.func_icon .txt_icon.expansion {
+	background-color: #c6aa00;
+}
+.sqrd {
+	position: relative;
+	padding-left: 24px;
+}
+.sqrd::before {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	content: "";
+	width: 18px;
+	height: 18px;
+	background-color: #000;
+}
+.c-headingLv4.sqrd {
+	padding-left: 22px;
+}
+.c-headingLv4.sqrd::before {
+	top: 8px;
+	width: 16px;
+	height: 16px;
+}
+.u-box.u-box_thin {
+	padding: 15px 25px;
+}
+.c-table__content thead th {
+	text-align: center;
+	vertical-align: middle;
+	background-color: #d9d9d9;
+}
+.c-table__content tbody th {
+	vertical-align: middle;
+	background-color: #f7f7f7;
+}
+.c-table__content tbody .mid_th {
+	background-color: #e8e8e8;
+}
+.c-table__content tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+.c-table__content.padless th,
+.c-table__content.padless td {
+	padding: 7.5px 10px;
+}
+.supcenter {
+	position: relative;
+}
+.supcenter sup {
+	position: absolute;
+	top: 0.5em;
+	right: -1.25em;
+}
+.supcenter.supcenter-wide sup {
+	right: -2em;
+}
+.longurl {
+	word-break: break-all;
+}
+
+/* Concept */
+.index-flex {
+	margin-top: 30px;
+}
+
+/* Lineup */
+#lineup-index-anchorNav li:first-child {
+	display: none;
+}
+
+/* Supported products > index */
+#features-index-table01 thead th:nth-child(1),
+#features-index-table02 thead th:nth-child(1) {
+	width: 34%;
+}
+#features-index-table01 tbody td,
+#features-index-table02 tbody td {
+	text-align: left;
+}
+#features-index-table03 thead th:nth-child(n+2),
+#features-index-table04 thead th:nth-child(n+2) {
+	width: 16.5%;
+}
+#features-index-table05 thead th:nth-child(1) {
+	width: 34%;
+}
+#list_image_box {
+	margin-bottom: 0;
+}
+.func_icon .func_unit {
+	display: inline-block;
+}
+.func_icon .txt_icon {
+	background-color: #245468;
+	margin-left: 0;
+}
+.func_icon .func_unit + .func_unit {
+	margin-left: 0.75em;
+}
+
+/* Supported products > Functional modules ideal for process control */
+#features-process-table01 thead tr:nth-child(1) th:nth-child(1),
+#features-process-table02 thead tr:nth-child(1) th:nth-child(1) {
+	width: 10%;
+}
+#features-process-table01 thead tr:nth-child(2) th,
+#features-process-table02 thead tr:nth-child(2) th {
+	width: 18%;
+}
+#features-process-table01 tbody th,
+#features-process-table02 tbody th {
+	text-align: right;
+}
+.prodnumber .u-icons {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+/* Supported products > Network module */
+#features-network_unit-table01 thead tr:nth-child(2) th:nth-child(n+3),
+#features-network_unit-table01 thead tr:nth-child(3) th:nth-child(1) {
+	width: 10%;
+}
+#features-network_unit-table01 thead tr:nth-child(3) th:nth-child(2),
+#features-network_unit-table01 thead tr:nth-child(3) th:nth-child(3) {
+	width: 5%;
+}
+#features-network_unit-table01 tbody th + td,
+#features-network_unit-table01 tbody td:nth-child(1) {
+	text-align: left;
+}
+
+/* Monitoring solution > index */
+#monitor-index-anchorNav li:first-child {
+	display: none;
+}
+
+/* Monitoring solution > Generation of GOT (HMI) screens */
+#monitor-got-table01 thead th:first-child, #monitor-got-table02 thead th:first-child {
+	width: 30%;
+}
+
+/* Partner products > index */
+.partners-index-table thead th:nth-child(-n+2) {
+	width: 23%;
+}
+.partners-index-table tbody td {
+	text-align: left;
+}
+
+/* Partner products > melsc */
+.partners-melsc-list {
+	font-weight: bold;
+}
+#partners-melsc-table01 thead th:nth-child(n+2) {
+	width: 11%;
+}
+#partners-melsc-table01 tbody tr:nth-child(9) td:nth-child(n+7) {
+	width: 7%;
+}
+#partners-melsc-list_note01 li {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+#partners-melsc-table02 thead th:nth-child(n+2),
+#partners-melsc-table03 thead tr:nth-child(2) th {
+	width: 32%;
+}
+#partners-melsc-table02 tbody tr:nth-child(2) th:nth-child(2),
+#partners-melsc-table03 tbody tr:nth-child(3) th:nth-child(2) {
+	width: 18%;
+}
+
+/* Support/Download */
+#support-index-table01 thead th:nth-child(1),
+#support-index-table01 thead th:nth-child(2) {
+	width: 16.5%;
+}
+#support-index-table01 thead th:nth-child(3),
+#support-index-table01 thead th:nth-child(4),
+#support-index-table01 thead th:nth-child(5) {
+	width: 17%;
+}
+#support-index-table01 thead th:nth-child(n+6) {
+	width: 8%;
+}
+
+@media only screen and (min-width:1101px){
+/*! over Large */
+}
+@media only screen and (max-width:1100px){
+/*! Large, Medium and Small */
+}
+@media only screen and (min-width:981px) and (max-width:1100px){
+/*! Large only */
+}
+@media only screen and (min-width:768px) and (max-width:1100px){
+/*! Large and Medium */
+}
+@media only screen and (min-width:981px){
+/*! over Medium */
+}
+@media only screen and (max-width:980px){
+/*! Medium and Small */
+}
+@media only screen and (min-width:768px) and (max-width:980px){
+/*! Medium only */
+}
+@media only screen and (min-width:768px){
+/*! over Small */
+	.txt_icon {
+		padding: 0.3em 0.75em 0.1em;
+	}
+	/* Concept */
+	.index-flex {
+		display: flex;
+	}
+	.index-flex .index-flex-icon {
+		width: 10%;
+		min-width: 120px;
+		flex-shrink: 0;
+		margin-right: 30px;
+	}
+	/* Supported products > Network module */
+	.func_icon .txt_icon.major {
+		padding: 0.3em 0.35em 0.1em;
+	}
+	.func_icon .txt_icon.expansion {
+		padding: 0.3em 0.45em 0.1em;
+	}
+	/* Partner products > Mitsubishi Electric System & Service */
+	.partners-melsc-list {
+		font-size: 1.25rem;
+	}
+}
+@media only screen and (max-width:767px){
+/*! Small only */
+	.txt_icon {
+		padding: 0.2em 0.75em 0.2em;
+	}
+	td .txt_icon {
+		padding: 0.2em 0.75em 0.2em;
+	}
+	.func_icon .txt_icon.major {
+		padding: 0.2em 0.35em 0.25em;
+	}
+	.func_icon .txt_icon.expansion {
+		padding: 0.2em 0.45em 0.25em;
+	}
+	/* Concept */
+	.index-flex .index-flex-icon {
+		float: left;
+		margin-right: 1em;
+		margin-bottom: 0.5em;
+		display: block;
+		width: auto;
+	}
+	.index-flex .index-flex-icon img {
+		width: 25vw;
+		height: auto;
+	}
+}
+
+.monitoring_note {max-width: 560px; padding: 0.5em 1em}

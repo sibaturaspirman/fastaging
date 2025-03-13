@@ -1,0 +1,288 @@
+@charset "utf-8";
+sup {
+	font-size: 70%;
+	vertical-align: baseline;
+	margin-right: 0.25em;
+}
+.c-headingLv2 sup,
+.c-headingLv3 sup {
+	font-size: 60%;
+}
+/* PC専用表示 */
+@media only screen and (max-width:600px){
+	.for_pc {
+		display: none;
+	}
+}
+/* 文字装飾 */
+.orange { color: #F90; }
+/* 改行不可(MELSEC- の後ろで改行させない等) */
+.ilbk {
+	display: inline-block;
+	text-indent: 0;
+}
+.c-note--order.c-note--order-2em {
+	padding-left: 2em;
+	text-indent: -2em;
+}
+.c-note--order.c-note--order-2em .c-note__num {
+	width: 2em;
+}
+.c-note--order.c-note--order-4em {
+	padding-left: 4em;
+	text-indent: -4em;
+}
+.c-note--order.c-note--order-4em .c-note__num {
+	width: 4em;
+}
+.c-note--nonum {
+	padding-left: 3em;
+	text-indent: -3em;
+}
+.c-note--nonum .c-note__num {
+	width: 3em;
+}
+.c-note--mark.c-note--asterisk {
+	padding-left: 0.5em;
+	text-indent: -0.5em;
+}
+.c-note--mark.c-note--asterisk::before {
+	width: 0.5em;
+	content: "*";
+}
+.u-box.u-box_thin {
+	padding: 15px 25px 12px;
+}
+.c-table__content thead th {
+	background-color: #d9d9d9;
+}
+.c-table__content tbody th {
+	background-color: #f7f7f7;
+}
+
+/* 生産終了機種 */
+.discon-table th, .discon-table td {
+	vertical-align: middle;
+}
+.discon-table th:not(.wrap), .discon-table td:not(.wrap) {
+	white-space: nowrap;
+}
+.discon-table .discon-table-center {
+	text-align: center;
+}
+.discon-table .circle-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -0.5em;
+	margin-right: -0.5em;
+}
+.discon-table .circle-list li {
+	padding-left: 1.5em;
+	padding-right: 0.5em;
+	text-indent: -1em;
+}
+.discon-table .circle-list li .circle {
+	display: inline-block;
+	width: 1em;
+	text-align: center;
+	text-indent: 0;
+}
+/* 置換え事例 */
+.transition-icons img {
+	display: inline-block;
+	vertical-align: baseline;
+	margin-left: 0.5em;
+	position:relative;
+	top: 0.05em;
+}
+
+/* 置換え事例 - 個別ページ */
+.preHead {
+	display: flex;
+	justify-content: space-between;
+}
+.preHead .leadTxt {
+	padding-right: 1em;
+}
+.preHead .backLink {
+	white-space: nowrap;
+	background: url("../../case/img/bg_linkback.gif") no-repeat;
+	background-position: top 8px left 0px;
+	padding-left: 15px;
+	align-self: flex-end;
+}
+.preHead + .c-headingLv2 {
+	margin-top: 5px;
+}
+.c-headingLv2 + .fa-use_icon {
+	margin-top: 10px;
+	text-align: right;
+}
+.fa-use_icon img {
+	margin-bottom: -2px;
+}
+.case-table th, .case-table td {
+	vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px){
+	.preHead {
+		flex-direction: column;
+	}
+}
+
+/* A0J2リニューアルツール */
+@media (max-width: 768px){
+	#A0J2renewal .column_item_part + .column_item_part {
+		padding-top: 20px;
+	}
+}
+@media (min-width: 769px){
+	#A0J2renewal_img {
+		align-self: center;
+	}
+	#A0J2renewal {
+		display: flex;
+		flex-direction: column;
+	}
+	#A0J2renewal .column_item_part {
+		flex-shrink: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#A0J2renewal .column_item_part:nth-child(1) {
+		flex-basis: 45%;
+	}
+	#A0J2renewal .column_item_part:nth-child(2) {
+		flex-basis: 25%;
+	}
+	#A0J2renewal .column_item_part:nth-child(3) {
+		flex-basis: 30%;
+	}
+}
+
+/* A/QnA→Q変換サポートツール */
+.support_icon {
+	margin-top: 60px;
+}
+.support_icon + .c-headingLv3 {
+	margin-top: 0px;
+}
+#map01 {
+	position: relative;
+}
+#map01 .btn {
+	position: absolute;
+	width: 16%;
+}
+#map01 .btn img {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+#map01 #btn01 {
+	left: 17.5%;
+	bottom: 2.5%;
+}
+#map01 #btn02 {
+	left: 63.5%;
+	bottom: 2.5%;
+}
+#support_tool04 .fa-odrblock {
+	display: flex;
+}
+#support_tool04 .num {
+	width: 2em;
+	flex-shrink: 0;
+}
+#support_tool04 dd {
+	margin-left: 2em;
+}
+#support_tool04 .fa-odrblock-ex {
+	padding-left: 4.5em;
+	text-indent: -4.5em;
+}
+.cap-2cols .c-subText {
+	margin-top: 10px;
+}
+
+@media (max-width: 768px){
+}
+
+@media (min-width: 769px){
+	.cap-2cols {
+		display: flex;
+		justify-content: space-between;
+	}
+	.cap-2cols .c-subText {
+		text-align: center;
+		width: 48.5%;
+		margin-top: 10px;
+		flex-shrink: 0;
+	}
+}
+
+/*------ ドキュメントリンク用 ------*/
+.catalog .thumb{
+	float: left;
+	margin-right: 20px;
+}
+.catalog .thumb img {
+	border: 1px solid #DCDCDC;
+}
+.thumb_resize .catalog .thumb img {
+	width: 148px;
+	height: auto;
+}
+.catalog .summary {
+	overflow: hidden;
+}
+.catalog .docLinkSiryo {
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+.catalog .docLinkDate {
+	font-size: 16px;
+	padding-bottom: 0.5em;
+}
+
+/* 置換えサポート機種一覧 */
+.c-headingLv3 + .fa-icon-spec {
+	margin-top: 10px;
+}
+.fa-icon-spec {
+	text-align: right;
+	line-height: 1;
+}
+.fa-icon-spec span {
+	display: inline-block;
+}
+.fa-icon-spec span img {
+	margin-left: 6px;
+}
+.mouse_ov a:hover img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.fa-icon-spec + .c-table {
+	margin-top: 10px;
+}
+
+.lup-table th, .lup-table td {
+	vertical-align: middle;
+}
+.lup-table .c-table__head th {
+	text-align: center;
+}
+
+/* 関連資料 */
+.renewal_doc_table .docLinkSiryo {
+	border: none;
+}
+/* 2025年2月 カタログ登録画像サイズ調整のため追加 by アイプラネット */
+.l-grid__item .thumb .docLinkImage img {
+	max-width: 147px;
+	height: auto;
+}

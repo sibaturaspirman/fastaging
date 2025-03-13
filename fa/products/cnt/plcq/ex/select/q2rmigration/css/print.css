@@ -1,0 +1,90 @@
+/* 英語-印刷用スタイル */
+
+h1 {
+	font-size: 16px;
+}
+
+.page-break {
+	page-break-after: always;
+}
+
+/* 購入リスト テーブル スタイル */
+th,td {
+	border-collapse: collapse !important;
+	border-top: 1px solid #000 !important;
+	border-left: 1px solid #000 !important;
+	color: #000 !important;
+	display: table-cell !important;
+}
+
+
+
+.PrintConfigList {
+	border: 1px solid #000 !important;
+	padding: 0px !important;
+	margin: 10px 0 0 0 !important;
+}
+
+.PrintConfigList .PrintConfigListBody {
+	height: 20px;
+}
+
+.PrintConfigList .PrintConfigListBody tr {
+	background-color: #fff !important;
+}
+
+.PrintConfigList .PrintConfigListHead th {
+	font-size: 9px;
+	text-align: center;
+	line-height: 1.1em;
+	color: #000 !important;
+	margin: 0px;
+	height: 100%;
+	padding: 5px;
+	background-color: #CCC !important;
+}
+
+.PrintConfigList .PrintConfigListBody td {
+	font-size: 9px;
+	text-align: center;
+	color: #000;
+	margin: 0px;
+	height: 100%;
+	padding: 5px;
+	appearance: none;
+	background-color: #FFF !important;
+}
+
+.PrintConfigList .col-0 {
+	width: 25px;
+}
+
+.PrintConfigList .col-1, .col-2, .col-3, .col-4, .col-5 {
+	width: 85px;
+}
+
+.PrintConfigList .col-6 {
+	width: 30px;
+}
+
+.PrintConfigList .col-7 {
+	width: 85px;
+}
+
+.PrintConfigList .col-8 {
+	width: 418px !important;/*160*/
+}
+
+.PrintConfigList .PrintConfigListBody .col-8 {
+	text-align: left !important;
+	white-space: normal !important;
+	word-wrap: break-word !important;
+	display: block !important;
+	height: 100% !important;
+	min-height: 30px !important;
+}
+
+.PrintConfigListBody tr.total td {
+	color: #000 !important;
+	background-color: #EEE !important;
+}

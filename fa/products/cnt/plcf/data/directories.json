@@ -1,0 +1,146 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Programmable<br>Controllers<br>MELSEC",
+            "path": "/fa/products/cnt/plc/index.html",
+            "child": [
+              {
+                "name": "MELSEC iQ-R Series",
+                "path": "/fa/products/cnt/plcr/items/index.html"
+              },
+              {
+                "name": "MELSEC iQ-F Series",
+                "path": "/fa/products/cnt/plcf/items/index.html"
+              },
+              {
+                "name": "MELSEC-Q Series",
+                "path": "/fa/products/cnt/plcq/items/index.html"
+              },
+              {
+                "name": "MELSEC-L Series",
+                "path": "/fa/products/cnt/plcl/items/index.html"
+              },
+              {
+                "name": "MELSEC-F Series",
+                "path": "/fa/products/cnt/plc_fx/items/index.html"
+              },
+              {
+                "name": "MELSEC-QS/WS Series",
+                "path": "/fa/products/cnt/plcqsws/items/index.html"
+              },
+              {
+                "name": "MELSEC-A Series",
+                "path": "/fa/products/cnt/plca/pmerit/concept/index.html"
+              },
+              {
+                "name": "Network-related products",
+                "path": "/fa/products/cnt/plcnet/items/index.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+	"switchNav": {
+		"name": "MELSEC iQ-F Series",
+		"path": "/fa/products/cnt/plcf/items/index.html",
+		"child": [
+			{
+				"group": "iQ-F",
+				"name": "MELSEC iQ-F series Product Feature",
+				"feature": "/fa/products/cnt/plcf/pmerit/concept/index.html",
+				"spec": "",
+				"standard": "",
+				"discon": ""
+			},
+			{
+				"group": "iQ-F",
+				"name": "CPU module",
+				"feature": "/fa/products/cnt/plcf/pmerit/cpu/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plcf&search=B&word=CPU%20Module",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plcf&radio=CPU%20Module&search=B&word=CPU%20Module",
+				"discon": ""
+			},
+			{
+				"group": "iQ-F",
+				"name": "I/O module",
+				"feature": "/fa/products/cnt/plcf/pmerit/io/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plcf&search=B&word=Input/Output%20Module",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plcf&radio=Input/Output%20Module&search=B&word=Input/Output%20Module",
+				"discon": ""
+			},
+			{
+				"group": "iQ-F",
+				"name": "Analog Control module",
+				"feature": "/fa/products/cnt/plcf/pmerit/analog/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plcf&search=B&word=Analog%20I/O%20Module",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plcf&radio=Analog%20I/O%20Module&search=B&word=Analog%20I/O%20Module",
+				"discon": ""
+			},
+			{
+				"group": "iQ-F",
+				"name": "High-Speed Counting module",
+				"feature": "/fa/products/cnt/plcf/pmerit/hc/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plcf&search=B&word=High-speed%20counter%20Module",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plcf&radio=High-speed%20counter%20Module&search=B&word=High-speed%20counter%20Module",
+				"discon": ""
+			},
+			{
+				"group": "iQ-F",
+				"name": "Motion/Positioning Control module",
+				"feature": "/fa/products/cnt/plcf/pmerit/positioning/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plcf&search=B&word=Motion/Positioning%20Module",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plcf&radio=Motion/Positioning%20Module&search=B&word=Motion/Positioning%20Module",
+				"discon": ""
+			},
+			{
+				"group": "iQ-F",
+				"name": "Network/Communication module",
+				"feature": "/fa/products/cnt/plcf/pmerit/communication/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plcf&search=B&word=Network/Communication%20Module",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plcf&radio=Network/Communication%20Module&search=B&word=Network/Communication%20Module",
+				"discon": ""
+			},
+			{
+				"group": "iQ-F",
+				"name": "Safety extension module",
+				"feature": "/fa/products/cnt/plcf/pmerit/safety/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plcf&search=B&word=Safety%20Extension%20Module",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plcf&radio=Safety%20Extension%20Module&search=B&word=Safety%20Extension%20Module",
+				"discon": ""
+			},
+			{
+				"group": "iQ-F",
+				"name": "Option",
+				"feature": "/fa/products/cnt/plcf/pmerit/option/index.html",
+				"spec": "/fa/products/faspec/search.page?kisyu=/plcf&search=B&word=Option",
+				"standard": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plcf&radio=Option&search=B&word=Option",
+				"discon": ""
+			},
+			{
+				"group": "iqf_select",
+				"name": "Model selection tool",
+				"feature": "/fa/products/cnt/plcf/ex/select/index.html",
+				"spec": "",
+				"standard": "",
+				"discon": ""
+			},
+			{
+				"group": "iqf_select2",
+				"name": "Model selection tool",
+				"feature": "/fa/ssl/products/cnt/plcf/ex/select/index.html",
+				"spec": "",
+				"standard": "",
+				"discon": ""
+			}
+		]
+	}
+}

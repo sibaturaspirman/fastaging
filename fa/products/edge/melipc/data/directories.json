@@ -1,0 +1,90 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Industrial Computer MELIPC",
+            "path": "/fa/products/edge/melipc/index.html",
+            "child": [
+                {
+                "name": "MELIPC MI5000",
+                "path": "/fa/products/edge/melipc/items/mi5000/index.html"
+                },
+                {
+                "name": "MELIPC MI3000",
+                "path": "/fa/products/edge/melipc/items/mi3000/index.html"
+                },
+                {
+                "name": "MELIPC MI2000",
+                "path": "/fa/products/edge/melipc/items/mi2000/index.html"
+                },
+                {
+                "name": "MELIPC MI1000",
+                "path": "/fa/products/edge/melipc/items/mi1000/index.html"
+                }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "switchNav": {
+    "name": "Industrial Computer MELIPC",
+    "path": "/fa/products/edge/melipc/index.html",
+    "child": [
+      {
+        "group": "MELIPC",
+        "name": "Outline",
+        "feature": "/fa/products/edge/melipc/pmerit/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/melipc&current=Outline",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/melipc&current=Outline",
+        "discon": ""
+      },
+      {
+        "group": "MELIPC",
+        "name": "MELIPC MI5000",
+        "feature": "/fa/products/edge/melipc/pmerit/mi5000/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/melipc&current=MELIPC MI5000",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/melipc&current=MELIPC MI5000",
+        "discon": ""
+      },
+      {
+        "group": "MELIPC",
+        "name": "MELIPC MI3000",
+        "feature": "/fa/products/edge/melipc/pmerit/mi3000/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/melipc&current=MELIPC MI3000",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/melipc&current=MELIPC MI3000",
+        "discon": ""
+      },
+      {
+        "group": "MELIPC",
+        "name": "MELIPC MI2000",
+        "feature": "/fa/products/edge/melipc/pmerit/mi2000/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/melipc&current=MELIPC MI2000",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/melipc&current=MELIPC MI2000",
+        "discon": ""
+      },
+      {
+        "group": "MELIPC",
+        "name": "MELIPC MI1000",
+        "feature": "/fa/products/edge/melipc/pmerit/mi1000/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/melipc&current=MELIPC MI1000",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/melipc&current=MELIPC MI1000",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/melipc&category=discon&current=MELIPC MI1000"
+      },
+      {
+        "group": "MELIPC",
+        "name": "Software",
+        "feature": "/fa/products/edge/melipc/smerit/",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      }
+    ]
+  }
+}

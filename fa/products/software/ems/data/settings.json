@@ -1,0 +1,100 @@
+{
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"name": "Download",
+				"icon": "download",
+				"link": "/fa/download/search.page?kisyu=/ems&mode=catalog",
+				"child":[
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/fa/download/search.page?mode=catalog&kisyu=/ecoadviser"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/fa/download/search.page?mode=manual&kisyu=/ecoadviser"
+					},
+					{
+						"name": "Software",
+						"icon": "software",
+						"link": "/fa/download/software/search.page?mode=software&kisyu=/ecoadviser"
+					}
+				]
+			},
+			{
+				"name": "FAQ",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2304"
+			}
+		],
+		"commonItems": []
+	},
+    	"spotlight": {
+		"items": [
+		]
+	},
+	"productsMenu": {
+		"items": [
+			{
+				"name": "Product Specifications",
+				"icon": "settings",
+				"link": "/fa/products/faspec/search.page?kisyu=/ecoadviser"
+			},
+			{
+				"name": "Products certified/compliant to various standards",
+				"icon": "standard",
+				"link": "/fa/products/standard/SearchServlet.page?kisyu=/ecoadviser"
+			}
+		]
+	},
+	"optionItems": {
+		"items": [
+		]
+	}, 
+	"download": {
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','YM-C-Y-0792','ems','3')",
+				"img": "javascript.toCatalogInfo('img','YM-C-Y-0792','ems','5')",
+				"link": "javascript.toCatalogInfo('link','YM-C-Y-0792','ems','10')"
+			}
+		],
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/fa/download/search.page?mode=catalog&kisyu=/ecoadviser"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/fa/download/search.page?mode=manual&kisyu=/ecoadviser"
+			},
+			{
+				"name": "Software",
+				"icon": "software",
+				"link": "/fa/download/software/search.page?mode=software&kisyu=/ecoadviser"
+			}
+		]
+	},
+	"banner": {
+		"items": [
+		]
+	},
+	"contact": {
+		"items": [
+			{
+				"name": "Contact Us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2304"
+			}
+		]
+	}
+}

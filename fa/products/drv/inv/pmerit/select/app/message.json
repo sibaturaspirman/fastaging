@@ -1,0 +1,189 @@
+﻿{
+    "error": [
+        
+        {
+            "errorCode": "001",
+            "errorMessage": "Enter electricity rate coefficient."
+        },
+        {
+            "errorCode": "002",
+            "errorMessage": "Enter the CO2 coefficient."
+        },
+        {
+            "errorCode": "003",
+            "errorMessage": "Enter the power output."
+        },
+        {
+            "errorCode": "004",
+            "errorMessage": "Enter the pole number."
+        },
+        {
+            "errorCode": "005",
+            "errorMessage": "Enter the volt / frequency."
+        },
+        {
+            "errorCode": "006",
+            "errorMessage": "Enter the frequency."
+        },
+        {
+            "errorCode": "007",
+            "errorMessage": "Enter the motor load."
+        },
+        {
+            "errorCode": "008",
+            "errorMessage": "Enter the number of units."
+        },
+        {
+            "errorCode": "009",
+            "errorMessage": "Enter the hours / day."
+        },
+        {
+            "errorCode": "010",
+            "errorMessage": "Enter the day / year."
+        },
+        {
+            "errorCode": "011",
+            "errorMessage": "Enter a number within the range of 3-60."
+        },
+        {
+            "errorCode": "012",
+            "errorMessage": "Enter a number within the range of 25-125."
+        },
+        {
+            "errorCode": "013",
+            "errorMessage": "Enter a number within the range of 0-24."
+        },
+        {
+            "errorCode": "014",
+            "errorMessage": "Enter a number within the range of 0-366."
+        },
+        {
+            "errorCode": "015",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "016",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "017",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "018",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "019",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "020",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "021",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "022",
+            "errorMessage": "When selecting 55kW for the power output, the pole number 6 cannot be selected."
+        },
+        {
+            "errorCode": "023",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "024",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "025",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "026",
+            "errorMessage": "Enter a number within the range of 0-100."
+        },
+        {
+            "errorCode": "027",
+            "errorMessage": "Enter efficiency (%) of motor load, which should be the same as the motor load entered above."
+        },
+        {
+            "errorCode": "028",
+            "errorMessage": "Enter a number within the range of 0-999."
+        },
+        {
+            "errorCode": "051",
+            "errorMessage": "Enter contract electricity charges."
+        },
+        {
+            "errorCode": "052",
+            "errorMessage": "Enter the CO2 coefficient."
+        },
+        {
+            "errorCode": "053",
+            "errorMessage": "Enter annual operation days."
+        },
+        {
+            "errorCode": "054",
+            "errorMessage": "Enter the motor volume and the number of units."
+        },
+        {
+            "errorCode": "055",
+            "errorMessage": "Enter the number of units."
+        },
+        {
+            "errorCode": "056",
+            "errorMessage": "Enter operation hours."
+        },
+        {
+            "errorCode": "057",
+            "errorMessage": "Enter a number within the range of 0-366."
+        },
+        {
+            "errorCode": "058",
+            "errorMessage": "Total operation hours has exceeded 24 hours."
+        },
+                {
+            "errorCode": "059",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "060",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "061",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "062",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "063",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "064",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "065",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "066",
+            "errorMessage": "Make sure the entered number is correct."
+        },
+        {
+            "errorCode": "067",
+            "errorMessage": "Enter a number within the range of 0-999."
+        },
+        {
+            "errorCode": "068",
+            "errorMessage": "Enter a number within the range of 0-24."
+        }
+    ]
+}

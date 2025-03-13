@@ -1,0 +1,58 @@
+{
+  "layerNav": {
+    "name": "Vision sensors",
+    "path": "/fa/products/snsr/sensor/pmerit/vs/index.html",
+    "firstLayer": [
+      {
+        "name": "Concept",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/index.html"
+      },
+      {
+        "name": "Features",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/features/index.html",
+        "secondLayer": [
+          {
+            "name": "Vision sensors",
+            "path": "/fa/products/snsr/sensor/pmerit/vs/features/index.html"
+          },
+          {
+            "name": "VS80",
+            "path": "/fa/products/snsr/sensor/pmerit/vs/features/vs80.html"
+          },
+          {
+            "name": "VS70",
+            "path": "/fa/products/snsr/sensor/pmerit/vs/features/vs70.html"
+          },
+          {
+            "name": "VS20",
+            "path": "/fa/products/snsr/sensor/pmerit/vs/features/vs20.html"
+          },
+          {
+            "name": "Compatibility with Mitsubishi Electric factory automation products",
+            "path": "/fa/products/snsr/sensor/pmerit/vs/features/compatibility.html"
+          }
+        ]
+      },
+      {
+        "name": "Configuration tool",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/soft/index.html"
+      },
+      {
+        "name": "Applications",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/application/index.html"
+      },
+      {
+        "name": "System configuration",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/configuration/index.html"
+      },
+      {
+        "name": "Product list",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/lineup/index.html"
+      },
+      {
+        "name": "External dimensions",
+        "path": "/fa/products/snsr/sensor/pmerit/vs/dimensions/index.html"
+      }
+    ]
+  }
+}

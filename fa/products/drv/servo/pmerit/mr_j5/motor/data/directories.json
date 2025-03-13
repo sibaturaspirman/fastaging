@@ -1,0 +1,32 @@
+{
+    "layerNav": {
+        "name": "Rotary Servo Motor",
+        "path": "/fa/products/drv/servo/pmerit/mr_j5/motor/feature.html",
+        "firstLayer": [
+            {
+                "name": "Product Lines",
+                "path": "/fa/products/drv/servo/pmerit/mr_j5/motor/feature.html"
+            },
+            {
+                "name": "Features",
+                "path": "/fa/products/drv/servo/pmerit/mr_j5/motor/feature_2.html"
+            },
+            {
+                "name": "Model Designation",
+                "path": "/fa/products/drv/servo/pmerit/mr_j5/motor/motormodel.html"
+            },
+            {
+                "name": "Combinations",
+                "path": "/fa/products/drv/servo/pmerit/mr_j5/motor/amplist.html"
+            },
+            {
+                "name": "Torque Characteristics",
+                "path": "/fa/products/drv/servo/pmerit/mr_j5/motor/torque.html"
+            },
+            {
+                "name": "Application Examples",
+                "path": "/fa/products/drv/servo/pmerit/mr_j5/motor/case.html"
+            }
+        ]
+    }
+}

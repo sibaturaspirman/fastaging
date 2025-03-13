@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* -------------------------------------------------------------------------------
+|  Created:     2024-01-24
+|  Updated:     N/A
+|------------------------------------------------------------------------------- */
+
+/*---------------------------------------------------------
+  .c-imgAutoのimgタグ処理
+---------------------------------------------------------*/
+
+.meswp-imgAuto {
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom
+  }
+}
+
+/*---------------------------------------------------------
+  タグ
+---------------------------------------------------------*/
+
+.meswp-tag {
+  margin-top: 15px;
+}
+
+.meswp-tag__block {
+  margin-top: -5px;
+  margin-left: -5px;
+
+  > * {
+    margin-top: 5px;
+    margin-left: 5px !important;
+    min-width: 7em;
+    text-align: center;
+  }
+}
+
+/*---------------------------------------------------------
+  ダウンロードリンク
+---------------------------------------------------------*/
+
+.meswp-dLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  > a {
+    margin-left: 10px;
+  }
+}
+
+
+/*---------------------------------------------------------
+  ボックス
+---------------------------------------------------------*/
+
+.meswp-box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meswp-box__question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  > * {
+    font-size: 24px;
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+}
+
+.meswp-box__triangle {
+  margin-left: auto;
+  margin-right: auto;
+  height: calc(60px / 2);
+  width: 120px;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.meswp-box__answer {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 28px;
+  margin-top: 30px;
+  > * {
+    font-size: 1.75em;
+  }
+}
+
+/*! Small only (Smallのみ) */
+@media only screen and (max-width: 767px) {
+  .meswp-box__question {
+    > * {
+      font-size: 18px;
+    }
+  }
+  .meswp-box__answer {
+    font-size: 20px;
+    text-align: center;
+  }
+}

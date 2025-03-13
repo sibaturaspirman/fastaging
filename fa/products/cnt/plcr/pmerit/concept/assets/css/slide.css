@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*-------[ コンセプトTOP/スライドショー ]-------------------------------------------------------------------*/
+
+#slide {
+	width: 100%;
+	aspect-ratio: 13 / 5;	/* 780x300 */
+	position: relative;
+	overflow: hidden;
+}
+#slide li {
+	width: 100%;
+	aspect-ratio: 13 / 5;	/* 780x300 */
+}
+#slide img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

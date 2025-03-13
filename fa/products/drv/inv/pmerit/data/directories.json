@@ -1,0 +1,24 @@
+{
+  "layerNav": {
+    "name": "FREQROL",
+    "path": "/fa/products/drv/inv/pmerit/index.html",
+    "firstLayer": [
+      {
+        "name": "Main features",
+        "path": "/fa/products/drv/inv/pmerit/index.html"
+      },
+      {
+        "name": "Recommended products",
+        "path": "/fa/products/drv/inv/pmerit/new_products/watch/index.html"
+      },
+      {
+        "name": "Equipment maintenance",
+        "path": "/fa/products/drv/inv/pmerit/prevention/index.html"
+      },
+      {
+        "name": "Digital Catalogs",
+        "path": "/fa/products/drv/inv/pmerit/catalog_en.html"
+      }
+    ]
+  }
+}

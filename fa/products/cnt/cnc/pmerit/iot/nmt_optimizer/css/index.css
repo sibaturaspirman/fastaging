@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* -------------------------------------------------------------------------------
+|  Created:     2023-07-19
+|  Updated:     N/A
+|------------------------------------------------------------------------------- */
+
+.meswp-arrow {
+  margin: auto;
+  margin-top: 110px;
+  width: 0;
+  height: 0;
+  border-top: solid 25px transparent;
+  border-right: solid 0px transparent;
+  border-bottom: solid 25px transparent;
+  border-left: solid 20px #99266a;
+}
+
+/*! Small only (Smallのみ) */
+@media only screen and (max-width: 767px) {
+  .meswp-arrow {
+    margin-top: auto;
+    border-top: solid 25px #99266a;
+    border-right: solid 20px transparent;
+    border-bottom: solid 10px transparent;
+    border-left: solid 20px transparent;
+  }
+}

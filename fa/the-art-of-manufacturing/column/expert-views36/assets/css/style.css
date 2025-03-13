@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* c-message-area
+***************************** */
+.expert-views .c-message-area { display: flex; margin-top: 30px; flex-wrap: wrap; background-color:#fcede2; }
+.expert-views .c-message-area .c-message-img { width:33.715%; }
+.expert-views .c-message-area .c-message-text { width:66.285%; font-weight:bold; font-size:16px;padding: 50px; }
+@media only screen and (max-width:767px){
+	.expert-views .c-message-area { display: block; }
+	.expert-views .c-message-area .c-message-img { width:100%; }
+	.expert-views .c-message-area .c-message-text { width: 100%;padding:20px; }
+}
+

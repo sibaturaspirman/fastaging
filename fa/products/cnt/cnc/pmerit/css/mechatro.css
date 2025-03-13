@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Only MECHATRO+ Page /////////////////////////////////////*/
+#MELSEC_06_01 .block {
+	padding: 15px 20px;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+#MELSEC_06_01 .melfa_lc a:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+#MELSEC_06_01 .frame_line img {
+	border: 1px solid #333;
+}
+
+#MELSEC_06_01 .pdf_title {
+	border-top:1px solid #D5D5D5;
+	background: linear-gradient(0deg, #fff, #F7F7F7);
+	font-size: 95%;
+    padding: 5px 0 3px 10px;
+    font-weight: bold;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 1) inset;
+}

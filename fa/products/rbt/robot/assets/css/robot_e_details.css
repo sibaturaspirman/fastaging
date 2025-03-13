@@ -1,0 +1,161 @@
+
+
+/* Robot CSS  */
+
+.newitem {
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.rb_memo  {
+	font-size: 70%;
+	line-height: 20px;
+}
+
+.rb_2Cols .rb_2ColsRight {
+	float: right;
+	width: 320px;
+	margin: 0px 0px 0px 0px;
+	text-align: left;
+}
+
+tbody.rb_tbC tr th,
+tbody.rb_tbC tr td {
+	text-align: center;
+}
+
+table.rb_notes td, th {
+	border: 0px #cccccc solid;
+	font-size: 12px;
+	vertical-align: top;
+	text-align: left;
+}
+
+table td.wakaba {
+	background-color:#e0ebaf;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table td.sakura {
+	background-color:#fef4f4;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table th.items_c {
+	background-color:#f8f4e6;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table th.items_l {
+	background-color:#f8f4e6;
+	text-align: left;
+}
+
+table th.notapp_c {
+	background-color:#f3f3f2;
+	color: #999999;
+	text-align: center;
+}
+
+table td.pos_c {
+	text-align: center;
+	vertical-align: middle;
+}
+
+table td.pos {
+	text-align: left;
+	vertical-align: middle;
+}
+
+
+.sub_azuki {
+	color: #996666;
+}
+
+.sub_pink {
+	color: #FF0066;
+}
+
+.sub_sky {
+	color: #0099FF;
+}
+
+.sub_blue {
+	color: #0066FF;
+}
+
+.sub_gr {
+	color: #009900;
+}
+
+.sub_moegi {
+	color: #46B287;
+}
+
+.sub_red {
+	color: #FF0000;
+}
+
+.sub_beni {
+	color: #C81C48 ;
+}
+
+.sub_cherry {
+	color: #CC0099 ;
+}
+
+.sub_tuyu {
+	color: #00519A  ;
+}
+
+.sub_orange {
+	color: #FF6600  ;
+}
+
+.sub_brown {
+	color: #CC6633  ;
+}
+
+.sub2_gr {
+	font-weight: bold;
+	color: #009900;
+}
+
+.sub2_notes {
+	padding-left: 20px;
+	font-size: 10px;
+}
+
+.txtalign_c {
+	text-align: center;
+}
+
+.txtalign_l {
+	text-align: left;
+}
+
+ul.exList li {
+	margin-bottom: 10px;
+}
+
+.align_l {
+	text-align: left;
+}
+
+.align_c {
+	text-align: center;
+}
+
+.align_l20 {
+	text-align: left;
+	padding-left: 30px;
+}
+
+.align_l10 {
+	text-align: left;
+	padding-left: 10px;
+}
+

@@ -1,0 +1,64 @@
+{
+  "layerNav": {
+    "name": "FREQROLシリーズ",
+    "path": "/fa/products/drv/inv/pmerit/index.html",
+    "firstLayer": [
+	     {
+        "name": "Main features",
+        "path": "/fa/products/drv/inv/pmerit/index.html"
+      },
+      {
+        "name": "Recommended products",
+        "path": "/fa/products/drv/inv/pmerit/new_products/index.html",
+        "secondLayer": [
+          {
+            "name": "FR-A800-GN Inverter and FR-A8NCG Plug-in Option for CC-Link IE TSN Communication Function",
+            "path": "/fa/products/drv/inv/pmerit/new_products/watch/1901e/"         
+          },
+          {
+            "name": "FR-A800-E-R2R Inverters (Ethernet Communication Model of the roll to roll dedicated inverters)",
+            "path": "/fa/products/drv/inv/pmerit/new_products/watch/1807e/"         
+          },
+          {
+            "name": "Ethernet Communication Model of Liquid Cooled Type Inverter FR-A800-E-LC",
+            "path": "/fa/products/drv/inv/pmerit/new_products/watch/1805e/"       
+          },
+          {
+            "name": "High functionality and high performance inverter FR-A870-B",
+            "path": "/fa/products/drv/inv/pmerit/new_products/watch/1806e/",
+            "thirdLayer": [
+              {
+                "name": "Concept",
+                "path": "/fa/products/drv/inv/pmerit/new_products/watch/1806e/index.html"                 
+              },
+              {
+                "name": "Lineup",
+                "path": "/fa/products/drv/inv/pmerit/new_products/watch/1806e/lineup.html"                 
+              },
+              {
+                "name": "Converter ratings and specification",
+                "path": "/fa/products/drv/inv/pmerit/new_products/watch/1806e/converter.html"                
+              },
+              {
+                "name": "Outline dimensions",
+                "path": "/fa/products/drv/inv/pmerit/new_products/watch/1806e/outline.html"                 
+              }
+            ]            
+          },
+          {
+            "name": "Options for the FR-A842 Serving as a High Power Factor Converter",
+            "path": "/fa/products/drv/inv/pmerit/new_products/watch/1804e/"         
+          }
+        ]
+      },
+      {
+        "name": "Equipment maintenance",
+        "path": "/fa/products/drv/inv/pmerit/prevention/index.html"
+      },
+      {
+        "name": "Digital Catalogs",
+        "path": "/fa/products/drv/inv/pmerit/catalog_jp.html"
+      }
+    ]
+  }
+}

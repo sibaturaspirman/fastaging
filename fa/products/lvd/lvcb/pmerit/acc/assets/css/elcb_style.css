@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/* PC・スマホ表示 */
+@media (min-width:768px) {
+  .pc_only {
+      display: block !important;
+  }
+  .sp_only {
+      display:none !important;
+  }
+}
+@media only screen and (max-width:767px) {
+  .pc_only {
+      display:none !important;
+  }
+  .sp_only {
+      display: block !important;
+  }
+}
+
+/* 共通項目 */
+.mrgn_top10 {
+	margin-top: 10px!important;
+}
+.mrgn_top15{
+	margin-top: 15px!important;
+}
+.mrgn_top20 {
+	margin-top: 20px!important;
+}
+.mrgn_top30 {
+	margin-top: 30px!important;
+}
+.mrgn_top40 {
+	margin-top: 40px!important;
+}
+.mrgn_btm20 {
+	margin-bottom: 20px!important;
+}
+
+/* メインビジュアル */
+.main_bg {
+	background: url("../img/main_bg_img.jpg") no-repeat center / 100% 100%;
+}
+.main_bgwrap {
+	overflow: hidden;
+}
+.pattern01 img{
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: .9s;
+}
+.pattern01.show img{
+    opacity: 1;
+    transform: translateX(0);
+}
+@media (max-width: 1400px) {
+.main_bg {
+	background: url("../img/main_bg_img.jpg") no-repeat center / auto 100%;
+}
+}
+
+/* 幅全体グレー背景 */
+.wid100_bg {
+	margin-left: calc(((100vw - 100%) / 2) * -1);
+	margin-right: calc(((100vw - 100%) / 2) * -1);
+}
+.sec_gray {
+	background-color: #F2F2F2;
+	padding: 40px 0 50px 0;
+}
+
+/* JIS説明H3 */
+.h3_detail {
+	border-radius: 20px;
+	border: 2px solid #729330;
+	background-color: #FFF;
+}
+.h3_detail h3 {
+	margin: -1px;
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.2em;
+	border-radius: 20px 20px 0 0;
+	background-color: #729330;
+}
+.h3_detail_text {
+	margin: 10px auto;
+}
+
+/* 横線付きH3 */
+.h3_sideline01 {
+    position: relative;
+    padding: 0 62px;
+    text-align: center;
+    font-size: 22px;
+}
+.h3_sideline01:before {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background: #00a0c8;
+}
+.h3_sideline01 span {
+    position: relative;
+    padding: 0 1em;
+    background: #fff;
+}
+@media (max-width: 500px) {
+.h3_sideline01 {
+    display: flex;
+}
+}
+
+
+/* CE・CCC品ラインアップ表 */
+.tbl_cell_orange {
+	background-color: #dc6F06;
+	color: #FFF;
+}
+.tbl_cell_blue {
+	background-color: #00a0c8;
+	color: #FFF;
+}
+.tbl_cell_gray {
+	background-color: #d9d9d9;
+}
+.sp_orange {
+	display: inline-block;
+	width: 50px;
+	line-height: 1.2em;
+	background-color: #dc6F06;
+}
+.sp_blue {
+	display: inline-block;
+	width: 50px;
+	line-height: 1.2em;
+	background-color: #00a0c8;
+}
+.sp_gray {
+	display: inline-block;
+	width: 50px;
+	line-height: 1.2em;
+	background-color: #d9d9d9;
+}
+
+/* 背景色付きH3 */
+.h3_connect {
+    padding: 0.5em 0;
+    background: #e9e2ef;
+    border-bottom: solid 3px #735aa3;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* ELCBの状態 */
+.h3_elcb_acc {
+	color: #735aa3;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 40px;
+}
+.elcb_trip {
+	display: block;
+	height: 30px;
+	vertical-align: middle!important;
+}
+.tdbg_black {
+	background-color: #000;
+}
+

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=960">
+<title>Network Model Selection Tool</title>
+
+<link rel="stylesheet" type="text/css" media="screen,print" href="/fa/ssl/css/w_header_footer/import_w850.css" />
+<link rel="stylesheet" type="text/css" href="/fa/ssl/shared/css/import.css" media="all" />
+<!-- CSS Area START -->
+<!-- CSS Area END -->
+
+<script type="text/javascript" src="/fa/ssl/shared/js/base.js"></script>
+<script type="text/javascript" src="/fa/ssl/shared/lib/jquery.js"></script>
+<script type="text/javascript" src="/fa/ssl/shared/js/jqueryAutoHeight.js"></script>
+<script type="text/javascript" src="/fa/ssl/shared/js/melCommons.js"></script>
+<script type="text/javascript" src="/fa/ssl/shared/js/social.js"></script>
+<script type="text/javascript" src="/fa/ssl/shared/js/openWindow.js"></script>
+<script type="text/javascript" src="https://www.mitsubishielectric.com/common/js/head_include.js"></script>
+<!-- JS Area START -->
+
+<script type="text/javascript" src="/fa/ssl/shared/js/selsystemcomproc.js?netsel_r5" charset="UTF-8"></script>
+
+<!-- ▼ネットワーク機種選定ツール・ヘッダ部▼ -->
+	<link rel="stylesheet" type="text/css" href="./css/min/allinone.css?netsel_r5" />
+	<link rel="stylesheet" type="text/css" href="./css/min/allinone_print.css?netsel_r5" media="print" />
+	<script type="text/javascript" src="./scripts/min/allinone.js?netsel_r5"></script>
+	<script language="javascript" type="text/javascript">
+	<!--
+		$(document).ready(function()
+			{
+				JS_LOAD_InitScreen();
+			}
+		);
+	//-->
+	</script>
+<!-- ▲ネットワーク機種選定ツール・ヘッダ部▲ -->
+
+<script type="text/javascript">
+<!--
+	var kisyu = "plcnet";
+	var timer = setInterval("loadComplete()", 100);
+	var timer2;
+	var timer3 = setInterval("rDataLoadEnd()", 300);
+	var checkflg=0;
+	var saveXmlData="";
+	var saveDetailData="";
+
+	// フラッシュのロードチェック
+	function rDataLoadEnd(){
+		if (JS_Cmn_IsReadySelSysHtmlJs()){
+			checkflg = 1;
+			clearInterval(timer3);
+		}
+	}
+
+	function loadComplete(){
+		if(checkflg==1){
+			clearInterval(timer);
+			timer2 = setInterval("saveCheck()", 100);
+		}
+	}
+
+	// フラッシュの登録チェック
+	function saveCheck() {
+		var checkXmlData="";
+		checkXmlData = JS_Cmn_GetSelData(M_CMN_SERIES_HTML_JS, M_CMN_GET_SEL_DATA_TYPE_MODEL);
+		if(checkXmlData!=saveXmlData){
+			if("" != checkXmlData) {
+				SaveButtonOn();
+				saveXmlData=checkXmlData;
+			} else {
+				SaveButtonOff();
+				saveXmlData="";
+			}
+		}
+	}
+
+	// ボタン活性化
+	function SaveButtonOn(){
+		if ( $("#head_mypT").html() != "") {
+			var sTag = "<a name='save' href='javascript:void(0);' onclick='javascript:saveRequest(); return false;' title='この選定結果をマイページに保存します'><img src=\"https://www.mitsubishielectric.co.jp/fa/ssl/shared/mypage/img/btn_bookmark_select.gif\" class=\"rollover\" /></a>";
+			document.getElementById("head_mypT").innerHTML = sTag;
+		}
+	}
+
+	// ボタン非活性化
+	function SaveButtonOff(){
+		if ( $("#head_mypT").html() != "") {
+			var sTag = "<img src='https://www.mitsubishielectric.co.jp/fa/ssl/shared/mypage/img/btn_bookmark_select_none.gif' />";
+			document.getElementById("head_mypT").innerHTML = sTag;
+		}
+	}
+
+	function getServerName() {
+		var nowhref = top.location.href;
+		var buff1 = nowhref.split("//");
+		var buff2 = buff1[1].split("/");
+		return buff2[0];
+	}
+
+	// 保存ボタン押下
+	function saveRequest() {
+		saveDetailData = JS_Cmn_GetSelData(M_CMN_SERIES_HTML_JS, M_CMN_GET_SEL_DATA_TYPE_DETAIL);
+		saveXmlData = JS_Cmn_GetSelData(M_CMN_SERIES_HTML_JS, M_CMN_GET_SEL_DATA_TYPE_MODEL);
+		if("" != saveXmlData) {
+			clearInterval(timer2);
+			saveXmlData = characterSpaceDelete(saveXmlData);
+			// 保存ダイアログを表示
+			saveAction = window.showModalDialog("https://www.mitsubishielectric.co.jp/fa/ssl/shared/mypage/saveselect.html", "", "dialogWidth=250px; dialogHeight=140px; status:1;");
+			if(saveAction != "" && saveAction != null){
+				var myselectNo = "";
+				var myselectname = "";
+				var rtn = showModalDialog("https://www.mitsubishielectric.co.jp/fa/ssl/shared/mypage/groupselect.html", "", "dialogWidth=630px;dialogHeight=410px;status:1;center:1;resizable:0;scroll:no;");
+				if (rtn != null && rtn[0] !="cancel"){
+					// フォームにセット
+					// postオブジェクトの作成
+					var frm = new postSubmit();
+					// タイプを設定する。
+					// 機種を設定する。
+					frm.add("kisyu","plcr");
+					// 機種情報を設定する。
+					frm.add('kisyuInfo', encodeURI(saveXmlData));
+					// 保存モードを設定する。
+					frm.add('savemode', saveAction);
+					// 遷移先モードを設定する。
+					frm.add('mode', 'kisyuregist');
+					// マイセレクトNoを設定する。
+					frm.add('myselectNo', encodeURI(rtn[0]));
+					// 登録先名称を設定する。
+					//frm.add('selectName', rtn[1]);
+					frm.add('selectName', encodeURI(rtn[1]));
+					// 機種選定詳細情報を設定する。
+					frm.add("detailData", escape(encodeURI(saveDetailData)));
+					frm.add("ttt", t);
+					frm.add("kn", k);
+					var nowServerName = getServerName();
+					frm.submit("https://"+nowServerName+"https://www.mitsubishielectric.co.jp/fa/ssl/mypage/myselect/KisyuRegistServlet.do", "");
+				} else {
+					timer2 = setInterval("saveCheck()", 100);
+				}
+			}else{
+				timer2 = setInterval("saveCheck()", 100);
+			}
+		}
+	}
+
+	// フォームオブジェクト作成
+	function postSubmit() {
+		this.frmObject = document.createElement("form");
+		this.frmObject.method = "post";
+
+		this.add = function(elementname, elementvalue) {
+			var input = document.createElement("input");
+		    input.type = "hidden";
+		    input.name = elementname;
+		    input.value = elementvalue;
+			this.frmObject.appendChild(input);
+			this.frmObject.method = "post";
+		};
+
+		this.submit = function(url, targetFrame) {
+			try {
+				if (targetFrame) {
+					this.frmObject.target = targetFrame;
+				}
+			} catch (e) {
+			}
+
+			try	{
+				if (url) {
+					this.frmObject.action = url;
+					document.body.appendChild(this.frmObject);
+					this.frmObject.submit();
+					return true;
+				} else {
+					return false;
+				}
+			} catch (e)	{
+				return false;
+			}
+		};
+	}
+
+	//改行とスペースを削除処理
+	function characterSpaceDelete(str){
+		str = str.replace(/\n/g, '');
+		str = str.replace(/\r/g, '');
+		str = str.replace(/ /g, '');
+		return str;
+	}
+// -->
+</script>
+<!-- JS Area END -->
+
+</head>
+
+<body bgcolor="#FFFFFF" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" class="melfa_popup" id="melfa_no_module_titleArea">
+<div id="container">
+<!-- header begin -->
+<div id="header-wrap" style="min-width:0;">
+<div id="header" class="clearfix">
+<!--logo&siteid-->
+<img src="/fa/ssl/images/w_header_footer/logo.gif" alt="MITSUBISHI ELECTRIC Changes for the Better" width="111" height="45" id="logo" /><img src="/fa/ssl/shared/img/header/txt_global_gl01.gif" alt="Global - Factory Automation" width="291" height="36" id="siteid" />
+<p id="melfa_bt_popup_close"><a href="#" onclick="window.close();"><img src="/fa/ssl/shared/img/module/bt_close.gif" alt="Close" width="72" height="24" /></a></p>
+</div>
+</div>
+<!--/ header begin -->
+
+
+<!-- content -->
+<div id="melfa_contents_1col" style="padding:0;">
+
+<!-- ** Product Select Contents ** -->
+
+<!-- ▼ネットワーク機種選定ツール・コンテンツ部▼ -->
+	<div id="divMainContents"></div>
+<!-- ▲ネットワーク機種選定ツール・コンテンツ部▲ -->
+
+<!--/melfa_contents_1col--></div>
+<!-- /content -->
+
+
+<!-- footer begin -->
+<p><img src="https://www.mitsubishielectric.com/images/w_header_footer/copyright.gif" alt="Copyright Mitsubishi Electric Corporation. All Rights Reserved." id="footer-copyright" /></p>
+<!-- footer end -->
+</div>
+</body>
+</html>

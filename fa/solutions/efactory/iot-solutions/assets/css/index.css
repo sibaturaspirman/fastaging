@@ -1,0 +1,41 @@
+.lot-head {margin-top: 54px;}
+.lot-head + .l-section {padding-top: 22px;}
+.lot-head__column {display: flex;}
+.lot-head__box {background-color: #f2f2f2;width: 88.4615%;padding: 20px 44px;display: flex;align-items: center; border-left: 9px solid #c21500;border-image: linear-gradient(to bottom, #2f2f2f 0%, #b0b0b0 100%);border-image-slice: 1;}
+.lot-head__title {font-weight: bold;font-size: 27px;}
+.lot-head__img{padding-left: 15px;}
+.lot-head__img img {width: 100%;height: auto;}
+.lot-case{margin-top: 30px;}
+.case-list {display: flex;flex-wrap: wrap; margin-top: 30px;margin-right: -1.5979%;margin-top: -1.5979%;}
+.case-item{width: 48.3599%;margin-right: 1.5979%;margin-top: 1.5979%;border-left: 5px solid #a6a6a6;border-top: 1px solid #a6a6a6;border-right: 1px solid #a6a6a6;border-bottom: 1px solid #a6a6a6;font-size: 16px;font-weight: bold;letter-spacing: 0.04em;}
+.case-item a{height: 100%;flex-direction: column;display: flex;padding: 20px 20px 14px;align-items: flex-start;}
+.case-item__txt {margin-top: 6px;margin-bottom: 6px;}
+.case-item__link {margin-top: auto;}
+.case-item__label{border-radius: 12px;display: inline-block;padding: 2px 8px;}
+.case-item.remote .case-item__label{color: #4b2660;background-color: #efe8f3;}
+.case-item.dlogger .case-item__label{color: #1b4b66;background-color: #dcf1fc;}
+.case-item.total_mainte .case-item__label{color: #8c440d;background-color: #f7e1cf;}
+.case-item.machining .case-item__label{color: #283a4b;background-color: #d1dde8;}
+.case-item.carbon .case-item__label{color: #105c06;background-color: #dff2dc;}
+.table-block{margin-top: 116px;}
+sub {font-size: 75%;}
+.c-mainVisual__background::after {background: none;}
+@media only screen and (min-width:768px){
+    .l-section{padding-bottom: 60px;}
+    .lot-case{margin-bottom: 104px;}
+    .link-banner.link-banner-lot {padding-top: 120px;margin-top: 62px;}
+
+}
+
+@media only screen and (max-width:767px){
+.lot-head {margin-top: 50px;}
+.lot-head__title{font-size: 20px;}
+.lot-head__box{padding: 10px 30px;}
+.case-list {display: block;margin-right: 0;margin-top: 0;}
+.case-item{width: 100%;margin-right: 0;margin-top: 0;padding: 16px 16px 12px;}
+.case-item + .case-item {margin-top: 20px;}
+.case-item .case-item__label{font-size: 14px;}
+.case-item__link{font-size: 14px;}
+.table-block{margin-top: 50px;}
+}
+

@@ -1,0 +1,40 @@
+{
+  "layerNav": {
+    "name": "MELSEC-F Series",
+    "path": "/fa/products/cnt/plc_fx/items/index.html",
+    "firstLayer": [
+      {
+        "name": "Network/Communication",
+        "path": "/fa/products/cnt/plc_fx/pmerit/contents/communication/index.html"
+      },
+      {
+        "name": "CC-Link, CC-Link/LT",
+        "path": "/fa/products/cnt/plc_fx/pmerit/contents/communication/cclink_cclinklt.html"
+      },
+      {
+        "name": "N:N Network",
+        "path": "/fa/products/cnt/plc_fx/pmerit/contents/communication/function03.html"
+      },
+      {
+        "name": "Parallel Link",
+        "path": "/fa/products/cnt/plc_fx/pmerit/contents/communication/function04.html"
+      },
+      {
+        "name": "Computer Link",
+        "path": "/fa/products/cnt/plc_fx/pmerit/contents/communication/function05.html"
+      },
+      {
+        "name": "Non-protocol communication",
+        "path": "/fa/products/cnt/plc_fx/pmerit/contents/communication/function06.html"
+      },
+      {
+        "name": "Peripheral equipment communication",
+        "path": "/fa/products/cnt/plc_fx/pmerit/contents/communication/function07.html"
+      },
+      {
+        "name": "Inverter communication",
+        "path": "/fa/products/cnt/plc_fx/pmerit/contents/communication/function08.html"
+      }
+    ]
+  }
+}

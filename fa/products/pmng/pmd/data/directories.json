@@ -1,0 +1,50 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html"
+          },
+          {
+            "name": "Contactors and Motor Starters",
+            "path": "/fa/products/lvd/lvsw/index.html"
+          },
+          {
+            "name": "Power Management Meters",
+            "path": "/fa/products/pmng/pmd/index.html",
+            "child": [
+				{
+					"name": "Electrical Indicators",
+					"path": "/fa/products/pmng/pmd/items/eim/index.html"
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+"switchNav": {
+	"name": "Power Management Meters",
+	"path": "/fa/products/pmng/pmd/index.html",
+	"child": [
+		{
+        "group": "Electrical Indicators",
+        "name": "Electronic Multi Measuring Instruments (ME96 Series)",
+        "feature": "/fa/products/pmng/pmd/pmerit/eim/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/pmd&radio=Meters&search=B&word=Meters&current=Meters",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/pmd&radio=Meters&search=B&word=Meters&current=Meters",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/pmd&category=discon&bunrui1=Meters&current=Meters",
+		"return": {
+			"name": "Electrical Indicators",
+			"path": "/fa/products/pmng/pmd/items/eim/index.html"
+		}
+		}
+	]
+}
+}

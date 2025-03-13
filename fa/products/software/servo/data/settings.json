@@ -1,0 +1,157 @@
+{
+	"coment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"comment": "linkは各機種のダウンロードページのURLに変更可",
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+					    "name": "Catalog",
+						"icon": "catalog",
+						"link": "/app/fa/download/search.do?kisyu=/servo&mode=catalog"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/app/fa/download/search.do?kisyu=/servo&mode=manual"
+					},
+					{
+						"name": "Technical<br>Bulletin",
+						"icon": "techinfo",
+						"link": "/app/fa/download/search.do?kisyu=/servo&mode=techinfo"
+					}
+				]
+			}
+	  ],
+		"commonItems": []
+	},
+	"spotlight": {
+		"comment": "Spotlightに掲載したいページタイトル・画像・リンクを記入",
+		"items": [
+		]
+	},
+	"productsMenu": {
+		"comment": "機種共通メニューのlinkは各機種のページのURLに変更可",
+		"items": [
+			{
+				"name": "Featured Products",
+				"icon": "announce",
+				"link": "#"
+			},
+			{
+				"name": "Product Specifications",
+				"icon": "settings",
+				"link": "/fa/products/spec.html"
+			},
+			{
+				"name": "Products certified/compliant to standards",
+				"icon": "standard",
+				"link": "/fa/products/standard.html"
+			},
+			{
+				"name": "Discontinued Products",
+				"icon": "silver-line",
+				"link": "/fa/products/renewal.html"
+			},
+			{
+				"name": "Replace Products",
+				"icon": "replace",
+				"link": "/fa/products/replace.html"
+			},
+			{
+				"name": "General Product Catalog",
+				"icon": "catalog",
+				"link": "/fa/dctlg/index.html"
+			},
+			{
+				"name": "FA Integrated Selection Tool",
+				"icon": "tree",
+				"link": "/fa/products/select/index.html"
+			}
+		]
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "iQ App Portal",
+				"link": "/fa/products/sft/melsoft/smerit/iq_app_portal/index.html"
+			}
+		]
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除",
+		"recommended": [
+			{
+                "name": "javascript.toCatalogInfo('name','L03179ENG','ssc','3')",
+				"img": "javascript.toCatalogInfo('img','L03179ENG','ssc','5')",
+				"link": "javascript.toCatalogInfo('link','L03179ENG','ssc','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/app/fa/download/search.do?kisyu=/servo&mode=catalog"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/app/fa/download/search.do?kisyu=/servo&mode=manual"
+			},
+			{
+				"name": "Technical Bulletin",
+				"icon": "technews",
+				"link": "/app/fa/download/search.do?kisyu=/servo&mode=techinfo"
+			}
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "FA e-learning",
+				"link": "/fa/assist/e-learning/index.html"
+			}
+		]
+	},
+	"banner": {
+		"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+		"items": [
+			{
+				"name": "New features make things even easier to use!",
+				"image": "/fa/products/assets/img/faist-202411-relatedlink-en.jpg",
+				"link": "/fa/products/select/index.html"
+			},
+			{
+				"name": "FAQ",
+				"image": "/fa/products/drv/servo/img/bnr_faq.jpg",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2135"
+			},
+			{
+				"name": "FA SPEC Search",
+				"image": "/fa/products/assets/img/banner_fa-spec-search.jpg",
+				"link": "/fa/mobile-apps/index.html"
+			}
+		]
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+			{
+				"name": "Contact Us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/"
+			}
+		]
+	}
+}

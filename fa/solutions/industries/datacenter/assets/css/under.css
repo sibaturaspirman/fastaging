@@ -1,0 +1,114 @@
+
+.u-tc--monitoring {font-size: 28px;color: #8a1d46;}
+.u-tc--air-conditioning {font-size: 28px;color: #004878;}
+.u-tc--saving {font-size: 28px;color: #32543b;}
+.u-tc--electric-power {font-size: 28px;color: #9e5323;}
+.c-featureArea__box + .c-headingLv2 {margin-top: 105px;}
+.c-featureArea__box {margin-top: 55px;}
+.section_wapper{margin-top:56px;margin-bottom:45px;font-size:87.5%;}
+.blank{display:inline-block;width:10px;vertical-align:middle;margin-left:8px;margin-bottom:4px;}
+.ploblem_solving_table{width:100%;border-collapse:collapse;}
+.ploblem_solving_table tr th:first-child, .ploblem_solving_table tr td:first-child{width:54.282051%;vertical-align: middle;}
+.ploblem_solving_table tr th:first-child{color:#fff;font-size:130.612%;font-weight:bold;border-right:2px solid #fff;border-radius:4px 4px 0 0;text-align: left;}
+.ploblem_solving_table.monitoring tr th:first-child{background:#8a1d46;}
+.ploblem_solving_table.air-conditioning tr th:first-child{background: #004878;}
+.ploblem_solving_table.electric-power tr th:first-child{background: #9e5323;}
+.ploblem_solving_table tr th{padding:15px 20px 12px;}
+.ploblem_solving_table tr td:first-child{font-size:100%;color:#333333;}
+.ploblem_solving_table tr td a{color: #333333;text-decoration: none;font-size: 16px;}
+.ploblem_solving_table tr td{padding:20px 75px 20px 45px;}
+.ploblem_solving_table tr td{background:#f2f2f2;border-top:2px solid #fff;position:relative;}
+.ploblem_solving_table tr td:first-child:before{content:"";background:url(../img/down_arrow.png)no-repeat;left:20px;top:calc(50% - 2px);width:12px;height:8px;background-size:contain;position:absolute;}
+hr {border-top: #666 1px solid;margin-top: 60px;margin-bottom: 60px;}
+.hr-r {margin-top: 104px;margin-bottom: 119px;}
+.solution_block{padding:25px 30px;font-weight:bold;display:flex;align-items:center;font-size: 16px;margin-top: 55px;}
+.solution_block + .c-text {margin-top: 30px;}
+.task_icon, .solution_icon {width: 114px;color: #fff;text-align: center;padding: 8px 0;border-radius: 5px;display: inline-block;margin-right: 27px;font-weight: bold;font-size: 18px;}
+.monitoring .solution_block{background:#efdade;color:#8a1d46;}
+.monitoring .solution_icon {background: #8a1d46;}
+.air-conditioning .solution_block{background:#d6deea;color:#004878;}
+.air-conditioning .solution_icon {background: #004878;}
+.saving .solution_block{background:#dce2dd;color:#32543b;}
+.saving .solution_icon {background: #32543b;}
+.electric-power .solution_block{background:#f2e2d8;color:#9e5323;}
+.electric-power .solution_icon {background: #9e5323;}
+.border-b {border-bottom: 1px solid #b2b2b2;padding-bottom: 6px;}
+.c-headingLv3.c-headingLv3--noBorder.border-b {font-size: 21px;border-bottom: 1px solid #b2b2b2;padding-bottom: 5px;}
+.box {margin-top: 6px;margin-bottom: 18px;}
+.mt90 {margin-top: 90px;}
+.mt70 {margin-top: 70px;}
+.mt80 {margin-top: 80px;}
+.mt40 {margin-top: 40px;}
+.c-linkWithImage__image.pdf {aspect-ratio: inherit;}
+.box .c-text {line-height: 1.5;}
+.box .c-list + .c-text {margin-top: 0;}
+.box .c-list__item {padding-top: 0;padding-bottom: 0;}
+.air-conditioning .l-grid .l-grid__item {display: flex;flex-direction: column;justify-content: space-between;}
+.catalog {background-color: #f5f5f5;border: 1px solid #b6b6b6;margin-top: 64px;}
+.catalog a {display: flex;justify-content: space-between;align-items: center;padding: 14px 50px 14px 77px;}
+.catalog__img img {width: 120px;height: 120px;}
+.catalog p {font-size: 30px;color: #000;margin-left: 20px;transition: color .15s ease-in-out;font-weight: bold;}
+.catalog:hover p {color: #f50f10;}
+.catalog__text {position: relative;}
+.catalog__text::before {position: absolute;font-family: MelFaIcons,"Material Icons";font-size: 16px;display: inline-flex;width: 8px;height: 13px;top: 50%;left: -30px;transform: translateY(-70%);content: "\f102";white-space: nowrap;text-decoration: none;word-wrap: normal;color: red;}
+.catalog-inner {max-width: 1440px;width: 100%;margin: 30px auto 0;}
+.pdf {margin-top: 120px;}
+.l-grid__item-3.w27 {width: 27.5%;}
+.our-stories {display: flex;margin-top: 70px;}
+.our-stories .our-stories__img {width: 50%;}
+.our-stories .our-stories__img img {width: 100%;}
+.our-stories .our-stories__textbox {width: 50%;margin-left: 30px;}
+.our-stories .our-stories__textbox:nth-child(odd) {margin-right: 30px;margin-left: 0;}
+.our-stories .our-stories__textbox .l-grid.l-grid-reverse {margin-left: 0;margin-top: 17px;}
+.our-stories .our-stories__textbox .l-grid.l-grid-reverse .c-btn--md {padding: 7px 3em;}
+.our-stories .our-stories__textbox .l-grid.l-grid-reverse {margin-top: 30px;}
+.monitoring .c-headingLv3 {margin-top: 45px;}
+.c-note__num.num_01 {padding-left: 1em;width: 1em;text-indent: -1em;padding-left: 1em;}
+.maw930 {max-width: 930px;width: 100%;margin-left: auto;margin-right: auto;margin-top: 10px;}
+sup{font-size: 80%;}
+@media only screen and (min-width:766px) {
+.c-featureArea__box {padding: 40px 45px 35px 45px;}
+.c-headingLv4+.c-list.mt0 {margin-top: 0;}
+.mt10 {margin-top: 10px;}
+.mt20 {margin-top: 20px;}
+.l-grid + .solution_block {margin-top: 100px;}
+.c-featureArea__lead {font-size: 30px;}
+.mt-midiam {margin-top: 15px;}
+.c-text {line-height: 1.5;}
+.c-list.c-list--bullet + .c-text {margin-top: 15px;}
+.air-conditioning .c-text +.c-text {margin-top: 15px}
+.c-imgAuto +.c-text {margin-top: 48px}
+.air-conditioning .c-imgAuto + .solution_block {margin-top: 92px;}
+.saving .c-headingLv3 {margin-top: 58px;}
+.c-subText.u-fz--16.u-fw--bold {margin-top: 15px;}
+.our-stories .c-headingLv3 {margin-top: 0;}
+}
+@media only screen and (max-width:767px) {
+.our-stories {flex-direction: column;margin-top: 40px;}
+.our-stories .our-stories__img {width: 100%;}
+.our-stories .our-stories__textbox {width: 100%;margin-left: 0;}
+.our-stories__img {margin-top: 20px;}
+.our-stories .our-stories__textbox .l-grid.l-grid-reverse {margin-top: 15px;}
+.c-accordion__content {padding: 0 20px 0 20px;}
+.c-accordion__content.is_down {padding: 0 20px 20px 20px;}
+.catalog__img img {width: 90px;height: 90px;}
+.catalog {margin-top: 50px;}
+.catalog a {padding: 12px 15px 12px 25px;}
+.catalog p {line-height: 1.33333333;}
+.pdf {margin-top: 60px;}
+.solution_block {padding: 15px;}
+.solution_icon {width: 105px;;padding: 8px 0;;margin-right: 20px;font-size: 16px;}
+.mt20 {margin-top: 20px;}
+.mt70 {margin-top: 35px;}
+.mt80 {margin-top: 40px;}
+.mt90 {margin-top: 45px;}
+.l-grid + .solution_block {margin-top: 50px;}
+.c-featureArea__box + .c-headingLv2 {margin-top: 55px;}
+.c-featureArea__lead {font-size: 18px;}
+.u-tc--monitoring {font-size: 24px;}
+.u-tc--air-conditioning {font-size: 24px;}
+.u-tc--saving {font-size: 24px;}
+.u-tc--electric-power {font-size: 24px;}
+.c-note--order.maw930 {padding-left: 1em;text-indent: -1em;}
+}
+

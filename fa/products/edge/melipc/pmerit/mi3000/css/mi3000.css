@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* -------------------------------------------------------------------------------
+|  Created:     2024-03-21
+|  Updated:     
+|  Version:     01
+|------------------------------------------------------------------------------- */
+
+
+/*---------------------------------------------------------
+  Flexbox
+---------------------------------------------------------*/
+/* flex center ** */
+.mesw-fx-iac--jcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* justify-content 違い
+--------------------------*/
+.mesw-fx-iac--jcfs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/*---------------------------------------------------------
+  Table (関連資料)
+---------------------------------------------------------*/
+
+/* color
+--------------------------*/
+:root {
+  /* DMG共通 モノクロ */
+  --grey400: #b2b2b2;
+}
+
+.mesw-table__middle td, 
+.mesw-table__middle th,
+.mesw-table__middle--th th,
+.mesw-table__middle--td td,
+.mesw-table__middle--row > thead th,
+.mesw-table__middle--row > thead th.c-table__headCell,
+.mesw-table__middle--col .c-table__headCell {
+  vertical-align: middle !important;
+}
+
+/* small screen時、th, tdをカラム落ちさせる */
+
+/*! Small only (Smallのみ) */
+@media only screen and (max-width: 767px) {
+  .mesw-table__column tr:first-child > th:first-child {
+    margin-top: 0;
+  } 
+  
+  .mesw-table__column th {
+    display: block;
+    width: 100%;
+  } 
+  
+  .mesw-table__column td {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--grey400);
+    padding-top: 14px;
+    padding-bottom: 14px;
+  } 
+
+  .mesw-table__column td:last-child {
+    border-bottom: none;
+  }
+
+  .mesw-table__column--theadNone thead {
+    display: none;
+  } 
+
+  .mesw-table__column--dotted td {
+    border-bottom: 1px dotted var(--grey400);
+  } 
+
+}
+
+/* display
+--------------------------*/
+.mesw-d--ib {
+  display: inline-block;
+}
+
+/*---------------------------------------------------------
+  注釈
+---------------------------------------------------------*/
+
+/* 半角*数字なしタイプ
+--------------------------*/
+
+.c-note.mesw-note--half {
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.mesw-note__half {
+  display: inline-block;
+  width: 1em;
+  text-indent: 0;
+}

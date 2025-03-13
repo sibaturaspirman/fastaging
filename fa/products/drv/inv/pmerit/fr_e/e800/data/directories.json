@@ -1,0 +1,92 @@
+{
+  "layerNav": {
+    "name": "FREQROL-E series",
+    "path": "/fa/products/drv/inv/items/fr_e/index.html",
+    "firstLayer": [
+      {
+        "name": "FR-E800",
+        "path": "/fa/products/drv/inv/pmerit/fr_e/index.html",
+        "secondLayer": [
+          {
+            "name": "Concept",
+            "path": "/fa/products/drv/inv/pmerit/fr_e/index.html"
+          },
+          {
+            "name": "Toward smart factory",
+            "path": "/fa/products/drv/inv/pmerit/fr_e/e800/e801.html"
+          },
+          {
+            "name": "Wide range of applications",
+            "path": "/fa/products/drv/inv/pmerit/fr_e/e800/e802.html"
+          },
+          {
+            "name": "Higher added values",
+            "path": "/fa/products/drv/inv/pmerit/fr_e/e800/e803.html"
+          },
+          {
+            "name": "Improved safety",
+            "path": "/fa/products/drv/inv/pmerit/fr_e/e800/e804.html"
+          },
+          {
+            "name": "Energy saving",
+            "path": "/fa/products/drv/inv/pmerit/fr_e/e800/e805.html"
+          },
+          {
+            "name": "Improved maintainability",
+            "path": "/fa/products/drv/inv/pmerit/fr_e/e800/e806.html"
+          },
+          {
+            "name": "Downtime reduction",
+            "path": "/fa/products/drv/inv/pmerit/fr_e/e800/e807.html"
+          },
+          {
+            "name": "Engineering software for further ease of operation",
+            "path": "/fa/products/drv/inv/pmerit/fr_e/e800/e808.html"
+          },
+          {
+            "name": "Model Configuration",
+            "path": "/fa/products/drv/inv/pmerit/fr_e/e800/model_name_configuration.html"
+          }
+        ]
+      },
+      {
+        "name": "FR-E700",
+        "path": "/fa/products/drv/inv/pmerit/fr_e/e700/index.html",
+        "secondLayer": [
+          {
+            "name": "Concept",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_crn/index.html"
+          },
+          {
+            "name": "Suited for various cranes to achieve fast, robust, and smooth operations",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_crn/crn01.html"
+          },
+          {
+            "name": "Easier maintenance",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_crn/crn02.html"
+          },
+          {
+            "name": "Pursuit of leading drive performance",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_crn/crn03.html"
+          },
+          {
+            "name": "System support",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_crn/crn04.html"
+          },
+          {
+            "name": "Control the machines as you desire",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_crn/crn05.html"
+          },
+          {
+            "name": "Delivering a comfortable inverter operating environment",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_crn/crn06.html"
+          },
+          {
+            "name": "Model configuration",
+            "path": "/fa/products/drv/inv/pmerit/fr_a800_plus_crn/crn07.html"
+          }
+        ]
+      }
+    ]
+  }
+}

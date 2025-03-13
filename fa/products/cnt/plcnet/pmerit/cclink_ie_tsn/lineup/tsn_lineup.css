@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+#melfa_main_area .fa-unordered_list  ul li {
+	font-size: 130% !important;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+#melfa_main_area .fa-unordered_list  span.new {
+	padding-left: 5px;
+	position: relative;
+	top: -5px;
+}
+@media only screen and (max-width:768px) {
+    #melfa_main_area .fa-unordered_list  span.new {
+	top: 0;
+    }
+}
+#melfa_main_area .prod_tsn .prodcopy {
+	font-size: 120%;
+	clear: left;
+	font-weight: bold;
+    margin-bottom: 1em;
+}
+#melfa_main_area .prod_tsn .prodcate {
+	font-size: 75%;
+}
+#melfa_main_area .prod_tsn > .h4 {
+	font-size: 120% !important;
+	font-weight: bold;
+	color: #333;
+    margin-bottom: 0.5em;
+}
+@media only screen and (max-width:768px) {
+    #melfa_main_area .prod_tsn > .h4, #melfa_main_area .prod_tsn .prodcopy {
+	    font-size: 100%;
+        }
+    }
+
+#melfa_main_area .prod_tsn .prodname .comingsoon {
+	float: left;
+	position: relative;
+	top: 3px;
+	left: -8px;
+	margin-right: 6px;
+}
+#melfa_main_area .prod_tsn .prodname sup {
+	float: left;
+}
+
+#melfa_main_area .prod_tsn .prodTbl {
+	margin-top: 5px;
+}
+#melfa_main_area .prod_tsn .prodTbl tbody th {
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 140px;
+}
+#melfa_main_area h3 .future {
+	position: relative;
+	top: 2px;
+	margin-left: 4px;
+}
+
+#melfa_main_area .box_waku2-1 {
+	border: #ccc 1px solid;
+    width: 100%;
+	height: auto;
+	padding: 0.15em;
+}
+#melfa_main_area .box_waku2-2 {
+	border: #ccc 1px solid;
+	height: auto;
+	margin: 0.15em;
+    padding: 0.5em;
+}
+#melfa_main_area .box_waku2-3 {
+	border: #ccc 1px solid;
+	height: auto;
+	margin: 0.15em;
+    padding: 0.25em;
+}
+
+/*-------------------------------------------------------------------------*/
+.box_joint_development {
+	position: relative;
+	border: #ccc 1px solid;
+	width: 780px;
+	height: auto;
+	padding: 5px;
+    margin: 30px 0;
+}
+.box_joint_development a {
+	position: relative;
+}
+
+.box_joint_development::before {
+	position: absolute;
+	content: ''; 
+	width: 98.6%;
+	height: 93%;
+	top: 5px;
+	left: 5px;
+	border: #ccc 1px solid;
+	padding: 15px;
+}
+.box_joint_development .qr_box {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+}
+/*-------------------------------------------------------------------------*/
+
+.authentication {
+	display: inline-block;
+	font-size: 10px;
+	vertical-align:top;
+	margin-left: 5px;
+	padding: 0 .5em;
+	color: #fff;
+	border: 3px solid #979ca0;
+	border-radius: 5px;
+}
+.authentication.classB {
+	background-color: #5c768b;
+}
+.authentication.classA {
+	background-color: #8f7286;
+}
+.co_deve {
+	display: flex;
+	align-items: center;
+}
+.co_deve .co_deve_text {
+	padding-left: 15px;
+	border-left: 1px solid #ccc;
+}
+.co_deve .co_deve_list {
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #ccc;
+	font-size: 12px;
+    margin-bottom: 5px;
+}
+.co_deve .co_deve_list .td03 {
+	width: 8em;
+}
+.co_deve .co_deve_list .td03:nth-child(3) {
+	padding-left: 1.5em;
+}
+
+#melfa_main_area .fa-unordered_list li a {text-decoration: underline}

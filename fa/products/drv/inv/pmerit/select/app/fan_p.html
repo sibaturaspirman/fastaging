@@ -1,0 +1,1083 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta name="keywords" content="The energy saving calculation system,MITSUBISHI ELECTRIC,FA,Factory Automation" />
+<meta name="description" content="MITSUBISHI ELECTRIC FA site Inverters-FREQROL The energy saving calculation system" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- facebook -->
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.mitsubishielectric.com/fa/products/drv/inv/pmerit/select/app/fan_p.html" />
+<meta property="og:title" content="The energy saving calculation system | Inverters-FREQROL | MITSUBISHI ELECTRIC FA" />
+<meta property="og:description" content="MITSUBISHI ELECTRIC FA site Inverters-FREQROL The energy saving calculation system" />
+<meta property="og:image" content="http://www.mitsubishielectric.com/fa/products/drv/inv/pmerit/select/app/" />
+<!-- /facebook -->
+
+<title>The energy saving calculation system | Inverters-FREQROL | MITSUBISHI ELECTRIC FA</title>
+
+<link rel="stylesheet" type="text/css" media="screen,print" href="/fa/css/w_header_footer/import_w850.css" />
+<link rel="stylesheet" type="text/css" href="/fa/shared/css/import.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/fa/shared/v0002/css/module.css" media="all" />
+<!-- CSS Area START -->
+<!-- for Modal --><link rel="stylesheet" type="text/css" href="/fa/shared/lib/fancybox/jquery.fancybox-1.3.4.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/fa/products/drv/inv/pmerit/select/app/css/base.css" />
+<!-- CSS Area END -->
+
+<script type="text/javascript" src="/shared/js/base.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/lib/jquery.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/input.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/lib/jquery.example.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/jqueryAutoHeight.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/melCommons.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/mypage.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/mnavi.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/fa/shared/js/social.js" charset="Shift_JIS"></script>
+<!-- for IE6-8 CSS3 --><script type="text/javascript" src="/fa/shared/lib/selectivizr.js" charset="Shift_JIS"></script>
+<!-- JS Area START -->
+<script type="text/javascript" src="/fa/shared/lib/jquery.jcarousellite.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/newsTabMenu.js" charset="Shift_JIS"></script>
+<script type="text/javascript" src="/fa/shared/js/melfaCommonAccordion.js"></script>
+<script type="text/javascript" src="/fa/shared/js/melfaCommonTabMenu.js"></script>
+<!-- for Modal --><script type="text/javascript" src="/fa/shared/lib/fancybox/jquery.fancybox-1.3.4.pack.js" charset="Shift_JIS"></script>
+<!-- for Modal --><script type="text/javascript" src="/fa/shared/lib/fancybox/jquery.easing-1.3.pack.js" charset="Shift_JIS"></script>
+<!-- for Modal --><script type="text/javascript" src="/fa/shared/js/melfaCommonModal.js" charset="Shift_JIS"></script>
+
+<script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app/js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app/js/Chart.js"></script>
+<script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app/js/fan.js"></script>
+<script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app/js/fan_graph.js"></script>
+<script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app/js/common.js"></script>
+<script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app/js/calc.js"></script>
+<script type="text/javascript" language="javascript">
+        var powerGraphHtml = '<table id="powerGraphTable" class="powerGraph_e"><tr><td class="verticalLabel" style="vertical-align:text-top;padding-top:70px;padding-right:3px"><span class="rotate90" style="margin-top:80px;">Power Consumption</span></td><td><canvas id="powerGraphCanvas" width="360" height="240"></canvas><br /><span style="font-size:10pt;">Flow Rate</span></td></tr></table>';
+        var lccGraphHtml = '<table id="graphTable" class="lccGraph_e"><tr><td class="verticalLabel" style="vertical-align:text-top;padding-top:70px;padding-right:3px"><span class="rotate90" style="margin-top:70px;">Total Costs (<span id="graph2PriceUnit"></span>)</span></td><td><canvas id="lifeCycleGraphCanvas" width="360" height="240"></canvas><br /><span style="font-size:10pt;">Operation Time (years)</span></td></tr></table>';
+        $(function () {
+            var param = new Common.Param();
+            var inputParam = param.GetQueryString();
+            var runTypeName;
+            var names = new Array();
+            var volumes = new Array();
+            var units = new Array();
+            var hours = new Array();
+            var initialCosts = new Array();
+            var bearingCosts = new Array();
+            var inverterCosts = new Array();
+            var totalVolume = 0;
+            var totalUnitCount = 0;
+            var totalHour = 0;
+            var totalOutput = new Array();
+            var common = new Common.Param();
+            var currency = "$";
+
+            for (var eachParam in inputParam) {
+                if (eachParam == "runType") {
+                    $("input[name='runType']").val([inputParam[eachParam]]);
+                    runTypeName = $("input[name='runType']:checked").parent().text();
+                    $("#runTypeName").html("<br/>" + runTypeName);
+                    $("#resultTitle").html("Comparison With " + runTypeName + " Control : Calculated Results");
+
+                    $("#power_graph_container").append(powerGraphHtml);
+                    var powerCanvas = $("#powerGraphCanvas").get(0).getContext("2d");
+                    drawPowerGraph(powerCanvas, inputParam[eachParam], "b");
+                } else if (eachParam == "date") {
+                    var inputDate = new Date(inputParam[eachParam]);
+
+                    $("#Year").text(inputDate.getFullYear());
+                    $("#Month").text(inputDate.getMonth() + 1);
+                    $("#Day").text(inputDate.getDate());
+                } else {
+                    var priceFlg = false;
+
+                    if (eachParam.search("name") == 0) {
+                        names.push(inputParam[eachParam]);
+                    } else if (eachParam.search("motorVolume") == 0) {
+                        $("#" + eachParam).val(inputParam[eachParam]);
+                        volumes.push(inputParam[eachParam]);
+                        var id = $("#" + eachParam).attr("id").replace("motorVolume", "");
+                        totalVolume += parseFloat(inputParam[eachParam]) * parseInt(inputParam["unitCount" + id]);
+                    } else if (eachParam.search("unitCount") == 0) {
+                        $("#" + eachParam).val(inputParam[eachParam]);
+                        units.push(inputParam[eachParam]);
+                        totalUnitCount += parseInt(inputParam[eachParam]);
+                    } else if (eachParam.search("hour") == 0) {
+                        $("#" + eachParam).val(inputParam[eachParam]);
+                        hours[parseInt(eachParam.replace("hour", ""))] = inputParam[eachParam];
+                        totalHour += parseInt(inputParam[eachParam]);
+                    } else if (eachParam.search("initialCost") == 0) {
+                        priceFlg = true;
+                        initialCosts.push(Number(inputParam[eachParam]));
+                    } else if (eachParam.search("bearingCost") == 0) {
+                        priceFlg = true;
+                        bearingCosts.push(Number(inputParam[eachParam]));
+                    } else if (eachParam.search("inverterCost") == 0) {
+                        priceFlg = true;
+                        inverterCosts.push(Number(inputParam[eachParam]));
+                    } else {
+                        $("#" + eachParam).text(inputParam[eachParam]);
+                    }
+
+                    if (priceFlg) {
+                        $("#" + eachParam).val(Number(inputParam[eachParam]).toLocaleString());
+                    } else {
+                        $("#" + eachParam).val(inputParam[eachParam]);
+                    }
+                }
+            }
+
+            currency = inputParam["currency"];
+            $("[id^='priceUnit']").html(currency);
+            var priceScale = common.GetSettings("priceScale" + currency);
+
+            $("#totalVolume").val(totalVolume);
+            $("#totalUnitCount").val(totalUnitCount);
+            $("#totalHour").val(totalHour);
+
+            var energy = new Array();
+            var totalVolumeArray = new Array();
+
+            var calc = new Fan.CalcFan("FanData.csv", parseInt(inputParam["runType"]), names, volumes, units, hours,
+                inputParam["dayPerYear"], inputParam["electricityCharge"], inputParam["co2Rate"], initialCosts,
+                bearingCosts, inverterCosts, currency);
+
+            energy = calc.CalcEnergy();
+            totalVolumeArray = calc.GetTotalVolume();
+            var j = 0;
+            for (i = 0; i < totalVolumeArray.length; i++) {
+                if (totalVolumeArray[i] == 0) {
+                    $("[id^='referenceData" + (i + 1) + "']").each(function (j, elem) {
+                        $(elem).hide();
+                    });
+                } else {
+                    if (j % 2 == 0) {
+                        $("#referenceData" + (i + 1)).addClass("floatL w486");
+                        $("#tableTitle" + (i + 1)).addClass("pt5 pb25 pl15 font12 bold");
+                        if (j == 2) {
+                            $("#tableTitle" + (i + 1)).addClass("pt30");
+                        }
+                        $("#tableDiv" + (i + 1) + "1").addClass("br1f");
+                        $("#tableDiv" + (i + 1) + "2").addClass("br1g");
+                    } else {
+                        $("#referenceData" + (i + 1)).addClass("floatR w486");
+                        $("#tableTitle" + (i + 1)).addClass("pt5 pl15 pb25 font12 bold");
+                    }
+                    j++;
+                    $("td[id^='referenceData" + (i + 1) + "-']").each(function (j, elem) {
+                        var id = $(elem).attr("id");
+                        var tmpArray = id.replace("referenceData", "").split("-");
+                        var tmpArray2 = tmpArray[1].split("_");
+                        var machineType, runType;
+                        if (tmpArray2.length > 1) {
+                            machineType = tmpArray2[0]
+                            runType = tmpArray2[1];
+                        } else {
+                            machineType = tmpArray[1];
+                            runType = -1;
+                        }
+
+                        var dataPower = calc.GetDataByParam(tmpArray[0], parseInt(runType), parseInt(machineType), tmpArray[2]);
+                        if (dataPower) {
+                            $(elem).text(Math.round(dataPower * 100) + "%");
+                        }
+                    });
+                    $("[id^='referenceData" + (i + 1) + "-0_']").each(function (j, elem) {
+                        $(elem).hide();
+                    });
+
+                    $("[id^='referenceData" + (i + 1) + "-0_" + inputParam["runType"] + "']").show();
+                }
+
+            }
+
+            $("input[id^='output']").each(function (i, elem) {
+                var id = $(elem).attr("id");
+                var tmpArray = id.replace("output", "").split("-");
+                var tmp = energy[tmpArray[1]][tmpArray[0]]
+                if (tmp) {
+                    $(elem).val(Math.round(tmp));
+                } else {
+                    $(elem).val(0);
+                }
+            });
+
+            var totalOutput = new Array();
+            $("input[id^='totalOutput']").each(function (i, elem) {
+                var id = $(elem).attr("id").replace("totalOutput", "");
+
+                var sum = 0;
+                $("input[id^='output" + id + "']").each(function (j, elem2) {
+                    sum += parseInt($(elem2).val());
+                });
+
+                $(elem).val(sum);
+                totalOutput[i] = sum;
+            });
+
+            $("label[id^='savePower']").each(function (i, elem) {
+                var id = $(elem).attr("id").replace("savePower", "");
+
+                if (totalOutput[id] != 0) {
+                    var tmp = totalOutput[0] - totalOutput[id];
+                    $(elem).text(tmp.toLocaleString());
+
+                    var saveCharge = inputParam["electricityCharge"] * tmp;
+                    $("#saveCharge" + id).text(saveCharge.toLocaleString());
+                    $("#saveCO2" + id).text(Math.round(inputParam["co2Rate"] * tmp / 1000 * 10) / 10);
+                    $("#repayYears" + id).text(Math.round(initialCosts[id] / saveCharge * 10) / 10);
+                    $("#initialCosts" + id).text(Number(initialCosts[id]).toLocaleString());
+                }
+            });
+
+            var lifeCycleData = new Array();
+            $("#lifecycle_graph_container").append(lccGraphHtml);
+            $("#graph2PriceUnit").html(priceScale + currency);
+            var lifeCycleCanvas = $("#lifeCycleGraphCanvas").get(0).getContext("2d");
+            lifeCycleData = calc.makeLifeCycleCostData(totalOutput, priceScale);
+            drawLifeCycleGraph(lifeCycleCanvas, lifeCycleData, runTypeName, priceScale, currency, "b");
+
+        });
+    </script>
+    <!-- JS Area END -->
+
+</head>
+
+<body class="melfa_popup">
+
+    <div id="container">
+
+        <div id="header-wrap">
+            <div id="header">
+                <!--logo&siteid-->
+                <a href="/index.html"><img src="/fa/images/w_header_footer/logo.gif" alt="MITSUBISHI ELECTRIC Changes for the Better" width="111" height="45" id="logo" /></a><img src="/fa/shared/img/header/txt_global_gl01.gif" alt="Global - Factory Automation" width="291" height="36" id="siteid" />
+            </div>
+        </div>
+        <!--/ header begin -->
+
+        <div id="module_titleArea" class="clearfix">
+            <div id="stitle">
+                <p><img title="Factory Automation" data-popupalt-original-title="null" src="/fa/shared/img/header/h1_factory_automation.gif" alt="Factory Automation" height="28" width="216" /></p>
+                <!--/stitle-->
+            </div>
+        </div>
+
+        <div id="melfa_contents_1col">
+
+            <!-- <h1>Preparation of new projects</h1> -->
+
+            <p>
+                <div id="wrapper">
+
+                    <div id="container">
+
+                        <div id="header" style="padding-left:0; padding-right:0">
+                            <h1>SuperLine Series Motor and FREQROL Inverter</h1>
+                            <section class="nbox">
+                                <div id="name"><label id="userCompany"></label></div>
+                                <div id="day">Date: <label id="Day"></label>/<label id="Month"></label>/<label id="Year"></label></div>
+                                <div id="factory" class="clear"><span class="fac">Plant: </span><label id="userFactory"></label></div>
+                                <div id="device"><span class="fac">Machine Name: </span><label id="userMachine"></label></div>
+                                <div id="preparation"><span class="fac">Author: </span><label id="userName"></label></div>
+                                <div class="clear"></div>
+                            </section>
+                        </div>
+                        <div id="contents" class="clear">
+                            <div class="lbox">
+                                <h2>Operating Condition</h2>
+                                <div><label class="grey01 font14 ml30">Control</label></div>
+                                <section class="sec1">
+                                    <label><input type="radio" name="runType" value="0" checked="checked" disabled="disabled" /> Discharge Side Damper</label>
+                                    <label><input type="radio" name="runType" value="1" class="ml30" disabled="disabled" /> Suction Side Damper</label>
+                                    <label><input type="radio" name="runType" value="2" class="ml30" disabled="disabled" /> Valve</label>
+                                </section>
+
+                                <section class="sec8">
+                                    <ul>
+                                        <li><label class="grey font12">Application </label><label class="grey font12 ml55">Motor Capacity(kW)</label><label class="grey font12 ml85 mr5">Number Of Units</label></li>
+                                        <li>
+                                            <input type="text" id="name1" class="w120" />
+                                            <select name="motorVolume1" id="motorVolume1" class="w114 ml35 " disabled="disabled">
+                                                <option value="">---</option>
+                                                <option value="0.75">0.75</option>
+                                                <option value="1.5">1.5</option>
+                                                <option value="2.2">2.2</option>
+                                                <option value="3.7">3.7</option>
+                                                <option value="5.5">5.5</option>
+                                                <option value="7.5">7.5</option>
+                                                <option value="11">11</option>
+                                                <option value="15">15</option>
+                                                <option value="18.5">18.5</option>
+                                                <option value="22">22</option>
+                                                <option value="30">30</option>
+                                                <option value="37">37</option>
+                                                <option value="45">45</option>
+                                                <option value="55">55</option>
+                                            </select>
+                                            <input type="text" id="unitCount1" class="ml20 w84" readonly="readonly" />
+                                        </li>
+                                        <li>
+                                            <input type="text" id="name2" class="w120" />
+                                            <select name="motorVolume2" id="motorVolume2" class="w114 ml35 " disabled="disabled">
+                                                <option value="">---</option>
+                                                <option value="0.75">0.75</option>
+                                                <option value="1.5">1.5</option>
+                                                <option value="2.2">2.2</option>
+                                                <option value="3.7">3.7</option>
+                                                <option value="5.5">5.5</option>
+                                                <option value="7.5">7.5</option>
+                                                <option value="11">11</option>
+                                                <option value="15">15</option>
+                                                <option value="18.5">18.5</option>
+                                                <option value="22">22</option>
+                                                <option value="30">30</option>
+                                                <option value="37">37</option>
+                                                <option value="45">45</option>
+                                                <option value="55">55</option>
+                                            </select>
+                                            <input type="text" id="unitCount2" class="ml20 w84" readonly="readonly" />
+                                        </li>
+                                        <li>
+                                            <input type="text" id="name3" class="w120" />
+                                            <select name="motorVolume3" id="motorVolume3" class="w114 ml35 " disabled="disabled">
+                                                <option value="">---</option>
+                                                <option value="0.75">0.75</option>
+                                                <option value="1.5">1.5</option>
+                                                <option value="2.2">2.2</option>
+                                                <option value="3.7">3.7</option>
+                                                <option value="5.5">5.5</option>
+                                                <option value="7.5">7.5</option>
+                                                <option value="11">11</option>
+                                                <option value="15">15</option>
+                                                <option value="18.5">18.5</option>
+                                                <option value="22">22</option>
+                                                <option value="30">30</option>
+                                                <option value="37">37</option>
+                                                <option value="45">45</option>
+                                                <option value="55">55</option>
+                                            </select>
+                                            <input type="text" id="unitCount3" class="ml20 w84" readonly="readonly" />
+                                        </li>
+                                        <li>
+                                            <input type="text" id="name4" class="w120" />
+                                            <select name="motorVolume4" id="motorVolume4" class="w114 ml35 " disabled="disabled">
+                                                <option value="">---</option>
+                                                <option value="0.75">0.75</option>
+                                                <option value="1.5">1.5</option>
+                                                <option value="2.2">2.2</option>
+                                                <option value="3.7">3.7</option>
+                                                <option value="5.5">5.5</option>
+                                                <option value="7.5">7.5</option>
+                                                <option value="11">11</option>
+                                                <option value="15">15</option>
+                                                <option value="18.5">18.5</option>
+                                                <option value="22">22</option>
+                                                <option value="30">30</option>
+                                                <option value="37">37</option>
+                                                <option value="45">45</option>
+                                                <option value="55">55</option>
+                                            </select>
+                                            <input type="text" id="unitCount4" class="ml20 w84" readonly="readonly" />
+                                        </li>
+                                        <li>
+                                            <input type="text" id="name5" class="w120" />
+                                            <select name="motorVolume5" id="motorVolume5" class="w114 ml35 " disabled="disabled">
+                                                <option value="">---</option>
+                                                <option value="0.75">0.75</option>
+                                                <option value="1.5">1.5</option>
+                                                <option value="2.2">2.2</option>
+                                                <option value="3.7">3.7</option>
+                                                <option value="5.5">5.5</option>
+                                                <option value="7.5">7.5</option>
+                                                <option value="11">11</option>
+                                                <option value="15">15</option>
+                                                <option value="18.5">18.5</option>
+                                                <option value="22">22</option>
+                                                <option value="30">30</option>
+                                                <option value="37">37</option>
+                                                <option value="45">45</option>
+                                                <option value="55">55</option>
+                                            </select>
+                                            <input type="text" id="unitCount5" class="ml20 w84" readonly="readonly" />
+                                        </li>
+
+                                    </ul>
+                                    <div class="greyline w440 mt10 mb10 ml40"></div>
+                                    <ul class="mb20">
+                                        <li>
+                                            <label class="grey01 font14">Total Capacity</label><input id="totalVolume" type="text" readonly="readonly" class="w114 ml30 grey02" /><input id="totalUnitCount" type="text" readonly="readonly" class="ml20 w84 grey02" />
+                                        </li>
+                                    </ul>
+                                </section>
+
+                                <div class="greyline clear"></div>
+                                <h3 class="clear"></h3>
+
+                                <section class="sec9">
+                                    <ul class="mb15 mt10">
+                                        <li>
+                                            <label class="grey mr115 w100">Flow Rate</label><label class="mr33">20%</label><label class="mr33">30%</label><label class="mr33">40%</label><label class="mr33">50%</label>
+                                        </li>
+                                        <li><label class="grey mr45 w100">Operation Hours</label><input type="text" id="hour20" readonly="readonly" /><input type="text" id="hour30" readonly="readonly" /><input type="text" id="hour40" readonly="readonly" /><input type="text" id="hour50" readonly="readonly" /></li>
+                                        <li class="mt5">
+                                            <label class="ml110 mr33">60%</label><label class="mr33">70%</label><label class="mr33">80%</label><label class="mr28">90%</label><label class="mr35">100%</label><label>Total</label>
+                                        </li>
+                                        <li>
+                                            <input type="text" id="hour60" class="ml78" readonly="readonly" /><input type="text" id="hour70" readonly="readonly" /><input type="text" id="hour80" readonly="readonly" /><input type="text" id="hour90" readonly="readonly" /><input type="text" id="hour100" readonly="readonly" /><input type="text" id="totalHour" readonly="readonly" class="grey02" /><label class="font14">h</label>
+                                        </li>
+                                    </ul>
+                                </section>
+
+                                <div class="greyline clear"></div>
+                                <h3 class="clear"></h3>
+
+                                <section class="sec10">
+                                    <ul class="mb5 mt10">
+                                        <li>
+                                            <label class="grey">Contract Electricity Charges</label>
+                                            <input id="electricityCharge" type="text" size="6" readonly="readonly" /><span id="priceUnitEnergyCharge">$</span>
+                                        </li>
+                                        <li>
+                                            <label class="grey">Annual Operation Days</label>
+                                            <input id="dayPerYear" type="text" readonly="readonly" />Days
+                                        </li>
+                                        <li>
+                                            <label class="grey">CO2 Coefficient</label>
+                                            <input id="co2Rate" type="text" size="6" readonly="readonly" />kg/kWh
+                                        </li>
+                                    </ul>
+                                </section>
+
+                                <div class="greyline clear"></div>
+                                <h3 class="clear mb5"></h3>
+
+                                <section class="sec11">
+                                    <ul class="mt15 mb70">
+                                        <li>
+                                            <label for="name" class="grey w77 alignC ml65" id="runTypeName">
+                                            </label>
+                                            <label for="name" class="grey w77 alignC">
+                                                <br />IE1
+                                            </label>
+                                            <label for="name" class="grey w77 alignC">
+                                                <br />IE2
+                                            </label>
+                                            <label for="name" class="grey w77 alignC">
+                                                <br />IE3
+                                            </label>
+                                            <label for="name" class="grey w77 alignC">
+                                                <br />IE4
+                                            </label>
+                                        </li>
+                                        <li class="clear mb10" style="height:30px;">
+                                            <label class="grey w114 mr20">Installation<br />Costs</label>
+                                            <input type="text" id="initialCost0" class="w60" maxlength="10" height="30" readonly="readonly" style="margin-top: 5px;" /><input type="text" id="initialCost1" class="w60" maxlength="10" readonly="readonly" style="margin-top: 5px;" /><input type="text" id="initialCost2" class="w60" maxlength="10" readonly="readonly" style="margin-top: 5px;" /><input type="text" id="initialCost3" class="w60" maxlength="10" readonly="readonly" style="margin-top: 5px;" /><input type="text" id="initialCost4" class="w60" maxlength="10" readonly="readonly" style="margin-top: 5px;" /><label class="w20 mt10"><span id="priceUnitIC">$</span></label>
+                                        </li>
+                                        <li class="clear mt15 mb10" style="height:50px;">
+                                            <label class="grey w114 mr20">Bearing Replacement Costs</label>
+                                            <input type="text" id="bearingCost0" class="w60" maxlength="10" readonly="readonly" style="margin-top: 15px;" /><input type="text" id="bearingCost1" class="w60" maxlength="10" readonly="readonly" style="margin-top: 15px;" /><input type="text" id="bearingCost2" class="w60" maxlength="10" readonly="readonly" style="margin-top: 15px;" /><input type="text" id="bearingCost3" class="w60" maxlength="10" readonly="readonly" style="margin-top: 15px;" /><input type="text" id="bearingCost4" class="w60" maxlength="10" readonly="readonly" style="margin-top: 15px;" /><label class="w20 mt20"><span id="priceUnitBRC">$</span></label>
+                                        </li>
+                                        <li class="clear mt15" style="height:50px;">
+                                            <label class="grey w114 mr62">Inverter Replacement Costs</label>
+                                            <input type="hidden" id="inverterCost0" /><input type="text" id="inverterCost1" class="w60 ml29" maxlength="10" readonly="readonly" style="margin-top: 15px;" /><input type="text" id="inverterCost2" class="w60" maxlength="10" readonly="readonly" style="margin-top: 15px;" /><input type="text" id="inverterCost3" class="w60" maxlength="10" readonly="readonly" style="margin-top: 15px;" /><input type="text" id="inverterCost4" class="w60" maxlength="10" readonly="readonly" style="margin-top: 15px;" /><label class="w20 mt20"><span id="priceUnitIRC" style="vertical-align: baseline">$</span></label>
+                                        </li>
+                                    </ul>
+                                </section>
+
+                                <section class="sec4 clear">
+                                    <ul>
+                                        <li class="btn1">Calculate</li>
+                                        <li class="btn2">Clear</li>
+                                    </ul>
+                                </section>
+
+                            </div>
+                            <div class="rbox">
+                                <section class="sec5">
+                                    <h2>Power Consumption Data (Less Than 15K)</h2>
+                                    <div class="alignR mr5" id="powerGraphLegend"></div>
+                                    <div id="power_graph_container" class="graph1" style="text-align:center">
+                                    </div>
+                                </section>
+                                <section class="sec6">
+                                    <h2>Life Cycle Cost Simulation</h2>
+                                    <div class="alignR mr5" id="lifeCycleGraphLegend"></div>
+                                    <div id="lifecycle_graph_container" class="graph1" style="text-align:center">
+                                    </div>
+                                </section>
+                                <section class="sec12">
+                                    <h2 id="resultTitle"></h2>
+                                    <table>
+                                        <tr>
+                                            <th></th>
+                                            <th>
+                                                IE1
+                                            </th>
+                                            <th>
+                                                IE2
+                                            </th>
+                                            <th>
+                                                IE3
+                                            </th>
+                                            <th>
+                                                IE4
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="70">
+                                                Annual Power Conservation<br />(kW･h)
+                                            </td>
+                                            <td class="left"><label id="savePower1"></label></td>
+                                            <td class="left"><label id="savePower2"></label></td>
+                                            <td class="left"><label id="savePower3"></label></td>
+                                            <td class="right"><label id="savePower4"></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="70">Annual Power Conservation<br />Rates(<span id="priceUnitAPC">$</span>)</td>
+                                            <td class="left"><label id="saveCharge1"></label></td>
+                                            <td class="left"><label id="saveCharge2"></label></td>
+                                            <td class="left"><label id="saveCharge3"></label></td>
+                                            <td class="right"><label id="saveCharge4"></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="70">CO2 Emission Reduction<br />(ton)</td>
+                                            <td class="left"><label id="saveCO21"></label></td>
+                                            <td class="left"><label id="saveCO22"></label></td>
+                                            <td class="left"><label id="saveCO23"></label></td>
+                                            <td class="right"><label id="saveCO24"></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="50">
+                                                Amortization In Years
+                                            </td>
+                                            <td class="left"><label id="repayYears1"></label></td>
+                                            <td class="left"><label id="repayYears2"></label></td>
+                                            <td class="left"><label id="repayYears3"></label></td>
+                                            <td class="right"><label id="repayYears4"></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="grey" height="50">
+                                                Total Cost Of Equipment
+                                            </td>
+                                            <td class="left"><label id="initialCosts1"></label></td>
+                                            <td class="left"><label id="initialCosts2"></label></td>
+                                            <td class="left"><label id="initialCosts3"></label></td>
+                                            <td class="right"><label id="initialCosts4"></label></td>
+                                        </tr>
+                                    </table>
+                                </section>
+                            </div>
+                            <div class="bbox clear">
+                                <section class="sec13">
+                                    <h2>(Reference) Calculation Table Of Energy Saving Effect</h2>
+
+                                    <!--テーブル一つ目-->
+                                    <div id="referenceData1">
+                                        <div id="tableTitle1">Power Consumption Data(Less Than 15K)</div>
+                                        <div id="tableDiv11">
+                                            <div id="tableDiv12">
+                                                <table>
+                                                    <tr>
+                                                        <th>Flow<br />Rate</th>
+                                                        <th id="referenceData1-0_0">
+                                                            Discharge Side<br />
+                                                            Damper Control
+                                                        </th>
+                                                        <th id="referenceData1-0_1">
+                                                            Suction Side<br />
+                                                            Damper Control
+                                                        </th>
+                                                        <th id="referenceData1-0_2">
+                                                            Valve Control
+                                                        </th>
+                                                        <th id="referenceData1-1">
+                                                            IE1
+                                                        </th>
+                                                        <th id="referenceData1-2">
+                                                            IE2
+                                                        </th>
+                                                        <th id="referenceData1-3">
+                                                            IE3
+                                                        </th>
+                                                        <th id="referenceData1-4">
+                                                            IE4
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20%</td>
+                                                        <td id="referenceData1-0_0-20"></td>
+                                                        <td id="referenceData1-0_1-20"></td>
+                                                        <td id="referenceData1-0_2-20"></td>
+                                                        <td id="referenceData1-1-20"></td>
+                                                        <td id="referenceData1-2-20"></td>
+                                                        <td id="referenceData1-3-20"></td>
+                                                        <td id="referenceData1-4-20"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>30%</td>
+                                                        <td id="referenceData1-0_0-30"></td>
+                                                        <td id="referenceData1-0_1-30"></td>
+                                                        <td id="referenceData1-0_2-30"></td>
+                                                        <td id="referenceData1-1-30"></td>
+                                                        <td id="referenceData1-2-30"></td>
+                                                        <td id="referenceData1-3-30"></td>
+                                                        <td id="referenceData1-4-30"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>40%</td>
+                                                        <td id="referenceData1-0_0-40"></td>
+                                                        <td id="referenceData1-0_1-40"></td>
+                                                        <td id="referenceData1-0_2-40"></td>
+                                                        <td id="referenceData1-1-40"></td>
+                                                        <td id="referenceData1-2-40"></td>
+                                                        <td id="referenceData1-3-40"></td>
+                                                        <td id="referenceData1-4-40"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>50%</td>
+                                                        <td id="referenceData1-0_0-50"></td>
+                                                        <td id="referenceData1-0_1-50"></td>
+                                                        <td id="referenceData1-0_2-50"></td>
+                                                        <td id="referenceData1-1-50"></td>
+                                                        <td id="referenceData1-2-50"></td>
+                                                        <td id="referenceData1-3-50"></td>
+                                                        <td id="referenceData1-4-50"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>60%</td>
+                                                        <td id="referenceData1-0_0-60"></td>
+                                                        <td id="referenceData1-0_1-60"></td>
+                                                        <td id="referenceData1-0_2-60"></td>
+                                                        <td id="referenceData1-1-60"></td>
+                                                        <td id="referenceData1-2-60"></td>
+                                                        <td id="referenceData1-3-60"></td>
+                                                        <td id="referenceData1-4-60"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>70%</td>
+                                                        <td id="referenceData1-0_0-70"></td>
+                                                        <td id="referenceData1-0_1-70"></td>
+                                                        <td id="referenceData1-0_2-70"></td>
+                                                        <td id="referenceData1-1-70"></td>
+                                                        <td id="referenceData1-2-70"></td>
+                                                        <td id="referenceData1-3-70"></td>
+                                                        <td id="referenceData1-4-70"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>80%</td>
+                                                        <td id="referenceData1-0_0-80"></td>
+                                                        <td id="referenceData1-0_1-80"></td>
+                                                        <td id="referenceData1-0_2-80"></td>
+                                                        <td id="referenceData1-1-80"></td>
+                                                        <td id="referenceData1-2-80"></td>
+                                                        <td id="referenceData1-3-80"></td>
+                                                        <td id="referenceData1-4-80"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>90%</td>
+                                                        <td id="referenceData1-0_0-90"></td>
+                                                        <td id="referenceData1-0_1-90"></td>
+                                                        <td id="referenceData1-0_2-90"></td>
+                                                        <td id="referenceData1-1-90"></td>
+                                                        <td id="referenceData1-2-90"></td>
+                                                        <td id="referenceData1-3-90"></td>
+                                                        <td id="referenceData1-4-90"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>100%</td>
+                                                        <td id="referenceData1-0_0-100"></td>
+                                                        <td id="referenceData1-0_1-100"></td>
+                                                        <td id="referenceData1-0_2-100"></td>
+                                                        <td id="referenceData1-1-100"></td>
+                                                        <td id="referenceData1-2-100"></td>
+                                                        <td id="referenceData1-3-100"></td>
+                                                        <td id="referenceData1-4-100"></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--テーブル一つ目 ここまで-->
+                                    <!--テーブル二つ目-->
+
+                                    <div id="referenceData2">
+                                        <div id="tableTitle2">Power Consumption Data(18.5K~45K)</div>
+                                        <div id="tableDiv21">
+                                            <div id="tableDiv22">
+                                                <table>
+                                                    <tr>
+                                                        <th>Flow<br />Rate</th>
+                                                        <th id="referenceData2-0_0">
+                                                            Discharge Side<br />
+                                                            Damper Control
+                                                        </th>
+                                                        <th id="referenceData2-0_1">
+                                                            Suction Side<br />
+                                                            Damper Control
+                                                        </th>
+                                                        <th id="referenceData2-0_2">
+                                                            Valve Control
+                                                        </th>
+                                                        <th id="referenceData2-1">
+                                                            IE1
+                                                        </th>
+                                                        <th id="referenceData2-2">
+                                                            IE2
+                                                        </th>
+                                                        <th id="referenceData2-3">
+                                                            IE3
+                                                        </th>
+                                                        <th id="referenceData2-4">
+                                                            IE4
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20%</td>
+                                                        <td id="referenceData2-0_0-20"></td>
+                                                        <td id="referenceData2-0_1-20"></td>
+                                                        <td id="referenceData2-0_2-20"></td>
+                                                        <td id="referenceData2-1-20"></td>
+                                                        <td id="referenceData2-2-20"></td>
+                                                        <td id="referenceData2-3-20"></td>
+                                                        <td id="referenceData2-4-20"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>30%</td>
+                                                        <td id="referenceData2-0_0-30"></td>
+                                                        <td id="referenceData2-0_1-30"></td>
+                                                        <td id="referenceData2-0_2-30"></td>
+                                                        <td id="referenceData2-1-30"></td>
+                                                        <td id="referenceData2-2-30"></td>
+                                                        <td id="referenceData2-3-30"></td>
+                                                        <td id="referenceData2-4-30"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>40%</td>
+                                                        <td id="referenceData2-0_0-40"></td>
+                                                        <td id="referenceData2-0_1-40"></td>
+                                                        <td id="referenceData2-0_2-40"></td>
+                                                        <td id="referenceData2-1-40"></td>
+                                                        <td id="referenceData2-2-40"></td>
+                                                        <td id="referenceData2-3-40"></td>
+                                                        <td id="referenceData2-4-40"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>50%</td>
+                                                        <td id="referenceData2-0_0-50"></td>
+                                                        <td id="referenceData2-0_1-50"></td>
+                                                        <td id="referenceData2-0_2-50"></td>
+                                                        <td id="referenceData2-1-50"></td>
+                                                        <td id="referenceData2-2-50"></td>
+                                                        <td id="referenceData2-3-50"></td>
+                                                        <td id="referenceData2-4-50"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>60%</td>
+                                                        <td id="referenceData2-0_0-60"></td>
+                                                        <td id="referenceData2-0_1-60"></td>
+                                                        <td id="referenceData2-0_2-60"></td>
+                                                        <td id="referenceData2-1-60"></td>
+                                                        <td id="referenceData2-2-60"></td>
+                                                        <td id="referenceData2-3-60"></td>
+                                                        <td id="referenceData2-4-60"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>70%</td>
+                                                        <td id="referenceData2-0_0-70"></td>
+                                                        <td id="referenceData2-0_1-70"></td>
+                                                        <td id="referenceData2-0_2-70"></td>
+                                                        <td id="referenceData2-1-70"></td>
+                                                        <td id="referenceData2-2-70"></td>
+                                                        <td id="referenceData2-3-70"></td>
+                                                        <td id="referenceData2-4-70"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>80%</td>
+                                                        <td id="referenceData2-0_0-80"></td>
+                                                        <td id="referenceData2-0_1-80"></td>
+                                                        <td id="referenceData2-0_2-80"></td>
+                                                        <td id="referenceData2-1-80"></td>
+                                                        <td id="referenceData2-2-80"></td>
+                                                        <td id="referenceData2-3-80"></td>
+                                                        <td id="referenceData2-4-80"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>90%</td>
+                                                        <td id="referenceData2-0_0-90"></td>
+                                                        <td id="referenceData2-0_1-90"></td>
+                                                        <td id="referenceData2-0_2-90"></td>
+                                                        <td id="referenceData2-1-90"></td>
+                                                        <td id="referenceData2-2-90"></td>
+                                                        <td id="referenceData2-3-90"></td>
+                                                        <td id="referenceData2-4-90"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>100%</td>
+                                                        <td id="referenceData2-0_0-100"></td>
+                                                        <td id="referenceData2-0_1-100"></td>
+                                                        <td id="referenceData2-0_2-100"></td>
+                                                        <td id="referenceData2-1-100"></td>
+                                                        <td id="referenceData2-2-100"></td>
+                                                        <td id="referenceData2-3-100"></td>
+                                                        <td id="referenceData2-4-100"></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--テーブル二つ目 ここまで-->
+                                    <!--テーブル三つ目-->
+                                    <div id="referenceData3">
+                                        <div id="tableTitle3">Power Consumption Data(More Than 55K)</div>
+                                        <div id="tableDiv31">
+                                            <div id="tableDiv32">
+                                                <table>
+                                                    <tr>
+                                                        <th>Flow<br />Rate</th>
+                                                        <th id="referenceData3-0_0">
+                                                            Discharge Side<br />
+                                                            Damper Control
+                                                        </th>
+                                                        <th id="referenceData3-0_1">
+                                                            Suction Side<br />
+                                                            Damper Control
+                                                        </th>
+                                                        <th id="referenceData3-0_2">
+                                                            Valve Control
+                                                        </th>
+                                                        <th id="referenceData3-1">
+                                                            IE1
+                                                        </th>
+                                                        <th id="referenceData3-2">
+                                                            IE2
+                                                        </th>
+                                                        <th id="referenceData3-3">
+                                                            IE3
+                                                        </th>
+                                                        <th id="referenceData3-4">
+                                                            IE4
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20%</td>
+                                                        <td id="referenceData3-0_0-20"></td>
+                                                        <td id="referenceData3-0_1-20"></td>
+                                                        <td id="referenceData3-0_2-20"></td>
+                                                        <td id="referenceData3-1-20"></td>
+                                                        <td id="referenceData3-2-20"></td>
+                                                        <td id="referenceData3-3-20"></td>
+                                                        <td id="referenceData3-4-20"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>30%</td>
+                                                        <td id="referenceData3-0_0-30"></td>
+                                                        <td id="referenceData3-0_1-30"></td>
+                                                        <td id="referenceData3-0_2-30"></td>
+                                                        <td id="referenceData3-1-30"></td>
+                                                        <td id="referenceData3-2-30"></td>
+                                                        <td id="referenceData3-3-30"></td>
+                                                        <td id="referenceData3-4-30"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>40%</td>
+                                                        <td id="referenceData3-0_0-40"></td>
+                                                        <td id="referenceData3-0_1-40"></td>
+                                                        <td id="referenceData3-0_2-40"></td>
+                                                        <td id="referenceData3-1-40"></td>
+                                                        <td id="referenceData3-2-40"></td>
+                                                        <td id="referenceData3-3-40"></td>
+                                                        <td id="referenceData3-4-40"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>50%</td>
+                                                        <td id="referenceData3-0_0-50"></td>
+                                                        <td id="referenceData3-0_1-50"></td>
+                                                        <td id="referenceData3-0_2-50"></td>
+                                                        <td id="referenceData3-1-50"></td>
+                                                        <td id="referenceData3-2-50"></td>
+                                                        <td id="referenceData3-3-50"></td>
+                                                        <td id="referenceData3-4-50"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>60%</td>
+                                                        <td id="referenceData3-0_0-60"></td>
+                                                        <td id="referenceData3-0_1-60"></td>
+                                                        <td id="referenceData3-0_2-60"></td>
+                                                        <td id="referenceData3-1-60"></td>
+                                                        <td id="referenceData3-2-60"></td>
+                                                        <td id="referenceData3-3-60"></td>
+                                                        <td id="referenceData3-4-60"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>70%</td>
+                                                        <td id="referenceData3-0_0-70"></td>
+                                                        <td id="referenceData3-0_1-70"></td>
+                                                        <td id="referenceData3-0_2-70"></td>
+                                                        <td id="referenceData3-1-70"></td>
+                                                        <td id="referenceData3-2-70"></td>
+                                                        <td id="referenceData3-3-70"></td>
+                                                        <td id="referenceData3-4-70"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>80%</td>
+                                                        <td id="referenceData3-0_0-80"></td>
+                                                        <td id="referenceData3-0_1-80"></td>
+                                                        <td id="referenceData3-0_2-80"></td>
+                                                        <td id="referenceData3-1-80"></td>
+                                                        <td id="referenceData3-2-80"></td>
+                                                        <td id="referenceData3-3-80"></td>
+                                                        <td id="referenceData3-4-80"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>90%</td>
+                                                        <td id="referenceData3-0_0-90"></td>
+                                                        <td id="referenceData3-0_1-90"></td>
+                                                        <td id="referenceData3-0_2-90"></td>
+                                                        <td id="referenceData3-1-90"></td>
+                                                        <td id="referenceData3-2-90"></td>
+                                                        <td id="referenceData3-3-90"></td>
+                                                        <td id="referenceData3-4-90"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>100%</td>
+                                                        <td id="referenceData3-0_0-100"></td>
+                                                        <td id="referenceData3-0_1-100"></td>
+                                                        <td id="referenceData3-0_2-100"></td>
+                                                        <td id="referenceData3-1-100"></td>
+                                                        <td id="referenceData3-2-100"></td>
+                                                        <td id="referenceData3-3-100"></td>
+                                                        <td id="referenceData3-4-100"></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--テーブル三つ目 ここまで-->
+                                    <div class="clear mb20"></div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="dataTable" style="display:none;text-align:center">
+                            <table border="1">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">Flow Rate</th>
+                                        <th colspan="5">Annual Power Consumption(kW・h)</th>
+                                    </tr>
+                                    <tr>
+                                        <th id="outputRunTypeName"></th>
+                                        <th>Standard Motor And Inverter Control</th>
+                                        <th>High-Efficiency Motor And Inverter Control</th>
+                                        <th>Premium Efficiency Motor And Inverter Control</th>
+                                        <th>Premium High-Efficiency Motor IPM Control</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>20%</th>
+                                        <td><input id="output0-20" type="text" readonly="readonly" /></td>
+                                        <td><input id="output1-20" type="text" readonly="readonly" /></td>
+                                        <td><input id="output2-20" type="text" readonly="readonly" /></td>
+                                        <td><input id="output3-20" type="text" readonly="readonly" /></td>
+                                        <td><input id="output4-20" type="text" readonly="readonly" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>30%</th>
+                                        <td><input id="output0-30" type="text" readonly="readonly" /></td>
+                                        <td><input id="output1-30" type="text" readonly="readonly" /></td>
+                                        <td><input id="output2-30" type="text" readonly="readonly" /></td>
+                                        <td><input id="output3-30" type="text" readonly="readonly" /></td>
+                                        <td><input id="output4-30" type="text" readonly="readonly" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>40%</th>
+                                        <td><input id="output0-40" type="text" readonly="readonly" /></td>
+                                        <td><input id="output1-40" type="text" readonly="readonly" /></td>
+                                        <td><input id="output2-40" type="text" readonly="readonly" /></td>
+                                        <td><input id="output3-40" type="text" readonly="readonly" /></td>
+                                        <td><input id="output4-40" type="text" readonly="readonly" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>50%</th>
+                                        <td><input id="output0-50" type="text" readonly="readonly" /></td>
+                                        <td><input id="output1-50" type="text" readonly="readonly" /></td>
+                                        <td><input id="output2-50" type="text" readonly="readonly" /></td>
+                                        <td><input id="output3-50" type="text" readonly="readonly" /></td>
+                                        <td><input id="output4-50" type="text" readonly="readonly" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>60%</th>
+                                        <td><input id="output0-60" type="text" readonly="readonly" /></td>
+                                        <td><input id="output1-60" type="text" readonly="readonly" /></td>
+                                        <td><input id="output2-60" type="text" readonly="readonly" /></td>
+                                        <td><input id="output3-60" type="text" readonly="readonly" /></td>
+                                        <td><input id="output4-60" type="text" readonly="readonly" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>70%</th>
+                                        <td><input id="output0-70" type="text" readonly="readonly" /></td>
+                                        <td><input id="output1-70" type="text" readonly="readonly" /></td>
+                                        <td><input id="output2-70" type="text" readonly="readonly" /></td>
+                                        <td><input id="output3-70" type="text" readonly="readonly" /></td>
+                                        <td><input id="output4-70" type="text" readonly="readonly" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>80%</th>
+                                        <td><input id="output0-80" type="text" readonly="readonly" /></td>
+                                        <td><input id="output1-80" type="text" readonly="readonly" /></td>
+                                        <td><input id="output2-80" type="text" readonly="readonly" /></td>
+                                        <td><input id="output3-80" type="text" readonly="readonly" /></td>
+                                        <td><input id="output4-80" type="text" readonly="readonly" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>90%</th>
+                                        <td><input id="output0-90" type="text" readonly="readonly" /></td>
+                                        <td><input id="output1-90" type="text" readonly="readonly" /></td>
+                                        <td><input id="output2-90" type="text" readonly="readonly" /></td>
+                                        <td><input id="output3-90" type="text" readonly="readonly" /></td>
+                                        <td><input id="output4-90" type="text" readonly="readonly" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>100%</th>
+                                        <td><input id="output0-100" type="text" readonly="readonly" /></td>
+                                        <td><input id="output1-100" type="text" readonly="readonly" /></td>
+                                        <td><input id="output2-100" type="text" readonly="readonly" /></td>
+                                        <td><input id="output3-100" type="text" readonly="readonly" /></td>
+                                        <td><input id="output4-100" type="text" readonly="readonly" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total</th>
+                                        <td><input id="totalOutput0" type="text" readonly="readonly" /></td>
+                                        <td><input id="totalOutput1" type="text" readonly="readonly" /></td>
+                                        <td><input id="totalOutput2" type="text" readonly="readonly" /></td>
+                                        <td><input id="totalOutput3" type="text" readonly="readonly" /></td>
+                                        <td><input id="totalOutput4" type="text" readonly="readonly" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /#container -->
+                    </div>
+                    <!-- /#wrapper -->
+                </div>
+            </p>
+            <!-- /melfa_main_area -->
+
+            <div id="global_footer">
+                <div class="container clearfix">
+                    <address class="copyright"><img src="http://www.mitsubishielectric.co.jp/shared/img/footer/copyright_2007.gif" alt="Copyright &copy; Mitsubishi Electric Corporation. All Rights Reserved." width="255" height="9" /></address>
+                </div>
+            </div>
+            <!-- /global_footer -->
+
+            <div class="popup_switch">
+                <p class="popup_close"><a onclick="window.close()">Close</a></p>
+            </div>
+
+        </div>
+        <!-- /center -->
+
+</body>
+</html>

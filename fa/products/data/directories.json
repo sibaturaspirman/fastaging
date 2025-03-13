@@ -1,0 +1,380 @@
+
+
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Hardware Model Top",
+            "path": "/fa/products/lp1/lp2/index.html"
+          },
+          {
+            "name": "Hardware Model Top2",
+            "path": "/fa/products/lp1/lp2-2/index.html"
+          },
+          {
+            "name": "Hardware Model Top3",
+            "path": "/fa/products/lp1/lp2-3/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Mitsubishi Electric Engineering",
+            "path": "/fa/products/group/_company_name/index.html"
+          },
+          {
+            "name": "Mitsubishi Electric System & Service",
+            "path": "/fa/products/group/_company_name/index2.html"
+          },
+          {
+            "name": "Anywire",
+            "path": "/fa/products/group/_company_name/index3.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Industrial Computer MELIPC",
+            "path": "/fa/products/edge/melipc/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Programmable Controllers MELSEC",
+            "path": "/fa/products/cnt/plc/index.html",
+            "child": [
+              {
+                "name": "MELSEC iQ-R Series",
+                "path": "/fa/products/cnt/plcr/items/index.html"
+              },
+              {
+                "name": "MELSEC iQ-F Series",
+                "path": "/fa/products/cnt/plcf/items/index.html"
+              },
+              {
+                "name": "MELSEC-Q Series",
+                "path": "/fa/products/cnt/plcq/items/index.html"
+              },
+              {
+                "name": "MELSEC-L Series",
+                "path": "/fa/products/cnt/plcl/items/index.html"
+              },
+              {
+                "name": "MELSEC-F Series",
+                "path": "/fa/products/cnt/plc_fx/items/index.html"
+              },
+              {
+                "name": "MELSEC-QS/WS Series",
+                "path": "/fa/products/cnt/plcqsws/items/index.html"
+              },
+              {
+                "name": "MELSEC-A Series",
+                "path": "/fa/products/cnt/plca/pmerit/concept/index.html"
+              },
+              {
+                "name": "Network-related products",
+                "path": "/fa/products/cnt/plcnet/items/index.html"
+              }
+            ]
+          },
+          {
+            "name": "Simple Application Controllers",
+            "path": "/fa/products/cnt/sac/index.html"
+          },
+          {
+            "name": "Motion Controllers",
+            "path": "/fa/products/cnt/ssc/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "CNC",
+            "path": "/fa/products/cnt/cnc/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "FA Sensor MELSENSOR",
+            "path": "/fa/products/snsr/sensor/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "AC Servos-MELSERVO",
+            "path": "/fa/products/drv/servo/index.html"
+          },
+          {
+            "name": "Inverters-FREQROL",
+            "path": "/fa/products/drv/inv/index.html"
+          },
+          {
+            "name": "Geared Motors",
+            "path": "/fa/products/drv/gear/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Human Machine Interfaces-GOT",
+            "path": "/fa/products/hmi/got/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Industrial Robots-MELFA",
+            "path": "/fa/products/rbt/robot/index.html"
+          },
+          {
+            "name": "Collaborative Robot-ASSISTA",
+            "path": "/fa/products/rbt/assista/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html"
+          },
+          {
+            "name": "Contactors and Motor Starters",
+            "path": "/fa/products/lvd/lvsw/index.html"
+          },
+          {
+            "name": "Power Management Meters",
+            "path": "/fa/products/pmng/pmd/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Protection Relays",
+            "path": "/fa/products/mvd/pror/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Energy Saving Supporting Devices",
+            "path": "/fa/products/pmng/ems/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Laser Processing Machines",
+            "path": "/fa/products/mecha/laser/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Electrical Discharge Machines",
+            "path": "/fa/products/mecha/edm/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Electron Beam Machines",
+            "path": "/fa/products/mecha/ebm/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Mitsubishi Electric Engineering",
+            "path": "/fa/products/group/mee/index.html"
+          },
+          {
+            "name": "Anywire",
+            "path": "/fa/products/group/anywire/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Specifications list",
+            "path": "/fa/products/spec.html"
+          },
+          {
+            "name": "Products certified/compliant to standards",
+            "path": "/fa/products/standard.html"
+          },
+          {
+            "name": "Discontinued(alternative models) products",
+            "path": "/fa/products/renewal.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Software Top1",
+            "path": "/fa/products/software/lp2/index.html"
+          },
+          {
+            "name": "Software Top2",
+            "path": "/fa/products/software/lp2-2/index.html"
+          },
+          {
+            "name": "Software Top3",
+            "path": "/fa/products/software/lp2-3/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Visualization software",
+            "path": "/fa/products/software/visualisation/index.html"
+          },
+          {
+            "name": "Remote access",
+            "path": "/fa/products/software/remote-accesses/index.html"
+          },
+          {
+            "name": "Simulation tools",
+            "path": "/fa/products/software/simulation-tools/index.html"
+          },
+          {
+            "name": "Data science tools",
+            "path": "/fa/products/software/data-science-tools/index.html"
+          },
+          {
+            "name": "Data communication software",
+            "path": "/fa/products/software/data-sharing-software/index.html"
+          },
+          {
+            "name": "Energy Saving Support Software",
+            "path": "/fa/products/software/ems/index.html"
+          },
+          {
+            "name": "Image Processing Software",
+            "path": "/fa/products/software/image-processing/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Integrated engineering software",
+            "path": "/fa/sols/efactory/sft/index.html"
+          },
+          {
+            "name": "PLC engineering software (MELSEC)",
+            "path": "/fa/products/software/plc/index.html"
+          },
+          {
+            "name": "Motion Controller engineering software",
+            "path": "/fa/products/software/ssc/index.html"
+          },
+          {
+            "name": "AC Servo engineering software (MELSERVO)",
+            "path": "/fa/products/software/servo/index.html"
+          },
+          {
+            "name": "Inverter engineering software (FREQROL)",
+            "path": "/fa/products/software/inv/index.html"
+          },
+          {
+            "name": "HMI engineering software (GOT)",
+            "path": "/fa/products/software/got/index.html"
+          },
+          {
+            "name": "Robot engineering software (MELFA)",
+            "path": "/fa/products/software/robot/index.html"
+          },
+          {
+            "name": "NC Software Tools",
+            "path": "/fa/products/software/cnc/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Cloud Metering Service",
+            "path": "/fa/products/service/cloud-metering-service/index.html"
+          }
+        ]
+      },
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "FA Integrated Selection Tool",
+            "path": "/fa/products/select/index.html"
+          }
+        ]
+      }
+    ]
+  }
+}

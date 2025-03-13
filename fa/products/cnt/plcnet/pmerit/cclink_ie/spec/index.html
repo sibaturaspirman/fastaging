@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CC-Link IE Specifications | Network-related products | Product Features | Programmable Controllers MELSEC | MITSUBISHI ELECTRIC Factory Automation</title>
+<meta name="keywords" content="MITSUBISHI ELECTRIC,FA,Factory Automation">
+<meta name="description" content="MITSUBISHI ELECTRIC FA site introduces information on Programmable Controllers MELSEC network-related products(CC-Link IE specification).">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
+<link rel="apple-touch-icon-precomposed" href="https://www.mitsubishielectric.com/m/common/img/apple-touch-icon-precomposed.png">
+
+<!-- facebook用メタ情報 -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mitsubishielectric.com/fa/products/cnt/plcnet/pmerit/cclink_ie/spec/index.html">
+<meta property="og:title" content="CC-Link IE Specifications | Network-related products | Product Features | Programmable Controllers MELSEC | MITSUBISHI ELECTRIC Factory Automation">
+<meta property="og:description" content="MITSUBISHI ELECTRIC FA site introduces information on Programmable Controllers MELSEC network-related products(CC-Link IE specification).">
+<meta property="og:image" content="https://www.mitsubishielectric.com/fa/shared/img/ogp/thumb_01.jpg">
+<!-- /facebook用メタ情報 -->
+
+<!-- Mel styles gws0001 -->
+<link rel="stylesheet" href="/fa/shared/gws0001/default/libs/normalize.css/7.0.0/normalize.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/default/css/layouts.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/css/style.css">
+
+<link rel="stylesheet" href="/fa/products/assets/css/category.css">
+<link rel="stylesheet" href="/fa/products/cnt/plcnet/pmerit/cclink_ie/assets/css/style.css">
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/default/libs/jquery/jquery-3.6.0.min.js"></script>
+<script>
+  window.jQuery3_6 = jQuery.noConflict();
+</script>
+<script src="/fa/shared/gws0001/default/js/libs.js"></script>
+<script src="/fa/shared/gws0001/js/functions.js"></script>
+<script src="/fa/shared/js/globallinkinfo.js"></script>
+<script src="/common/js/head_include.js"></script>
+</head>
+
+<body>
+<noscript><div class="noscript"><p class="noscript__msg">Please enable JavaScript before using this site.</p></div></noscript>
+<header class="gs18-Header gs18-Header--MinInteraction" role="banner" data-js-gs18-header>
+<!-- /.gs18-Header --></header>
+
+<main class="container-fluid">
+<div class="c-mainVisual">
+<div class="c-mainVisual__main">
+<div class="c-mainVisual__fa"><img src="/fa/shared/gws0001/img/fa_logo.svg" alt="Factory Automation" width="315" height="35"></div>
+<h1 class="c-mainVisual__title">
+<span class="c-mainVisual__subTitle">Network-related products<span class="u-db--over-md"> | </span><br class="u-db--only-sm">Programmable Controllers MELSEC</span>
+CC-Link IE Specifications</h1>
+<div class="c-mainVisual__background"><img src="/fa/products/assets/img/img_mv-1_sm.jpg" alt="" width="1440" height="320" decoding="async"></div>
+</div>
+</div><!-- /.c-mainVisual -->
+
+<div class="c-localNav" data-js-products-local-nav="/fa/products/cnt/plcnet/pmerit/cclink_ie/concept/">
+<div class="c-localNav__inner">
+<ul class="c-list c-list--float">
+<li class="c-list__item"><a class="u-icons u-icons--bulletLeft" href="/fa/products/index.html">Products</a></li>
+</ul><!-- /.c-list -->
+</div><!-- /.c-localNav__inner -->
+</div><!-- /.c-localNav -->
+
+<div class="c-switchNav" data-js-switch-nav>
+</div><!-- /.c-switchNav -->
+
+<div class="c-layerNav" data-js-layer-nav="CC-LinkIE_07">
+</div><!-- /.c-layerNav -->
+
+<div class="l-inner--medium">
+
+<section class="l-section" id="section01">
+	<h2 class="c-headingLv2">CC-Link IE Field Network performance specifications</h2>
+	<div class="c-table c-table--scroll">
+		<table class="c-table__content spec-inx-table" id="spec-inx-table01">
+			<thead class="c-table__head">
+				<tr>
+					<th colspan="2">Item</th>
+					<th>MELSEC iQ-R Series<br>R04ENCPU<br>R08ENCPU<br>R16ENCPU<br>R32ENCPU<br>R120ENCPU<br>RJ71EN71</th>
+					<th>MELSEC iQ-R Series<br>master/local<br>module<br>RJ71GF11-T2</th>
+					<th>MELSEC-Q Series<br>master/local<br>module<br>QJ71GF11-T2</th>
+					<th>MELSEC-L Series<br>master/local<br>module<br>LJ71GF11-T2</th>
+					<th>Network interface<br>board<br>Q80BD-J71GF11-T2,<br>Q81BD-J71GF11-T2</th>
+				</tr>
+			</thead>
+			<tbody class="c-table__contentBody">
+				<tr>
+					<th colspan="2">Communication speed</th>
+					<td colspan="5">1 Gbps</td>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum stations per network</th>
+					<td colspan="5">121 stations (1 master station. 120 device stations)</td>
+				</tr>
+				<tr>
+					<th colspan="2">Connection cable</th>
+					<td colspan="5">Ethernet cable (Category 5e or higher, double shielded/STP), straight cable</td>
+				</tr>
+				<tr>
+					<th colspan="2">Overall cable distance</th>
+					<td colspan="5"><p class="iblock">Line type: 12,000 m (When 1 master station and 120 device stations are connected)<br>Star type: Depends on system configuration<sup>*1</sup><br>Ring type: 12,100 m (When 1 master station and 120 device stations are connected)</p></td>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum station-to-station distance</th>
+					<td colspan="5">100 m</td>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum number of networks</th>
+					<td colspan="5">239</td>
+				</tr>
+				<tr>
+					<th colspan="2">Network topology</th>
+					<td colspan="5">Line type, star type<sup>*2</sup>, ring type</td>
+				</tr>
+				<tr>
+					<th colspan="2">Communication method</th>
+					<td colspan="5">Token-pass</td>
+				</tr>
+				<tr>
+					<th colspan="7" class="mid_th">Maximum link points per network<sup>*3</sup></th>
+				</tr>
+				<tr>
+					<th colspan="2">RX</th>
+					<td colspan="5">16384 points, 2KB</td>
+				</tr>
+				<tr>
+					<th colspan="2">RY</th>
+					<td colspan="5">16384 points, 2KB</td>
+				</tr>
+				<tr>
+					<th colspan="2">RWr</th>
+					<td colspan="5">8192 points, 16KB</td>
+				</tr>
+				<tr>
+					<th colspan="2">RWw</th>
+					<td colspan="5">8192 points, 16KB</td>
+				</tr>
+				<tr>
+					<th colspan="7" class="mid_th">Maximum link points per station<sup>*3</sup></th>
+				</tr>
+				<tr>
+					<th rowspan="4">Master station</th>
+					<th>RX</th>
+					<td colspan="5">16384 points, 2KB</td>
+				</tr>
+				<tr>
+					<th>RY</th>
+					<td colspan="5">16384 points, 2KB</td>
+				</tr>
+				<tr>
+					<th>RWr</th>
+					<td colspan="5">8192 points, 16KB</td>
+				</tr>
+				<tr>
+					<th>RWw</th>
+					<td colspan="5">8192 points, 16KB</td>
+				</tr>
+				<tr>
+					<th rowspan="4">Local station<sup>*4</sup></th>
+					<th>RX</th>
+					<td colspan="5">2048 points, 256B</td>
+				</tr>
+				<tr>
+					<th>RY</th>
+					<td colspan="5">2048 points, 256B</td>
+				</tr>
+				<tr>
+					<th>RWr</th>
+					<td colspan="4">1024 points, 2048B</td>
+					<td>256 points, 512B</td>
+				</tr>
+				<tr>
+					<th>RWw</th>
+					<td colspan="4">1024 points, 2048B</td>
+					<td>256 points, 512B</td>
+				</tr>
+				<tr>
+					<th rowspan="4">Intelligent device station</th>
+					<th>RX</th>
+					<td colspan="5">2048 points, 256B</td>
+				</tr>
+				<tr>
+					<th>RY</th>
+					<td colspan="5">2048 points, 256B</td>
+				</tr>
+				<tr>
+					<th>RWr</th>
+					<td colspan="4">1024 points, 2048B</td>
+					<td>256 points, 512B</td>
+				</tr>
+				<tr>
+					<th>RWw</th>
+					<td colspan="4">1024 points, 2048B</td>
+					<td>256 points, 512B</td>
+				</tr>
+				<tr>
+					<th rowspan="4">Remote device station</th>
+					<th>RX</th>
+					<td colspan="5">128 points, 16B</td>
+				</tr>
+				<tr>
+					<th>RY</th>
+					<td colspan="5">128 points, 16B</td>
+				</tr>
+				<tr>
+					<th>RWr</th>
+					<td colspan="5">64 points, 128B</td>
+				</tr>
+				<tr>
+					<th>RWw</th>
+					<td colspan="5">64 points, 128B</td>
+				</tr>
+				<tr>
+					<th colspan="7" class="mid_th">Safety communications</th>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum number of safety connections per network</th>
+					<td>-</td>
+					<td>1814 connections</td>
+					<td colspan="3">-</td>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum number of safety connections per station</th>
+					<td>-</td>
+					<td>120 connections</td>
+					<td colspan="3">-</td>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum number of link points per safety connection</th>
+					<td>-</td>
+					<td>8 words<br>(input: 8 words<br>output: 8 words)</td>
+					<td colspan="3">-</td>
+				</tr>
+				<tr>
+					<th colspan="7" class="mid_th">Transient transmission capacity</th>
+				</tr>
+				<tr>
+					<th colspan="2">Transient transmission capacity</th>
+					<td colspan="5">1920B maximum</td>
+				</tr>
+			</tbody>
+		</table><!-- /.c-table__content" -->
+	</div><!-- /.c-table -->
+	<div class="c-table c-table--scroll">
+		<table class="c-table__content spec-inx-table" id="spec-inx-table02">
+			<thead class="c-table__head">
+				<tr>
+					<th colspan="2">Item</th>
+					<th>MELSEC iQ-R Series<br>simple motion module<br>RD77GF4<br>RD77GF8<br>RD77GF16<br>RD77GF32</th>
+					<th>MELSEC-Q Series<br>simple motion module<br>QD77GF4<br>QD77GF8<br>QD77GF16</th>
+				</tr>
+			</thead>
+			<tbody class="c-table__contentBody">
+				<tr>
+					<th colspan="2">Communication speed</th>
+					<td colspan="2">1 Gbps</td>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum stations per network</th>
+					<td colspan="2">121 stations (1 master station. 120 device stations)</td>
+				</tr>
+				<tr>
+					<th colspan="2">Connection cable</th>
+					<td colspan="2">Ethernet cable (Category 5e or higher, double shielded/STP), straight cable</td>
+				</tr>
+				<tr>
+					<th colspan="2">Overall cable distance</th>
+					<td colspan="2"><p class="iblock">Line type: 12,000 m (When 1 master station and 120 device stations are connected)<br>Star type: Depends on system configuration<sup>*1</sup></p></td>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum station-to-station distance</th>
+					<td colspan="2">100 m</td>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum number of networks</th>
+					<td colspan="2">239</td>
+				</tr>
+				<tr>
+					<th colspan="2">Network topology</th>
+					<td colspan="2">Line type, star type<sup>*2</sup></td>
+				</tr>
+				<tr>
+					<th colspan="2">Communication method</th>
+					<td colspan="2">Token-pass</td>
+				</tr>
+				<tr>
+					<th colspan="4" class="mid_th">Maximum link points per network<sup>*3</sup></th>
+				</tr>
+				<tr>
+					<th colspan="2">RX</th>
+					<td>16384 points, 2KB</td>
+					<td>8192 points, 1KB</td>
+				</tr>
+				<tr>
+					<th colspan="2">RY</th>
+					<td>16384 points, 2KB</td>
+					<td>8192 points, 1KB</td>
+				</tr>
+				<tr>
+					<th colspan="2">RWr</th>
+					<td>8192 points, 16KB</td>
+					<td>1024 points, 2KB</td>
+				</tr>
+				<tr>
+					<th colspan="2">RWw</th>
+					<td>8192 points, 16KB</td>
+					<td>1024 points, 2KB</td>
+				</tr>
+				<tr>
+					<th colspan="4" class="mid_th">Maximum link points per station<sup>*3</sup></th>
+				</tr>
+				<tr>
+					<th rowspan="4">Master station</th>
+					<th>RX</th>
+					<td>16384 points, 2KB</td>
+					<td>8192 points, 1KB</td>
+				</tr>
+				<tr>
+					<th>RY</th>
+					<td>16384 points, 2KB</td>
+					<td>8192 points, 1KB</td>
+				</tr>
+				<tr>
+					<th>RWr</th>
+					<td>8192 points, 16KB</td>
+					<td>1024 points, 2KB</td>
+				</tr>
+				<tr>
+					<th>RWw</th>
+					<td>8192 points, 16KB</td>
+					<td>1024 points, 2KB</td>
+				</tr>
+				<tr>
+					<th rowspan="4">Local station<sup>*4</sup></th>
+					<th>RX</th>
+					<td>2048 points, 256B</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<th>RY</th>
+					<td>2048 points, 256B</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<th>RWr</th>
+					<td>256 points, 512B</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<th>RWw</th>
+					<td>256 points, 512B</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<th rowspan="4">Intelligent device station</th>
+					<th>RX</th>
+					<td colspan="2">2048 points, 256B</td>
+				</tr>
+				<tr>
+					<th>RY</th>
+					<td colspan="2">2048 points, 256B</td>
+				</tr>
+				<tr>
+					<th>RWr</th>
+					<td>256 points, 512B</td>
+					<td>1024 points, 2048B</td>
+				</tr>
+				<tr>
+					<th>RWw</th>
+					<td>256 points, 512B</td>
+					<td>1024 points, 2048B</td>
+				</tr>
+				<tr>
+					<th rowspan="4">Remote device station</th>
+					<th>RX</th>
+					<td colspan="2">128 points, 16B</td>
+				</tr>
+				<tr>
+					<th>RY</th>
+					<td colspan="2">128 points, 16B</td>
+				</tr>
+				<tr>
+					<th>RWr</th>
+					<td colspan="2">64 points, 128B</td>
+				</tr>
+				<tr>
+					<th>RWw</th>
+					<td colspan="2">64 points, 128B</td>
+				</tr>
+				<tr>
+					<th colspan="4" class="mid_th">Safety communications</th>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum number of safety connections per network</th>
+					<td colspan="2">-</td>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum number of safety connections per station</th>
+					<td colspan="2">-</td>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum number of link points per safety connection</th>
+					<td colspan="2">-</td>
+				</tr>
+				<tr>
+					<th colspan="4" class="mid_th">Transient transmission capacity</th>
+				</tr>
+				<tr>
+					<th colspan="2">Transient transmission capacity</th>
+					<td colspan="2">1920B maximum</td>
+				</tr>
+			</tbody>
+		</table><!-- /.c-table__content" -->
+	</div><!-- /.c-table -->
+	<ul class="c-list l-separator-x1-imp">
+		<li class="c-note c-note--order"><span class="c-note__num">*1.</span>An Ethernet switch is required for a star connection. Up to 20 Ethernet switches can be connected.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*2.</span>Line and star types can also be mixed.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*3.</span>Remote input RX: Bit data input from a device station to the master station<br>Remote output RY: Bit data output from the master station to a device station<br>Remote register RWr: 16-bit (word) unit data output from the master station to a device station<br>Remote register RWw: 16-bit (word) unit data output from the master station to a device station<br>May partially differ for local stations.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*4.</span>Number of link points allocated by the master station. A local station can also use other link points to receive data from other stations.</li>
+	</ul>
+	<p class="c-text">For further details, please refer to the relevant product manuals.</p>
+
+	<h2 class="c-headingLv2">CC-Link IE Controller Network performance specifications</h2>
+	<div class="c-table c-table--scroll">
+		<table class="c-table__content spec-inx-table" id="spec-inx-table03">
+			<thead class="c-table__head">
+				<tr>
+					<th>Item</th>
+					<th>MELSEC iQ-R Series<br>R04ENCPU<br>R08ENCPU<br>R16ENCPU<br>R32ENCPU<br>R120ENCPU<br>RJ71EN71</th>
+					<th>MELSEC iQ-R Series<br>RJ71GP21-SX</th>
+					<th>MELSEC-Q Series<br>QJ71GP21-SX<br>QJ71GP21S-SX</th>
+					<th>Network interface board<br>Q80BD-J71GP21-SX<br>Q80BD-J71GP21S-SX<br>Q81BD-J71GP21-SX<br>Q81BD-J71GP21S-SX</th>
+				</tr>
+			</thead>
+			<tbody class="c-table__contentBody">
+				<tr>
+					<th>Communication speed</th>
+					<td colspan="4">1 Gbps</td>
+				</tr>
+				<tr>
+					<th>Maximum stations per network</th>
+					<td colspan="4">120 (1 control station, 119 normal stations)<sup>*5</sup></td>
+				</tr>
+				<tr>
+					<th>Connection cable</th>
+					<td>Ethernet cable<br>(Category 5e or higher,<br>double shielded/STP),<br>straight cable</td>
+					<td colspan="3">Multi-mode optical cable</td>
+				</tr>
+				<tr>
+					<th>Laser class<br>(JIS C 6802, IEC 60825-1)</th>
+					<td>-</td>
+					<td colspan="3">Class 1 laser product</td>
+				</tr>
+				<tr>
+					<th>Overall cable distance</th>
+					<td><p class="iblock">Line type: 11,900 m<sup>*6</sup><br>Star type: Depends on<br>system configuration<br>Ring type: 12,000 m<sup>*6</sup></p></td>
+					<td colspan="3">66,000 m<sup>*6</sup></td>
+				</tr>
+				<tr>
+					<th>Maximum station-to-station distance</th>
+					<td>100 m</td>
+					<td colspan="3">550 m</td>
+				</tr>
+				<tr>
+					<th>Maximum number of networks</th>
+					<td colspan="4">239</td>
+				</tr>
+				<tr>
+					<th>Maximum number of groups</th>
+					<td colspan="4">32</td>
+				</tr>
+				<tr>
+					<th>Network topology</th>
+					<td>Line type, star type<sup>*7</sup>,<br>ring type</td>
+					<td colspan="3">Duplex loop ring</td>
+				</tr>
+				<tr>
+					<th>Communication method</th>
+					<td>Token-pass</td>
+					<td colspan="3">Token-ring</td>
+				</tr>
+				<tr>
+					<th colspan="5" class="mid_th">Maximum link points per network<sup>*8</sup></th>
+				</tr>
+				<tr>
+					<th>LB</th>
+					<td>32768 points, 4KB</td>
+					<td>32768 points, 4KB<br>For extended points:<br>65536 points, 8KB</td>
+					<td>32768 points, 4KB<sup>*9</sup></td>
+					<td>32768 points, 4KB</td>
+				</tr>
+				<tr>
+					<th>LW</th>
+					<td>131072 points, 256KB</td>
+					<td>131072 points, 256KB<br>For extended points:<br>262144 points, 512KB</td>
+					<td>131072 points, 256KB<sup>*10</sup></td>
+					<td>131072 points, 256KB</td>
+				</tr>
+				<tr>
+					<th>LX</th>
+					<td colspan="4">8192 points, 1KB</td>
+				</tr>
+				<tr>
+					<th>LY</th>
+					<td colspan="4">8192 points, 1KB</td>
+				</tr>
+				<tr>
+					<th colspan="5" class="mid_th">Communication speed<sup>*8</sup> (Regular mode)</th>
+				</tr>
+				<tr>
+					<th>LB</th>
+					<td colspan="4">16384 points, 2KB</td>
+				</tr>
+				<tr>
+					<th>LW</th>
+					<td colspan="4">16384 points, 32KB</td>
+				</tr>
+				<tr>
+					<th>LX</th>
+					<td colspan="4">8192 points, 1KB</td>
+				</tr>
+				<tr>
+					<th>LY</th>
+					<td colspan="4">8192 points, 1KB</td>
+				</tr>
+				<tr>
+					<th colspan="5" class="mid_th">Communication speed<sup>*8</sup> (Extended mode<sup>*11</sup>)</th>
+				</tr>
+				<tr>
+					<th>LB</th>
+					<td colspan="4">32768 points, 4KB</td>
+				</tr>
+				<tr>
+					<th>LW</th>
+					<td colspan="4">131072 points, 256KB</td>
+				</tr>
+				<tr>
+					<th>LX</th>
+					<td colspan="4">8192 points, 1KB</td>
+				</tr>
+				<tr>
+					<th>LY</th>
+					<td colspan="4">8192 points, 1KB</td>
+				</tr>
+				<tr>
+					<th colspan="5" class="mid_th">Transient transmission capacity</th>
+				</tr>
+				<tr>
+					<th>Transient transmission capacity</th>
+					<td colspan="4">1920B maximum</td>
+				</tr>
+			</tbody>
+		</table><!-- /.c-table__content" -->
+	</div><!-- /.c-table -->
+	<ul class="c-list l-separator-x1-imp">
+		<li class="c-note c-note--order"><span class="c-note__num">*5.</span>Under CC-Link IE Controller Network, the number of connectable normal stations per network differs by the CPU module used in the control station.<br>For the details, please refer to the manual of the module used in the control station.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*6.</span>When 120 stations are connected.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*7.</span>Line and star types can also be mixed.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*8.</span>Link relay LB: Bit data transmitted from stations in the network<br>Link register LW: 16-bit (word) unit data transmitted from stations in the network<br>Link input LX: Data input from a station to the I/O master in the same block<br>Link output LY: Data output from the I/O master station to another station in the same block</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*9.</span>16384 points and 2K bytes for the basic model QCPU and the MELSEC-QS Series Safety CPU.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*10.</span>16384 points and 32K bytes for the basic model QCPU and the MELSEC-QS Series Safety CPU.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*11.</span>To use the extended mode, all the stations must be compatible with the extended mode.</li>
+	</ul>
+	<p class="c-text">For further details, please refer to the relevant product manuals.</p>
+
+	<h2 class="c-headingLv2">CC-Link IE Field Network Basic performance specifications</h2>
+	<div class="c-table c-table--scroll">
+		<table class="c-table__content spec-inx-table" id="spec-inx-table04">
+			<thead class="c-table__head">
+				<tr>
+					<th colspan="2" rowspan="2">Item</th>
+					<th colspan="5">Programmable controller CPU module</th>
+					<th>Network module</th>
+					<th>MELIPC</th>
+				</tr>
+				<tr>
+					<th>R&#9633;CPU<br>R&#9633;ENCPU</th>
+					<th>Q&#9633;UDVCPU</th>
+					<th>L&#9633;CPU</th>
+					<th>FX5U<br>FX5UC</th>
+					<th>FX5UJ</th>
+					<th>FX5-ENET</th>
+					<th>MI5122-VW</th>
+				</tr>
+			</thead>
+			<tbody class="c-table__contentBody">
+				<tr>
+					<th colspan="2">Communication speed</th>
+					<td colspan="7">100 Mbps</td>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum stations per network<sup>*12</sup></th>
+					<td colspan="2">64 stations<br>(16 stations &times; 4 groups)</td>
+					<td>16 stations</td>
+					<td>16 stations<sup>*13</sup></td>
+					<td>8 stations</td>
+					<td>32 stations<br>(16 stations<br>&times; 2 groups)</td>
+					<td>64 stations<br>(16 stations<br>&times; 4 groups)</td>
+				</tr>
+				<tr>
+					<th colspan="2">Connection cable</th>
+					<td colspan="7">Ethernet standard compatible cable, Category 5e or higher (STP cable)</td>
+				</tr>
+				<tr>
+					<th colspan="2">Maximum station-to-station distance</th>
+					<td colspan="7">100 m (between a hub and node)<sup>*14</sup></td>
+				</tr>
+				<tr>
+					<th colspan="2">Network topology</th>
+					<td colspan="7">Line type, Star type<sup>*15</sup></td>
+				</tr>
+				<tr>
+					<th colspan="2">Communication method</th>
+				  <td colspan="7">UDP</td>
+				</tr>
+				<tr>
+					<th colspan="9" class="mid_th">Maximum link points per network<sup>*16</sup></th>
+				</tr>
+				<tr>
+					<th colspan="2">RX</th>
+					<td colspan="2">4096 points</td>
+					<td>1024 points</td>
+					<td>1024 points<sup>*13</sup></td>
+					<td>512 points</td>
+					<td>2048 points</td>
+					<td>4096 points</td>
+				</tr>
+				<tr>
+					<th colspan="2">RY</th>
+					<td colspan="2">4096 points</td>
+					<td>1024 points</td>
+					<td>1024 points<sup>*13</sup></td>
+					<td>512 points</td>
+					<td>2048 points</td>
+					<td>4096 points</td>
+				</tr>
+				<tr>
+					<th colspan="2">RWr</th>
+					<td colspan="2">2048 points</td>
+					<td>512 points</td>
+					<td>512 points<sup>*13</sup></td>
+					<td>256 points</td>
+					<td>1024 points</td>
+					<td>2048 points</td>
+				</tr>
+				<tr>
+					<th colspan="2">RWw</th>
+					<td colspan="2">2048 points</td>
+					<td>512 points</td>
+					<td>512 points<sup>*13</sup></td>
+					<td>256 points</td>
+					<td>1024 points</td>
+					<td>2048 points</td>
+				</tr>
+				<tr>
+					<th colspan="9" class="mid_th">Maximum link points per station<sup>*16</sup></th>
+				</tr>
+				<tr>
+					<th rowspan="4">Master station</th>
+					<th>RX</th>
+					<td colspan="2">4096 points</td>
+					<td>1024 points</td>
+					<td>1024 points<sup>*13</sup></td>
+					<td>512 points</td>
+					<td>2048 points</td>
+					<td>4096 points</td>
+				</tr>
+				<tr>
+					<th>RY</th>
+					<td colspan="2">4096 points</td>
+					<td>1024 points</td>
+					<td>1024 points<sup>*13</sup></td>
+					<td>512 points</td>
+					<td>2048 points</td>
+					<td>4096 points</td>
+				</tr>
+				<tr>
+					<th>RWr</th>
+					<td colspan="2">2048 points</td>
+					<td>512 points</td>
+					<td>512 points<sup>*13</sup></td>
+					<td>256 points</td>
+					<td>1024 points</td>
+					<td>2048 points</td>
+				</tr>
+				<tr>
+					<th>RWw</th>
+					<td colspan="2">2048 points</td>
+					<td>512 points</td>
+					<td>512 points<sup>*13</sup></td>
+					<td>256 points</td>
+					<td>1024 points</td>
+					<td>2048 points</td>
+				</tr>
+				<tr>
+					<th rowspan="4">Remote station<sup>*17</sup></th>
+					<th>RX</th>
+					<td colspan="7">64 points; up to 256 points can be allocated according to the number of stations</td>
+				</tr>
+				<tr>
+					<th>RY</th>
+					<td colspan="7">64 points; up to 256 points can be allocated according to the number of stations</td>
+				</tr>
+				<tr>
+					<th>RWr</th>
+					<td colspan="7">32 points; up to 128 points can be allocated according to the number of stations</td>
+				</tr>
+				<tr>
+					<th>RWw</th>
+					<td colspan="7">32 points; up to 128 points can be allocated according to the number of stations</td>
+				</tr>
+			</tbody>
+		</table><!-- /.c-table__content" -->
+	</div><!-- /.c-table -->
+	<ul class="c-list l-separator-x1-imp">
+		<li class="c-note c-note--order"><span class="c-note__num">*12.</span>Maximum number of remote stations controlled by the master station, depending on the number of allocated remote stations. The total number of allocated stations should not exceed the maximum number of remote stations.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*13.</span>Supported in the CPU module firmware version of &ldquo;1.110&rdquo; or later.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*14.</span>The maximum distance between stations depends on the actual hub used. Please refer to the hub manufacturer's specifications.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*15.</span>Line topology and star topology can be mixed.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*16.</span>Remote input RX: Bit data input from a remote station to the master station<br>Remote output RY: Bit data output from the master station to a remote station<br>Remote register RWr: 16-bit (word) unit data output from the master station to a remote station<br>Remote register RWw: 16-bit (word) unit data output from the master station to a remote station</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*17.</span>Number of link points allocated by the master station.</li>
+	</ul>
+	<p class="c-text">For detailed information about performance specifications, please refer to the &ldquo;CC-Link IE Field Network Basic Reference Manual (SH(NA)-081684ENG)&rdquo;.</p>
+</section>
+
+<section class="l-section" id="section02">
+	<h2 class="c-headingLv2">Network specifications comparison</h2>
+	<h3 class="c-headingLv3 c-headingLv3--noBorder">Control level</h3>
+	<div class="c-table c-table--scroll l-separator-x1-imp">
+		<table class="c-table__content spec-inx-table" id="spec-inx-table05">
+			<thead class="c-table__head">
+				<tr>
+					<th rowspan="2">Item</th>
+					<th colspan="2">CC-Link IE Controller Network</th>
+					<th colspan="3">MELSECNET/H</th>
+				</tr>
+				<tr>
+					<th>Optical duplex loop</th>
+					<th>Twisted pair</th>
+					<th>Optical loop method</th>
+					<th>Coaxial bus method</th>
+					<th>Twisted bus method</th>
+				</tr>
+			</thead>
+			<tbody class="c-table__contentBody">
+				<tr>
+					<th>Communication speed (bps)</th>
+					<td colspan="2">1 G</td>
+					<td>25 M</td>
+					<td>10 M</td>
+					<td>10 M (max.)</td>
+				</tr>
+				<tr>
+					<th>Maximum stations per network</th>
+					<td colspan="2">120<sup>*18</sup></td>
+					<td>65</td>
+					<td>33</td>
+					<td>32</td>
+				</tr>
+				<tr>
+					<th colspan="6" class="mid_th">Maximum link points</th>
+				</tr>
+				<tr>
+					<th>Per network</th>
+					<td colspan="2">128K<sup>*19</sup></td>
+					<td colspan="3">16K<sup>*19</sup></td>
+				</tr>
+				<tr>
+					<th>Per station</th>
+					<td colspan="2">128K<sup>*19</sup></td>
+					<td colspan="3">16K<sup>*19</sup></td>
+				</tr>
+				<tr>
+					<th colspan="6" class="mid_th">Distance</th>
+				</tr>
+				<tr>
+					<th>Overall (km)</th>
+					<td>66</td>
+					<td>12<sup>*20</sup></td>
+					<td>30</td>
+					<td>2.5<sup>*21</sup></td>
+					<td>0.1 (10 Mbps)</td>
+				</tr>
+				<tr>
+					<th>Station-to-station (m)</th>
+					<td>550</td>
+					<td>100</td>
+					<td>1000</td>
+					<td>500</td>
+					<td>100 (10 Mbps)</td>
+				</tr>
+				<tr>
+					<th colspan="6" class="mid_th">Communication</th>
+				</tr>
+				<tr>
+					<th>Network topology</th>
+					<td>Duplex loop ring</td>
+					<td>Star type, line type,<br>ring type</td>
+					<td>Duplex loop ring</td>
+					<td>Bus type</td>
+					<td>Bus type</td>
+				</tr>
+				<tr>
+					<th>Connection cable</th>
+					<td>Ethernet cable<br>(Multi-mode<br>optical fiber)</td>
+					<td>Ethernet cable<br>(Category 5e or<br>higher, double<br>shielded/STP)</td>
+					<td>Optical cable</td>
+					<td>Coaxial cable</td>
+					<td>Twisted pair cable</td>
+				</tr>
+			</tbody>
+		</table><!-- /.c-table__content" -->
+	</div><!-- /.c-table -->
+
+	<h3 class="c-headingLv3 c-headingLv3--noBorder">Field level</h3>
+	<div class="c-table c-table--scroll l-separator-x1-imp">
+		<table class="c-table__content spec-inx-table" id="spec-inx-table06">
+			<thead class="c-table__head">
+				<tr>
+					<th>Item</th>
+					<th>CC-Link IE Field Network</th>
+					<th>CC-Link IE Field Network Basic</th>
+					<th>CC-Link</th>
+				</tr>
+			</thead>
+			<tbody class="c-table__contentBody">
+				<tr>
+					<th>Communication speed (bps)</th>
+					<td>1 G</td>
+					<td>100 M</td>
+					<td>10 M (max.)</td>
+				</tr>
+				<tr>
+					<th>Maximum stations per network</th>
+					<td>121</td>
+					<td>65<sup>*22</sup></td>
+					<td>65<sup>*22</sup></td>
+				</tr>
+				<tr>
+					<th colspan="4" class="mid_th">Maximum link points</th>
+				</tr>
+				<tr>
+					<th>Per network</th>
+					<td>16K<sup>*23</sup></td>
+					<td>4K<sup>*23</sup></td>
+					<td>4K<sup>*23</sup></td>
+				</tr>
+				<tr>
+					<th>Per station</th>
+					<td>2K<sup>*23</sup></td>
+					<td>256<sup>*23</sup><br>(When 4 stations are occupied)</td>
+					<td>256<sup>*23</sup><br>(When 4 stations are occupied)</td>
+				</tr>
+				<tr>
+					<th colspan="4" class="mid_th">Distance</th>
+				</tr>
+				<tr>
+					<th>Overall (km)</th>
+					<td>12.1<sup>*20</sup></td>
+					<td>Depends on system configuration</td>
+					<td>1.1<sup>*21</sup> (10 Mbps)</td>
+				</tr>
+				<tr>
+					<th>Station-to-station (m)</th>
+					<td>100</td>
+					<td>100</td>
+					<td>100 (10 Mbps)</td>
+				</tr>
+				<tr>
+					<th colspan="4" class="mid_th">Communication</th>
+				</tr>
+				<tr>
+					<th>Network topology</th>
+					<td>Star type, line type, ring type</td>
+					<td>Star type</td>
+					<td>Bus type, T-branch type, star type</td>
+				</tr>
+				<tr>
+					<th>Connection cable</th>
+					<td>Ethernet cable<br>(Category 5e or higher,<br>double shielded/STP)</td>
+					<td>Ethernet cable<br>(Satisfies 100BASE-TX)</td>
+					<td>Twisted pair cable<br>(CC-Link dedicated cable)</td>
+				</tr>
+			</tbody>
+		</table><!-- /.c-table__content" -->
+	</div><!-- /.c-table -->
+	<ul class="c-list l-separator-x1-imp">
+		<li class="c-note c-note--order"><span class="c-note__num">*18.</span>Value when the extended mode is used.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*19.</span>Value of link register LW (word).</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*20.</span>Value when ring connection is used.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*21.</span>Value when a repeater is used.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*22.</span>The maximum stations per network differ according to programmable controller Series.</li>
+		<li class="c-note c-note--order"><span class="c-note__num">*23.</span>Value of remote register RWr + RWw (word).</li>
+	</ul>
+
+	<h2 class="c-headingLv2">Cable specifications</h2>
+	<h3 class="c-headingLv3 c-headingLv3--noBorder">CC-Link IE compatible twisted-pair cable<sup>*24</sup></h3>
+	<div class="c-table c-table--scroll l-separator-x1-imp">
+		<table class="c-table__content spec-inx-table" id="spec-inx-table07">
+			<thead class="c-table__head">
+				<tr>
+					<th colspan="2">Item</th>
+					<th>Specifications</th>
+				</tr>
+			</thead>
+			<tbody class="c-table__contentBody">
+				<tr class="bdrless">
+					<th rowspan="2">Twisted-pair cable specifications</th>
+					<th>&nbsp;</th>
+					<td>Category 5e or higher, (double shielded/STP) straight cable</td>
+				</tr>
+				<tr>
+					<th>Standard</th>
+					<td>Cables that conform to the following standards.<br>&middot; IEEE802.3 (1000BASE-T)<br>&middot; ANSI/TIA/EIA-568-B (Category 5e)</td>
+				</tr>
+				<tr>
+					<th>Connector specifications</th>
+					<th>Standard</th>
+					<td>RJ-45 connector with shield</td>
+				</tr>
+			</tbody>
+		</table><!-- /.c-table__content" -->
+	</div><!-- /.c-table -->
+
+	<h3 class="c-headingLv3 c-headingLv3--noBorder">CC-Link IE compatible optical cable<sup>*24</sup></h3>
+	<div class="c-table c-table--scroll l-separator-x1-imp">
+		<table class="c-table__content spec-inx-table" id="spec-inx-table08">
+			<thead class="c-table__head">
+				<tr>
+					<th colspan="2">Item</th>
+					<th>Specifications</th>
+				</tr>
+			</thead>
+			<tbody class="c-table__contentBody">
+				<tr class="bdrless">
+					<th rowspan="4">Optical cable specifications</th>
+					<th>&nbsp;</th>
+					<td>1000BASE-SX (MMF) optical cable</td>
+				</tr>
+				<tr>
+					<th>Standard</th>
+					<td>IEC 60793-2-10 Types A1a.1 (50/125 &micro;m multimode)</td>
+				</tr>
+				<tr>
+					<th>Transmission loss (max.)</th>
+					<td>&le; 3.5 dB/km (&lambda; = 850 nm)</td>
+				</tr>
+				<tr>
+					<th>Transmission band (min.)</th>
+					<td>&ge; 500 MHz&middot;km (&lambda; = 850 nm)</td>
+				</tr>
+				<tr class="bdrless">
+					<th rowspan="4">Connector specifications</th>
+					<th>&nbsp;</th>
+					<td>Duplex LC connector</td>
+				</tr>
+				<tr>
+					<th>Standard</th>
+					<td>IEC 61754-20: Type LC connector</td>
+				</tr>
+				<tr>
+					<th>Connection loss</th>
+					<td>&le; 0.3 dB</td>
+				</tr>
+				<tr>
+					<th>Polished face</th>
+					<td>PC (Physical Contact) polishing</td>
+				</tr>
+			</tbody>
+		</table><!-- /.c-table__content" -->
+	</div><!-- /.c-table -->
+	<ul class="c-list l-separator-x1-imp">
+		<li class="c-note c-note--order"><span class="c-note__num">*24.</span>For recommended cables and other information, contact the CC-Link Partner Association.</li>
+	</ul>
+
+	<h3 class="c-headingLv3 c-headingLv3--noBorder">CC-Link IE Field Network Basic compatible twisted-pair cable</h3>
+	<div class="c-table c-table--scroll l-separator-x1-imp">
+		<table class="c-table__content spec-inx-table" id="spec-inx-table09">
+			<thead class="c-table__head">
+				<tr>
+					<th colspan="2">Item</th>
+					<th>Specifications</th>
+				</tr>
+			</thead>
+			<tbody class="c-table__contentBody">
+				<tr class="bdrless">
+					<th rowspan="2">Twisted-pair specifications</th>
+					<th>&nbsp;</th>
+					<td>Category 5e or higher, (STP) straight cable<br>Category 5 or 5e, (STP) cross cable</td>
+				</tr>
+				<tr>
+					<th>Standard</th>
+					<td>Cables that satisfy following standards<br>&middot; IEEE802.3 (100BASE-TX)<br>&middot; ANSI/TIA/EIA-568-B (Category 5)</td>
+				</tr>
+				<tr>
+					<th>Connector specifications</th>
+					<th>Standard</th>
+					<td>RJ45</td>
+				</tr>
+			</tbody>
+		</table><!-- /.c-table__content" -->
+	</div><!-- /.c-table -->
+</section>
+
+<section class="l-section" id="section03">
+	<h2 class="c-headingLv2">Network topologies<sup>*25</sup></h2>
+	<ul class="c-list l-separator-x1-imp">
+		<li class="c-note c-note--order"><span class="c-note__num">*25.</span>CC-Link IE Field Network Basic supports star topology only.</li>
+	</ul>
+	<div class="l-grid">
+		<div class="l-grid__item l-grid__item-6">
+			<p class="c-titleText">Line topology (Twisted-pair cable)</p>
+			<div class="c-img l-separator-x1-imp"><img src="img/fig_index01_01.jpg" alt=""></div>
+		</div><!-- /.l-grid__item -->
+		<div class="l-grid__item l-grid__item-6">
+			<p class="c-titleText">Star topology (Twisted-pair cable)</p>
+			<div class="c-img l-separator-x1-imp"><img src="img/fig_index01_02.jpg" alt=""></div>
+		</div><!-- /.l-grid__item -->
+		<div class="l-grid__item l-grid__item-6">
+			<p class="c-titleText">Ring topology (Twisted-pair cable)</p>
+			<div class="c-img l-separator-x1-imp"><img src="img/fig_index01_03.jpg" alt=""></div>
+		</div><!-- /.l-grid__item -->
+		<div class="l-grid__item l-grid__item-6">
+			<p class="c-titleText">Ring topology (Dual-loop optical fiber)</p>
+			<div class="c-img l-separator-x1-imp"><img src="img/fig_index01_04.jpg" alt=""></div>
+		</div><!-- /.l-grid__item -->
+	</div><!-- /.l-grid -->
+	<div class="l-grid">
+		<div class="l-grid__item l-grid__item-35per l-grid__item-70per-sm">
+			<div class="c-img"><img src="img/fig_index01_05.jpg" alt=""></div>
+		</div><!-- /.l-grid__item -->
+	</div><!-- /.l-grid -->
+
+	<h2 class="c-headingLv2">Cyclic transmission</h2>
+	<p class="c-text">In cyclic transmission, data is transmitted periodically using link devices. Under CC-Link IE Field and Controller networks, some differences exist as described in this section.</p>
+	<h3 class="c-headingLv3 c-headingLv3--noBorder">CC-Link IE Field Network<sup>*26</sup></h3>
+	<p class="c-text">One-to-one communication is possible between the master and device stations. The status of link devices (RY, RWw) within the master station are transmitted to an external device connected to a device station. Likewise, the status of external devices is transmitted to the master station link devices (RX, RWr) via the device station.<br>In the case of local stations, the status of the master station link devices (RY, RWw) is relayed to all local station link devices (RX, RWr) on the network. When an input from a device or local station is executed, the device station link devices (RX, RWr) status and local station link devices (RY, RWw) status are stored in the master station link device (RX, RWr), along with other local station link devices (RY, RWw). As a result, all local stations possess the data of other device stations, similar to the master station.</p>
+	<ul class="c-list l-separator-x1-imp">
+		<li class="c-note c-note--order"><span class="c-note__num">*26.</span>The data is transmitted in the same method on CC-Link IE Field Network Basic. Note that communication is made between the master station and the device stations only. No local stations are available on the CC-Link IE Field Basic.</li>
+	</ul>
+	<div class="l-grid l-grid--center">
+		<div class="l-grid__item l-grid__item-12">
+			<div class="c-img"><img src="img/fig_index02.jpg" alt=""></div>
+		</div><!-- /.l-grid__item -->
+	</div><!-- /.l-grid -->
+	<p class="c-titleText u-fz--18">Output from the master station</p>
+	<ol class="c-list c-list--order_indices l-separator-x0_5-imp">
+		<li class="c-list__item"><span class="c-list__marker">&#10102;</span>In the master station, devices of the CPU module turn ON.</li>
+		<li class="c-list__item"><span class="c-list__marker">&#10103;</span>In the master station, the status of the CPU module devices are stored in the link devices (RY, RWw) by link refresh.</li>
+		<li class="c-list__item"><span class="c-list__marker">&#10104;</span>The status of the master station link devices (RY, RWw) are then stored in the device station link devices (RY, RWw), and in the local station link devices (RX, RWr) by link scan.</li>
+		<li class="c-list__item"><span class="c-list__marker">&#10105;</span>The status of the local station link devices (RX, RWr) are stored in the CPU module devices.</li>
+	</ol>
+	<p class="c-titleText u-fz--18">Input from the device or local station</p>
+	<ol class="c-list c-list--order_indices l-separator-x0_5-imp">
+		<li class="c-list__item"><span class="c-list__marker">&#10106;</span>In the local station, devices of the CPU module turn ON.</li>
+		<li class="c-list__item"><span class="c-list__marker">&#10107;</span>In the local station, the status of the CPU module devices are stored in its own station link devices (RY, RWw) transmission area.</li>
+		<li class="c-list__item"><span class="c-list__marker">&#10108;</span>The status of the device station link devices (RX, RWr), and the local station link devices (RY, RWw) are stored in the master station link devices (RX, RWr) by link scan.</li>
+		<li class="c-list__item"><span class="c-list__marker">&#10109;</span>The status of the master station link devices (RX, RWr) are stored in the CPU module devices by link refresh.</li>
+	</ol>
+
+	<h3 class="c-headingLv3 c-headingLv3--noBorder">CC-Link IE Controller Network</h3>
+	<h4 class="c-headingLv4">Communications using link relays (LB) and link registers (LW)</h4>
+	<p class="c-text l-separator-x0_5-imp">This function allows each station to write data to its own send range of a link device (LB, LW) to send them to all other stations on the network. The status data of the control station link devices (LB, LW) are stored in the link devices (LB, LW) of each normal station. Likewise, the status of the normal station link devices (LB, LW) is stored in link devices (LB, LW) of the control and other normal stations.</p>
+	<div class="l-grid l-grid--center">
+		<div class="l-grid__item l-grid__item-12">
+			<div class="c-img"><img src="img/fig_index03.jpg" alt=""></div>
+		</div><!-- /.l-grid__item -->
+	</div><!-- /.l-grid -->
+	<ol class="c-list c-list--order_indices l-separator-x1-imp">
+		<li class="c-list__item"><span class="c-list__marker">&#10102;</span>In the transmitting station, the CPU module devices turn ON.</li>
+		<li class="c-list__item"><span class="c-list__marker">&#10103;</span>In the transmitting station, the CPU module devices status are stored in the link devices (LB, LW) of the CC-Link IE Controller Network supporting module by link refresh.</li>
+		<li class="c-list__item"><span class="c-list__marker">&#10104;</span>The status of the link devices (LB, LW) in the transmitting station are sent to the link devices (LB, LW) of the CC-Link IE Controller Network supporting module in the receiving station by link scan.</li>
+		<li class="c-list__item"><span class="c-list__marker">&#10105;</span>In the receiving station, the status of the link devices (LB, LW) are stored in the CPU module devices.</li>
+	</ol>
+
+	<h4 class="c-headingLv4">Transmissions using link inputs (LX) and link outputs (LY)</h4>
+	<p class="c-text l-separator-x0_5-imp">An I/O master station, which controls link inputs (LX) and link outputs (LY), and another station make one to one communication. LX is the input data transmitted between stations in a block, and LY is the output data transmitted from the I/O master station in a block. The control or normal station can be an I/O master station, and up to two I/O master stations (block 1 and block 2) can be used per network.</p>
+	<div class="l-grid l-grid--center">
+		<div class="l-grid__item l-grid__item-12">
+			<div class="c-img"><img src="img/fig_index04.jpg" alt=""></div>
+		</div><!-- /.l-grid__item -->
+	</div><!-- /.l-grid -->
+
+	<h2 class="c-headingLv2">Transient transmission</h2>
+	<p class="c-text">This function allows communications with other stations when a request is made by a method such as a dedicated instruction and engineering software. Communications with different networks is also possible.</p>
+</section><!-- /#section01 -->
+
+</div><!-- /.l-inner -->
+</main>
+
+<div class="c-breadcrumb">
+<ul class="c-breadcrumb__list" data-js-products-breadcrumb>
+</ul><!-- /.c-breadcrumb__list -->
+</div><!-- /.c-breadcrumb -->
+
+<footer class="gs18-Footer" role="contentinfo" data-js-gs18-footer>
+<!-- /.gs18-Footer --></footer>
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/js/init.js"></script>
+
+<script src="/fa/products/assets/js/category.js"></script>
+</body>
+</html>

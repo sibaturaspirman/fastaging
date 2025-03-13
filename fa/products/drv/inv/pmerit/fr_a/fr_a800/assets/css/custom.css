@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/* PC専用表示 */
+@media only screen and (max-width:600px) {
+	.for_pc {
+		display: none;
+	}
+}
+
+/* スマートフォン専用表示 */
+@media (min-width: 601px) {
+	.for_sp {
+		display: none;
+	}
+}
+
+.mt0 {
+	margin-top: 0 !important
+}
+
+.mt05 {
+	margin-top: 0.5em !important
+}
+
+.mt1 {
+	margin-top: 1em !important
+}
+
+.mt15 {
+	margin-top: 1.5em !important
+}
+
+.mt2 {
+	margin-top: 2em !important
+}
+
+.kome {
+	color: #F00;
+}
+
+.kome_desc1 {
+	margin-left: 0;
+}
+
+.kome_desc1 li {
+	margin-top: 0;
+	text-indent: -2.2em;
+	list-style: none;
+	padding-left: 2.2em;
+	font-size: 70%;
+}
+
+.kome_desc1 li.double {
+	text-indent: -3.2em;
+	padding-left: 3.2em;
+}
+
+.reg {
+	line-height: 100%;
+}
+
+@media only screen and (min-width:1280px) {
+	.col1_img img {
+		padding: 1em 14em;
+	}
+
+	.img_80per {
+		max-width: 80%
+	}
+
+	.img_90per {
+		max-width: 90%
+	}
+}
+
+@media only screen and (max-width:1279px) {
+	.col1_img img {
+		padding: 0.5em 3.2em;
+	}
+}
+
+@media only screen and (max-width:599px) {
+	.col1_img img {
+		padding: 0.5em;
+	}
+}
+
+.c-table__contentBody td {
+	text-align: center;
+	vertical-align: middle !important
+}
+
+.c-table__head th,
+.c-table__contentBody th {
+	text-align: center;
+	vertical-align: middle !important
+}
+
+.c-table__head th,
+th.c-table__headCell {
+	width: 18%;
+}
+
+.icon_prodno {
+	color: #FFF;
+	background-color: #0D77BB;
+	font-weight: normal;
+	line-height: 0.75em;
+	text-align: center;
+	padding: 0.35em 0.75em;
+	border-radius: 2em;
+	white-space: nowrap;
+	font-size: 0.75em;
+}
+
+.c-headingLv4_logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.h4r_logo {
+	position: relative;
+	top: 0.25em;
+	padding-left: 0.5em;
+}
+
+.icon_r {
+	float: right;
+	line-height: 1.5
+}
+
+@media only screen and (min-width:1280px) {
+	.l-section .size_down img {
+		padding: 1em 14em;
+	}
+}
+
+@media only screen and (max-width:1279px) {
+	.l-section .size_down img {
+		padding: 0.5em 4em;
+	}
+}
+
+@media only screen and (max-width:599px) {
+	.l-section .size_down img {
+		padding: 0.5em;
+	}
+}

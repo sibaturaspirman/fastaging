@@ -1,0 +1,3384 @@
+@charset "utf-8";
+
+/*-------[ 共通レイアウト設定 ]----------------------------------------------------------------------*/
+img {
+	vertical-align: bottom;
+}
+sup {
+	vertical-align: top;
+}
+sub {
+	vertical-align: baseline;
+}
+.fa-heading_lv2 sub,
+.fa-heading_lv3 sub {
+	font-size: 75%;
+}
+.bbttl {
+	font-weight: bold;
+	border-bottom: 1px solid #999;
+}
+.bsttl {
+	font-weight: bold;
+	margin-bottom: 0.25em;
+}
+.dotlist li {
+	padding-left: 13px;
+	position: relative;
+}
+.dotlist li::before {
+	content: "";
+	width: 4px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #666;
+	position: absolute;
+}
+.footnote {
+	margin-top: 0.5em;
+}
+.footnote p,
+.footnote p + p {
+	margin-top: 0;
+}
+.footnote p,
+.footnote sup {
+	line-height: 1.5em;
+}
+.footnote sup {
+	font-size: 62.5%;
+}
+.footnote .num_note {
+	display: flex;
+	margin-bottom: 0;
+}
+.footnote .num_note .num {
+	flex-grow: 0;
+	flex-shrink: 0;
+	padding-right: 0.5em;
+}
+.footnote .num_note .note {
+	flex-grow: 1;
+}
+.footnote.boxed {
+	border: 1px solid #AAA;
+	padding: 0.25em 0.5em;
+}
+.footnote.boxed .fa-text {
+	margin: 0;
+}
+.fa-unordered_list.bullet_link_gray {
+	background-color: #EEE;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+	padding-left: 0.5em;
+}
+.fa-unordered_list.bullet_link_white {
+	background-color: #FFF;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+	padding-left: 0.5em;
+}
+.breakall {
+	word-break: break-all;
+}
+
+/* 関連資料 */
+.catalog_doclink .catalog {
+	display: flex;
+}
+.catalog_doclink .catalog .thumb {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.catalog_doclink .catalog .thumb .docLinkImage {
+	padding-right: 10px;
+}
+.catalog_doclink .catalog .thumb .docLinkImage img {
+	border: 1px solid #dcdcdc;
+}
+.catalog_doclink .catalog .summary .docLinkSiryo {
+	line-height: 1.5;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	text-align: left;
+}
+.catalog_doclink .catalog .summary .docLinkDate {
+	line-height: 1.5;
+	text-align: left;
+}
+
+@media (min-width: 769px){						/* PC用 */
+	.for_sp {									/* スマートフォン専用表示 */
+		display: none;
+	}
+	.pc_right {
+		text-align: right;
+	}
+	.pc_center {
+		text-align: center;
+	}
+	.bbttl {
+		font-size: 120%;
+		padding-bottom: 0.33em;
+	}
+	.bsttl {
+		font-size: 75%;
+		line-height: 1.5;
+	}
+	.dotlist li::before {
+		top: 7px;
+		left: 4px;
+	}
+	.fa-bullet_sprite_link.blank::after {
+		content: "";
+		display: inline-block;
+		width: 11px;
+		height: 10px;
+		margin: -3px 3px 0 4px;
+		vertical-align: middle;
+		background: url("../../../../../../shared/common/img/common/icon_blank.gif")no-repeat;
+		background-size: 11px 10px;
+	}
+	.footnote p {
+		font-size: 90%;
+	}
+
+	/* 関連資料 */
+	.catalog_doclink {
+		padding-left: 20px;
+		padding-right: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.catalog_doclink .catalog {
+		flex-basis: calc(50% - 15px);
+	}
+	.catalog_doclink .catalog:nth-child(n+3) {
+		margin-top: 12px;
+	}
+}
+
+@media only screen and (max-width: 768px){		/* スマホ用 */
+	.for_pc {									/* PC専用表示 */
+		display: none;
+	}
+	.iQ-R_contents {
+		padding-bottom: 2em;
+	}
+	.fa-heading_lv3 {
+		font-size: 110%;
+	}
+	.bbttl {
+		font-size: 110%;
+		padding-bottom: 0.33em;
+	}
+	.bsttl {
+		font-size: 100%;
+		line-height: 1.5;
+	}
+	.dotlist li::before {
+		top: 8px;
+		left: 5px;
+	}
+	.footnote p {
+		font-size: 85%;
+	}
+	.fa-column-reverse .fa-column_item_image {
+		margin-top: 0.5em;
+	}
+
+	/* 関連資料 */
+	.catalog_doclink .catalog:nth-child(n+2) {
+		margin-top: 1em;
+	}
+}
+
+/*------[ MELSEC iQ-R Series Features ]--------------------------------------------------------------*/
+.iQ-R_concept .top_catch {
+	font-weight: bold;
+}
+.iQ-R_concept .top_text {
+	margin-top: 16px;
+	margin-bottom: 0;
+}
+.iQ-R_concept .top_text strong {
+	font-weight: bold;
+}
+.concept_pagetitle {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.concept_pagetitle p {
+	margin-bottom: 0;
+}
+.iQ-R_concept .concept_feature .txt .feat_sttl {
+	line-height: 1.5;
+	font-weight: bold;
+	margin-bottom: 0.25em;
+}
+.iQ-R_concept .concept_feature .txt .fa-text {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.iQ-R_concept .concept_other .leadtext {
+	font-weight: bold;
+}
+@media (min-width: 769px){						/* for PC*/
+	.iQ-R_concept .top_catch {
+		font-size: 133%;
+		line-height: 1.75;
+	}
+	.iQ-R_concept .top_text strong {
+		font-size: 100%;
+	}
+	.iQ-R_concept .concept_movie {
+		margin-top: 50px;
+	}
+	.concept_pagetitle img {
+		height: 50px;
+		width: auto;
+	}
+	.iQ-R_concept .concept_feature {
+		display: flex;
+	}
+	.iQ-R_concept .concept_feature .icon img {
+		width: 80px;
+		height: auto;
+	}
+	.iQ-R_concept .concept_feature .txt {
+		margin-left: 1em;
+	}
+	.iQ-R_concept .concept_feature .txt .feat_sttl {
+		font-size: 133%;
+	}
+	.iQ-R_concept .concept_other + .concept_other {
+		margin-top: 30px;
+	}
+	.iQ-R_concept .concept_other h3 {
+		margin-bottom: 0.75em;
+	}
+	.iQ-R_concept .concept_other h3 img {
+		height: 40px;
+	}
+	.iQ-R_concept .concept_other .leadtext {
+		font-size: 133%;
+		margin-left: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	.iQ-R_concept .concept_other ul.dotlist {
+		margin-left: 1em;
+		margin-bottom: 0;
+	}
+	.iQ-R_concept .concept_other .concept_movie {
+		margin-top: 20px;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.iQ-R_concept {
+	}
+	.iQ-R_concept .top_catch {
+		font-size: 115%;
+		line-height: 1.25;
+	}
+	#concept_cercle_sp .concept_fig {
+		text-align: center;
+		margin-bottom: 0.5em;
+	}
+	#concept_cercle_sp .concept_fig img {
+		width: 80%;
+	}
+	#concept_cercle_sp .concept_unit {
+		margin-bottom: 2em;
+	}
+	#concept_cercle_sp .concept_unit .concept_theme img {
+		width: 100%;
+	}
+	#concept_cercle_sp .concept_unit .linkbtn {
+		font-size: 110%;
+		text-align: center;
+	}
+	#concept_cercle_sp .concept_unit .linkbtn a {
+		display: block;
+		width: 90%;
+		padding-top: 0.75em;
+		padding-bottom: 0.75em;
+		margin: 0.5em auto 0;
+		color: #005e8c;
+		background-color: #EEE;
+	}
+	#concept_cercle_sp .concept_unit .linkbtn .text {
+		position: relative;
+	}
+	#concept_cercle_sp .concept_unit .linkbtn .text::before {
+		content: "";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-left-color: #005e8c;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-width: 4px 8px;
+		position: absolute;
+		top: 0.33em;
+		left: -0.75em;
+	}
+	.iQ-R_concept .concept_movie {
+		margin-top: 24px;
+	}
+	.concept_pagetitle img {
+		height: 8vw;
+		width: auto;
+	}
+	.iQ-R_concept .top_text strong {
+		font-size: 115%;
+	}
+	.iQ-R_concept .concept_feature::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.iQ-R_concept .concept_feature .icon {
+		float: left;
+		margin-right: 1em;
+		margin-bottom: 0.5em;
+	}
+	.iQ-R_concept .concept_feature .icon img {
+		width: 25vw;
+		height: auto;
+	}
+	.iQ-R_concept .concept_feature .txt .feat_sttl {
+		font-size: 120%;
+	}
+	.iQ-R_concept .concept_other + .concept_other {
+		margin-top: 2.5em;
+	}
+	.iQ-R_concept .concept_other h3 {
+		margin-bottom: 1em;
+	}
+	.iQ-R_concept .concept_other h3 img {
+		height: 40px;
+	}
+	.iQ-R_concept .concept_other .leadtext {
+		font-size: 115%;
+		margin-bottom: 0.75em;
+	}
+	.iQ-R_concept .concept_other .concept_movie {
+		margin-top: 1em;
+	}
+}
+
+/*------[ Solution ]---------------------------------------------------------------------------------*/
+.iQ-R_solution .sol_index {
+	cursor: pointer;
+}
+.iQ-R_solution .sol_index .txt .clickarea .ttl {
+	color: #FFF;
+	line-height: 1.2;
+	background-color: #566392;
+}
+.iQ-R_solution .sol_index .txt .clickarea .subtxt {
+	color: #1c202e;
+	background-color: #d5d8e4;
+	position: relative;
+	margin-bottom: 0;
+}
+.iQ-R_solution .sol_index .txt .clickarea .subtxt::after {
+	content: "";
+	border-bottom: 1px solid #1c202e;
+	border-right: 1px solid #1c202e;
+	transform: rotate(45deg);
+	position: absolute;
+}
+.iQ-R_solution .sol_index .txt .clickarea.on .subtxt::after {
+	transform: rotate(-135deg);
+}
+.iQ-R_solution .sol_index .txt .openarea {
+	display: none;
+	background-color: #d5d8e4;
+	
+}
+.iQ-R_solution .sol_index .txt .openarea .point li {
+	color: #1c202e;
+	position: relative;
+	padding-left: 20px;
+}
+.iQ-R_solution .sol_index .txt .openarea .point li::before {
+	content: "";
+	display: inline-block;
+	background-image: url("../../solution/images/checkmark.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	position: absolute;
+}
+.iQ-R_solution .sol_index .txt .openarea .detail {
+	text-align: right;
+}
+.iQ-R_solution .sol_index .txt .openarea .detail a {
+	color: #FFF;
+	background-color: #566392;
+	position: relative;
+	text-decoration: none;
+}
+.iQ-R_solution .sol_index .txt .openarea .detail a::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-left-color: #FFF;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	position: absolute;
+}
+.iQ-R_solution .sol_index .txt .openarea .detail a:hover {
+	color: #1c202e;
+	background-color: #FFF;
+}
+.iQ-R_solution .sol_index .txt .openarea .detail a:hover::before {
+	border-left-color: #1c202e;
+}
+.iQ-R_solution .sol_index .pho {
+	margin-bottom: 0;
+}
+.iQ-R_solution .feat_unit .point_unit .feat_text li::before {
+	background-color: #566392;
+}
+.iQ-R_solution .point_unit .sol-heading_point {
+	color: #566392;
+	border-bottom: 1px solid #566392;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1em;
+}
+.iQ-R_solution .point_unit .sol-heading_point .pointnum {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #566392;
+	color: #FFF;
+	text-align: center;
+	flex-shrink: 0;
+}
+.iQ-R_solution .point_unit .sol-heading_point .pointnum .point {
+	font-weight: normal;
+}
+.iQ-R_solution .point_unit .sol-heading_point .pointnum .num {
+	font-weight: bold;
+}
+.iQ-R_solution .point_unit .sol-heading_point .txt {
+	font-weight: bold;
+}
+.iQ-R_solution .point_unit .sol-heading_point + .dv_steps {
+	margin-top: -0.75em;
+	margin-bottom: 0;
+	padding-bottom: 0.5em;
+}
+.iQ-R_solution .point_unit .sol_fig_2col {
+	margin-top: 1em;
+}
+.iQ-R_solution .point_unit .sol_fig_2col .fig_unit .fig-unit_upper {
+	margin-bottom: 0.5em;
+}
+.iQ-R_solution .point_unit .sol_fig_2col .fig_unit .fig-unit_upper .bsttl {
+	border-bottom: 1px solid #999;
+}
+.iQ-R_solution .point_unit .sol_fig_2col .fig_unit .fig-unit_upper .series {
+	text-align: right;
+	line-height: 1;
+	font-weight: bold;
+	color: #566392;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.iQ-R_solution .point_unit .sol_fig_2col .fig_unit .fig-unit_upper .series .icon {
+	display: inline-block;
+	padding: 0.2em 0.75em 0.15em;
+	background-color: #dbddea;
+	border: 1px solid #566392;
+	border-radius: 1em;
+	margin-left: 0.5em;
+}
+.iQ-R_solution .feat_unit .footnote .sol-ref {
+	background-color: #EEE;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	position: relative;
+}
+.iQ-R_solution .feat_unit .footnote .sol-ref + .sol-ref {
+	padding-top: 0;
+}
+/*客先指示により赤い三角の利用へ変更のため不使用 2023/1/27アイプラネット大澤
+.iQ-R_solution .feat_unit .footnote .sol-ref::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-left-color: #808080;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	position: absolute;
+	top: 0.9em;
+	left: 1em;
+}
+*/
+.iQ-R_solution .feat_unit .footnote .sol-ref + .sol-ref::before {
+	top: 0.4em;
+}
+.iQ-R_solution .sol-heading_ex {
+	color: #566392;
+	background-color: #e0e0e0;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+.iQ-R_solution .feat_unit .feat_text .innerlist li {
+	font-size: 100%;
+	padding-left: 0;
+	display: flex;
+}
+.iQ-R_solution .feat_unit .feat_text .innerlist li:nth-child(n+2) {
+	margin-top: 0;
+}
+.iQ-R_solution .feat_unit .feat_text .innerlist li::before {
+	display: none;
+}
+.iQ-R_solution .feat_unit .feat_text li .innerlist .num {
+	color: #566392;
+	flex-grow: 0;
+	flex-shrink: 0;
+	padding-right: 0.25em;
+}
+.iQ-R_solution .feat_unit .feat_text li .innerlist .txt .blt {
+	font-weight: bold;
+	padding-left: 1em;
+	position: relative;
+}
+.iQ-R_solution .feat_unit .feat_text li .innerlist .txt .blt::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-left-color: #566392;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-width: 3px 6px;
+	position: absolute;
+}
+.iQ-R_solution .feat_unit .sol_safety_ttl {
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 0.75em;
+}
+.iQ-R_solution .feat_unit .fa-text .sol_prob_ttl {
+	display: inline-block;
+	background-color: #566392;
+	color: #FFF;
+	padding: 0 1.5em;
+	border-radius: 1em;
+	margin-bottom: 0.25em;
+}
+.iQ-R_solution .feat_unit .sol_reliability_ttl {
+	font-weight: bold;
+	line-height: 1.5;
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+}
+.feat_unit #gxworks3 .steps .step1 {
+	background-color: #f3efd9;
+}
+.feat_unit #gxworks3 .steps .step2 {
+	background-color: #e2ece8;
+}
+.feat_unit #gxworks3 .steps .step3 {
+	background-color: #dfe6f2;
+}
+.feat_unit #gxworks3 .steps .step4 {
+	background-color: #dad7e6;
+}
+.feat_unit #gxworks3 .steps .faet ul li {
+	position: relative;
+	padding-left: 9px;
+}
+.feat_unit #gxworks3 .steps .faet ul li:nth-child(n+2) {
+	margin-top: 0.5em;
+}
+.feat_unit #gxworks3 .steps .faet ul li::before {
+	content: "";
+	width: 4px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #666;
+	position: absolute;
+	top: 6px;
+	left: 0;
+}
+.feat_unit .sol_apdx_2col,
+.feat_unit .sol_apdx_3col {
+	background-color: #EEE;
+	padding: 1em;
+}
+.feat_unit .sol_apdx_3col .apdxs .fa-image_box {
+	margin-bottom: 0;
+}
+.feat_unit #appdl .os {
+	font-weight: bold;
+}
+.feat_unit #melsoftlib .apdxs:nth-child(2) {
+	background-color: #FFF;
+}
+.feat_unit #melsoftlib .apdxs .logo img {
+	width: 90px;
+	height: auto;
+}
+.feat_unit #melsoftlib .apdxs .fb01,
+.feat_unit #melsoftlib .apdxs .fb02 {
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	
+}
+@media (min-width: 769px){						/* for PC*/
+	.iQ-R_solution .sol_index + .sol_index {
+		margin-top: 20px;
+	}
+	.iQ-R_solution .sol_index {
+		display: flex;
+	}
+	.iQ-R_solution .sol_index .txt {
+		order: 2;
+		width: 520px;
+	}
+	.iQ-R_solution .sol_index .txt .clickarea .ttl {
+		padding: 16px 25px 12px;
+		font-size: 150%;
+	}
+	.iQ-R_solution .sol_index .txt .clickarea .subtxt {
+		padding: 15px 25px 12px;
+		font-size: 125%;
+	}
+	.iQ-R_solution .sol_index .txt .clickarea .subtxt::after {
+		width: 0.75em;
+		height: 0.75em;
+		top: 1em;
+		right: 1.5em;
+	}
+	.iQ-R_solution .sol_index .txt .clickarea.on .subtxt::after {
+		top: 1.5em;
+	}
+	.iQ-R_solution .sol_index .txt .openarea {
+		padding: 0px 25px 20px 40px;
+	}
+	.iQ-R_solution .sol_index .txt .openarea .point li {
+		font-size: 120%;
+	}
+	.iQ-R_solution .sol_index .txt .openarea .point li:nth-child(n+2) {
+		margin-top: 0.5em;
+	}
+	.iQ-R_solution .sol_index .txt .openarea .point li::before {
+		width: 15px;
+		height: 15px;
+		top: 0;
+		left: 0;
+	}
+	.iQ-R_solution .sol_index .txt .openarea .detail {
+		margin-top: 12px;
+	}
+	.iQ-R_solution .sol_index .txt .openarea .detail a {
+		font-size: 120%;
+		padding: 6px 12px 6px 25px;
+		border-radius: 16px;
+	}
+	.iQ-R_solution .sol_index .txt .openarea .detail a::before {
+		border-width: 4px 8px;
+		top: 10px;
+		left: 12px;
+	}
+	.iQ-R_solution .sol_index .pho {
+		width: 260px;
+		background-position: center center;
+		background-size: cover;
+	}
+	.iQ-R_solution .sol_index.sol_machine .pho {
+		background-image: url("../../solution/images/img_index01.jpg");
+	}
+	.iQ-R_solution .sol_index.sol_development .pho {
+		background-image: url("../../solution/images/img_index02.jpg");
+	}
+	.iQ-R_solution .sol_index.sol_smart .pho {
+		background-image: url("../../solution/images/img_index03.jpg");
+	}
+	.iQ-R_solution .sol_index.sol_safety .pho {
+		background-image: url("../../solution/images/img_index04.jpg");
+	}
+	.iQ-R_solution .sol_index.sol_reliability .pho {
+		background-image: url("../../solution/images/img_index05.jpg");
+	}
+	.iQ-R_solution .sol_index .pho img {
+		display: none;
+	}
+	.iQ-R_solution .point_unit .sol-heading_point {
+		font-size: 120%;
+		padding-bottom: 3px;
+	}
+	.iQ-R_solution .point_unit .sol-heading_point .pointnum {
+		width: 36px;
+		height: 36px;
+	}
+	.iQ-R_solution .point_unit .sol-heading_point .pointnum .point {
+		font-size: 10px;
+		line-height: 1;
+		margin-top: 2px;
+		margin-bottom: 1px;
+	}
+	.iQ-R_solution .point_unit .sol-heading_point .pointnum .num {
+		font-size: 14px;
+		line-height: 1;
+	}
+	.iQ-R_solution .point_unit .sol-heading_point .txt {
+		padding-left: 0.75em;
+	}
+	.iQ-R_solution .point_unit .sol-heading_point + .dv_steps {
+		text-align: right;
+	}
+	.iQ-R_solution .point_unit .sol_fig_2col {
+		display: flex;
+	}
+	.iQ-R_solution .point_unit .sol_fig_2col .fig_unit {
+		flex-basis: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+	.iQ-R_solution .point_unit .sol_fig_2col .fig_unit:nth-child(2) {
+		margin-left: 3em;
+	}
+	.iQ-R_solution .point_unit .sol_fig_2col .fig_unit .fig-unit_upper .bsttl {
+		font-size: 100%;
+	}
+	.iQ-R_solution .point_unit .sol_fig_2col .fig_unit .fig-unit_upper .series {
+		font-size: 100%;
+	}
+	.iQ-R_solution .point_unit .sol_fig_2col .fig_unit .fa-image_box {
+		margin-top: auto;
+	}
+	.feat_unit .footnote .sol-ref::before {
+		border-width: 3px 6px;
+	}
+	.iQ-R_solution .sol-heading_ex {
+		font-size: 120%;
+		padding: 0.5em 0.5em;
+	}
+	.iQ-R_solution .feat_unit .feat_text li .innerlist .txt .blt::before {
+		top: 0.25em;
+		left: 0.25em;
+	}
+	.feat_unit #gxworks3 .steps {
+		width: 780px;
+		display: flex;
+	}
+	.feat_unit #gxworks3 .steps .step1,
+	.feat_unit #gxworks3 .steps .step2,
+	.feat_unit #gxworks3 .steps .step3,
+	.feat_unit #gxworks3 .steps .step4 {
+		width: 190px;
+	}
+	.feat_unit #gxworks3 .steps .step_heading {
+		margin-bottom: 0;
+	}
+	.feat_unit #gxworks3 .steps .step4 .step_heading {
+		overflow: visible;
+	}
+	.feat_unit #gxworks3 .steps .faet {
+		padding: 10px;
+	}
+	.feat_unit #gxworks3 .steps .faet ul li {
+		font-size: 100%;
+		line-height: 1.5;
+	}
+	.feat_unit .sol_apdx_3col {
+		display: flex;
+		justify-content: space-between;
+	}
+	.feat_unit #gemini .apdxs:nth-child(1) {
+		width: 280px;
+	}
+	.feat_unit #gemini .apdxs:nth-child(2) {
+		width: 207px;
+		padding-top: 4px;
+	}
+	.feat_unit #gemini .apdxs:nth-child(3) {
+		width: 207px;
+		padding-top: 4px;
+	}
+	.feat_unit #appdl {
+		justify-content: space-around;
+	}
+	.feat_unit #appdl .apdxs {
+		flex-basis: 30%;
+	}
+	.feat_unit #appdl .os {
+		font-size: 150%;
+		line-height: 1.5;
+		margin-bottom: 0.5em;
+	}
+	.feat_unit #appdl .os .icon_blank {
+		height: 12px;
+		width: auto;
+		vertical-align: top;
+		position: relative;
+		top: 4px;
+		left: 6px;
+	}
+	.feat_unit #appdl .os .t_blank {
+		font-size: 66%;
+		font-weight: normal;
+		position: relative;
+		top: -6px;
+		left: -6px;
+	}
+	.feat_unit #appdl .store {
+		margin-bottom: 0;
+	}
+	.feat_unit #appdl .store img {
+		height: 64px;
+		width: auto;
+	}
+	.feat_unit #melsoftlib {
+		display: flex;
+	}
+	.feat_unit #melsoftlib .apdxs {
+		display: flex;
+	}
+	.feat_unit #melsoftlib .apdxs:nth-child(2) {
+		padding: 0.5em;
+		margin-left: 1em;
+	}
+	.feat_unit #melsoftlib .apdxs .logo {
+		display: flex;
+		align-items: center;
+	}
+	.feat_unit #melsoftlib .apdxs .link {
+		margin-left: 1em;
+	}
+	.feat_unit #melsoftlib .apdxs .link .fa-unordered_list {
+		margin-bottom: 0;
+	}
+	.feat_unit #melsoftlib .apdxs .fb01,
+	.feat_unit #melsoftlib .apdxs .fb02 {
+		line-height: 1.25;
+		white-space: nowrap;
+	}
+	.feat_unit #melsoftlib .apdxs .fb01 img {
+		width: 200px;
+		height: auto;
+	}
+	.feat_unit #melsoftlib .apdxs .fb02 {
+		margin-left: 1em;
+	}
+	.feat_unit #melsoftlib .apdxs .fb02 img {
+		width: 100px;
+		height: auto;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.iQ-R_solution .sol_index + .sol_index {
+		margin-top: 1em;
+	}
+	.iQ-R_solution .sol_index .txt .clickarea .ttl {
+		padding: 0.75em 1em;
+		font-size: 120%;
+		line-height: 1.5;
+		text-align: center;
+	}
+	.iQ-R_solution .sol_index .txt .clickarea .subtxt {
+		padding: 0.75em 1em;
+		font-size: 100%;
+	}
+	.iQ-R_solution .sol_index .txt .clickarea .subtxt::after {
+		width: 0.5em;
+		height: 0.5em;
+		top: 1em;
+		right: 1.5em;
+	}
+	.iQ-R_solution .sol_index .txt .clickarea.on .subtxt::after {
+		top: 1.25em;
+	}
+	.iQ-R_solution .sol_index .txt .openarea {
+		padding: 0.5em 1em 1.25em 1em;
+	}
+	.iQ-R_solution .sol_index .txt .openarea .point li {
+		font-size: 100%;
+		line-height: 1.5;
+	}
+	.iQ-R_solution .sol_index .txt .openarea .point li:nth-child(n+2) {
+		margin-top: 0.5em;
+	}
+	.iQ-R_solution .sol_index .txt .openarea .point li::before {
+		width: 15px;
+		height: 15px;
+		top: 0.1em;
+		left: 0;
+	}
+	.iQ-R_solution .sol_index .txt .openarea .detail {
+		margin-top: 1.5em;
+	}
+	.iQ-R_solution .sol_index .txt .openarea .detail a {
+		font-size: 100%;
+		padding: 0.5em 1em 0.5em 2em;
+		border-radius: 1.25em;
+	}
+	.iQ-R_solution .sol_index .txt .openarea .detail a::before {
+		border-width: 0.33em 0.67em;
+		top: 0.75em;
+		left: 1em;
+	}
+	.iQ-R_solution .sol_index .pho {
+		width: 100%;
+	}
+	.iQ-R_solution .sol_index .pho img {
+		width: 100%;
+		height: auto;
+	}
+	.iQ-R_solution .point_unit .sol-heading_point {
+		font-size: 110%;
+		padding-bottom: 0.25em;
+	}
+	.iQ-R_solution .point_unit .sol-heading_point .pointnum {
+		width: 2.25em;
+		height: 2.25em;
+	}
+	.iQ-R_solution .point_unit .sol-heading_point .pointnum .point {
+		font-size: 65%;
+		line-height: 1;
+		margin-bottom: 2px;
+	}
+	.iQ-R_solution .point_unit .sol-heading_point .pointnum .num {
+		font-size: 90%;
+		line-height: 1;
+	}
+	.iQ-R_solution .point_unit .sol-heading_point .txt {
+		padding-left: 0.5em;
+	}
+	.iQ-R_solution .point_unit .sol-heading_point + .dv_steps img {
+		width: 100%;
+	}
+	.iQ-R_solution .point_unit .sol_fig_2col + .sol_fig_2col {
+		margin-top: 2em;
+	}
+	.iQ-R_solution .point_unit .sol_fig_2col .fig_unit:nth-child(2) {
+		margin-top: 2em;
+	}
+	.iQ-R_solution .point_unit .sol_fig_2col .fig_unit .fig-unit_upper .series {
+		font-size: 85%;
+	}
+	.feat_unit .footnote .sol-ref::before {
+		border-width: 0.3em 0.6em;
+	}
+	.iQ-R_solution .sol-heading_ex {
+		font-size: 100%;
+		padding: 0.5em 0.75em;
+	}
+	.iQ-R_solution .feat_unit .feat_text li .innerlist .txt .blt::before {
+		top: 0.33em;
+		left: 0.33em;
+	}
+	.feat_unit #gxworks3 .steps .step_heading {
+		text-align: center;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		position: relative;
+	}
+	.feat_unit #gxworks3 .steps .step_heading::after {
+		content: "";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+		position: absolute;
+		border-width: 12px 16px;
+		bottom: -22px;
+		left: calc(50% - 16px);
+	}
+	.feat_unit #gxworks3 .steps .step1 .step_heading {
+		background-color: #c0ab30;
+	}
+	.feat_unit #gxworks3 .steps .step1 .step_heading::after {
+		border-top-color: #c0ab30;
+	}
+	.feat_unit #gxworks3 .steps .step2 .step_heading {
+		background-color: #4c9e8c;
+	}
+	.feat_unit #gxworks3 .steps .step2 .step_heading::after {
+		border-top-color: #4c9e8c;
+	}
+	.feat_unit #gxworks3 .steps .step3 .step_heading {
+		background-color: #3e82b8;
+	}
+	.feat_unit #gxworks3 .steps .step3 .step_heading::after {
+		border-top-color: #3e82b8;
+	}
+	.feat_unit #gxworks3 .steps .step4 .step_heading {
+		background-color: #5b4e85;
+	}
+	.feat_unit #gxworks3 .steps .step4 .step_heading::after {
+		border-top-color: #5b4e85;
+	}
+	.feat_unit #gxworks3 .steps .step_heading span {
+		font-size: 110%;
+		font-weight: bold;
+		color: #FFF;
+	}
+	.feat_unit #gxworks3 .steps .faet {
+		padding: 20px 10px;
+	}
+	.feat_unit #appdl .apdxs {
+		text-align: center;
+	}
+	.feat_unit #appdl .apdxs:nth-child(2) {
+		margin-top: 0.5em;
+	}
+	.feat_unit #appdl .apdxs:nth-child(3) {
+		margin-top: 1em;
+	}
+	.feat_unit #appdl .os {
+		font-size: 110%;
+		line-height: 1.5;
+		margin-bottom: 0.25em;
+	}
+	.feat_unit #appdl .os .icon_blank {
+		height: 14px;
+		width: auto;
+		vertical-align: top;
+		position: relative;
+		top: 2px;
+		left: 6px;
+	}
+	.feat_unit #appdl .os .t_blank {
+		font-size: 75%;
+		font-weight: normal;
+		position: relative;
+		top: -6px;
+		left: -6px;
+	}
+	.feat_unit #appdl .wintxt {
+		line-height: 1.2;
+		margin-top: 0.15em;
+		margin-bottom: 1em;
+	}
+	.feat_unit #appdl .store {
+		margin-bottom: 0;
+	}
+	.feat_unit #appdl .store img {
+		height: 48px;
+		width: auto;
+	}
+	.feat_unit #melsoftlib .apdxs:nth-child(1) {
+		display: flex;
+		align-items: center;
+	}
+	.feat_unit #melsoftlib .apdxs:nth-child(2) {
+		padding: 0.5em 0.75em 0.75em;
+		margin-top: 0.5em;
+	}
+	.feat_unit #melsoftlib .apdxs .logo {
+		padding-bottom: 1em;
+		padding-right: 1.5em;
+	}
+	.feat_unit #melsoftlib .apdxs .link .fa-text {
+		margin-bottom: 0.5em;
+	}
+	.feat_unit #melsoftlib .apdxs .link .fa-unordered_list {
+		margin-bottom: 1em;
+	}
+	.feat_unit #melsoftlib .apdxs .fb01,
+	.feat_unit #melsoftlib .apdxs .fb02 {
+		line-height: 1.25;
+	}
+	.feat_unit #melsoftlib .apdxs .fb01 img {
+		width: 100%;
+		height: auto;
+		margin-top: 0.5em;
+	}
+	.feat_unit #melsoftlib .apdxs .fb02 {
+		margin-top: 1.5em;
+	}
+	.feat_unit #melsoftlib .apdxs .fb02 img {
+		width: 60%;
+		height: auto;
+		margin-top: 0.5em;
+		margin-left: 20%;
+	}
+}
+
+/*-------[ Basic system configuration ]--------------------------------------------------------------*/
+@media only screen and (max-width: 768px){		/* for Mobile */
+	#sysconfig {
+		margin-bottom: 1em;
+	}
+	#sysconfig .unit_sysconfig {
+		padding-bottom: 1em;
+	}
+	#sysconfig .unit_sysconfig .num {
+		color: #FFF;
+		width: 1.5em;
+		height: 1.5em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 0.5em;
+	}
+	#sysconfig .unit_sysconfig .num_a {
+		background-color: #6c7b8c;
+	}
+	#sysconfig .unit_sysconfig .num_b {
+		background-color: #846c5c;
+	}
+	#sysconfig .unit_sysconfig .num_c {
+		background-color: #9a4642;
+	}
+	#sysconfig .unit_sysconfig .num_d {
+		background-color: #bc782f;
+	}
+	#sysconfig .unit_sysconfig .num_e {
+		background-color: #6a3679;
+	}
+	#sysconfig .unit_sysconfig .num_f {
+		background-color: #4d829a;
+	}
+	#sysconfig .unit_sysconfig dt {
+		font-size: 110%;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		margin-bottom: 0.25em;
+	}
+	#sysconfig .unit_sysconfig dd {
+		line-height: 1.5;
+		padding-left: 18px;
+		position: relative;
+	}
+	#sysconfig .unit_sysconfig dd::before {
+		content: "";
+		width: 4px;
+		height: 4px;
+		border-radius: 2px;
+		background-color: #666;
+		position: absolute;
+		top: 8px;
+		left: 9px;
+	}
+}
+
+/*-------[ Lineup ]----------------------------------------------------------------------------------*/
+.lup_index .fa-old_card_b {
+	margin-top: 1.5em;
+}
+.lup_index .fa-old_card_b .fa-old_card_b_item {
+	margin-bottom: 0;
+}
+.lup_index .lup_category {
+	font-weight: bold;
+}
+.lup_index .prod_link dt::before {
+	content: "[";
+}
+.lup_index .prod_link dt::after {
+	content: "]";
+}
+.lup_index .footnote p {
+	margin-bottom: 0;
+}
+.lup_index .prod_link dd + dt,
+.lup_index .prod_link .footnote + dt {
+	margin-top: 1.25em;
+}
+@media (min-width: 769px){						/* for PC*/
+	.lup_index .prod_link {
+		line-height: 1.5;
+	}
+	.lup_index .prod_link dt {
+		margin-bottom: 0.25em;
+	}
+	.lup_index .prod_link dd + dd {
+		margin-top: 0.25em;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.lup_index .prod_link {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.lup_index .prod_link dt {
+		flex-basis: 100%;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-bottom: 0.25em;
+	}
+	.lup_index .prod_link dd {
+		flex-basis: calc(50% - 1em);
+		padding-left: 1em;
+		text-indent: -0.75em;
+		margin-top: 0.25em;
+	}
+}
+
+/*------[ Products common ]--------------------------------------------------------------------------*/
+.lup_card_col1 .lup_unit {
+	width: 100%;
+}
+.lup_card .lup_unit .lup-unit_upper {
+	padding-bottom: 0.25em;
+	border-bottom: 1px dotted #999;
+	margin-bottom: 1em;
+}
+.lup_card .lup_unit .lup-unit_upper .lup_ttl {
+	line-height: 1.5;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 0;
+}
+.lup_card .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap {
+	position: relative;
+}
+.lup_card .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap::before {
+	content: "";
+	width: 0.85em;
+	height: 0.85em;
+	position: absolute;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list li {
+	padding-bottom: 0.3em;
+	border-bottom: 1px dashed #CCC;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list li + li {
+	margin-top: 0.75em;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list .spbet {
+	display: flex;
+	justify-content: space-between;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list .prodnum {
+	font-weight: bold;
+	position: relative;
+	padding-left: 1em;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list .prodnum::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-left-color: #e60000;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-width: 4px 8px;
+	position: absolute;
+	top: 0.3em;
+	left: 0.15em;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list .step {
+	text-align: center;
+	line-height: 1;
+	font-weight: bold;
+	height: 1.66em;
+	padding-top: 0.33em;
+	padding-bottom: 0.33em;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list.w4em .step {
+	width: 4em;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list.w55em .step {
+	width: 5.5em;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats li {
+	border: none;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .role {
+	display: block;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pfwrap {
+	display: flex;
+	justify-content: space-between;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .prodnum + .pfwrap {
+	margin-top: 0.35em;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf50,
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100 {
+	text-align: center;
+	line-height: 1;
+	font-weight: bold;
+	padding-top: 0.3em;
+	padding-bottom: 0.25em;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100 {
+	flex-basis: 100%;
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf50 {
+	flex-basis: calc(50% - 0.5em);
+}
+.lup_card .lup_unit .lup-unit_conts .lup-prod-list .subname {
+	margin-left: 1.3em;
+	vertical-align: top;
+}
+.feat_unit .with_num .num_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+.feat_unit .with_num .num_wrap .num {
+	line-height: 1.5;
+	font-weight: normal;
+	white-space: nowrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1em;
+}
+.feat_unit + .feat_unit {
+	margin-top: 2em;
+}
+.feat_unit .feat_icon {
+	display: flex;
+	justify-content: flex-end;
+}
+.feat_unit .feat_icon li {
+	color: #FFF;
+	font-weight: bold;
+}
+.feat_unit .feat_text > li {
+	padding-left: 1.1em;
+	position: relative;
+}
+.feat_unit .feat_text > li::before {
+	content: "";
+	width: 0.75em;
+	height: 0.75em;
+	position: absolute;
+}
+.feat_unit .feat_text > li:nth-child(n+2) {
+	margin-top: 0.33em;
+}
+.feat_unit .feat_fig {
+	margin-top: 1em;
+}
+.feat_unit .feat_fig_2col {
+	margin-top: 1em;
+}
+.table_ttl {
+	font-weight: bold;
+	margin-bottom: 0.25em;
+}
+.table_ttl.with_date {
+	display: flex;
+	justify-content: space-between;
+}
+.table_ttl.with_date .date {
+	font-weight: normal;
+}
+.func_set {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+.func_unit .func_icon {
+	display: inline-block;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #586e7f;
+	text-align: center;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+.func_set .func_unit .func_icon {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.w4em .func_icon {
+	width: 4em;
+}
+.w5em .func_icon {
+	width: 5em;
+}
+.fa-heading_table_content .spbet {
+	display: flex;
+	justify-content: space-between;
+}
+.fa-heading_table_content .sup_c {
+	position: relative;
+}
+.fa-heading_table_content .sup_c sup {
+	position: absolute;
+	top: 0;
+}
+.fa-heading_table_content .sup_b {
+	position: relative;
+	padding: 1.5em 0;
+}
+.fa-heading_table_content .sup_b sup {
+	position: absolute;
+}
+.fa-heading_table_content .app_c {
+	position: relative;
+}
+.fa-heading_table_content .app_c .app {
+	position: absolute;
+	top: 0;
+}
+
+@media (min-width: 769px){						/* for PC*/
+	.lup_card_col2 {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.lup_card_col2 .lup_unit {
+		flex-basis: calc(50% - 1.5em);
+	}
+	.lup_card .lup_unit {
+		margin-bottom: 20px;
+	}
+	.lup_card .lup_unit .lup-unit_upper .lup_ttl {
+		font-size: 110%;
+	}
+	.lup_card .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap {
+		padding-left: 1.66em;
+	}
+	.lup_card .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap::before {
+		top: 0.2em;
+		left: 0.33em;
+	}
+	.lup_card .lup_unit .lup-unit_upper .lup_ttl .spec {
+		font-size: 85%;
+		padding-top: 0.15em;
+		padding-bottom: 0.15em;
+		padding-left: 0.75em;
+		padding-right: 0.75em;
+	}
+	.lup_card .lup_unit .lup-unit_upper .lup_ttl .spec + .spec {
+		margin-left: 0.5em;
+	}
+	.lup_card .lup_unit .lup-unit_conts .lup-prod-list .prodnum {
+		font-size: 125%;
+	}
+	.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .role {
+		font-size: 95%;
+		line-height: 1;
+		margin-left: 1.25em;
+		margin-bottom: 0.75em;
+	}
+	.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf50,
+	.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100 {
+		font-size: 95%;
+	}
+	.feat_unit .with_num {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 0.5em;
+	}
+	.feat_unit .with_num .num_wrap.w8em {
+		max-width: 13em;
+	}
+	.feat_unit .with_num .num_wrap .num {
+		font-size: 75%;
+		padding-top: 2px;
+		padding-bottom: 1px;
+	}
+	.feat_unit .with_num .num_wrap .num:nth-child(2n) {
+		margin-left: 4px;
+	}
+	.feat_unit .with_num .num_wrap .num:nth-child(n+3) {
+		margin-top: 3px;
+	}
+	.feat_unit .with_num .num_wrap.w8em .num {
+		width: 8em;
+	}
+	.feat_unit .with_num .num_wrap.w11em .num {
+		width: 11em;
+	}
+	.feat_unit .feat_icon {
+		margin-top: -16px;
+		margin-bottom: 16px;
+	}
+	.feat_unit .feat_icon li {
+		font-size: 95%;
+		padding: 0.25em 2em;
+		margin-left: 0.5em;
+	}
+	.feat_unit .feat_text > li {
+		font-size: 100%;
+		line-height: 1.5;
+	}
+	.feat_unit .feat_text > li::before {
+		top: 0.33em;
+		left: 0;
+	}
+	.feat_unit .feat_fig img {
+		width: 720px;
+	}
+	.feat_unit .feat_fig_2col {
+		display: flex;
+		justify-content: center;
+	}
+	.feat_unit .feat_fig_2col .fa-image_box:nth-child(2) {
+		margin-left: 20px;
+		margin-top: 0;
+	}
+	.table_ttl {
+		font-size: 100%;
+		line-height: 1.5;
+	}
+	.func_set {
+		font-size: 85%;
+		text-align: right;
+	}
+	.func_unit {
+		display: inline-block;
+	}
+	.func_unit + .func_unit {
+		margin-left: 0.5em;
+	}
+	.fa-heading_table_content .sup_b sup {
+		top: 3.25em;
+		left: -1.2em;
+	}
+	.fa-heading_table_content .sup_c sup {
+		left: 1em;
+	}
+	.fa-heading_table_content .app_c .app {
+		left: 1em;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.lup_card_col2 .lup_unit {
+		width: 100%;
+	}
+	.lup_card .lup_unit .lup-unit_upper .lup_ttl {
+		font-size: 110%;
+	}
+	.lup_card .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap {
+		padding-left: 1.35em;
+	}
+	.lup_card .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap::before {
+		top: 0.15em;
+		left: 0.2em;
+	}
+	.lup_card .lup_unit .lup-unit_upper .lup_ttl .spec {
+		font-size: 70%;
+		padding-left: 0.75em;
+		padding-right: 0.75em;
+		padding-top: 0.25em;
+		padding-bottom: 0.25em;
+		position: relative;
+		top: -0.15em;
+	}
+	.lup_card .lup_unit .lup-unit_upper .lup_ttl .spec + .spec {
+		margin-left: 0.5em;
+	}
+	.lup_card .lup_unit .lup-unit_conts .lup-prod-list .prodnum {
+		font-size: 110%;
+	}
+	.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .role {
+		line-height: 1.5;
+		margin-left: 0.9em;
+		margin-bottom: 0.5em;
+	}
+	.lup_card .lup_unit .lup-unit_conts .lup-prod-list .step {
+		font-size: 80%;
+		position: relative;
+		top: -0.1em;
+	}
+	.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pfwrap {
+		margin-top: 0.25em;
+	}
+	.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf50,
+	.lup_card .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100 {
+		font-size: 85%;
+	}
+	.feat_unit .with_num .num_wrap {
+		margin-top: 0.25em;
+	}
+	.feat_unit .with_num .num_wrap .num {
+		font-size: 10px;
+		padding-right: 12px;
+		padding-left: 12px;
+	}
+	.feat_unit .with_num .num_wrap .num + .num {
+		margin-left: 0.5em;
+	}
+	.feat_unit .feat_icon {
+		flex-wrap: wrap;
+		margin-top: -1em;
+		margin-bottom: 0.5em;
+	}
+	.feat_unit .feat_icon li {
+		font-size: 80%;
+		padding: 0.1em 0.5em;
+		margin-left: 0.25em;
+		margin-bottom: 0.25em;
+	}
+	.feat_unit .feat_text > li {
+		font-size: 100%;
+		line-height: 1.5;
+	}
+	.feat_unit .feat_text > li::before {
+		top: 0.35em;
+		left: 0;
+	}
+	.table_ttl {
+		font-size: 90%;
+		line-height: 1.5;
+	}
+	.func_set {
+		font-size: 80%;
+	}
+	.func_set .func_unit {
+		display: block;
+	}
+	.func_set .func_unit + .func_unit {
+		margin-top: 0.25em;
+	}
+	.fa-heading_table_content th,
+	.fa-heading_table_content td {
+		font-size: 90%;
+		vertical-align: middle;
+	}
+	.fa-heading_table_content .sup_b sup {
+		top: 3.75em;
+		left: -1.2em;
+	}
+	.fa-heading_table_content .sup_c sup {
+		left: 1.5em;
+	}
+	.fa-heading_table_content .app_c .app {
+		left: 1.25em;
+		font-size: 95%;
+	}
+}
+
+/*------[ CPU ]--------------------------------------------------------------------------------------*/
+.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap::before {
+	background-color: #9a4642;
+}
+.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_upper .lup_ttl .spec,
+.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts .lup-prod-list .step,
+.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100 {
+	border: 1px solid #9a4642;
+	color: #9a4642;
+}
+.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts_cpu {
+	display: flex;
+}
+.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts .lup-unit_pho {
+	flex-glow: 0;
+}
+.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts .lup-unit_prodlist {
+	flex-glow: 1;
+}
+.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts .pho_cpu img {
+	width: 100px;
+}
+.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts .pho_cpu.w150 img {
+	width: 150px;
+}
+.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts #net_combi {
+	flex-shrink: 0;
+}
+.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts #net_combi .fig {
+	text-align: left;
+	line-height: 0;
+	margin-bottom: 0;
+}
+.iQ-R_cpu .feat_cpu .with_num .num_wrap .num {
+	color: #9a4642;
+	border: 1px solid #9a4642;
+	background-color: #ead9d3;
+}
+.iQ-R_cpu .feat_cpu .feat_icon li,
+.iQ-R_cpu .feat_cpu .feat_text li::before {
+	background-color: #9a4642;
+}
+.iQ-R_cpu .cpu-heading_index {
+	font-weight: bold;
+	color: #9a4642;
+	border-bottom: 1px solid #9a4642;
+	margin-bottom: 0.5em;
+}
+.iQ-R_cpu .cpu_index + .cpu-heading_index {
+	margin-top: 1.5em;
+}
+.iQ-R_cpu .cpu_index .txt {
+	background-color: #f5edea;
+}
+.iQ-R_cpu .cpu_index .txt .work_cat {
+	background-color: #7f8ea0;
+}
+.iQ-R_cpu .cpu_index .txt .work_cat .subtxt {
+	color: #FFF;
+	margin-bottom: 0.5em;
+}
+.iQ-R_cpu .cpu_index .txt .work_cat .prod_name {
+	color: #FFF;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+	.iQ-R_cpu .cpu_index .txt .work_cat .detail {
+		margin-bottom: 0;
+	}
+.iQ-R_cpu .cpu_index .txt .prod_lup .type dt {
+	color: #4d5f73;
+}
+.iQ-R_cpu .cpu_index .txt .prod_lup .type dd {
+	font-weight: bold;
+}
+.iQ-R_cpu .cpu_index .pho {
+	position: relative;
+	overflow: hidden;
+}
+.iQ-R_cpu .cpu_index .pho img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: auto;
+}
+@media (min-width: 769px){						/* for PC*/
+	.iQ-R_cpu .cpu-heading_index {
+		font-size: 125%;
+		line-height: 1.5;
+	}
+	.iQ-R_cpu .cpu_index {
+		display: flex;
+	}
+	.iQ-R_cpu .cpu_index .txt {
+		order: 2;
+		width: 580px;
+	}
+	.iQ-R_cpu .cpu_index .txt .work_cat {
+		display: flex;
+		justify-content: space-between;
+		padding: 0.75em 1.25em;
+	}
+	.iQ-R_cpu .cpu_index .txt .work_cat .subtxt {
+		line-height: 1.3;
+		padding-top: 0.35em;
+		padding-bottom: 0.35em;
+	}
+	.iQ-R_cpu .cpu_index .txt .work_cat .prod_name {
+		font-size: 133%;
+	}
+	.iQ-R_cpu .cpu_index .txt .work_cat .detail {
+		display: flex;
+		align-items: center;
+	}
+	.iQ-R_cpu .cpu_index .txt .work_cat .detail a {
+		color: #FFF;
+		background-color: #9a4642;
+		position: relative;
+		text-decoration: none;
+		padding: 7px 12px 5px 25px;
+		border-radius: 16px;
+	}
+	.iQ-R_cpu .cpu_index .txt .work_cat .detail a::before {
+		content: "";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-left-color: #FFF;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-width: 4px 8px;
+		position: absolute;
+		top: 12px;
+		left: 12px;
+	}
+	.iQ-R_cpu .cpu_index .txt .work_cat .detail a:hover {
+		color: #9a4642;
+		background-color: #FFF;
+	}
+	.iQ-R_cpu .cpu_index .txt .work_cat .detail a:hover::before {
+		border-left-color: #9a4642;
+	}
+	.iQ-R_cpu .cpu_index .txt .prod_lup {
+		padding: 0.75em 1.25em;
+	}
+	.iQ-R_cpu .cpu_index .txt .prod_lup .type dd {
+		font-size: 120%;
+	}
+	.iQ-R_cpu .cpu_index .txt .prod_lup .type dd + dt {
+		margin-top: 0.5em;
+	}
+	.iQ-R_cpu .cpu_index .pho {
+		order: 1;
+		width: 230px;
+		min-height: 161px;
+	}
+	.iQ-R_cpu .cpu_index .pho img {
+		width: 230px;
+	}
+	.iQ-R_cpu .cpu_index .pho01 img {
+		transform: translate(-50%, -60%);
+	}
+	.iQ-R_cpu .cpu_index .pho06 img {
+		transform: translate(-50%, -60%);
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		flex-basis: 100%;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts .pho_cpu {
+		padding-right: 35px;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts .lup-unit_conts_3col {
+		display: flex;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts .lup-unit_conts_3col .lup-unit_conts_cpu {
+		flex-basis: 100%;
+		flex-grow: 1;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts #net_combi {
+		flex-grow: 0;
+		width: 366px;
+		padding-left: 48px;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts #net_combi .fig img {
+		width: 250px;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts #net_combi .footnote {
+		width: 260px;
+	}
+	.iQ-R_cpu .feat_cpu #bttless img {
+		width: 300px;
+	}
+	.iQ-R_cpu .feat_cpu .feat_cpu_3col {
+		display: flex;
+		justify-content: space-between;
+	}
+	.iQ-R_cpu .feat_cpu .feat_cpu_3col > li {
+		flex-basis: 240px;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	.iQ-R_cpu .feat_cpu .feat_cpu_3col li .feat_fig {
+		margin-bottom: 0;
+	}
+	.iQ-R_cpu .feat_cpu .feat_cpu_3col li:nth-child(1) .feat_fig img,
+	.iQ-R_cpu .feat_cpu .feat_cpu_3col li:nth-child(2) .feat_fig img {
+		padding-top: 20px;
+	}
+	.iQ-R_cpu .feat_cpu .feat_fig .figttl {
+		font-weight: bold;
+		text-align: left;
+		display: block;
+		margin: 0 auto;
+	}
+	.iQ-R_cpu .feat_cpu .feat_fig .figttl.w710 {
+		width: 710px;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.iQ-R_cpu .cpu-heading_index {
+		font-size: 110%;
+		line-height: 1.5;
+	}
+	.iQ-R_cpu .cpu_index .txt .work_cat {
+		padding: 0.75em 1em;
+	}
+	.iQ-R_cpu .cpu_index .txt .work_cat .subtxt {
+		font-size: 90%;
+		line-height: 1.25;
+		margin-bottom: 0.75em;
+	}
+	.iQ-R_cpu .cpu_index .txt .work_cat .prod_name {
+		font-size: 110%;
+		line-height: 1.5;
+	}
+	.iQ-R_cpu .cpu_index .txt .prod_lup {
+		padding: 0.75em 1em;
+	}
+	.iQ-R_cpu .cpu_index .txt .prod_lup .type dt {
+		font-size: 90%;
+	}
+	.iQ-R_cpu .cpu_index .txt .prod_lup .type dd {
+		font-size: 110%;
+		line-height: 1.5;
+	}
+	.iQ-R_cpu .cpu_index .txt .prod_lup .type dd + dt {
+		margin-top: 0.75em;
+	}
+	.iQ-R_cpu .cpu_index .pho {
+		height: 50vw;
+	}
+	.iQ-R_cpu .cpu_index .pho img {
+		width: 100%;
+	}
+	.iQ-R_cpu .cpu_index .pho01 img {
+		transform: translate(-50%, -65%);
+	}
+	.iQ-R_cpu .cpu_index .pho04 img {
+		transform: translate(-50%, -30%);
+	}
+	.iQ-R_cpu .cpu_index .pho06 img {
+		transform: translate(-50%, -65%);
+	}
+	.iQ-R_cpu .cpu_index .pho .detail {
+		position: absolute;
+		bottom: 1.5em;
+		right: 1.25em;
+		margin-bottom: 0;
+	}
+	.iQ-R_cpu .cpu_index .pho .detail a {
+		color: #FFF;
+		background-color: #9a4642;
+		position: relative;
+		text-decoration: none;
+		padding: 8px 15px 8px 28px;
+		border-radius: 18px;
+		border: 2px solid #FFF;
+	}
+	.iQ-R_cpu .cpu_index .pho .detail a::before {
+		content: "";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-left-color: #FFF;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-width: 4px 8px;
+		position: absolute;
+		top: 12px;
+		left: 12px;
+	}
+	.iQ-R_cpu .cpu_index .pho .detail a:hover {
+		color: #9a4642;
+		background-color: #FFF;
+	}
+	.iQ-R_cpu .cpu_index .pho .detail a:hover::before {
+		border-left-color: #9a4642;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts_cpu {
+		margin-bottom: 20px;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts_cpu.lup-unit_conts_3col {
+		flex-wrap: wrap;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		width: 100%;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts .pho_cpu {
+		padding-right: 20px;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts #net_combi {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts #net_combi .fig img {
+		width: 80%;
+	}
+	.iQ-R_cpu .lup_cpu .lup_unit .lup-unit_conts #net_combi .footnote {
+		width: 80%;
+	}
+	.iQ-R_cpu .cpu_interface .bbttl {
+		margin-bottom: 2em;
+	}
+	.iQ-R_cpu .feat_cpu .feat_cpu_3col li .feat_text {
+		margin-bottom: 0;
+	}
+	.iQ-R_cpu .feat_cpu .feat_cpu_3col li .feat_fig img {
+		width: 80%;
+	}
+	.iQ-R_cpu .feat_cpu .feat_fig .figttl {
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: 0.5em;
+		display: block;
+	}
+	.iQ-R_cpu .feat_cpu .feat_fig .figttl.w720 {
+		width: 100%;
+	}
+}
+
+.txt_a {background: url("/fa/products/cnt/plcr/pmerit/cpu/images/icon_a.png") no-repeat 0px 3px; padding-left: 1.25em}
+.txt_b {background: url("/fa/products/cnt/plcr/pmerit/cpu/images/icon_b.png") no-repeat 0px 3px; padding-left: 1.25em}
+.txt_c {background: url("/fa/products/cnt/plcr/pmerit/cpu/images/icon_c.png") no-repeat 0px 3px; padding-left: 1.25em}
+.txt_d {background: url("/fa/products/cnt/plcr/pmerit/cpu/images/icon_d.png") no-repeat 0px 3px; padding-left: 1.25em}
+
+/*-------[ I/O ]-------------------------------------------------------------------------------------*/
+.iQ-R_io .feat_io .with_cmn {
+	display: flex;
+}
+.iQ-R_io .feat_io .with_cmn_a {
+	justify-content: space-between;
+}
+.iQ-R_io .feat_io .with_cmn_b {
+	flex-wrap: wrap;
+}
+.iQ-R_io .feat_io .with_cmn .nowrap {
+	white-space: nowrap;
+}
+.iQ-R_io .feat_io .with_cmn .cmntxt {
+	font-size: 75%;
+	font-weight: normal;
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+.iQ-R_io .feat_io .with_cmn_b .cmntxt {
+	margin-right: 0;
+	margin-left: auto;
+}
+.iQ-R_io .feat_io .with_cmn .cmntxt .cmnunit {
+	display: flex;
+}
+.iQ-R_io .feat_io .with_cmn_a .cmntxt .cmnunit {
+	margin-left: 1.5em;
+}
+.iQ-R_io .feat_io .with_cmn_b .cmntxt .cmnunit {
+	white-space: nowrap;
+}
+.iQ-R_io .feat_io .with_cmn .cmntxt .cmnunit .plusmin {
+	color: #bd782f;
+	font-weight: bold;
+	white-space: nowrap;
+}
+.iQ-R_io .feat_io .with_cmn .cmntxt .cmnunit .kana {
+	text-indent: -1em;
+	margin-left: 1em;
+}
+.iQ-R_io .lup_io .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap::before {
+	background-color: #bd782f;
+}
+.iQ-R_io .lup_io .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf50,
+.iQ-R_io .lup_io .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100 {
+	border: 1px solid #bd782f;
+	color: #bd782f;
+}
+.iQ-R_io .lup_io .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pfwrap {
+	flex-wrap: wrap;
+}
+.iQ-R_io .lup_io .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf50 {
+	flex-basis: calc(50% - 0.5em);
+}
+.iQ-R_io .lup_io .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100:nth-child(n+2) {
+	margin-top: 5px;
+}
+.iQ-R_io .lup_io .lup_unit .lup-unit_conts_io {
+	display: flex;
+}
+.iQ-R_io .lup_io .lup_unit .lup-unit_conts .lup-unit_pho {
+	flex-glow: 0;
+}
+.iQ-R_io .lup_io .lup_unit .lup-unit_conts .lup-unit_prodlist {
+	flex-glow: 1;
+}
+.iQ-R_io .lup_io .lup_unit .lup-unit_conts .pho_io img {
+	width: 100px;
+}
+.iQ-R_io .lup_io .lup_unit .lup-unit_conts .pho_io.w150 img {
+	width: 150px;
+}
+.iQ-R_io .feat_io .with_num .num_wrap .num {
+	color: #bd782f;
+	border: 1px solid #bd782f;
+	background-color: #f2e4d3;
+}
+.iQ-R_io .feat_io .feat_icon li,
+.iQ-R_io .feat_io .feat_text li::before {
+	background-color: #bd782f;
+}
+@media (min-width: 769px){						/* for PC*/
+	.iQ-R_io .feat_io .with_cmn .cmntxt {
+		margin-top: 0.5em;
+	}
+	.iQ-R_io .lup_io #dc24v {
+		flex-basis: 100%;
+	}
+	.iQ-R_io .lup_io .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		flex-basis: 100%;
+	}
+	.iQ-R_io .lup_io #dc24v .lup-unit_conts .pho_io.w320 img {
+		width: 320px;
+	}
+	.iQ-R_io .lup_io #dc24v .lup-unit_conts .lup-unit_prodlist + .lup-unit_prodlist {
+		margin-left: 20px;
+	}
+	.iQ-R_io .lup_io .lup_unit .lup-unit_conts .pho_io {
+		padding-right: 35px;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.iQ-R_io .feat_io .with_cmn .cmntxt {
+		margin-top: 0.15em;
+	}
+	.iQ-R_io .lup_io #dc24v .lup-unit_conts_io {
+		flex-wrap: wrap;
+	}
+	.iQ-R_io .lup_io #dc24v .lup-unit_conts .pho_io.w320 {
+		padding-right: 0;
+		margin-bottom: 1em;
+	}
+	.iQ-R_io .lup_io #dc24v .lup-unit_conts .pho_io.w320 img {
+		width: 320px;
+	}
+	.iQ-R_io .lup_io #dc24v .lup-unit_conts_io .lup-unit_prodlist {
+		margin-top: 0.5em;
+	}
+	.iQ-R_io .lup_io .lup_unit .lup-unit_conts_io {
+		margin-bottom: 20px;
+	}
+	.iQ-R_io .lup_io .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		width: 100%;
+	}
+	.iQ-R_io .lup_io .lup_unit .lup-unit_conts .pho_io {
+		padding-right: 20px;
+	}
+}
+
+/*-------[ Analog ]----------------------------------------------------------------------------------*/
+.iQ-R_analog .lup_analog .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap::before {
+	background-color: #577a36;
+}
+.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf50,
+.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100 {
+	border: 1px solid #577a36;
+	color: #577a36;
+}
+.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts {
+	display: flex;
+}
+.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-unit_pho {
+}
+.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-unit_pho .pho_analog.w150 img {
+	width: 100%;
+}
+.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pfwrap {
+	flex-wrap: wrap;
+}
+.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf50 {
+	flex-basis: calc(50% - 0.5em);
+}
+.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100 {
+	flex-basis: 100%;
+}
+.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pfwrap .pf100 + .pf100,
+.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pfwrap span:nth-child(n+3) {
+	margin-top: 5px;
+}
+.iQ-R_analog .feat_analog .with_num .num_wrap .num {
+	color: #577a36;
+	border: 1px solid #577a36;
+	background-color: #e1e2d1;
+}
+.iQ-R_analog .feat_analog .feat_icon li,
+.iQ-R_analog .feat_analog .feat_text li::before {
+	background-color: #577a36;
+}
+@media (min-width: 769px){						/* for PC*/
+	.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-unit_pho {
+		width: 185px;
+		padding-right: 35px;
+	}
+	.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		width: 595px;
+		display: flex;
+	}
+	.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-prod-list {
+		width: 185px;
+	}
+	.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-prod-list + .lup-prod-list {
+		margin-left: 20px;
+	}
+	.iQ-R_analog .feat_analog .with_num {
+		align-items: flex-start;
+	}
+	.iQ-R_analog .feat_analog .with_num .num_wrap {
+		flex-wrap: nowrap;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-unit_pho {
+		width: 150px;
+		padding-right: 20px;
+	}
+	.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		width: calc(100% - 170px);
+		padding-bottom: 1.5em;
+	}
+	.iQ-R_analog .lup_analog .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-prod-list + .lup-prod-list {
+		margin-top: 0.5em;
+	}
+}
+
+/*-------[ Temperature input, Temperature control ]--------------------------------------------------*/
+.iQ-R_temp .lup_temp .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap::before {
+	background-color: #577a36;
+}
+.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100 {
+	border: 1px solid #577a36;
+	color: #577a36;
+}
+.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts {
+	display: flex;
+}
+.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-unit_pho .pho_temp img {
+	width: 100%;
+}
+.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pfwrap {
+	flex-wrap: wrap;
+}
+.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100 {
+	flex-basis: 100%;
+}
+.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100:nth-child(n+2) {
+	margin-top: 5px;
+}
+.iQ-R_temp .feat_temp .with_num .num_wrap .num {
+	color: #577a36;
+	border: 1px solid #577a36;
+	background-color: #e1e2d1;
+}
+.iQ-R_temp .feat_temp .feat_icon li,
+.iQ-R_temp .feat_temp .feat_text li::before {
+	background-color: #577a36;
+}
+.iQ-R_temp .feat_temp .temp-heading_lv4 {
+	background-color: #EEE;
+	font-weight: bold;
+}
+@media (min-width: 769px){						/* for PC*/
+	.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-unit_pho {
+		width: 135px;
+		padding-right: 35px;
+	}
+	.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		width: 595px;
+		display: flex;
+	}
+	.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-prod-list {
+		width: 185px;
+	}
+	.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-prod-list + .lup-prod-list {
+		margin-left: 20px;
+	}
+	.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100.lines {
+		height: inherit;
+		line-height: 1.25;
+	}
+	.iQ-R_temp .feat_temp .temp-heading_lv4 {
+		margin-top: 2.5em;
+		padding-top: 0.25em;
+		padding-bottom: 0.25em;
+		padding-left: 0.5em;
+		font-size: 120%;
+		line-height: 1;
+	}
+	.iQ-R_temp .feat_temp .temp-heading_lv4 + .feat_icon {
+		margin-top: 5px;
+	}
+	.iQ-R_temp .feat_temp .feat_fig .figttl {
+		font-weight: bold;
+		text-align: left;
+		display: block;
+		margin: 0 auto;
+	}
+	.iQ-R_temp .feat_temp .feat_fig .figttl.w720 {
+		width: 720px;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-unit_pho {
+		width: 120px;
+		padding-right: 20px;
+	}
+	.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		width: calc(100% - 120px);
+		padding-bottom: 1.5em;
+	}
+	.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-prod-list + .lup-prod-list {
+		margin-top: 0.5em;
+	}
+	.iQ-R_temp .lup_temp .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf100.lines {
+		line-height: 1.25;
+	}
+	.iQ-R_temp .feat_temp .temp-heading_lv4 {
+		margin-top: 1.5em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		padding-left: 0.5em;
+		font-size: 100%;
+		line-height: 1;
+	}
+	.iQ-R_temp .feat_temp .temp-heading_lv4 + .feat_icon {
+		margin-top: 0.5em;
+	}
+	.iQ-R_temp .feat_temp .feat_fig .figttl {
+		font-weight: bold;
+		text-align: left;
+		margin-bottom: 0.5em;
+		display: block;
+	}
+	.iQ-R_temp .feat_temp .feat_fig .figttl.w720 {
+		width: 100%;
+	}
+}
+
+/*-------[ Motion, Positioning ]---------------------------------------------------------------------*/
+.iQ-R_motion .func_level {
+	text-align: center;
+	margin-bottom: 2em;
+}
+.iQ-R_motion .func_level .func_level_wrap {
+	display: inline-block;
+}
+.iQ-R_motion .func_level .func_level_wrap .func_level_ttl {
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 0;
+}
+.iQ-R_motion .func_level .func_level_wrap .func_level_list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.iQ-R_motion .func_level .func_level_wrap .func_level_list li {
+	color: #2e6755;
+	border: 1px solid #2e6755;
+	background-color: #dbddd7;
+}
+.iQ-R_motion .func_level .func_level_wrap .func_level_list li:nth-child(n+2) {
+	position: relative;
+}
+.iQ-R_motion .func_level .func_level_wrap .func_level_list li:nth-child(n+2)::before {
+	content: ">";
+	position: absolute;
+	transform: scaleX(0.5);
+}
+.iQ-R_motion .feat_motion .fa-heading_lv3 .plc_icon_wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+.iQ-R_motion .feat_motion .fa-heading_lv3 .plc_icon_wrap .plc_icon_set {
+	margin-left: auto;
+	display: flex;
+}
+.iQ-R_motion .feat_motion .fa-heading_lv3 .plc_icon_wrap .plc_icon {
+	color: #FFF;
+	background-color: #2e6755;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.iQ-R_motion .feat_motion .fa-heading_lv3 .plc_icon_wrap .plc_icon_text {
+	font-weight: normal;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+.iQ-R_motion .lup_motion .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap::before {
+	background-color: #2e6755;
+}
+.iQ-R_motion .lup_motion .lup_unit .lup_logo {
+	margin-bottom: 0.5em;
+}
+.iQ-R_motion .lup_motion .lup_unit .lup_logo img {
+	height: 20px;
+	width: auto;
+}
+.iQ-R_motion .lup_motion .lup_unit .lup_logo.h30 img {
+	height: 30px;
+	width: auto;
+}
+.iQ-R_motion .lup_motion .lup_unit .lup-unit_conts_motion {
+	display: flex;
+}
+.iQ-R_motion .lup_motion .lup_unit .lup-unit_conts .lup-unit_pho {
+	flex-glow: 0;
+}
+.iQ-R_motion .lup_motion .lup_unit .lup-unit_conts .pho_motion img {
+	width: 100px;
+}
+.iQ-R_motion .lup_motion .lup_unit .lup-unit_conts .lup-unit_prodlist {
+	flex-glow: 1;
+}
+.iQ-R_motion .lup_motion .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-prod-icon {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	margin-bottom: 0.25em;
+}
+.iQ-R_motion .lup_motion .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-prod-icon li {
+	color: #FFF;
+	background-color: #2e6755;
+	font-size: 90%;
+	line-height: 1;
+	white-space: nowrap;
+	padding: 0.33em 2em;
+	margin-bottom: 0.33em;
+}
+.iQ-R_motion .lup_motion .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-prod-list + .lup-prod-icon {
+	margin-top: 0.66em;
+}
+.iQ-R_motion .lup_motion .lup_unit .lup-unit_conts .lup-prod-list .step {
+	border: 1px solid #2e6755;
+	color: #2e6755;
+}
+.iQ-R_motion .feat_motion .with_num .num_wrap .num {
+	color: #2e6755;
+	border: 1px solid #2e6755;
+	background-color: #dbddd7;
+}
+.iQ-R_motion .feat_motion .feat_icon li,
+.iQ-R_motion .feat_motion .feat_text li::before {
+	background-color: #2e6755;
+}
+@media (min-width: 769px){						/* for PC*/
+	.iQ-R_motion .func_level .func_level_wrap .func_level_ttl {
+		font-size: 120%;
+	}
+	.iQ-R_motion .func_level .func_level_wrap .func_level_list {
+		margin-top: 0.25em;
+	}
+	.iQ-R_motion .func_level .func_level_wrap .func_level_list li {
+		font-size: 110%;
+		line-height: 1;
+		white-space: nowrap;
+		padding: 0.5em 0;
+		border-radius: 1.5em;
+		min-width: 17em;
+	}
+	.iQ-R_motion .func_level .func_level_wrap .func_level_list li:nth-child(n+2) {
+		margin-left: 2em;
+	}
+	.iQ-R_motion .func_level .func_level_wrap .func_level_list li:nth-child(n+2)::before {
+		font-size: 200%;
+		top: 0;
+		left: -0.8em;
+	}
+	.iQ-R_motion .feat_motion .fa-heading_lv3 .plc_icon_wrap .plc_icon {
+		font-size: 75%;
+		height: 1.75em;
+		padding: 0.1em 1.5em;
+	}
+	.iQ-R_motion .feat_motion .fa-heading_lv3 .plc_icon_wrap .plc_icon_text {
+		font-size: 80%;
+		line-height: 1.5;
+		padding-top: 0.1em;
+		margin-left: 0.25em;
+	}
+	.iQ-R_motion .lup_motion .lup_unit .lup_logo.h30 {
+		margin-top: -6px;
+	}
+	.iQ-R_motion .lup_motion .lup_unit .lup-unit_conts .pho_motion {
+		padding-right: 35px;
+	}
+	.iQ-R_motion .lup_motion .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		flex-basis: 100%;
+	}
+	.iQ-R_motion .feat_motion .with_num .num_wrap {
+		flex-wrap: nowrap;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.iQ-R_motion .func_level .func_level_wrap .func_level_ttl {
+		font-size: 110%;
+	}
+	.iQ-R_motion .func_level .func_level_wrap .func_level_list {
+		margin-top: 0.5em;
+	}
+	.iQ-R_motion .func_level .func_level_wrap .func_level_list li {
+		font-size: 12px;
+		line-height: 14px;
+		padding: 3px 14px;
+		border-radius: 20px;
+	}
+	.iQ-R_motion .func_level .func_level_wrap .func_level_list li:nth-child(n+2) {
+		margin-left: 16px;
+	}
+	.iQ-R_motion .func_level .func_level_wrap .func_level_list li:nth-child(n+2)::before {
+		font-size: 200%;
+		top: 10px;
+		left: -15px;
+	}
+	.iQ-R_motion .feat_motion .fa-heading_lv3 .plc_icon_wrap .plc_icon {
+		font-size: 80%;
+		height: 1.75em;
+		padding: 0.2em 1.75em;
+	}
+	.iQ-R_motion .feat_motion .fa-heading_lv3 .plc_icon_wrap .plc_icon_text {
+		font-size: 85%;
+		line-height: 1.5;
+		padding-top: 0.1em;
+		margin-left: 0.25em;
+	}
+	.iQ-R_motion .lup_motion .lup_unit + .lup_unit {
+		margin-top: 1.5em;
+	}
+	.iQ-R_motion .lup_motion .lup_unit .lup-unit_conts .pho_motion {
+		padding-right: 20px;
+	}
+	.iQ-R_motion .lup_motion .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		flex-basis: 100%;
+	}
+}
+
+/*-------[ High-speed counter, Channel isolated pulse input, Flexible high-speed I/O control ]-------*/
+.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap::before {
+	background-color: #396ba3;
+}
+.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pf50 {
+	border: 1px solid #396ba3;
+	color: #396ba3;
+}
+.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts_high-speed {
+	display: flex;
+}
+.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts .lup-unit_pho {
+	flex-glow: 0;
+}
+.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts .lup-unit_prodlist {
+	flex-glow: 1;
+}
+.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pfwrap {
+	flex-wrap: wrap;
+}
+.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts .lup-prod-list.prodfeats .pfwrap span:nth-child(n+3) {
+	margin-top: 5px;
+}
+.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts .pho_high-speed img {
+	width: 100px;
+}
+.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts .pho_high-speed.w50 img {
+	width: 50px;
+}
+.iQ-R_high-speed .feat_high-speed .feat_icon li,
+.iQ-R_high-speed .feat_high-speed .feat_text li::before {
+	background-color: #396ba3;
+}
+@media (min-width: 769px){						/* for PC*/
+	.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		flex-basis: 100%;
+	}
+	.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts .pho_high-speed {
+		padding-right: 20px;
+	}
+	.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts .pho_high-speed.w50 {
+		padding-right: 35px;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts_high-speed {
+		margin-bottom: 20px;
+	}
+	.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		width: 100%;
+	}
+	.iQ-R_high-speed .lup_high-speed .lup_unit .lup-unit_conts .pho_high-speed {
+		padding-right: 20px;
+	}
+}
+
+/*-------[ Network ]---------------------------------------------------------------------------------*/
+.iQ-R_network #feature_network .advantage .adv_title {
+	line-height: 1;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0;
+}
+.iQ-R_network #feature_network .advantage .adv_li li {
+	line-height: 1.25;
+	color: #457;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 0.5em;
+	min-height: 4em;
+	margin-top: 0.75em;
+}
+.iQ-R_network #feature_network .advantage.adv01 .adv_title {
+	color: #00aec4;
+}
+.iQ-R_network #feature_network .advantage.adv02 .adv_title {
+	color: #00a180;
+}
+.iQ-R_network #feature_network .advantage.adv03 .adv_title {
+	color: #a9c57d;
+}
+.iQ-R_network #feature_network .advantage.adv01 .adv_li li {
+	background-color: #ddf0f4;
+	border-color: #a1d7e2;
+}
+.iQ-R_network #feature_network .advantage.adv02 .adv_li li {
+	background-color: #deede6;
+	border-color: #a4cfbd;
+}
+.iQ-R_network #feature_network .advantage.adv03 .adv_li li {
+	background-color: #e7eedb;
+	border-color: #cddcb3;
+}
+.iQ-R_network #other_network {
+	margin-top: 1.5em;
+	padding: 1em;
+	background-color: #EEE;
+}
+.iQ-R_network #other_network .fa-text {
+	margin-bottom: 0;
+}
+.iQ-R_network #other_network .logo_gr01 {
+	background-color: #FFF;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+.iQ-R_network #other_network .logo_gr01 li {
+	padding: 0.5em 1em;
+}
+.iQ-R_network #other_network .logo_gr01 img {
+	height: 20px;
+	width: auto;
+}
+.iQ-R_network #other_network .logo_gr01 .h30 {
+	height: 30px;
+}
+.iQ-R_network #other_network .opennet {
+	margin-top: 0.5em;
+}
+.iQ-R_network #other_network .opennet .logo_gr02_wrap {
+	padding: 0.5em;
+	background-color: #FFF;
+}
+.iQ-R_network #other_network .opennet .logo_gr02_wrap .gr_name {
+	line-height: 1;
+	padding-left: 1.25em;
+	position: relative;
+	margin-bottom: 0;
+}
+.iQ-R_network #other_network .opennet .logo_gr02_wrap .gr_name::before {
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	background-color: #6a3679;
+	position: absolute;
+	left: 0.15em;
+}
+.iQ-R_network #other_network .opennet .logo_gr02_wrap .logo_gr02 li {
+	margin-top: 8px;
+}
+.iQ-R_network #other_network .opennet .logo_gr02_wrap .logo_gr02 img {
+	height: 20px;
+	width: auto;
+}
+.iQ-R_network #other_network .opennet .logo_gr02_wrap.gr02-2 .logo_gr02 {
+	display: flex;
+	flex-wrap: wrap;
+}
+.iQ-R_network #other_network .opennet .logo_gr02_wrap.gr02-2 .logo_gr02 li {
+	width: 130px;
+}
+.iQ-R_network .lup_network .lup_unit .lup-unit_conts_network {
+	display: flex;
+}
+.iQ-R_network .lup_network .lup_unit .lup-unit_conts .lup-unit_pho {
+	flex-glow: 0;
+	flex-shrink: 0;
+	margin-right: 15px;
+}
+.iQ-R_network .lup_network .lup_unit .lup-unit_conts .lup-unit_pho.w100 {
+	flex-basis: 100px;
+}
+.iQ-R_network .lup_network .lup_unit .lup-unit_conts .lup-unit_pho.w160 {
+	flex-basis: 160px;
+}
+.iQ-R_network .lup_network .lup_unit .lup-unit_conts .lup-unit_pho.w175 {
+	flex-basis: 175px;
+}
+.lup_network .lup_unit .lup-unit_conts .lup-unit_pho.w180 {    /*2023/08/22 アイプラネット追記*/
+	flex-basis: 180px;
+}
+.iQ-R_network .lup_network .lup_unit .lup-unit_conts .lup-unit_pho.w275 {
+	flex-basis: 275px;
+}
+.iQ-R_network .lup_network .lup_unit .lup-unit_conts .lup-unit_pho .pho_network img {
+	width: 100%;
+}
+.iQ-R_network .lup_network .lup_unit .lup-unit_conts .lup-unit_prodlist {
+	flex-glow: 1;
+	flex-basis: 100%;
+}
+.iQ-R_network .lup_network .lup_unit .lup-unit_conts .lup-unit_prodlist .logo_network {
+	margin-top: 0.5em;
+}
+.iQ-R_network .lup_network .lup_unit .lup-unit_conts .lup-unit_prodlist .logo_network img {
+	height: 20px;
+	width: auto;
+}
+.iQ-R_network .feat_network .network_logo {
+	margin-bottom: 0.5em;
+}
+.iQ-R_network .feat_network .network_logo img {
+	height: 30px;
+	width: auto;
+}
+.iQ-R_network .feat_network .feat_icon li,
+.iQ-R_network .feat_network .feat_text li::before {
+	background-color: #6a3679;
+}
+.iQ-R_network .lup_network .lup_unit .lup-unit_conts .lup-unit_prodlist .others_bsttl {
+	font-weight: bold;
+}
+.iQ-R_network .feat_unit .fa-heading_table .dotlist li::before {
+	top: 5px;
+	left: 5px;
+}
+@media (min-width: 769px){						/* for PC*/
+	.iQ-R_network #feature_network {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 1.5em;
+	}
+	.iQ-R_network #feature_network .advantage {
+		width: 31%;
+	}
+	.iQ-R_network #feature_network .advantage .adv_title {
+		font-size: 165%;
+	}
+	.iQ-R_network #feature_network .advantage .adv_li li {
+		font-size: 100%;
+		text-align: center;
+		font-weight: bold;
+	}
+	.iQ-R_network #other_network .logo_gr01 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.iQ-R_network #other_network .opennet {
+		display: flex;
+		justify-content: space-between;
+	}
+	.iQ-R_network #other_network .opennet .logo_gr02_wrap.gr02-1 {
+		width: calc(24% - 1em);
+	}
+	.iQ-R_network #other_network .opennet .logo_gr02_wrap.gr02-2 {
+		width: calc(55%);
+	}
+	.iQ-R_network #other_network .opennet .logo_gr02_wrap.gr02-3 {
+		width: calc(21% - 1em);
+	}
+	.iQ-R_network #other_network .opennet .logo_gr02_wrap .gr_name {
+		font-size: 110%;
+	}
+	.iQ-R_network #other_network .opennet .logo_gr02_wrap .gr_name::before {
+		top: 0.15em;
+	}
+	.iQ-R_network #other_network .opennet .logo_gr02_wrap .logo_gr02 {
+		margin-left: 1em;
+	}
+	.iQ-R_network #iecnet .lup_unit:nth-child(1) {
+		flex-basis: calc(240px - 1.5em);
+	}
+	.iQ-R_network #iecnet .lup_unit:nth-child(2) {
+		flex-basis: calc(540px - 1.5em);
+	}
+	.iQ-R_network .lup_network .lup_unit .lup-unit_conts .lup-unit_prodlist .others_bsttl {
+		font-size: 115%;
+		margin-bottom: 1em;
+		min-height: 3em;
+	}
+	.iQ-R_network .feat_network .lup_network_col2 {
+		display: flex;
+		justify-content: space-between;
+	}
+	.iQ-R_network .feat_network .lup_network_col2.w320 .col_l {
+		width: 420px;
+	}
+	.iQ-R_network .feat_network .lup_network_col2.w320 .col_r {
+		width: 320px;
+	}
+	.iQ-R_network .feat_network .lup_network_col2.w350 .col_l {
+		width: 390px;
+	}
+	.iQ-R_network .feat_network .lup_network_col2.w350 .col_r {
+		width: 350px;
+	}
+	.iQ-R_network .feat_network .lup_network_col2.w370 .col_l {
+		width: 370px;
+	}
+	.iQ-R_network .feat_network .lup_network_col2.w370 .col_r {
+		width: 370px;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.iQ-R_network #feature_network .advantage {
+		margin-top: 1.5em;
+	}
+	.iQ-R_network #feature_network .advantage .adv_title {
+		font-size: 133%;
+	}
+	.iQ-R_network #feature_network .advantage .adv_li li {
+		width: 100%;
+		font-size: 110%;
+	}
+	.iQ-R_network #other_network .opennet .logo_gr02_wrap.gr02-2 {
+		margin-top: 1em;
+	}
+	.iQ-R_network #other_network .opennet .logo_gr02_wrap.gr02-3 {
+		margin-top: 1em;
+	}
+	.iQ-R_network #other_network .opennet .logo_gr02_wrap .gr_name {
+		font-size: 120%;
+		font-weight: bold;
+		margin-bottom: 0.75em;
+	}
+	.iQ-R_network #other_network .opennet .logo_gr02_wrap .gr_name::before {
+		top: 0.1em;;
+	}
+	.iQ-R_network #other_network .opennet .logo_gr02_wrap .logo_gr02 {
+		margin-left: 1.25em;
+	}
+	.iQ-R_network #iecnet .lup_unit .lup-unit_conts_network {
+		flex-wrap: wrap;
+	}
+	.iQ-R_network #iecnet .lup_unit .lup-unit_conts_network .lup-unit_pho {
+		flex-basis: 80%;
+		margin: 0 auto;
+	}
+	.iQ-R_network #iecnet .lup_unit .lup-unit_conts_network .lup-unit_prodlist {
+		flex-basis: 80%;
+		margin: 1.5em auto 0;
+	}
+	.iQ-R_network .lup_network.lup_network_others .lup_unit {
+		margin-bottom: 1.5em;
+	}
+	.iQ-R_network .lup_network .lup_unit .lup-unit_conts .lup-unit_prodlist .others_bsttl {
+		font-size: 100%;
+		margin-bottom: 2em;
+	}
+	.iQ-R_network .feat_network .lup_network_col2 .col_r {
+		margin-top: 1.5em;
+	}
+}
+
+/*23/08/22 index.html用にアイプラネット追加*/
+    .comparison_network {width: 110px}
+    .comparison_cable {width: 50px}
+    .comparison_unit {width: 50px}
+    .comparison_style {width: 50px}
+
+/*23/08/22 ie_tsn.html用にアイプラネット追加*/
+    .new_icon {
+        width: 3.5em;
+        margin-left: 0.5em;
+        background-color: #e00;
+        display: inline-block;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        font-size: 80%;
+        line-height: 1.4em;
+        padding: 2px 2px 0px 2px;
+    }
+.feat_network .with_num .num_wrap .num {
+	color: #6a3679;
+	border: 1px solid #6a3679;
+	background-color: #E6CBED;
+}
+.feat_network .feat_icon li,
+.feat_network .feat_text li::before {
+	background-color: #6a3679;
+}
+@media (min-width: 769px){						/* for PC*/
+	.feat_network .top_catch {
+		font-size: 133%;
+		line-height: 1.75;
+        font-weight: 700;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.feat_network .top_catch {
+		font-size: 115%;
+		line-height: 1.25;
+        font-weight: 700;
+	}
+}
+
+/*-------[ Advanced information ]--------------------------------------------------------------------*/
+.iQ-R_it_connect .lup_it_connect .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap::before  {
+	background-color: #4c829a;
+}
+.iQ-R_it_connect .lup_it_connect .lup_unit .lup-unit_conts_it_connect {
+	display: flex;
+}
+.iQ-R_it_connect .lup_it_connect .lup_unit .lup-unit_conts .lup-unit_pho {
+	flex-glow: 0;
+	flex-shrink: 0;
+	margin-right: 15px;
+}
+.iQ-R_it_connect .lup_it_connect .lup_unit .lup-unit_conts .lup-unit_pho.w100 {
+	flex-basis: 100px;
+}
+.iQ-R_it_connect .lup_it_connect .lup_unit .lup-unit_conts .lup-unit_pho.w160 {
+	flex-basis: 160px;
+}
+.iQ-R_it_connect .lup_it_connect .lup_unit .lup-unit_conts .lup-unit_pho.w180 {
+	flex-basis: 180px;
+}
+.iQ-R_it_connect .lup_it_connect .lup_unit .lup-unit_conts .lup-unit_pho .pho_it_connect img {
+	width: 100%;
+}
+.iQ-R_it_connect .lup_it_connect .lup_unit .lup-unit_conts .lup-unit_prodlist {
+	flex-glow: 1;
+	flex-basis: 100%;
+}
+.iQ-R_it_connect .feat_it_connect .feat_icon li,
+.iQ-R_it_connect .feat_it_connect .feat_text li::before {
+	background-color: #4c829a;
+}
+.iQ-R_it_connect .lup_it_connect .lup_unit .lup-unit_conts .lup-unit_prodlist .logo_opcua {
+	margin-top: 1.5em;
+}
+.iQ-R_it_connect .lup_it_connect .lup_unit .lup-unit_conts .lup-unit_prodlist .logo_opcua img {
+	height: 60px;
+	width: auto;
+}
+.iQ-R_it_connect .feat_it_connect .with_num .num_wrap .num {
+	color: #4c829a;
+	border: 1px solid #4c829a;
+	background-color: #dce7ed;
+}
+.iQ-R_it_connect .feat_unit .fa-heading_table .dotlist li::before {
+	top: 5px;
+	left: 5px;
+}
+@media (min-width: 769px){						/* for PC*/
+	.iQ-R_it_connect .lup_it_connect .lup_unit .lup_it_connect_col2 {
+		display: flex;
+		justify-content: space-between;
+	}
+	.iQ-R_it_connect .lup_it_connect .lup_unit .lup_it_connect_col2.w380 .col_l {
+		width: 360px;
+	}
+	.iQ-R_it_connect .lup_it_connect .lup_unit .lup_it_connect_col2.w380 .col_l .lup-unit_conts .lup-unit_pho {
+		width: 100px;
+	}
+	.iQ-R_it_connect .lup_it_connect .lup_unit .lup_it_connect_col2.w380 .col_r {
+		width: 380px;
+	}
+	.iQ-R_it_connect .lup_it_connect .lup_unit .lup_it_connect_col2 + .fa-unordered_list {
+		margin-top: 1em;
+	}
+	.iQ-R_it_connect .lup_it_connect .lup_unit .lup-unit_conts .lup-prod-list.prodfeats li .role {
+		font-size: 120%;
+		font-weight: bold;
+		line-height: 1.25;
+		margin-left: 1.15em;
+		margin-bottom: 0;
+	}
+	.iQ-R_it_connect .lup_it_connect .features_green {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.iQ-R_it_connect .lup_it_connect .features_green.col2 {
+		width: 500px;
+	}
+	.iQ-R_it_connect .lup_it_connect .features_green li {
+		width: 245px;
+		height: 54px;
+		margin-top: 10px;
+		background-color: #4d829a;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px;
+	}
+	.iQ-R_it_connect .lup_it_connect .features_green li .fg_txt {
+		color: #fff;
+		font-size: 14px;
+		font-weight: bold;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.iQ-R_it_connect .lup_it_connect .lup_unit .lup_it_connect_col2 .col_r {
+		margin-top: 1em;
+	}
+	.iQ-R_it_connect .lup_it_connect .lup_unit .lup-unit_conts .lup-prod-list.prodfeats li .role {
+		font-weight: bold;
+	}
+	.iQ-R_it_connect .lup_it_connect .features_green {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 5px;
+	}
+	.iQ-R_it_connect .lup_it_connect .features_green li {
+		width: 100%; /* 228 */
+		height: 50px;
+		margin-top: 5px;
+		background-color: #4d829a;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px;
+	}
+	.iQ-R_it_connect .lup_it_connect .features_green.col2 li {
+		width: 100%; /* 148 */
+	}
+	.iQ-R_it_connect .lup_it_connect .features_green li .fg_txt {
+		color: #fff;
+		font-size: 13px;
+		font-weight: bold;
+		text-align: center;
+	}
+}
+
+/*-------[ Energy measuring ]------------------------------------------------------------------------*/
+.iQ-R_measuring .lup_measuring .lup_unit .lup-unit_conts_measuring {
+	display: flex;
+}
+.iQ-R_measuring .lup_measuring .lup_unit .lup-unit_conts .lup-unit_pho {
+	flex-glow: 0;
+	flex-shrink: 0;
+	flex-basis: 100px;
+}
+.iQ-R_measuring .lup_measuring .lup_unit .lup-unit_conts .lup-unit_pho .pho_measuring img {
+	width: 100px;
+}
+.iQ-R_measuring .lup_measuring .lup_unit .lup-unit_conts .lup-unit_prodlist {
+	flex-glow: 1;
+	flex-basis: 100%;
+}
+.iQ-R_measuring .feat_measuring .feat_icon li,
+.iQ-R_measuring .feat_measuring .feat_text li::before {
+	background-color: #29918b;
+}
+@media (min-width: 769px){						/* for PC*/
+	.iQ-R_measuring .lup_measuring .lup_unit .lup-unit_conts .lup-unit_pho .pho_measuring {
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+}
+
+/*-------[ Software ]--------------------------------------------------------------------------------*/
+.iQ-R_software .lup_software .lup_unit .lup-unit_upper .lup_ttl .lup_ttl_wrap::before {
+	background-color: #968467;
+}
+@media (min-width: 769px){						/* for PC*/
+	.iQ-R_software .lup_software .lup_unit .lup-unit_conts {
+		display: flex;
+		justify-content: space-between;
+	}
+	.iQ-R_software .lup_software .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		flex-basis: 450px;
+	}
+	.iQ-R_software .lup_software .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-prod-list .prod +.fa-text {
+		margin-top: 0;
+		margin-left: 1.25em;
+	}
+	.iQ-R_software .lup_software .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-prod-list + .footnote {
+		margin-top: 0.25em;
+		margin-left: 1em;
+	}
+	.iQ-R_software .lup_software .lup_unit .lup-unit_conts .lup-unit_pho {
+		flex-basis: 300px;
+	}
+	.iQ-R_software .lup_software .lup_unit .lup-unit_conts .lup-unit_pho .pho_software img {
+		width: 100%;
+		height: auto;
+	}
+}
+@media only screen and (max-width: 768px){		/* for Mobile */
+	.iQ-R_software .lup_software .lup_unit .lup-unit_conts .lup-unit_pho {
+		margin-top: 1em;
+	}
+	.iQ-R_software .lup_software .lup_unit .lup-unit_conts .lup-unit_pho .pho_software img {
+		width: 100%;
+		height: auto;
+	}
+	.iQ-R_software .lup_software + .lup_software {
+		margin-top: 20px;
+	}
+}
+/*23/06/28 ie_tsn.html用にアイプラネット追加*/
+    .new_icon {
+        width: 3.5em;
+        margin-left: 0.5em;
+        background-color: #e00;
+        display: inline-block;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        font-size: 80%;
+        line-height: 1.4em;
+        padding: 2px 2px 0px 2px;
+    }
+/*-------[ FAパートナー製品 ]-------------------------------------------------------------------*/
+.feat_partner .feat_text li::before {
+	background-color: #4d5f73;
+}
+.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist + .feat_unit {
+	margin-top: 1.5em;
+}
+.lup_partner .lup_unit .lup-unit_conts .feat_unit .company_info {
+	margin-top: 0.5em;
+}
+@media (min-width: 769px){						/* PC用 */
+	.lup_partner {
+		margin-top: 2em;
+	}
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist {
+		display: flex;
+		justify-content: space-between;
+	}
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist .feat_partner {
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		padding-right: 2em;
+	}
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist .feat_partner .bsttl {
+		font-size: 85%;
+	}
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-unit_pho {
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-unit_pho .pho_partner {
+		text-align: center;
+	}
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-unit_pho.w185 {
+		width: 185px;
+	}
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-unit_pho.w320 {
+		flex-basis: 320px;
+	}
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-unit_pho.w240 {
+		flex-basis: 240px;
+	}
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-unit_pho .pho_partner.w320 img {
+		width: 320px;
+		height: auto;
+	}
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-unit_pho .pho_partner.w120 img {
+		width: 120px;
+		height: auto;
+	}
+	.partner_logo {
+		margin-top: -10px;
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+	}
+	.partner_logo .mee {
+		height: 30px;
+	}
+	.partner_logo .nsd {
+		height: 70px;
+	}
+	.partner_logo .bandplus {
+		height: 40px;
+	}
+	.partner_logo .santest {
+		height: 50px;
+	}
+	.partner_logo p {
+		font-size: 12px;
+		padding-left: 2em;
+	}
+	.contact_info {
+		font-size: 12px;
+	}
+	.contact_info .ci_frame {
+		border: 1px solid #245468;
+	}
+	.contact_info .ci_ttl {
+		background-color: #245468;
+		font-size: 14px;
+		color: #fff;
+		padding: .25em 12px;
+	}
+	.contact_info .ci_cont {
+		padding: 1em;
+	}
+	.contact_info .tri_ttl {
+		font-size: 14px;
+		font-weight: bold;
+		color: #245468;
+		position: relative;
+		margin-bottom: 2px;
+		padding-left: 1em;
+	}
+	.contact_info .tri_ttl:before {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 6px 0 6px 10.4px;
+		border-color: transparent transparent transparent #245468;
+		top: 4px;
+		left: 0px;
+	}
+	.contact_info .ci_icon {
+		display: flex;
+		align-items: center;
+	}
+	.contact_info .ci_icon li + li {
+		padding-left: 1em;
+	}
+	.contact_info .ci_icon + p {
+		margin-top: 10px;
+	}
+	.contact_info .fz16 {
+		font-size: 16px;
+	}
+	.contact_info .gray_bg {
+		margin-top: 10px;
+		padding: 1em;
+		background-color: #e0e7eb;
+		border-radius: 6px;
+	}
+	.contact_info .gray_bg p {
+		font-size: 14px;
+		text-align: center;
+		color: #245468;
+	}
+	.contact_info .info_list {
+		padding: 10px 2.5em 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.contact_info .info_list ul {
+		width: 336px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+@media only screen and (max-width: 768px){		/* スマホ用 */
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-unit_pho .pho_partner {
+		margin-top: 1em;
+		text-align: center;
+	}
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-unit_pho .pho_partner.w320 img {
+		width: 100%;
+		height: auto;
+	}
+	.lup_partner .lup_unit .lup-unit_conts .lup-unit_prodlist .lup-unit_pho .pho_partner.w120 img {
+		width: 120px;
+		height: auto;
+	}
+	.partner_logo {
+		margin-top: -10px;
+		margin-bottom: 20px;
+		display: grid;
+	}
+	.partner_logo .mee {
+		width: 80vw;
+		height: auto;
+	}
+	.partner_logo .nsd {
+		height: 70px;
+	}
+	.partner_logo .bandplus {
+		height: 40px;
+	}
+	.partner_logo .santest {
+		height: 50px;
+	}
+	.partner_logo p {
+		font-size: 14px;
+		margin-top: 10px;
+		padding-left: 0;
+	}
+	.contact_info {
+		margin-top: 20px;
+	}
+	.contact_info .ci_frame {
+		border: 1px solid #245468;
+	}
+	.contact_info .ci_ttl {
+		background-color: #245468;
+		font-size: 14px;
+		color: #fff;
+		padding: .25em 12px;
+	}
+	.contact_info .ci_cont {
+		padding: 1em;
+	}
+	.contact_info .tri_ttl {
+		font-size: 14px;
+		font-weight: bold;
+		color: #245468;
+		position: relative;
+		margin-bottom: 2px;
+		padding-left: 1em;
+	}
+	.contact_info .tri_ttl:before {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 6px 0 6px 10.4px;
+		border-color: transparent transparent transparent #245468;
+		top: 3px;
+		left: 0px;
+	}
+	.contact_info .ci_icon {
+		display: flex;
+		align-items: center;
+	}
+	.contact_info .ci_icon li + li {
+		padding-left: 1em;
+	}
+	.contact_info .ci_icon .longurl {
+		word-break: break-all;
+	}
+	.contact_info .ci_icon + p {
+		margin-top: 10px;
+	}
+	.contact_info .fz16 {
+		font-size: 16px;
+	}
+	.contact_info .gray_bg {
+		margin-top: 12px;
+		padding: 1em;
+		background-color: #e0e7eb;
+		border-radius: 6px;
+	}
+	.contact_info .gray_bg p {
+		font-size: 14px;
+		text-align: center;
+		color: #245468;
+	}
+	.contact_info .info_list {
+		padding: 10px 0 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.contact_info .info_list {
+		display: grid;
+		padding: .5em 1em 0;
+	}
+	.contact_info .info_list .info_list_cont {
+		display: grid;
+		margin-top: 6px;
+	}
+	.contact_info .info_list .info_list_cont li + li {
+		padding-left: 1em;
+	}
+}

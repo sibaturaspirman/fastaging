@@ -1,0 +1,21 @@
+{
+	"coment": "linkを設定する際は、/faからの相対パスで記述する",
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除",
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','BNP-A1247(ENG)','cnc','3')",
+				"img": "javascript.toCatalogInfo('img','BNP-A1247(ENG)','cnc','5')",
+				"link": "javascript.toCatalogInfo('link','BNP-A1247(ENG)','cnc','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "catalog",
+				"icon": "catalog",
+				"link": "/fa/download/search.page?mode=catalog&kisyu=/cnc"
+			}
+		]
+	}
+}

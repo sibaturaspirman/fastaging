@@ -1,0 +1,12 @@
+{
+	"floatingMenu": {
+		"specificItems": [
+			{
+				"link": "https://dl.mitsubishielectric.co.jp/dl/fa/document/catalog/sol/total_mainte/l16094/l16094eng.pdf",
+				"icon": "download",
+				"name": "Catalog<br>Download"
+			}
+		],
+		"commonItems": []
+	}
+}

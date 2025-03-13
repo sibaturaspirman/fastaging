@@ -1,0 +1,910 @@
+@charset "UTF-8";
+/* Common */
+sup {
+	font-size: 75%;
+	vertical-align: baseline;
+	margin-right: 0.25em;
+}
+.tag, .c-anchorNav sup{ /* h2→自動生成アンカーナビ対策 */
+	display: none;
+}
+.palt {
+	font-feature-settings: "palt";
+}
+.ff-nsj {
+	font-family: "Noto Sans JP";
+}
+.c-list--order_indices .c-list__item {
+	text-indent: -1.2em;
+	margin-left: 1.2em;
+}
+.c-list--order_indices .c-list__item .c-list__marker {
+	display: inline-block;
+	width: 1.2em;
+}
+.u-box.u-box_thin {
+	padding: 15px 25px;
+}
+.txt_icon {
+	display: inline-block;
+	font-size: 85%;
+	font-weight: bold;
+	line-height: 1;
+	white-space: nowrap;
+	color: #FFF;
+	padding: 0.2em 0.75em;
+	margin-left: 0.5em;
+	position: relative;
+	top: -0.25em;
+}
+.txt_icon.new {
+	background-color: #F00;
+}
+.c-table__content thead th {
+	text-align: center;
+	vertical-align: middle;
+	background-color: #d9d9d9;
+}
+.c-table__content tbody th {
+	vertical-align: middle;
+	background-color: #f7f7f7;
+}
+.c-table__content tbody .mid_th {
+	background-color: #e8e8e8;
+}
+.c-table__content tbody td {
+	text-align: center;
+	vertical-align: middle;
+}
+.c-table__content.inherit {
+	width: inherit;
+}
+.c-table__content.padless th,
+.c-table__content.padless td {
+	padding: 7.5px 10px;
+}
+.c-table__content img {
+	vertical-align: bottom;
+}
+.fc-teal {
+	color: #007d6d;
+}
+
+/* CC-Link IE Features */
+.usage_cclink_wrap .usage_cclink {
+	display: flex;
+	flex-wrap: wrap;
+}
+.usage_cclink_wrap .usage_cclink li {
+	margin-bottom: 5px;
+}
+.usage_cclink_wrap .usage_cclink li img {
+	vertical-align: bottom;
+}
+.usage_cclink_wrap + .l-section {
+	padding-top: 15px;
+}
+.feature_theme .icon_cclink_wrap .icon_cclink {
+	display: flex;
+}
+.feature_theme .icon_cclink_wrap .icon_cclink li {
+	margin-left: 10px;
+}
+.feature_theme .icon_cclink_wrap .icon_cclink li img {
+	vertical-align: bottom;
+}
+.feature_theme .c-list {
+	margin-top: 0;
+}
+.feature_theme .c-list .c-list__item {
+	padding-top: 4px;
+	padding-bottom: 0;
+}
+.subtitle_h3 {
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #c76b00;
+}
+.c-headingLv3.sqrd {
+	position: relative;
+	padding-left: 24px;
+}
+.c-headingLv3.sqrd::before {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	content: "";
+	width: 18px;
+	height: 18px;
+}
+.sqrd_feature.sqrd::before {
+	background-color: #c76b00;
+}
+
+/* CC-Link IE Applications */
+.casereport_system {
+	margin-top: 2em;
+}
+.casereport_system .photo img {
+	vertical-align: bottom;
+}
+.casereport_system .text dt {
+	position: relative;
+	padding-left: 1em;
+}
+.casereport_system .text dt::before {
+	content: "";
+	width: 0.75em;
+	height: 0.75em;
+	background-color: #cbaf2d;
+	position: absolute;
+	top: 0.4em;
+	left: 0;
+}
+
+/* CC-Link IE Products */
+.lineup_prodhead .icon_cclink_wrap .icon_cclink {
+	display: flex;
+	justify-content: flex-end;
+}
+.lineup_prodhead .icon_cclink_wrap .icon_cclink li img {
+	vertical-align: bottom;
+}
+.lineup_prodhead .icon_cclink_wrap .cclinkicon_caption {
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+.lineup_prodhead .c-headingLv3 {
+	margin-top: 0;
+}
+.sqrd_lineup.sqrd::before {
+	background-color: #007d6d;
+}
+.product_code .c-list__item {
+	font-size: 18px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+.lup_subtext {
+	text-align: center;
+	width: 13em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	background-color: #CDC;
+}
+.lup_subtext span {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: bold;
+}
+.supcenter,
+.supcenter-hy {
+	position: relative;
+}
+.supcenter sup {
+	position: absolute;
+	top: 0.75em;
+	left: 1.25em;
+}
+.supcenter-hy sup {
+	position: absolute;
+	top: 0.75em;
+	left: 0.75em;
+}
+
+/* CC-Link IE Products Block Type Remote Modules */
+#lineup-blocktype-anchorNav li:nth-child(1) {
+	display: none;
+}
+.icon_cclink #icon_cclink04 {
+	position: relative;
+	top: 7px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+/* CC-Link IE Products Safety Remote I/O Modules */
+.protocol_verlist {
+	margin-top: 2em;
+}
+.protocol_verlist > li:nth-child(n+2) {
+	margin-top: 1em;
+}
+.protocol_verlist > li .versions {
+	margin-top: 0;
+}
+.protocol_verlist > li .modules {
+	margin-top: 4px;
+	margin-left: 1em;
+}
+.protocol_verlist > li .safety_remote {
+	margin-top: 4px;
+	margin-left: 1em;
+}
+.versions {
+	color: #fff;
+	font-weight: bold;
+	margin-top: 40px;
+}
+.versions.ver01 {
+	background-color: #9f4a5e;
+}
+.versions.ver02 {
+	background-color: #42618c;
+}
+.versions.ver03 {
+	background-color: #5c6d54;
+}
+.versions.ver04 {
+	background-color: #b1723f;
+}
+.versions img {
+	vertical-align: bottom;
+	margin-right: 6px;
+}
+.safety_io_verexam {
+	margin-bottom: 5px;
+}
+.safety_io_verexam .ver_ex {
+	display: inline-block;
+	margin-left: 0.5em;
+}
+.safety_io_ver tbody th {
+	text-align: center;
+}
+.safety_io_ver td {
+	width: 24%;
+}
+.safety_io_ver img {
+	vertical-align: bottom;
+}
+.safety_io_ver .plus {
+	font-size: 1.33em;
+	line-height: 1em;
+	font-weight: normal;
+	position: relative;
+	top: 0.1em;
+}
+.d-top-text {
+	margin-top: 3em;
+}
+.d-top-text img {
+	vertical-align: bottom;
+	position: relative;
+	top: -6px;
+}
+
+/* CC-Link IE Products Network Interface Boards */
+#lineup-board-table01 thead th {
+	white-space: nowrap;
+}
+
+/* CC-Link IE Field Basic Products FA Sensors */
+#basic-lineup-sensor-table02 thead th:nth-child(n+2) {
+	width: 18%;
+}
+
+/* CC-Link IE Options */
+.sqrd_option.sqrd::before {
+	background-color: #0087bd;
+}
+.op_poweredby span {
+	font-size: 90%;
+	line-height: 1;
+	white-space: nowrap;
+	font-weight: bold;
+	padding: 0.25em 1em;
+	background-color: #CCC;
+	display: inline-block;
+	margin-left: 1.5em;
+}
+.icon_cclink_sup {
+	position: relative;
+}
+.icon_cclink_sup sup {
+	position: absolute;
+	right: 0;
+	line-height: 1;
+}
+#pho_qg-aw {
+	display: inline-block;
+}
+
+#option-index-table03 tbody th:nth-child(2) {
+	width: 16%;
+}
+#option-index-table03 tbody th:nth-child(2) + td {
+	width: 32%;
+}
+#option-index-table03 tbody td:nth-child(4) {
+	width: 36%;
+}
+#option-index-table07 tr.bdrless th:nth-child(1) {
+	border-right: none;
+}
+#option-index-table07 tr.bdrless th:nth-child(2) {
+	border-left: none;
+}
+
+/* CC-Link IE Development Tools */
+.sqrd_tool.sqrd::before {
+	background-color: #135187;
+}
+.tool-idx-table tbody td {
+	text-align: left;
+}
+.tool-idx-table tbody .u-ta--center {
+	text-align: center;
+}
+.tool-idx-table.inherit {
+	min-width: 60%;
+}
+.tool-idx-table.inherit th {
+	width: 33.3%;
+}
+
+/* CC-Link IE Specifications */
+.spec-inx-table tr.bdrless th:nth-child(1) {
+	border-right: none;
+}
+.spec-inx-table tr.bdrless th:nth-child(2) {
+	border-left: none;
+}
+.spec-inx-table .iblock {
+	display: inline-block;
+	text-align: left;
+}
+#spec-inx-table01 thead th:nth-child(n+2) {
+	width: 15%;
+}
+#spec-inx-table01 thead th:nth-child(6) {
+	width: 17%;
+}
+#spec-inx-table02 thead th:nth-child(n+2) {
+	width: 34%;
+}
+#spec-inx-table03 thead th:nth-child(n+2) {
+	width: 19%;
+}
+#spec-inx-table04 thead tr:nth-child(2) th {
+	width: 10.5%;
+}
+#spec-inx-table04 thead tr:nth-child(2) th:nth-child(4) {
+	width: 12%;
+}
+#spec-inx-table05 thead tr:nth-child(2) th {
+	width: 15.5%;
+}
+#spec-inx-table06 thead th:nth-child(n+2) {
+	width: 25%;
+}
+#spec-inx-table07 tbody th:nth-child(2),
+#spec-inx-table08 tbody th:nth-child(2),
+#spec-inx-table09 tbody th:nth-child(2) {
+	width: 20%;
+}
+#spec-inx-table07 tbody td,
+#spec-inx-table08 tbody td,
+#spec-inx-table09 tbody td {
+	width: 55%;
+}
+
+@media only screen and (min-width:1101px){
+/*! over Large */
+}
+@media only screen and (max-width:1100px){
+/*! Large, Medium and Small */
+}
+@media only screen and (min-width:981px) and (max-width:1100px){
+/*! Large only */
+}
+@media only screen and (min-width:768px) and (max-width:1100px){
+/*! Large and Medium */
+}
+@media only screen and (min-width:981px){
+/*! over Medium */
+	/* CC-Link IE Products */
+	.prodphoto .photo {
+		height: 200px;
+		width: auto;
+	}
+	.prodphoto .photo_h {
+		height: 100px;
+		width: auto;
+	}
+	.prodphoto .photo_w {
+		height: 200px;
+		width: auto;
+	}
+
+	/* CC-Link IE Products Bridge Modules */
+	#nz2gf-ccb {
+		text-align: right;
+	}
+	#nz2gf-ccb img {
+		height: 150px;
+		width: auto;
+	}
+
+	/* CC-Link IE Field Basic Products Programmable Controllers */
+	#fx5u-32mr {
+		text-align: center;
+	}
+	#fx5u-32mr img {
+		height: 200px;
+		width: auto;
+		margin-top: 30px;
+	}
+}
+@media only screen and (max-width:980px){
+/*! Medium and Small */
+}
+@media only screen and (min-width:768px) and (max-width:980px){
+/*! Medium only */
+	/* CC-Link IE Products */
+	.prodphoto .photo {
+		height: 160px;
+		width: auto;
+	}
+	.prodphoto .photo_h {
+		height: 80px;
+		width: auto;
+	}
+	.prodphoto .photo_w {
+		height: 140px;
+		width: auto;
+	}
+
+	/* CC-Link IE Products Bridge Modules */
+	#nz2gf-ccb {
+		text-align: right;
+	}
+	#nz2gf-ccb img {
+		height: 120px;
+		width: auto;
+	}
+
+	/* CC-Link IE Field Basic Products Programmable Controllers */
+	#fx5u-32mr {
+		text-align: center;
+	}
+	#fx5u-32mr img {
+		height: 150px;
+		width: auto;
+		margin-top: 30px;
+	}
+}
+@media only screen and (min-width:768px){
+/*! over Small */
+	/* CC-Link IE Features */
+	.usage_cclink_wrap .usage_cclink {
+		justify-content: flex-end;
+	}
+	.usage_cclink_wrap .usage_cclink li:nth-child(n+2) {
+		margin-left: 15px;
+	}
+	.usage_cclink_wrap .usage_cclink li img {
+		height: 35px;
+		width: auto;
+	}
+	.feature_theme {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+	.feature_theme .icon_cclink_wrap .icon_cclink li img {
+		height: 35px;
+		width: auto;
+	}
+
+	/* CC-Link IE Applications */
+	.casereport_system {
+		display: flex;
+		justify-content: space-between;
+		background-color: #EEE;
+	}
+	.casereport_system .photo {
+		width: calc( 50% - 15px );
+	}
+	.casereport_system .photo img {
+		width: 100%;
+		height: auto;
+	}
+	.casereport_system .text {
+		width: 50%;
+		padding-right: 15px;
+		display: flex;
+		align-items: center;
+	}
+	.casereport_system .text dt {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.casereport_system .text dd {
+		font-size: 16px;
+		line-height: 1.25;
+		margin-left: 1.33em;
+	}
+	.casereport_system .text dd + dt {
+		margin-top: 0.5em;
+	}
+
+	/* CC-Link IE Products */
+	.lineup_prodhead {
+		display: flex;
+		justify-content: space-between;
+	}
+	.lineup_prodhead.lineup_prodhead-rev {
+		flex-direction: row-reverse;
+	}
+	.lineup_prodhead .icon_cclink_wrap .icon_cclink li {
+		margin-left: 10px;
+	}
+	.lineup_prodhead .icon_cclink_wrap .icon_cclink li img {
+		height: 35px;
+		width: auto;
+	}
+	.prodphoto {
+		text-align: right;
+	}
+	.prodphoto_l {
+		text-align: left;
+	}
+	.product_code--float {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.product_code--float .c-list__item {
+		margin-right: 30px;
+	}
+
+	/* CC-Link IE Products Block Type Remote Modules */
+	.h4_bloctype.c-headingLv2 {
+		font-size: 20px;
+		font-weight: bold;
+		margin-top: 40px;
+		padding-bottom: 0;
+	}
+	.lineup_bloctype {
+		display: flex;
+		margin-top: 3em;
+	}
+	.lineup_bloctype .icons {
+		order: 3;
+		margin-right: 0;
+		margin-left: 0;
+		width: 211px;
+		flex-grow: 0;
+		flex-shrink: 0
+	}
+	.lineup_bloctype .icons .icon_cclink {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.lineup_bloctype .icons .icon_cclink li:nth-child(n+2) {
+		margin-left: 7px;
+	}
+	.lineup_bloctype .icons .icon_cclink li img {
+		height: 35px;
+		width: auto;
+	}
+	.lineup_bloctype .prodnum {
+		order: 1;
+		flex-basis: 40%;
+	}
+	.lineup_bloctype .prodnum .c-list .c-list__item {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.lineup_bloctype .photo {
+		order: 2;
+		margin-right: 20px;
+		flex-basis: calc( 60% - 211px);
+	}
+	.lineup_bloctype .photo .prodphoto .img_wrap {
+		position: relative;
+	}
+	.lineup_bloctype .photo .prodphoto .caption {
+		position: absolute;
+		bottom: 15px;
+		right: -155px;
+		width: 150px;
+	}
+
+	/* CC-Link IE Products Safety Remote I/O Modules */
+	.versions {
+		border-radius: 28px;
+		width: 19em;
+		height: 28px;
+		font-size: 12px;
+		line-height: 20px;
+		padding: 4px 6px;
+	}
+	.protocol_verlist li {
+		display: flex;
+	}
+	.protocol_verlist li .modules {
+		display: flex;
+	}
+	.protocol_verlist li .modules .detail {
+		margin-top: 0;
+		margin-left: 0.5em;
+	}
+
+	/* CC-Link IE Field Basic Features */
+	.feature_theme.feature_theme_basic {
+		flex-direction: row;
+	}
+	#basic_feat04 {
+		display: flex;
+		justify-content: center;
+	}
+	#basic_feat04 #basic_feat04_02 {
+		margin-left: 30px;
+	}
+	#basic_feat04 #basic_feat04_01 img,
+	#basic_feat04 #basic_feat04_02 img {
+		height: 360px;
+		width: auto;
+	}
+
+	/* CC-Link IE Field Basic Products */
+	.basicprod {
+		text-align: center;
+	}
+	.basicprod .photo {
+		height: 240px;
+		width: auto;
+	}
+	.basicprod .photo_h {
+		height: 200px;
+		width: auto;
+	}
+	.basicprod .photo_mh {
+		height: 160px;
+		width: auto;
+	}
+
+	/* CC-Link IE Options */
+	.icon_cclink_sup sup {
+		top: -26px;
+	}
+	#fa_partner .l-grid__item:nth-child(1) {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	#fa_partner .melsc {
+		font-size: 19px;
+		font-weight: bold;
+		text-align: right;
+	}
+	#fa_partner #fa_partner_contact {
+		padding-top: 0.25em;
+		padding-bottom: 0.25em;
+		padding-left: 2em;
+		border-left: 1px solid #666;
+	}
+	#pho_qg-aw .txt {
+		text-align: left;
+	}
+
+	/* CC-Link IE Development Tools */
+	.cpla_link {
+		position: relative;
+		top: 3px;
+	}
+}
+@media only screen and (max-width:767px){
+/*! Small only */
+	/* CC-Link IE Features */
+	.usage_cclink_wrap .usage_cclink li {
+		margin-right: 15px;
+	}
+	.usage_cclink_wrap .usage_cclink li img {
+		height: 28px;
+		width: auto;
+	}
+	.feature_theme .icon_cclink_wrap .icon_cclink {
+		justify-content: flex-end;
+	}
+	.lineup_prodhead .icon_cclink_wrap .icon_cclink li {
+		margin-left: 7px;
+	}
+	.feature_theme .icon_cclink_wrap .icon_cclink li img {
+		height: 28px;
+		width: auto;
+	}
+	.feature_theme .c-list {
+		margin-top: 5px;
+	}
+
+	/* CC-Link IE Applications */
+	.casereport_system .photo img {
+		width: 100%;
+		height: auto;
+	}
+	.casereport_system .text {
+		margin-top: 1.5em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+	.casereport_system .text dt {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.casereport_system .text dd {
+		font-size: 16px;
+		margin-left: 1.15em;
+	}
+	.casereport_system .text dd + dt {
+		margin-top: 0.35em;
+	}
+
+	/* CC-Link IE Products */
+	.product_code .c-list__item {
+		font-size: 18px;
+		font-weight: bold;
+		padding-bottom: 0;
+	}
+	.lineup_prodhead .icon_cclink_wrap .icon_cclink {
+		justify-content: flex-end;
+	}
+	.lineup_prodhead .icon_cclink_wrap .icon_cclink li img {
+		height: 28px;
+		width: auto;
+	}
+	.lineup_prodhead .c-headingLv3 {
+		margin-top: 5px;
+	}
+	.prodphoto {
+		text-align: center;
+	}
+	.prodphoto .photo {
+		height: 50vw;
+		width: auto;
+	}
+	.prodphoto .photo_h {
+		height: 25vw;
+		width: auto;
+	}
+	.prodphoto .photo_w {
+		width: 100%;
+		height: auto;
+	}
+
+	/* CC-Link IE Products Programmable Controllers */
+	#lineup-fig_index01 {
+		text-align: center;
+	}
+	#lineup-fig_index01 img {
+		width: 80%;
+		height: auto;
+	}
+	#lineup-fig_index02 {
+		text-align: center;
+	}
+	#lineup-fig_index02 img {
+		width: 80%;
+		height: auto;
+	}
+
+	/* CC-Link IE Products Block Type Remote Modules */
+	.h4_bloctype.c-headingLv2 {
+		font-size: 20px;
+		font-weight: bold;
+		margin-top: 40px;
+		padding-bottom: 0;
+	}
+	.lineup_bloctype {
+		margin-top: 3em;
+	}
+	.lineup_bloctype .icons .icon_cclink {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.lineup_bloctype .icons .icon_cclink li:nth-child(n+2) {
+		margin-left: 7px;
+	}
+	.lineup_bloctype .icons .icon_cclink li img {
+		height: 28px;
+		width: auto;
+	}
+	.lineup_bloctype .prodnum .c-list .c-list__item {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.lineup_bloctype .prodnum + .photo {
+		margin-top: 20px;
+	}
+	.lineup_bloctype .photo .prodphoto {
+		line-height: 1;
+		margin-top: 0.5em;
+		margin-bottom: 1.5em;
+	}
+	.lineup_bloctype .photo .prodphoto .caption {
+		display: block;
+	}
+
+	/* CC-Link IE Products Safety Remote I/O Modules */
+	.versions {
+		border-radius: 28px;
+		width: 100%;
+		height: 28px;
+		font-size: 14px;
+		line-height: 20px;
+		padding: 4px 6px;
+		margin-bottom: 6px;
+	}
+	.protocol_verlist li .modules .parts {
+		margin-top: 10px;
+		margin-bottom: 3px;
+	}
+	.protocol_verlist li .modules .detail {
+		margin-left: 1em;
+	}
+	.safety_io_verexam {
+		font-size: 100%;
+	}
+
+	/* CC-Link IE Products Bridge Modules */
+	#nz2gf-ccb {
+		text-align: center;
+	}
+	#nz2gf-ccb img {
+		height: 40vw;
+		width: auto;
+	}
+
+	/* CC-Link IE Field Basic Features */
+	#basic_feat04 #basic_feat04_02 {
+		margin-top: 25px;
+	}
+	#basic_feat04 #basic_feat04_01 .c-img__caption,
+	#basic_feat04 #basic_feat04_02 .c-img__caption {
+		margin-top: 3px;
+	}
+
+	/* CC-Link IE Field Basic Products */
+	.basicprod {
+		text-align: center;
+	}
+	.basicprod .photo {
+		height: 50vw;
+		width: auto;
+	}
+	.basicprod .photo_h {
+		height: 40vw;
+		width: auto;
+	}
+	.basicprod .photo_mh {
+		height: 30vw;
+		width: auto;
+	}
+
+	/* CC-Link IE Field Basic Products Programmable Controllers */
+	#fx5u-32mr {
+		text-align: center;
+	}
+	#fx5u-32mr img {
+		height: 35vw;
+		width: auto;
+		margin-top: 10px;
+	}
+
+	/* CC-Link IE Options */
+	#fa_partner .l-grid__item:nth-child(1) {
+		margin-bottom: 15px;
+	}
+	#fa_partner .melsc {
+		font-size: 5vw;
+		font-weight: bold;
+	}
+	.icon_cclink_sup sup {
+		top: -20px;
+	}
+	#pho_qg-aw .txt {
+		text-align: center;
+	}
+}

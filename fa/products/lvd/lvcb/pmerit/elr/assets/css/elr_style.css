@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* PC・スマホ表示 */
+@media (min-width:768px) {
+  .pc_only {
+      display: block !important;
+  }
+  .sp_only {
+      display:none !important;
+  }
+}
+@media only screen and (max-width:767px) {
+  .pc_only {
+      display:none !important;
+  }
+  .sp_only {
+      display: block !important;
+  }
+}
+
+/* 共通項目 */
+.mrgn_top10 {
+	margin-top: 10px!important;
+}
+.mrgn_top15{
+	margin-top: 15px!important;
+}
+.mrgn_top20 {
+	margin-top: 20px!important;
+}
+.mrgn_top30 {
+	margin-top: 30px!important;
+}
+.mrgn_top40 {
+	margin-top: 40px!important;
+}
+.mrgn_btm20 {
+	margin-bottom: 20px!important;
+}
+.c-table--center td, .c-table--center th {
+	vertical-align: middle;
+}
+.inner_ma {
+    padding-right: 90px;
+    padding-left: 90px;	
+}
+.pc { 
+	display:inline; 
+}
+.ast_01 {
+	font-size: smaller;
+	vertical-align: top;
+}
+@media screen and (max-width:980px) {
+.img_min>img {
+	max-width: none;
+}
+}
+@media screen and (max-width:600px) {
+.inner_ma {
+    padding-left: 0;
+    padding-right: 0;
+}
+}
+@media screen and (min-width: 980px){   
+.pc { 
+	display:none;
+}
+}
+
+
+
+
+/* メインビジュアル */
+.main_bg {
+	background: url("../img/main_bg_img.jpg") no-repeat center / 100% 100%;
+}
+.main_bgwrap {
+	overflow: hidden;
+}
+.pattern01 img{
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: .9s;
+}
+.pattern01.show img{
+    opacity: 1;
+    transform: translateX(0);
+}
+@media (max-width: 1400px) {
+.main_bg {
+	background: url("../img/main_bg_img.jpg") no-repeat center / auto 100%;
+}
+}
+
+/* 幅全体グレー背景 */
+.wid100_bg {
+	margin-left: calc(((100vw - 100%) / 2) * -1);
+	margin-right: calc(((100vw - 100%) / 2) * -1);
+}
+.sec_gray {
+	background-color: #F2F2F2;
+	padding: 40px 0 50px 0;
+}
+
+/* リード文 */
+.lead_tx_01 {
+	color: #444444;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.6em;
+}
+
+/* 吹き出しH3 */
+.box01 h3 {
+	color: #004878;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 3px;
+	background-color: #F2F2F2;
+}
+.box01 {
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #004878;
+    color: #004878;
+	margin: 50px 15%;
+	background-color: #F2F2F2;
+}
+.box01:before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) skew(-25deg);
+    height: 20px;
+    width: 10px;
+    border-right: 3px solid #004878;
+    background-color: #F2F2F2;
+    content: "";
+}
+@media screen and (max-width:768px) {
+.box01 {
+	margin: 50px 15%;
+}
+}
+
+/* 漏電リレー見出しテキスト */
+.tx_model01 {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/* マークつきリスト */
+.check_list_01 li {
+	line-height: 1.6em;
+	padding: 4px 20px 7px 47px;
+	font-size: 18px;
+	font-weight: 700;
+	background: url("../img/img_point01.png") left 10px top 4px no-repeat;
+}
+.check_list_01 li span {
+	display: block;
+	text-align: right;
+}
+.check_list_02 li {
+	line-height: 1.6em;
+	padding: 0 10px 7px 37px;
+	font-size: 16px;
+	background: url("../img/img_check01.png") left 10px top 1px no-repeat;
+}
+.check_list_03 li {
+	line-height: 1.6em;
+	padding: 0 10px 7px 37px;
+	font-size: 16px;
+	background: url("../img/img_check03.png") left 10px top 1px no-repeat;
+}
+
+/* 特長ページの表 */
+.table_wrap {
+	overflow-x: scroll;
+}
+.sp_table {
+	width: 100%!important;
+	min-width: 1200px!important;
+}
+.sp_model {
+	font-size: 16px;
+	font-weight: 700;
+	vertical-align: bottom;
+}
+.sp_li_indent {
+	text-indent: -1em;
+	padding-left: 1em;
+}
+.sp_li_indent01 {
+	text-indent: -1.8em;
+	padding-left: 1.8em;
+}
+.wid180 {
+	width: 180px!important;
+}
+.wid200 {
+	width: 200px!important;
+}
+.wid300 {
+	width: 300px!important;
+}
+.sp_sub_table td {
+	border: solid 1px #b2b2b2!important;
+	border-collapse: collapse!important;
+}
+.no_border {
+	border: none !important;
+}
+.no_b-right {
+	border-right: none !important;
+}
+.no_b-leftbottom {
+	border-left: none !important;
+	border-bottom: none !important;
+}
+p.csa_kikaku span {
+	display: inline-block;
+	font-size: 14px !important;
+	text-indent: 0;
+	line-height: 1.2em;
+	margin: 0;
+	border: 1px solid #b2b2b2;
+	padding: 3px 10px;
+}
+
+/* 特長h3 */
+.h3_feature01 {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	color: #729330;
+}
+.h3_feature01 span {
+	display: inline-block;
+	line-height: 1.8em;
+	padding: 15px 10px 0;
+	border-bottom: dotted 4px #729330;
+}
+.tx_feature01 {
+	margin-right: 10%;
+	margin-left: 10%;
+}

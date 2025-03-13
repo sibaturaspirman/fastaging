@@ -1,0 +1,42 @@
+{
+  "layerNav": {
+    "name": "FREQROLシリーズ",
+    "path": "/fa/products/drv/inv/pmerit/energy_saving/index.html",
+    "firstLayer": [
+      {
+        "name": "Main features",
+        "path": "/fa/products/drv/inv/pmerit/index.html"
+      },
+     {
+        "name": "Recommended products",
+        "path": "/fa/products/drv/inv/pmerit/new_products/watch/index.html"
+      },
+      {
+        "name": "Equipment maintenance",
+        "path": "/fa/products/drv/inv/pmerit/prevention/index.html",
+        "secondLayer": [
+            {
+            "name": "Features",
+            "path": "/fa/products/drv/inv/pmerit/prevention/index.html"
+            },
+            {
+            "name": "Predictive maintenance",
+            "path": "/fa/products/drv/inv/pmerit/prevention/prediction.html"
+            },
+            {
+            "name": "Preventive maintenance",
+            "path": "/fa/products/drv/inv/pmerit/prevention/prevention.html"
+            },
+            {
+            "name": "Breakdown maintenance",
+            "path": "/fa/products/drv/inv/pmerit/prevention/breakdown.html"
+            }
+        ]
+      },
+     {
+        "name": "Digital Catalogs",
+        "path": "/fa/products/drv/inv/pmerit/catalog_en.html"
+      }
+    ]
+  }
+}

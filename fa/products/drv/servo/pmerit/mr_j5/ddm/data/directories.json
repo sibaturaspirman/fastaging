@@ -1,0 +1,32 @@
+{
+    "layerNav": {
+        "name": "Direct Drive Motor",
+        "path": "/fa/products/drv/servo/pmerit/mr_j5/ddm/feature.html",
+        "firstLayer": [
+            {
+                "name": "Product Lines",
+                "path": "/fa/products/drv/servo/pmerit/mr_j5/ddm/feature.html"
+            },
+            {
+                "name": "Features",
+                "path": "/fa/products/drv/servo/pmerit/mr_j5/ddm/feature_2.html"
+            },
+            {
+                "name": "Model Designation",
+                "path": "/fa/products/drv/servo/pmerit/mr_j5/ddm/ddm_model.html"
+            },
+            {
+                "name": "Combinations",
+                "path": "/fa/products/drv/servo/pmerit/mr_j5/ddm/ddm_amplist.html"
+            },
+            {
+                "name": "Torque Characteristics",
+                "path": "/fa/products/drv/servo/pmerit/mr_j5/ddm/torque.html"
+            },
+            {
+                "name": "Application Examples",
+                "path": "/fa/products/drv/servo/pmerit/mr_j5/case/ddm_case.html"
+            }
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Events &amp; Seminars",
+        "path": "/fa/events-seminars/index.html",
+        "child": [
+          {
+            "name": "Virtual Exhibition Hall",
+            "path": "/fa/events-seminars/virtual-space/index.html"
+          },
+          {
+            "name": "Showroom",
+            "path": "/fa/events-seminars/index.html#section03",
+            "child": [
+              {
+                "name": "Nagoya Works Shinshiro Factory",
+                "path": "/fa/events-seminars/factories/nagoya_shinshiro/index.html"
+              }
+            ]
+          },
+          {
+            "name": "Virtual Showroom",
+            "path": "/fa/events-seminars/virtual-space/virtual_showroom/index.html"
+          }
+          
+        ]
+      },
+      {
+        "name": "Events &amp; Seminars",
+        "path": "/fa/events-seminars/index.html",
+        "child": [
+          {
+            "name": "Events &amp; Seminars",
+            "path": "/fa/events-seminars/index.html#section01",
+            "child": [
+              {
+                "name": "IIFES 2024 &#65374;Major Exhibition of Cutting-Edge Technologies for Automation and Measurement&#65374;",
+                "path": "/fa/events-seminars/exhibitions/2024/iifes2024/index.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

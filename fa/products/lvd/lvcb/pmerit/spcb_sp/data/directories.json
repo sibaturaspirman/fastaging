@@ -1,0 +1,71 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Low-voltage Circuit Breakers",
+            "path": "/fa/products/lvd/lvcb/index.html",
+			"child": [
+				{
+					"name": "Circuit Breakers for Use in Particular Applications",
+					"path": "/fa/products/lvd/lvcb/items/spcb/index.html",
+					"child": [
+					{
+						"name": "For DC Special Voltages",
+						"path": "/fa/products/lvd/lvcb/pmerit/spcb_dc/index.html"					
+					},
+					{
+						"name": "Mag-Only Circuit Breaker",
+						"path": "/fa/products/lvd/lvcb/pmerit/spcb_mag/index.html"					
+					},
+					{
+						"name": "DSN Switches",
+						"path": "/fa/products/lvd/lvcb/pmerit/spcb_dsn/index.html"					
+					},
+					{
+						"name": "Corrosion Resistant Enhanced Type for Special Environments",
+						"path": "/fa/products/lvd/lvcb/pmerit/spcb_sp/index.html"					
+					}
+				]
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "layerNav": {
+    "name": "Corrosion Resistant Enhanced Type for Special Environments",
+    "path": "/fa/products/lvd/lvcb/pmerit/spcb_sp/index.html",
+    "firstLayer": [
+      {
+        "name": "Features",
+        "path": "/fa/products/lvd/lvcb/pmerit/spcb_sp/index.html"
+     }
+    ]
+  },
+"switchNav": {
+	"name": "Circuit Breakers for Use in Particular Applications",
+	"path": "/fa/products/lvd/lvcb/items/spcb/index.html",
+	"child": [
+		{
+			"group": "Circuit Breakers for Use in Particular Applications",
+			"name": "Corrosion Resistant Enhanced Type for Special Environments",
+			"feature": "/fa/products/lvd/lvcb/pmerit/spcb_sp/index.html",
+			"spec": "/fa/products/faspec/search.page?kisyu=/lvcb&current=SPCB_SP",
+			"standard": "/fa/products/standard/SearchServlet.page?kisyu=/lvcb&current=SPCB_SP",
+			"discon": "",
+            "return": {
+                "name": "Circuit Breakers for Use in Particular Applications",
+                "path": "/fa/products/lvd/lvcb/items/spcb/index.html"
+			}
+		}
+	]
+}
+}
+  

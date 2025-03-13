@@ -1,0 +1,159 @@
+.emanual_wrapper {
+	width: 100%;
+	overflow: hidden;
+	background-color: #F7F7F7;
+	padding: 9px 0;
+}
+
+.bg_white{
+	background-color: #FFFFFF;
+}
+
+.topmargin {
+	margin-top: 18px;
+}
+
+.emanual_concept_movie {
+	margin: 10px 0px 0px;
+}
+
+.english_movie_link {
+	margin: 0 0 2px 380px;
+}
+
+.emanual_shadow {
+	margin: 0px;
+	padding: 0px;	
+}
+
+.emanual_wrapper .concept {
+	float: left;
+	margin-left: 9px;
+	width: 248px;
+}
+
+.emanual_wrapper .concept .header {
+	height: 140px;
+	background-color: #0083CA;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 10px;
+}
+
+.emanual_wrapper .concept .header .number {
+	height: 50px;
+	font-size: 1.5em;
+}
+
+.emanual_wrapper .concept .header .description {
+	height: 90px;
+	font-size: 1.25em;
+}
+
+.emanual_wrapper .concept .contents {
+	height: 300px;
+	font-size: 90%;
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+
+.emanual_wrapper .concept .contents p{
+	text-align: center;
+}
+
+.emanual_wrapper .download_tablet {
+	float: left;
+	width: 156px;
+	padding: 20px 0;
+}
+
+.emanual_wrapper .download_tablet p{
+	margin-top: 0.5em;
+}
+
+.emanual_wrapper .download_win{
+	float: left;
+	width: 240px;
+	padding: 20px 0;
+	margin-left: 15px;
+}
+
+.movie_tablet {
+	width: 780px;
+	height: 310px;
+	background-image: url("/fa/products/cnt/plceng/smerit/e-manual/images/tablet_feature_bg.png");
+	margin-top: 15px;
+	overflow: hidden;
+	font-size: 90%;
+}
+
+.movie_tablet #concept_movie {
+	margin: 2px 0 0 290px;
+}
+
+.search_icon {
+	height: 48px;
+	margin: 10px 0 0 20px;
+	padding-left: 50px;
+	background-image: url("/fa/products/cnt/plceng/smerit/e-manual/images/app_icon.png");
+	background-repeat : no-repeat;
+	font-size: 75%;
+}
+
+.movie_win {
+	width: 780px;
+	height: 325px;
+	background-image: url("/fa/products/cnt/plceng/smerit/e-manual/images/windows_feature_bg.jpg");
+	margin-top: 15px;
+	overflow: hidden;
+}
+
+.movie_win #concept_movie {
+	width: 360px;
+	height: 270px;
+	margin: 10px 0 0 400px;
+	background-color: #666666;
+	overflow: hidden;
+}
+
+.movie_win #concept_movie .thumbnail {
+	float: left;
+	margin-left: 20px;
+}
+
+.movie_win #concept_movie .description {
+	float: left;
+	font-size: 1.2em;
+	color: #FFFFFF;
+	padding: 8px 0 0 20px;
+}
+
+.movie_win #concept_movie .button {
+	float: left;
+	margin-left: 20px;
+}
+
+.emanual_base_table {
+	font-size: 90%;
+	width: 100%;
+	border: 1px solid #d5d5d5;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.emanual_base_table th {
+	height: 2.0em;
+	border: 1px solid #d5d5d5;
+	background-color: #CCCCCC;
+	text-align: center;
+}
+
+.emanual_base_table td {
+	height: 3.0em;
+	border: 1px solid #d5d5d5;
+}
+
+.emanual_base_table td.align_c {
+	width: 128px;
+	text-align: center;
+}

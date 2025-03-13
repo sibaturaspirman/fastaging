@@ -1,0 +1,32 @@
+body.melfa_popup .popup_switch {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+body.melfa_popup .popup_switch .popup_close {
+    font-size: 75%;
+}
+
+body.melfa_popup .popup_switch .popup_close a {
+    cursor: pointer;
+    background: url(/fa/shared/v0002/img/module/bullet_modal_close.gif) no-repeat left 50%;
+    display: inline-block;
+    padding-left: 16px;
+}
+
+.melfa_popup #global_footer {
+    width: auto !important;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+div#global_footer {
+    margin: 0 0 0 0;
+    padding: 3px 0 3px 0;
+    width: 100%;
+    background: url(/fa/shared/img/footer/bg_footer01.gif) repeat-x;
+}

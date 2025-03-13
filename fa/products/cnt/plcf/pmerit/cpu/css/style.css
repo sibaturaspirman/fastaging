@@ -1,0 +1,62 @@
+
+.facpu{
+	width: 100%;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+}
+.facpu .cputitle{
+	background:#ccc;
+	padding: 8px;
+	font-weight: bold;
+}
+.facpuleft{
+	float: left;
+	width: 35%;
+	text-align: center;
+	padding-top: 8px;
+
+}
+	.facpuleft img{
+	display: block;
+	margin: 0 auto;
+	}
+
+.facpuright{
+	float: left;
+	width: 65%;
+	padding: 8px;
+	border-left: 1px solid #ccc;
+	
+}
+
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+ }
+
+.fa-heading_table_content th{
+	font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+
+	.facpuleft{
+		float: none;
+		width: 100%;
+	}
+
+	.facpuleft,.facpuright{
+		float: none;
+		width: 100%;
+		padding: 8px;
+	}
+
+	.facpu table{
+	width: 95%;
+	margin: 0 auto;
+	}
+
+	
+}

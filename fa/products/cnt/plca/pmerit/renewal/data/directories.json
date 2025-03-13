@@ -1,0 +1,32 @@
+{
+  "layerNav": {
+    "name": "MELSEC-A Series renewal",
+    "path": "/fa/products/cnt/plca/pmerit/renewal/index.html",
+    "firstLayer": [
+      {
+        "name": "Notice",
+        "path": "/fa/products/cnt/plca/pmerit/renewal/index.html"
+      },
+      {
+        "name": "Discontinued products",
+        "path": "/fa/products/cnt/plca/pmerit/renewal/discon.html"
+      },
+      {
+        "name": "Upgrade example",
+        "path": "/fa/products/cnt/plca/pmerit/renewal/transition.html"
+      },
+      {
+        "name": "Products used for upgrade",
+        "path": "/fa/products/cnt/plca/pmerit/renewal/lup.html"
+      },
+      {
+        "name": "Related documents",
+        "path": "/fa/products/cnt/plca/pmerit/renewal/doc.html"
+      },
+      {
+        "name": "Support",
+        "path": "/fa/products/cnt/plca/pmerit/renewal/support.html"
+      }
+    ]
+  }
+}

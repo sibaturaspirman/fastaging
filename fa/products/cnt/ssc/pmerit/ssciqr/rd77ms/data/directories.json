@@ -1,0 +1,35 @@
+{
+  "layerNav": {
+    "name": "Simple Motion module",
+    "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd77ms/point.html",
+    "firstLayer": [
+          {
+            "name": "Features-RD77MS",
+            "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd77ms/point.html"         
+          },
+          {
+            "name": "System Configuration-RD77MS",
+            "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd77ms/index.html"         
+          },
+          {
+            "name": "Features-RD77GF",
+            "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd77gf/point.html"         
+          },
+          {
+            "name": "System Configuration-RD77GF",
+            "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd77gf/index.html"         
+          },
+          {
+            "name": "Quick Start Guide RD77MS（Videos）",
+            "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd77ms/movie.html"         
+          },
+          {
+            "name": "Application Examples",
+            "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd77ms/use_example.html"          
+          }
+        ]
+  }
+}
+
+
+

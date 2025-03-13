@@ -1,0 +1,16 @@
+{
+	"layerNav": {
+		"name": "Energy measuring, Insulation monitoring",
+		"path": "/fa/products/cnt/plcq/pmerit/energy/index.html",
+		"firstLayer": [
+			{
+				"name": "Energy measuring",
+				"path": "/fa/products/cnt/plcq/pmerit/energy/index.html"
+			},
+			{
+				"name": "Insulation monitoring",
+				"path": "/fa/products/cnt/plcq/pmerit/energy/insulation.html"
+			}
+		]
+	}
+}

@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*--- h4 ---*/
+#melfa_main_area h4 {
+	font-size: 125%;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+/*レスポンシブ化移行用追加------------------------------------------------------------------------------------------------------------------*/
+
+
+/*３カラム、2カラム対応 モバイルで表示（780px以下で有効）*/
+#melfa_main_area *, *:before, *:after {
+	box-sizing: border-box;
+}
+#melfa_main_area .col_3, .col_2 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+#melfa_main_area .col_3 > div {
+	width: 33.33333%;
+	padding: 10px;
+}
+#melfa_main_area .col_2 > div {
+	width: 50%;
+	padding: 10px;
+}
+
+/*モバイルで表示732px以下で有効）*/
+@media only screen and (max-width: 732px) {
+#melfa_main_area .col_3 > div {
+		width: 100%;
+	}
+#melfa_main_area .col_2 > div {
+		width: 100%;
+	}
+}
+#melfa_main_area .docLinkDate {
+text-align:left !important;
+}
+
+/*モバイルで表示768px以下で有効）*/
+@media only screen and (max-width: 780px) {
+    #melfa_main_area h4 {
+	    font-size: 120%;
+	    font-weight: bold;
+	    margin-bottom: 0.5em;
+	    margin-top: 1em;
+        }
+    }
+
+/*モバイルで表示768px以下で有効）*/
+@media only screen and (max-width: 768px) {
+    #melfa_main_area .sp_prev  {flex-wrap: wrap}
+    #melfa_main_area .sp_prev .col1 {width: 100%}
+    #melfa_main_area .sp_prev .mt_mb05 {margin-top: 0.25em; margin-bottom: 1em}
+    #melfa_main_area .pc_prev {display: none}
+    #melfa_main_area .sp_indention {display: inline} /*SP改行あり*/
+    #melfa_main_area .pc_indention {display: none} /*SP改行無し*/
+}
+/*600px以下で有効*/
+@media only screen and (max-width: 599px) {
+    #melfa_main_area .un600_view {display: inline}
+    #melfa_main_area .ov600_view {display: none}
+}
+/*601px以上で有効*/
+@media only screen and (min-width:600px) {
+    #melfa_main_area .un600_view {display: none}
+    #melfa_main_area .ov600_view {display: inline}
+}
+
+/*PCで表示（769px以上で有効）*/
+@media only screen and (min-width:769px) {
+    #melfa_main_area .sp_prev {
+    display: none;
+    }
+    #melfa_main_area .sp_indention {display: none} /*PC改行無し*/
+    #melfa_main_area .pc_indention {display: inline} /*PCのみ改行*/
+    #melfa_main_area .dl_link_space {margin-left: 1em}
+}
+
+/*注釈設定---PCで表示（768px以上で有効）*/
+@media only screen and (min-width:769px) {
+    #melfa_main_area .sp_mb0 {margin-bottom: 0}
+    #melfa_main_area .sp_mb05 {margin-bottom: 0.5em}
+    #melfa_main_area .sp_mb1 {margin-bottom: 1em}
+    #melfa_main_area .sp_mb2 {margin-bottom: 2em}
+    #melfa_main_area .sp_mt0 {margin-top: 0}
+    #melfa_main_area .sp_mt05 {margin-top: 0.5em}
+    #melfa_main_area .sp_mt1 {margin-top: 1em}
+    #melfa_main_area .sp_mt15 {margin-top: 1.5em}
+    #melfa_main_area .sp_pl05 {padding-left: 0.5em}
+    #melfa_main_area .sp_pl1 {padding-left: 1em}
+    #melfa_main_area .sp_pl15 {padding-left: 1.5em}
+    #melfa_main_area .sp_pl2 {padding-left: 2em}
+    #melfa_main_area .sp_pl_lr {padding-left: 0.5em; padding-right: 0.5em}
+    #melfa_main_area .sp_pb1 {padding-bottom: 1em}
+    #melfa_main_area .sp_note {text-indent: -0.75em; margin-left: 1em}
+    #melfa_main_area .pl_block {display: block; padding-left: 1.3em}
+}
+/*注釈設定---モバイルで表示768px以下で有効）*/
+@media only screen and (max-width: 768px) {
+    #melfa_main_area .sp_mb0 {margin-bottom: 0}
+    #melfa_main_area .sp_mb05 {margin-bottom: 0.5em}
+    #melfa_main_area .sp_mb1 {margin-bottom: 1em}
+    #melfa_main_area .sp_mb2 {margin-bottom: 2em}
+    #melfa_main_area .sp_mt0 {margin-top: 0}
+    #melfa_main_area .sp_mt05 {margin-top: 0.5em}
+    #melfa_main_area .sp_mt1 {margin-top: 1em}
+    #melfa_main_area .sp_mt15 {margin-top: 1.5em}
+    #melfa_main_area .sp_pl05 {padding-left: 0.5em}
+    #melfa_main_area .sp_pl1 {padding-left: 1em}
+    #melfa_main_area .sp_pl15 {padding-left: 1.25em}
+    #melfa_main_area .sp_pl2 {padding-left: 2em}
+    #melfa_main_area .sp_pl_lr {padding-left: 0.5em; padding-right: 0.5em}
+    #melfa_main_area .sp_pb1 {padding-bottom: 1em}
+    #melfa_main_area .sp_note {text-indent: -0.75em; margin-left: 1em}
+    #melfa_main_area .pl_block {display: block; padding-left: 1.3em}
+}
+
+#melfa_main_area .no_breaks {display: inline-block}
+
+/*注釈設定（ナンバリング自動）*/
+#melfa_main_area .list_indent {
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+    counter-increment: num;
+    margin-bottom: 0em !important;
+    /*font-size: 70%;*/
+    }
+
+/*注釈設定---モバイルで表示768px以下で有効）*/
+@media only screen and (max-width: 768px) {
+    #melfa_main_area .list_indent { text-indent: -1.5em}
+    #melfa_main_area .list_indent::before {
+        content: '*'counter(num)'.';
+        display: inline-block;
+        width: 1.5em;
+        text-indent: 0;
+    }
+}
+/*注釈設定---PCで表示（768px以上で有効）*/
+@media only screen and (min-width:769px) {
+   #melfa_main_area .list_indent { text-indent: -2em; margin-left: 1.75em}
+    #melfa_main_area .list_indent::before {
+        content: '*'counter(num)'.';
+        display: inline-block;
+        width: 2em;
+        text-indent: 0;
+    }
+}
+
+/*注釈設定（テキスト入力のナンバリング）*/
+#melfa_main_area .list_indent_no {
+    text-indent: -2em;
+    margin-left: 2em;
+    counter-increment: num;
+    margin-bottom: 0em !important;
+    /*font-size: 70%;*/
+    }
+
+#melfa_main_area .list_indent_nonum {
+    text-indent: -1.5em;
+    margin-left: 1.75em;
+    counter-increment: num;
+    margin-bottom: 0em !important;
+    }
+    /*モバイルで表示*/
+@media only screen and (max-width: 768px) {
+   #melfa_main_area .list_indent_no { text-indent: -1.5em;
+    margin-left: 1.5em;
+   }
+   #melfa_main_area .list_indent_nonum { text-indent: -0.5em;
+    margin-left: 0.5em;
+   }
+}
+
+#melfa_main_area .box_waku {
+padding:2px;
+border:1px solid #333;
+}
+
+#melfa_main_area .fa-heading_table_head th, #melfa_main_area .fa-heading_table_body th {vertical-align: middle}
+#melfa_main_area .fa-heading_table_body td {vertical-align: middle; text-align: center}
+
+#melfa_main_area .fa-heading_lv2 {margin-bottom: 0.5em !important}
+
+@media only screen and (min-width:769px) {
+    #melfa_main_area h5 {
+	font-size: 85%;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #melfa_main_area h5 {
+	font-size: 100%;
+	font-weight: bold;
+	margin-bottom: 5px;
+    }
+}
+
+#melfa_main_area .txt085 {font-size:0.85rem}
+#melfa_main_area .txt1 {font-size:1rem}
+#melfa_main_area .txt125 {font-size:1.25rem}
+#melfa_main_area .txt15 {font-size:1.5rem}
+#melfa_main_area .txt175 {font-size:1.75rem}
+#melfa_main_area .txt2 {font-size:2rem}
+
+/*カッコ付きリスト*/
+#melfa_main_area .fa-normal_list ol li {
+    list-style-type: none;
+    counter-increment: cnt;
+    margin-left: 0.5em !important;
+    padding-right: 0 !important;
+    }
+#melfa_main_area .fa-normal_list ol li::before {
+	content: "(" counter(cnt) ") ";
+    }
+
+#melfa_main_area .brackets_list ul li  {list-style-type: decimal !important}
+
+/*ポップアップウィンドウ1カラム（動画再生）*/
+@media only screen and (max-width: 768px) {
+    .melfa_contents_1col #melfa_main_area {
+    float: none;
+    box-sizing: border-box !important;
+    width:100%;
+    margin-bottom:10px;
+    margin-left:0;
+    padding-left:16px !important;
+    padding-right: 16px !important;
+    }
+}

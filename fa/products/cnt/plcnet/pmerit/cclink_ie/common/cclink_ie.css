@@ -1,0 +1,569 @@
+@charset "utf-8";
+
+/*-------[ 共通レイアウト設定 ]-------------------------------------------------------------------*/
+
+@media only screen and (min-width: 769px) {						/* PC用 */
+	.for_sp {									/* スマートフォン専用表示 */
+		display: none;
+	}
+	.pc_right {
+		text-align: right;
+	}
+	.pc_center {
+		text-align: center;
+	}
+	.pc_2col {
+		justify-content: space-between;
+	}
+	.pc_2col .fa-column_item {
+		width: calc( 50% - 1em );
+		flex-grow: 0;
+	}
+	.pc_2col_nw {
+		justify-content: space-around;
+	}
+	.pc_2col_nw .fa-column_item {
+		width: calc( 50% - 2em );
+		flex-grow: 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {		/* スマホ用 */
+	.for_pc {									/* PC専用表示 */
+		display: none;
+	}
+    .fa-heading_lv3 {font-size: 100% !important} /* 2022/11/21 アイプラネット追記 */
+ }
+
+/* 番号付きリストの頭出し */
+.fa-odrblock {
+	display: flex;
+	margin-bottom: 0.75em;
+    }
+.fa-odrblock .num {
+	white-space: nowrap;
+	flex-shrink: 0;
+	flex-grow: 0;
+    }
+.fa-odrblock .txt {
+	flex-grow: 1;
+    }
+
+.fa-column .fa-column_feed {
+	margin-bottom: 16px;
+    }
+
+.nofeed {
+	margin-bottom: 0;
+    }
+.breakall {
+	word-break: break-all;
+    }
+.align_l {
+	text-align: left;
+    }
+.align_c {
+	text-align: center;
+    }
+/* 新製品NEWマーク */
+.prodnew {
+	vertical-align: bottom;
+	position: relative;
+	top: -3px;
+	left: 5px;
+}
+
+/*------[ CC-Link IE特長 ]----------------------------------------------------------------------*/
+.iconnotes_ft {
+	text-align: right;
+	margin-top: 30px;
+    }
+.iconnotes_ft + .fa-heading_lv2 {
+	margin-top: 10px;
+    }
+.iconset_ft {
+	float: right;
+	margin: 0 0 8px 15px;
+	vertical-align: top;
+    }
+@media only screen and (min-width: 660px) {/* 2022/11/21 アイプラネット追記 */
+    .spmt20 {margin-top: -20px !important}
+    }
+.iconset_ft sup {
+	font-size: 11.6667px;
+	line-height: 1.5;
+	vertical-align: 18px;
+    }
+.iconset_ft:not(.iconset_below) + .fa-heading_lv3 {
+	clear: both;
+    }
+.iconset_ft .text {
+	display: block;
+	text-align: right;
+    }
+.iconset_ft .text.fa-footnote {
+	margin-top: 0.25em;
+	font-size: 75%;
+	line-height: 1.5em;
+    }
+.iconset_ft img {
+	margin-left: 5px;
+    }
+@media (min-width: 769px){ /* PC用 */
+	.iconset_ft.iconset_below {
+		padding-top: 10px;
+	}
+	.iconset_ft.iconset_below + .fa-heading_lv3 + * {
+		clear: both;
+	}
+	.iconset_ft.iconset_clear + * {
+		clear: both;
+	}
+}
+@media only screen and (max-width: 768px){		/* スマホ用 */
+	.iconset_ft {
+		margin-bottom: 4px;
+	}
+	.iconnotes_ft img {
+		width: 100%;
+		height: auto;
+	}
+	.iconset_ft + * {
+		clear: both;
+	}
+}
+
+@media (min-width: 769px){ /* PC用 */
+	#NETWORK_03_10 .fa-column_item-media {
+		width: 370px;
+	}
+}
+
+/*------[ CC-Link IEシステム構成例 ]--------------------------------------------------------------------*/
+@media (min-width: 769px){						/* PC用 */
+	.caseHead {
+		position: relative;
+	}
+	.caseHead .caseHead-image_box {
+		position: absolute;
+	}
+	.caseHead .caseHead-text {
+		box-sizing: content-box;
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: calc( 50% - 3em );
+		padding-left: calc( 50% + 2em );
+		min-height: 200px;
+	}
+}
+/*@media only screen and (max-width: 768px){		/* スマホ用←モバイル用画像を用意したため不要 */
+/*	.caseHead .caseHead-image_box {
+		display: none;
+	}
+}*/
+.caseHead dl.caseHead-text > dt {
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: bold;
+	position: relative;
+	padding-left: 1em;
+}
+.caseHead dl.caseHead-text > dt::before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	background-color: #cbaf2c;
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+.caseHead dl.caseHead-text > dd {
+	padding-left: 16px;
+}
+.caseHead dl.caseHead-text > dd + dt {
+	margin-top: 8px;
+}
+/*------[ CC-Link IE製品紹介 ]--------------------------------------------------------------------*/
+.sub_h3 {
+	display: inline-block;
+	font-size: 11px;
+	line-height: 1.5;
+	color: #C93;
+	padding-left: 0.5em;
+}
+.h4_lineup {
+	line-height: 1.5;
+	font-weight: bold;
+	color: #007d6d;
+	margin-top: 30px;
+	margin-bottom: 16px;
+}
+@media (min-width: 769px){						 /* PC用 */
+	.h4_lineup {
+		font-size: 116.667%;
+	}
+}
+.h5_lineup {
+	font-size: 116.667%;
+	line-height: 1.5;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 16px;
+}
+@media only screen and (max-width: 768px){		/* スマホ用 */
+	.h4_lineup {
+		font-size: 115%;
+	}
+	.h5_lineup {
+		font-size: 115%;
+	}
+}
+.prodwrap_index,
+.prodwrap,
+.prodw240 {
+	margin-top: 20px;
+}
+.fa-heading_lv3 + .prodwrap_index,
+.fa-heading_lv3 + .prodwrap,
+.fa-heading_lv3 + .prodw240,
+.h4_lineup + .prodwrap_index,
+.h4_lineup + .prodwrap,
+.h4_lineup + .prodw240 {
+	margin-top: 0;
+}
+.fa-column.mb0,
+.fa-text.mb0,
+.fa-image_box.mb0 {
+	margin-bottom: 0;
+}
+.fa-heading_table.mb05,
+.fa-text.mb05 {
+	margin-bottom: 5px;
+}
+@media (min-width: 769px){						 /* PC用 */
+	.fa-column_item_image.mb5 {
+		margin-bottom: 5px;
+	}
+	.prodw240 {
+		justify-content: flex-start;
+	}
+	.prodw240 .fa-column_item:last-child {
+		width: 240px;
+		flex-grow: 0;
+	}
+	.function_table thead tr th:nth-child(1) {
+		width: 9em;
+	}
+	.function_table thead tr th:nth-child(n+3) {
+		width: 8em;
+	}
+}
+.prodtext {
+	margin-bottom: 8px;
+    font-weight: 800;/* 2022/11/21 アイプラネット追記 */
+}
+.prodname {
+	overflow: hidden;
+}
+.prodtext + .prodname {
+	margin-top: 0;
+}
+.prodname a {
+	text-decoration: underline;
+}
+.prodname sup {
+	vertical-align: top;
+}
+.prodnumber {
+	display: inline-block;
+	margin-right: 1em;
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: bold;
+}
+.prodnumber .txtL {
+	font-size: 1.214285em;
+}
+.prodwrap_index .prodnumber,
+.prodw240 .prodnumber {
+	display: block;
+}
+.prodnumber::before {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	content: "";
+	vertical-align: middle;
+	background: url(/fa/shared/optimal/img/sprite-icon_bullet.png) no-repeat;
+	margin-top: -3px;
+	background-position: 0 -12px;
+}
+.fa-heading_table.mb5 {
+	margin-bottom: 5px;
+}
+.fa-heading_table.mb30 {
+	margin-bottom: 30px;
+}
+.fa-heading_table_body .modelname {
+	background-color: #ededed;
+}
+.fa-heading_table_content td.marge_right,
+.fa-heading_table_content th.marge_right {
+	border-right: none;
+}
+.fa-heading_table_content td.marge_left,
+.fa-heading_table_content th.marge_left {
+	border-left: none;
+}
+
+.spec_table th {
+	vertical-align: middle;
+}
+.spec_table td {
+	text-align: center;
+	vertical-align: middle;
+}
+.tool_table td {
+	vertical-align: middle;
+}
+.supcenter {
+	margin-left: 1em;
+}
+
+@media only screen and (max-width: 768px){		/* スマホ用 */
+	#NETWORK_05_08 .fa-heading_table_scroll.fa-heading_table_wrap {
+		white-space: normal;
+	}
+	#NETWORK_05_08 .fa-heading_table_scroll.fa-heading_table_wrap .fa-heading_table_content {
+		width: 880px;
+	}
+}
+
+/* Safety I/O module */
+.safety_io_ver .plus {
+	font-size: 1.33em;
+	line-height: 1em;
+	font-weight: normal;
+}
+.safety_io_verexam {
+	margin-bottom: 5px;
+}
+.safety_io_verexam .ver_ex {
+	display: inline-block;
+	margin-left: 2em;
+}
+@media (min-width: 769px){						 /* PC用 */
+	.safety_io_ver .th01 {
+		width: 18%;
+	}
+	.safety_io_ver .w_sup {
+		font-size: 200%;
+		position: relative;
+	}
+	.safety_io_ver .w_sup sup {
+		font-size: 40%;
+		position: absolute;
+		top: 6px;
+		left: 15px;
+	}
+}
+@media only screen and (max-width: 768px){		/* スマホ用 */
+	.safety_io_ver img {
+		vertical-align: bottom;
+	}
+}
+.versions {
+	color: #fff;
+	font-weight: bold;
+	margin-top: 40px;
+}
+.versions.ver01 {
+	background-color: #9f4a5e;
+}
+.versions.ver02 {
+	background-color: #42618c;
+}
+.versions.ver03 {
+	background-color: #5c6d54;
+}
+.versions.ver04 {
+	background-color: #b1723f;
+}
+.versions img {
+	vertical-align: bottom;
+	margin-right: 6px;
+}
+.versions + .h4_lineup {
+	margin-top: 16px;
+}
+.protocol_verlist {
+	margin-top: 2em;
+}
+.protocol_verlist li .versions {
+	margin-top: 0;
+}
+.protocol_verlist li .modules {
+	margin-top: 6px;
+	margin-left: 1em;
+}
+.protocol_verlist li .safety_remote {
+	margin-top: 6px;
+	margin-left: 1em;
+}
+.d_ver_txt {
+	margin-top: 30px;
+}
+.d_ver_txt img {
+	vertical-align: bottom;
+}
+.d_ver_txt + .versions {
+	margin-top: 16px;
+}
+@media (min-width: 769px){						 /* PC用 */
+	.versions {
+		border-radius: 28px;
+		width: 20em;
+		height: 28px;
+		font-size: 12px;
+		line-height: 20px;
+		padding: 4px 6px;
+	}
+	.protocol_verlist li {
+		display: flex;
+	}
+	.protocol_verlist li .modules {
+		display: flex;
+	}
+	.protocol_verlist li .modules .detail {
+		margin-top: 0;
+		margin-left: 0.5em;
+	}
+}
+@media only screen and (max-width: 768px){		/* スマホ用 */
+	.versions {
+		border-radius: 28px;
+		width: 100%;
+		height: 28px;
+		font-size: 14px;
+		line-height: 20px;
+		padding: 4px 6px;
+		margin-bottom: 6px;
+	}
+	.protocol_verlist li .modules .parts {
+		margin-bottom: 8px;
+	}
+	.protocol_verlist li .modules .detail {
+		margin-left: 0.5em;
+	}
+}
+
+/*------[ CC-Link IEオプション製品紹介 ]------------------------------------------------------------------*/
+.poweredby {
+	display: inline-block;
+	background-color: #c9caca;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 1.25;
+	padding: 1px 8px 0;
+	vertical-align: 1px;
+}
+.partners_ttl {
+	color: #0087bd;
+	font-size: 18px;
+	line-height: 1.111112;
+	font-weight: bold;
+	border: 1px solid #ACE;
+	padding: 6px 15px 4px 15px;
+	border-radius: 16px;
+}
+.partners {
+	align-items: center;
+	border-bottom: 1px solid #c30d23;
+}
+.partners > .fa-column_item:first-child {
+	margin-bottom: 16px;
+}
+.partners_list {
+	display: flex;
+	flex-wrap: wrap;
+}
+@media (min-width: 769px){						 /* PC用 */
+	.partners > .fa-column_item:first-child {
+		padding-right: 20px;
+	}
+	.partners_list li {
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 768px){		/* スマホ用 */
+	.partners_list {
+		flex-direction: column;
+		align-content: center;
+	}
+}
+.partners_list .head {
+	display: inline-block;
+	width: 8.5em;
+}
+.partners_list .body {
+	display: inline-block;
+}
+.meosc {
+	display: flex;
+	color: #FFF;
+	background-color: #7b8388;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.meosc a {
+	color: #FFF;
+}
+.meosc > *:first-child {
+	font-weight: bold;
+}
+.meosc > *:nth-child(2) {
+	border-left: 1px solid #FFF;
+	font-size: 12px;
+	line-height: 1.5;
+}
+@media (min-width: 769px){						 /* PC用 */
+	.meosc-wrapper {
+		display: flex;
+		justify-content: flex-end;
+		overflow: hidden;
+	}
+	.meosc {
+		align-items: center;
+		transform: skewX( -30deg );
+		padding: 12px 20px 12px 10px;
+		margin-right: -20px;
+	}
+	.meosc > * {
+		transform: skewX( 30deg );
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
+@media only screen and (max-width: 768px){		/* スマホ用 */
+	.meosc {
+		flex-direction: column;
+		padding: 0.75em 1em;
+	}
+	.meosc > *:nth-child(2) {
+		margin-top: 10px;
+		padding-left: 1em;
+	}
+}
+
+/*------[ CC-Link IE仕様 ]------------------------------------------------------------------------*/
+
+/*------[ CC-Link IE製品紹介 ]------------------------------------------------------------------------*/
+#melfa_main_area .mb0 {margin-bottom: 0} /* 2022/11/21 アイプラネット追記 */
+#melfa_main_area .mt3 {margin-top: 3em} /* 2022/11/21 アイプラネット追記 */
+#melfa_main_area .mr0 {max-width: 100%} /* 2022/11/21 アイプラネット追記 */
+/*------[ CC-Link IE basicシーケンサ ]------------------------------------------------------------------------*/
+
+/*------[ ネットワーク関連製品トビラ ]------------------------------------------------------------------------*/

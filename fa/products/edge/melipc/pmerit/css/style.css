@@ -1,0 +1,46 @@
+
+#melfa_main_area .r_over:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+#melfa_main_area .no_breaks {display: inline-block}
+
+.list_indent {
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+    counter-increment: num;
+    margin-bottom: 0em !important;
+    /*font-size: 70%;*/
+    }
+.list_indent::before {
+    content: '*'counter(num)'.';
+    display: inline-block;
+    width: 1.5em;
+    text-indent: 0;
+    }
+
+#melfa_main_area .mt05 {margin-top: 0.5em !important}
+#melfa_main_area .mt1 {margin-top: 1em !important}
+
+#melfa_main_area .main_img {position: relative}
+#melfa_main_area .main_img_button {
+  display: block;
+  position: absolute;
+  bottom: 14px;
+  right: 32px;
+}
+#melfa_main_area .main_img_button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+/*PCで表示*/
+@media (max-width:768px) {
+    #melfa_main_area .main_img_button {
+    position: static;
+    display: none;
+    }
+}
+/*768px以下(モバイル)で非表示*/
+@media screen and (min-width:767px) {
+    #melfa_main_area .sp_download_button {display: none}   
+}

@@ -1,0 +1,109 @@
+/*! ======================================
+    casestudies industry logistics under
+====================================== */
+
+
+
+.section_case_wrap .category_type{display: flex;margin: 30px 0 35px;}
+.section_case_wrap .category_type li {height:inherit;padding: 8px 10px!important;font-size: 1.14286em;line-height: 1.25;text-align: center;color: #fff;font-weight: bold;}
+.section_case_wrap .category_type li.Remote-Monitoring {background-color: #28733c;max-width: 186px;width: 100%;}
+.section_case_wrap .category_type li.Remote-Maintenance {background-color: #704980;max-width: 186px;width: 100%;}
+.section_case_wrap .category_type li.Remote-Services {background-color: #cd6f10;max-width: 163px;width: 100%;}
+.section_case_wrap .category_type li.Remote-Design {background-color: #00769d;max-width: 253px;}
+
+.c-featureArea__box {background-color: #f2f2f2;padding: 55px 75px 60px;}
+.c-featureArea-box-inner {}
+.c-featureArea-box-inner__title {font-size: 40px;font-weight: bold;padding-top: 45px;padding-bottom: 45px;color: #fff;text-align: center;}
+.c-featureArea-box-inner__title.Remote-Monitoring {background-color: #28733c;}
+.c-featureArea-box-inner__title.Remote-Maintenance {background-color: #704980;}
+.c-featureArea-box-inner__title.Remote-Services {background-color: #cd6f10;}
+.c-featureArea-box-inner__title.Remote-Design {background-color: #00769d;}
+
+.c-featureArea-box-inner__img {background-color: #fff;text-align: center;padding: 45px 20px;}
+.c-featureArea-box-inner__img img {max-width: 100%;}
+.product_block #sec_products_01 {margin-top: 60px;}
+.product_block .c-headingLv2{line-height: 1.14285714;}
+.c-featureArea__box + .l-section .c-headingLv2.case_title {padding-left: 4.3em;line-height: 1.14285714;}
+.c-featureArea__box + .l-section .c-headingLv2.case_title span {position: absolute;left: 0;}
+
+.section_case_wrap .category_type .category+.category{margin-top: 0;margin-left: 20px;}
+.section_case_wrap .step_title {background:#efefef;display:-webkit-box;display:-ms-flexbox;display:flex;}
+.section_case_wrap .step_title .step_title_txt{display:-webkit-box; display:-ms-flexbox; display:flex;-webkit-box-align:center; -ms-flex-align:center; align-items:center;width:189px;/*width:16.168%*/;color:#fff;font-weight:700;text-align:center;font-size: 1.714287em;padding-left: 50px;}
+.section_case_wrap.case_task .step_title.effect .step_title_txt span{top:-32px; }
+.section_case_wrap .step_title .step_title_txt span{position:relative;top: 0;}
+.section_case_wrap .step_title.corresp .step_title_txt span{top: 25px;position: absolute; }
+.section_case_wrap .step_title.effect .step_title_txt span{top:-25px; }
+.section_case_wrap .step_txt {width: 82%;padding: 26px 14px;padding-left: 2.6em;font-size:1.14286em;letter-spacing: 0.05em;}
+.section_case_wrap .step_txt ul li{position: relative;padding-left: 1.2em;font-weight:normal;}
+.section_case_wrap .step_txt ul li+li{margin-top: 10px;}
+.section_case_wrap .step_txt ul li:before{content: "";display: block;position: absolute;left: 0;background: #004878;width: 10px;height: 10px;top: 7px;border-radius: 50px;}
+.section_case_wrap .step_txt ul.inner_list{margin-left: -22px;margin-top: 10px;}
+.section_case_wrap .step_txt ul.inner_list li:before{background:none;}
+.section_case_wrap .step_txt ul.inner_list li span{position: absolute;left: 0;}
+.section_case_wrap .step_txt ul.inner_list li{padding-left: 1.5em;}
+.section_case_wrap .step_title.task .step_title_txt {background:#616161 url("../img/bg_task.png") no-repeat left bottom;padding-left:59px;}
+.section_case_wrap.case_task .step_title.task .step_title_txt{background:#616161 url("../img/bg_task_01.png") no-repeat left bottom;padding-left:59px;}
+.section_case_wrap .step_title.corresp .step_title_txt {background:#004878 url("../img/bg_corresp.png") no-repeat left bottom;}
+.section_case_wrap .step_title.effect .step_title_txt {background:url("../img/bg_effect.png") no-repeat left 4px bottom,linear-gradient(90deg, rgba(23,67,138,1) 0%, rgba(26,82,156,1) 50%, rgba(29,92,169,1) 100%);}
+.section_case_wrap .text_blue {color: #004878;font-size: 1.25em;font-weight: bold;}
+.case_arr_block{position: relative;margin-top: 108px;}
+.case_img_wrap .case_img {max-width: 973px;width: 100%;margin-right: auto;margin-left: auto;}
+.case_img_wrap+.case_arr_block{margin-top: 102px;}
+.case_arr_block:before{content: "";position: absolute;width: 0;height: 0;border-style: solid;border-width: 47px 63.5px 0 63.5px;border-color: #004878 transparent transparent transparent;top:-80px;left: 50%;transform: translateX(-50%);}
+.case_img{text-align: center;margin-top: 55px;}
+.case_img img{max-width: 100%;vertical-align: middle;}
+.case_list{margin: 16px auto 0;max-width: 972px;width: 100%;}
+.case_list li{position: relative;padding-left: 1.2em;}
+.case_list li span{position: absolute;left: 0;}
+.section_case_wrap .step_txt .title {font-size: 21px;line-height: 1.33333333;font-weight: 500;}
+.section_case_wrap .step_txt .title + .title {margin-top: 12px;}
+.section_case_wrap .step_txt .title + .note {margin-top: 12px;}
+.section_case_wrap .step_txt .note {line-height: 1.5;padding-left: .8em;position: relative;}
+.section_case_wrap .step_txt .note span {position: absolute;left: 0;}
+.category01-br {display: none;}
+
+@media screen and (min-width:1276px) {
+    .nav_case_top ul li .case_title .category01.Remote-Design {width: 253px;}
+  }
+
+@media screen and (max-width:1275px) {
+    .category01-br {display: block;}
+}
+@media screen and (max-width:980px){
+    .category01-br {display: none;}
+}
+@media screen and (max-width:767px){
+    .c-featureArea-box-inner__title {font-size: 20px;padding: 22px 0;}
+    .c-featureArea__box {padding: 25px;padding-top: 30px;}
+    .section_case_wrap .step_txt .title {font-size: 16px;}
+    .section_case_wrap.case_task .step_title.task .step_title_txt{padding-left:0;}
+
+    h1{font-size:.88em}
+     .h2_anchor_wrap .h2_anchor{padding:10px 0;margin:30px 0 20px 0;overflow:hidden;}
+     .h2_anchor_wrap .h2_anchor ul{margin:0!important;font-size:87.5%;text-align:center;}
+     .h2_anchor_wrap .h2_anchor ul li{float:left;width:100%;margin:0 0 10px 0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;border:1px #ccc solid;}
+     .h2_anchor_wrap .h2_anchor ul li a{display:block;width:100%;padding:15px 0;background:#f2f2f2 url(/fa/shared/img/module/bg_pagelinik02.gif) no-repeat 1.5em center;}
+     .h2_anchor_wrap .h2_anchor ul li:last-child{margin-right:0%;}
+     .h2_anchor_wrap #sec_solution,  .h2_anchor_wrap #sec_system,  .h2_anchor_wrap #sec_products{margin-top:0;padding-top:0;}
+   .anchor_block {margin-top: -20px;padding-top: 20px;}
+     .section_case_wrap .category_type li{width: calc(50% - 4px)!important;padding:7px 5px !important;margin-top:10px!important;font-size: 1em;line-height: 1;}
+    .section_case_wrap .category_type li:nth-child(-n+2) {margin-top: 0;}
+    .section_case_wrap .category_type{flex-wrap: wrap;justify-content: space-between;}
+    .section_case_wrap .category_type .category+.category {margin-left: 0;}
+    .section_case_wrap .step_title .step_title_txt{font-size: 1em;width: 30%;padding: 10px 0;justify-content: center;}
+    .section_case_wrap .step_txt{width: 70%;padding: 10px;font-size: 1em;}
+    .section_case_wrap .step_title.task .step_title_txt{padding-left: 0;}
+    .section_case_wrap .step_title .step_title_txt span{top: 0;}
+    .section_case_wrap .step_title{margin-top: 50px;}
+    .section_case_wrap+.case_list_block{margin-top: 60px;padding-top: 60px;}
+    .case_arr_block:before{border-width: 23.5px 32px 0 32px;top: -34px;}
+    .case_list{width: 100%;}
+    .head_wrap .border_title{font-size:1.75em;padding: 0;}
+    .head_wrap .border_title:before{width: 35px;height: 35px;background-size: 35px auto;left: 50%;top: -36px;transform: translateX(-50%);}
+    .head_wrap .border_title strong{border-bottom: none;line-height: 1.3em;}
+    .head_wrap .border_title:after {top: 100px;left: 50%;transform: translateX(-50%);}
+    .product_block .c-headingLv2{margin-top: 60px;}
+}
+@media screen and (max-width:375px) {
+    .nav_case_top ul li.Remote-Design .case_title .category01 {width: 168px;}
+}

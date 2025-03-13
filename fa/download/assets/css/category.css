@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.cadlowerecomment,.caduppercomment{padding:5px 0 10px 15px;border:none;background-color:#fff}
+.caduppercomment{margin-top:10px}
+.cadlowerecomment{margin-top:15px}
+.cadlowerecomment p{margin-top:15px}
+.cadlowerecomment #copyright{font-size:14px!important}
+a.u-icons-close{color:#000}
+a.u-icons-close:hover{color:#f50f10}
+a.u-icons-close::before{content:"\e5cd"}
+@media only screen and (min-width:1101px){
+/*! over Large */
+
+}
+@media only screen and (max-width:1100px){
+/*! Large, Medium and Small */
+
+}
+@media only screen and (min-width:981px) and (max-width:1100px){
+/*! Large only */
+
+}
+@media only screen and (max-width:980px){
+/*! Medium and Small */
+
+}
+@media only screen and (min-width:981px){
+/*! over Medium */
+
+}
+@media only screen and (min-width:768px) and (max-width:980px){
+/*! Medium only */
+
+}
+@media only screen and (min-width:768px){
+/*! Large and Medium */
+
+}
+@media only screen and (max-width:767px){
+/*! Small only */
+
+}

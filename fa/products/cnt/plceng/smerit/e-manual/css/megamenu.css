@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+#MegaMenuContents {
+    display: none;
+    background: #fff;
+    border: solid 2px #ddd;
+    position: relative;
+    top: 10px;
+    left: 0;
+    z-index: 100;
+    margin: 0;
+    padding: 5px;
+}
+
+#megamenu_close {
+    clear: both;
+    overflow: hidden;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    text-align: right;
+
+}
+
+.megamenu_close_check{
+
+    color: #dadada/*ï∂éöêF*/
+    background: #FFF;
+    border: solid 1px #DADADA;/*ê¸*/
+    padding: 0 0.3em;
+
+}

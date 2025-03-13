@@ -1,0 +1,33 @@
+{
+  "layerNav": {
+    "name": "Motion module",
+    "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd78g/index.html",
+    "firstLayer": [
+          {
+            "name": "Product Outline",
+            "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd78g/index.html"         
+          },
+          {
+            "name": "Features (Simple Motion Mode)",
+            "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd78g/index_s.html"         
+          },
+          {
+            "name": "System Configuration (Simple Motion Mode)",
+            "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd78g/system_s.html"         
+          },
+          {
+            "name": "Features (PLCopen® Motion Control FB Mode)",
+            "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd78g/index_p.html"         
+          },
+          {
+            "name": "System Configuration (PLCopen® Motion Control FB Mode)",
+            "path": "/fa/products/cnt/ssc/pmerit/ssciqr/rd78g/system_p.html"         
+          }
+        ]
+  }
+}
+
+
+
+
+

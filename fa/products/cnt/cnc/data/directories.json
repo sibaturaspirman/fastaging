@@ -1,0 +1,284 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Computerized Numerical Controllers(CNCs)",
+        "path": "/fa/products/cnt/cnc/index.html",
+        "child": [
+          {
+            "name": "Future of Mitsubishi Electric CNC",
+            "path": "/fa/products/cnt/cnc/pr/difference/index.html"
+          },
+          {
+            "name": "CNC",
+            "path": "/fa/products/cnt/cnc/items/cnc/index.html"
+          },
+          {
+            "name": "Drive Units",
+            "path": "/fa/products/cnt/cnc/items/unit/index.html"
+          },
+          {
+            "name": "Servo Motors",
+            "path": "/fa/products/cnt/cnc/items/servo/index.html"
+          },
+          {
+            "name": "Spindle Motors",
+            "path": "/fa/products/cnt/cnc/items/spindle/index.html"
+          },
+          {
+            "name": "Software Tools",
+            "path": "/fa/products/cnt/cnc/items/cnctool/index.html"
+          },
+          {
+            "name": "IoT-related Products",
+            "path": "/fa/products/cnt/cnc/items/iot/index.html"
+          }
+        ]
+      }
+    ]
+  },
+  "switchNav": {
+    "name": "Computerized Numerical Controllers(CNCs)",
+    "path": "/fa/products/cnt/cnc/index.html",
+    "child": [
+      {
+        "group": "CNC",
+        "name": "M800V/M80V Series",
+        "feature": "/fa/products/cnt/cnc/pmerit/cnc/m800v_m80v/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/cnc&current=M800V/M80V Series",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "CNC",
+          "path": "/fa/products/cnt/cnc/items/cnc/index.html"
+        }
+      },
+      {
+        "group": "CNC",
+        "name": "M800/M80 Series",
+        "feature": "/fa/products/cnt/cnc/pmerit/cnc/m800_m80/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/cnc&current=M800/M80 Series",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "CNC",
+          "path": "/fa/products/cnt/cnc/items/cnc/index.html"
+        }
+      },
+      {
+        "group": "CNC",
+        "name": "E80 Series",
+        "feature": "/fa/products/cnt/cnc/pmerit/cnc/e80/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/cnc&current=E80 Series",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "CNC",
+          "path": "/fa/products/cnt/cnc/items/cnc/index.html"
+        }
+      },
+      {
+        "group": "CNC",
+        "name": "C80 Series",
+        "feature": "/fa/products/cnt/cnc/pmerit/cnc/c80/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/cnc&current=C80 Series",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "CNC",
+          "path": "/fa/products/cnt/cnc/items/cnc/index.html"
+        }
+      },
+      {
+        "group": "Drive Units",
+        "name": "Drive Units",
+        "feature": "/fa/products/cnt/cnc/pmerit/unit/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "Drive Units",
+          "path": "/fa/products/cnt/cnc/items/unit/index.html"
+        }
+      },
+      {
+        "group": "Servo Motors",
+        "name": "Servo Motors",
+        "feature": "/fa/products/cnt/cnc/pmerit/servo/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "Servo Motors",
+          "path": "/fa/products/cnt/cnc/items/servo/index.html"
+        }
+      },
+      {
+        "group": "Spindle Motors",
+        "name": "Spindle Motors",
+        "feature": "/fa/products/cnt/cnc/pmerit/spindle/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "Spindle Motors",
+          "path": "/fa/products/cnt/cnc/items/spindle/index.html"
+        }
+      },
+      {
+        "group": "IoT-related Products",
+        "name": "NC Virtual Simulator",
+        "feature": "/fa/products/cnt/cnc/pmerit/iot/nc_virtual_simulator/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "IoT-related Products",
+          "path": "/fa/products/cnt/cnc/items/iot/index.html"
+        }
+      },
+      {
+        "group": "IoT-related Products",
+        "name": "NC Machine Tool Optimizer",
+        "feature": "/fa/products/cnt/cnc/pmerit/iot/nmt_optimizer/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "IoT-related Products",
+          "path": "/fa/products/cnt/cnc/items/iot/index.html"
+        }
+      },
+      {
+        "group": "Software Tools",
+        "name": "NC Servo Selection",
+        "feature": "/fa/products/cnt/cnc/smerit/nc_servo_selection/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "Software Tools",
+          "path": "/fa/products/cnt/cnc/items/cnctool/index.html"
+        }
+      },
+      {
+        "group": "Software Tools",
+        "name": "NC Designer2",
+        "feature": "/fa/products/cnt/cnc/smerit/nc_designer2/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "Software Tools",
+          "path": "/fa/products/cnt/cnc/items/cnctool/index.html"
+        }
+      },
+      {
+        "group": "Software Tools",
+        "name": "NC Trainer2 / NC Trainer2 plus",
+        "feature": "/fa/products/cnt/cnc/smerit/nc_trainer2/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "Software Tools",
+          "path": "/fa/products/cnt/cnc/items/cnctool/index.html"
+        }
+      },
+      {
+        "group": "Software Tools",
+        "name": "NC Configurator2",
+        "feature": "/fa/products/cnt/cnc/smerit/nc_configurator2/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "Software Tools",
+          "path": "/fa/products/cnt/cnc/items/cnctool/index.html"
+        }
+      },
+      {
+        "group": "Software Tools",
+        "name": "NC Analyzer2",
+        "feature": "/fa/products/cnt/cnc/smerit/nc_analyzer2/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "Software Tools",
+          "path": "/fa/products/cnt/cnc/items/cnctool/index.html"
+        }
+      },
+      {
+        "group": "Software Tools",
+        "name": "NC Explorer",
+        "feature": "/fa/products/cnt/cnc/smerit/nc_explorer/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "Software Tools",
+          "path": "/fa/products/cnt/cnc/items/cnctool/index.html"
+        }
+      },
+      {
+        "group": "Software Tools",
+        "name": "NC Monitor2",
+        "feature": "/fa/products/cnt/cnc/smerit/nc_monitor2/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "Software Tools",
+          "path": "/fa/products/cnt/cnc/items/cnctool/index.html"
+        }
+      },
+      {
+        "group": "Software Tools",
+        "name": "Remote Monitor Tool (C70)",
+        "feature": "/fa/products/cnt/cnc/smerit/remote_monitor/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "Software Tools",
+          "path": "/fa/products/cnt/cnc/items/cnctool/index.html"
+        }
+      },
+      {
+        "group": "Digital Catalogs",
+        "name": "Digital Catalogs",
+        "feature": "/fa/products/cnt/cnc/pmerit/web_catalog/catalog_en.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      },
+      {
+        "group": "Movie",
+        "name": "Movie",
+        "feature": "/fa/products/cnt/cnc/pmerit/movie/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      },
+      {
+        "group": "Events",
+        "name": "Events",
+        "feature": "/fa/products/cnt/cnc/evt/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      },
+      {
+        "group": "Service",
+        "name": "Service",
+        "feature": "/fa/products/cnt/cnc/pmerit/support/index.html",
+        "spec": "",
+        "standard": "",
+        "discon": ""
+      }
+    ]
+  }
+}

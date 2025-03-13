@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+.fade {
+  transition: all 800ms;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0px, 50px);
+}
+.fadein {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+}

@@ -1,0 +1,20 @@
+{
+    "layerNav": {
+        "name": "MELIPC MI3000",
+        "path": "/fa/products/edge/melipc/items/mi3000/index.html",
+        "firstLayer": [
+            {
+                "name": "Features of the MI3000",
+                "path": "/fa/products/edge/melipc/pmerit/mi3000/index.html"
+            },
+            {
+                "name": "System configuration",
+                "path": "/fa/products/edge/melipc/pmerit/mi3000/sysconfig.html"
+            },
+            {
+                "name": "GT SoftGOT2000",
+                "path": "/fa/products/edge/melipc/pmerit/mi3000/softgot.html"
+            }
+        ]
+    }
+}

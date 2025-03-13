@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/* PC・スマホ表示 */
+@media (min-width:768px) {
+  .pc_only {
+      display: block !important;
+  }
+  .sp_only {
+      display:none !important;
+  }
+}
+@media only screen and (max-width:767px) {
+  .pc_only {
+      display:none !important;
+  }
+  .sp_only {
+      display: block !important;
+  }
+}
+
+/* 共通項目 */
+.mrgn_top10 {
+	margin-top: 10px!important;
+}
+.mrgn_top15{
+	margin-top: 15px!important;
+}
+.mrgn_top20 {
+	margin-top: 20px!important;
+}
+.mrgn_top30 {
+	margin-top: 30px!important;
+}
+.mrgn_top40 {
+	margin-top: 40px!important;
+}
+.mrgn_btm20 {
+	margin-bottom: 20px!important;
+}
+
+/* メインビジュアル */
+.main_bg {
+	background: url("../img/main_bg_img.jpg") no-repeat center / 100% 100%;
+}
+.main_bgwrap {
+	overflow: hidden;
+}
+.pattern01 img{
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: .9s;
+}
+.pattern01.show img{
+    opacity: 1;
+    transform: translateX(0);
+}
+@media (max-width: 1400px) {
+.main_bg {
+	background: url("../img/main_bg_img.jpg") no-repeat center / auto 100%;
+}
+}
+
+
+/* 幅全体グレー背景 */
+.wid100_bg {
+	margin-left: calc(((100vw - 100%) / 2) * -1);
+	margin-right: calc(((100vw - 100%) / 2) * -1);
+}
+.sec_gray {
+	background-color: #F2F2F2;
+	padding: 40px 0 50px 0;
+}
+
+/* 特長の設定 */
+.feature_Text {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	color: #00a0c8;
+	margin-bottom: 40px;
+}
+
+/* 横線付きH3 */
+.h3_sideline01 {
+    position: relative;
+    padding: 0 62px;
+    text-align: center;
+    font-size: 22px;
+}
+.h3_sideline01:before {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background: #00a0c8;
+}
+.h3_sideline01 span {
+    position: relative;
+    padding: 0 1em;
+    background: #fff;
+}
+.h3_sideline01 small {
+    font-size: 18px;
+}
+@media (max-width: 500px) {
+.h3_sideline01 {
+    display: flex;
+}
+.h3_sideline01 span {
+    padding: 0 0.5em;
+}
+.img_wi {
+	width: 67%;	
+}
+}
+
+/* 引きはずし説明 */
+.hiki-title {
+	color: #729330;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.7;
+}
+.hiki-title span {
+	border-bottom: dotted 4px #729330;
+}
+@media only screen and (max-width:767px) {
+.hiki-title {
+	font-size: 18px;
+}
+}
+
+/* 数字付きリスト */
+.hiki-listnum {
+    counter-reset:number;
+    list-style-type: none!important;
+    padding:0.5em;
+    background: #e7ecd8;
+}
+.hiki-listnum li {
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.5em;
+    padding: 0.5em 0.5em 0.5em 30px;
+}
+.hiki-listnum li:before{
+    position: absolute;
+    counter-increment: number;
+    content: counter(number);
+    display:inline-block;
+    background: #729330;
+    color: white;
+    font-family: 'Avenir','Arial Black','Arial',sans-serif;
+    font-weight:bold;
+    font-size: 15px;
+    border-radius: 50%;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.hiki-listnum span{
+	font-weight: 900;
+	font-size :17px;
+	display: block;
+}
+
+/* 背景色付きH3 */
+.h3_connect {
+    padding: 0.5em 0;
+    background: #e9e2ef;
+    border-bottom: solid 3px #735aa3;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}

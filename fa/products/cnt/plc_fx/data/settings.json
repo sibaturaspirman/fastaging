@@ -1,0 +1,211 @@
+{
+	"coment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"comment": "linkは各機種のダウンロードページのURLに変更可",
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/app/fa/download/search.do?kisyu=/plc_fx&mode=catalog"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/app/fa/download/search.do?kisyu=/plc_fx&mode=manual"
+					},
+					{
+						"name": "Technical<br>Bulletin",
+						"icon": "techinfo",
+						"link": "/app/fa/download/search.do?kisyu=/plc_fx&mode=techinfo"
+					},
+					{
+						"name": "CAD Data",
+						"icon": "cad",
+						"link": "/fa/download/?modal=cad"
+					},
+					{
+						"name": "Software",
+						"icon": "software",
+						"link": "/fa/download/?modal=software"
+					}
+				]
+			}
+	  ],
+		"commonItems": [
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2004"
+			}
+		]
+	},
+	"spotlight": {
+		"comment": "Spotlightに掲載したいページタイトル・画像・リンクを記入",
+		"items": [
+			{
+				"name": "Spotlight1",
+				"img": "/fa/shared/gws0001/img/dummy_index.png",
+				"link": "#"
+			},
+			{
+				"name": "Spotlight2",
+				"img": "/fa/shared/gws0001/img/dummy_index.png",
+				"link": "#"
+			},
+			{
+				"name": "Spotlight3",
+				"img": "/fa/shared/gws0001/img/dummy_index.png",
+				"link": "#"
+			}
+		]
+	},
+	"productsMenu": {
+		"comment": "機種共通メニューのlinkは各機種のページのURLに変更可",
+		"items": [
+			{
+				"name": "Featured Products",
+				"icon": "announce",
+				"link": "/fa/products/cnt/plc_fx/pmerit/contents/index.html"
+			},
+			{
+				"name": "Product Specifications",
+				"icon": "settings",
+				"link": "/fa/products/faspec/search.page?kisyu=/plc_fx&search=B&word=Main%20Unit"
+			},
+			{
+				"name": "Products certified/compliant to standards",
+				"icon": "standard",
+				"link": "/fa/products/standard/SearchServlet.page?kisyu=/plc_fx",
+				"child": [
+					{
+						"name": "Main Unit",
+						"link": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Main%20Unit&search=B&word=Main%20Unit"
+					},
+					{
+						"name": "Input/output extension",
+						"link": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Input/output%20extension&search=B&word=Input/output%20extension"
+					},
+					{
+						"name": "Analog",
+						"link": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Analog&search=B&word=Analog"
+					},
+					{
+						"name": "High-Speed Counter",
+						"link": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=High-Speed%20Counter&search=B&word=High-Speed%20Counter"
+					},
+					{
+						"name": "Positioning",
+						"link": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Positioning&search=B&word=Positioning"
+					},
+					{
+						"name": "Data link/Communication",
+						"link": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Data%20link/Communication&search=B&word=Data%20link/Communication"
+					},
+					{
+						"name": "Programming",
+						"link": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Programming&search=B&word=Programming"
+					},
+					{
+						"name": "Option/Training",
+						"link": "/fa/products/standard/SearchServlet.page?menu=doc&kisyu=/plc_fx&radio=Option/Training&search=B&word=Option/Training"
+					}
+				]
+			}
+		]
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "Option Menu1",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu2",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu3",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu4",
+				"link": "#"
+			}
+		]
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除",
+		"recommended": [
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/app/fa/download/search.do?kisyu=/plc_fx&mode=catalog"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/app/fa/download/search.do?kisyu=/plc_fx&mode=manual"
+			},
+			{
+				"name": "Technical<br>Bulletin",
+				"icon": "techinfo",
+				"link": "/app/fa/download/search.do?kisyu=/plc_fx&mode=techinfo"
+			}
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "Related Link1",
+				"link": "#"
+			},
+			{
+				"name": "Related Link2",
+				"link": "#"
+			},
+			{
+				"name": "Related Link3",
+				"link": "#"
+			},
+			{
+				"name": "Related Link4",
+				"link": "#"
+			}
+		]
+	},
+	"banner": {
+		"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+		"items": [
+			{
+				"name": "FA SPEC Search",
+				"image": "/fa/products/assets/img/banner_fa-spec-search.jpg",
+				"link": "/fa/mobile-apps/index.html"
+			}
+		]
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+			{
+				"name": "Contact Us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2004"
+			}
+		]
+	}
+}

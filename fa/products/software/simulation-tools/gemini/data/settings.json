@@ -1,0 +1,61 @@
+{
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/fa/download/search.page?mode=catalog&kisyu=/3dsim"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/fa/download/search.page?mode=manual&kisyu=/3dsim"
+					},
+					{
+						"name": "Software",
+						"icon": "software",
+						"link": "/fa/download/software/search.page?mode=software&kisyu=/3dsim"
+					}
+				]
+			},
+			{
+				"name": "FAQ",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/"
+			}
+	  ],
+		"commonItems": [
+		]
+	},	
+	"download": {
+		"recommended": [
+						{
+				"name": "javascript.toCatalogInfo('docid1','L08816ENG','3dsim','3')",
+				"img": "javascript.toCatalogInfo('docid1','L08816ENG','3dsim','5')",
+				"link": "javascript.toCatalogInfo('docid1','L08816ENG','3dsim','10')"
+			}
+		],
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/fa/download/search.page?mode=catalog&kisyu=/3dsim"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/fa/download/search.page?mode=manual&kisyu=/3dsim"
+			},
+			{
+				"name": "Software",
+				"icon": "software",
+				"link": "/fa/download/software/search.page?mode=software&kisyu=/3dsim"
+			}
+		]
+	}
+}

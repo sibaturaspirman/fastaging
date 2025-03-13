@@ -1,0 +1,28 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Remote accesses",
+            "path": "/fa/products/software/remote-accesses/index.html",
+            "child": [
+              {
+                "name": "HMI software (GOT)",
+                "path": "/fa/products/software/remote-accesses/got/index.html"
+              },
+              {
+                "name": "SCADA",
+                "path": "/fa/products/software/visualisation/scada/index.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* -------------------------------------------------------------------------------
+|  Created:     2023-07-19
+|  Updated:     N/A
+|------------------------------------------------------------------------------- */
+
+/* Coming soon */
+.meswp-comingSoon {
+  position: relative;
+}
+
+.meswp-comingSoon__wrap {
+  padding-right: 5.5em;
+}
+
+.meswp-comingSoon::before {
+  content: 'Coming soon';
+  font-size: 70%;
+  position: absolute;
+  right: 10px;
+  bottom: 1.25em;
+  border: 2px solid red;
+  color: red;
+  font-weight: bold;
+  padding: 0 5px;
+  border-radius: 1em;
+  text-indent: 0;
+}
+
+
+/* CAD */
+.meswp-cad__image > img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+

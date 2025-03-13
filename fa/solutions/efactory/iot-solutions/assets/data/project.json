@@ -1,0 +1,146 @@
+[
+	{
+		"name": "MX Sheet",
+		"url": "/fa/products/cnt/plceng/smerit/mx_sheet/index.html",
+		"number": "01",
+		"target": "_self"
+	},
+	{
+		"name": "MX Component",
+		"url": "/fa/products/cnt/plceng/smerit/mx_component/index.html",
+		"number": "02",
+		"target": "_self"
+	},
+	{
+		"name": "e-F@ctory Starter Package",
+		"url": "/fa/products/software/visualisation/support-module/index.html",
+		"number": "03",
+		"target": "_self"
+	},
+	{
+		"name": "GOT Mobile Function License for GOT2000",
+		"url": "/fa/products/hmi/got/pmerit/got2000/got_solutions/case_01.html",
+		"number": "04",
+		"target": "_self"
+	},
+	{
+		"name": "iQ Monozukuri Rotary Machine Vibration Diagnosis",
+		"url": "/fa/sols/efactory/component/monozukuri/rmvdiagnosis/index.html",
+		"number": "05",
+		"target": "_self"
+	},
+	{
+		"name": "iQ Monozukuri Tool Wear Diagnosis for Machine Tools",
+		"url": "/fa/sols/efactory/component/monozukuri/twdiagnosis/index.html",
+		"number": "06",
+		"target": "_self"
+	},
+	{
+		"name": "MELSOFT MaiLab",
+		"url": "/fa/products/software/data-science-tools/mailab/index.html",
+		"number": "07",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series Programmable Controller CPU Module",
+		"url": "/fa/products/cnt/plcr/pmerit/cpu/cpu.html",
+		"number": "08",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-F Series Simple CPU Communication Function",
+		"url": "/fa/products/cnt/plcf/pmerit/cpu/index.html",
+		"number": "09",
+		"target": "_self"
+	},
+	{
+		"name": "GOT2000 Series Logging Function",
+		"url": "/fa/products/hmi/got/pmerit/got2000/got_solutions/case_39.html",
+		"number": "10",
+		"target": "_self"
+	},
+	{
+		"name": "Edgecross-Compatible Software (Data Collector)",
+		"url": "/fa/solutions/efactory/component/edgsw/dc/index.html",
+		"number": "11",
+		"target": "_self"
+	},
+	{
+		"name": "iQ Monozukuri Process Remote Monitoring",
+		"url": "/fa/products/hmi/got/pmerit/apppack/prm/index.html",
+		"number": "12",
+		"target": "_self"
+	},
+	{
+		"name": "MELSOFT GT SoftGOT2000",
+		"url": "/fa/products/hmi/got/pmerit/sgt/sgt2000/index.html",
+		"number": "13",
+		"target": "_self"
+	},
+	{
+		"name": "GOT2000 series",
+		"url": "/fa/products/hmi/got/items/got2000/index.html",
+		"number": "14",
+		"target": "_self"
+	},
+	{
+		"name": "Energy Saving Support Software EcoAdviser",
+		"url": "/fa/products/software/ems/eap/index.html",
+		"number": "15",
+		"target": "_self"
+	},
+	{
+		"name": "Energy Saving Data Collecting Server EcoWebServerIII",
+		"url": "/fa/products/pmng/ems/items/ecoserver/index.html",
+		"number": "16",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series MES Interface Module",
+		"url": "/fa/products/cnt/plcr/pmerit/it_connect/mes.html",
+		"number": "17",
+		"target": "_self"
+	},
+	{
+		"name": "SCADA software-ICONICS Suite™",
+		"url": "/fa/products/software/visualisation/genesis64/index.html",
+		"number": "18",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series OPC UA Server Module",
+		"url": "/fa/products/cnt/plcr/pmerit/it_connect/opc.html",
+		"number": "19",
+		"target": "_self"
+	},
+	{
+		"name": "Industrial Computer MELIPC Series",
+		"url": "/fa/products/edge/melipc/",
+		"number": "20",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series C Intelligent Function Module (RD55UP12-V)",
+		"url": "/fa/products/cnt/plcr/pmerit/cpu/c_cont.html",
+		"number": "21",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-F Series OPC UA Module",
+		"url": "/fa/products/cnt/plcf/pmerit/communication/opc_ua.html",
+		"number": "22",
+		"target": "_self"
+	},
+	{
+		"name": "",
+		"url": "",
+		"number": "23",
+		"target": "_self"
+	},
+	{
+		"name": "",
+		"url": "",
+		"number": "24",
+		"target": "_self"
+	}
+]

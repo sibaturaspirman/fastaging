@@ -1,0 +1,20 @@
+{
+  "layerNav": {
+      "name": "Servo Amplifier",
+      "path": "/fa/products/drv/servo/pmerit/mr_jet/motor/feature.html",
+      "firstLayer": [
+        {
+            "name": "Product Lines",
+            "path": "/fa/products/drv/servo/pmerit/mr_jet/amp/feature.html"
+        },
+        {
+            "name": "Features",
+            "path": "/fa/products/drv/servo/pmerit/mr_jet/amp/feature2.html"
+        },
+        {
+            "name": "Model Designation",
+            "path": "/fa/products/drv/servo/pmerit/mr_jet/amp/ampmodel.html"
+        }
+      ]
+  }
+}

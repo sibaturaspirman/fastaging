@@ -1,0 +1,3311 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Application instructions | MELSEC-F series | MITSUBISHI ELECTRIC FA</title>
+<meta name="keywords" content="MELSEC-F series,Application instructions,MITSUBISHI ELECTRIC CORPORATION,FA,Factory Automation">
+<meta name="description" content="MELSEC-F series Application instructions">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
+<link rel="apple-touch-icon-precomposed" href="https://www.mitsubishielectric.com/m/common/img/apple-touch-icon-precomposed.png">
+
+<!-- facebook用メタ情報 -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.mitsubishielectric.com/fa/products/cnt/plc_fx/pmerit/contents/plc/instruction.html">
+<meta property="og:title" content="Application instructions | MELSEC-F series | MITSUBISHI ELECTRIC FA">
+<meta property="og:description" content="MELSEC-F series Application instructions">
+<meta property="og:image" content="https://www.mitsubishielectric.com/fa/shared/img/ogp/thumb_01.jpg">
+<!-- /facebook用メタ情報 -->
+
+<!-- Mel styles gws0001 -->
+<link rel="stylesheet" href="/fa/shared/gws0001/default/libs/normalize.css/7.0.0/normalize.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/default/css/layouts.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/css/style.css">
+
+<link rel="stylesheet" href="/fa/products/assets/css/category.css">
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/default/libs/jquery/jquery-3.6.0.min.js"></script>
+<script>
+  window.jQuery3_6 = jQuery.noConflict();
+</script>
+<script src="/fa/shared/gws0001/default/js/libs.js"></script>
+<script src="/fa/shared/gws0001/js/functions.js"></script>
+<script src="/fa/shared/js/globallinkinfo.js"></script>
+<script src="/common/js/head_include.js"></script>
+</head>
+
+<body>
+<noscript><div class="noscript"><p class="noscript__msg">Please enable JavaScript before using this site.</p></div></noscript>
+<header class="gs18-Header gs18-Header--MinInteraction" role="banner" data-js-gs18-header>
+<!-- /.gs18-Header --></header>
+
+<main class="container-fluid">
+<div class="c-mainVisual">
+<div class="c-mainVisual__main">
+<div class="c-mainVisual__fa"><img src="/fa/shared/gws0001/img/fa_logo.svg" alt="Factory Automation" width="315" height="35"></div>
+<h1 class="c-mainVisual__title">
+<span class="c-mainVisual__subTitle">MELSEC-F series</span>
+Application instructions</h1>
+<div class="c-mainVisual__background"><img src="/fa/products/assets/img/img_mv-1_sm.jpg" alt="" width="1440" height="320" decoding="async"></div>
+</div>
+</div><!-- /.c-mainVisual -->
+
+<div class="c-localNav" data-js-products-local-nav="/fa/products/cnt/plc_fx/pmerit/contents/plc/index.html">
+<div class="c-localNav__inner">
+<ul class="c-list c-list--float">
+<li class="c-list__item"><a class="u-icons u-icons--bulletLeft" href="/fa/products/index.html">製品情報</a></li>
+</ul><!-- /.c-list -->
+</div><!-- /.c-localNav__inner -->
+</div><!-- /.c-localNav -->
+
+<div class="c-switchNav" data-js-switch-nav>
+</div><!-- /.c-switchNav -->
+
+<div class="c-layerNav" data-js-layer-nav="MELSEC-F_02">
+</div><!-- /.c-layerNav -->
+
+<div class="l-inner--medium l-separator-x6">
+
+<ul class="c-anchorNav c-list c-list--float" data-js-anchor-nav="">
+</ul><!-- /.c-anchorNav -->
+
+<section class="l-section" id="section01">
+<h2 class="c-headingLv2">Program Flow</h2>
+<div class="c-table c-table--compact c-table--scroll">
+    <table class="c-table__content">
+        <thead class="c-table__head">
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+        <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+        <th class="u-ta--center u-va--middle" colspan="5">Applicable FX PLC</th>
+        </tr>
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+        </tr>
+        </thead>
+        <tbody class="c-table__contentBody">
+        <tr>
+        <td class="u-ta--center u-va--middle">00</td>
+        <td class="u-va--middle">CJ</td>
+        <td>Conditional Jump</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">01</td>
+        <td class="u-va--middle">CALL</td>
+        <td>Call Subroutine</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">02</td>
+        <td class="u-va--middle">SRET</td>
+        <td>Subroutine Return</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">03</td>
+        <td class="u-va--middle">IRET</td>
+        <td>Interrupt Return</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">04</td>
+        <td class="u-va--middle">EI</td>
+        <td>Enable Interrupt</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">05</td>
+        <td class="u-va--middle">DI</td>
+        <td>Disable Interrupt</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">06</td>
+        <td class="u-va--middle">FEND</td>
+        <td>Main Routine Program End</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">07</td>
+        <td class="u-va--middle">WDT</td>
+        <td>Watchdog Timer Refresh</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">08</td>
+        <td class="u-va--middle">FOR</td>
+        <td>Start a FOR/NEXT Loop</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">09</td>
+        <td class="u-va--middle">NEXT</td>
+        <td>End a FOR/NEXT Loop</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        </tbody>
+        </table>
+</div>
+</section><!-- /#section01 -->
+
+<section class="l-section" id="section02">
+    <h2 class="c-headingLv2">Move and Compare</h2>
+<div class="c-table c-table--compact c-table--scroll">
+    <table class="c-table__content">
+        <thead class="c-table__head">
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+        <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+        <th class="u-ta--center u-va--middle" colspan="5">Applicable FX PLC</th>
+        </tr>
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+        </tr>
+        </thead>
+        <tbody class="c-table__contentBody">
+        <tr>
+        <td class="u-ta--center u-va--middle">10</td>
+        <td class="u-va--middle">CMP</td>
+        <td>Compare</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">11</td>
+        <td class="u-va--middle">ZCP</td>
+        <td>Zone Compare</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">12</td>
+        <td class="u-va--middle">MOV</td>
+        <td>Move</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">13</td>
+        <td class="u-va--middle">SMOV</td>
+        <td>Shift Move</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">14</td>
+        <td class="u-va--middle">CML</td>
+        <td>Complement</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">15</td>
+        <td class="u-va--middle">BMOV</td>
+        <td>Block Move</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">16</td>
+        <td class="u-va--middle">FMOV</td>
+        <td>Fill Move</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">17</td>
+        <td class="u-va--middle">XCH</td>
+        <td>Exchange</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">18</td>
+        <td class="u-va--middle">BCD</td>
+        <td>Conversion to Binary Coded Decimal</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">19</td>
+        <td class="u-va--middle">BIN</td>
+        <td>Conversion to Binary</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        </tbody>
+        </table>
+</div>
+</section><!-- /#section02 -->
+
+<section class="l-section" id="section03">
+<h2 class="c-headingLv2">Arithmetic and Logical Operation</h2>
+<div class="c-table c-table--compact c-table--scroll">
+    <table class="c-table__content">
+        <thead class="c-table__head">
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+        <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+        <th class="u-ta--center u-va--middle" colspan="5">Applicable FX PLC</th>
+        </tr>
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+        </tr>
+        </thead>
+        <tbody class="c-table__contentBody">
+        <tr>
+        <td class="u-ta--center u-va--middle">20</td>
+        <td class="u-va--middle">ADD</td>
+        <td>Addition</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">21</td>
+        <td class="u-va--middle">SUB</td>
+        <td>Subtraction</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">22</td>
+        <td class="u-va--middle">MUL</td>
+        <td>Multiplication</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">23</td>
+        <td class="u-va--middle">DIV</td>
+        <td>Division</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">24</td>
+        <td class="u-va--middle">INC</td>
+        <td>Increment</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">25</td>
+        <td class="u-va--middle">DEC</td>
+        <td>Decrement</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">26</td>
+        <td class="u-va--middle">WAND</td>
+        <td>Logical Word AND</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">27</td>
+        <td class="u-va--middle">WOR</td>
+        <td>Logical Word OR</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">28</td>
+        <td class="u-va--middle">WXOR</td>
+        <td>Logical Exclusive OR</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">29</td>
+        <td class="u-va--middle">NEG</td>
+        <td>Negation</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        </tbody>
+        </table>
+</div>
+</section><!-- /#section03 -->
+
+<section class="l-section" id="section04">
+    <h2 class="c-headingLv2">Rotation and Shift Operation</h2>
+<div class="c-table c-table--compact c-table--scroll">
+    <table class="c-table__content">
+        <thead class="c-table__head">
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+        <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+        <th class="u-ta--center u-va--middle" colspan="5">Applicable FX PLC</th>
+        </tr>
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+        </tr>
+        </thead>
+        <tbody class="c-table__contentBody">
+        <tr>
+        <td class="u-ta--center u-va--middle">30</td>
+        <td class="u-va--middle">ROR</td>
+        <td>Rotation Right</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">31</td>
+        <td class="u-va--middle">ROL</td>
+        <td>Rotation Left</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">32</td>
+        <td class="u-va--middle">RCR</td>
+        <td>Rotation Right with Carry</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">33</td>
+        <td class="u-va--middle">RCL</td>
+        <td>Rotation Left with Carry</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">34</td>
+        <td class="u-va--middle">SFTR</td>
+        <td>Bit Shift Right</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">35</td>
+        <td class="u-va--middle">SFTL</td>
+        <td>Bit Shift Left</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">36</td>
+        <td class="u-va--middle">WSFR</td>
+        <td>Word Shift Right</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">37</td>
+        <td class="u-va--middle">WSFL</td>
+        <td>Word Shift Left</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">38</td>
+        <td class="u-va--middle">SFWR</td>
+        <td>Shift write
+        <br>[FIFO/FILO control]</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">39</td>
+        <td class="u-va--middle">SFRD</td>
+        <td>Shift read<br>[FIFO control]</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        </tbody>
+        </table>
+</div>
+</section><!-- /#section04 -->
+
+<section class="l-section" id="section05">
+    <h2 class="c-headingLv2">Data Operation</h2>
+    <div class="c-table c-table--compact c-table--scroll">
+    <table class="c-table__content">
+        <thead class="c-table__head">
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+        <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+        <th class="u-ta--center u-va--middle" colspan="5">Applicable FX PLC</th>
+        </tr>
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+        </tr>
+        </thead>
+        <tbody class="c-table__contentBody">
+        <tr>
+        <td class="u-ta--center u-va--middle">40</td>
+        <td class="u-va--middle">ZRST</td>
+        <td>Zone Reset</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">41</td>
+        <td class="u-va--middle">DECO</td>
+        <td>Decode</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">42</td>
+        <td class="u-va--middle">ENCO</td>
+        <td>Encode</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">43</td>
+        <td class="u-va--middle">SUM</td>
+        <td>Sum of Active Bits</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">44</td>
+        <td class="u-va--middle">BON</td>
+        <td>Check Specified Bit Status</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">45</td>
+        <td class="u-va--middle">MEAN</td>
+        <td>Mean</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">46</td>
+        <td class="u-va--middle">ANS</td>
+        <td>Timed Annunciator Set</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">47</td>
+        <td class="u-va--middle">ANR</td>
+        <td>Annunciator Reset</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">48</td>
+        <td class="u-va--middle">SQR</td>
+        <td>Square Root</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">49</td>
+        <td class="u-va--middle">FLT</td>
+        <td>Conversion to Floating Point</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>Supported in FX3G series ver. 1.10 and later</li>
+    </ul>
+</section><!-- /#section05 -->
+
+<section class="l-section" id="section06">
+    <h2 class="c-headingLv2">High-Speed Processing</h2>
+    <div class="c-table c-table--compact c-table--scroll">
+        <table class="c-table__content">
+            <thead class="c-table__head">
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+            <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+            <th class="u-ta--center u-va--middle" colspan="5">Applicable FX PLC</th>
+            </tr>
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+            </tr>
+            </thead>
+            <tbody class="c-table__contentBody">
+            <tr>
+            <td class="u-ta--center u-va--middle">50</td>
+            <td class="u-va--middle">REF</td>
+            <td>Refresh</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">51</td>
+            <td class="u-va--middle">REFF</td>
+            <td>Refresh and filter adjust</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">52</td>
+            <td class="u-va--middle">MTR</td>
+            <td>Input Matrix</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">53</td>
+            <td class="u-va--middle">HSCS</td>
+            <td>High-speed counter set</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">54</td>
+            <td class="u-va--middle">HSCR</td>
+            <td>High-speed counter reset</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">55</td>
+            <td class="u-va--middle">HSZ</td>
+            <td>High-speed counter zone compare</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">56</td>
+            <td class="u-va--middle">SPD</td>
+            <td>Speed Detection</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">57</td>
+            <td class="u-va--middle">PLSY</td>
+            <td>Pulse Y Output</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">58</td>
+            <td class="u-va--middle">PWM</td>
+            <td>Pulse Width Modulation</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">59</td>
+            <td class="u-va--middle">PLSR</td>
+            <td>Acceleration/deceleration setup</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+</section><!-- /#section06 -->
+
+<section class="l-section" id="section07">
+    <h2 class="c-headingLv2">Handy Instruction</h2>
+    <div class="c-table c-table--compact c-table--scroll">
+        <table class="c-table__content">
+            <thead class="c-table__head">
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+            <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+            <th class="u-ta--center u-va--middle" colspan="5">Applicable FX PLC</th>
+            </tr>
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+            </tr>
+            </thead>
+            <tbody class="c-table__contentBody">
+            <tr>
+            <td class="u-ta--center u-va--middle">60</td>
+            <td class="u-va--middle">IST</td>
+            <td>Initial State</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">61</td>
+            <td class="u-va--middle">SER</td>
+            <td>Search a Data Stack</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">62</td>
+            <td class="u-va--middle">ABSD</td>
+            <td>Absolute drum sequencer</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">63</td>
+            <td class="u-va--middle">INCD</td>
+            <td>Incremental drum sequencer</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">64</td>
+            <td class="u-va--middle">TTMR</td>
+            <td>Teaching Timer</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">65</td>
+            <td class="u-va--middle">STMR</td>
+            <td>Special Timer</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">66</td>
+            <td class="u-va--middle">ALT</td>
+            <td>Alternate State</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">67</td>
+            <td class="u-va--middle">RAMP</td>
+            <td>Ramp Variable Value</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">68</td>
+            <td class="u-va--middle">ROTC</td>
+            <td>Rotary Table Control</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">69</td>
+            <td class="u-va--middle">SORT</td>
+            <td>SORT Tabulated Data</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+</section><!-- /#section07 -->
+
+<section class="l-section" id="section08">
+    <h2 class="c-headingLv2">External FX I/O Device</h2>
+<div class="c-table c-table--compact c-table--scroll">
+    <table class="c-table__content">
+        <thead class="c-table__head">
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+        <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+        <th class="u-ta--center u-va--middle" colspan="5">Applicable FX PLC</th>
+        </tr>
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+        </tr>
+        </thead>
+        <tbody class="c-table__contentBody">
+        <tr>
+        <td class="u-ta--center u-va--middle">70</td>
+        <td class="u-va--middle">TKY</td>
+        <td>Ten Key Input</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">71</td>
+        <td class="u-va--middle">HKY</td>
+        <td>Hexadecimal Input</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">72</td>
+        <td class="u-va--middle">DSW</td>
+        <td>Digital switch (thumbwheel input)</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">73</td>
+        <td class="u-va--middle">SEGD</td>
+        <td>Seven Segment Decoder</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">74</td>
+        <td class="u-va--middle">SEGL</td>
+        <td>Seven Segment With Latch</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">75</td>
+        <td class="u-va--middle">ARWS</td>
+        <td>Arrow Switch</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">76</td>
+        <td class="u-va--middle">ASC</td>
+        <td>ASCII code data input</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">77</td>
+        <td class="u-va--middle">PR</td>
+        <td>Print (ASCII Code)</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">78</td>
+        <td class="u-va--middle">FROM</td>
+        <td>Read From A Special Function Block</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">79</td>
+        <td class="u-va--middle">TO</td>
+        <td>Write To A Special Function Block</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        </tbody>
+        </table>
+</div>
+</section><!-- /#section08 -->
+
+<section class="l-section" id="section09">
+    <h2 class="c-headingLv2">External FX Device</h2>
+    <div class="c-table c-table--compact c-table--scroll">
+        <table class="c-table__content">
+            <thead class="c-table__head">
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+            <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+            <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+            </tr>
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+            </tr>
+            </thead>
+            <tbody class="c-table__contentBody">
+            <tr>
+            <td class="u-ta--center u-va--middle">80</td>
+            <td class="u-va--middle">RS</td>
+            <td>Serial Communication</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">81</td>
+            <td class="u-va--middle">PRUN</td>
+            <td>Parallel Run (Octal Mode)</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">82</td>
+            <td class="u-va--middle">ASCI</td>
+            <td>Hexadecimal to ASCII Conversion</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">83</td>
+            <td class="u-va--middle">HEX</td>
+            <td>ASCII to Hexadecimal Conversion</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">84</td>
+            <td class="u-va--middle">CCD</td>
+            <td>Check Code</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">85</td>
+            <td class="u-va--middle">VRRD</td>
+            <td>Volume Read</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*1</span></td>
+            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*2</span></td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*2</span></td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">86</td>
+            <td class="u-va--middle">VRSC</td>
+            <td>Volume Scale</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*1</span></td>
+            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*2</span></td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*2</span></td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">87</td>
+            <td class="u-va--middle">RS2</td>
+            <td>Serial Communication 2</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">88</td>
+            <td class="u-va--middle">PID</td>
+            <td>PID Control Loop</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td nowrap class="u-ta--center u-va--middle">89～99</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*1</span>Supported in FX3G series ver. 1.10 and later</li>
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*2</span>Supported in FX3U/FX3UC series ver. 2.70 and later</li>
+    </ul>
+    </section><!-- /#section09 -->
+
+    <section class="l-section" id="section10">
+        <h2 class="c-headingLv2">Data Transfer</h2>
+        <div class="c-table c-table--compact c-table--scroll">
+            <table class="c-table__content">
+                <thead class="c-table__head">
+                <tr>
+                <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+                <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+                <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+                <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+                </tr>
+                <tr>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+                </tr>
+                </thead>
+                <tbody class="c-table__contentBody">
+                <tr>
+                <td nowrap class="u-ta--center u-va--middle">100, 101</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td>&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">102</td>
+                <td class="u-va--middle">ZPUSH</td>
+                <td>Batch Store of Index Register</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">103</td>
+                <td class="u-va--middle">ZPOP</td>
+                <td>Batch POP of Index Register</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">104～109</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td>&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>Supported in FX3UC series ver. 2.20 and later</li>
+    </ul>
+    </section><!-- /#section10 -->
+
+    <section class="l-section" id="section11">
+        <h2 class="c-headingLv2">Floating Point</h2>
+<div class="c-table c-table--compact c-table--scroll">
+    <table class="c-table__content">
+        <thead class="c-table__head">
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+        <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+        <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+        </tr>
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+        </tr>
+        </thead>
+        <tbody class="c-table__contentBody">
+        <tr>
+        <td class="u-ta--center u-va--middle">110</td>
+        <td class="u-va--middle">ECMP</td>
+        <td>Floating Point Compare</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">111</td>
+        <td class="u-va--middle">EZCP</td>
+        <td>Floating Point Zone Compare</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">112</td>
+        <td class="u-va--middle">EMOV</td>
+        <td>Floating Point Move</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td nowrap class="u-ta--center u-va--middle">113～115</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td>&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">116</td>
+        <td class="u-va--middle">ESTR</td>
+        <td>Floating Point to Character String Conversion</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">117</td>
+        <td class="u-va--middle">EVAL</td>
+        <td>Character String to Floating Point Conversion</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">118</td>
+        <td class="u-va--middle">EBCD</td>
+        <td>Floating Point to Scientific Notation Conversion</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">119</td>
+        <td class="u-va--middle">EBIN</td>
+        <td>Scientific Notation to Floating Point Conversion</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">120</td>
+        <td class="u-va--middle">EADD</td>
+        <td>Floating Point Addition</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">121</td>
+        <td class="u-va--middle">ESUB</td>
+        <td>Floating Point Subtraction</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">122</td>
+        <td class="u-va--middle">EMUL</td>
+        <td>Floating Point Multiplication</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">123</td>
+        <td class="u-va--middle">EDIV</td>
+        <td>Floating Point Division</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">124</td>
+        <td class="u-va--middle">EXP</td>
+        <td>Floating Point Exponent</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">125</td>
+        <td class="u-va--middle">LOGE</td>
+        <td>Floating Point Natural Logarithm</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">126</td>
+        <td class="u-va--middle">LOG10</td>
+        <td>Floating Point Common Logarithm</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">127</td>
+        <td class="u-va--middle">ESQR</td>
+        <td>Floating Point Square Root</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">128</td>
+        <td class="u-va--middle">ENEG</td>
+        <td>Floating Point Negation</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">129</td>
+        <td class="u-va--middle">INT</td>
+        <td>Floating Point to Integer Conversion</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">130</td>
+        <td class="u-va--middle">SIN</td>
+        <td>Floating Point Sine</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">131</td>
+        <td class="u-va--middle">COS</td>
+        <td>Floating Point Cosine</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">132</td>
+        <td class="u-va--middle">TAN</td>
+        <td>Floating Point Tangent</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">133</td>
+        <td class="u-va--middle">ASIN</td>
+        <td>Floating Point Arc Sine<sup>-1</sup></td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">134</td>
+        <td class="u-va--middle">ACOS</td>
+        <td>Floating Point Arc Cosine<sup>-1</sup></td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">135</td>
+        <td class="u-va--middle">ATAN</td>
+        <td>Floating Point Arc Tangent<sup>-1</sup></td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">136</td>
+        <td class="u-va--middle">RAD</td>
+        <td>Floating Point Degrees to Radians Conversion</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">137</td>
+        <td class="u-va--middle">DEG</td>
+        <td>Floating Point Radians to Degrees Conversion</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">138, 139</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td>&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        </tr>
+        </tbody>
+        </table>
+</div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>Supported in FX3G series ver. 1.10 and later</li>
+    </ul>
+</section><!-- /#section11 -->
+
+<section class="l-section" id="section12">
+    <h2 class="c-headingLv2">Data Operation 2</h2>
+<div class="c-table c-table--compact c-table--scroll">
+    <table class="c-table__content">
+        <thead class="c-table__head">
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+        <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+        <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+        </tr>
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+        </tr>
+        </thead>
+        <tbody class="c-table__contentBody">
+        <tr>
+        <td class="u-ta--center u-va--middle">140</td>
+        <td class="u-va--middle">WSUM</td>
+        <td>Sum of Word Data</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">141</td>
+        <td class="u-va--middle">WTOB</td>
+        <td>WORD to BYTE</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">142</td>
+        <td class="u-va--middle">BTOW</td>
+        <td>BYTE to WORD</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">143</td>
+        <td class="u-va--middle">UNI</td>
+        <td>4-bit Linking of Word Data
+        </td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">144</td>
+        <td class="u-va--middle">DIS</td>
+        <td>4-bit Grouping of Word Data</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        </tr>
+        <tr>
+        <td nowrap class="u-ta--center u-va--middle">145, 146</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td>&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">147</td>
+        <td class="u-va--middle">SWAP</td>
+        <td>Byte Swap</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">148</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">149</td>
+        <td class="u-va--middle">SORT2</td>
+        <td>Sort Tabulated Data 2</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        </tr>
+        </tbody>
+        </table>
+</div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>Supported in FX3UC series ver. 2.20 and later</li>
+    </ul>
+</section><!-- /#section12 -->
+
+<section class="l-section" id="section13">
+    <h2 class="c-headingLv2">Positioning Control</h2>
+<div class="c-table c-table--compact c-table--scroll">
+    <table class="c-table__content">
+        <thead class="c-table__head">
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+        <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+        <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+        </tr>
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+        </tr>
+        </thead>
+        <tbody class="c-table__contentBody">
+        <tr>
+        <td class="u-ta--center u-va--middle">150</td>
+        <td class="u-va--middle">DSZR</td>
+        <td>DOG Search Zero Return</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">151</td>
+        <td class="u-va--middle">DVIT</td>
+        <td>Interrupt Positioning</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">152</td>
+        <td class="u-va--middle">TBL</td>
+        <td>Batch Data Positioning Mode</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+        </tr>
+        <tr>
+        <td nowrap class="u-ta--center u-va--middle">153, 154</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td>&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">155</td>
+        <td class="u-va--middle">ABS</td>
+        <td>Absolute Current Value Read</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">156</td>
+        <td class="u-va--middle">ZRN</td>
+        <td>Zero Return</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">157</td>
+        <td class="u-va--middle">PLSV</td>
+        <td>Variable Speed Pulse Output</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">158</td>
+        <td class="u-va--middle">DRVI</td>
+        <td>Drive to Increment</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">159</td>
+        <td class="u-va--middle">DRVA</td>
+        <td>Drive to Absolute</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        </tbody>
+        </table>
+</div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>Supported in FX3UC series ver. 2.20 and later</li>
+    </ul>
+</section><!-- /#section13 -->
+
+<section class="l-section" id="section14">
+    <h2 class="c-headingLv2">Real Time Clock Control</h2>
+    <div class="c-table c-table--compact c-table--scroll">
+        <table class="c-table__content">
+            <thead class="c-table__head">
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+            <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+            <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+            </tr>
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+            </tr>
+            </thead>
+            <tbody class="c-table__contentBody">
+            <tr>
+            <td class="u-ta--center u-va--middle">160</td>
+            <td class="u-va--middle">TCMP</td>
+            <td>RTC data compare</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">161</td>
+            <td class="u-va--middle">TZCP</td>
+            <td>RTC data zone compare</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">162</td>
+            <td class="u-va--middle">TADD</td>
+            <td>RTC data addition</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">163</td>
+            <td class="u-va--middle">TSUB</td>
+            <td>RTC data subtraction</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">164</td>
+            <td class="u-va--middle">HTOS</td>
+            <td>Hour to second conversion</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">165</td>
+            <td class="u-va--middle">STOH</td>
+            <td>Second to hour conversion</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">166</td>
+            <td class="u-va--middle">TRD</td>
+            <td>Read RTC data</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">167</td>
+            <td class="u-va--middle">TWR</td>
+            <td>Set RTC data</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">168</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td>&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">169</td>
+            <td class="u-va--middle">HOUR</td>
+            <td>Hour Meter</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+</section><!-- /#section14 -->
+
+<section class="l-section" id="section15">
+    <h2 class="c-headingLv2">External Device</h2>
+    <div class="c-table c-table--compact c-table--scroll">
+        <table class="c-table__content">
+            <thead class="c-table__head">
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+            <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+            <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+            </tr>
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+            </tr>
+            </thead>
+            <tbody class="c-table__contentBody">
+            <tr>
+            <td class="u-ta--center u-va--middle">170</td>
+            <td class="u-va--middle">GRY</td>
+            <td>Decimal to Gray Code Conversion</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">171</td>
+            <td class="u-va--middle">GBIN</td>
+            <td>Gray Code to Decimal Conversion</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td nowrap class="u-ta--center u-va--middle">172～175</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td>&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">176</td>
+            <td class="u-va--middle">RD3A</td>
+            <td>Read form Dedicated Analog Block</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">177</td>
+            <td class="u-va--middle">WR3A</td>
+            <td>Write to Dedicated Analog Block</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">178, 179</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td>&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+</section><!-- /#section15 -->
+
+<section class="l-section" id="section16">
+    <h2 class="c-headingLv2">Extension Function</h2>
+    <div class="c-table c-table--compact c-table--scroll">
+        <table class="c-table__content">
+            <thead class="c-table__head">
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+            <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+            <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+            </tr>
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+            </tr>
+            </thead>
+            <tbody class="c-table__contentBody">
+            <tr>
+            <td class="u-ta--center u-va--middle">180</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td>&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+</section><!-- /#section16 -->
+
+<section class="l-section" id="section17">
+    <h2 class="c-headingLv2">Others</h2>
+    <div class="c-table c-table--compact c-table--scroll c-table--compact c-table--scroll">
+        <table class="c-table__content">
+            <thead class="c-table__head">
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+            <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+            <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+            </tr>
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+            </tr>
+            </thead>
+            <tbody class="c-table__contentBody">
+            <tr>
+            <td class="u-ta--center u-va--middle">181</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td>&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">182</td>
+            <td class="u-va--middle">COMRD</td>
+            <td>Read device comment data</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">183</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td>&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">184</td>
+            <td class="u-va--middle">RND</td>
+            <td>Random Number Generation</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">185</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td>&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">186</td>
+            <td class="u-va--middle">DUTY</td>
+            <td>Timing pulse generation</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">187</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td>&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            <td class="u-ta--center u-va--middle">&nbsp;</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">188</td>
+            <td class="u-va--middle">CRC</td>
+            <td>Cyclic Redundancy Check</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">189</td>
+            <td class="u-va--middle">HCMOV</td>
+            <td>High-speed counter move</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>Supported in FX3UC series ver. 2.20 and later</li>
+    </ul>
+    </section><!-- /#section17 -->
+
+    <section class="l-section" id="section18">
+        <h2 class="c-headingLv2">Block Data Operation</h2>
+        <div class="c-table c-table--compact c-table--scroll">
+            <table class="c-table__content">
+                <thead class="c-table__head">
+                <tr>
+                <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+                <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+                <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+                <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+                </tr>
+                <tr>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+                </tr>
+                </thead>
+                <tbody class="c-table__contentBody">
+                <tr>
+                <td nowrap class="u-ta--center u-va--middle">190, 191</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td>&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">192</td>
+                <td class="u-va--middle">BK+</td>
+                <td>Block Data Addition</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">193</td>
+                <td class="u-va--middle">BK-</td>
+                <td>Block Data Subtraction</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">194</td>
+                <td class="u-va--middle">BKCMP=</td>
+                <td>Block Data Compare (S1) = (S2)</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">195</td>
+                <td class="u-va--middle">BKCMP&gt;</td>
+                <td>Block Data Compare (S1) &gt; (S2)</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">196</td>
+                <td class="u-va--middle">BKCMP&lt;</td>
+                <td>Block Data Compare (S1) &lt; (S2)</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">197</td>
+                <td class="u-va--middle">BKCMP&lt;&gt;</td>
+                <td>Block Data Compare (S1) ≠ (S2)</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">198</td>
+                <td class="u-va--middle">BKCMP&lt;=</td>
+                <td>Block Data Compare (S1) ≦ (S2)</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">199</td>
+                <td class="u-va--middle">BKCMP&gt;=</td>
+                <td>Block Data Compare (S1) ≧ (S2)</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>Supported in FX3UC series ver. 2.20 and later</li>
+    </ul>
+        </section><!-- /#section18 -->
+
+        <section class="l-section" id="section19">
+            <h2 class="c-headingLv2">Character String Control</h2>
+            <div class="c-table c-table--compact c-table--scroll">
+                <table class="c-table__content">
+                    <thead class="c-table__head">
+                    <tr>
+                    <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+                    <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+                    <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+                    <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+                    </tr>
+                    <tr>
+                    <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+                    <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+                    <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+                    <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+                    <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+                    </tr>
+                    </thead>
+                    <tbody class="c-table__contentBody">
+                    <tr>
+                    <td class="u-ta--center u-va--middle">200</td>
+                    <td class="u-va--middle">STR</td>
+                    <td>BIN to Character String Conversion</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">201</td>
+                    <td class="u-va--middle">VAL</td>
+                    <td>Character String to BIN Conversion</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">202</td>
+                    <td class="u-va--middle">$+</td>
+                    <td>Link Character Strings</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">203</td>
+                    <td class="u-va--middle">LEN</td>
+                    <td>Character String Length Detection</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">204</td>
+                    <td class="u-va--middle">RIGHT</td>
+                    <td>Extracting Character String Data from the Right</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">205</td>
+                    <td class="u-va--middle">LEFT</td>
+                    <td>Extracting Character String Data from the Left</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">206</td>
+                    <td class="u-va--middle">MIDR</td>
+                    <td>Random Selection of Character Strings</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">207</td>
+                    <td class="u-va--middle">MIDW</td>
+                    <td>Random Replacement of Character Strings</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">208</td>
+                    <td class="u-va--middle">INSTR</td>
+                    <td>Character string search</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">209</td>
+                    <td class="u-va--middle">$MOV</td>
+                    <td>Character String Transfer</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○</td>
+                    </tr>
+                    </tbody>
+                    </table>
+            </div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>Supported in FX3UC series ver. 2.20 and later</li>
+    </ul>
+            </section><!-- /#section19 -->
+
+            <section class="l-section" id="section20">
+                <h2 class="c-headingLv2">Data Operation 3</h2>
+                <div class="c-table c-table--compact c-table--scroll">
+                    <table class="c-table__content">
+                        <thead class="c-table__head">
+                        <tr>
+                        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+                        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+                        <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+                        <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+                        </tr>
+                        <tr>
+                        <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+                        <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+                        <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+                        <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+                        <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+                        </tr>
+                        </thead>
+                        <tbody class="c-table__contentBody">
+                        <tr>
+                        <td class="u-ta--center u-va--middle">210</td>
+                        <td class="u-va--middle">FDEL</td>
+                        <td>Deleting Data from Tables</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">○</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                        </tr>
+                        <tr>
+                        <td class="u-ta--center u-va--middle">211</td>
+                        <td class="u-va--middle">FINS</td>
+                        <td>Inserting Data to Tables</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">○</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                        </tr>
+                        <tr>
+                        <td class="u-ta--center u-va--middle">212</td>
+                        <td class="u-va--middle">POP</td>
+                        <td>Shift Last Data Read [FILO Control]</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">○</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">○</td>
+                        </tr>
+                        <tr>
+                        <td class="u-ta--center u-va--middle">213</td>
+                        <td class="u-va--middle">SFR</td>
+                        <td>16-bit data n Bit Shift Right with Carry
+                        </td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">○</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">○</td>
+                        </tr>
+                        <tr>
+                        <td class="u-ta--center u-va--middle">214</td>
+                        <td class="u-va--middle">SFL</td>
+                        <td>16-bit data n Bit Shift Left with Carry
+                        </td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">○</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td class="u-ta--center u-va--middle">○</td>
+                        </tr>
+                        <tr>
+                        <td nowrap class="u-ta--center u-va--middle">215～219</td>
+                        <td class="u-ta--center u-va--middle">-</td>
+                        <td>&nbsp;</td>
+                        <td class="u-ta--center u-va--middle">&nbsp;</td>
+                        <td class="u-ta--center u-va--middle">&nbsp;</td>
+                        <td class="u-ta--center u-va--middle">&nbsp;</td>
+                        <td class="u-ta--center u-va--middle">&nbsp;</td>
+                        <td class="u-ta--center u-va--middle">&nbsp;</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                </div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>Supported in FX3UC series ver. 2.20 and later</li>
+    </ul>
+                </section><!-- /#section20 -->
+
+                <section class="l-section" id="section21">
+                    <h2 class="c-headingLv2">Data Comparison</h2>
+                    <div class="c-table c-table--compact c-table--scroll">
+                        <table class="c-table__content">
+                            <thead class="c-table__head">
+                            <tr>
+                            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+                            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+                            <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+                            <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+                            </tr>
+                            <tr>
+                            <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+                            <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+                            <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+                            <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+                            <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+                            </tr>
+                            </thead>
+                            <tbody class="c-table__contentBody">
+                            <tr>
+                            <td nowrap class="u-ta--center u-va--middle">220～223</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td>&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">224</td>
+                            <td class="u-va--middle">LD=</td>
+                            <td>Load Compare (S1) = (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">225</td>
+                            <td class="u-va--middle">LD&gt;</td>
+                            <td>Load Compare (S1) &gt; (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">226</td>
+                            <td class="u-va--middle">LD&lt;</td>
+                            <td>Load Compare (S1) &lt; (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">227</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td>&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">228</td>
+                            <td class="u-va--middle">LD&lt;&gt;</td>
+                            <td>Load Compare (S1) ≠ (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">229</td>
+                            <td class="u-va--middle">LD&lt;=</td>
+                            <td>Load Compare (S1) ≦ (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">230</td>
+                            <td class="u-va--middle">LD&gt;=</td>
+                            <td>Load Compare (S1) ≧ (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">231</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td>&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">232</td>
+                            <td class="u-va--middle">AND=</td>
+                            <td>AND Compare (S1) = (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">233</td>
+                            <td class="u-va--middle">AND&gt;</td>
+                            <td>AND Compare (S1) &gt; (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">234</td>
+                            <td class="u-va--middle">AND&lt;</td>
+                            <td>AND Compare (S1) &lt; (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">235</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td>&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">236</td>
+                            <td class="u-va--middle">AND&lt;&gt;</td>
+                            <td>AND Compare (S1) ≠ (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">237</td>
+                            <td class="u-va--middle">AND&lt;=</td>
+                            <td>AND Compare (S1) ≦ (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">238</td>
+                            <td class="u-va--middle">AND&gt;=</td>
+                            <td>AND Compare (S1) ≧ (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">239</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td>&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">240</td>
+                            <td class="u-va--middle">OR=</td>
+                            <td>OR Compare (S1) = (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">241</td>
+                            <td class="u-va--middle">OR&gt;</td>
+                            <td>OR Compare (S1) &gt; (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">242</td>
+                            <td class="u-va--middle">OR&lt;</td>
+                            <td>OR Compare (S1) &lt; (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">243</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td>&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">244</td>
+                            <td class="u-va--middle">OR&lt;&gt;</td>
+                            <td>OR Compare (S1) ≠ (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">245</td>
+                            <td class="u-va--middle">OR&lt;=</td>
+                            <td>OR Compare (S1) ≦ (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">246</td>
+                            <td class="u-va--middle">OR&gt;=</td>
+                            <td>OR Compare (S1) ≧ (S2)</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">247～249</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td>&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                    </div>
+                </section><!-- /#section21 -->
+
+                <section class="l-section" id="section22">
+                    <h2 class="c-headingLv2">Data Table Operation</h2>
+                    <div class="c-table c-table--compact c-table--scroll">
+                        <table class="c-table__content">
+                            <thead class="c-table__head">
+                            <tr>
+                            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+                            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+                            <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+                            <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+                            </tr>
+                            <tr>
+                            <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+                            <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+                            <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+                            <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+                            <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+                            </tr>
+                            </thead>
+                            <tbody class="c-table__contentBody">
+                            <tr>
+                            <td nowrap class="u-ta--center u-va--middle">250～255</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td>&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">256</td>
+                            <td class="u-va--middle">LIMIT</td>
+                            <td>Limit Control</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">257</td>
+                            <td class="u-va--middle">BAND</td>
+                            <td>Dead Band Control</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">258</td>
+                            <td class="u-va--middle">ZONE</td>
+                            <td>Zone Control</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">259</td>
+                            <td class="u-va--middle">SCL</td>
+                            <td>Scaling (Coordinate by Point Data)</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">260</td>
+                            <td class="u-va--middle">DABIN</td>
+                            <td>Decimal ASCII to BIN Conversion</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*1</span></td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">261</td>
+                            <td class="u-va--middle">BINDA</td>
+                            <td>BIN to Decimal ASCII Conversion</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*1</span></td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">262～268</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td>&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            <td class="u-ta--center u-va--middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                            <td class="u-ta--center u-va--middle">269</td>
+                            <td class="u-va--middle">SCL2</td>
+                            <td>Scaling 2 (Coordinate by X/Y Data)</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○</td>
+                            <td class="u-ta--center u-va--middle">-</td>
+                            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*2</span></td>
+                            </tr>
+                            </tbody>
+                            </table>
+                    </div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*1</span>Supported in FX3UC series ver. 2.20 and later</li>
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*2</span>Supported in FX3UC series ver. 1.30 and later</li>
+    </ul>
+                    </section><!-- /#section22 -->
+
+                    <section class="l-section" id="section23">
+                        <h2 class="c-headingLv2">External Device Communication</h2>
+<div class="c-table c-table--compact c-table--scroll">
+    <table class="c-table__content">
+        <thead class="c-table__head">
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+        <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+        <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+        <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+        </tr>
+        <tr>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+        <th class="u-ta--center u-va--middle u-wd--5per" >FX3GC</th>
+        <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+        </tr>
+        </thead>
+        <tbody class="c-table__contentBody">
+        <tr>
+        <td class="u-ta--center u-va--middle">270</td>
+        <td class="u-va--middle">IVCK</td>
+        <td>Inverter Status Check</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*1</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">271</td>
+        <td class="u-va--middle">IVDR</td>
+        <td>Inverter Drive</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*1</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">272</td>
+        <td class="u-va--middle">IVRD</td>
+        <td>Inverter Parameter Read</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*1</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">273</td>
+        <td class="u-va--middle">IVWR</td>
+        <td>Inverter Parameter Write</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*1</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">274</td>
+        <td class="u-va--middle">IVBWR</td>
+        <td>Inverter Parameter Block Write</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">275</td>
+        <td class="u-va--middle">IVMC</td>
+        <td>Inverter Multi Command</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*2</span></td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*3</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*3</span></td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">276</td>
+        <td class="u-va--middle">ADPRW</td>
+        <td>MODBUS Read / Write</td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*4</span></td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*5</span></td>
+        <td class="u-ta--center u-va--middle">○</td>
+        <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*5</span></td>
+        </tr>
+        <tr>
+        <td class="u-ta--center u-va--middle">277</td>
+        <td class="u-ta--center u-va--middle">-</td>
+        <td>&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        <td class="u-ta--center u-va--middle">&nbsp;</td>
+        </tr>
+        </tbody>
+        </table>
+</div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*1</span>Supported in FX3G series ver. 1.10 and later</li>
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*2</span>Supported in FX3G series ver. 1.40 and later</li>
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*3</span>Supported in FX3U/FX3G series ver. 2.70 and later</li>
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*4</span>Supported in FX3G series ver. 1.30 and later</li>
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*5</span>Supported in FX3U/FX3UC series ver. 2.40 and later</li>
+    </ul>
+
+</section><!-- /#section23 -->
+
+<section class="l-section" id="section24">
+    <h2 class="c-headingLv2">Data Transfer 2</h2>
+    <div class="c-table c-table--compact c-table--scroll">
+        <table class="c-table__content">
+            <thead class="c-table__head">
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+            <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+            <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+            <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+            </tr>
+            <tr>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+            <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+            </tr>
+            </thead>
+            <tbody class="c-table__contentBody">
+            <tr>
+            <td class="u-ta--center u-va--middle">278</td>
+            <td class="u-va--middle">RBFM</td>
+            <td>Divided BFM Read</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+            </tr>
+            <tr>
+            <td class="u-ta--center u-va--middle">279</td>
+            <td class="u-va--middle">WBFM</td>
+            <td>Divided BFM Write</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○</td>
+            <td class="u-ta--center u-va--middle">-</td>
+            <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>Supported in FX3UC series ver. 2.20 and later</li>
+    </ul>
+    </section><!-- /#section24 -->
+
+    <section class="l-section" id="section25">
+        <h2 class="c-headingLv2">High-Speed Processing 2</h2>
+        <div class="c-table c-table--compact c-table--scroll">
+            <table class="c-table__content">
+                <thead class="c-table__head">
+                <tr>
+                <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+                <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+                <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+                <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+                </tr>
+                <tr>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+                </tr>
+                </thead>
+                <tbody class="c-table__contentBody">
+                <tr>
+                <td class="u-ta--center u-va--middle">280</td>
+                <td class="u-va--middle">HSCT</td>
+                <td>High-Speed Counter Compare With Data Table</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                </tr>
+                <tr>
+                <td nowrap class="u-ta--center u-va--middle">281～289</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td>&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+    </section><!-- /#section25 -->
+
+    <section class="l-section" id="section26">
+        <h2 class="c-headingLv2">Extension File Register Control</h2>
+        <div class="c-table c-table--compact c-table--scroll">
+            <table class="c-table__content">
+                <thead class="c-table__head">
+                <tr>
+                <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+                <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+                <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+                <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+                </tr>
+                <tr>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+                <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+                </tr>
+                </thead>
+                <tbody class="c-table__contentBody">
+                <tr>
+                <td class="u-ta--center u-va--middle">290</td>
+                <td class="u-va--middle">LOADR</td>
+                <td>Load From ER</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">291</td>
+                <td class="u-va--middle">SAVER</td>
+                <td>Save to ER</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">292</td>
+                <td class="u-va--middle">INITR</td>
+                <td>Initialize R and ER</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">293</td>
+                <td class="u-va--middle">LOGR</td>
+                <td>Logging R and ER</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">294</td>
+                <td class="u-va--middle">RWER</td>
+                <td>Rewrite to ER</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                </tr>
+                <tr>
+                <td class="u-ta--center u-va--middle">295</td>
+                <td class="u-va--middle">INITER</td>
+                <td>Initialize ER</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                </tr>
+                <tr>
+                <td nowrap class="u-ta--center u-va--middle">296～299</td>
+                <td class="u-ta--center u-va--middle">-</td>
+                <td>&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                <td class="u-ta--center u-va--middle">&nbsp;</td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>Supported in FX3UC series ver. 1.30 and later</li>
+    </ul>
+        </section><!-- /#section26 -->
+
+        <section class="l-section" id="section27">
+            <h2 class="c-headingLv2">FX3U-CF-ADP Applied Instructions</h2>
+            <div class="c-table c-table--compact c-table--scroll">
+                <table class="c-table__content">
+                    <thead class="c-table__head">
+                    <tr>
+                    <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">FNC No.</th>
+                    <th class="u-ta--center u-va--middle u-wd--10per" rowspan="2">Mnemonic</th>
+                    <th class="u-ta--center u-va--middle" rowspan="2">Function</th>
+                    <th class="u-ta--center u-va--middle" colspan="10">Applicable FX PLC</th>
+                    </tr>
+                    <tr>
+                    <th class="u-ta--center u-va--middle u-wd--5per">FX3S</th>
+                    <th class="u-ta--center u-va--middle u-wd--5per">FX3G</th>
+                    <th class="u-ta--center u-va--middle u-wd--5per">FX3U</th>
+                    <th class="u-ta--center u-va--middle u-wd--5per">FX3GC</th>
+                    <th class="u-ta--center u-va--middle u-wd--5per">FX3UC</th>
+                    </tr>
+                    </thead>
+                    <tbody class="c-table__contentBody">
+                    <tr>
+                    <td class="u-ta--center u-va--middle">300</td>
+                    <td class="u-va--middle">FLCRT</td>
+                    <td>File create / check</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">301</td>
+                    <td class="u-va--middle">FLDEL</td>
+                    <td>File delete / CF card format</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">302</td>
+                    <td class="u-va--middle">FLWR</td>
+                    <td>Data write</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">303</td>
+                    <td class="u-va--middle">FLRD</td>
+                    <td>Data read</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">304</td>
+                    <td class="u-va--middle">FLCMD</td>
+                    <td>FX3U-CF-ADP command</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    </tr>
+                    <tr>
+                    <td class="u-ta--center u-va--middle">305</td>
+                    <td class="u-va--middle">FLSTRD</td>
+                    <td>FX3U-CF-ADP status read</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    <td class="u-ta--center u-va--middle">-</td>
+                    <td class="u-ta--center u-va--middle">○<span class="u-tc--red-imp">*</span></td>
+                    </tr>
+                    </tbody>
+                    </table>
+            </div>
+    <ul class="c-list">
+        <li class="c-note c-note--order"><span class="c-note__num u-tc--red">*</span>Supported in FX3U/FX3UC series ver. 2.61 and later</li>
+    </ul>
+
+</section><!-- /#section03 -->
+</div><!-- /.l-inner -->
+</main>
+
+<div class="c-breadcrumb">
+<ul class="c-breadcrumb__list" data-js-products-breadcrumb>
+</ul><!-- /.c-breadcrumb__list -->
+</div><!-- /.c-breadcrumb -->
+
+<footer class="gs18-Footer" role="contentinfo" data-js-gs18-footer>
+<!-- /.gs18-Footer --></footer>
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/js/init.js"></script>
+
+<script src="/fa/products/assets/js/category.js"></script>
+</body>
+</html>

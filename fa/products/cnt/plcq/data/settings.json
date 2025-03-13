@@ -1,0 +1,320 @@
+{
+	"coment": "linkを設定する際は、/faからの相対パスで記述する",
+	"floatingMenu": {
+	  "specificItems": [
+			{
+				"comment": "linkは各機種のダウンロードページのURLに変更可",
+				"name": "Download",
+				"icon": "download",
+				"link": "#",
+				"child": [
+					{
+						"name": "Catalog",
+						"icon": "catalog",
+						"link": "/app/fa/download/search.do?kisyu=/plcq&mode=catalog"
+					},
+					{
+						"name": "Manual",
+						"icon": "manual",
+						"link": "/app/fa/download/search.do?kisyu=/plcq&mode=manual"
+					},
+					{
+						"name": "Technical<br>Bulletin",
+						"icon": "techinfo",
+						"link": "/app/fa/download/search.do?kisyu=/plcq&mode=techinfo"
+					},
+					{
+						"name": "CAD Data",
+						"icon": "cad",
+						"link": "/fa/download/?modal=cad"
+					},
+					{
+						"name": "Software",
+						"icon": "software",
+						"link": "/fa/download/?modal=software"
+					},
+					{
+						"name": "Sample<br>Library",
+						"icon": "library",
+						"link": "/fa/download/?modal=lib"
+					}
+				]
+			}
+	  ],
+		"commonItems": [
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2002"
+			}
+        ]
+	},
+	"spotlight": {
+		"comment": "Spotlightに掲載したいページタイトル・画像・リンクを記入",
+		"items": [
+			{
+				"name": "New features make things even easier to use!",
+				"img": "/fa/products/assets/img/faist-202411-spotlight-en.jpg",
+				"link": "/fa/products/select/index.html"
+			}
+		]
+	},
+	"productsMenu": {
+		"comment": "機種共通メニューのlinkは各機種のページのURLに変更可",
+		"items": [
+			{
+				"name": "Product Specifications",
+				"icon": "settings",
+				"link": "/fa/products/faspec/search.page?kisyu=/plcq",
+        "child": [
+          {
+            "name": "CPU",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcq&radio=CPU&search=B&word=CPU"
+          },
+          {
+            "name": "Base",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcq&radio=Base&search=B&word=Base"
+          },
+          {
+            "name": "Power supply",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcq&radio=Power%20supply&search=B&word=Power%20supply"
+          },
+          {
+            "name": "I/O",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcq&radio=I/O&search=B&word=I/O"
+          },
+          {
+            "name": "Analog",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcq&radio=Analog&search=B&word=Analog"
+          },
+          {
+            "name": "Simple motion/positioning",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcq&radio=Simple%20motion/positioning&search=B&word=Simple%20motion/positioning"
+          },
+          {
+            "name": "High-speed counter/pulse input",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcq&radio=High-speed%20counter/pulse%20input&search=B&word=High-speed%20counter/pulse%20input"
+          },
+          {
+            "name": "Information/network",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcq&radio=Information/network&search=B&word=Information/network"
+          },
+          {
+            "name": "Energy measuring/insulation monitoring",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcq&radio=Energy%20measuring/insulation%20monitoring&search=B&word=Energy%20measuring/insulation%20monitoring"
+          },
+          {
+            "name": "Option",
+            "link": "/fa/products/faspec/search.page?kisyu=/plcq&radio=Option&search=B&word=Option"
+          }
+        ]
+			},
+			{
+				"name": "Products certified/compliant to standards",
+				"icon": "standard",
+				"link": "/fa/products/standard/SearchServlet.page?kisyu=/plcq",
+        "child": [
+          {
+            "name": "CPU",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=CPU&search=B&word=CPU"
+          },
+          {
+            "name": "Base",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=Base&search=B&word=Base"
+          },
+          {
+            "name": "Power supply",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=Power%20supply&search=B&word=Power%20supply"
+          },
+          {
+            "name": "I/O",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=I/O&search=B&word=I/O"
+          },
+          {
+            "name": "Analog",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=Analog&search=B&word=Analog"
+          },
+          {
+            "name": "Simple motion/positioning",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=Simple%20motion/positioning&search=B&word=Simple%20motion/positioning"
+          },
+          {
+            "name": "High-speed counter/pulse input",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=High-speed%20counter/pulse%20input&search=B&word=High-speed%20counter/pulse%20input"
+          },
+          {
+            "name": "Information/network",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=Information/network&search=B&word=Information/network"
+          },
+          {
+            "name": "Energy measuring/insulation monitoring",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=Energy%20measuring/insulation%20monitoring&search=B&word=Energy%20measuring/insulation%20monitoring"
+          },
+          {
+            "name": "Option",
+            "link": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=Option&search=B&word=Option"
+          }
+        ]
+			},
+			{
+				"name": "Discontinued Products",
+				"icon": "silver-line",
+				"link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon",
+        "child": [
+          {
+            "name": "CPU",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=CPU"
+          },
+          {
+            "name": "Base",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=Base"
+          },
+          {
+            "name": "Power supply",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=Power%20supply"
+          },
+          {
+            "name": "I/O",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=I/O"
+          },
+          {
+            "name": "Analog",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=Analog"
+          },
+          {
+            "name": "Simple motion/positioning",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=Simple%20motion/positioning"
+          },
+          {
+            "name": "Information/network",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=Information/network"
+          },
+          {
+            "name": "Option",
+            "link": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=Option"
+          }
+        ]
+			},
+			{
+				"name": "Replace Products",
+				"icon": "replace",
+				"link": "/fa/products/cnt/plca/pmerit/renewal/"
+			},
+			{
+				"name": "FA Integrated Selection Tool",
+				"icon": "tree",
+				"link": "/fa/products/select/index.html"
+			}
+		]
+	},
+	"optionItems": {
+		"comment": "機種固有メニューに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "Option Menu1",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu2",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu3",
+				"link": "#"
+			},
+			{
+				"name": "Option Menu4",
+				"link": "#"
+			}
+		]
+	},
+	"download": {
+		"comment": "おすすめカタログを掲載しない場合は、recommended内の中括弧ごと削除",
+		"recommended": [
+			{
+				"name": "javascript.toCatalogInfo('name','L08101E','plcq','3')",
+				"img": "javascript.toCatalogInfo('img','L08101E','plcq','5')",
+				"link": "javascript.toCatalogInfo('link','L08101E','plcq','10')"
+			}
+		],
+		"comment": "linkは各機種のダウンロードページのURLに変更可",
+		"items": [
+			{
+				"name": "Catalog",
+				"icon": "catalog",
+				"link": "/app/fa/download/search.do?kisyu=/plcq&mode=catalog"
+			},
+			{
+				"name": "Manual",
+				"icon": "manual",
+				"link": "/app/fa/download/search.do?kisyu=/plcq&mode=manual"
+			},
+			{
+				"name": "Technical Bulletin",
+				"icon": "technews",
+				"link": "/app/fa/download/search.do?kisyu=/plcq&mode=techinfo"
+			},
+			{
+				"name": "CAD Data",
+				"icon": "cad",
+				"link": "/fa/download/?modal=cad"
+			},
+			{
+				"name": "Software",
+				"icon": "software",
+				"link": "/fa/download/?modal=software"
+			}
+		]
+	},
+	"relatedLink": {
+		"comment": "関連リンクに掲載したいページタイトルとリンクを記入",
+		"items": [
+			{
+				"name": "Related Link1",
+				"link": "#"
+			},
+			{
+				"name": "Related Link2",
+				"link": "#"
+			},
+			{
+				"name": "Related Link3",
+				"link": "#"
+			},
+			{
+				"name": "Related Link4",
+				"link": "#"
+			}
+		]
+	},
+	"banner": {
+		"comment": "関連リンクバナーに掲載したいページタイトル・画像・リンクを追加可",
+		"items": [
+			{
+				"name": "FA Integrated Selection Tool",
+				"image": "/fa/products/assets/img/faist-202411-relatedlink-en.jpg",
+				"link": "/fa/products/select/index.html"
+			},
+			{
+				"name": "FA SPEC Search",
+				"image": "/fa/products/assets/img/banner_fa-spec-search.jpg",
+				"link": "/fa/mobile-apps/index.html"
+            }
+        ]
+	},
+	"contact": {
+		"comment": "linkは各機種のお問い合わせや機種ごとのFAQページに変更可",
+		"items": [
+			{
+				"name": "Contact Us",
+				"icon": "contact",
+				"link": "/fa/contact-us/index.html"
+			},
+			{
+				"name": "FAQs",
+				"icon": "faq",
+				"link": "https://fa-faq.mitsubishielectric.com/category/show/2002"
+			}
+		]
+	}
+}

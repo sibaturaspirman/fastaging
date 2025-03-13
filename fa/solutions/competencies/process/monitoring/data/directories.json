@@ -1,0 +1,20 @@
+{
+	"layerNav": {
+		"name": "MELSEC Process Control/Redundant System",
+		"path": "/fa/solutions/competencies/process/index.html",
+		"firstLayer": [
+			{
+				"name": "GENESIS64&trade;",
+				"path": "/fa/solutions/competencies/process/monitoring/index.html"
+			},
+			{
+				"name": "Linkage with GT SoftGOT2000",
+				"path": "/fa/solutions/competencies/process/monitoring/gt_softgot.html"
+			},
+			{
+				"name": "Generation of GOT (HMI) screens",
+				"path": "/fa/solutions/competencies/process/monitoring/got.html"
+			}
+		]
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"layerNav": {
+		"name": "Network",
+		"path": "/fa/products/cnt/plcl/pmerit/network/index.html",
+		"firstLayer": [
+			{
+				"name": "Lineup",
+				"path": "/fa/products/cnt/plcl/pmerit/network/index.html"
+			},
+			{
+				"name": "Features",
+				"path": "/fa/products/cnt/plcl/pmerit/network/point.html"
+			},
+			{
+				"name": "Network diagram",
+				"path": "/fa/products/cnt/plcl/pmerit/network/layer.html"
+			}
+		]
+	}
+}

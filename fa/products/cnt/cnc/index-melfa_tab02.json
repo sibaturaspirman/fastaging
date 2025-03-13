@@ -1,0 +1,24 @@
+{
+  "listLinkLabel": "Update information",
+  "listLink": "/fa/products/cnt/cnc/update_index.html",
+  "items": [
+    {
+      "pubDate": "Feb 29, 2024",
+      "title": "Computerized Numerical Controllers(CNCs)：Movie is updated.",
+      "category": "Other",
+      "description": "<a href=\"/fa/products/cnt/cnc/pmerit/movie/m8v.html\">We have added \"Vibration Cutting Control for Lathes\" and \"Vibration Cutting Control for Machining Centers\" to the Video of M800V/M80V series feature introduction in Japanese and English.</a>"
+    },
+    {
+      "pubDate": "Feb 29, 2024",
+      "title": "Computerized Numerical Controllers(CNCs)：Future of Mitsubishi Electric CNC is added.",
+      "category": "Other",
+      "description": "<a href=\"/fa/products/cnt/cnc/pr/difference/index.html\">\"We want to continue to be the best partner for our customers in any era.\"Here is a brand statement that expresses what we should be to realize that desire.</a>"
+    },
+    {
+      "pubDate": "Nov 13, 2023",
+      "title": "Computerized Numerical Controllers(CNCs)：HK Series is added.",
+      "category": "New products",
+      "description": "<a href=\"/fa/products/cnt/cnc/pmerit/servo/index.html\">Medium-inertia, high-accuracy and high-speed motors<br>The latest servo motor series with improved motor efficiency due to high power density design. Battery-free encoder helps reduce maintenance costs.</a>"
+    }
+  ]
+}

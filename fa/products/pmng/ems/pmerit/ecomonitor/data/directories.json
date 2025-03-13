@@ -1,0 +1,74 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Energy Saving Supporting Devices",
+            "path": "/fa/products/pmng/ems/index.html",
+			"child": [
+				{
+					"name": "Energy Measuring Units",
+					"path": "/fa/products/pmng/ems/pmerit/ecomonitor/emplus_1.html",
+					"child": [
+					{
+						"name": "EcoMonitorPlus",
+						"path": "/fa/products/pmng/ems/pmerit/ecomonitor/emplus_1.html"					
+					},
+					{
+						"name": "EcoMonitorLight",
+						"path": "/fa/products/pmng/ems/pmerit/ecomonitor_light/ecomonitor_Light_1.html"					
+					}
+				]
+				}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+"layerNav": {
+    "name": "EcoMonitorPlus",
+    "path": "/fa/products/pmng/ems/pmerit/ecomonitor/emplus_1.html",
+    "firstLayer": [
+      {
+        "name": "Features",
+        "path": "/fa/products/pmng/ems/pmerit/ecomonitor/emplus_1.html"
+      },
+      {
+        "name": "Unit Combinations",
+        "path": "/fa/products/pmng/ems/pmerit/ecomonitor/emplus_2.html"
+      },
+      {
+        "name": "System Configuration",
+        "path": "/fa/products/pmng/ems/pmerit/ecomonitor/emplus_3.html"
+      },
+      {
+        "name": "Product Lineup",
+        "path": "/fa/products/pmng/ems/pmerit/ecomonitor/emplus_4.html"
+      }
+    ]
+  },
+ "switchNav": {
+    "name": "Energy Saving Supporting Devices",
+    "path": "/fa/products/pmng/ems/index.html",
+    "child": [
+      {
+        "group": "Energy Measuring Units",
+        "name": "EcoMonitorPlus",
+        "feature": "/fa/products/pmng/ems/pmerit/ecomonitor/emplus_1.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=/ems&search=B@@K-01&word=Energy Measuring Units@@EcoMonitorPlus&current=EcoMonitorPlus",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/ems&current=EcoMonitorPlus",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/ems&category=discon&current=EcoMonitorPlus",
+		"return": {
+			"name": "Energy Measuring Units",
+			"path": "/fa/products/pmng/ems/items/ecomonitor/index.html"
+		}
+      }
+        ]
+    }
+}

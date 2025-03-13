@@ -1,0 +1,134 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Motion Controllers",
+            "path": "/fa/products/cnt/ssc/index.html",
+            "child": [
+              {
+                "name": "MELSEC iQ-R series",
+                "path": "/fa/products/cnt/ssc/items/ssciqr/index.html"
+              },
+              {
+                "name": "MELSEC iQ-F series",
+                "path": "/fa/products/cnt/ssc/items/ssciqf/index.html"
+              },
+              {
+                "name": "MELSEC-Q series",
+                "path": "/fa/products/cnt/ssc/items/sscq/index.html"
+              },
+              {
+                "name": "MELSEC-L series",
+                "path": "/fa/products/cnt/ssc/items/sscl/index.html"
+              },
+              {
+                "name": "Embedded Type Servo System Controller",
+                "path": "/fa/products/cnt/ssc/items/sscemb/index.html"
+              },
+              {
+                "name": "Motion Control Software",
+                "path": "/fa/products/cnt/ssc/items/swmg/index.html"
+              },
+              {
+                "name": "Network Related Products",
+                "path": "/fa/products/cnt/ssc/items/svnet/index.html"
+              },
+              {
+                "name": "FA Application Package iQ Monozukuri",
+                "path": "/fa/products/cnt/ssc/items/apppack/index.html"
+              },
+              {
+                "name": "Engineering Software",
+                "path": "/fa/products/cnt/ssc/items/eng/index.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "switchNav": {
+    "name": "Motion Controllers",
+    "path": "/fa/products/cnt/ssc/index.html",
+    "child": [
+      {
+        "group": "ssc_iq-r",
+        "name": "Motion module",
+        "feature": "/fa/products/cnt/ssc/pmerit/ssciqr/rd78g/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=%2Fssc&page=1&search=B&word=Motion%20module&K-01=MELSEC%20iQ-R%20series",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=%2Fssc&page=1&search=B&word=Motion%20module&K-01=MELSEC%20iQ-R%20series",
+        "discon": "",
+        "return": {
+          "name": "MELSEC iQ-R series",
+          "path": "/fa/products/cnt/ssc/items/ssciqr/index.html"
+        }
+      },
+      {
+        "group": "ssc_iq-r",
+        "name": "Motion Controller",
+        "feature": "/fa/products/cnt/ssc/pmerit/ssciqr/r32mt/point.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=%2Fssc&page=1&search=B&word=Motion%20Controller&K-01=MELSEC%20iQ-R%20series",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=%2Fssc&page=1&search=B&word=Motion%20Controller&K-01=MELSEC%20iQ-R%20series",
+        "discon": "",
+        "return": {
+          "name": "MELSEC iQ-R series",
+          "path": "/fa/products/cnt/ssc/items/ssciqr/index.html"
+        }
+      },
+      {
+        "group": "ssc_iq-r",
+        "name": "Simple Motion module",
+				"feature": "/fa/products/cnt/ssc/pmerit/ssciqr/rd77ms/point.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=%2Fssc&page=1&search=B&word=Simple%20Motion%20module&K-01=MELSEC%20iQ-R%20series",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=%2Fssc&page=1&search=B&word=Simple%20Motion%20module&K-01=MELSEC%20iQ-R%20series",
+        "discon": "",
+        "return": {
+          "name": "MELSEC iQ-R series",
+          "path": "/fa/products/cnt/ssc/items/ssciqr/index.html"
+        }
+      },
+      {
+        "group": "ssc_iq-f",
+        "name": "Motion module",
+        "feature": "/fa/products/cnt/ssc/pmerit/ssciqf/fx5g/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=%2Fssc&page=1&search=B&word=Motion%20module&K-01=MELSEC%20iQ-F%20series",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=%2Fssc&page=1&search=B&word=Motion%20module&K-01=MELSEC%20iQ-F%20series",
+        "discon": "",
+        "return": {
+          "name": "MELSEC iQ-F Series",
+          "path": "/fa/products/cnt/ssc/items/ssciqf/index.html"
+        }
+      },
+      {
+        "group": "ssc_iq-f",
+        "name": "Simple Motion module",
+				"feature": "/fa/products/cnt/ssc/pmerit/ssciqf/fx5s/point.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=%2Fssc&page=1&search=B&word=Simple%20Motion%20module&K-01=MELSEC%20iQ-F%20series",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=%2Fssc&page=1&search=B&word=Simple%20Motion%20module&K-01=MELSEC%20iQ-F%20series",
+        "discon": "",
+        "return": {
+          "name": "MELSEC iQ-F Series",
+          "path": "/fa/products/cnt/ssc/items/ssciqf/index.html"
+        }
+      },
+      {
+        "group": "ssc_swm-g",
+				"name": "SWM-G",
+        "feature": "/fa/products/cnt/ssc/pmerit/swmg/index.html",
+        "spec": "/fa/products/faspec/search.page?kisyu=%2Fssc&radio=Motion%20Control%20Software&search=B&word=Motion%20Control%20Software",
+        "standard": "",
+        "discon": "",
+        "return": {
+          "name": "Motion Control Software",
+          "path": "/fa/products/cnt/ssc/items/swmg/index.html"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="ic_alert_red" transform="translate(2 -27)">
+    <rect id="outline" width="32" height="32" transform="translate(-2 27)" fill="rgba(255,255,255,0)"/>
+    <path id="パス_266" data-name="パス 266" d="M11.815,0A11.815,11.815,0,1,0,23.629,11.815,11.815,11.815,0,0,0,11.815,0ZM10.126,3.938Z" transform="translate(2 31.371)" fill="#dc3545"/>
+    <path id="パス_267" data-name="パス 267" d="M13.5,19.691H10.126V16.314H13.5Zm0-5.066H10.126V3.938H13.5Z" transform="translate(2 31.371)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+
+.clearfix:after, .clear {  
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+/* clearfix for ie7 */
+.clearfix, .clear{
+	display: inline-block;
+	}
+.clearfix, .clear {
+	 display: block;
+	}
+
+.r_over a:hover img {
+		opacity:0.7;
+		}
+
+.point {
+	width:auto;
+	font-size:100%;
+	font-weight:800;
+    margin:20px 0 10px 0;
+	padding:10px 10px 10px 85px;
+	border:1px solid;
+	background-color:#FFFFCC !important;
+	background:left no-repeat;
+	}
+/*600px以上で有効）*/
+@media only screen and (min-width: 600px) {
+    .point span {line-height: 3em}
+    }
+
+.GX-Works2_02 > .point {
+	color:#40638b;
+	border-color:#40638b;
+	background-image:url(../images/icon_point02.gif);
+	}
+
+.GX-Works2_03 > .point {
+	color:#6a9dcd;
+	border-color:#6a9dcd;
+	background-image:url(../images/icon_point03.gif);
+	}
+
+.GX-Works2_04 > .point {
+	color:#93a244;
+	border-color:#93a244;
+	background-image:url(../images/icon_point04.gif);
+	}
+
+.GX-Works2_05 > .point {
+	color:#d69d33;
+	border-color:#d69d33;
+	background-image:url(../images/icon_point05.gif);
+	}
+
+.GX-Works2_06 > .point {
+	color:#cb5260;
+	border-color: #cb5260;
+	background-image:url(../images/icon_point06.gif);
+	}
+.GX-Works2_06 > .point span {
+background: #cb5260;
+}
+/*モバイルで表示768px以下で有効）*/
+@media only screen and (max-width: 768px) {
+    .GX-Works2_02 > .point {
+        font-size: 80%;
+	    background-image:url(../images/icon_point02_sp.gif);
+	    }
+    .GX-Works2_03 > .point {
+        font-size: 80%;
+	    background-image:url(../images/icon_point03_sp.gif);
+	    }
+    .GX-Works2_04 > .point {
+        font-size: 80%;
+	    background-image:url(../images/icon_point04_sp.gif);
+	    }
+    .GX-Works2_05 > .point {
+        font-size: 80%;
+	    background-image:url(../images/icon_point05_sp.gif);
+	    }
+    .GX-Works2_06 > .point {
+        font-size: 80%;
+	    background-image:url(../images/icon_point06_sp.gif);
+	    }
+    .GX-Works2_06 > .point span {
+    background: #cb5260;
+    }
+}
+
+.GX-Works2_06 > .point a {
+	color:#fe8593;
+	}
+
+h4 {
+	margin:20px 0 0 0;
+	font-size:95%;
+	font-weight:800;
+	/*padding-bottom:5px;*/
+	}
+
+.GX-Works2_02 h4 {
+	color:#40638b;
+	}
+
+.GX-Works2_03 h4 {
+	color:#6a9dcd;
+	}
+
+.GX-Works2_04 h4 {
+	color:#93a244;
+	}
+
+.GX-Works2_05 h4 {
+	color:#d69d33;
+	}
+
+.GX-Works2_06 h4 {
+	color:#cb5260;
+	}
+
+/*768px以上で有効）*/
+@media only screen and (min-width:768px) {
+    h5 {
+	    font-size:115% !important;
+	    font-weight:800;
+	    color:#000000;
+        margin-bottom: 1em !important;
+	    }
+h5 .count {
+	background-color:#FFFFFF !important;
+	font-size:85%;
+	}
+
+.GX-Works2_05 h5 span {
+	background-color:#ebce99;
+    line-height:2em;
+	padding:6px 10px;
+    }
+.GX-Works2_05 h5 .count {
+	color:#d69d33;
+    padding: 2px;
+    margin-left: 5px;
+    font-weight: 800;
+	}
+}
+
+/*モバイルで表示767px以下で有効）*/
+@media only screen and (max-width: 767px) {
+    h5 {
+	    font-size:100%;
+	    font-weight:800;
+	    color:#000000;
+        margin-top: 0.25em;
+        margin-bottom: 0.5em;
+	    }
+h5 .count {
+	background-color:#FFFFFF !important;
+	font-size:80%;
+	}
+
+.GX-Works2_05 h5 span {
+	background-color:#ebce99;
+    line-height:2em;
+	padding:6px 10px;
+    }
+
+.GX-Works2_05 h5 .count {
+	color:#d69d33;
+    padding: 2px;
+    margin-left: 5px;
+    font-weight: 800;
+	}
+}
+
+.fb_title {
+	font-size:120%;
+	border-bottom:1px solid #333;
+	font-weight:800;
+	line-height:2.5em;
+	margin:15px 10px 0 0;
+	padding:0;
+	}
+
+.GX-Works2_06 .support_ttl {
+	 border-bottom: 1px solid #333;
+	 background:url(../images/lmark_support_ttl06.gif) left top no-repeat;
+	 font-size:110%;
+	 font-weight:800;
+	 padding-left:22px;
+	 padding-bottom:0;
+	 margin:20px 10px 10px 0;
+	 line-height:1.5em;
+	}
+
+.mv_2clm {
+	float:left;
+	display:inline;
+	margin-left:30px;
+	margin-top:15px;
+	margin-bottom:15px;
+	width:373px;
+	height:148px;
+	padding:0;
+	border:1px solid #999;
+	background:url(../images/tuto_waku_bg.png) left repeat-x;
+	}
+
+.mv_first {
+	margin-left:0;
+	}
+
+.mv_2clm ul {
+	padding:15px 0;
+	}
+
+.mv_2clm li {
+	line-height:20px;
+	list-style-type:none;
+	/*display: table-cell;
+	vertical-align: middle;
+	margin: 0;
+	position:absolute;
+	top:50%;
+	margin-top:-1em;*/
+	}
+
+.mv_thumb {
+	width:160px;
+	height:120px;
+	float:right;
+	margin:15px;
+	}
+
+.mv_thumb10px {
+	width:160px;
+	height:120px;
+	float:right;
+	margin:10px;
+	padding:0;
+	}
+
+/*CC-Link IEフィールドネットワークなど特定の単語を改行しない_アイプラネット大澤追記*/
+#melfa_main_area .no_breaks {
+display: inline-block;
+}
+
+.r_icon {float:right; padding-top:3px}
+
+#melfa_main_area .gray_box {
+    background-color:#E2E2E2;
+    padding:3px 10px 10px 10px;
+    margin-bottom:1em;
+    }

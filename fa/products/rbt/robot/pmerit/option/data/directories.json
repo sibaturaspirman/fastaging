@@ -1,0 +1,32 @@
+{
+  "layerNav": {
+    "name": "Intelligent Options",
+    "path": "/fa/products/rbt/robot/items/option/index.html",
+    "firstLayer": [
+      {
+        "name": "High-performance teaching box",
+        "path": "/fa/products/rbt/robot/pmerit/option/index.html"
+      },
+      {
+        "name": "Force sensor set",
+        "path": "/fa/products/rbt/robot/pmerit/option/forcesensor.html"
+      },
+      {
+        "name": "MELFA-3D Vision 3.0",
+        "path": "/fa/products/rbt/robot/pmerit/option/vision_3d.html"
+      },
+      {
+        "name": "FR series Robot safety solutions",
+        "path": "/fa/products/rbt/robot/pmerit/option/safety_fr.html"
+      },
+      {
+        "name": "Multifunctional Electric Gripper",
+        "path": "/fa/products/rbt/robot/pmerit/option/handtool.html"
+      },
+      {
+        "name": "Wiring solution",
+        "path": "/fa/products/rbt/robot/pmerit/option/wiring.html"
+      }
+      ]
+  }
+}

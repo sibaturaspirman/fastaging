@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>User Information The energy saving calculation system | Inverters-FREQROL</title>
+    <link rel="stylesheet" type="text/css" href="/fa/products/drv/inv/pmerit/select/app/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app/js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app/js/common.js"></script>
+    <script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/fa/products/drv/inv/pmerit/select/app/js/jquery.ui.datepicker-ja.min.js"></script>
+    <script>
+        function printPage() {
+            var param = new Common.Param();
+            var inputParam = param.GetQueryString();
+
+            var query = document.location.search.substring(1)
+                + "&date=" + encodeURIComponent(document.getElementById("datepicker").value)
+                + "&userCompany=" + encodeURIComponent(document.getElementById("company").value)
+                + "&userFactory=" + encodeURIComponent(document.getElementById("factory").value)
+                + "&userMachine=" + encodeURIComponent(document.getElementById("machine").value)
+                + "&userName=" + encodeURIComponent(document.getElementById("name").value);
+
+            if (inputParam["machine"] == "1") {
+                window.open("motor_p.html?" + query);
+            } else {
+                window.open("fan_p.html?" + query);
+            }
+        }
+
+        $(function () {
+            $("#datepicker").datepicker();
+            $("#datepicker").datepicker("setDate", (new Date()));
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="container">
+
+            <div id="contents">
+                <div class="bbox2 mt5">
+                    <section class="sec14">
+                        <p>Enter your information for printing use. (optional)</p>
+                        <div class="floatL w381">
+                            <div class="name"><span class="font14 bold">Company Name: </span><input type="text" id="company" class="w209" maxlength="30" /></div>
+                            <div class="name mt30"><span class="font14 bold">Plant Name: </span><input type="text" id="factory" class="w204" maxlength="30" /></div>
+                            <div class="name mt5"><span class="font14 bold valigntop">Author: </span><textarea id="name" class="w209" maxlength="60"></textarea></div>
+                        </div>
+                        <div class="floatR w486">
+                            <div class="name2"><span class="font14 bold">Machine Name: </span><input type="text" id="machine" class="w204" maxlength="30" /></div>
+                            <div class="name2 mt5"><span class="font14 bold mr14">Date: </span><input type="text" id="datepicker" class="w204" /></div>
+                            <section class="sec4 clear mt30">
+                                <ul>
+                                    <li class="btn1"><a href="#" onclick="printPage();javascript: window.close();">OK</a></li>
+                                    <li class="btn2"><a href="#" onclick="javascript:window.close();">Cancel</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="clear"></div>
+                    </section>
+                </div>
+                <div class="clear mb20"></div>
+            </div>
+            <!-- /#container -->
+        </div>
+        <!-- /#wrapper -->
+    </div>
+</body>
+</html>

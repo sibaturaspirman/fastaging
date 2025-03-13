@@ -1,0 +1,28 @@
+/*for global*/
+.todiscon-icon {
+	width: 120px;
+	height: 36px;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 8px;
+	font-weight: bold;
+}
+.discon-icon {
+	display: flex;
+	width: 120px;
+	height: 36px;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 8px;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+}
+.cl_orange {
+	background-color: rgb(255, 147, 30);
+}
+
+.ck_blk{
+	font-size: 10px;
+	color:black;
+}

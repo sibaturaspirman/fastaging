@@ -1,0 +1,1 @@
+{"VERSION":"2.0.6","REQUIRE_VERSION":"2.0.0","MAKE_JSON_SEL_TOOL_VERSION":"2.0.0","LANG_REP_TOOL_VERSION":"1.0","COPYRIGHT":"Copyright(c)2014-2021 Mitsubishi Electric Corporation All Rights Reserved."}

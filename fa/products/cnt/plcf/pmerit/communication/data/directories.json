@@ -1,0 +1,56 @@
+{
+  "layerNav": {
+    "name": "Network/Communication module",
+    "path": "../communication/index.html",
+    "firstLayer": [
+		{
+		"name": "CC-Link IE TSN",
+		"path":"index.html"
+		},
+		{
+		"name":"CC-Link IE field network",
+		"path":"cclinkie_field_network.html"
+		},
+		{
+		"name":"CC-Link",
+		"path":"cclink.html"
+		},
+		{
+		"name":"OPC UA",
+		"path":"opc_ua.html"
+		},
+		{
+		"name":"Ethernet",
+		"path":"ethernet.html"
+		},
+		{
+		"name":"BACnet",
+		"path":"bacnet.html"
+		},
+		{
+		"name":"MODBUS (MODBUS/RTU, MODBUS/TCP)",
+		"path":"modbus.html"
+		},
+		{
+		"name":"Serial communication",
+		"path":"serial_communication.html"
+		},
+		{
+		"name":"Sensor Solution",
+		"path":"sensor_solution.html"
+		},
+		{
+		"name":"EtherNet/IP",
+		"path":"ethernet_ip.html"
+		},
+		{
+		"name":"PROFIBUS-DP",
+		"path":"profibus_dp.html"
+		},
+		{
+		"name":"MQTT communication",
+		"path":"mqtt.html"
+		}
+    ]
+  }
+}

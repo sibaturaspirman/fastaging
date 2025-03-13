@@ -1,0 +1,84 @@
+{
+	"layerNav": {
+		"name": "CC-Link IE",
+		"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/concept/",
+		"firstLayer": [
+			{
+				"name": "CC-Link IE Field Basic",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/concept/index.html"
+			},
+			{
+				"name": "CC-Link IE Field Basic Features",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/feature/index.html",
+				"secondLayer": [
+					{
+						"name": "Combining with TCP/IP communications",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/feature/index.html"
+					},
+					{
+						"name": "Wider range of connectable products",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/feature/feat02.html"
+					},
+					{
+						"name": "Small-scale network system configuration",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/feature/feat03.html"
+					},
+					{
+						"name": "Simple setup and easy troubleshooting",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/feature/feat04.html"
+					}
+				]
+			},
+			{
+				"name": "CC-Link IE Field Basic Applications",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/case/index.html"
+			},
+			{
+				"name": "CC-Link IE Field Basic Products",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/lineup/index.html",
+				"secondLayer": [
+					{
+						"name": "Programmable Controllers",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/lineup/index.html"
+					},
+					{
+						"name": "Drive Products",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/lineup/drv.html"
+					},
+					{
+						"name": "Robot Products",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/lineup/robot.html"
+					},
+					{
+						"name": "Human-Machine Interfaces (HMIs)",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/lineup/hmi.html"
+					},
+					{
+						"name": "FA Sensors",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/lineup/sensor.html"
+					},
+					{
+						"name": "Energy Measuring Units",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/lineup/emu.html"
+					},
+					{
+						"name": "Block Type Remote Modules",
+						"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/basic/lineup/block_type.html"
+					}
+				]
+			},
+			{
+				"name": "CC-Link IE Options",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/option/index.html"
+			},
+			{
+				"name": "CC-Link IE Development tools",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/tool/index.html"
+			},
+			{
+				"name": "CC-Link IE Specifications",
+				"path": "/fa/products/cnt/plcnet/pmerit/cclink_ie/spec/index.html"
+			}
+		]
+	}
+}

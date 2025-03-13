@@ -1,0 +1,16 @@
+{
+	"layerNav": {
+		"name": "MELSEC Process Control/Redundant System",
+		"path": "/fa/solutions/competencies/process/index.html",
+		"firstLayer": [
+			{
+				"name": "MITSUBISHI ELECTRIC ENGINEERING COMPANY LIMITED",
+				"path": "/fa/solutions/competencies/process/partners/index.html"
+			},
+			{
+				"name": "Mitsubishi Electric System & Service",
+				"path": "/fa/solutions/competencies/process/partners/melsc.html"
+			}
+		]
+	}
+}

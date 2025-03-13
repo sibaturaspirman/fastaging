@@ -1,0 +1,2326 @@
+﻿<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Improvement history list MELSEC iQ-R Motion module motion system software Servo System Controllers | MITSUBISHI ELECTRIC Factory Automation</title>
+<meta name="keywords" content="MITSUBISHI ELECTRIC,FA,Factory Automation">
+<meta name="description" content="[[description]]">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
+<link rel="apple-touch-icon-precomposed" href="https://www.mitsubishielectric.com/m/common/img/apple-touch-icon-precomposed.png">
+
+<!-- facebook用メタ情報 -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mitsubishielectric.com/fa/products/popup/index.html">
+<meta property="og:title" content="Products | MITSUBISHI ELECTRIC Factory Automation">
+<meta property="og:description" content="[[description]]">
+<meta property="og:image" content="https://www.mitsubishielectric.com/fa/shared/img/ogp/thumb_01.jpg">
+<!-- /facebook用メタ情報 -->
+
+<!-- Mel styles gws0001 -->
+<link rel="stylesheet" href="/fa/shared/gws0001/default/libs/normalize.css/7.0.0/normalize.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/default/css/layouts.css">
+<link rel="stylesheet" href="/fa/shared/gws0001/css/style.css">
+
+<link rel="stylesheet" href="/fa/products/assets/css/category.css">
+<link href="/fa/shared/css/import.css" rel="stylesheet" type="text/css">
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/default/libs/jquery/jquery-3.6.0.min.js"></script>
+<script>
+  window.jQuery3_6 = jQuery.noConflict();
+</script>
+<script src="/fa/shared/gws0001/default/js/libs.js"></script>
+<script src="/fa/shared/gws0001/js/functions.js"></script>
+<script src="/common/js/head_include.js"></script>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">N3HU2D7NJHRF-701168799-892</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">60b41d9c-620a-4d1b-b713-b5bb7f359992</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://mitsubishielectricgroup.sharepoint.com/sites/005139/_layouts/15/DocIdRedir.aspx?ID=N3HU2D7NJHRF-701168799-892, N3HU2D7NJHRF-701168799-892</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body class="l-popup">
+<noscript><div class="noscript"><p class="noscript__msg">Please enable JavaScript before using this site.</p></div></noscript>
+<header class="gs18-Header gs18-Header--simple gs18-Header--MinInteraction" role="banner" data-js-gs18-header>
+<!-- /.gs18-Header --></header>
+
+<main class="container-fluid">
+<div class="c-mainVisual c-mainVisual--popup">
+<div class="c-mainVisual__main">
+<div class="c-mainVisual__fa"><img src="/fa/shared/gws0001/img/fa_logo.svg" alt="Factory Automation" width="315" height="35"></div>
+</div>
+</div><!-- /.c-mainVisual -->
+
+<div class="l-inner--medium">
+
+
+<div id="melfa_contents_1col">
+<div id="melfa_pop_area" style="width:760px;">
+<div id="melfa_sec_system_base">
+
+
+
+<!-- Main Contents Area START -->
+<div id="melfa_main_area">
+<h1>Download</h1>
+
+<!-- Main Contents Text Area START -->
+<div class="line">
+<h2><span>Improvement history list (MELSEC iQ-R Motion module motion system software)</span></h2>
+
+<p>
+
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 37 (March 2025)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th width="25">No.</th>
+      <th>Contents</th>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</th>
+      <th width="80">Simple<br>Motion<br>mode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Resolved an issue where the movement amount becomes invalid when executing MC_MoveAbsolute (Absolute Value Positioning), MCv_MoveLinearInterpolateAbsolute (Absolute Value Linear Interpolation Control), or MCv_MoveCircularInterpolateAbsolute (Absolute Value Circular Interpolation Control) on a real drive that satisfies the following conditions:<br>
+- Absolute position system<br>
+- Set ring counter enabled selection to disable, or set ring counter enabled selection to enable and the ring counter upper/lower limit value to ±10000000000.0<br>
+- After executing a current position change (MC_SetPosition), restore the current position by actions such as turning the motion module ON again</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+   <h3 class="melfa_mt30">Improvement history of motion system software Ver. 36 (November 2024)</h3>
+  <p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Contents</td>
+        <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+        <th width="80">Simple<br>Motion<br>mode</td>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td align="center">1</td>
+        <td>Support for absolute position systems in the restoration of the current position for drive units other than MELSERVO.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">2</td>
+        <td>Resolved a problem in which, "3230H: Driver Communication Setting Error 1" would occur when using driver communication function with an EtherNet/IP Network Interface Module RJ71EIP91 included in the module configuration.</td>
+        <td align="center">－</td>
+        <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">3</td>
+        <td>Resolved a problem in which, changing the Positive directiontorque limit value (AxisName.Cd.TorqueLimit_Positive) , Negative direction torque limit value (AxisName.Cd.TorqueLimit_Negative) when the real drive axis is not connected would occur "0D23H: Warning Changing Torque Limit Value to Axis not yet Started", and the modified torque limit values would not be effective when the real drive axis is connected.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">4</td>
+        <td>When the electronic gear of the MELSERVO is set to a value other than the following, "1DC8H: Servo parameter invalid" does not occur and the value may not be automatically rewritten.<br>
+          -PA06 Electronic gear numerator: 1,PA07 Electronic gear denominator: 1<br>
+          -PA06 Electronic gear numerator: 16,PA07 Electronic gear denominator: 1</td>
+        <td align="center">－</td>
+        <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">5</td>
+        <td>Resolved a problem in which, changing the local label of a bit between FALSE and TRUE in the Motion control setting function could cause the value of a locally defined signed word label in a different program within the same project to switch between 0 and 1.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">6</td>
+        <td>Resolved a problem in which, "3C00H: Hardware Error" would occur when setting the PLC ready [Y0] to TRUE if the RAM usage of the Add-on Axis monitor (System.Md.Addon_Axis.RamUsage) was near the maximum RAM size of Add-on Axis parameter  (System.PrConst.Addon_Axis.RamSizeMax).</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">7</td>
+        <td>Resolved a problem in which, under high processing load, disconnecting and reconnecting the MELSERVO could cause the system to get stuck in Safe-Operational mode (with the MELSERVO 7-segment LED displaying "J").</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">8</td>
+        <td>Resolved a problem in which, specifying an arbitrary FB instance ID that is not from MC_TouchProbe (Touch Probe Enabled) in the TouchProbeID (Touch probe ID) of MC_AbortTrigger (Touch Probe Disabled) would result in a "3409H: Out of Touch Probe ID Range" error instead of the correct "34A4H: Touch Probe Disabling Unsupported" error at runtime.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">9</td>
+        <td>Resolved a problem in which, setting the same axis No./axes group No. for multiple axes/axes groups would result in a "1D80H: Out of Parameter Range (Axis)" / "1D81H: Out of Parameter Range (Axes Group)" error at initialization instead of the correct "1A91H: Axis No. Setting Duplication Error" / "1A58H: Axes Group No. Setting Duplication Error".</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">10</td>
+        <td>Resolved a problem in which, setting a real axis that does not use axis emulation without a station address would result in a "1D80H: Out of Parameter Range (Axis)" error at initialization instead of the correct "1A95H: Station Address Setting Incorrect".</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">11</td>
+        <td>Resolved a problem in which, in a FB with input variables Master and Slave, a specific error (such as "343FH: Out of Backlash Amount Range") would be detected and even after performing an error reset, "1A3FH: Master Axis and Slave Axis Cyclic Reference" would be incorrectly judged (either falsely detected or not detected) upon FB restart.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">12</td>
+        <td>Resolved a problem in which, for virtual encoder axis, axis parameters for the Driver Unit Conversion Denominator (AxisName.Pr.Drive_UnitConvRatioDen) and the Driver Unit Conversion Numerator (AxisName.Pr.Drive_UnitConvRatioNum) would not be reloaded when the PLC ready [Y0] signal was turned OFF and then ON.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">13</td>
+        <td>Resolved a problem in which, in a FB with input variables Master and Slave, "1AD8H: Out of Master Axis No. Range" or "3405H: Out of Master Axis 1 No. Range" would be detected and even after performing an error reset, "1A3FH: Master Axis and Slave Axis Cyclic Reference" would not be detected upon FB restart.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">14</td>
+        <td>Resolved a problem in which, setting Enable to FALSE during the execution of MC_ReadParameter (Parameter Read) could result in a "3C00H: Hardware Error".</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">15</td>
+        <td>Resolved a problem in which, during the execution of MC_MoveVelocity (Speed Control) / MCv_SpeedControl (Speed Control (Including Position Loop)), continuously reversing the sign of Velocity with each program scan could result in the system operating at a speed with the reversed sign of the intended Velocity.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">16</td>
+        <td>Resolved a problem in which, after the occurrence of "1AE0h: Driver Restoration Data Incorrect", the same error "1AE0h: Driver Restoration Data Incorrect" could be detected again even after removing the error cause and reconnecting.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">17</td>
+        <td>Resolved a problem in which, setting the communication cycle interval to 250µs or 500µs when inter-driver communication is enabled would result in a "2221H: Network parameter error".</td>
+        <td align="center">－</td>
+        <td align="center">○</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h3 class="melfa_mt30">Improvement history of motion system software Ver. 34 (July 2024)</h3>
+  <p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Contents</td>
+        <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+        <th width="80">Simple<br>Motion<br>mode</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+      <td>Improvements have been made to enable "Connected/Disconnected Module Detection" to be performed when the motion unit is not data-linked.</td>
+      <td align="center">○</td>
+      <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">2</td>
+        <td>If a partner encoder was used, a 32-bit restore solved the problem.</td>
+        <td align="center">－</td>
+        <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">3</td>
+        <td>In MCv_WriteProfileData, the cause of "3410H: calculation profile incorrect" has been improved so that the detailed information is output.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">4</td>
+        <td>Improved processing so that an emergency stop is performed when an all-axis emergency stop signal (AxisName.Pr.ForcedStop_Signal) is detected on a virtual coupled axis.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">5</td>
+        <td>In MCv_MovePositioningData, when the following conditions were met, the command current position would be incorrect.<br>
+          - Multiple startup (Aborting) of MCv_MovePositioningData during FB startup.<br>
+          - Executing 6 or more positioning data in a row with continuous positioning or continuous trajectory as the operation pattern.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">6</td>
+        <td>In MC_Home, when the origin switch of the input variable is set to satisfy the following conditions, the origin switch may be detected incorrectly when MC_Home is executed.<br>
+          - Signal detection method: "1: Detect at FALSE".<br>
+          - Filter time: other than "0</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">7</td>
+        <td>When the calculation profile type is "rotary cutter," a problem has been solved in which the calculation is performed as 1/100 of the set value when generating cam data if the speed increase ratio is set.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">8</td>
+        <td>During MCv_AdvancedSync, a problem has been solved in which a one-cycle length change could result in an incorrect value for the current position one cycle after the spindle gear and the current position one cycle after the auxiliary axis gear if the move direction is different from the current position one cycle after the spindle gear.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">9</td>
+        <td>Improve the behavior for troubleshooting when an error occurs by specifying unsupported data types in MCv_ReadProfileData/MCv_WriteProfileData.Data1/Data2.Target.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">10</td>
+        <td>When one of the following signals is set to the same setting for multiple axes and a value other than "0" is set for the filter time, the signal input timing is not corrected according to the set filter time.<br>
+          - Stop signal<br>
+          - Upper limit signal<br>
+          - Lower limit signal<br>
+          - Emergency stop signal</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">11</td>
+        <td>Resolved a problem in which, if a value other than "0" was set for the filter time of the origin switch of MC_Home, multiple executions of the same FB instance could result in false detection of signal input on the second and subsequent executions.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">12</td>
+        <td>Resolved a problem in which "1A07H: Speed Limit Over" could be detected incorrectly at startup when MCv_SpeedControl or MC_MoveVelocity is set to move in the negative direction at a target speed within the negative direction speed limit.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">13</td>
+        <td>When MCv_WriteProfileData is executed for a computing profile whose data type is multi-axis positioning data, a problem has been solved in which an incorrect value was set for the number of positioning data settings when the expansion area was partially overwritten with a setting where the total number of positioning data for the write source and write destination matched. The problem has been resolved.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">14</td>
+        <td>When there is a significant difference between the commanded pulses and feedback pulses on the degree axis, the issue of the [Md.101] actual current value becoming invalid has been resolved.</td>
+        <td align="center">－</td>
+        <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">15</td>
+        <td>Solved a problem in which the axis group state would not transition to GroupDisabled if the sequencer ready [Y0] was set to FALSE while the axis group state was GroupStopping.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">16</td>
+        <td>Solved the problem that ready [X0] does not turn off when sequencer ready [Y0] is set to FALSE during MC_WriteParameter startup.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">17</td>
+        <td>When "3205H: Add-on library loading error" occurs, the detailed information in the event history has been improved.</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">18</td>
+        <td>Resolved a problem in which "34B2H: MCv_MovePositioningData instruction error" was detected in MCv_MovePositioningData, and if Execute was set to FALSE before the axis group decelerated to a stop, "34B2H: MCv_MovePositioningData instruction error" was detected again.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <h3 class="melfa_mt30">Improvement history of motion system software Ver. 33 (December 2023)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th width="25">No.</th>
+      <th>Contents</th>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</th>
+      <th width="80">Simple<br>Motion<br>mode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Resolves the problem that "0D3CH:Home position return data incorrect" occurs when the axis is connected and the backup data of the absolute position may be lost, when the absolute position system is established on the axis 8.</td>
+      <td align="center">－</td>
+      <td align="center">○</td>
+    </tr>
+  </tbody>
+</table>
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 32 (December 2023)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th width="25">No.</th>
+      <th>Contents</th>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</th>
+      <th width="80">Simple<br>Motion<br>mode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Resolves an issue where an undefined power on error (1ADCH) may be detected when updating the motion system software from Motion Control Setting.</td>
+      <td align="center">－</td>
+      <td align="center">○</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Resolves a problem in which the value of the data set in the TRIGGER_REF input variable of the motion control FB may not be reflected even if the ST program rewrites the value.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td>Resolves an issue where MCv_WriteProfileData may result in an incorrect 1 cycle length for a operation profile data in Interpolation "Method: Linear Interpolation".</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td>When the absolute value positioning control FB is started multiple times so as to satisfy all of the following conditions, the movement amount of the absolute value positioning control FB started multiple times later may be invalid.<br>
+        - Ring counter enabled<br>
+        - Invalid software stroke limit<br>
+        - The cumulative current position exceeds the maximum value or the minimum value<br>
+        - BufferMode is not Aborting</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td>Resolves a problem in which the set position of the command may be invalid if the cumulative current position of the configuration axis exceeds the maximum when the configuration axis is switched to the FB that has been activated multiple times with the Blending specification in an axis group that satisfies all of the following conditions:<br>
+        - Configuration Axis Ring Counter Enabled<br>
+        - Invalid software stroke limit for configuration axis</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">6</td>
+      <td>MC_CamIn solves the problem that when the master axis with the MasterOffset set exceeds the positioning range, the slave axis may detect "Velocity Range Over during Controlling" (1AE8H).</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">7</td>
+      <td>MCv_ReadProfileData/MCv_WriteProfileData Resolves an incorrect error code when an add-on combination error occurs at startup.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">8</td>
+      <td>Resolves an issue where System.Md.OperationCycle [1] .CycleOver may not immediately TRUE when a cycle over occurs.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">9</td>
+      <td>Resolves the problem of detecting "Communication Error of Connected Encoder" (1AE5H)" improperly in the real encoder axis.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">10</td>
+      <td>Resolves an issue where the axis operating state may stop at "Analyzing" when advanced synchronization control is started on multiple axes.</td>
+      <td align="center">－</td>
+      <td align="center">○</td>
+    </tr>
+    <tr>
+      <td align="center">11</td>
+      <td>Resolves an incorrect error code when specifying the InstanceID of an unlaunched MC_CamIn for the InstanceID.Number of MCv_ChangeCycle.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">12</td>
+      <td>MCv_MovePositioningData Resolves issue below for detailed information about startup events<br>
+        - FB type is not displayed.<br>
+        - FB instance ID is always 0</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">13</td>
+      <td>Resolves an error code error in MCv_WriteProfileData when writing a operation profile data for which Rotary Cutter is set as the data format type.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    </tr>
+  </tbody>
+</table>
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 31 (October 2023)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th width="25">No.</th>
+      <th>Contents</th>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</th>
+      <th width="80">Simple<br>Motion<br>mode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Resolves the problem that the direction of rotation will not be updated and the specified speed and direction of rotation will not match, when MC_MoveVelocity or MCv_SpeedControl with jerk acceleration/deceleration enabled changes the speed so that the direction of rotation is reversed, and the speed is changed in the same direction again at the deceleration completion time.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h3 class="melfa_mt30">Improvement history of motion system software Ver. 30 (May 2023)</h3>
+  <p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Contents</td>
+        <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+        <th width="80">Simple<br>Motion<br>mode</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+        <td>Resolves the problem of duplicate axis number error (1D80H) when assigning axis variables to each other.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">2</td>
+        <td>Resolves the problem that commands may stop immediately regardless of parameter settings when multiple activation of single-axis positioning FB with inversion disallowed setting is performed by Aborting with position setting in which the direction of movement is reversed during single-axis control.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">3</td>
+        <td>Resolves an incorrect error code that occurs when add-ons required for a feature are disabled.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">4</td>
+        <td>Resolves wrong error code when add-on ServoDriver_CANopen is disabled during real drive axis setup.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">5</td>
+        <td>Resolves an issue where the status of event history and detailed information are not displayed properly when add-on memory shortage (3499H) occurs in add-on ServoSystemRecorder.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">6</td>
+        <td>Resolves an error in the communication cycle interval displayed in the detailed information when a communication cycle interval setting error in inter-driver communication (3236H) occurs.</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">7</td>
+        <td>Resolves the problem that the value of the inter-driver communication interval is displayed in the "Communication interval setting" on the CC-Link IE TSN diagnostic screen when using a master-slave operation function.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">8</td>
+        <td>Resolves an issue that causes the SD Memory Card Available (20300H) time to be off by + 9 hours when turn on the power while the SD Memory Card is installed.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">9</td>
+        <td>Resolves a problem that may cause a hardware malfunction (3C00H) when MC_AbortTrigger is run without generating an instance of MC_TouchProbe.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">10</td>
+        <td>When running cam data (specified for each section) on a file with MCv_WriteProfileData, if the set value of the end point at the middle point of Data2 is set to 0 or 1 cycle length or longer, the problem that the number of sections and the number of section data output to a CSV file do not match is resolved.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">11</td>
+        <td>Resolves the problem that some unfolded data of negative strokes may become abnormal in the operation profile of Interpolation Method: Specified by interval.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">12</td>
+        <td>Resolves an issue that setting an undeployed CamTableID during MC_CamIn startup regesters events with "Info" instead of "Warning".</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">13</td>
+        <td>Resolves an issue that emerges hardware malfunction (3C00H) when starting MCv_ChangeCycle for shut-downed MC_CamIn.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">14</td>
+        <td>Resolves an issue that may cause add-on SignalIO to use more memory when add-on SignalIO runs out of add-on memory (3499H)</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">15</td>
+        <td>Resolves a problem that may result in moderate/severe anomalies when multiple of the following operations are performed simultaneously.<br>
+          - Multiple simultaneous activation of motion control FB using TARGET_REF structure.<br>
+          - Perform logging requests in a logging configuration with data type DEV.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">16</td>
+        <td>Resolves a problem where a servo error (AL.35.1: Command frequency error) may occur when an input axis current value is changed, etc., between the start of Advanced Synchronous Control and the start of Synchronous Control.</td>
+        <td align="center">－</td>
+        <td align="center">○</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="melfa_mt30">Improvement history of motion system software Ver. 28 (February 2023)</h3>
+  <p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Contents</td>
+        <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+        <th width="80">Simple<br>Motion<br>mode</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+        <td>Fixed a problem in which the values of buffer memory (cyclic transmission guarantee information (communication cycle interval (calculated value))) and link special register (communication cycle interval (calculated value)) (SW0072) were different.</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">2</td>
+        <td>Fixed a problem in which Hardware Error (3C00H) would occur when cam data was written using the cam data operation function after parameter initialization.</td>
+        <td align="center">－</td>
+        <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">3</td>
+        <td>Fixed a problem in which the speed limit would be registered twice in the event history
+          when the speed limit value over (0D51H) occurred during the execution of continuous positioning control/continuous trajectory control on the command generation axis.</td>
+        <td align="center">－</td>
+        <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">4</td>
+        <td>Fixed a problem in which an error would be erroneously detected when MC _ SetPosition was executed on an axis where the software limit target was "feed machine position".</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">5</td>
+        <td>Fixed a problem in which the processing time monitor would be invalid if the buffer memory refresh period frequency setting was set to anything other than Basic Period x 2 <sup>^</sup> n times.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">6</td>
+        <td>Fixed a problem in which "* HST.LOSS *" (event information lost) would not be printed when event information was discarded.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">7</td>
+        <td>In MC_TouchProbe, fixed a problem in which CommandAborted would turn on when Execute was turned off after an error occurred when accessing to a buffer memory out of the range in OutputBuffer.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">8</td>
+        <td>Fixed a problem in which Hardware Error (3C00H) would occur in the Motion module when an incorrect string was set in the external signal selection.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">9</td>
+        <td>Fixed a problem in which overrun warning (0D10H) would not occur when the deceleration of the positioning data during execution became small and the travel distance was insufficient due to acceleration override in "Acceleration/Deceleration Method: Constant Acceleration/Deceleration Time Method".</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">10</td>
+        <td>Fixed a problem in which an overrun warning (0D10H) would occur at the target position when the calculation speed was small.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">11</td>
+        <td>Fixed a problem in which cam data was rewritten despite an error when running MCv_WriteProfileData on an arithmetic profile (cam data).</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">12</td>
+        <td>Fixed a problem in which MCv_ReadProfileData/MCv_WriteProfileData would not detect errors properly in read/write failures.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">13</td>
+        <td>Fixed a problem in which the execution profile ID number (AxisName.Md.ProfileID) would be an incorrect value when an error occurred during startup in MC_CamIn.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">14</td>
+        <td>Fixed a problem in which command frequency abnormality (AL. 35.1) would occur in a servo amplifier when the start mode was set to "Absolute" and the master axis was operated in the opposite direction before 1 cycle of operation after the cam was switched.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">15</td>
+        <td>With the following motion control FBs, fixed a problem in which the corresponding Fbs would not start even if PLC READY was ON again if the motion control FB was started and PLC READY was turned OFF at the same time.
+          <br>· MC_Home
+          <br>· MCv_BacklashCompensationFilter
+          <br>· MCv_SmoothingFilter
+          <br>· MCv_DirectionFilter
+          <br>· MCv_SpeedLimitFilter
+          <br>· MC_CombineAxes
+          <br>· MC_GearIn
+          <br>· MC_CamIn
+        </td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="melfa_mt30">Improvement history of motion system software Ver. 26 (December 2022)</h3>
+  <p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+  <table class="dataTable" style="margin-top:0;">
+    <thead>
+      <tr>
+        <th class="cellw25">No.</td>
+        <th>Contents</td>
+        <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+        <th width="80">Simple<br>Motion<br>mode</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">1</td>
+        <td>Improved connection time with servo amplifiers in multi axis connections.</td>
+        <td align="center">○</td>
+        <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">2</td>
+        <td>Improved to output a warning when the servo system recorder stops.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">3</td>
+        <td>Fixed a problem in which the shaft would start during a moderate malfunction after a software reboot.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">4</td>
+        <td>Fixed a problem in which after clearing a minor abnormal network error, Network Division Error Detection (System.Md.NetworkError) and Network Division Error Code (System.Md.NetworkErrorID) would not be updated when the same error occurred.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">5</td>
+        <td>Fixed a problem in which the number of saved files would not be displayed correctly when "Save file specified" was selected in the logging settings.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">6</td>
+        <td>Fixed a problem in which 1BE6H (driver command discard detection) would occur when the servo was turned on with the control mode switched to speed control (csv) or torque control (cst) during servo off.</td>
+        <td align="center">－</td>
+        <td align="center">○</td>
+      </tr>
+      <tr>
+        <td align="center">7</td>
+        <td>Fixed a problem in which the values would not be outputted correctly in touch probes when BOOL type labels were specified for OutputBuffer.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+      <tr>
+        <td align="center">8</td>
+        <td>Fixed a problem in which communication with the Motion Control Setting would be disabled when performing module read by motion control setting.</td>
+        <td align="center">○</td>
+        <td align="center">－</td>
+      </tr>
+    </tbody>
+  </table>  
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 24 (June 2022)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which the restored absolute position would shift at restart after the initial communication error of the encoder by combining with MR-J5 version D0 and later.</td>
+      <td align="center">○</td>
+      <td align="center">○</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Corrected an error in the LED display in the selected station communication status monitor on the "CC Link IE TSN/CC Link IE Field Diagnostics" window of RD78GHV, RD78GHW.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td>Corrected so that the subsequent FB does not detect acceleration/deceleration mismatches when multiple FBs of fixed acceleration/deceleration specification are started after FBs not supporting the fixed acceleration/deceleration method.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td>Fixed a problem in which Hardware Error (3C00h) would occur if [AXIS] is specified for the probe data (ProbeData) data type when axis information (Axis) is omitted in MC_TouchProbe.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td>Fixed a problem in which the switching speed of the buffer mode setting would be disabled when the speed was changed for FBs under control during multiple startup by BlendingLow/BlendingHigh.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">6</td>
+      <td>Fixed a problem in which RPDO of axis monitor data (motion system → slave device) mapping (AxisNameOOE.Drive_RPDO [1..64]) and TPDO (slave device → motion system) mapping (AxisNameOOE.Drive_TPDO [1..64]) would be 0 when PLC READY was ON.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">7</td>
+      <td>Fixed a problem in which the home position return would continue without stopping if a stop factor was generated by MC_Stop, etc., immediately after control mode switching after MC_Home was started.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">8</td>
+      <td>Fixed a problem in which the axis state (AxisName.Md.AxisStatus) would change from "2 (Stopping)" to "4 (Standstill)" to "2 (Stopping)" when MC_Stop was executed while the home position return state (AxisName.Md.Homing_Status) was 3.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">9</td>
+      <td>Fixed a problem in advanced synchronous control in which an incorrect value would be stored in the master/auxiliary axis clutch slip amount accumulated value
+        when the slip amount method (exponent) was set to the master/auxiliary axis clutch smoothing method, and the master/auxiliary axis clutch slip amount accumulated value overflowed during operation in the negative direction.</td>
+      <td align="center">－</td>
+      <td align="center">○</td>
+    </tr>
+    <tr>
+      <td align="center">10</td>
+      <td>Fixed a problem in which Latch Data Storage Shortage (349FH) would be erroneously detected according to the latch count (RecordCount) and latch data storage destination (OutputBuffer) magnitude when the latch mode (RecordMode) was set to single mode (OneShot) in MC_TouchProbe.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">11</td>
+      <td>Fixed a problem in which the data link would not start when the communication rate setting was set to 100 Mbps and the master station, local station, and TSN HUB were all started at the same time.</td>
+      <td align="center">○</td>
+      <td align="center">○</td>
+    </tr>
+    <tr>
+      <td align="center">12</td>
+      <td>Fixed a problem in which the error display on the unit diagnosis screen would not be updated after a software reboot.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">13</td>
+      <td>Fixed a problem in which the trigger position would not be displayed in GX Logviewer when the data logging file was saved in the CSV format in the logging function.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">14</td>
+      <td>Fixed a problem in which the response data would be stored only up to the allowable number of response data -1 word when the response data length was equal to or greater than the allowable number of response data in the user function execution instruction (CEXECUTE).</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 22 (March 2022)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which Firmware Version Unsupported (3F00h) would be erroneously detected in a multi CPU configuration that includes a CPU module that is not compatible with the Motion module.</td>
+      <td align="center">○</td>
+      <td align="center">○</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 21 (February 2022)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which Hardware Error (3C00H) would occur when accessing (reading/writing) from an odd number of buffer memory to more than two words from the motion ST program.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 20 (October 2021)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which a serious fault (3C00H) would occur or operation would stop while saving when logging was performed at high frequencies.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Improved logging and monitoring speeds when the processing time of a normal execution type program is long.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td>Fixed a problem in which only one operation cycle would move minutely immediately after the circular interpolation control was started with the speed set to 0.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 18 (June 2021)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which Label Temporary Area Incorrect (34FAH) would occur when motion control FB was started in a fixed-cycle program set to a cycle longer than the operation cycle.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 17 (May 2021)</h3>
+<p></p>
+<p>No improved functions.</p>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 16 (May 2021)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which Watchdog Counter Error (1C41H) would be detected from the slave station connected to the Motion module when an error occurred in the CPU module.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Fixed a problem in which the slave axis would operate when the master axis was operated at least once after Axis stop and Gear ratio or the acceleration/deceleration method was changed during MC_CombineAxes startup.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td>Fixed a problem in which a servo error (AL. 035.1: Command frequency error, etc.) would occur if the slave axis coefficient was changed while the master axis was moving to the negative direction when MC_CamIn was used with continuous updating enabled.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td>Fixed a problem in which MC_CamIn would stop when using MC_CamIn with consecutive update enabled and MCv_ChangeCycle performed more than once.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td>Fixed a problem in which parameters would be reflected immediately when MC_CamIn was restarted, regardless of the setting of the started mode.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">6</td>
+      <td>Fixed a problem in which MC_CamIn would stop with Operation Profile Data Being Operated (3411H) when MCv_WriteProfileData was executed while MC_CamIn was running.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">7</td>
+      <td>Fixed a problem in which the reference position would be incorrect if the slave axis position was not 0 when MC_CamIn was started.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">8</td>
+      <td>Fixed a problem in which the slave axis would operate beyond the ring counter range of the slave axis when the slave axis absolute coordinate was set to [1: absolute coordinate] in MC_CamIn.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">9</td>
+      <td>Fixed a problem in which the reference value and the output value of MC_CamIn were not equal to the ring counter range.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">10</td>
+      <td>Fixed a problem in which Execute would not operate with the input variable at startup if the input variable of the FB was changed immediately after Execute of MC_CamIn was started.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">11</td>
+      <td>Fixed a problem in which Hardware Error (3C00H) would occur instead of Add-on Memory Shortage (1ADCH) when memory was insufficient during MC_CamIn startup.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">12</td>
+      <td>Fixed a problem in which the slave axis would move when MC_CamIn was restarted if MCv_ChangeCycle was executed while waiting for a single operation to be restarted.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">13</td>
+      <td>Fixed a problem in which cam cycle completion would not be TRUE even if the master axis was moved more than the length per cycle when a value greater than the length per cycle was set for the master axis offset in MC_Camln.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">14</td>
+      <td>Fixed a problem in which rewriting the length per cycle using MCv_WriteProfileData during the startup of MC_CamIn would not be reflected.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">15</td>
+      <td>Fixed a problem in which MC_CamIn would immediately switch to the subsequent FB when it was multiple started while waiting to be restarted.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">16</td>
+      <td>Fixed a problem in which an error would be displayed if the device number was specified as a multiple of 16 and a number other than K4 or K8 when specifying the digits of a bit device.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">17</td>
+      <td>Fixed a problem in which a normal response would be returned even though a process had not been performed when communication was shut off and restarted while reading/writing a file.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">18</td>
+      <td>Fixed a problem in which the information displayed in the detailed information section for some events would be indefinite.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">19</td>
+      <td>Fixed a problem in which the communication speed in the module information list which can be checked from the module diagnostics would not be displayed correctly when the communication speed was set to 100 Mbps.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">20</td>
+      <td>Fixed a problem in which response delays, stops, or errors would occur when accessing from engineering tool or GOT at the same time.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">21</td>
+      <td>Fixed a problem in which files would not be outputted after a brief file output in the logging function.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">22</td>
+      <td>Fixed a problem in which a logging error (4053H) would occur when the save destination for real-time logging was a RAM drive unless it had twice the amount of free space that was originally required.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">23</td>
+      <td>Fixed a problem in which labels for FBs deeper in the hierarchy could not be identified from Watch in the motion control setting function.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">24</td>
+      <td>Fixed a problem in which all labels could not be accessed if an incorrect label was included when accessing multiple labels from Watch in the motion control setting function.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">25</td>
+      <td>Fixed the problems described in the improvement history of RJ71GN11-T2 firmware version 05 to 10, 10 to 11, and 11 to 12.<a href="/fa/download/software/detailsearch.do?mode=software&kisyu=/plcr&shiryoid=0000000152&lang=1&select=0&softid=1&infostatus=6_2_6&viewradio=1&viewstatus=008000_00_00000_00800000000_080000000000&viewpos=0_0">Click here </a> for the improvement history of RJ71GN11-T2.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 14 (January 2021)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Improved the phenomenon that the connection process with servo amplifiers at power on/off sometimes took several minutes or longer than normal.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Improved the phenomenon where the connection process with the servo amplifiers and motion service processing (file access, communication with peripherals such as engineering tools and GOT, etc.) would sometimes take several minutes longer than normal when the free space in the user area is low.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 13 (November 2020)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which the movement would be in the opposite direction of the specified movement direction if the target position was changed just before positioning was completed in absolute position control.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Fixed a problem in which the operation cycle was stretched when ContinuousUpdate of MC_CamIn was set to TRUE and started.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 12 (November 2020)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>[Important] Enhanced vulnerability measures.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Fixed a problem in which Hardware Error (3C00H) would occur when two words or more were read from odd numbers of buffer memory from motion controller ST program or Watch.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td>Fixed a problem in which motion control FB would not be executed from the PLC after PLC READY [Y0] was turned ON when PLC READY [Y0] was executed OFF→ON→OFF of [Y0] in a short cycle similar to the program execution cycle.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td>Improved the display speed of the real time monitor in logging.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td>Fixed a problem in which reconnecting would not be possible due to the status during disconnection detection.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">6</td>
+      <td>Fixed a problem in which the error code (ErrorID) would not be cleared when an error occurred in MC_Power, even if the execution command (Enable) was FALSE.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">7</td>
+      <td>Fixed a problem in which Hardware Error (3C00H) would occur when running MC_GroupEnable and MC_GroupDisable repeatedly.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">8</td>
+      <td>Fixed a problem in which running (Busy) would be FALSE in the following scan when execution command (Execute) of MC_GroupEnable was TRUE by only one scan.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">9</td>
+      <td>Fixed a problem in which running (Busy) would be FALSE prior to execution completion (Done) being TRUE when running MCv_SetTorqueLimit from the PLC.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">10</td>
+      <td>Fixed a problem in which an axes group was operated in such a way that an error and a warning were generated simultaneously, a warning would also be outputted after one operation cycle of the error output.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">11</td>
+      <td>Fixed a problem in which deceleration to a stop would occur even if "immediate stop" was specified in Axis.Pr.VelocityLimit_OverOperation when the speed limit value was exceeded during control by an axes group.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">12</td>
+      <td>Fixed a problem in which positioning was operated in trapezoidal acceleration/deceleration instead of jerk acceleration/deceleration when the calculation cycle was set to 125 [μs] or less and positioning was executed with the jerk lower limit (0.0001).</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">13</td>
+      <td>Fixed a problem in which a stop would occur immediately without deceleration stop (clamped by lower limit) when the target deceleration was set at the lower limit or less by acceleration override at deceleration stop with the acceleration/deceleration speed specified.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">14</td>
+      <td>Improved so that a warning is outputted when speed, acceleration, deceleration, and acceleration/deceleration time is clamped.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">15</td>
+      <td>Fixed a problem in which Out of Acceleration Range Warning (0D17H) would not occur when acceleration was changed to 0.0 except at startup.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">16</td>
+      <td>Improved so that a warning is outputted when the deceleration time exceeds the upper limit (8400 s) during FB switching for multiple startups.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">17</td>
+      <td>Fixed a problem in which input label changes (speed/acceleration/deceleration) made during execution in buffer mode or during inverted operation due to control change would not be reflected.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">18</td>
+      <td>Fixed a problem in circular interpolation in which operation would be performed at a speed above the speed limit for each axis or over the speed limit before the speed limit was exceeded.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">19</td>
+      <td>Fixed a problem in circular interpolation in which when performing a return movement to the movable range with AxisName.ON = "ONLY_INSIDE", the software stroke limit would be exceeded if the return movement was performed in the direction that permits return.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">20</td>
+      <td>Fixed a problem in which the virtual linked axis would not start when Acceleration or Deceleration was 0.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">21</td>
+      <td>Fixed a problem in which an operation cycle over would occur when MCv_ReadProfileData was executed from a PLC by specifying the expansion area.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">22</td>
+      <td>Fixed a problem in which Operation Profile Data Incorrect (3410H) would not be generated and operation would be performed with out of range values when the following operation profile data was outside the setting range.<br>
+        · Early acceleration<br>
+        · Stroke amount<br>
+        · Output value of linear interpolation method format</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">23</td>
+      <td>Fixed a problem in systems using MC_CamIn in which the memory usage of add-on ProfileControl would increase when PLC READY [Y0] was repeatedly turned ON and OFF.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">24</td>
+      <td>Fixed a problem in MC_CamIn in which the set value would be immediately reflected when the master axis scaling (MasterScaling) or the master axis offset (MasterOffset) was changed while the start mode (StartMode) was set to absolute and the continuous update (ContinuousUpdate) was set to TRUE.   </td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">25</td>
+      <td>Fixed a problem in which the operation profile would not switch even though CamTableID.ProfileID.Number was changed in MC_CamIn.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">26</td>
+      <td>Fixed a problem in which MC_CamIn could not be started after Operation Profile Data Being Operated (3411H) occurred when MC_CamIn was started.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">27</td>
+      <td>Fixed a problem in MC_CamIn in which an axis would move or a servo error (AL. 035.1: Command frequency error, etc.) would occur when the master axis positioning range was exceeded without crossing the master axis synchronization start position.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">28</td>
+      <td>Fixed a problem in MC_CamIn in which an axis would move or a servo error (AL. 035.1: Command frequency error, etc.) would occur when synchronization started when the cam started regardless of the master axis synchronization start position setting.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">29</td>
+      <td>Fixed a problem in MC_CamIn in which an axis would move or a servo error (AL. 035.1: Command frequency error, etc.) would occur when a master axis scaling other than 1.0 is specified and the axis returns to the zero position when exceeding the positioning range of the master axis.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 10 (July 2020)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which Hardware Error (3C10H/3C11H) or hangup would occur when the add-on memory was insufficient.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Fixed a problem in which System.Cd.SequenceReady would be accepted during a stop error/CPU stop error.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td>Fixed a problem in which Md.CommandeDeceleration would be updated when an error occurred while MC_GroupStop/MC_Stop was running.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td>Fixed a problem in which operation would be performed not in the acceleration/deceleration time before the change, but in the target acceleration/deceleration before the change when speed change and acceleration/deceleration time 0 change was executed in the time-fixed acceleration/deceleration method.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td>Fixed a problem in RD78GHV/RD78GHW in which an error would not occur and all axes groups would be enabled when an axes group with overlapping configuration axes were enabled at the same time.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">6</td>
+      <td>Fixed a problem in which Device/Label Specification Incorrect (3506H) would occur if the argument was an array of structure array members when a command that accesses multiple elements of an array was executed.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">7</td>
+      <td>Fixed a problem in which the target ProfileID would remain Busy even if it was available when WriteProfileData was executed with mcQueued.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">8</td>
+      <td>Fixed a problem in which the speed would reverse to the positive direction when MCv_SpeedControl was started with a negative value set to the specified speed and then MCv_SpeedControl/MC_MoveVelocity was started with the specified speed omitted.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">9</td>
+      <td>Fixed a problem in which Out of Velocity Range Warning (0D0FH) occurred instead of Out of Velocity Range (1A4DH) when MCv_SpeedControl was started with a negative value set to the specified speed and then MC_MoveAbsolute was started with the specified speed omitted.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">10</td>
+      <td>Fixed a problem in which positioning control would be performed with the parameter setting value of the interpolation axis instead of the axes group when the number of interpolation axes was 1 and the composite speed was specified in linear interpolation control.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">11</td>
+      <td>Fixed a problem in which only the upper bit or the lower bit would be updated when accessing integer and floating-point data through Watch in motion control setting or label accessing CEXECUTE.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">12</td>
+      <td>Fixed a problem in which Error 1A27H (Axes Group Status Incorrect Start) would occur instead of Error 1AADH (Start Not Possible) when motion FBs were multiply activated with the axes group state other than GroupMoving.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">13</td>
+      <td>Fixed a problem in which a warning would occur but control would either be performed with the out-of-range set value causing a speed out-of-range when MC_Camln was restarted or continuously updated with an out-of-range value.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">14</td>
+      <td>Fixed a problem in which the speed would be out of range when a reciprocating cam was used with the initial stroke amount set to a value other than 0.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">15</td>
+      <td>Fixed a problem in which the speed would be out of range when restarting a MC_ CamIn that has performed a single operation setting waiting for a restart.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">16</td>
+      <td>Fixed a problem in which the slave axis coefficient would not be reflected to the reference value when MC_CamIn was started.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">17</td>
+      <td>Fixed a problem in which Start Not Possible (1AADH) would occur instead of Necessary Slave Object Unset (1AA8H) when a real encoder axis and a virtual encoder axis are set for the slave axis.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">18</td>
+      <td>Fixed a problem in which the speed would be out of range when MCv_ ChangeCycle and master axis offset changes were made at the same time.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">19</td>
+      <td>Fixed a problem in which Asynchronous speed result (AsyncSpd) would not be updated when the rotary cutter was written to the deployment area with MCv_WriteProfileData.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">20</td>
+      <td>Fixed a problem in which operation would be performed with inconsistent parameters without detecting axis parameter errors at PLC READY ON.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">21</td>
+      <td>Fixed a problem in which an error (40C0H) would occur when a label was specified for 256 character in logging.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">22</td>
+      <td>Fixed a problem in which the PLC would output  an operation error value (-0.0, unnormalized value) in public label/MCFB/dedicated instruction.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">23</td>
+      <td>Fixed a problem in which an exception would occur when the RAM size of add-on NetworkDriver was exceeded.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">24</td>
+      <td>Fixed a problem in which an incorrect move would occur on the slave axis when the current value of master axis was changed after one operation cycle of gear ratio change in MC_CombineAxes.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">25</td>
+      <td>Fixed a problem in which the target speed of buffering FB would be reached before the target position of an executing FB during acceleration/deceleration waveform adjustment in BlendingNext.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">26</td>
+      <td>Fixed a problem in which event history would continue to be registered when the RAM size of add-on NetworkDriver was exceeded.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">27</td>
+      <td>Fixed a problem in which deceleration would be recalculated when retriggering without changing Deceleration of MC/Stop in the acceleration/deceleration time fixed method.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">28</td>
+      <td>Fixed a problem in which acceleration would not start until just before the FBs were switched and FBs would be switched before the switching speed was reached when the set value for acceleration by BlendingNext was set during deceleration.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">29</td>
+      <td>Fixed a problem in which Md.Io_PosActualValue would not be updated in the real drive axis when the connection state (runtime) was entered while the current position restoration was incomplete.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">30</td>
+      <td>Fixed a problem in which the axis would not stop if buffer memory refresh cycle over was not detected when first operation cycle over (minor) was detected.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">31</td>
+      <td>Fixed a problem in which the travel distance of the master axis would be incorrect when MCFB of synchronous control was executed before current position restoration was completed.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">32</td>
+      <td>Fixed a problem in which the input value to the master axis during servo-off would be transmitted to the slave axis when real/virtual encoder axis was set to the FB for single-axis synchronization and "2: mcActualValue (Feedback value)" was set to the master axis data source selection.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">33</td>
+      <td>Fixed a problem in which the curve would not be the expected "5th Curve (Adj)" when the cam curve type was "5th Curve (Adj)" and the stroke amount was the same at the start point and the end point.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">34</td>
+      <td>Fixed a problem in which Hardware Error (3C00H) would occur when MC_STOP was executed repeatedly.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+</tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 09 (May 2020)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which the axes group state would be Busy and not complete when MC_GroupEnable was executed to an axes group whose state was GroupStandby.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Fixed a problem in which Hardware Error (H3C00) would occur when a label name with a space at the end was specified in real-time monitoring of logging.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver. 08 (May 2020)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>Fixed a problem in which Insufficient Add-on System Memory (RAM) (H3209) would be erroneously detected in the label configuration at power-on.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Fixed a problem in which the axis state would transit to StandStill before the axis stopped if an error was reset during deceleration with the axis state in ErrorStop.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td>Fixed a problem in which an error (H40C0) where the label name specified by logging status does not exist when the local label was set to the collected data and reset.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td>Fixed a problem in which only the upper bit or the lower bit would be updated when accessing a label of the same LREAL type on a different Task.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td>Fixed a problem in which the detail code of the event "Home Position Return Request OFF → ON" that occurred during current position restoration when HomeOffset was changed would be incorrect.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">6</td>
+      <td>Fixed a problem in which "The system is in the BUSY state. (H3209)" would be erroneously detected when logging with a data collection interval of 0.5 ms.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">7</td>
+      <td>Fixed a problem in which the time of the event history would be off if the time information could not be obtained from the CPU module.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">8</td>
+      <td>Improved so that "Speed override "0"" (0007ED) is stored as an event history when speed override coefficient is set to 0.00.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">9</td>
+      <td>Fixed a problem in which an error would not occur when there was a parameter error on the second or subsequent axes.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">10</td>
+      <td>Fixed a problem in which an error would not occur in the Motion module when operation was stopped due to a servo amplifier cause during home position return.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">11</td>
+      <td>Fixed a problem in which logging would automatically start when the Motion module was restarted regardless of the start condition of the logging settings saved on the SD card.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">12</td>
+      <td>Fixed a problem in which the current value per cycle after one cycle would be incorrect when the start point was set to a value other than 0 and the repeat operation was set to FALSE in the operation profile.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">13</td>
+      <td>Fixed a problem in which the operating axis would not stop when an operation cycle over occurred.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">14</td>
+      <td>Fixed a problem in which the virtual linked axis would not stop and would not generate an error even if an emergency stop were performed for all axes during operation of the virtual linked axis.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">15</td>
+      <td>Fixed a problem in which operation would stop immediately if the slave axis exceeded the speed limit value during operation when the speed limit value over operation setting was set to "0 (Ignored)" in MC_Camln.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">16</td>
+      <td>Fixed a problem in which operation would stop immediately without decelerating at PLC READY OFF when a stop factor occurs regardless of the stop selection setting value when an axes group stop factor occurred.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">17</td>
+      <td>Fixed a problem in which the values of AxisName. Cd.SwStrokeLimit_Override and Cd.HwStrokeLimit_Override would not return from "ONLY_INSIDE" to the value before JOG operation when the JOG operation was not start able.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">18</td>
+      <td>Fixed a problem in which a warning would occur even if the deceleration time exceeded the limit when deceleration is stopped by MC_Stop, instead of an error occurring.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">19</td>
+      <td>Improved so that Abort Code is registered to event history when an error occurs in PDO mapping setting.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">20</td>
+      <td>Fixed a problem in which the Motion module would time out and retry before receiving a timeout response due to a short SLMP timeout period. </td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">21</td>
+      <td>Fixed a problem in which the parameter No. displayed in the error detail information would be incorrect if there was an error in the PDO mapping setting parameters.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">22</td>
+      <td>Fixed a problem in which an add-on library load error would not occur when the dependent add-on was not installed.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">23</td>
+      <td>Fixed a problem in which the upper limit signal/lower limit signal status would be incorrect when the filter time of the upper limit signal/lower limit signal was set to 0.001 [s].</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">24</td>
+      <td>Fixed a problem in which logging at a fixed cycle trigger interval longer than 86400 [ms] would be disabled.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">25</td>
+      <td>Fixed a problem in which the restoration status would not be displayed in the 
+        detailed information of the event history when Current Position Restoration Completion (07FD) was performed on the virtual drive axis.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">26</td>
+      <td>Fixed a problem in which Control Mode Switching Error (H1A1D) would occur in slave emulate when an emergency stop occurred during operation other than position control.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">27</td>
+      <td>Fixed a problem in which logs of the start and end of file transfer execution would be outputted even if "nolog" is specified for the command when executing a file transfer.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">28</td>
+      <td>Improved the speed limit related warning/error so that the detail code is displayed.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">29</td>
+      <td>Fixed a problem in which Software Reboot Disabled Warning (H0F00) would be outputted continuously if a software reboot fails.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">30</td>
+      <td>Fixed a problem in which the public label area on the buffer memory would not be zeroed out during a software reboot.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">31</td>
+      <td>Fixed a problem in which the execution time monitor would display an incorrect processing time when it exceeds 32 bits.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">32</td>
+      <td>Fixed a problem in which the behavior would be indeterminate when add-on libraries that have the same add-on name but differing versions were installed.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">33</td>
+      <td>Improved the add-on library load error detail code so that the versions of the add-on libraries are also displayed.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">34</td>
+      <td>Fixed a problem in which a format error would occur in the commanded comment row when transferring a file.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">35</td>
+      <td>Fixed a problem in which the version displayed on GX Works3 would be incorrect until add-on library load was complete.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">36</td>
+      <td>Fixed a problem in which the LED display of the diagnosis screen displayed on GX Works3 would not match the status of the Motion module.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">37</td>
+      <td>Fixed a problem in which the axis/axes group status (monitor) would be incorrect if the axis/axes group generation failed.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">38</td>
+      <td>Fixed a problem in which FBs that were not executing would be stored in the detailed information of the event history when a driver warning occurred while the axis status was StandStill.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">39</td>
+      <td>Fixed a problem in which the Motion module would not operate during add-on library memory shortage.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">40</td>
+      <td>Fixed a problem in which a servo error (AL. 035.1: Command frequency error, etc.) would occur when position control was started before the driver control mode was switched.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">41</td>
+      <td>Fixed a problem in which connection with a servo amplifier would be made when the slave emulate function was enabled with the servo amplifier connected.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">42</td>
+      <td>Corrected so that Start Not Possible (H1AAD) occurs and home position return does not start when "ONLY_INSIDE" is set to HwStrokeLimit_Override at the start of home position return.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">43</td>
+      <td>Fixed a problem in which the command in-position would be invalid if a small value was set to the command in-position Pr.CmdInPos_Width.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">44</td>
+      <td>Fixed a problem in which certain labels would not be refreshed when an odd number of BOOL type labels were published.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">45</td>
+      <td>When the operation system FB is stopped by external External input output signal Stop signal, CommandAborted does not turn ON by timing of External input output signal Stop signal ON. The problem that turns ON after Deceleration Stop is completed is solved.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">46</td>
+      <td>Fixed a problem in which "64-bit restoration (home position)" would be displayed in the restoration status of the event history when HomeOffset is changed and the power supply of the Motion module was cycled after home position return in the absolute position system.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">47</td>
+      <td>Fixed a problem in which the sign of the accumulated filter value would invert during smoothing filter operation.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">48</td>
+      <td>Fixed a problem in which WDT error would occur when PLC READY was turned OFF → ON after an error occurred in the ST program.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">49</td>
+      <td>Fixed a problem in which 0 would be assigned instead of the initial value in the member variables in the structure labels.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">50</td>
+      <td>Fixed a problem in which Md.StopMode_Deceleration in AxesGroup would always be 0 when axes group was enabled.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">51</td>
+      <td>Fixed a problem in which the error related monitor of the axes groups would not be refreshed when running MC_GroupEnable.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">52</td>
+      <td>Fixed a problem in which ForcedStop_Released would always be FALSE when ExternalSignal is invalid.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">53</td>
+      <td>Fixed a problem in which the readiness would remain ON and the program would not operate even if PLC READY was turned OFF → ON if PLC READY is turned ON → OFF while Execute of MC_Stop was TRUE after MC_Stop stopped.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">54</td>
+      <td>Fixed a problem in which an event history file error would occur when a path where no folder was created was specified in the motion event history path.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">55</td>
+      <td>Fixed a problem in which AL. 35.1 (Command frequency error) would occur in the servo amplifier while buffer mode was executed (activating the next FB during deceleration).</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">56</td>
+      <td>Fixed a problem in which the command current speed would become abnormal when the command current position of the configuration axis returns to the zero position when exceeding a certain range just before positioning was completed in linear interpolation control.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">57</td>
+      <td>Fixed a problem in which Md.CommandedPosition of the interpolation axis would not be updated at startup in multiple axes positioning control.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">58</td>
+      <td>Fixed a problem in which operation cycle over would occur when a large amount of MCFB instances were generated on the PLC side. </td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">59</td>
+      <td>Fixed a problem in which the difference in the encoder input value cumulative value and the difference in the encoder input value would not match in the position data history of the real encoder axis. </td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">60</td>
+      <td>Fixed a problem in which the ErrorID monitor would not be cleared when axes group is enabled.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">61</td>
+      <td>Fixed a problem in which the speed switching would not operate properly when operating BlendingNext in buffer mode in combination with speed override.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">62</td>
+      <td>Fixed a problem in which an error would not occur when an unsupported device was specified in logging.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">63</td>
+      <td>Fixed a problem in which only some data was written when data was written to the expansion area using WriteProfileData.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">64</td>
+      <td>Fixed a problem in which the set value of the stop selection at a software stroke limit error was not enabled when a software stroke limit error occurred. </td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">65</td>
+      <td>Fixed a problem in which the entire data would not be outputted or an error would be displayed on LogViewer when data that cannot be expressed was included in logging. </td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">66</td>
+      <td>Fixed a problem in which the current value data would be 0 if follow-up has not been performed once after current position restoration in the real encoder axis and the virtual encoder axis (absolute position system).</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">67</td>
+      <td>Fixed a problem in which the deviation movement amount of the calculation cycle of servo OFF → ON would be reflected to the current value data (command current position, etc.) in the real encoder axis and the virtual encoder axis.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">68</td>
+      <td>Fixed a problem in which the current value per cycle change value may not have been reflected when StartMode was set to mcAbsolute in MC_CamIn.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">69</td>
+      <td>Fixed a problem in which a large number of errors would occur in the event history when an unused axis was set to Slave.AxisNo and started in MMC_CamIn.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+<!--
+    <tr>
+      <td align="center">70</td>
+      <td>CC-Link IE TSN マスタ・ローカルユニット RJ71GN11-T2のファームウェアバージョン03→04、04→05への改善履歴に記載の問題を解決しました。RJ71GN11-T2の改善履歴は、<script type="text/javascript">toSoftwareInfo('0000000152','plcr','6','1','1','こちら。')</script></td>
+    </tr>
+    <tr>
+-->
+      <td align="center">70</td>
+      <td>Fixed the problems described in the improvement history of the master/local module RJ71GN11-T2 firmware version 03 to 04 and 04 to 05.<a href="/fa/download/software/detailsearch.do?mode=software&kisyu=/plcr&shiryoid=0000000152&lang=1&select=0&softid=1&infostatus=6_2_6&viewradio=1&viewstatus=008000_00_00000_00800000000_080000000000&viewpos=0_0">Click here</a> for the improvement history of RJ71GN11-T2.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="melfa_mt30">Improvement history of motion system software Ver.07 (March 2020)</h3>
+<p style="float:right; margin:0;">○: Applicable, –: Not applicable</p>
+<table class="dataTable" style="margin-top:0;">
+  <thead>
+    <tr>
+      <th class="cellw25">No.</td>
+      <th>Contents</td>
+      <th width="80">PLCopen<sup>®</sup><br>motion<br>control FB mode</td>
+      <th width="80">Simple<br>Motion<br>mode</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td>[Important] Corrected the default save destination of the event history file to extend the life of flash ROM.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td>Fixed a problem in which Busy would be False for a while when Execute was turned to False right after Busy of MCFB turned to True.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    <tr>
+      <td align="center">3</td>
+      <td>Fixed a problem in which ErrorID would not be cleared when Execute of MCFB was turned to False.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td>Fixed a problem in which the addition/subtraction method selection would not be imported by restarting/continuously updating in MC_CombineAxes.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td>Fixed a problem in which values would be inputted incorrectly when the master axis 2 gear ratio denominator and the master axis 2 gear ratio numerator were changed by restarting/continuously updating in MC_CombineAxes.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">6</td>
+      <td>Fixed a problem in which the profile ID of the operation profile currently running would not be stored in Axis.Md.ProfileID in MC_CamIn.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">7</td>
+      <td>Fixed a problem in which the speed would become out of the range when the current value per cycle was changed when the reference value was a negative value in MC_CamIn.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">8</td>
+      <td>Fixed a problem in which the slave axis speed would become out of the range when the slave axis returns to the zero position when exceeding the positioning range of the master axis in MC_CamIn.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">9</td>
+      <td>Fixed a problem in which the current position of the slave axis would suddenly change when the slave axis coefficients were changed by restarting/continuously updating in MC_Camln.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">10</td>
+      <td>Fixed a problem in which the slave axis would move when MC_SetPosition was executed during MC_CamIn operation.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">11</td>
+      <td>Fixed a problem in which an error would not occur when the stroke amount reflecting the slave axis offset/coefficient exceeded the positioning range when MC_CamIn was executed.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">12</td>
+      <td>Fixed a problem in which the current value per cycle would not return to the zero position correctly when the master axis coefficient was other than 1.0 in MC_CamIn.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">13</td>
+      <td>Fixed a problem in which simultaneous execution could not be performed even if the profile ID was different in MC_CamTableSelect.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">14</td>
+      <td>Fixed a problem in which an error would not occur when input values of the operation profile (linear interpolation method format) were not aligned in ascending order.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">15</td>
+      <td>Fixed a problem in which the reference value is rounded off if the current value per cycle returns to the zero position when a relative value was specified in MC_ChangeCycle.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">16</td>
+      <td>Fixed a problem in which a current position change execution not possible warning would occur at an error occurrence in MC_ChangeCycle.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">17</td>
+      <td>Fixed a problem in which an error would not occur when the filter time was out of the range in MC_TouchProbe.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">18</td>
+      <td>Fixed a problem in which a speed out-of-range warning would occur when the direction was reversed when re-accelerating from 0 when JOG signal was ON during deceleration in MCv_Jog.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">19</td>
+      <td>Fixed a problem in which an error would occur when a character string of 63 characters was set as the target of the home position switch in MC_Home of the sequence program on GX Works3 (PLCopenMotionControl).</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">20</td>
+      <td>Fixed a problem in which the motor would operate after home position return was stopped and switched to position control mode.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">21</td>
+      <td>Fixed a problem in which a deceleration stop would not be performed at the correct deceleration and reverse after the stop if a stop factor occurred during deceleration by jerk acceleration/deceleration when the acceleration/deceleration method was set to the acceleration/deceleration specified method.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">22</td>
+      <td>Fixed a problem in which the axis state would transit to StandStill when emergency stop is inputted by the driver during axis operation.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">23</td>
+      <td>Improved so that connection is enabled with a slave whose Statusword switching is not synchronized with control mode switching.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">24</td>
+      <td>Fixed a problem in which lower case letters could be specified for the software stroke limit override.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">25</td>
+      <td>Fixed a problem in which the READY signal (X0) would turn ON when a parameter out-of-range error of the SW stroke limit was detected.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">26</td>
+      <td>Fixed a problem in which servo could be ON even when an incorrect character string was set as the target of FLS and RLS signals. </td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">27</td>
+      <td>Fixed a problem in which the upper limit/lower limit signal would be detected in the same detection method when the same signal and different detection methods were set for multiple axes.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">28</td>
+      <td>Fixed a problem in which the parameter out-of-range error of HW stroke limit would be an axis error instead of a system error.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">29</td>
+      <td>Fixed a problem in which service processing would not be executed for a long time when writing a file.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">30</td>
+      <td>Fixed a problem in which the SD memory card could not switch to a deactivated state.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">31</td>
+      <td>Fixed a problem in which Insufficient Total System Memory (Backup RAM) (H320A) would not occur when the sum of the maximum backup RAM size for each add-on exceeded the capacity of the latch drive.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">32</td>
+      <td>Fixed a problem in which the flash ROM write count index value was not displayed.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+    <tr>
+      <td align="center">33</td>
+      <td>Fixed a problem in which slave label refresh would not stop at an error.</td>
+      <td align="center">○</td>
+      <td align="center">－</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+  </tbody>
+</table>
+
+<!--/line--></div>
+
+<!-- Main Contents Text Area END -->
+
+
+<!--/melfa_main_area--></div>
+<!-- Main Contents Area END -->
+
+
+
+
+</div>
+</div><!-- /.l-inner -->
+</main>
+
+<footer class="gs18-Footer gs18-Footer--simple" role="contentinfo" data-js-gs18-footer>
+<!-- /.gs18-Footer --></footer>
+
+<!-- Mel JS gws0001 -->
+<script src="/fa/shared/gws0001/js/init.js"></script>
+
+<script src="/fa/products/assets/js/category.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "listLinkLabel": "Update information",
+  "listLink": "/fa/products/rbt/assista/update_index.html",
+  "items": [
+    {
+      "pubDate": "Jul 4, 2024",
+      "title": "Collaborative Robot-ASSISTA：Download is updated.",
+      "category": "Software",
+      "description": "<a href=\"/fa/download/software/rbt/robot/index.html\">・Software：MELSOFT RT ToolBox3 Ver.2.40S</a>"
+    },
+    {
+      "pubDate": "Jun 12, 2024",
+      "title": "Collaborative Robot-ASSISTA：Download is updated.",
+      "category": "Software",
+      "description": "<a href=\"/fa/download/software/rbt/robot/index.html\">・Software：MELSOFT RT VisualBox Ver 1.11M</a>"
+    },
+    {
+      "pubDate": "Jun 12, 2024",
+      "title": "Collaborative Robot-ASSISTA：Technical News Download is added.",
+      "category": "Technical bulletin",
+      "description": "Announcement of MELSOFT RT VisualBox Ver.1.11M release <br>&emsp;&emsp;<img height=\"17\" alt=\"pdf_icon\" src=\"/fa/cmn11/image/icon_pdf.gif\" width=\"17\"border=\"0\">&nbsp<a href=\"/fa/document/technews/robot/bfp-a6079-0359e/bfp-a6079-0359e.pdf\" target=\"_blank\">BFP-A6079-0359E</a>"
+    },
+    {
+      "pubDate": "Mar 15, 2024",
+      "title": "Collaborative Robot-ASSISTA：Download is updated.",
+      "category": "Software",
+      "description": "<a href=\"/fa/download/software/rbt/robot/index.html\">・Software：MELSOFT RT ToolBox3 Ver.2.30G</a>"
+    },
+    {
+      "pubDate": "Mar 15, 2024",
+      "title": "Collaborative Robot-ASSISTA：Technical News is added.",
+      "category": "Technical bulletin",
+      "description": "Report of RT ToolBox3 Ver.2.30G release<br>&emsp;&emsp;<img height=\"17\" alt=\"pdf_icon\" src=\"/fa/cmn11/image/icon_pdf.gif\" width=\"17\"border=\"0\">&nbsp<a href=\"/fa/document/technews/robot/bfp-a6079-0354e/bfp-a6079-0354e.pdf\" target=\"_blank\">BFP-A6079-0354E</a>"
+    }
+  ]
+}

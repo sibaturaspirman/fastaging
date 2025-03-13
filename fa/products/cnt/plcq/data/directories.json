@@ -1,0 +1,141 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/index.html",
+    "child": [
+      {
+        "name": "Products",
+        "path": "/fa/products/index.html",
+        "child": [
+          {
+            "name": "Programmable<br>Controllers<br>MELSEC",
+            "path": "/fa/products/cnt/plc/index.html",
+            "child": [
+              {
+                "name": "MELSEC iQ-R Series",
+                "path": "/fa/products/cnt/plcr/items/index.html"
+              },
+              {
+                "name": "MELSEC iQ-F Series",
+                "path": "/fa/products/cnt/plcf/items/index.html"
+              },
+              {
+                "name": "MELSEC-Q Series",
+                "path": "/fa/products/cnt/plcq/items/index.html"
+              },
+              {
+                "name": "MELSEC-L Series",
+                "path": "/fa/products/cnt/plcl/items/index.html"
+              },
+              {
+                "name": "MELSEC-F Series",
+                "path": "/fa/products/cnt/plc_fx/items/index.html"
+              },
+              {
+                "name": "MELSEC-QS/WS Series",
+                "path": "/fa/products/cnt/plcqsws/items/index.html"
+              },
+              {
+                "name": "MELSEC-A Series",
+                "path": "/fa/products/cnt/plca/pmerit/concept/index.html"
+              },
+              {
+                "name": "Network-related products",
+                "path": "/fa/products/cnt/plcnet/items/index.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "switchNav": {
+    "name": "MELSEC-Q Series",
+    "path": "/fa/products/cnt/plcq/items/index.html",
+    "child": [
+      {
+        "group": "LP3-1",
+        "name": "Concept",
+        "feature": "/fa/products/cnt/plcq/pmerit/concept/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcq",
+        "standard": "/fa/products/standard/SearchServlet.page?kisyu=/plcq",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon"
+      },
+      {
+        "group": "LP3-1",
+        "name": "CPU",
+        "feature": "/fa/products/cnt/plcq/pmerit/cpu/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcq&radio=CPU&search=B&word=CPU",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=CPU&search=B&word=CPU",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=CPU"
+      },
+      {
+        "group": "LP3-1",
+        "name": "Network",
+        "feature": "/fa/products/cnt/plcq/pmerit/network/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcq&radio=Information/network&search=B&word=Information/network",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=Information/network&search=B&word=Information/network",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=Information/network"
+      },
+      {
+        "group": "LP3-1",
+        "name": "I/O",
+        "feature": "/fa/products/cnt/plcq/pmerit/io/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcq&radio=I/O&search=B&word=I/O",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=I/O&search=B&word=I/O",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=I/O"
+      },
+      {
+        "group": "LP3-1",
+        "name": "Analog",
+        "feature": "/fa/products/cnt/plcq/pmerit/analog/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcq&radio=Analog&search=B&word=Analog",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=Analog&search=B&word=Analog",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=Analog"
+      },
+      {
+        "group": "LP3-1",
+        "name": "Simple motion, Positioning",
+        "feature": "/fa/products/cnt/plcq/pmerit/motion/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcq&radio=Simple%20motion/positioning&search=B&word=Simple%20motion/positioning",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=Simple%20motion/positioning&search=B&word=Simple%20motion/positioning",
+        "discon": "/fa/products/dbdbsearch/SearchServlet.page?kisyu=/plcq&category=discon&bunrui1=Simple%20motion/positioning"
+      },
+      {
+        "group": "LP3-1",
+        "name": "High-speed counter, Pulse input",
+        "feature": "/fa/products/cnt/plcq/pmerit/counter/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcq&radio=High-speed%20counter/pulse%20input&search=B&word=High-speed%20counter/pulse%20input",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=High-speed%20counter/pulse%20input&search=B&word=High-speed%20counter/pulse%20input",
+        "discon": ""
+      },
+      {
+        "group": "LP3-1",
+        "name": "Energy measuring, Insulation monitoring",
+        "feature": "/fa/products/cnt/plcq/pmerit/energy/",
+        "spec": "/fa/products/faspec/search.page?kisyu=/plcq&radio=Energy%20measuring/insulation%20monitoring&search=B&word=Energy%20measuring/insulation%20monitoring",
+        "standard": "/fa/products/standard/SearchServlet.page?menu=undefined&kisyu=/plcq&radio=Energy%20measuring/insulation%20monitoring&search=B&word=Energy%20measuring/insulation%20monitoring",
+        "discon": ""
+      },
+      {
+        "group": "Standard",
+        "name": "Ship class standards",
+        "feature": "/fa/products/cnt/plcq/ex/stand/index.html",
+        "return":{
+          "name": "Return to standard compatibility list",
+          "path": "/fa/products/standard/SearchServlet.page?kisyu=/plcq"
+        }
+      },
+      {
+        "group": "Standard",
+        "name": "Various certification systems",
+        "feature": "/fa/products/standard.html#anc_05"
+      },
+      {
+        "group": "Standard",
+        "name": "Amendment China RoHS Support",
+        "feature": "/fa/document/technews/plc/fa-a-0211/faa0211.pdf"
+      }
+    ]
+  }
+}

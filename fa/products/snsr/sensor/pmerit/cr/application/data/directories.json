@@ -1,0 +1,50 @@
+{
+  "layerNav": {
+    "name": "Code Reader",
+    "path": "/fa/products/snsr/sensor/pmerit/cr/index.html",
+    "firstLayer": [
+      {
+        "name": "Concept",
+        "path": "/fa/products/snsr/sensor/pmerit/cr/index.html"
+      },
+      {
+        "name": "Features",
+        "path": "/fa/products/snsr/sensor/pmerit/cr/features/index.html",
+        "secondLayer": [
+          {
+            "name": "Fixed-mount code reader",
+            "path": "/fa/products/snsr/sensor/pmerit/cr/features/index.html"
+          },
+          {
+            "name": "Compatible with Mitsubishi Electric factory automation products",
+            "path": "/fa/products/snsr/sensor/pmerit/cr/features/compatibility.html"
+          }
+        ]
+      },
+      {
+        "name": "Configuration tool",
+        "path": "/fa/products/snsr/sensor/pmerit/cr/soft/index.html"
+      },
+      {
+        "name": "Application examples",
+        "path": "/fa/products/snsr/sensor/pmerit/cr/application/index.html"
+      },
+      {
+        "name": "System configuration",
+        "path": "/fa/products/snsr/sensor/pmerit/cr/configuration/index.html"
+      },
+      {
+        "name": "Product List",
+        "path": "/fa/products/snsr/sensor/pmerit/cr/lineup/index.html"
+      },
+      {
+        "name": "Working distance",
+        "path": "/fa/products/snsr/sensor/pmerit/cr/working_distance/index.html"
+      },
+      {
+        "name": "External dimensions",
+        "path": "/fa/products/snsr/sensor/pmerit/cr/dimensions/index.html"
+      }
+    ]
+  }
+}

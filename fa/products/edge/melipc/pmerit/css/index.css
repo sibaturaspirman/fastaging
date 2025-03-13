@@ -1,0 +1,75 @@
+
+#melipc .no_breaks {display: inline-block}
+#melipc a {
+  display: inline-block;
+   letter-spacing: normal;
+   font-size: 75%;
+}
+#melipc a:hover {
+  opacity: 0.8;
+}
+
+#pc_prev .productsLink {
+    letter-spacing: -.4em; 
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    }
+#pc_prev .productsLink a{
+    display: inline-block;
+    letter-spacing: normal;
+    font-size: 100%;
+     }
+#pc_prev .productsLink a:hover {
+    opacity: 0.8;
+     }
+ #pc_prev .productsLink a+a{
+    margin-left: 18px;
+     }
+#pc_prev .productsLink a .productsName{
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    }
+#pc_prev .productsLink a .productsName .arr{
+    padding-left: 10px;
+    background-image: url(/fa/shared/v0002/img/module/bullet_link.gif);
+    background-repeat: no-repeat;
+    background-position: left center;
+    }
+
+#melfa_main_area .mb05 {margin-bottom: 0.5em}
+#melfa_main_area .mb1 {margin-bottom: 1em}
+
+/*202106アイプラネット レスポンシブ対応*/
+
+/*モバイルで表示(420px以下で有効）*/
+@media only screen and (max-width: 680px) {
+    #sp_prev  {display: flex; flex-wrap: wrap}
+    #sp_prev .col1 {width: 100%}
+    #sp_prev .col1 > div {text-align: center}
+    #sp_prev .mt_mb05 {margin-top: 0.25em; margin-bottom: 1em; text-align: center}
+    #pc_prev {display: none}
+}
+
+/*PCで表示（541px以上で有効）*/
+@media only screen and (min-width:681px) {
+    #sp_prev {
+    display: none;
+    }
+}
+
+
+#melfa_main_area .list_indent {
+    text-indent: -2em;
+    margin-left: 2em;
+    counter-increment: num;
+    margin-bottom: 0em !important;
+    /*font-size: 70%;*/
+    }
+#melfa_main_area .list_indent::before {
+    content: '*'counter(num)'.';
+    display: inline-block;
+    width: 2em;
+    text-indent: 0;
+    }

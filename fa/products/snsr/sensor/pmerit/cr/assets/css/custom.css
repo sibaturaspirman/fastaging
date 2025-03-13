@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* PC専用表示 */
+@media only screen and (max-width:600px){
+	.for_pc {
+		display: none;
+	}
+}
+
+/* スマートフォン専用表示 */
+@media (min-width: 601px){
+	.for_sp {
+		display: none;
+	}
+}
+
+.mt0 {margin-top: 0 !important}
+.mt05 {margin-top: 0.5em !important}
+.mt1 {margin-top: 1em !important}
+.mt15 {margin-top: 1.5em !important}
+.mt2 {margin-top: 2em !important}
+.pl1 {padding-left: 1em !important}
+.pl2 {padding-left: 2em !important}
+.mr2 {margin-right: 2em !important}
+
+.c-table__contentBody td {text-align: center; vertical-align: middle !important}
+.c-table__head th, .c-table__contentBody th {text-align: center; vertical-align: middle !important}
+
+.l-grid--right {justify-content: flex-end}
+.no_breaks {display: inline-block}
+.c-table__contentBody th {text-align: left !important}
+
+.icon_area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+    margin-top: 0.5em;
+}
+.icon_area .icon_area_wrap {
+	display: inline-block;
+	text-align: right;
+	margin-left: auto;
+	margin-right: 0;
+}
+.icon_prod_bg {
+	color: #FFF;
+	background-color: #FF6600;
+	font-weight: normal;
+	line-height: 1.25em;
+	padding: 0 1em;
+	border-radius: 2em;
+	white-space: nowrap;
+    font-size: 1.25em;
+}
+.icon_off_bg {
+	color: #FFF;
+	background-color: #AFAFAF;
+	font-weight: normal;
+	line-height: 1.25em;
+	padding: 0 0.75em;
+	border-radius: 2em;
+	white-space: nowrap;
+    font-size: 1.25em;
+}
+
+.lup td {text-align: left !important}
+.w-d th {font-weight: 700 !important}

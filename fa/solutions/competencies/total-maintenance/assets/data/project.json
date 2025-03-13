@@ -1,0 +1,122 @@
+[
+	{
+		"name": "Data Science Tool MELSOFT MaiLab",
+		"url": "/fa/products/software/data-science-tools/mailab/index.html",
+		"number": "01",
+		"target": "_self"
+	},
+	{
+		"name": "Industrial Computer MELIPC Series",
+		"url": "/fa/products/edge/melipc/",
+		"number": "02",
+		"target": "_self"
+	},
+	{
+		"name": "iQ Monozukuri Tool Wear Diagnosis for Machine Tools",
+		"url": "/fa/sols/efactory/component/monozukuri/twdiagnosis/index.html",
+		"number": "03",
+		"target": "_self"
+	},
+	{
+		"name": "iQ Monozukuri Rotary Machine Vibration Diagnosis",
+		"url": "/fa/sols/efactory/component/monozukuri/rmvdiagnosis/index.html",
+		"number": "04",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series",
+		"url": "/fa/products/cnt/plcr/items/index.html",
+		"number": "05",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-F Series",
+		"url": "/fa/products/cnt/plcf/items/index.html",
+		"number": "06",
+		"target": "_self"
+	},
+	{
+		"name": "GOT2000 Series",
+		"url": "/fa/products/hmi/got/items/got2000/index.html",
+		"number": "07",
+		"target": "_self"
+	},
+	{
+		"name": "e-F@ctory starter package",
+		"url": "/fa/products/software/visualisation/support-module/index.html",
+		"number": "08",
+   		"target": "_self"
+	},
+	{
+		"name": "2-Dimensional Fiber Laser Processing Systems GX-F Series",
+		"url": "/fa/products/mecha/laser/pmerit/lup/fiber2d.html",
+		"number": "09",
+		"target": "_self"
+	},
+	{
+		"name": "MELSERVO-J5 Series",
+		"url": "/fa/products/drv/servo/pmerit/mr_j5/amp/concept.html",
+		"number": "10",
+		"target": "_self"
+	},
+	{
+		"name": "MELSEC iQ-R Series Energy Measuring Module",
+		"url": "/fa/products/cnt/plcr/pmerit/measuring/index.html",
+		"number": "11",
+		"target": "_self"
+	},
+	{
+		"name": "MELFA Smart Plus",
+		"url": "/fa/products/rbt/robot/items/msp/index.html",
+		"number": "12",
+		"target": "_self"
+	},
+	{
+		"name": "System Recorder",
+		"url": "/fa/products/cnt/plcr/pmerit/sysrecorder/index.html",
+		"number": "13",
+		"target": "_self"
+	},
+	{
+		"name": "System recorder related software",
+		"url": "/fa/products/cnt/plcr/pmerit/sysrecorder/related_soft.html",
+		"number": "14",
+		"target": "_self"
+	},
+	{
+		"name": "3D Simulator MELSOFT Gemini",
+		"url": "/fa/products/software/simulation-tools/gemini/index.html",
+		"number": "15",
+		"target": "_self"
+	},
+	{
+		"name": "GOT2000 Series (GOT Mobile Function)",
+		"url": "/fa/products/hmi/got/pmerit/got2000/got_solutions/case_01.html",
+		"number": "16",
+		"target": "_self"
+	},
+	{
+		"name": "FREQROL-E800 Series (FR Configurator2)",
+		"url": "/fa/products/drv/inv/smerit/fr_config2/index.html",
+		"number": "17",
+		"target": "_self"
+	},
+	{
+		"name": "Edgecross-supporting Software",
+		"url": "/fa/solutions/efactory/component/edgsw/index.html",
+		"number": "18",
+		"target": "_self"
+	},
+	{
+		"name": "",
+		"url": "",
+		"number": "19",
+		"target": "_self"
+	},
+	{
+		"name": "",
+		"url": "",
+		"number": "20",
+		"target": "_self"
+	}
+]

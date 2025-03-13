@@ -1,0 +1,12 @@
+{
+  "directories": {
+    "name": "Home",
+    "path": "/fa/",
+    "child": [
+      {
+        "name": "Our Stories",
+        "path": "/fa/our-stories/"
+      }
+    ]
+  }
+}

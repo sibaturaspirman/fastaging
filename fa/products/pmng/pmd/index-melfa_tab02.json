@@ -1,0 +1,36 @@
+{
+  "listLinkLabel": "Update information",
+  "listLink": "/fa/products/pmng/pmd/update_index.html",
+  "items": [
+    {
+      "pubDate": "Jul 24, 2024",
+      "title": "Power Management Meters：Sales and Service is added.",
+      "category": "Technical bulletin",
+      "description": "<a href=\"/fa/download/techinfo/search.page?mode=sales&kisyu=/pmd#YAMA488\">Specification change of instrument transformers</a>"
+    },
+    {
+      "pubDate": "Jul 11, 2024",
+      "title": "Power Management Meters：Sales and Service is added.",
+      "category": "Technical bulletin",
+      "description": "<a href=\"/fa/download/techinfo/search.page?mode=sales&kisyu=/pmd#YAMA486\">Compliance with EU Battery Regulations for Power Management Meters and Energy Saving Supporting Devices</a>"
+    },
+    {
+      "pubDate": "Feb 19, 2024",
+      "title": "Power Management Meters：Sales and Service is added.",
+      "category": "Discontinued products",
+      "description": "<a href=\"/fa/download/techinfo/search.page?mode=sales&kisyu=/pmd#YAMA473\">Discontinuation of ELECTRONIC MULTI-MEASURING INSTRUMENT</a>"
+    },
+    {
+      "pubDate": "Jan 22, 2024",
+      "title": "Power Management Meters：Manual is updated.",
+      "category": "Manual",
+      "description": "<a href=\"/dl/fa/document/manual/pmd/ib63e69/ib63e69e.pdf\" target=\"_blank\">Electronic Multi-Measuring Instrument User's Manual :Digest version (MODEL:ME96SSHB-MB / ME96SSRB-MB / ME96SSEB-MB)</a><br>&nbsp;&nbsp; IB63E69E (1.40MB)<br><a href=\"/dl/fa/document/manual/pmd/ib63e71/ib63e71c.pdf\" target=\"_blank\">Electronic Multi-Measuring Instrument User's Manual : Detailed Edition (MODEL:ME96SSHB-MB)</a><br>&nbsp;&nbsp; IB63E71C (7.73MB)<br><a href=\"/dl/fa/document/manual/pmd/ib63e74/ib63e74b.pdf\" target=\"_blank\">Electronic Multi-Measuring Instrument User's Manual : Detailed Edition (MODEL:ME96SSRB-MB)</a><br>&nbsp;&nbsp; IB63E74B (7.67MB)<br><a href=\"/dl/fa/document/manual/pmd/ib63e77/ib63e77b.pdf\" target=\"_blank\">Electronic Multi-Measuring Instrument User's Manual : Detailed Edition (MODEL:ME96SSEB-MB)</a><br>&nbsp;&nbsp; IB63E77B (4.54MB)"
+    },
+    {
+      "pubDate": "Jul 20, 2023",
+      "title": "Power Management Meters：Manual is added.",
+      "category": "Manual",
+      "description": "<a href=\"/dl/fa/document/manual/pmd/ib63e69/ib63e69d.pdf\" target=\"_blank\">Electronic Multi-Measuring Instrument User's Manual :Digest version (MODEL:ME96SSHB-MB / ME96SSRB-MB / ME96SSEB-MB)</a><br>&nbsp;&nbsp; IB63E69D (1.57MB)"
+    }
+  ]
+}
